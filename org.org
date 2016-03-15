@@ -1,0 +1,51 @@
+* this is the orgnizer for org mode 
+ here I will list the main framework of my org documents. 
+
+
+
+
+* project scrach 
+here are several projects we need to focus on 
+
+** TODO create a website based on github 
+   - [X] create the framework 
+   - [X] create a test sample 
+   - [ ] create the content 
+ 
+** TODO learn using markdown language
+   - [X] markdown basic
+   - [ ] markdown on emacs 
+   - [ ] markdown on org mode
+   - [ ] org mode export to github pages 
+
+
+** TODO move the content to online server [0%]
+   - [ ] find a online server 
+   
+
+
+
+
+* online tutorial 
+** TODO coursea
+   - [X] week 1
+   - [ ] week 2
+   - [ ] week 3
+   - [ ] week 4 
+
+
+
+* 读书&写作
+** TODO write my first blog 
+
+
+** TODO read programming pearls 
+
+
+** TODO read code complete 
+
+
+* misc 
+
+** TODO build the a server 
+   - [ ] do research online 

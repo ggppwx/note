@@ -1,0 +1,10 @@
+* this is a node js note
+
+** create a node js module 
+ The primary 2 items that we are concerned with here are require and exports.
+ You require other modules that you wish to use in your code and your module
+ exports anything that should be exposed publicly.
+
+
+
+
