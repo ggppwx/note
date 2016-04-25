@@ -1,0 +1,31 @@
+#+TITLE: bloomberg work
+
+* reading documentations 
+** read codebase 
+
+
+** better javascript code 
+
+
+
+* self-improvement 
+
+
+** TODO code refactoring tutorial
+
+
+
+** 
+
+
+** leetcode algorithm 
+
+
+
+
+
+
+
+
+
+
