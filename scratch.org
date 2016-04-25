@@ -8,6 +8,30 @@
 
 
 
+
+
+
+* emacs learning 
+** org mode 
+*** TODO tasks
+- adding timestamps to closed todo 
+
+
+*** TODO org mode links 
+
+
+
+** magit tutorial 
+*** DONE getting started 
+    CLOSED: [2016-04-25 Mon 19:18]
+
+
+
+
+
+
+
+
 * self-improvement 
 
 
@@ -15,7 +39,6 @@
 
 
 
-** 
 
 
 ** leetcode algorithm 
