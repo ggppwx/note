@@ -72,19 +72,12 @@ understanding of the work
 
 
 
-* reading documentations 
-** read codebase 
-
-
-** better javascript code 
-
-
-
 * TODO emacs learning 						       :move:
 ** org mode 
 *** TODO tasks
 - [X] adding timestamps to closed todo 
-
+- [X] adding links 
+- [ ] 
 
 *** DONE org mode links 
     CLOSED: [2016-04-25 Mon 23:30]
@@ -108,12 +101,16 @@ file:nodejs.org
 
 
 ** TODO code refactoring tutorial
-
+file:refactor.org
 
 
 
 
 ** leetcode algorithm 
+
+
+
+
 
 
 

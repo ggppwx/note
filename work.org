@@ -1,0 +1,18 @@
+#+TITLE: tasks at work 
+
+
+
+* misc  
+** read codebase 
+
+
+** better javascript code 
+
+
+** better at emacs 
+[[file:scratch.org::*emacs learning]]
+
+
+
+
+
