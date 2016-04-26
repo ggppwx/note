@@ -24,7 +24,6 @@ daily reading progress
 
 
 
-
 * thoughts 
 ** 最近浪费时间浪费的太多了。 基本上周末都在玩游戏中度过了
 
@@ -44,11 +43,10 @@ daily reading progress
 - [ ] week 3, 3 days + gym 
 
 
-
 ** 写代码低级bug太多了。 
 看别人编写代码视频
 
-** DONE git hub all projectseee
+** DONE git hub all projects
 
 ** utilize stand desk 
 
@@ -86,7 +84,7 @@ understanding of the work
 * emacs learning 
 ** org mode 
 *** TODO tasks
-- adding timestamps to closed todo 
+- [X] adding timestamps to closed todo 
 
 
 *** TODO org mode links 
