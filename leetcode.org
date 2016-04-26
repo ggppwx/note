@@ -1,0 +1,58 @@
+#TITLE: notes in leetcode
+
+* 292 nim game
+You are playing the following Nim Game with your friend: 
+There is a heap of stones on the table, each time one of you take 
+turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.
+Both of you are very clever and have optimal strategies for the game. Write a function to determine whether you can win the game given the number of stones in the heap.
+For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend.
+
+** code
+#+BEGIN_SRC c++
+class Solution {
+public:
+    bool canWinNim(int n) {
+        return n%4 != 0;      
+    }
+};
+#+END_SRC
+
+** thoughs
+JUST write down each number and find the pattern
+
+
+
+
+* 226 invert binary tree
+note we need to invert the pointer to left/right child, not the value.
+
+
+* 237 delete Node in a tree 
+since it's a signle link list. instead of deleting the node itself, we should change the value 
+
+* 100 is same tree 
+check the tree value 
+
+* 171 excel sheet number 
+get base to the power exponent:  pow()
+
+
+
+
+* 206 reverse linke
+be aware of the conner case. don't forget the first node, don't forget some 
+extream cases
+
+
+
+
+* [#A] 198 house robber 
+this is a DP problem. recursive solution is better. 
+
+
+
+* 101 symmetric tree
+
+
+* realize the conner case 
+ 

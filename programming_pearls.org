@@ -1,0 +1,27 @@
+#+TITLE: reading notes of the book programming pearls 
+
+* DONE Part 1 
+
+
+* TODO Part 2 [0%]
+** chap 6
+** chap 7
+
+** TODO chap 8 
+
+
+
+
+
+** TODO chap 9 
+** TODO chap 10
+
+
+
+
+* TODO Part 3 [0%]  
+** TODO chap 11
+** TODO chap 12
+** TODO chap 13
+** TODO chap 14
+** TODO chap 15
