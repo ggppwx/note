@@ -80,7 +80,8 @@ daily reading progress
 *** DONE getting started 
     CLOSED: [2016-04-25 Mon 19:18]
 
-*** TODO setting git on virtual machine 
+*** DONE setting git on virtual machine 
+    CLOSED: [2016-04-26 Tue 13:58]
 
 
 ** emacs lint 
