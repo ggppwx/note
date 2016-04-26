@@ -20,7 +20,8 @@ understanding of the work
 ** better at emacs 
 [[file:scratch.org::*emacs learning]]
 
-
+** learn refactoring 
+file:refactor.org
 
 
 

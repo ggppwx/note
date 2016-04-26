@@ -1,0 +1,29 @@
+#+TITLE: workout plan 
+
+* intruduction
+- workout consists of running, gym, daily workout 
+- setting goal/reward for the plan  
+
+
+* running 
+** 跑步计划
+- [X] week 1, 2 days
+  outdoors free run, stop at each trafic light 
+  - [X] [2016-04-20 Wed]
+  - [X] <2016-04-24 Sun>
+
+- [-] week 2, 2 days + 1 gym 
+  - [X] <2016-04-25>
+  - [ ]
+  - [ ] gym 
+
+- [ ] week 3, 3 days + gym 
+
+
+* daily record   
+<2016-04-21 Thu>
+** 跑步了， 非常累。完全没法坚持。 
+我觉得是长时间没有锻炼的原因。不过至少开了一个头。今天跑步的一个原因是太无聊饥渴了。跑步是一个抒发郁闷
+情绪的好方法。 要设定一个跑步计划
+
+

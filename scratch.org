@@ -34,15 +34,7 @@ daily reading progress
 
 ** 没有健身，好像自从结婚以后人就懒掉了。
 设定一个健身计划
-*** 跑步计划
-- [X] week 1, 2 days
-  outdoors free run, stop at each trafic light 
-  - [X] [2016-04-20 Wed]
-  - [X] <2016-04-24 Sun>
-
-- [ ] week 2, 2 days + 1 gym 
-- [ ] week 3, 3 days + gym 
-
+file:workout.org
 
 ** 写代码低级bug太多了。 
 看别人编写代码视频
@@ -53,19 +45,13 @@ daily reading progress
 
 ** 研究股票 投资
 
-
-** org mode more command 
-
-* daily record   
-<2016-04-21 Thu>
-** 跑步了， 非常累。完全没法坚持。 
-我觉得是长时间没有锻炼的原因。不过至少开了一个头。今天跑步的一个原因是太无聊饥渴了。跑步是一个抒发郁闷
-情绪的好方法。 要设定一个跑步计划
-
+** financial plan 
 
 
 
 * TODO emacs learning 						       :move:
+** learn lisp language
+
 ** org mode 
 *** TODO tasks
 - [X] adding timestamps to closed todo 
