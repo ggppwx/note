@@ -30,6 +30,9 @@ here are several projects we need to focus on
 ** TODO create a auto-picker 
 
 
+** TODO adding a random picker 
+
+
 * online tutorial 
 ** TODO coursea
    - [X] week 1

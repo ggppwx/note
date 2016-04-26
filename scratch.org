@@ -80,8 +80,7 @@ understanding of the work
 
 
 
-
-* emacs learning						       :move:
+* TODO emacs learning 						       :move:
 ** org mode 
 *** TODO tasks
 - [X] adding timestamps to closed todo 
@@ -102,6 +101,7 @@ file:nodejs.org
 ** emacs lint 
 *** TODO flycheck setting 
 
+*** TODO set environment in work environment 
 
 
 * self-improvement 
