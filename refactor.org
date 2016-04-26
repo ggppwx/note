@@ -1,0 +1,93 @@
+#+TITLE: refactoring 
+
+* outline [2/3]
+18 vidos in total, 15 min each tutorial 
+- [X]
+- [X]
+- [ ]
+
+* introduction 
+
+** What is Refactoring
+Refactoring makes code understandable and easy to extend
+Refactoring makes it quicker to create complicated systems
+
+** Why Should you Refactor
+
+You remove excess code so it is easier to understand & modify
+By refactoring code you can better understand others code
+You eliminate the having to remember what old code does
+You can write code quicker
+
+** What Are Bad Smells?
+Bad smells are common design problems
+Bad design is normally unclear, complicated or duplicated
+
+*** The Bad Smells
+- Duplicated Code
+- Long Methods
+- Complex Conditional Statements
+- Primitive Obsession
+- Indecent Exposure
+- Solution Sprawl
+- Alternative Classes with Different Interfaces
+- Lazy Classes
+- Large Classes
+- Switch Statements
+- Combinatorial Explosions
+- Oddball Solutions
+
+
+
+** Creation Problems
+*** Creation Method
+Replace Constructors with Creation Methods
+Which constructor should be called?
+Wish constructors had descriptive names?
+Constructors can’t have the same attribute signatures
+
+#+BEGIN_SRC java
+public static FootballPlayer create(...) { 
+  return new FootballPlayer(passerRating, rushingYards, 0, 0, 0, 0, 0.0,
+                          0.0, 0.0);
+}
+#+END_SRC
+
+*** Avoid Duplication & Chain Constructors
+
+More constructors, More problems
+General purpose constructors save the day
+
+#+BEGIN_SRC java
+public FootballPlayer(String playName, String college){
+ this(playName, college, 0);
+}
+#+END_SRC
+
+
+
+
+* extract methods 
+make code readable, etract methods from a huge function block 
+
+#+BEGIN_SRC java
+public static double getAvgDashTime() {...}
+#+END_SRC
+
+** extracting methods not make sense 
+#+BEGIN_SRC java
+String inTop15 = (avg < 4.4 ) ? "top15" : "\n";
+#+END_SRC
+
+** when not to use temp 
+- temps holding return value and used once  
+- replace temp var with query 
+#+BEGIN_SRC java
+if ( avgDashTime() > 4 ) { ... } 
+#+END_SRC
+
+
+
+* Using variables 
+
+

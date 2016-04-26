@@ -1,3 +1,4 @@
+#+TITLE: scratch 
 * 长期目标 
 
 
@@ -65,12 +66,57 @@ understanding of the work
 
 ** org mode more command 
 
-   
+* daily record   
 <2016-04-21 Thu>
-
-* 跑步了， 非常累。完全没法坚持。 
+** 跑步了， 非常累。完全没法坚持。 
 我觉得是长时间没有锻炼的原因。不过至少开了一个头。今天跑步的一个原因是太无聊饥渴了。跑步是一个抒发郁闷
 情绪的好方法。 要设定一个跑步计划
+
+
+
+* reading documentations 
+** read codebase 
+
+
+** better javascript code 
+
+
+
+
+* emacs learning 
+** org mode 
+*** TODO tasks
+- adding timestamps to closed todo 
+
+
+*** TODO org mode links 
+
+
+
+** magit tutorial 
+*** DONE getting started 
+    CLOSED: [2016-04-25 Mon 19:18]
+
+
+
+
+
+
+
+
+* self-improvement 
+
+
+** TODO code refactoring tutorial
+
+
+
+
+
+** leetcode algorithm 
+
+
+
 
 
 

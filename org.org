@@ -1,3 +1,5 @@
+#+TITLE: main panel for org mode 
+
 * this is the orgnizer for org mode 
  here I will list the main framework of my org documents. 
 
@@ -44,7 +46,9 @@ here are several projects we need to focus on
 ** TODO read code complete 
 
 
+
 * misc 
+** TODO build a home theater 
 
 ** TODO build the a server 
    - [ ] do research online 
