@@ -53,15 +53,6 @@ daily reading progress
 ** 研究股票 投资
 
 
-** work productitvity 
-+ set the goal 
-+ use jira to track the daily effort 
-+ update the daily effort. this is important since it makes you have a general
-understanding of the work 
-+ always have something to do 
-+ learn something new 
-
-
 ** org mode more command 
 
 * daily record   
@@ -69,6 +60,7 @@ understanding of the work
 ** 跑步了， 非常累。完全没法坚持。 
 我觉得是长时间没有锻炼的原因。不过至少开了一个头。今天跑步的一个原因是太无聊饥渴了。跑步是一个抒发郁闷
 情绪的好方法。 要设定一个跑步计划
+
 
 
 
@@ -98,8 +90,6 @@ file:nodejs.org
 
 
 * self-improvement 
-
-
 ** TODO code refactoring tutorial
 file:refactor.org
 

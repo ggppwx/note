@@ -1,5 +1,13 @@
 #+TITLE: tasks at work 
 
+** work productitvity 
++ set the goal 
++ use jira to track the daily effort 
++ update the daily effort. this is important since it makes you have a general
+understanding of the work 
++ always have something to do 
++ learn something new 
+
 
 
 * misc  
