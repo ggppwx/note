@@ -10,8 +10,12 @@
 
 *** parts of code complete
  
-*** design pattrn 
+*** TODO design pattrn 
 design pattern videos file:designpattern.org
+
+
+*** TODO clean code 
+file:refactor.org
 
 *** effective c++ 
 
@@ -24,7 +28,7 @@ design pattern videos file:designpattern.org
 
 
 ** finance related 
-*** TODO stock investment 
+*** stock investment 
 
 
 
