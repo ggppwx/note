@@ -11,7 +11,7 @@
 *** parts of code complete
  
 *** design pattrn 
-
+design pattern videos file:designpattern.org
 
 *** effective c++ 
 
@@ -25,4 +25,14 @@
 
 ** finance related 
 *** TODO stock investment 
+
+
+
+* book notes links 
++ design pattern file:designpattern.org
++ refactor file:refactor.org
++ nodejs file:nodejs.org
+
+
+
 

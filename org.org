@@ -1,8 +1,11 @@
 #+TITLE: main panel for org mode 
 
 * this is the orgnizer for org mode 
- here I will list the main framework of my org documents. 
+here I will list the main framework of my org documents. 
+- scratch pad  file:scratch.org
 
+
+ 
 
 
 * project scrach 

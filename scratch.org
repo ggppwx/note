@@ -81,24 +81,26 @@ understanding of the work
 
 
 
-* emacs learning 
+* emacs learning						       :move:
 ** org mode 
 *** TODO tasks
 - [X] adding timestamps to closed todo 
 
 
-*** TODO org mode links 
-
+*** DONE org mode links 
+    CLOSED: [2016-04-25 Mon 23:30]
+file:nodejs.org
 
 
 ** magit tutorial 
 *** DONE getting started 
     CLOSED: [2016-04-25 Mon 19:18]
 
+*** TODO setting git on virtual machine 
 
 
-
-
+** emacs lint 
+*** TODO flycheck setting 
 
 
 
