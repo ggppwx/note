@@ -73,7 +73,7 @@ daily reading progress
 
 *** DONE org mode links 
     CLOSED: [2016-04-25 Mon 23:30]
-file:nodejs.org
+[[file:nodejs.org]]
 
 
 ** magit tutorial 
