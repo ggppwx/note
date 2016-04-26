@@ -1,0 +1,81 @@
+* 长期目标 
+
+
+
+* 短期目标
+
+** leetcode programming 
+
+** workout 
+
+
+
+** reading
+daily reading progress 
+*** design pattern 
+
+*** programming pearls 
+
+*** code complete 
+
+
+* spiritual life 
+
+
+
+
+* thoughts 
+** 最近浪费时间浪费的太多了。 基本上周末都在玩游戏中度过了
+
+** leetcode上的题目没有及时复习，要忘记光了
+
+** 书也没有看。
+
+** 没有健身，好像自从结婚以后人就懒掉了。
+设定一个健身计划
+*** 跑步计划
+- [X] week 1, 2 days
+  outdoors free run, stop at each trafic light 
+  - [X] [2016-04-20 Wed]
+  - [X] <2016-04-24 Sun>
+
+- [ ] week 2, 2 days + 1 gym 
+- [ ] week 3, 3 days + gym 
+
+
+
+** 写代码低级bug太多了。 
+看别人编写代码视频
+
+** DONE git hub all projectseee
+
+** utilize stand desk 
+
+** 研究股票 投资
+
+
+** work productitvity 
++ set the goal 
++ use jira to track the daily effort 
++ update the daily effort. this is important since it makes you have a general
+understanding of the work 
++ always have something to do 
++ learn something new 
+
+
+** org mode more command 
+
+   
+<2016-04-21 Thu>
+
+* 跑步了， 非常累。完全没法坚持。 
+我觉得是长时间没有锻炼的原因。不过至少开了一个头。今天跑步的一个原因是太无聊饥渴了。跑步是一个抒发郁闷
+情绪的好方法。 要设定一个跑步计划
+
+
+
+
+
+
+
+

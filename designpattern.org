@@ -1,0 +1,96 @@
+#+ design pattern notes 
+
+
+in total we have 27 tutorials 
+10 min each 
+learn 20 maybe 
+
+* outline [2/3]
+- [X] review
+- [X] strategy
+- [ ] observor
+
+
+
+
+* review oop 
+** Encapsulation 
+parameter vs argument 
+
+** how to decide if a class should extend another 
++ is a 
++ has a decide if something has a field 
++ share most methods 
++ should not use inheritance just to reuse code 
+
+** why inheritance 
+
+** pass mechanism
++ java value passed by value 
++ object passed by reference 
++ staic 
+
+
+
+* strategy <2016-04-21 Thu>
+
+** basic
++ eliminate duplicate 
++ one class should not affect the ohters 
++ use one / several behaviors dynamicly 
+- increased number of classes 
+
+** use interface 
+#+BEGIN_SRC java
+public interface Fly{
+   String fly();
+}
+
+// let the alogithm varies 
+class ItFly implements Fly{ // strategy algorithm
+   public String fly(){
+   }
+}
+
+class CantFly implements Fly{
+public String fly(){
+}
+}
+#+END_SRC
+
+
+** composition 
++ can change without side effects 
+#+BEGIN_SRC java
+public class Animal {
+  public Fly flyingType;  //setter method somewhere 
+  
+  public String tryToFly(){
+    return flyingType.fly();
+  }
+}
+
+public class Dog extends Animal{
+   public Dog(){
+     super();
+     flyingType = new ItFly();
+   }
+}
+
+Animal sparky = new Dog();
+sparky.tryToFly();
+#+END_SRC
+
+
+
+* observor 
+
+
+
+
+
+
+
+
+
+

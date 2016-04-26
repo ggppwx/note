@@ -3,7 +3,6 @@
 
 
 
-
 * project scrach 
 here are several projects we need to focus on 
 
@@ -19,11 +18,11 @@ here are several projects we need to focus on
    - [ ] org mode export to github pages 
 
 
-** TODO move the content to online server [0%]
-   - [ ] find a online server 
+** TODO move the content to online server [100%]
+   - [X] find a online server 
    
 
-
+** TODO create a auto-picker 
 
 
 * online tutorial 
@@ -49,3 +48,34 @@ here are several projects we need to focus on
 
 ** TODO build the a server 
    - [ ] do research online 
+
+
+
+
+* TODO leetcode 
+** TODO easy problems	[20%] 					  :interview:
+   DEADLINE: <2016-05-11 Wed>
+- 50 problems in total 
+- do review each week. 
+- [X] first 10  
+  + 2 
+- [ ]
+- [ ]
+- [ ]
+- [ ]
+
+** TODO medium 
+- most important problems 
+- 132 in total. 
+- appro 80 days. 
+
+
+
+
+
+** TODO hard
+   SCHEDULED: <2016-10-01 Sat>
+ 
+
+
+

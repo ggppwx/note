@@ -1,0 +1,28 @@
+#+TITLE: Reading plan 
+
+
+
+* career 
+** programming 
+
+*** TODO programming perls 
+
+
+*** parts of code complete
+ 
+*** design pattrn 
+
+
+*** effective c++ 
+
+
+*** acm competition 
+
+** soft skills 
+
+
+
+
+** finance related 
+*** TODO stock investment 
+
