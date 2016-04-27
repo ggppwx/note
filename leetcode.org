@@ -1,4 +1,4 @@
-#TITLE: notes in leetcode
+#+TITLE: leetcode problems 
 
 * 292 nim game
 You are playing the following Nim Game with your friend: 
@@ -19,8 +19,6 @@ public:
 
 ** thoughs
 JUST write down each number and find the pattern
-
-
 
 
 * 226 invert binary tree

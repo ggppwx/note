@@ -49,7 +49,7 @@ file:workout.org
 
 
 
-* TODO emacs learning 						       :move:
+* emacs learning                                                       :move:
 ** learn lisp language
 
 ** org mode 
