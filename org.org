@@ -8,7 +8,7 @@ here I will list the main framework of my org documents.
  
 
 
-* project scrach 
+* project scratch 
 here are several projects we need to focus on 
 
 ** TODO create a website based on github 
@@ -31,6 +31,9 @@ here are several projects we need to focus on
 
 
 ** TODO adding a random picker 
+*** TODO supporting tags 
+supporting different tags for each events, random event based on tags
+
 
 
 * online tutorial 
@@ -47,8 +50,7 @@ here are several projects we need to focus on
 
 
 ** TODO read programming pearls 
-
-
+file:programming_pearls.org
 ** TODO read code complete 
 
 

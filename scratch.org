@@ -2,10 +2,10 @@
 #+DATE: <2016-04-26>
 
 * 长期目标 
-
-
+** full-stack engineer 
+[[file:org.org::*project scratch]]
+  
 * 短期目标
-
 ** leetcode programming 
 [[file:leetcode.org]]
 
@@ -17,9 +17,14 @@
 daily reading progress 
 *** design pattern 
 file:designpattern.org
+**** TODO read 1 chapter  
+
 
 *** programming pearls 
 file:programming_pearls.org
+**** TODO read one chapter 
+     SCHEDULED: <2016-04-27 Wed>
+
 
 *** code complete 
 
@@ -57,7 +62,7 @@ file:programming_pearls.org
 - [ ] 
 
 *** DONE org mode links 
-    CLOSED: [2016-04-25 Mon 23:30]
+    CLOSED: [2016-04-25 Mon 23:30]xs
     
 *** TODO table mode for emacs 
 

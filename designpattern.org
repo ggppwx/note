@@ -41,7 +41,8 @@ parameter vs argument
 
 
 
-* strategy <2016-04-21 Thu>
+* DONE strategy 
+  CLOSED: [2016-04-21]
 
 ** basic
 + eliminate duplicate 
@@ -92,7 +93,8 @@ sparky.tryToFly();
 
 
 
-* observor 
+* DONE observor 
+  CLOSED: [2016-04-26]
 ** when to use observer pattern 
 - loose coupling
   - subject doesn't need to know anything about subscribers
