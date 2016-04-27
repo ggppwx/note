@@ -7,10 +7,10 @@
 * 短期目标
 
 ** leetcode programming 
-file:leetcode.org
+[[file:leetcode.org]]
 
 ** workout 
-
+[[file:workout.org]]
 
 
 ** reading
@@ -29,25 +29,20 @@ file:programming_pearls.org
 
 
 * thoughts 
-** 最近浪费时间浪费的太多了。 基本上周末都在玩游戏中度过了
+- 最近浪费时间浪费的太多了。 基本上周末都在玩游戏中度过了
 
-** leetcode上的题目没有及时复习，要忘记光了
+- leetcode上的题目没有及时复习，要忘记光了
 
-** 书也没有看。
+- 书也没有看。
 
-** TODO 没有健身，好像自从结婚以后人就懒掉了。
-设定一个健身计划
-file:workout.org
-
-** 写代码低级bug太多了。 
-看别人编写代码视频
-
-** DONE git hub all projects
-
-** utilize stand desk 
-
+- 没有健身，好像自从结婚以后人就懒掉了。
+  - 设定一个健身计划
+  - file:workout.org
+- 写代码低级bug太多了。 
+  - 看别人编写代码视频
+- git hub all projects
+- utilize stand desk 
 ** 研究股票 投资
-
 ** financial plan 
 
 
@@ -63,6 +58,9 @@ file:workout.org
 
 *** DONE org mode links 
     CLOSED: [2016-04-25 Mon 23:30]
+    
+*** TODO table mode for emacs 
+
 
 ** magit tutorial 
 *** DONE getting started 
@@ -72,7 +70,7 @@ file:workout.org
     CLOSED: [2016-04-26 Tue 13:58]
 
 
-*** TODO table mode for emacs 
+
 
 
 ** emacs lint 
