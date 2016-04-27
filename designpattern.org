@@ -99,6 +99,8 @@ sparky.tryToFly();
 
 - subject may send updates that don't matter to subscriber
 
+[[file:observer.png]]
+
 ** sample 
 #+BEGIN_SRC java
 public interface Subject{
