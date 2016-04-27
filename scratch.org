@@ -19,6 +19,7 @@ daily reading progress
 file:designpattern.org
 
 *** programming pearls 
+file:programming_pearls.org
 
 *** code complete 
 
@@ -34,7 +35,7 @@ file:designpattern.org
 
 ** 书也没有看。
 
-** 没有健身，好像自从结婚以后人就懒掉了。
+** TODO 没有健身，好像自从结婚以后人就懒掉了。
 设定一个健身计划
 file:workout.org
 
@@ -78,6 +79,11 @@ file:workout.org
 
 ** emacs UML
 *** TODO introduce UML to emacs 
+- [X] image solution
+
+
+** emacs coding snipts
+*** TODO create template for common language
 
 
 * self-improvement 
