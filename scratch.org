@@ -7,6 +7,7 @@
 * 短期目标
 
 ** leetcode programming 
+file:leetcode.org
 
 ** workout 
 
@@ -15,6 +16,7 @@
 ** reading
 daily reading progress 
 *** design pattern 
+file:designpattern.org
 
 *** programming pearls 
 
@@ -60,8 +62,6 @@ file:workout.org
 
 *** DONE org mode links 
     CLOSED: [2016-04-25 Mon 23:30]
-[[file:nodejs.org]]
-
 
 ** magit tutorial 
 *** DONE getting started 
@@ -76,6 +76,9 @@ file:workout.org
 
 *** TODO set environment in work environment 
 
+** emacs UML
+*** TODO introduce UML to emacs 
+
 
 * self-improvement 
 ** TODO code refactoring tutorial
@@ -83,8 +86,6 @@ file:refactor.org
 
 
 
-
-** leetcode algorithm 
 
 
 

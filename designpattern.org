@@ -5,11 +5,20 @@ in total we have 27 tutorials
 10 min each 
 learn 20 maybe 
 
-* outline [2/3]
+* outline [3/4]
 - [X] review
 - [X] strategy
-- [ ] observor
-
+- [X] observor
+- [ ] factory
+- [ ] abstruct
+- [ ] singleton
+- [ ] builder
+- [ ] prototype
+- [ ] decorator
+- [ ] bridge 
+- [ ] template
+- [ ] iterator 
+- [ ] Facade
 
 
 
@@ -84,6 +93,111 @@ sparky.tryToFly();
 
 
 * observor 
+** when to use observer pattern 
+- loose coupling
+  - subject doesn't need to know anything about subscribers
+
+- subject may send updates that don't matter to subscriber
+
+** sample 
+#+BEGIN_SRC java
+public interface Subject{
+    public void register(Observer o);
+    public void unregister(Observer o);
+    public void notifyObserver();
+
+    
+    private double ibmprice;
+}
+
+public interface Observer{
+    public void update(double ibmprice);
+}
+
+// subject 
+public class StockGrabber implements Subject {
+    public StockGrabber{
+        observers = new ArrayList<Observer>();
+    }
+    
+    public void register(Observer o) {  // add observer 
+        observers.add(o);
+    }
+
+    public void notifyObserver() { // notify all observers 
+       for(Observer o : observers) {
+           o.update(ibmprice);
+       }
+    }
+
+    public void setIbmPrice(doulbe newp) {
+       this.ibmprice = newp;
+       notifyObserver();
+    }
+
+}
+
+//observer
+public class StockObserver implments Observer {
+    public StockObserver(Subject stockGrabber) { // pass in a subject
+       stockGrabber.register(this);
+    }
+
+
+
+    private static int observerIDTracker = 0;
+    private Subject stockGrabber;
+
+
+    public void update(double ibmprice) {
+       this.ibmprice = ibmprice;
+
+    }
+
+}
+
+
+// use multi-thread subjects 
+public class GetTheStock implments Runnable {
+   private Subject stockGrabber;  // subject 
+
+   public GetTheStock(Subject sub, int newStratTime){
+      this.stockGrabber = sub;
+  
+   }
+     
+   public void run() { // updating this subject 
+       for (int i = 0; i < 20 ; ++i ) {
+           (StockGrabber)stockGrabber.setIBMPrice(random())  // cast to StockGrabber
+       }
+   }
+}
+
+
+
+public static void main() {
+
+  StockGrabber stockgrabber = new StockGrabber(); // subject
+
+  StockObserver o1 = new StockObserver(stockgrabber);
+  StockObserver o2 = new StockObserver(stockgrabber);
+  
+  stockgrabber.setIbmprice(1111); //  subject change price send notification
+
+  stockgrabber.unregister(o2); // un-register 
+
+  // we can have multiple subjects. 
+  // run multi-thread. here are multiple subjects 
+  // every t
+  Runnable t1 = new GetTheStock(stockgrabber, 2);
+  Runnable t2 = new GetTheStock(stockgrabber, 2);
+  
+  new Thread(t1).start();
+  new Thread(t2).start();
+}
+ 
+
+#+END_SRC
 
 
 
@@ -92,5 +206,9 @@ sparky.tryToFly();
 
 
 
+
+
+* factory 
+** TODO use cpp rewrite the code 
 
 
