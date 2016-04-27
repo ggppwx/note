@@ -72,6 +72,9 @@ file:workout.org
     CLOSED: [2016-04-26 Tue 13:58]
 
 
+*** TODO table mode for emacs 
+
+
 ** emacs lint 
 *** TODO flycheck setting 
 
