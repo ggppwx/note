@@ -12,7 +12,7 @@
 *** simple algorithm
 problem: find the max subvector of a vector  
 - simple solution O(n^3) solution
-  get sum for all sub-vector 
+    get sum for all sub-vector 
 **** quadratic algorithms, 2 solutions
 #+BEGIN_SRC c++
 // solution 1
