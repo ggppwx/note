@@ -8,10 +8,77 @@
 ** chap 7
 
 ** TODO chap 8 
+*** simple algorithm
+problem: find the max subvector of a vector  
+- simple solution O(n^3) solution
+- quadratic algorithms, 2 solutions
+#+BEGIN_SRC c++
+// solution 1
+int maxsofar; 
+for (int i = 0; i < n; ++i) {
+  sum = 0; 
+  for(int j = i+1; j < n; ++j){
+    sum += x[j];
+    maxsofar = sum > maxsofar ? sum : maxsofar;
+  }
+  
+}
 
+// solution 2
+int sumfrom[];
+for (int i = 0; i < n; ++i){
+  sumfrom[i] = n[i] + sumfrom[i-1];
+}
+int maxsofar;
+for(int i = 0; i < n; ++i ){
+  for (int j = i + 1; j < n; ++j) {
+    sum = sumfrom[j] - sumfrom[i-1];
+    maxsofar = sum > maxsofar ? sum : maxsofar;
+  }
+}
+#+END_SRC 
 
+- divide & conquer   
+to solve a prolem with size n, solve the 2 sub problems with size n/2
+T(n) = 2T(n/2) + O(n)   ==> nlog(n)
+#+BEGIN_SRC c++
+int maxsum(int l; int r){
+   // exit condition 
+   if (l> r) return 0; 
+   if (l == r ) return n[l] > 0 ? n[l] : 0; 
 
+   int m = (l + r)/2;
 
+   // lmax from m towards left
+   // rmax from m towards right 
+   return max(maxsum(0, m), maxsum(m,r), lmax + rmax);
+}
+#+END_SRC
+
+- scanning (linear ) 
+#+BEGIN_SRC c++
+for (int i = 0; i< n ; ++i){
+  // should we include i ? when adding i, if the sub vector > 0
+  maxextendinghere = max(maxextendinghere + n[i], 0); 
+  maxsofar = max(maxsofar, maxextendinghere); // new max so far
+}
+
+// similar to 
+int maxsofar = 0
+for (int i = 0; i < n ; ) {
+    int j = i +1; 
+    while(extending > 0 && j < n){
+      extending += n[j];
+      maxsofar = max(maxsofar, extending);
+      j ++;
+    }
+    i = j;
+}
+
+#+END_SRC
+
+- when comparing algorithm with diff time complexity, the constant doesn't matter a lot
+- original problem is for 2 demension
 
 ** TODO chap 9 
 ** TODO chap 10
