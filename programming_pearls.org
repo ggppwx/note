@@ -3,14 +3,16 @@
 * DONE Part 1 
 
 
-* TODO Part 2 [0%]
+* TODO Part 2 [33%]
 ** chap 6
 ** chap 7
 
-** TODO chap 8 
+** DONE chap 8 
+   CLOSED: [2016-04-27 Wed 23:57]
 *** simple algorithm
 problem: find the max subvector of a vector  
-**** simple solution O(n^3) solution
+- simple solution O(n^3) solution
+  get sum for all sub-vector 
 **** quadratic algorithms, 2 solutions
 #+BEGIN_SRC c++
 // solution 1

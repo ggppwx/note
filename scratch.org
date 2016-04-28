@@ -22,8 +22,8 @@ file:designpattern.org
 
 *** programming pearls 
 file:programming_pearls.org
-**** TODO read one chapter 
-     SCHEDULED: <2016-04-27 Wed>
+**** DONE read one chapter 
+     CLOSED: [2016-04-27 Wed 23:56] SCHEDULED: <2016-04-27 Wed>
 
 
 *** code complete 
