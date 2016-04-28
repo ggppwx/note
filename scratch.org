@@ -15,18 +15,29 @@
 
 ** reading
 daily reading progress 
-*** design pattern 
-file:designpattern.org
+*** design pattern [0/1]
+26 tutorials, 15 min each 
+file:designpattern.org 
 **** TODO read 1 chapter  
-
+**** TODO read 1 chapter 
+**** TODO read 1 chapter 
 
 *** programming pearls 
-file:programming_pearls.org
+8 chapters left 
+file:programming_pearls.org 
 **** DONE read one chapter 
      CLOSED: [2016-04-27 Wed 23:56] SCHEDULED: <2016-04-27 Wed>
-
-
+**** TODO read one chapter
+**** TODO read 1 chapter  
+**** TODO read 1 chapter 
+**** TODO read 1 chapter
+**** TODO read 1 chapter  
+**** TODO read 1 chapter 
+**** TODO read 1 chapter
+     
 *** code complete 
+
+*** effective javascript 
 
 
 * spiritual life 
@@ -56,16 +67,16 @@ file:programming_pearls.org
 ** learn lisp language
 
 ** org mode 
-*** TODO tasks
+*** TODO get familar with org mode 
 - [X] adding timestamps to closed todo 
 - [X] adding links 
-- [ ] 
+- [X] adding bookmarks 
 
 *** DONE org mode links 
     CLOSED: [2016-04-25 Mon 23:30]
     
-*** TODO table mode for emacs 
-
+*** DONE table mode for emacs 
+    CLOSED: [2016-04-28 Thu 18:04]
 
 ** magit tutorial 
 *** DONE getting started 
@@ -73,9 +84,6 @@ file:programming_pearls.org
 
 *** DONE setting git on virtual machine 
     CLOSED: [2016-04-26 Tue 13:58]
-
-
-
 
 
 ** emacs lint 
@@ -90,6 +98,24 @@ file:programming_pearls.org
 
 ** emacs coding snipts
 *** TODO create template for common language
+
+** emacs shortcut 
+*** TODO install emacs shotcut 
+*** TODO install emacs window management 
+
+** emacs helm mode 
+*** DONE regular helm mode 
+    CLOSED: [2016-04-28 Thu 17:31]
+
+
+** emacs mode cheetsheet
+| <11> mode name | <20> link            |
+|----------------+----------------------|
+| helm           |                      |
+| org mode       |                      |
+| magit          |                      |
+
+
 
 
 * self-improvement 

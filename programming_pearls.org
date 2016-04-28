@@ -105,6 +105,8 @@ int findMaxOfMatrix(vector<vector<int> > matrix ){
 
 
 
+** TODO chap 9 
+** TODO chap 10
 
 * TODO Part 3 [0%]  
 ** TODO chap 11
