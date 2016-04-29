@@ -22,12 +22,13 @@ file:designpattern.org
 **** TODO read 1 chapter 
 **** TODO read 1 chapter 
 
-*** programming pearls 
+*** programming pearls [2/8]
 8 chapters left 
 file:programming_pearls.org 
 **** DONE read one chapter 
      CLOSED: [2016-04-27 Wed 23:56] SCHEDULED: <2016-04-27 Wed>
-**** TODO read one chapter
+**** DONE read one chapter
+     CLOSED: [2016-04-28 Thu 23:59]
 **** TODO read 1 chapter  
 **** TODO read 1 chapter 
 **** TODO read 1 chapter
@@ -65,13 +66,15 @@ file:programming_pearls.org
 
 * emacs learning                                                       :move:
 ** learn lisp language
+https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
 *** TODO emacs sync online ? 
 
 ** org mode 
-*** TODO get familar with org mode 
+*** TODO get familar with org mode [3/4]
 - [X] adding timestamps to closed todo 
 - [X] adding links 
 - [X] adding bookmarks 
+- [ ] todo management 
 
 *** DONE org mode links 
     CLOSED: [2016-04-25 Mon 23:30]
@@ -103,7 +106,7 @@ file:programming_pearls.org
 ** emacs shortcut 
 *** TODO install emacs shotcut 
 *** TODO install emacs window management 
-
+    
 ** emacs helm mode 
 *** DONE regular helm mode 
     CLOSED: [2016-04-28 Thu 17:31]

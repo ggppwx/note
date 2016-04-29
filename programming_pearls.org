@@ -3,7 +3,7 @@
 * DONE Part 1 
 
 
-* TODO Part 2 [33%]
+* TODO Part 2 [40%]
 ** chap 6
 ** chap 7
 
@@ -97,10 +97,48 @@ int findMaxOfMatrix(vector<vector<int> > matrix ){
 // up, down(calculated by kadane). 
 
 
-}
+
 
 #+END_SRC
-** TODO chap 9 
+** DONE chap 9 
+   CLOSED: [2016-04-28 Thu 23:58]
+*** typical problem 
+- a memory allocator, malloc is hit too many times
+  - caching, data access most should be cheapest to access 
+  - profiling to identify the hot spot 
+
+- first aid sampler
+  - replace the % operator 
+  - functions, macros, inline code    
+    #+BEGIN_SRC c++
+       #define max(a, b) ((a) > (b)) ? (a) : (b) // old c program 
+    #+END_SRC
+    - macro not always work
+    - inline in c++ is good 
+  - reduce the test in for loop
+    #+BEGIN_SRC c++
+      x[n] = t;
+      for(int i=0; ;++i) {
+        if (x[i] == t ) break;
+      }
+    #+END_SRC
+  - choose the suitable data structure. 
+- binary search tuning 
+*** principles 
+- role of efficiency
+- measure of tools 
+  - when efficiency is a problem, first step is to profile the system
+- sometimes speedups are slowdowns
+- key words
+  + exploit algebranic identity
+  + caching
+  + macro, inline
+  + combine test
+  + loop unrolling
+  + data structure augumentation
+ 
+
+
 ** TODO chap 10
 
 
