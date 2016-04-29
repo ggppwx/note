@@ -11,24 +11,23 @@ here I will list the main framework of my org documents.
 * project scratch 
 here are several projects we need to focus on 
 
-** TODO create a website based on github 
+** DONE create a website based on github 
+   CLOSED: [2016-04-29 Fri 00:19]
    - [X] create the framework 
    - [X] create a test sample 
    - [ ] create the content 
  
-** TODO learn using markdown language
+** DONE learn using markdown language
+   CLOSED: [2016-04-29 Fri 00:19]
    - [X] markdown basic
    - [ ] markdown on emacs 
    - [ ] markdown on org mode
    - [ ] org mode export to github pages 
 
 
-** TODO move the content to online server [100%]
+** DONE move the content to online server [100%]
+   CLOSED: [2016-04-29 Fri 00:19]
    - [X] find a online server 
-   
-
-** TODO create a auto-picker 
-
 
 ** TODO adding a random picker 
 *** TODO supporting tags 

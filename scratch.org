@@ -8,6 +8,8 @@
 * 短期目标
 ** leetcode programming 
 [[file:leetcode.org]]
+*** TODO leetcode review 
+    SCHEDULED: <2016-05-01 Sun>
 
 ** workout 
 [[file:workout.org]]
@@ -68,6 +70,7 @@ file:programming_pearls.org
 ** learn lisp language
 https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
 *** TODO emacs sync online ? 
+
 
 ** org mode 
 *** TODO get familar with org mode [3/4]
