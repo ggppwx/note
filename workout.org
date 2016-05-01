@@ -12,11 +12,13 @@
   - [X] [2016-04-20 Wed]
   - [X] <2016-04-24 Sun>
 
+*** TODO running 
+    SCHEDULED: <2016-04-30 Sat>
+
 - [-] week 2, 2 days + 1 gym 
   - [X] <2016-04-25>
-  - [ ] running  
+  - [ ]
   - [ ] gym 
-
 
 - [ ] week 3, 3 days + gym 
 

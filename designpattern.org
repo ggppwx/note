@@ -68,14 +68,19 @@ public String fly(){
 }
 #+END_SRC
 
-
 ** composition 
 + can change without side effects 
++ Animal can be a abstruct class. abstruct class can have concrete method
 #+BEGIN_SRC java
 public class Animal {
   public Fly flyingType;  //setter method somewhere 
   
-  public String tryToFly(){
+  /* no need to assign, if we don't instanatiate this 
+  public Animal(){
+    flyingType = new ItFly(); // default
+  } 
+  */ 
+  public String tryToFly(){ 
     return flyingType.fly();
   }
 }
@@ -212,7 +217,131 @@ public static void main() {
 
 
 
-* factory 
-** TODO use cpp rewrite the code 
+* DONE factory 
+  CLOSED: [2016-04-30 Sat 23:18]
+** DONE use cpp rewrite the code 
+   CLOSED: [2016-04-30 Sat 23:18] SCHEDULED: <2016-04-30 Sat>
+*** what is factory pattern
+[[file:factory.jpg]]
+*** when to use
+- when you don't know ahead what class you need 
+- when all potenial classes are in same subclass hierarchy
+- centralize class selection 
+- encapsulate object creation
+
+*** example 
+#+BEGIN_SRC c++
+
+class EnemyShip{
+public:
+  void followHeroShip();
+  void displayShip();
+  void enemyShipShoot();
+
+};
+
+class UFO : public EnemyShip {
+};
+
+class UFOBoss : public UFO{
+};
+
+class Rocket : public EnemyShip {
+};
+
+class EnemyShipFactory {
+  static EnemyShip* makeEnemyShip(std::string type) {
+    if (type == "UFO") {
+      return new UFO();
+    }
+  }
+
+};
 
 
+int main(){
+   /* bad stuff
+   if (userInput == "UFO") {     
+   } else {
+   } 
+   */   
+   EnemyShip* enemy = shipFactory::makeEnemyShip("UFO");
+
+}
+#+END_SRC
+
+
+*** abstruct factory 
+like a factory but everything is encapsulated
+- create families of related objects 
+- polymorphism
++ *in a nutshell, abstruct factory pattern creates different kinds of factory,
+  it makes the factory abstruct*
++ *normal factory just create abstruct object*
+#+BEGIN_SRC c++
+
+class EnemyShipBuilding{  // abstruct class/ virtual class
+  protected:
+  virtual EnemyShip* makeEnemyShip(std:string type) = 0;
+
+  public: 
+  EnemyShip* orderShip(std::string type){
+    return makeEnemyShip(type);
+  }
+
+};
+
+class EnemyShipBuilding : public EnemyShipBuilding {
+  EnemyShip* makeEnemyShip(std:string type) {
+    if(type == "UFO") { // create different factory instead of object
+       EnemyShipFactory *f1 = new UFOEnemyShipFactory();  // create factory
+       return new UFO(f1);
+    }      
+  }
+};
+
+// abstruct factory 
+class EnemyShipFactory{
+   virtual Weapon* addGun();
+};
+
+// different factory for diffrent ship
+class UFOEnemyShipFactory : public EnemyShipFactory{
+  Weapon*  addGun(){
+    return new SmallGun();
+  }
+
+};
+
+class BossEnemyShipFactory : public EnemyShipFactory{
+  Weapon*  addGun(){
+    return new BigGun();
+  }
+};
+
+// abstruct ship
+class EnemyShip{ 
+  // same as above 
+  virtual void makeShip() = 0;
+}
+
+class UFO : public EnemyShip {
+  UFO(EnemyShipFactory* f) {
+    factory = f;
+  }
+  void makeShip(){
+    weapon = f.addGun(); //use small gun
+  }
+};
+
+
+int main(){
+  EnemyShipBuilding* makeUFO = new UFOShipBuilding(); // create a builder
+  EnemyShip* ship1 = makeUFO -> orderShip("UFO");
+  EnemyShip* ship2 = makeUFO -> orderShip("BOSS");
+}
+
+
+
+
+#+END_SRC

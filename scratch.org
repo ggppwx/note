@@ -21,6 +21,7 @@ daily reading progress
 26 tutorials, 15 min each 
 file:designpattern.org 
 **** TODO read 1 chapter  
+     SCHEDULED: <2016-04-30 Sat>
 **** TODO read 1 chapter 
 **** TODO read 1 chapter 
 
@@ -74,16 +75,19 @@ https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
 
 ** org mode 
 *** TODO get familar with org mode [3/4]
+http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 - [X] adding timestamps to closed todo 
 - [X] adding links 
 - [X] adding bookmarks 
-- [ ] todo management 
+- [ ] todo management  
 
-*** DONE org mode links 
+*** Done org mode links 
     CLOSED: [2016-04-25 Mon 23:30]
     
 *** DONE table mode for emacs 
     CLOSED: [2016-04-28 Thu 18:04]
+*** TODO create diary
+*** TODO capture template 
 
 ** magit tutorial 
 *** DONE getting started 
@@ -97,7 +101,7 @@ https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
 *** TODO flycheck setting 
 
 *** TODO set environment in work environment 
-
+    
 ** emacs UML
 *** TODO introduce UML to emacs 
 - [X] image solution
