@@ -17,11 +17,11 @@
 
 ** reading
 daily reading progress 
-*** design pattern [0/1]
+*** design pattern [1/3]
 26 tutorials, 15 min each 
 file:designpattern.org 
-**** TODO read 1 chapter  
-     SCHEDULED: <2016-04-30 Sat>
+**** DONE read 1 chapter  
+     CLOSED: [2016-04-30 Sat 23:26] SCHEDULED: <2016-04-30 Sat>
 **** TODO read 1 chapter 
 **** TODO read 1 chapter 
 
