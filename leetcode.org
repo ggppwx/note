@@ -53,4 +53,55 @@ this is a DP problem. recursive solution is better.
 
 
 * realize the conner case 
+
+
+* 107 Binary Tree Level Order Traversal 
+traverse each level, save in vector 
+
+* 118 pascal's triangle
+#+BEGIN_SRC c++
+for (int i = 0; i< numRows;++i) {
+  for (int j = 0; j < i; ++j) {} // this should be the level number ! not numRows
+}
+#+END_SRC
+
+* 102 Binary Tree Level Order Traversal 
+unlike 107, it's top-down traverse. 
+we could get left , right child, then merge 
+
+
+* 172 Factorial Trailing Zeroes  
+if it has 5, it will have trailing 0. 
++ 5, 10, 15 ..
++ 25, 50, .... (has 2 '0' )
++ 125, 250, ....
+#+BEGIN_SRC c++
+    int trailingZeroes(int n) {
+         if ( n<0 ) return -1;
+        int sum = 0;
+        for (long i=5; i <= n ; i= i*5) { // why should i be long 
+            sum += n / i;
+        }        
+        return sum;
+    }
+#+END_SRC
+
+* 9 Palindrome Number
+sum += sum * 10 + remainder 
+----> sum = sum + sum * 10 + remainder 
  
+* valid sukoku
+to validate a square 
+#+BEGIN_SRC c++
+for (int k1 = 0; k1 < 3; ++k1) {
+for (int k2 = 0; k2 < 3; ++k2) {
+  // for each box
+  for (int i =0; i < 3; ++i)
+    for(int j=0; j < 3; ++j){
+       int newi = i + k1 * 3; // the real coordinate
+       int newj = j + k2 * 3;
+     }
+
+}
+}
+#+END_SRC
