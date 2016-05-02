@@ -79,7 +79,7 @@ https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
 *** TODO get familar with org mode [5/5]
     - Note taken on [2016-05-02 Mon 15:50] \\
       including regular org mode operations
-    CLOCK: [2016-05-02 Mon 15:38]
+    CLOCK: [2016-05-02 Mon 15:38]--[2016-05-02 Mon 16:43] =>  1:05
     CLOCK: [2016-05-02 Mon 15:35]--[2016-05-02 Mon 15:36] =>  0:01
 http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 - [X] adding timestamps to closed todo 
