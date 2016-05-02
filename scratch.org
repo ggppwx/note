@@ -74,12 +74,14 @@ https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
 
 
 ** org mode 
-*** TODO get familar with org mode [3/4]
+*** TODO get familar with org mode [5/5]
 http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 - [X] adding timestamps to closed todo 
 - [X] adding links 
 - [X] adding bookmarks 
-- [ ] todo management  
+- [X] todo management  
+- [X] agenda view
+- [ ] 
 
 *** Done org mode links 
     CLOSED: [2016-04-25 Mon 23:30]

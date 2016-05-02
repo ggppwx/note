@@ -11,16 +11,17 @@
   outdoors free run, stop at each trafic light 
   - [X] [2016-04-20 Wed]
   - [X] <2016-04-24 Sun>
-
-*** TODO running 
-    SCHEDULED: <2016-04-30 Sat>
-
 - [-] week 2, 2 days + 1 gym 
   - [X] <2016-04-25>
-  - [ ]
+  - [X] 4 min hit <2016-05-01>
   - [ ] gym 
 
 - [ ] week 3, 3 days + gym 
+
+*** TODO running 
+    DEADLINE: <2016-05-04 Wed> SCHEDULED: <2016-05-02 Mon>
+20 min running if weather is good 
+
 
 
 * muscle training 
