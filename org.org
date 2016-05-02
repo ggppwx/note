@@ -31,6 +31,7 @@ here are several projects we need to focus on
 
 ** TODO adding a random picker 
 *** TODO supporting tags 
+    DEADLINE: <2016-05-08 Sun> SCHEDULED: <2016-05-02 Mon>
 supporting different tags for each events, random event based on tags
 
 
