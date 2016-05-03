@@ -105,3 +105,17 @@ for (int k2 = 0; k2 < 3; ++k2) {
 }
 }
 #+END_SRC
+
+* 88 merge sorted array
+- in-space merge. 
+- 2 exit condition
+#+BEGIN_SRC c++
+for (i = 0, j =0 ; i < m || j < n; ){
+    if (i == m ){ // i reach m,  j < n 
+      continue;  // don't forget skip the loop
+    }
+    if ( j == n){ // j == n, i < m
+      continue;
+    }
+}
+#+END_SRC c++

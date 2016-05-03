@@ -72,8 +72,9 @@ file:programming_pearls.org
 * emacs learning                                                       :move:
 ** learn lisp language
 https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
-*** TODO emacs sync online ? 
-
+*** DONE emacs sync online ? 
+    CLOSED: [2016-05-02 Mon 22:03]
+auto sync 
 
 ** org mode 
 *** TODO get familar with org mode [6/7]
@@ -96,6 +97,9 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 *** DONE table mode for emacs 
     CLOSED: [2016-04-28 Thu 18:04]
 *** TODO create diary
+- [X] create a journal
+- [ ] create a diary template
+
 *** TODO capture template 
 
 ** magit tutorial 
