@@ -119,3 +119,11 @@ for (i = 0, j =0 ; i < m || j < n; ){
     }
 }
 #+END_SRC c++
+
+
+* 223 rectangle area
+- calculate the overlap.
+- draw picture, discuss case by case 
+  - no overlap
+  - overlap. x = ( C > G ? G : C ) - ( A > E ? A : E  )
+ 
