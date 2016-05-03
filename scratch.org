@@ -96,11 +96,13 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
     
 *** DONE table mode for emacs 
     CLOSED: [2016-04-28 Thu 18:04]
-*** TODO create diary
+*** DONE create diary
+    CLOSED: [2016-05-03 Tue 11:48]
 - [X] create a journal
 - [ ] create a diary template
 
-*** TODO capture template 
+*** DONE capture template 
+    CLOSED: [2016-05-03 Tue 11:48]
 
 ** magit tutorial 
 *** DONE getting started 
@@ -149,7 +151,4 @@ file:refactor.org
 
 
 
-* Tasks
-** TODO learn how to capture
-   [2016-05-02 Mon]
 

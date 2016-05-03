@@ -31,9 +31,19 @@ here are several projects we need to focus on
 
 ** TODO adding a random picker 
 *** TODO supporting tags 
-    DEADLINE: <2016-05-08 Sun> SCHEDULED: <2016-05-02 Mon>
-supporting different tags for each events, random event based on tags
+    DEADLINE: <2016-05-08 Sun> SCHEDULED: <2016-05-03 Tue>
+- [ ] filter 
+- [ ] add tag, display tag in events
+- [ ] random events based on tag 
 
+supporting different tags for each events, random event based on tags
+- [ ] progress 1
+- [ ] progress 2 
+
+** TODO adding a countdown timmer
+   SCHEDULED: <2016-05-07 Sat>
+
+** TODO enhence the task sharing system. 
 
 
 * online tutorial 
@@ -42,6 +52,10 @@ supporting different tags for each events, random event based on tags
    - [ ] week 2
    - [ ] week 3
    - [ ] week 4 
+
+
+
+
 
 
 
@@ -55,6 +69,8 @@ file:programming_pearls.org
 
 
 
+
+
 * misc 
 ** TODO build a home theater 
 
@@ -64,8 +80,10 @@ file:programming_pearls.org
 
 
 
-* TODO leetcode 
-** TODO easy problems	[40%] 					  :interview:
+
+
+* TODO leetcode                                                    :leetcode:
+** TODO easy problems	[40%]                                     :interview:
    DEADLINE: <2016-05-16 Mon>
 - 50 problems in total 
 - do review each week. 
@@ -79,6 +97,7 @@ file:leetcode.org
 
 
 ** TODO medium 
+   DEADLINE: <2016-09-10 Sat>
 - most important problems 
 - 132 in total. 
 - appro 80 days. 
@@ -86,10 +105,8 @@ file:leetcode.org
 
 
 
-
 ** TODO hard
-   SCHEDULED: <2016-10-01 Sat>
  
 
 
-
+   
