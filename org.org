@@ -91,8 +91,13 @@ file:programming_pearls.org
 *** DONE leetcode 3 problems 
     CLOSED: [2016-05-03 Tue 21:26] SCHEDULED: <2016-05-03 Tue>
 *** TODO leetcode 3 problems 
+    SCHEDULED: <2016-05-04 Wed>
 *** TODO leetcode 3 problems 
-*** TODO leetcode 3 problems 
+*** TODO leetcode 3 problems
+*** TODO 3 problems 
+*** TODO 3 problems 
+*** TODO 3 problems 
+*** TODO 3 problems 
 file:leetcode.org
 
 

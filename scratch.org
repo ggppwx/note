@@ -7,9 +7,8 @@
   
 * 短期目标
 ** leetcode programming 
+[[file:org.org::*TODO leetcode]]
 [[file:leetcode.org]]
-*** DONE leetcode review 
-    CLOSED: [2016-05-01 Sun 22:29] SCHEDULED: <2016-05-01 Sun>
 
 ** workout 
 [[file:workout.org]]
