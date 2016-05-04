@@ -18,8 +18,8 @@
 
 - [ ] week 3, 3 days + gym 
 
-*** TODO running 
-    DEADLINE: <2016-05-04 Wed> SCHEDULED: <2016-05-02 Mon>
+*** DONE running 
+    CLOSED: [2016-05-03 Tue 23:00] DEADLINE: <2016-05-04 Wed> SCHEDULED: <2016-05-02 Mon>
 20 min running if weather is good 
 
 

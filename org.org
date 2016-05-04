@@ -83,13 +83,13 @@ file:programming_pearls.org
 
 
 * TODO leetcode                                                    :leetcode:
-** TODO easy problems	[40%]                                     :interview:
+** TODO easy problems	[25%] 					  :interview:
    DEADLINE: <2016-05-16 Mon>
 - 50 problems in total 
 - do review each week. 
 - [X] first 10  
-*** TODO leetcode 3 problems 
-    SCHEDULED: <2016-05-03 Tue>
+*** DONE leetcode 3 problems 
+    CLOSED: [2016-05-03 Tue 21:26] SCHEDULED: <2016-05-03 Tue>
 *** TODO leetcode 3 problems 
 *** TODO leetcode 3 problems 
 *** TODO leetcode 3 problems 
