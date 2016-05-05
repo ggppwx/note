@@ -11,6 +11,7 @@ function git-pull
 {
     echo "git pull ......"
     cd $DIR
+    git stash
     git pull origin master
     exit
 }
