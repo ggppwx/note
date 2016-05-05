@@ -16,13 +16,13 @@
 
 ** reading
 daily reading progress 
-*** design pattern [1/3]
+*** design pattern [2/3]
 26 tutorials, 15 min each 
 file:designpattern.org 
 **** DONE read 1 chapter  
-     CLOSED: [2016-04-30 Sat 23:26] SCHEDULED: <2016-04-30 Sat>
-**** TODO read 1 chapter 
-**** TODO read 1 chapter 
+     CLOSED: [2016-05-01 Wed 22:24] SCHEDULED: <2016-04-30 Sat>
+**** TODO read 1 chapetr 
+     SCHEDULED: <2016-05-05 Thu .+3d>
 
 *** programming pearls [2/8]
 8 chapters left 
@@ -32,16 +32,13 @@ file:programming_pearls.org
 **** DONE read one chapter
      CLOSED: [2016-04-28 Thu 23:59]
 **** TODO read 1 chapter  
-**** TODO read 1 chapter 
-**** TODO read 1 chapter
-**** TODO read 1 chapter  
-**** TODO read 1 chapter 
-**** TODO read 1 chapter
+     SCHEDULED: <2016-05-07 Sat ++1w>
+
      
 *** code complete 
 
 *** effective javascript 
-
+    
 
 * spiritual life 
 

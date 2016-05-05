@@ -33,7 +33,7 @@ here are several projects we need to focus on
 *** TODO supporting tags 
     DEADLINE: <2016-05-08 Sun> SCHEDULED: <2016-05-03 Tue>
 - [ ] filter 
-- [ ] add tag, display tag in events
+- [X] add tag, display tag in events
 - [ ] random events based on tag 
 
 supporting different tags for each events, random event based on tags
@@ -82,32 +82,27 @@ file:programming_pearls.org
 
 
 
-* TODO leetcode                                                    :leetcode:
+* leetcode 							   :leetcode:
+file:leetcode.org
 ** TODO easy problems	[25%]                                     :interview:
    DEADLINE: <2016-05-16 Mon>
 - 50 problems in total 
 - do review each week. 
-- [X] first 10  
+trainning focus:
+- no compiling error
+
 *** DONE leetcode 3 problems 
     CLOSED: [2016-05-03 Tue 21:26] SCHEDULED: <2016-05-03 Tue>
 *** DONE leetcode 3 problems 
     CLOSED: [2016-05-04 Wed 20:16] SCHEDULED: <2016-05-04 Wed>
 *** TODO leetcode 3 problems 
-*** TODO leetcode 3 problems
-*** TODO 3 problems 
-*** TODO 3 problems 
-*** TODO 3 problems 
-*** TODO 3 problems 
-file:leetcode.org
-
+    SCHEDULED: <2016-05-05 Thu +2d>
 
 ** TODO medium 
    DEADLINE: <2016-09-10 Sat>
 - most important problems 
 - 132 in total. 
 - appro 80 days. 
-
-
 
 
 ** TODO hard
