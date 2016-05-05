@@ -7,7 +7,7 @@
   
 * 短期目标
 ** leetcode programming 
-[[file:org.org::*TODO leetcode]]
+[[file:org.org::*leetcode]]
 [[file:leetcode.org]]
 
 ** workout 
