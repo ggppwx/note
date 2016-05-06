@@ -84,7 +84,7 @@ file:programming_pearls.org
 
 * leetcode 							   :leetcode:
 file:leetcode.org
-** TODO easy problems	[25%]                                     :interview:
+** TODO easy problems	[66%]                                     :interview:
    DEADLINE: <2016-05-16 Mon>
 - 50 problems in total 
 - do review each week. 
@@ -96,7 +96,11 @@ trainning focus:
 *** DONE leetcode 3 problems 
     CLOSED: [2016-05-04 Wed 20:16] SCHEDULED: <2016-05-04 Wed>
 *** TODO leetcode 3 problems 
-    SCHEDULED: <2016-05-05 Thu +2d>
+    SCHEDULED: <2016-05-07 Sat +2d>
+    - State "DONE"       from "TODO"       [2016-05-05 Thu 19:49]
+    :PROPERTIES:
+    :LAST_REPEAT: [2016-05-05 Thu 19:49]
+    :END:
 
 ** TODO medium 
    DEADLINE: <2016-09-10 Sat>
