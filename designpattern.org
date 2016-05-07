@@ -345,3 +345,79 @@ int main(){
 
 
 #+END_SRC
+
+
+
+* DONE singleton
+  CLOSED: [2016-05-06 Fri 17:51]
+** when 
+- it's used when you want to eliminate the option of 
+instantiating more than one object
+
+#+BEGIN_SRC c++
+
+class Singleton{
+private:
+static Singleton *instance = NULL;
+Singleton(){} // disable public constructor
+public:
+static Singleton* getInstance(){
+  if (instance == NULL ) {
+    instance = new Singleton();
+  }
+  return instance;
+}
+}
+
+#+END_SRC
+
+** threaded situtation
+
+#+BEGIN_SRC java
+public static void main(){
+  Runnable getTiles = new GetTheTiles();
+  Runnable getTiles1 = new GetTheTiles();
+
+  new Thread(getTiles).start();
+  new Thread(getTiles1).start();
+}
+
+public class GetTheTiles implements Runnable {
+  public void run(){
+    Singleton newI = Singleton.getInstance();
+    System.out.printlin("instance id:" + System.identityHashCode(newI)); // not consistant in threads
+    newI.getTiles(7);
+  }
+}
+
+public class Singleton{
+  private Singleton(){}
+  private static Singleton instance = null;
+  public static synchronized Singleton getInstance(){ // it checks the tread and wait, only 1 thread running, 
+  // this is slow 
+    ...... 
+  }
+}
+
+public class Singleton{
+  public static Singleton getInstance(){ // not make the whole function syncronized
+    // don't need to consider multi thread if the first instance is already created.
+    if (instance == null) {
+      // only sync when the object is created
+      synchronized(Singleton.class) {
+        if ( instance == null ) {
+          instance = new Singleton(); // this should be atomic: no access at the same time 
+        }
+      }
+    }
+
+    return instance;
+  }
+}
+
+#+END_SRC
+
+
+
+
+* TODO builder
