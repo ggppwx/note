@@ -142,7 +142,7 @@ min = INT_MAX; a constant value
 - any number = i * [1 - x ] is not prime
 - use array to solve dp problem. 
 #+BEGIN_SRC c++
-for(int i = 2 ; i <= (int)sqrt(n) ; i++ ){  // if i > sqrt(n), situation already covered by i 
+for(int i = 2 ; i <= (int)sqrt(n) ; i++ ){  // if i > sqrt(n), situation already covered by i, prevous prime not work anymore 
    if (isPrime[i] == true) // only check possible prime
    for(int j = i + i; j < n; j += i){
       // j is not prime 
