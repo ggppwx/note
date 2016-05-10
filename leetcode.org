@@ -127,3 +127,26 @@ for (i = 0, j =0 ; i < m || j < n; ){
   - no overlap
   - overlap. x = ( C > G ? G : C ) - ( A > E ? A : E  )
  
+* 189 rotate array
+check the function. return vs pass by ref
+
+* 165 compare version number
+
+* 155 min stack
+don't forget to reset min 
+min = INT_MAX; a constant value
+
+* [#A] 204 count prime
+- the first solution exceeds the time limit 
+- use bottom-up solution 
+- any number = i * [1 - x ] is not prime
+- use array to solve dp problem. 
+#+BEGIN_SRC c++
+for(int i = 2 ; i <= (int)sqrt(n) ; i++ ){  // if i > sqrt(n), situation already covered by i 
+   if (isPrime[i] == true) // only check possible prime
+   for(int j = i + i; j < n; j += i){
+      // j is not prime 
+      isPrime[i] = false;
+   }
+}
+#+END_SRC

@@ -30,8 +30,8 @@ here are several projects we need to focus on
    - [X] find a online server 
 
 ** TODO adding a random picker 
-*** TODO supporting tags 
-    DEADLINE: <2016-05-08 Sun> SCHEDULED: <2016-05-03 Tue>
+*** DONE supporting tags 
+    CLOSED: [2016-05-09 Mon 12:09] DEADLINE: <2016-05-08 Sun> SCHEDULED: <2016-05-03 Tue>
 - [ ] filter 
 - [X] add tag, display tag in events
 - [ ] random events based on tag 
@@ -96,7 +96,7 @@ trainning focus:
 *** DONE leetcode 3 problems 
     CLOSED: [2016-05-04 Wed 20:16] SCHEDULED: <2016-05-04 Wed>
 *** TODO leetcode 3 problems 
-    SCHEDULED: <2016-05-07 Sat +2d>
+    SCHEDULED: <2016-05-07 Sat .+2d>
     - State "DONE"       from "TODO"       [2016-05-05 Thu 19:49]
     :PROPERTIES:
     :LAST_REPEAT: [2016-05-05 Thu 19:49]
