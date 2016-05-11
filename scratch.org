@@ -14,7 +14,7 @@
 [[file:workout.org]]
 
 
-** reading
+** reading                                                          :reading:
 daily reading progress 
 *** design pattern [1/2]
 26 tutorials, 15 min each 
@@ -22,10 +22,11 @@ file:designpattern.org
 **** DONE read 1 chapter  
      CLOSED: [2016-05-01 Wed 22:24] SCHEDULED: <2016-04-30 Sat>
 **** TODO read 1 chapetr 
-     SCHEDULED: <2016-05-09 Mon .+4d>
+     SCHEDULED: <2016-05-14 Sat .+4d>
+     - State "DONE"       from "TODO"       [2016-05-10 Tue 18:09]
      - State "DONE"       from "TODO"       [2016-05-06 Fri 17:51]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-05-06 Fri 17:51]
+     :LAST_REPEAT: [2016-05-10 Tue 18:09]
      :END:
 
 *** programming pearls [2/3]
@@ -149,10 +150,18 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 
 
 
+
+
 * self-improvement 
-** TODO code refactoring tutorial
+** TODO code refactoring tutorial                                  :worktime:
+   SCHEDULED: <2016-05-11 Wed ++1w>
 file:refactor.org
 
 
+
+
+
+* Productivity
+** TODO clean email 
 
 

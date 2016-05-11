@@ -5,13 +5,13 @@ in total we have 27 tutorials
 10 min each 
 learn 20 maybe 
 
-* outline [3/4]
+* outline [6/13]
 - [X] review
 - [X] strategy
 - [X] observor
-- [ ] factory
-- [ ] abstruct
-- [ ] singleton
+- [X] factory
+- [X] abstruct
+- [X] singleton
 - [ ] builder
 - [ ] prototype
 - [ ] decorator
@@ -420,4 +420,91 @@ public class Singleton{
 
 
 
-* TODO builder
+* DONE builder
+  CLOSED: [2016-05-10 Tue 18:09]
+
+** what & when
+- create objects made from bunch of other objects 
+- hid the creation parts 
+- only builder knows specs 
+
+#+BEGIN_SRC java
+// this is a pure interface
+public interface RobotPlan {
+  public void setRobotHead();
+  public void setRobotTorso();
+
+}
+public class Robot implements RobotPlan{
+  private String robotHead; // member
+  private String robotTorso;
+  public void setRobotHead(){ ... }
+  public void setRobotTorso(){ ... }
+}
+
+
+// build the robot
+// you need to create diff concrete builder for each type of pruduct
+public interface RobotBuilder{
+  public buildRobotHead();
+  ...
+  public getRobot();
+}
+public class OldRobotBuilder implements RobotBuilder{ // concrete builder
+  private Robot robot;
+  public OldRobotBuilder{
+    robot = new Robot();
+  }
+  public buildRobotHead() {
+    robot.setRobotHead();
+  }
+
+  public getRobot() { return robot; } //create the products. 
+}
+
+
+public class RobotEngineer{ //director. 
+  private RobotBuilder robotbuilder;
+
+  public RobotEngineer(RobotBuilder rb) {  robotbuilder = rb; }
+  
+  public void makeRobot(){ //encapsulate all creation functions
+    this.robotbuilder.buildRobotHead();
+    ....
+  }
+
+  public Robot getRobot() { return this.robotbuilder.getRobot(); }
+}
+
+
+// main 
+RobotBuilder orb = new OldRobotBuilder(); // pass to interface.
+RobotBuilder nrb = new NewRobotBuilder();
+RobotEngineer re = new RobotEngineer(orb);
+
+re.makeRobot(); 
+Robot r = re.getRobot();  // creation of robot is invisible
+
+#+END_SRC
+
+
+* TODO prototype
+
+
+
+* TODO decorator
+
+
+* TODO adapter
+
+* TODO bridge 
+
+
+* TODO template
+
+
+* TODO iterator 
+
+
+
+
