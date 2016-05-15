@@ -4,53 +4,32 @@
 * 长期目标 
 ** full-stack engineer 
 [[file:org.org::*project scratch]]
-  
+
+
 * 短期目标
-** leetcode programming 
-[[file:org.org::*leetcode]]
-[[file:leetcode.org]]
+** vacation list 
+*** pet project
+[[file:org.org::adding a random]] 
 
-** workout 
-[[file:workout.org]]
+*** leetcode programming 
+- complete the easy problems 
+- summary 
+- starting work on medium problems 
+
+*** working from office 
+- go to office early 
+- lunch break 
+- scrum meeting at night 
 
 
-** reading                                                          :reading:
-daily reading progress 
-*** design pattern [1/2]
-26 tutorials, 15 min each 
-file:designpattern.org 
-**** DONE read 1 chapter  
-     CLOSED: [2016-05-01 Wed 22:24] SCHEDULED: <2016-04-30 Sat>
-**** TODO read 1 chapetr 
-     SCHEDULED: <2016-05-14 Sat .+4d>
-     - State "DONE"       from "TODO"       [2016-05-10 Tue 18:09]
-     - State "DONE"       from "TODO"       [2016-05-06 Fri 17:51]
-     :PROPERTIES:
-     :LAST_REPEAT: [2016-05-10 Tue 18:09]
-     :END:
-
-*** programming pearls [2/3]
-8 chapters left 
-file:programming_pearls.org 
-**** DONE read one chapter 
-     CLOSED: [2016-04-27 Wed 23:56] SCHEDULED: <2016-04-27 Wed>
-**** DONE read one chapter
-     CLOSED: [2016-04-28 Thu 23:59]
-**** TODO read 1 chapter  
-     SCHEDULED: <2016-05-14 Sat ++1w>
-     - State "DONE"       from "TODO"       [2016-05-09 Mon 12:09]
-     :PROPERTIES:
-     :LAST_REPEAT: [2016-05-09 Mon 12:09]
-     :END:
-
-     
-*** code complete 
-
-*** effective javascript 
-    
+*** reading 
+- [ ] complete programming pearls 
+- [ ] other reading material follow agenda
 
 * spiritual life 
 
+* workout 
+[[file:workout.org]]
 
 
 * thoughts 
