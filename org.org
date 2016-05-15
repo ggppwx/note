@@ -29,12 +29,13 @@ here are several projects we need to focus on
    CLOSED: [2016-04-29 Fri 00:19]
    - [X] find a online server 
 
-** TODO adding a random picker 
+** DONE adding a random picker 
+   CLOSED: [2016-05-15 Sun 10:00]
 *** DONE supporting tags 
     CLOSED: [2016-05-09 Mon 12:09] DEADLINE: <2016-05-08 Sun> SCHEDULED: <2016-05-03 Tue>
-- [ ] filter 
+- [X] filter 
 - [X] add tag, display tag in events
-- [ ] random events based on tag 
+- [X] random events based on tag 
 
 supporting different tags for each events, random event based on tags
 - [ ] progress 1
@@ -42,8 +43,15 @@ supporting different tags for each events, random event based on tags
 
 ** TODO adding a countdown timmer
    SCHEDULED: <2016-05-07 Sat>
+- requirement
+  - portable component
+  - adding event name + dealine. 
+  - progress bar 
+  - integrate with tagging in the future
+   
+** TODO tagging systems for todo 
 
-** TODO enhence the task sharing system. 
+
 
 
 * online tutorial 
