@@ -133,7 +133,11 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 
 * self-improvement 
 ** TODO code refactoring tutorial                                  :worktime:
-   SCHEDULED: <2016-05-11 Wed ++1w>
+   SCHEDULED: <2016-05-18 Wed ++1w>
+   - State "DONE"       from "TODO"       [2016-05-17 Tue 03:50]
+   :PROPERTIES:
+   :LAST_REPEAT: [2016-05-17 Tue 03:50]
+   :END:
 file:refactor.org
 
 

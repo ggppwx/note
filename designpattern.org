@@ -489,7 +489,45 @@ Robot r = re.getRobot();  // creation of robot is invisible
 
 
 * TODO prototype
+- creating new objects by cloning other objects
+- reduce the needs to create multi subclasses
+- create cloneFactory
+- paying extremely care when overriding clone() method
+#+BEGIN_SRC java
 
+public interface Animal extends Cloneable { // not implement, it brings down all methods
+  public Animal makeCopy();
+}
+
+public class Sheep implements Animal {
+  public Sheep() {}
+  public Animal makeCopy() {
+     Sheep sheepObj = null;
+     try{
+     sheepObj = (Sheep)super.clone(); // only calls the parent 
+     }
+     return sheepObj;
+  }
+}
+
+
+public class CloneFactory {
+
+  public Animal getClone(Animal a) {
+    return a.makeCopy();
+  }
+
+}
+
+
+// main 
+
+CloneFactory animalMaker = new CloneFactory();
+
+Sheep s = new Sheep();
+Sheep cloneS = (Sheep)animalMaker.getClone(s); // call sheep makeClone
+// convert interface back to class, need convertion !
+#+END_SRC
 
 
 * TODO decorator

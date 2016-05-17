@@ -89,5 +89,32 @@ if ( avgDashTime() > 4 ) { ... }
 
 
 * Using variables 
+** explaining variable
+- save the condition to a variable
+- dont assign many diff value to a constant
+- dont assign value to the para passed to method 
+#+BEGIN_SRC java
+private int quantity;
+// a temp variable 
+final boolean over50Products = (quantity > 50);
+
+
+// explaining variable for calculation
+for( Product product : products ) {
+  final int numberOfProducts = product.getNumber();
+  final double costWithDiscount = ..;
+}
+
+double temp = 100 ; /* bad naming covention */
+temp = temp + shipping; /* bad */
+
+
+public doulbe getTotPrice(double price ){
+  price = price + 10; // bad 
+}
+
+#+END_SRC
+
+
 
 
