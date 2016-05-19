@@ -118,3 +118,27 @@ public doulbe getTotPrice(double price ){
 
 
 
+
+* extractig methods, types to class objects 
+
+#+BEGIN_SRC java
+public class Customer {
+  private int price; // generate setter & getter
+  // generate constructor 
+
+  // ..... 
+  private Birthday birthday = null;
+}
+
+// extract the address class from Customer
+public class Address {
+  // define string method 
+  public String toString() {
+    // ... 
+  }
+}
+
+// extract birthday from the Customer
+public Birthday {
+}
+#+END_SRC 
