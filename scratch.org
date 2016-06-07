@@ -32,6 +32,10 @@
 [[file:workout.org]]
 
 
+* career
+** TODO interview preparation
+
+
 * thoughts 
 - 最近浪费时间浪费的太多了。 基本上周末都在玩游戏中度过了
 
