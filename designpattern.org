@@ -488,7 +488,7 @@ Robot r = re.getRobot();  // creation of robot is invisible
 #+END_SRC
 
 
-* TODO prototype
+* DONE prototype
 - creating new objects by cloning other objects
 - reduce the needs to create multi subclasses
 - create cloneFactory
