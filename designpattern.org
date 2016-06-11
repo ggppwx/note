@@ -533,7 +533,30 @@ Sheep cloneS = (Sheep)animalMaker.getClone(s); // call sheep makeClone
 * TODO decorator
 
 
-* TODO adapter
+* DONE adapter
+#+BEGIN_SRC java
+public class EnemyRobotAdapter implements EnemyAttacker{
+	EnemyRobot theRobot; // an adaptee
+	
+	public EnemyRobotAdapter(EnemyRobot newRobot){		
+		theRobot = newRobot;		
+	}
+	
+	public void fireWeapon() {		
+		theRobot.smashWithHands();		
+	}
+
+	public void driveForward() {		
+		theRobot.walkForward();		
+	}
+
+	public void assignDriver(String driverName) {		
+		theRobot.reactToHuman(driverName);		
+	}
+		
+}
+#+END_SRC
+
 
 * TODO bridge 
 
