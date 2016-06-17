@@ -6,6 +6,7 @@
 [[file:org.org::*project scratch]]
 
 
+
 * 短期目标
 ** vacation list 
 *** pet project
@@ -31,6 +32,9 @@
 * workout 
 [[file:workout.org]]
 
+* health
+- going upstairs 3 times a day in office
+- 8 cups of water per day
 
 * career
 ** TODO interview preparation
@@ -38,11 +42,8 @@
 
 * thoughts 
 - 最近浪费时间浪费的太多了。 基本上周末都在玩游戏中度过了
-
 - leetcode上的题目没有及时复习，要忘记光了
-
 - 书也没有看。
-
 - 没有健身，好像自从结婚以后人就懒掉了。
   - 设定一个健身计划
   - file:workout.org
@@ -51,6 +52,14 @@
 - git hub all projects
 - utilize stand desk 
 - spent too long on gaming 
+
+<2016-06-16 Thu>
+- long time no gym, scrawny already
+- gaming too much
+- sleep too late. really bad habit 
+- m routine is good. not too many, keep it ! the rule is don't do it at night
+
+
 
 ** 研究股票 投资
 ** financial plan 
@@ -140,11 +149,12 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 
 * self-improvement 
 ** TODO code refactoring tutorial				   :worktime:
-   SCHEDULED: <2016-06-15 Wed ++1w>
+   SCHEDULED: <2016-06-22 Wed ++1w>
+   - State "DONE"       from "TODO"       [2016-06-16 Thu 18:08]
    - State "DONE"       from "TODO"       [2016-06-09 Thu 18:53]
    - State "DONE"       from "TODO"       [2016-05-17 Tue 03:50]
    :PROPERTIES:
-   :LAST_REPEAT: [2016-06-09 Thu 18:53]
+   :LAST_REPEAT: [2016-06-16 Thu 18:08]
    :END:
 file:refactor.org
 

@@ -558,7 +558,49 @@ public class EnemyRobotAdapter implements EnemyAttacker{
 #+END_SRC
 
 
-* TODO bridge 
+* DONE bridge 
+- adding functionality aggregately
+- abstruct to abstruct
+  - TV abstruct ---- Remote abstruct 
+- having an abstruct layer
+- chaging not affect others
+
+#+BEGIN_SRC java
+public abstract class EntertainmentDevice {
+// original class 
+  public int deviceState;
+  public void button1() {}
+  public void button2() {}
+  // ....
+
+}
+// concrete class TVDevice implement EntertainmentDevice
+
+public abstract class RemoteButton {
+// bridge 
+  private EntertainmentDevice theDevice;
+  // methods
+  public void button1() { theDevice.button1(); }
+  
+}
+
+// refined abstraction, abstract layer
+public class TVRemote extends RemoteButton {
+  public TVRemote(EntertainmentDevice newDevice){
+    super(newDevice);
+  }
+  public void button1() { // bridge the butoon1
+     // something else .....
+  }
+}
+
+//main
+RemoteButton tv1 = new TVRemote(new TVDevice());
+tv1.button1();
+
+
+#+END_SRC
+
 
 
 * TODO template

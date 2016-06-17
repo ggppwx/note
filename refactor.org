@@ -202,3 +202,43 @@ class MedalFactory {
 
 
 #+END_SRC
+
+
+* conditional statement
+- use strategy to replace conditional statement 
+#+BEGIN_SRC java
+// condition into method
+if(bagweight[i] < 50 ) {
+  bagfee += 25;
+}else{
+ // ....
+}
+// ------>
+int bagweightunder50(int i){
+  return i < 10 ? 25 : 100;
+}
+bagfee += bagweightunder50(i)
+
+
+// replace condition with poly 
+static makeSound(String animal){
+  switch(animal) {
+    case "Dog":
+      break;
+    case "cat":
+      break;
+  }
+}
+// ------ > 
+class Animal {
+  public void makeSound() {}
+}
+class Dog extends Animal {
+  public void makeSound() {}
+}
+Animal a = new Dog();
+a.makeSound();
+
+
+
+#+END_SRC 
