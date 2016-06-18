@@ -112,6 +112,9 @@ trainning focus:
     :LAST_REPEAT: [2016-06-15 Wed 19:23]
     :END:
 
+*** TODO leetcode easy problem review 
+    DEADLINE: <2016-06-30 Thu>
+
 ** TODO medium 
    DEADLINE: <2016-09-10 Sat>
 - most important problems 
