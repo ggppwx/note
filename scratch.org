@@ -7,26 +7,8 @@
 
 
 
+
 * 短期目标
-** vacation list 
-*** pet project
-[[file:org.org::adding a random]] 
-
-*** leetcode programming 
-- complete the easy problems 
-- summary 
-- starting work on medium problems 
-
-*** working from office 
-- go to office early 
-- lunch break 
-- scrum meeting at night 
-
-
-*** reading 
-- [ ] complete programming pearls 
-- [ ] other reading material follow agenda
-
 * spiritual life 
 
 * workout 
@@ -164,5 +146,10 @@ file:refactor.org
 
 * Productivity
 ** TODO clean email 
+
+* pet project thoughts
+** TODO a text processor 
+the text processor process the text to find new vocabulary 
+
 
 
