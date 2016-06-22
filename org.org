@@ -104,7 +104,7 @@ trainning focus:
 *** DONE leetcode 3 problems 
     CLOSED: [2016-05-04 Wed 20:16] SCHEDULED: <2016-05-04 Wed>
 *** TODO leetcode 3 problems 
-    SCHEDULED: <2016-05-13 Fri .+3d>
+    SCHEDULED: <2016-05-13 Fri>
     - State "DONE"       from "TODO"       [2016-06-15 Wed 19:23]
     - State "DONE"       from "TODO"       [2016-05-09 Mon 20:02]
     - State "DONE"       from "TODO"       [2016-05-05 Thu 19:49]
@@ -121,7 +121,7 @@ trainning focus:
 - 132 in total. 
 - appro 80 days. 
 *** TODO leetcode 2 problems 
-    SCHEDULED: <2016-06-17 Fri .+3d>
+    SCHEDULED: <2016-06-17 Fri .+4d>
     - State "DONE"       from "TODO"       [2016-06-14 Tue 19:01]
     :PROPERTIES:
     :LAST_REPEAT: [2016-06-14 Tue 19:01]

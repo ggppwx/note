@@ -48,7 +48,7 @@
 
 
 
-* emacs learning                                                       :move:
+* emacs learning						 :move:emacs:
 ** learn lisp language
 https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
 *** DONE emacs sync online ? 
@@ -127,7 +127,7 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 
 
 
-
+** TODO emacs code refactory 
 
 * self-improvement 
 ** TODO code refactoring tutorial				   :worktime:
