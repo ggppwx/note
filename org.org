@@ -95,6 +95,7 @@ file:designpattern.org
 **** TODO review design patter
      SCHEDULED: <2016-06-24 Fri +1m>
 
+
 *** programming pearls [2/3]
 8 chapters left 
 file:programming_pearls.org 
@@ -110,7 +111,16 @@ file:programming_pearls.org
      :LAST_REPEAT: [2016-06-02 Thu 13:35]
      :END:
 
-*** TODO read clean code     
+
+*** read clean code     
+**** TODO read clean code 1 chapter 
+     SCHEDULED: <2016-06-28 Tue .+5d>
+     - State "DONE"       from "TODO"       [2016-06-23 Thu 18:59]
+     :PROPERTIES:
+     :LAST_REPEAT: [2016-06-23 Thu 18:59]
+     :END:
+
+
 *** TODO read code complete 
 
 
