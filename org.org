@@ -114,7 +114,7 @@ file:programming_pearls.org
 
 *** read clean code     
 **** TODO read clean code 1 chapter 
-     SCHEDULED: <2016-06-28 Tue .+5d>
+     SCHEDULED: <2016-06-28 Tue +5d>
      - State "DONE"       from "TODO"       [2016-06-23 Thu 18:59]
      :PROPERTIES:
      :LAST_REPEAT: [2016-06-23 Thu 18:59]
