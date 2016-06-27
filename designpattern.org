@@ -489,7 +489,6 @@ Robot r = re.getRobot();  // creation of robot is invisible
 
 
 * DONE prototype
-  CLOSED: [2016-05-21 Sat 12:03]
 - creating new objects by cloning other objects
 - reduce the needs to create multi subclasses
 - create cloneFactory
@@ -590,7 +589,30 @@ Pizza advPizza = new Tomato(myPizza);
 
 
 
-* TODO adapter
+* DONE adapter
+#+BEGIN_SRC java
+public class EnemyRobotAdapter implements EnemyAttacker{
+	EnemyRobot theRobot; // an adaptee
+	
+	public EnemyRobotAdapter(EnemyRobot newRobot){		
+		theRobot = newRobot;		
+	}
+	
+	public void fireWeapon() {		
+		theRobot.smashWithHands();		
+	}
+
+	public void driveForward() {		
+		theRobot.walkForward();		
+	}
+
+	public void assignDriver(String driverName) {		
+		theRobot.reactToHuman(driverName);		
+	}
+		
+}
+#+END_SRC
+
 
 * TODO bridge 
 

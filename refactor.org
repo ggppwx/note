@@ -142,3 +142,63 @@ public class Address {
 public Birthday {
 }
 #+END_SRC 
+
+* refactoring by using factory method 
+#+BEGIN_SRC java
+public abstract class Custom2 {
+  private String custRating;
+  static final int PREMIER = 2;
+  static final int VALUED =1;
+
+  // getter & setter for custRating
+}
+
+class Premier extends Customer2 {
+  Premier(){
+    // set the value
+  }
+}
+
+
+// bad 
+class CustomerFactory {
+  public Customer2 getCustomer(int custType) {
+    switch(custType){
+      // 
+    }
+  }
+}
+Customer2 c = c.getCustomer(1);
+
+// dynamic way to do this
+class CustomerFactory {
+  public Customer2 getCustomer(String custName) {
+    return (Customer2)Class.forName(custName).newInstance();
+  }
+}
+
+CustomerFactory cf = new CustomerFactory();
+Customer2 c = c.getCustomer("Premier");
+
+class GoldWinner extends Athlete {  // class name what test dynamicly 
+  public static GoldWinner getInstance(aheleteParameter) {// singleton 
+    // .....
+  }
+}
+
+// singleton factory 
+class MedalFactory {
+  public Athelete getMedal(String medalType, String name) {  //reflection 
+    Class[] aheleteParameter = new Classs[](Stinrg.class);
+    Method getInstMethod =  Class.forName(medalType).getMethod("getInstance", aheleteParameter )  
+    // mthod name thryin
+    // method & value passed to it 
+
+    Object[] p = new Objdec[](new String(name));
+    return (Athelete)getInstMethod.invoke(null, params); // 
+  }
+
+}
+
+
+#+END_SRC

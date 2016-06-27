@@ -92,7 +92,7 @@ file:programming_pearls.org
 
 * leetcode 							   :leetcode:
 file:leetcode.org
-** DONE easy problems	[66%]					  :interview:
+** DONE easy problems	[66%] 					  :interview:
    CLOSED: [2016-05-19 Thu 09:41] DEADLINE: <2016-05-16 Mon>
 - 50 problems in total 
 - do review each week. 
@@ -104,11 +104,12 @@ trainning focus:
 *** DONE leetcode 3 problems 
     CLOSED: [2016-05-04 Wed 20:16] SCHEDULED: <2016-05-04 Wed>
 *** TODO leetcode 3 problems 
-    SCHEDULED: <2016-05-11 Wed +2d>
+    SCHEDULED: <2016-05-13 Fri .+2d>
+    - State "DONE"       from "TODO"       [2016-06-15 Wed 19:23]
     - State "DONE"       from "TODO"       [2016-05-09 Mon 20:02]
     - State "DONE"       from "TODO"       [2016-05-05 Thu 19:49]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-05-09 Mon 20:02]
+    :LAST_REPEAT: [2016-06-15 Wed 19:23]
     :END:
 
 ** TODO medium 
@@ -117,7 +118,11 @@ trainning focus:
 - 132 in total. 
 - appro 80 days. 
 *** TODO leetcode 2 problems 
-    SCHEDULED: <2016-06-01 .+3d>
+    SCHEDULED: <2016-06-17 Fri .+3d>
+    - State "DONE"       from "TODO"       [2016-06-14 Tue 19:01]
+    :PROPERTIES:
+    :LAST_REPEAT: [2016-06-14 Tue 19:01]
+    :END:
 
 ** TODO hard
  
@@ -137,13 +142,13 @@ file:designpattern.org
 **** DONE read 1 chapter  
      CLOSED: [2016-05-01 Wed 22:24] SCHEDULED: <2016-04-30 Sat>
 **** TODO design pattern read 1 chapetr 
-     SCHEDULED: <2016-05-25 Wed .+4d>
-     - State "DONE"       from "TODO"       [2016-05-21 Sat 17:25]
+     SCHEDULED: <2016-06-12 Sun .+4d>
+     - State "DONE"       from "TODO"       [2016-06-08 Wed 18:21]
      - State "DONE"       from "TODO"       [2016-05-17 Tue 04:56]
      - State "DONE"       from "TODO"       [2016-05-10 Tue 18:09]
      - State "DONE"       from "TODO"       [2016-05-06 Fri 17:51]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-05-21 Sat 17:25]
+     :LAST_REPEAT: [2016-06-08 Wed 18:21]
      :END:
 
 *** programming pearls [2/3]
@@ -154,16 +159,16 @@ file:programming_pearls.org
 **** DONE read one chapter
      CLOSED: [2016-04-28 Thu 23:59]
 **** TODO programming pearls read 1 chapter  
-     SCHEDULED: <2016-05-23 +3d>
-     - State "DONE"       from "TODO"       [2016-05-21 Sat 10:24]
+     SCHEDULED: <2016-06-04 Sat ++1w>
+     - State "DONE"       from "TODO"       [2016-06-02 Thu 13:35]
      - State "DONE"       from "TODO"       [2016-05-09 Mon 12:09]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-05-21 Sat 10:24]
+     :LAST_REPEAT: [2016-06-02 Thu 13:35]
      :END:
 
      
 *** code complete 
-
+    
 *** effective javascript 
     
 
