@@ -488,7 +488,8 @@ Robot r = re.getRobot();  // creation of robot is invisible
 #+END_SRC
 
 
-* TODO prototype
+* DONE prototype
+  CLOSED: [2016-05-21 Sat 12:03]
 - creating new objects by cloning other objects
 - reduce the needs to create multi subclasses
 - create cloneFactory
@@ -530,7 +531,63 @@ Sheep cloneS = (Sheep)animalMaker.getClone(s); // call sheep makeClone
 #+END_SRC
 
 
-* TODO decorator
+* DONE decorator
+  CLOSED: [2016-05-21 Sat 17:25]
+** what is decorator 
+- modify the obj dynamically 
+- more flexible 
+- using many simple classes
+- adding new code rather than chaging old code 
+** example
+#+BEGIN_SRC java
+
+public interface Pizza {
+  public String getDes();
+  public double getCost();
+
+}
+
+public class PlainPizza implements Pizza {  
+  // concrete class of the pizza 
+}
+
+// can't instantiate ToppingDecorator
+abstruct class ToppingDecorator implements Pizza {
+  protected Pizza tempPizza;
+  public ToppingDecorator (Pizza pizza) {
+    tempPizza = pizza;
+  }
+
+  public String getDes() {
+    return tempPizza.getDes();
+  }
+}
+
+public class Mozzarella extends ToppingDecorator {
+  Mozzarella(Pizza newPizza) {
+    super(newPizza);
+    // ....
+  }
+  // getDes, getCost
+  public String getDes() {
+    return tempPizza.getDes() + "mozzarella";
+  }
+}
+
+public class Tomato extends ToppingDecorator {
+  Mozzarella(Pizza newPizza) {
+    super(newPizza);
+    // ....
+  }
+  // getDes, getCost
+}
+
+// main 
+Pizza myPizza = new Mozzarella(new PlainPizza() );
+Pizza advPizza = new Tomato(myPizza);
+#+END_SRC
+
+
 
 
 * TODO adapter
