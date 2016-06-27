@@ -5,14 +5,14 @@ in total we have 27 tutorials
 10 min each 
 learn 20 maybe 
 
-* outline [6/13]
+* outline [7/13]
 - [X] review
 - [X] strategy
 - [X] observor
 - [X] factory
 - [X] abstruct
 - [X] singleton
-- [ ] builder
+- [X] builder
 - [ ] prototype
 - [ ] decorator
 - [ ] bridge 
@@ -614,10 +614,107 @@ public class EnemyRobotAdapter implements EnemyAttacker{
 #+END_SRC
 
 
-* TODO bridge 
+* DONE bridge 
+- adding functionality aggregately
+- abstruct to abstruct
+  - TV abstruct ---- Remote abstruct 
+- having an abstruct layer
+- chaging not affect others
+
+#+BEGIN_SRC java
+public abstract class EntertainmentDevice {
+// original class 
+  public int deviceState;
+  public void button1() {}
+  public void button2() {}
+  // ....
+
+}
+// concrete class TVDevice implement EntertainmentDevice
+
+public abstract class RemoteButton {
+// bridge 
+  private EntertainmentDevice theDevice;
+  // methods
+  public void button1() { theDevice.button1(); }
+  
+}
+
+// refined abstraction, abstract layer
+public class TVRemote extends RemoteButton {
+  public TVRemote(EntertainmentDevice newDevice){
+    super(newDevice);
+  }
+  public void button1() { // bridge the butoon1
+     // something else .....
+  }
+}
+
+//main
+RemoteButton tv1 = new TVRemote(new TVDevice());
+tv1.button1();
 
 
-* TODO template
+#+END_SRC
+
+
+
+* DONE template
+- tempalte method pattern contains a method 
+  that provides the steps of the algorithm.
+  subclass can override some of the steps
+
+#+BEGIN_SRC java
+
+public abstruct class Hoagie
+{
+  // this a template method.
+  // which is a standard process. 
+  final void makeSandwich(){
+    cutBun();
+    if(customerWantsMeat() ) {
+      addMeat();
+    }else {
+      addVegetable();
+    }
+    // ...
+    wrap();
+
+  }  
+  public void cutBun() {
+     // .... do cut and bun
+  }
+
+  // hooks. can be overriden
+  abstruct void addMeat();
+  abstruct void addVegetable(); // force users to override
+  
+  boolean customerWantsMeat() {return true; }
+}
+
+
+public class VeggieHogie extends Hoagie {  
+  public void addVegetable() { 
+    // ....
+  }
+
+  void addMeat(){
+     // do nothing, don't add meat 
+  }
+  
+  boolean customerWantsMeat() {return false; }
+
+}
+
+// main
+VeggieHoagie h = new VeggieHoggie();
+h.makeSandwich();
+
+#+END_SRC
+
+
+
+
 
 
 * TODO iterator 

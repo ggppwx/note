@@ -28,6 +28,6 @@ file:refactor.org
 
 * Tasks
 ** TODO the first entry of the work template 
-** TODO fix drqses <2016-05-03 Tue 11:57> 
+** DONE fix drqses <2016-05-03 Tue 11:57> 
 drqs in queue
 
