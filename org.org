@@ -42,7 +42,6 @@ supporting different tags for each events, random event based on tags
 - [ ] progress 2 
 
 ** TODO adding a countdown timmer
-   SCHEDULED: <2016-05-07 Sat>
 - requirement
   - portable component
   - adding event name + dealine. 

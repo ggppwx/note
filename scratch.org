@@ -6,7 +6,7 @@
 [[file:org.org::*project scratch]]
 
 * 短期目标
-** TODO vacation list 
+** DONE vacation list 
    DEADLINE: <2016-05-30 Mon>
 *** pet project
 [[file:org.org::adding a random]] 
