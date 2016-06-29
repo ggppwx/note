@@ -1,0 +1,8 @@
+
+* 2016
+** 2016-06 June
+*** 2016-06-29 Wednesday
+hi, this is my first diary
+ today I read wangyin's wisdom of programming. nice article 
+basically, it's very similar to clean code except some places
+[[file:cleancode.org]]
