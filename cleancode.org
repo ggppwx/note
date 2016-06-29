@@ -1,8 +1,37 @@
 #+TITLE: clean code notes
 
 * content
-
+  
 ** meaningful name
 
-
 ** functions 
+- small function 
+  - one line in if-else block, this should be a function 
+- do one thing 
+  - means steps on one level consists of one thing
+  - one level of abstraction per function
+- replace switch with polymorphism
+- don't be afraid of using long descriptive name
+- less function arguments 
+  - transform function should return the value after transformation
+  - flag argument is UGLY
+  - be aware of dyadic function.
+  - wrap arguments by using objects
+  - argument list 
+  - verb + noun function name 
+- no side effects, no hidden things 
+- in general, output argument should be avoided 
+- separate command & query 
+  - error code vs try-catch
+- duplicaton may be evil in software
+- no continue, break, never go to
+- functions are verb, classes are noun
+
+
+
+
+
+
+
+
+

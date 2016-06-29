@@ -718,6 +718,21 @@ h.makeSandwich();
 
 
 * TODO iterator 
+- uniform way to access diffrent type of objects 
+#+BEGIN_SRC java
+public class SongsOfThe80s implements SongIterator{  
+  SongInfo[] bestSongs;  
+  public void addSong(String songname) {
+    // ... add songs 
+  } 
+  @Override
+  public Iterator createIterator() {
+    return Arrays.asList(bestSongs).iterator();
+  }
+
+}
+#+END_SRC
+
 
 
 
