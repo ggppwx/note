@@ -92,7 +92,7 @@ file:designpattern.org
      :LAST_REPEAT: [2016-06-28 Tue 19:02]
      :END:
 
-**** TODO review design patter
+**** TODO review design pattern
      SCHEDULED: <2016-06-26 Sun +1m>
 
 
@@ -116,12 +116,16 @@ file:programming_pearls.org
 *** read clean code     
 [[file:cleancode.org]]
 **** TODO read clean code 1 chapter 
-     SCHEDULED: <2016-07-03 Sun +5d>
+     SCHEDULED: <2016-07-08 Fri +5d>
+     - State "DONE"       from "TODO"       [2016-06-30 Thu 18:17]
      - State "DONE"       from "TODO"       [2016-06-28 Tue 17:23]
      - State "DONE"       from "TODO"       [2016-06-23 Thu 18:59]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-06-28 Tue 17:23]
+     :LAST_REPEAT: [2016-06-30 Thu 18:17]
      :END:
+
+**** TODO clean code review
+     SCHEDULED: <2016-07-08 Fri>
 
 
 *** TODO read code complete 
