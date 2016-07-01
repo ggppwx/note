@@ -16,6 +16,7 @@ function git-pull
     exit
 }
 
+#export GIT_SSL_NO_VERIFY=1
 function git-autopush
 {
     echo "git autopush ....."
