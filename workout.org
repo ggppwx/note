@@ -30,6 +30,7 @@
   - set the timer
   - muscle training / aero
   - nutrition before/after the exercise 
+  - don't exceed the time
 
 
 
