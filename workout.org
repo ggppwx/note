@@ -4,7 +4,7 @@
 - workout consists of running, gym, daily workout 
 - setting goal/reward for the plan  
 
-
+  
 * running 
 ** 跑步计划
 - [X] week 1, 2 days
@@ -24,11 +24,12 @@
 
 *** TODO 4 min workout 
 
-
+    
 * muscle training 
-
-
-
+- 30 min workout.
+  - set the timer
+  - muscle training / aero
+  - nutrition before/after the exercise 
 
 
 

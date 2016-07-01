@@ -24,7 +24,6 @@ function git-autopush
     cd $DIR
     git add -u
     git commit -m "auto-commit@ $timestamp"
-    echo "ready to push"
     git push origin master
     exit
 }

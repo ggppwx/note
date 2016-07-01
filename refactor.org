@@ -242,3 +242,35 @@ a.makeSound();
 
 
 #+END_SRC 
+
+* strategy pattern for conditional statement
+- conditional logic often decide which algo to use, strategy to eliminate it
+#+BEGIN_SRC java
+// stragegy pattern
+class Employee{
+  protected double salary = 0.0;
+  public Pay paytype = new NoBonus();
+  
+  public setBounesOption(Pay newPaytype){
+    paytype = newpaytype;
+  }  
+  public getPay(){
+    return paytype.getPay(this.salary);
+  )
+}
+
+// it's a strategy,
+// getPay() is not based on if-else logic 
+interface Pay{
+  double getPay(double salary);
+}
+
+// algorighm 1
+// instead of using if-else, we use polymorphism to determine
+// which algo we use. 
+class GetBonus implements Pay{
+  public double getPay(double salary){
+    return salary * 1.5;
+  }
+}
+#+END_SRC

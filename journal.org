@@ -6,3 +6,9 @@ hi, this is my first diary
  today I read wangyin's wisdom of programming. nice article 
 basically, it's very similar to clean code except some places
 [[file:cleancode.org]]
+** 2016-07 July
+*** 2016-07-01 Friday
+- did workout yesterday good.
+- no mas yesterday good.
+
+
