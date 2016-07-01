@@ -1,5 +1,4 @@
 #!/bin/bash
-clear
 timestamp=$(date +"%m-%d-%y_%H:%M")
 echo "----------- auto-commit@ $timestamp --------------"
 export GIT_SSL_NO_VERIFY=1
