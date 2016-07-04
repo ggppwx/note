@@ -3,6 +3,7 @@ timestamp=$(date +"%m-%d-%y_%H:%M")
 echo "----------- auto-commit@ $timestamp --------------"
 export GIT_SSL_NO_VERIFY=1
 
+
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo $DIR
 
