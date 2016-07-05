@@ -2,7 +2,6 @@
 timestamp=$(date +"%m-%d-%y_%H:%M")
 echo "----------- auto-commit@ $timestamp --------------"
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-export GIT_SSL_NO_VERIFY=1
 
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
