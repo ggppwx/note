@@ -29,19 +29,34 @@ function git-autopush
 }
 
 
-if [[ "$#" != "1" ]] ; then
-    echo "should have 1 argument !"
-    exit
-else
-    echo $1
-    if [[ $1 = "pull" ]]; then
-        git-pull
+# if [[ "$#" != "1" ]] ; then
+#     echo "should have 1 argument !"
+#     exit
+# else
+#     echo $1
+#     if [[ $1 = "pull" ]]; then
+#         git-pull
+#     fi
+#     if [[ $1 = "push" ]]; then
+#         git-autopush
+#     fi    
+#     exit
+# fi
+
+
+# schedule run
+counter=0
+while true
+do
+    if [ $counter = 10 ]; then
+	git-pull
+	counter=0
+    else
+	git-autopush
     fi
-    if [[ $1 = "push" ]]; then
-        git-autopush
-    fi    
-    exit
-fi
+    sleep 60    
+done
+
 
 
 
