@@ -14,7 +14,6 @@ function git-pull
     cd $DIR
     git stash
     git pull origin master
-    exit
 }
 
 #export GIT_SSL_NO_VERIFY=1
@@ -25,7 +24,6 @@ function git-autopush
     git add -u
     git commit -m "auto-commit@ $timestamp"
     git push origin master
-    exit
 }
 
 
