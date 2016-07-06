@@ -52,7 +52,7 @@ do
     else
 	git-autopush
     fi
-    sleep 60    
+    sleep 20000    
 done
 
 
