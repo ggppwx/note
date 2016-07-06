@@ -46,7 +46,7 @@ function git-autopush
 counter=0
 while true
 do
-    if [ $counter = 10 ]; then
+    if [ $counter = 2 ]; then
 	git-pull
 	counter=0
     else
