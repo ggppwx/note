@@ -92,8 +92,12 @@ file:designpattern.org
      :LAST_REPEAT: [2016-06-28 Tue 19:02]
      :END:
 
-**** TODO review design pattern
-     SCHEDULED: <2016-06-26 Sun +1m>
+**** TODO review design pattern					     :review:
+     SCHEDULED: <2016-07-26 Tue +1m>
+     - State "DONE"       from "TODO"       [2016-07-06 Wed 19:07]
+     :PROPERTIES:
+     :LAST_REPEAT: [2016-07-06 Wed 19:07]
+     :END:
 
 
 *** programming pearls [2/3]
@@ -164,7 +168,7 @@ trainning focus:
     :LAST_REPEAT: [2016-06-15 Wed 19:23]
     :END:
 
-*** TODO leetcode easy problem review 
+*** TODO leetcode easy problem review				     :review:
     DEADLINE: <2016-06-30 Thu>
 
 ** TODO medium 

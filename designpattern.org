@@ -1,4 +1,4 @@
-#+ design pattern notes 
+#+TITLE: design pattern notes 
 
 
 in total we have 27 tutorials 
@@ -108,6 +108,10 @@ sparky.tryToFly();
 
 [[file:observer.png]]
 
+- Subject represents the core (or independent or common or engine) abstraction. 
+  Observer represents the variable (or dependent or optional or user interface) abstraction.
+
+
 ** sample 
 #+BEGIN_SRC java
 public interface Subject{
@@ -141,7 +145,7 @@ public class StockGrabber implements Subject {
 
     public void setIbmPrice(doulbe newp) {
        this.ibmprice = newp;
-       notifyObserver();
+       notifyObserver(); // after this change, it will notify the observer 
     }
 
 }
@@ -177,6 +181,7 @@ public class GetTheStock implments Runnable {
      
    public void run() { // updating this subject 
        for (int i = 0; i < 20 ; ++i ) {
+           // here subject doing some changes 
            (StockGrabber)stockGrabber.setIBMPrice(random())  // cast to StockGrabber
        }
    }
@@ -189,8 +194,8 @@ public static void main() {
   StockGrabber stockgrabber = new StockGrabber(); // subject
 
   StockObserver o1 = new StockObserver(stockgrabber);
-  StockObserver o2 = new StockObserver(stockgrabber);
-  
+  StockObserver o2 = new StockObserver(stockgrabber); // subject regiester object here
+
   stockgrabber.setIbmprice(1111); //  subject change price send notification
 
   stockgrabber.unregister(o2); // un-register 
@@ -228,6 +233,7 @@ public static void main() {
 - when all potenial classes are in same subclass hierarchy
 - centralize class selection 
 - encapsulate object creation
+- replace switch 
 
 *** example 
 #+BEGIN_SRC c++
@@ -278,8 +284,9 @@ like a factory but everything is encapsulated
 + *in a nutshell, abstruct factory pattern creates different kinds of factory,
   it makes the factory abstruct*
 + *normal factory just create abstruct object*
-#+BEGIN_SRC c++
++ THE KEY: pass abstruct factory to a abstruct product
 
+#+BEGIN_SRC c++
 class EnemyShipBuilding{  // abstruct class/ virtual class
   protected:
   virtual EnemyShip* makeEnemyShip(std:string type) = 0;
@@ -291,9 +298,13 @@ class EnemyShipBuilding{  // abstruct class/ virtual class
 
 };
 
+
+// based on the type, we return different factories
+// each facotry creates a product. 
 class EnemyShipBuilding : public EnemyShipBuilding {
   EnemyShip* makeEnemyShip(std:string type) {
     if(type == "UFO") { // create different factory instead of object
+       // we also can call f1, platform(factory)
        EnemyShipFactory *f1 = new UFOEnemyShipFactory();  // create factory
        return new UFO(f1);
     }      
@@ -311,6 +322,10 @@ class UFOEnemyShipFactory : public EnemyShipFactory{
     return new SmallGun();
   }
 
+  Engine* addEngine(){
+    return new smallEngine();
+  }
+
 };
 
 class BossEnemyShipFactory : public EnemyShipFactory{
@@ -325,25 +340,22 @@ class EnemyShip{
   virtual void makeShip() = 0;
 }
 
+// this is abstract product, it contains the a factory 
 class UFO : public EnemyShip {
   UFO(EnemyShipFactory* f) {
     factory = f;
   }
   void makeShip(){
     weapon = f.addGun(); //use small gun
+    engine = f.addEngine();
   }
 };
-
 
 int main(){
   EnemyShipBuilding* makeUFO = new UFOShipBuilding(); // create a builder
   EnemyShip* ship1 = makeUFO -> orderShip("UFO");
   EnemyShip* ship2 = makeUFO -> orderShip("BOSS");
 }
-
-
-
-
 #+END_SRC
 
 
