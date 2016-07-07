@@ -1,9 +1,6 @@
 #!/bin/bash
-timestamp=$(date +"%m-%d-%y_%H:%M")
-echo "----------- auto-commit@ $timestamp --------------"
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 export GIT_SSL_NO_VERIFY=1
-
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo $DIR
 
@@ -19,7 +16,9 @@ function git-pull
 #export GIT_SSL_NO_VERIFY=1
 function git-autopush
 {
+    timestamp=$(date +"%m-%d-%y_%H:%M")
     echo "git autopush ....."
+    echo "----------- auto-commit@ $timestamp --------------"    
     cd $DIR
     git add -u
     git commit -m "auto-commit@ $timestamp"
