@@ -170,6 +170,9 @@ file:refactor.org
 ** DONE clean email 
 ios mail app is updated support bulk archieve 
 
+** TODO find a way to learn more in work 
+
+
 * pet project thoughts
 ** TODO a text processor 
 the text processor process the text to find new vocabulary 
