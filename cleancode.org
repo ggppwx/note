@@ -35,3 +35,8 @@
 
 
 
+** comments
+
+** formatting 
+- variable declaration, local variables should be declared on the top of the function 
+- functions caller should be above callee
