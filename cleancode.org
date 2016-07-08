@@ -40,3 +40,25 @@
 ** formatting 
 - variable declaration, local variables should be declared on the top of the function 
 - functions caller should be above callee
+- example 
+#+BEGIN_SRC java
+public class CodeAnalyzer implements JavaFileAnalysis {  
+  private int lineCount;  
+  private int maxLineWidth;  
+  private int widestLineNumber;  
+  private LineWidthHistogram lineWidthHistogram;  
+  private int totalChars;  
+  
+  public CodeAnalyzer() {    
+    lineWidthHistogram = new LineWidthHistogram();  
+  }  
+
+  public static List<File> findJavaFiles(File parentDirectory) {    
+    List<File> files = new ArrayList<File>();    
+    findJavaFiles(parentDirectory, files);    
+    return files;  
+  }
+}
+#+END_SRC
+
+** objects and data structure
