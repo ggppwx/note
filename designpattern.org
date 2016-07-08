@@ -729,7 +729,7 @@ h.makeSandwich();
 
 
 
-* TODO iterator 
+* DONE iterator 
 - uniform way to access diffrent type of objects 
 #+BEGIN_SRC java
 public class SongsOfThe80s implements SongIterator{  
@@ -744,6 +744,48 @@ public class SongsOfThe80s implements SongIterator{
 
 }
 #+END_SRC
+
+* DONE proxy
+- limit access to another class 
+#+BEGIN_SRC java
+// throw a proxy between AMT class 
+
+public interface GetATMData{
+  public ATMSate getATMState();
+  public int getCashMachine();
+}
+
+// the actual class need to have proxy
+public ATMMachine implements GetATMData {
+  // ...
+
+  // the accessor
+  public ATMSate getATMState(){}
+  public int getCashMachine(){}
+
+}
+
+public class ATMProxy implements GetAtmData {
+  public ATMSate getATMState(){
+    ATMMachine newM = new ATMMachine();
+    return newM.getATMState();
+  }
+  public int getCashMachine(){
+     // ....
+  }
+}
+
+
+#+END_SRC
+
+
+
+
+* TODO visitor
+
+
+* TODO flyweight 
+
 
 
 
