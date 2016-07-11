@@ -110,6 +110,8 @@ file:programming_pearls.org
      CLOSED: [2016-04-28 Thu 23:59]
 **** TODO programming pearls read 1 chapter  
      SCHEDULED: <2016-07-02 Sat ++1w>
+     - Note taken on [2016-07-11 Mon 18:11] \\
+       this has been delayed for too long.
      - State "DONE"       from "TODO"       [2016-06-30 Thu 10:34]
      - State "DONE"       from "TODO"       [2016-06-02 Thu 13:35]
      - State "DONE"       from "TODO"       [2016-05-09 Mon 12:09]
@@ -131,9 +133,10 @@ file:programming_pearls.org
      :LAST_REPEAT: [2016-07-11 Mon 11:32]
      :END:
 
-**** TODO clean code review
+**** DONE clean code review
      SCHEDULED: <2016-07-08 Fri>
 
+**** TODO clean code review
 
 *** TODO read code complete 
 
