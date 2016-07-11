@@ -45,13 +45,13 @@ function git-autopush
 counter=0
 while true
 do
-    if [ $counter = 3 ]; then
+    if [ $counter = 10 ]; then
 	git-pull
 	counter=0
     else
 	git-autopush
     fi
-    sleep 10000    
+    sleep 5000    
 done
 
 

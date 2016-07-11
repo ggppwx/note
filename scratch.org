@@ -185,5 +185,7 @@ the text processor process the text to find new vocabulary
 ** stock tracker.
 
 * entertainment
-** TODO create a music playlist
+** DONE create a music playlist
    DEADLINE: <2016-07-10 Sun>
+   - Note taken on [2016-07-11 Mon 16:16] \\
+     postpone 

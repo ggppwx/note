@@ -3,6 +3,10 @@
 * content
   
 ** meaningful name
+- shorter name better
+- no confusions, don't name 'List' if it is not a list
+
+
 
 ** functions 
 - small function 
@@ -26,7 +30,6 @@
 - duplicaton may be evil in software
 - no continue, break, never go to
 - functions are verb, classes are noun
-
 
 
 
