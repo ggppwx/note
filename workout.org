@@ -1,6 +1,6 @@
 #+TITLE: workout plan 
 
-* intruduction
+* introduction
 - workout consists of running, gym, daily workout 
 - setting goal/reward for the plan  
 

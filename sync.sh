@@ -1,10 +1,6 @@
 #!/bin/bash
-timestamp=$(date +"%m-%d-%y_%H:%M")
-echo "----------- auto-commit@ $timestamp --------------"
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 export GIT_SSL_NO_VERIFY=1
-
-
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo $DIR
 
@@ -15,34 +11,49 @@ function git-pull
     cd $DIR
     git stash
     git pull origin master
-    exit
 }
 
 #export GIT_SSL_NO_VERIFY=1
 function git-autopush
 {
+    timestamp=$(date +"%m-%d-%y_%H:%M")
     echo "git autopush ....."
+    echo "----------- auto-commit@ $timestamp --------------"    
     cd $DIR
     git add -u
     git commit -m "auto-commit@ $timestamp"
     git push origin master
-    exit
 }
 
 
-if [[ "$#" != "1" ]] ; then
-    echo "should have 1 argument !"
-    exit
-else
-    echo $1
-    if [[ $1 = "pull" ]]; then
-        git-pull
+# if [[ "$#" != "1" ]] ; then
+#     echo "should have 1 argument !"
+#     exit
+# else
+#     echo $1
+#     if [[ $1 = "pull" ]]; then
+#         git-pull
+#     fi
+#     if [[ $1 = "push" ]]; then
+#         git-autopush
+#     fi    
+#     exit
+# fi
+
+
+# schedule run
+counter=0
+while true
+do
+    if [ $counter = 10 ]; then
+	git-pull
+	counter=0
+    else
+	git-autopush
     fi
-    if [[ $1 = "push" ]]; then
-        git-autopush
-    fi    
-    exit
-fi
+    sleep 5000    
+done
+
 
 
 

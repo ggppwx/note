@@ -3,6 +3,14 @@
 * content
   
 ** meaningful name
+- shorter name better
+- no confusions, don't name 'List' if it is not a list
+- pronounceable names 
+- search-able names, not too common 
+- no prefixes like m_
+- class method should have verb 
+- don't add extra context 
+
 
 ** functions 
 - small function 
@@ -23,15 +31,55 @@
 - in general, output argument should be avoided 
 - separate command & query 
   - error code vs try-catch
-- duplicaton may be evil in software
+- duplication may be evil in software
 - no continue, break, never go to
 - functions are verb, classes are noun
 
 
 
+** comments
+- comments are always failure 
+- TRUTH SHOULD BE IN CODE
 
 
 
+** formatting 
+- variable declaration, local variables should be declared on the top of the function 
+- functions caller should be above callee
+- example 
+#+BEGIN_SRC java
+public class CodeAnalyzer implements JavaFileAnalysis {  
+  private int lineCount;  
+  private int maxLineWidth;  
+  private int widestLineNumber;  
+  private LineWidthHistogram lineWidthHistogram;  
+  private int totalChars;  
+  
+  public CodeAnalyzer() {    
+    lineWidthHistogram = new LineWidthHistogram();  
+  }  
+
+  public static List<File> findJavaFiles(File parentDirectory) {    
+    List<File> files = new ArrayList<File>();    
+    findJavaFiles(parentDirectory, files);    
+    return files;  
+  }
+}
+#+END_SRC
+- instance variables should be declared at the top of the class 
+  - in c++ on bottom 
+  - java on top 
+
+- white spaces 
+- expand the indent , not in one-line
 
 
-
+** objects and data structure
+- object or data structure: 2 approaches 
+  - data structure: expose data, no function. 
+- OO code makes easy to add new classes without changing methods
+- procedural code makes it hard to add new data structure, easy to add functions
+- hybrids are worst 
+- data transfer object. 
+  - active record, a special form of DTO. having public ( or bean accessed) variables
+    and navigational methods like save/find

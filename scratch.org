@@ -75,7 +75,7 @@ https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
 auto sync 
 
 ** org mode 
-*** TODO get familar with org mode [6/7]
+*** DONE get familar with org mode [6/6]
     - Note taken on [2016-05-02 Mon 15:50] \\
       including regular org mode operations
     CLOCK: [2016-05-02 Mon 15:38]--[2016-05-02 Mon 16:43] =>  1:05
@@ -87,7 +87,6 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 - [X] todo management  
 - [X] agenda view
 - [X] org mode log a task 
-- [ ]
 
 *** DONE org mode links 
     CLOSED: [2016-04-25 Mon 23:30]
@@ -116,7 +115,7 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 
 
 ** emacs lint 
-*** TODO flycheck setting 
+*** DONE flycheck setting 
 
 *** TODO set environment in work environment 
     
@@ -170,6 +169,9 @@ file:refactor.org
 ** DONE clean email 
 ios mail app is updated support bulk archieve 
 
+** TODO find a way to learn more in work 
+
+
 * pet project thoughts
 ** TODO a text processor 
 the text processor process the text to find new vocabulary 
@@ -182,6 +184,11 @@ the text processor process the text to find new vocabulary
 
 ** stock tracker.
 
-* entertainment 
 
+
+* entertainment
+** DONE create a music playlist
+   DEADLINE: <2016-07-10 Sun>
+   - Note taken on [2016-07-11 Mon 16:16] \\
+     postpone 
 
