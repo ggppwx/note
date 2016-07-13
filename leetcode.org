@@ -1,13 +1,21 @@
 #+TITLE: leetcode problems 
 
-* 292 nim game
+* guild line 
+- think before coding 
+- syntax check 
+
+* problems 
+** 226 invert binary tree
+note we need to invert the pointer to left/right child, not the value.
+
+** 292 nim game
 You are playing the following Nim Game with your friend: 
 There is a heap of stones on the table, each time one of you take 
 turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.
 Both of you are very clever and have optimal strategies for the game. Write a function to determine whether you can win the game given the number of stones in the heap.
 For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend.
 
-** code
+*** code
 #+BEGIN_SRC c++
 class Solution {
 public:
@@ -17,60 +25,56 @@ public:
 };
 #+END_SRC
 
-** thoughs
+*** thoughs
 JUST write down each number and find the pattern
 
 
-* 226 invert binary tree
-note we need to invert the pointer to left/right child, not the value.
-
-
-* 237 delete Node in a tree 
+** 237 delete Node in a tree 
 since it's a signle link list. instead of deleting the node itself, we should change the value 
 
-* 100 is same tree 
+** 100 is same tree 
 check the tree value 
 
-* 171 excel sheet number 
+** 171 excel sheet number 
 get base to the power exponent:  pow()
 
 
 
 
-* 206 reverse linke
+** 206 reverse linke
 be aware of the conner case. don't forget the first node, don't forget some 
 extream cases
 
 
 
 
-* [#A] 198 house robber 
+** [#A] 198 house robber 
 this is a DP problem. recursive solution is better. 
 
 
 
-* 101 symmetric tree
+** 101 symmetric tree
 
 
-* realize the conner case 
+** realize the conner case 
 
 
-* 107 Binary Tree Level Order Traversal 
+** 107 Binary Tree Level Order Traversal 
 traverse each level, save in vector 
 
-* 118 pascal's triangle
+** 118 pascal's triangle
 #+BEGIN_SRC c++
 for (int i = 0; i< numRows;++i) {
   for (int j = 0; j < i; ++j) {} // this should be the level number ! not numRows
 }
 #+END_SRC
 
-* 102 Binary Tree Level Order Traversal 
+** 102 Binary Tree Level Order Traversal 
 unlike 107, it's top-down traverse. 
 we could get left , right child, then merge 
 
 
-* 172 Factorial Trailing Zeroes  
+** 172 Factorial Trailing Zeroes  
 if it has 5, it will have trailing 0. 
 + 5, 10, 15 ..
 + 25, 50, .... (has 2 '0' )
@@ -86,11 +90,11 @@ if it has 5, it will have trailing 0.
     }
 #+END_SRC
 
-* 9 Palindrome Number
+** 9 Palindrome Number
 sum += sum * 10 + remainder 
 ----> sum = sum + sum * 10 + remainder 
  
-* valid sukoku
+** valid sukoku
 to validate a square 
 #+BEGIN_SRC c++
 for (int k1 = 0; k1 < 3; ++k1) {
@@ -106,7 +110,7 @@ for (int k2 = 0; k2 < 3; ++k2) {
 }
 #+END_SRC
 
-* 88 merge sorted array
+** 88 merge sorted array
 - in-space merge. 
 - 2 exit condition
 #+BEGIN_SRC c++
@@ -121,22 +125,22 @@ for (i = 0, j =0 ; i < m || j < n; ){
 #+END_SRC c++
 
 
-* 223 rectangle area
+** 223 rectangle area
 - calculate the overlap.
 - draw picture, discuss case by case 
   - no overlap
   - overlap. x = ( C > G ? G : C ) - ( A > E ? A : E  )
  
-* 189 rotate array
+** 189 rotate array
 check the function. return vs pass by ref
 
-* 165 compare version number
+** 165 compare version number
 
-* 155 min stack
+** 155 min stack
 don't forget to reset min 
 min = INT_MAX; a constant value
 
-* [#A] 204 count prime
+** [#A] 204 count prime
 - the first solution exceeds the time limit 
 - use bottom-up solution 
 - any number = i * [1 - x ] is not prime
