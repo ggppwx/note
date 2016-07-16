@@ -781,7 +781,49 @@ public class ATMProxy implements GetAtmData {
 
 
 
-* TODO visitor
+* DONE visitor
+- allow you add methods to classes of different types
+
+#+BEGIN_SRC java
+interface Visitor {
+  // use method overloading n
+  public double visit(Liquor item);
+  public double visit(Tobacco item);
+}
+
+class TaxVisitor implements Visitor {
+  public double visit(Liquor item){ // this is methods to be added
+    return item.getPrice() * 1.5; 
+  }
+
+  public double visit(Tobacco item){
+    return item.getPrice() * 2;
+  }
+}
+
+interface Visitable {
+  public double accept(Visitor v);
+}
+
+
+class Liquor implements Visitable{
+  double getPrice() {
+    return 10;
+  }
+  
+  // this is a intermediate function, 
+  // like an adapter to use the method in visitor 
+  public double accept(Visitor v) {
+    return v.visit(this); // key ! it applies the visit
+  }
+}
+
+// main 
+Taxvisitor taxcalc = new Taxvisitor();
+Liquor liquor = new Liquor(15);
+double finalPrice = liquor.accept(taxcalc);
+#+END_SRC
+
 
 
 * TODO flyweight 
