@@ -827,9 +827,40 @@ double finalPrice = liquor.accept(taxcalc);
 
 
 * TODO flyweight 
-- used when you need to create large number of similar objects.
+- used when you need to create large number of similar objects. ( 100000 etc. ) 
 - share objects are the same rather than creating new ones
+- share obj
 #+BEGIN_SRC java
+// Flyweight tester
+Color[] shapeColor  = {Color.orange, Color.red, };
+
+// .. .
+JPanel contentPanel = new JPanel();
+final JPanel drawingPanel = new JPanel();
+
+for ( int i = 0; i < 1000000; i++ ) {
+  MyRect rect = new MyRect(getRandColor(), getRandPosition());
+  rect.draw();
+  
+  // the diffrence is rect objects are limited. 
+  // each color has one object, each object can have multiple rect.
+  MyRect rect = RectFactory.getRect(getRandColor);
+  rect.draw(getRandposition());
+}
+
+
+public class RectFactory {
+  public static final HashMap<Color, MyRect> rectByColor = new Hashmap<Color, MyRect>();
+  public static MyRect getRect(Color color) {
+    Myrect rect = (Myrect)rectByColor.get(color);
+    if ( rect == null ) {
+      rect = new MyRect(color);
+      rectByColor.put(color, rect);
+    }
+    return rect; 
+  }
+}
+
 
 #+END_SRC
 

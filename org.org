@@ -74,14 +74,14 @@ supporting different tags for each events, random event based on tags
 
 ** reading                                                          :reading:
 daily reading progress 
-*** design pattern [1/3]
+*** design pattern [2/3]
 **** outline
 26 tutorials, 15 min each 
 file:designpattern.org 
 
 **** DONE read 1 chapter  
      CLOSED: [2016-05-01 Wed 22:24] SCHEDULED: <2016-04-30 Sat>
-**** TODO design pattern read 1 chapetr 
+**** DONE design pattern read 1 chapetr 
      SCHEDULED: <2016-07-20 Wed>
      - State "DONE"       from "TODO"       [2016-07-15 Fri 18:35]
      - State "DONE"       from "TODO"       [2016-07-15 Fri 18:35]
