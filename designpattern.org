@@ -827,6 +827,11 @@ double finalPrice = liquor.accept(taxcalc);
 
 
 * TODO flyweight 
+- used when you need to create large number of similar objects.
+- share objects are the same rather than creating new ones
+#+BEGIN_SRC java
+
+#+END_SRC
 
 
 
