@@ -187,6 +187,12 @@ the text processor process the text to find new vocabulary
 
 
 
+** TODO a email processor 
+Analyze your email.
+
+
+
+
 * entertainment
 ** DONE create a music playlist
    DEADLINE: <2016-07-10 Sun>
