@@ -6,25 +6,6 @@
 [[file:org.org::*project scratch]]
 
 * 短期目标
-** DONE vacation list 
-   DEADLINE: <2016-05-30 Mon>
-*** pet project
-[[file:org.org::adding a random]] 
-
-*** leetcode programming 
-- complete the easy problems 
-- summary 
-- starting work on medium problems 
-
-*** DONE working from office 
-    CLOSED: [2016-05-19 Thu 16:04]
-- go to office early 
-- lunch break 
-- scrum meeting at night 
-
-*** others 
-**** food tasting 
-
 * spiritual life 
 
 * workout 
@@ -171,6 +152,9 @@ file:refactor.org
 ios mail app is updated support bulk archieve 
 
 ** TODO find a way to learn more in work 
+
+** TODO GTD
+   DEADLINE: <2016-07-24 Sun>
 
 
 * pet project thoughts

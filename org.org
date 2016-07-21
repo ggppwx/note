@@ -107,6 +107,7 @@ file:designpattern.org
 
 *** javascript design pattern. 
 **** TODO read javascript design pattern. 
+     SCHEDULED: <2016-07-22 Fri +1w>
 
 
 *** programming pearls [2/3]
