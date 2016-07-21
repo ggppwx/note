@@ -8,7 +8,7 @@ here I will list the main framework of my org documents.
  
 
 
-* project scratch 
+* project scratch						    :project:
 here are several projects we need to focus on 
 
 ** DONE create a website based on github 
@@ -146,6 +146,14 @@ file:programming_pearls.org
 *** TODO read code complete 
 
 
+
+* finance 
+** 研究股票 投资
+
+** financial plan 
+
+
+
 * misc 
 ** TODO build a home theater 
 
@@ -157,6 +165,10 @@ file:programming_pearls.org
 
    
 ** TODO ergo work space
+
+
+
+
 
 * leetcode 							   :leetcode:
 file:leetcode.org
