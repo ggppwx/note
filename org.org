@@ -151,6 +151,15 @@ file:programming_pearls.org
 *** TODO read code complete 
 
 
+*** TODO read object oriented thought process
+    SCHEDULED: <2016-07-26 Tue +4d>
+    - State "DONE"       from "TODO"       [2016-07-22 Fri 00:03]
+    :PROPERTIES:
+    :LAST_REPEAT: [2016-07-22 Fri 00:03]
+    :END:
+
+
+
 * misc 
 ** TODO build a home theater 
 
