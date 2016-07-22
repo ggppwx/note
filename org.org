@@ -8,7 +8,7 @@ here I will list the main framework of my org documents.
  
 
 
-* project scratch 
+* project scratch						    :project:
 here are several projects we need to focus on 
 
 ** DONE create a website based on github 
@@ -132,7 +132,8 @@ file:programming_pearls.org
 *** read clean code						       :book:
 [[file:cleancode.org]]
 **** TODO read clean code 1 chapter 
-     SCHEDULED: <2016-07-23 Sat +5d>
+     SCHEDULED: <2016-07-28 Thu +5d>
+     - State "DONE"       from "TODO"       [2016-07-22 Fri 16:46]
      - State "DONE"       from "TODO"       [2016-07-19 Tue 10:29]
      - State "DONE"       from "TODO"       [2016-07-11 Mon 11:32]
      - State "DONE"       from "TODO"       [2016-07-08 Fri 16:14]
@@ -140,7 +141,7 @@ file:programming_pearls.org
      - State "DONE"       from "TODO"       [2016-06-28 Tue 17:23]
      - State "DONE"       from "TODO"       [2016-06-23 Thu 18:59]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-07-19 Tue 10:29]
+     :LAST_REPEAT: [2016-07-22 Fri 16:46]
      :END:
 
 **** DONE clean code review
@@ -170,21 +171,16 @@ file:programming_pearls.org
 
 
    
-** TODO ergo work space
+** DONE ergo work space
 
 * leetcode							   :leetcode:
 file:leetcode.org
-** DONE easy problems	[75%]					  :interview:
-   CLOSED: [2016-05-19 Thu 09:41] DEADLINE: <2016-05-16 Mon>
+** easy problems	[75%] 					  :interview:
+   CLOSED: [2016-05-19 Thu 09:41]
 - 50 problems in total 
 - do review each week. 
 trainning focus:
 - no compiling error
-
-*** DONE leetcode 3 problems 
-    CLOSED: [2016-05-03 Tue 21:26] SCHEDULED: <2016-05-03 Tue>
-*** DONE leetcode 3 problems 
-    CLOSED: [2016-05-04 Wed 20:16] SCHEDULED: <2016-05-04 Wed>
 *** DONE leetcode 3 problems 
     SCHEDULED: <2016-05-13 Fri>
     - State "DONE"       from "TODO"       [2016-06-15 Wed 19:23]
@@ -197,12 +193,12 @@ trainning focus:
 *** TODO leetcode easy problem review				     :review:
     DEADLINE: <2016-06-30 Thu>
 
-** TODO medium 
+** medium 
    DEADLINE: <2016-09-10 Sat>
 - most important problems 
 - 132 in total. 
 - appro 80 days. 
-*** TODO leetcode 2 problems 
+*** TODO leetcode 2 problems medium
     SCHEDULED: <2016-07-26 Tue .+4d>
     - State "DONE"       from "TODO"       [2016-07-22 Fri 11:17]
     - State "DONE"       from "TODO"       [2016-06-14 Tue 19:01]
