@@ -72,9 +72,9 @@ supporting different tags for each events, random event based on tags
 
 
 
-** reading                                                          :reading:
+** reading							    :reading:
 daily reading progress 
-*** design pattern [2/3]
+*** design pattern [2/3]					       :book:
 **** outline
 26 tutorials, 15 min each 
 file:designpattern.org 
@@ -105,12 +105,12 @@ file:designpattern.org
      :END:
 
 
-*** javascript design pattern. 
+*** javascript design pattern.					       :book:
 **** TODO read javascript design pattern. 
      SCHEDULED: <2016-07-22 Fri +1w>
 
 
-*** programming pearls [2/3]
+*** programming pearls [2/3]					       :book:
 8 chapters left 
 file:programming_pearls.org 
 **** DONE read one chapter 
@@ -129,7 +129,7 @@ file:programming_pearls.org
      :END:
 
 
-*** read clean code     
+*** read clean code						       :book:
 [[file:cleancode.org]]
 **** TODO read clean code 1 chapter 
      SCHEDULED: <2016-07-23 Sat +5d>
@@ -148,10 +148,10 @@ file:programming_pearls.org
 
 **** TODO clean code review
 
-*** TODO read code complete 
+*** TODO read code complete					       :book:
 
 
-*** TODO read object oriented thought process
+*** TODO read object oriented thought process			       :book:
     SCHEDULED: <2016-07-26 Tue +4d>
     - State "DONE"       from "TODO"       [2016-07-22 Fri 00:03]
     :PROPERTIES:
@@ -172,9 +172,9 @@ file:programming_pearls.org
    
 ** TODO ergo work space
 
-* leetcode 							   :leetcode:
+* leetcode							   :leetcode:
 file:leetcode.org
-** DONE easy problems	[75%] 					  :interview:
+** DONE easy problems	[75%]					  :interview:
    CLOSED: [2016-05-19 Thu 09:41] DEADLINE: <2016-05-16 Mon>
 - 50 problems in total 
 - do review each week. 
@@ -203,10 +203,11 @@ trainning focus:
 - 132 in total. 
 - appro 80 days. 
 *** TODO leetcode 2 problems 
-    SCHEDULED: <2016-06-17 Fri .+4d>
+    SCHEDULED: <2016-07-26 Tue .+4d>
+    - State "DONE"       from "TODO"       [2016-07-22 Fri 11:17]
     - State "DONE"       from "TODO"       [2016-06-14 Tue 19:01]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-06-14 Tue 19:01]
+    :LAST_REPEAT: [2016-07-22 Fri 11:17]
     :END:
 
 ** TODO hard
