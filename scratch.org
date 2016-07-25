@@ -180,6 +180,9 @@ Analyze your email.
 
 
 
+** TODO [#B] org mode + omni focus 
+   DEADLINE: <2016-08-01 Mon>
+
 
 * entertainment
 ** DONE create a music playlist
