@@ -74,7 +74,7 @@ supporting different tags for each events, random event based on tags
 
 ** reading							    :reading:
 daily reading progress 
-*** design pattern [2/3]					       :book:
+*** TODO design pattern [2/3] 					       :book:
 **** outline
 26 tutorials, 15 min each 
 file:designpattern.org 
@@ -105,7 +105,7 @@ file:designpattern.org
      :END:
 
 
-*** javascript design pattern.					       :book:
+*** TODO javascript design pattern. 				       :book:
 **** TODO read javascript design pattern. 
      SCHEDULED: <2016-07-29 Fri +1w>
      - State "DONE"       from "TODO"       [2016-07-24 Sun 23:03]
@@ -114,7 +114,7 @@ file:designpattern.org
      :END:
 
 
-*** programming pearls [2/3]					       :book:
+*** TODO programming pearls [2/3] 				       :book:
 8 chapters left 
 file:programming_pearls.org 
 **** DONE read one chapter 
@@ -133,7 +133,7 @@ file:programming_pearls.org
      :END:
 
 
-*** read clean code						       :book:
+*** TODO read clean code 					       :book:
 [[file:cleancode.org]]
 **** TODO read clean code 1 chapter 
      SCHEDULED: <2016-07-28 Thu +5d>
