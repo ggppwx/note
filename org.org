@@ -217,7 +217,7 @@ trainning focus:
 
 * finance
 ** investment							  :investing:
-*** TODO learn stock basic
+*** TODO [#C] learn stock basic
     DEADLINE: <2016-07-30 Sat>
 
 
