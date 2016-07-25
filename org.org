@@ -107,7 +107,11 @@ file:designpattern.org
 
 *** javascript design pattern.					       :book:
 **** TODO read javascript design pattern. 
-     SCHEDULED: <2016-07-22 Fri +1w>
+     SCHEDULED: <2016-07-29 Fri +1w>
+     - State "DONE"       from "TODO"       [2016-07-24 Sun 23:03]
+     :PROPERTIES:
+     :LAST_REPEAT: [2016-07-24 Sun 23:03]
+     :END:
 
 
 *** programming pearls [2/3]					       :book:
@@ -173,6 +177,7 @@ file:programming_pearls.org
    
 ** DONE ergo work space
 
+
 * leetcode							   :leetcode:
 file:leetcode.org
 ** easy problems	[75%] 					  :interview:
@@ -209,8 +214,14 @@ trainning focus:
 ** TODO hard
  
 
-   
-* 短期目标
+
+* finance
+** investment							  :investing:
+*** TODO learn stock basic
+    DEADLINE: <2016-07-30 Sat>
+
+
+
 
     
 

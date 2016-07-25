@@ -1,0 +1,3 @@
+#+TITLE: stock 
+
+* basics 
