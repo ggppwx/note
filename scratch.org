@@ -157,7 +157,7 @@ ios mail app is updated support bulk archieve
 
 ** TODO find a way to learn more in work 
 
-** TODO GTD
+** DONE GTD
    DEADLINE: <2016-07-24 Sun>
 
 
