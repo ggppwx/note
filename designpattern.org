@@ -826,7 +826,7 @@ double finalPrice = liquor.accept(taxcalc);
 
 
 
-* TODO flyweight 
+* DONE flyweight 
 - used when you need to create large number of similar objects. ( 100000 etc. ) 
 - share objects are the same rather than creating new ones
 - share obj
