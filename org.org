@@ -107,10 +107,11 @@ file:designpattern.org
 
 *** javascript design pattern. 					       :book:
 **** TODO read javascript design pattern. 
-     SCHEDULED: <2016-07-29 Fri +1w>
+     SCHEDULED: <2016-08-02 Tue +4d>
+     - State "DONE"       from "TODO"       [2016-07-27 Wed 10:49]
      - State "DONE"       from "TODO"       [2016-07-24 Sun 23:03]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-07-24 Sun 23:03]
+     :LAST_REPEAT: [2016-07-27 Wed 10:49]
      :END:
 
 
@@ -198,10 +199,10 @@ trainning focus:
     :END:
 
 *** TODO leetcode easy problem review				     :review:
-    DEADLINE: <2016-07-07 Thu +1w>
-    - State "DONE"       from "TODO"       [2016-07-25 Tue 10:58]
+    DEADLINE: <2016-08-15 Wed .+1w>
+    - State "DONE"       from "TODO"       [2016-07-27 Wed 10:59]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-07-26 Tue 10:58]
+    :LAST_REPEAT: [2016-07-27 Wed 10:59]
     :END:
 
 ** medium 
