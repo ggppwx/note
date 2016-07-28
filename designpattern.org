@@ -355,6 +355,8 @@ int main(){
   EnemyShipBuilding* makeUFO = new UFOShipBuilding(); // create a builder
   EnemyShip* ship1 = makeUFO -> orderShip("UFO");
   EnemyShip* ship2 = makeUFO -> orderShip("BOSS");
+
+  ship1 -> makeShip(); 
 }
 #+END_SRC
 
@@ -384,7 +386,7 @@ static Singleton* getInstance(){
 #+END_SRC
 
 ** threaded situtation
-
+- key words: synchronized
 #+BEGIN_SRC java
 public static void main(){
   Runnable getTiles = new GetTheTiles();
@@ -416,7 +418,7 @@ public class Singleton{
     // don't need to consider multi thread if the first instance is already created.
     if (instance == null) {
       // only sync when the object is created
-      synchronized(Singleton.class) {
+      synchronized(Singleton.class) {  
         if ( instance == null ) {
           instance = new Singleton(); // this should be atomic: no access at the same time 
         }
@@ -439,6 +441,7 @@ public class Singleton{
 - create objects made from bunch of other objects 
 - hid the creation parts 
 - only builder knows specs 
+- pass builder to director, director CALLS builder's methods
 
 #+BEGIN_SRC java
 // this is a pure interface
@@ -501,6 +504,8 @@ Robot r = re.getRobot();  // creation of robot is invisible
 
 
 * DONE prototype
+  - Note taken on [2016-07-28 Thu 18:35] \\
+    clone method
 - creating new objects by cloning other objects
 - reduce the needs to create multi subclasses
 - create cloneFactory
@@ -544,18 +549,21 @@ Sheep cloneS = (Sheep)animalMaker.getClone(s); // call sheep makeClone
 
 * DONE decorator
   CLOSED: [2016-05-21 Sat 17:25]
+  - Note taken on [2016-07-28 Thu 18:35] \\
+    pizza example, like pizza = new D1(new Original());
 ** what is decorator 
 - modify the obj dynamically 
 - more flexible 
 - using many simple classes
 - adding new code rather than chaging old code 
+- pass the obj(pizza) to decorator. 
+- use overriding to modify the object
 ** example
 #+BEGIN_SRC java
 
 public interface Pizza {
   public String getDes();
   public double getCost();
-
 }
 
 public class PlainPizza implements Pizza {  
