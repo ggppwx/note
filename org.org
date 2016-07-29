@@ -159,13 +159,15 @@ file:programming_pearls.org
 
 
 *** TODO read object oriented thought process			       :book:
-    SCHEDULED: <2016-07-29 Fri .+1w>
+    SCHEDULED: <2016-08-05 Fri .+1w>
+    - State "DONE"       from "TODO"       [2016-07-29 Fri 15:55]
+    CLOCK: [2016-07-29 Fri 15:44]--[2016-07-29 Fri 15:55] =>  0:11
     CLOCK: [2016-07-29 Fri 15:00]--[2016-07-29 Fri 15:14] =>  0:14
     - State "DONE"       from "TODO"       [2016-07-25 Mon 17:49]
     CLOCK: [2016-07-25 Mon 16:52]--[2016-07-25 Mon 17:48] =>  0:56
     - State "DONE"       from "TODO"       [2016-07-22 Fri 00:03]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-07-25 Mon 17:49]
+    :LAST_REPEAT: [2016-07-29 Fri 15:55]
     :END:
 
 
@@ -240,3 +242,4 @@ trainning focus:
 
 
 
+l
