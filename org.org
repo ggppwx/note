@@ -136,8 +136,9 @@ file:programming_pearls.org
 
 
 *** read clean code 						       :book:
-[[file:cleancode.org]]
 **** TODO read clean code 1 chapter 
+     CLOCK: [2016-07-29 Fri 17:28]
+[[file:cleancode.org]]
      SCHEDULED: <2016-07-28 Thu +5d>
      - State "DONE"       from "TODO"       [2016-07-22 Fri 16:46]
      - State "DONE"       from "TODO"       [2016-07-19 Tue 10:29]

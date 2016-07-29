@@ -83,3 +83,10 @@ public class CodeAnalyzer implements JavaFileAnalysis {
 - data transfer object. 
   - active record, a special form of DTO. having public ( or bean accessed) variables
     and navigational methods like save/find
+
+** unit tests
+- laws of TDD:
+  - write failing unit test. 
+- test and production code are written together
+- having dirty test = having no test
+- test code is as important as the production one
