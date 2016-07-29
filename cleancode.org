@@ -90,3 +90,14 @@ public class CodeAnalyzer implements JavaFileAnalysis {
 - test and production code are written together
 - having dirty test = having no test
 - test code is as important as the production one
+- readability is very important !
+- build - operate - check pattern
+- one assert per test
+- single concept per test
+- FIRST rule
+  - fast
+  - independent on each other
+  - repeatable in any environment
+  - self-validating: fail or pass, not a log line
+  - timely: should be written before the production code that makes them pass 
+
