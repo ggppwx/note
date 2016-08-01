@@ -1,4 +1,14 @@
 #+TITLE: design pattern notes 
+#+BEGIN_HTML
+---
+layout: post
+title: design pattern notes
+date: 2016-08-01
+tags: [notes]
+descritipn: a simple notes to design pattern 
+---
+#+END_HTML
+
 
 
 in total we have 27 tutorials 
