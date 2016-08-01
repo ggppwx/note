@@ -182,6 +182,16 @@ Analyze your email.
 
 ** TODO [#B] org mode + omni focus 
    DEADLINE: <2016-08-01 Mon>
+- sync org file with omni focus. 
+- a script 
+- process the org file. 
+- mail drop. 
+- marked once it's dropped 
+- more
+  - post it to the board 
+  - sync the board when commit. 
+  - publish org mode to github page 
+- archive org obsolete items 
 
 
 * entertainment
