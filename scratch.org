@@ -180,7 +180,7 @@ Analyze your email.
 
 
 
-** TODO [#B] org mode + omni focus 
+** TODO [#B] org mode + omni focus				      :emacs:
    DEADLINE: <2016-08-01 Mon>
 - sync org file with omni focus. 
 - a script 
@@ -192,6 +192,10 @@ Analyze your email.
   - sync the board when commit. 
   - publish org mode to github page 
 - archive org obsolete items 
+- convert to markdown language when publishing
+
+** TODO org publish to personal web 
+
 
 
 * entertainment

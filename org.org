@@ -68,7 +68,7 @@ supporting different tags for each events, random event based on tags
 
 * 读书&写作
 
-** TODO writing my first blog
+** DONE writing my first blog					    :writing:
 
 
 
