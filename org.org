@@ -52,6 +52,23 @@ supporting different tags for each events, random event based on tags
 
 
 
+** TODO [#B] org mode + omni focus				      :emacs:
+- sync org file with omni focus. 
+- a script 
+- process the org file. 
+- mail drop. 
+- marked once it's dropped 
+- more
+  - post it to the board 
+  - sync the board when commit. 
+  - publish org mode to github page 
+- archive org obsolete items 
+- convert to markdown language when publishing
+
+** TODO [#A] org publish to personal web 
+- a script to convert & publish org to md/html
+- publish to my personal blog 
+
 
 * online tutorial 
 ** TODO coursea
