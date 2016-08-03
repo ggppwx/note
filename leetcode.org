@@ -154,3 +154,6 @@ for(int i = 2 ; i <= (int)sqrt(n) ; i++ ){  // if i > sqrt(n), situation already
    }
 }
 #+END_SRC
+
+
+** 357 Count Numbers with Unique Digits
