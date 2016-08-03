@@ -157,3 +157,10 @@ for(int i = 2 ; i <= (int)sqrt(n) ; i++ ){  // if i > sqrt(n), situation already
 
 
 ** 357 Count Numbers with Unique Digits
+
+** 343 Integer Break
+- find regularity 
+- try bottom-up approach 
+
+** 268. Missing Number
+- simple algebra calculation 
