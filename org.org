@@ -66,6 +66,7 @@ supporting different tags for each events, random event based on tags
 - convert to markdown language when publishing
 
 ** TODO [#A] org publish to personal web 
+   DEADLINE: <2016-08-07 Sun>
 - a script to convert & publish org to md/html
 - publish to my personal blog 
 
