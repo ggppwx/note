@@ -155,10 +155,9 @@ file:programming_pearls.org
 
 *** read clean code 						       :book:
 **** TODO read clean code 1 chapter 
-     - State "DONE"       from "TODO"       [2016-07-29 Fri 18:19]
+     - State "DONE"       from "TODO"       [2016-08-04 Thu 11:18]
      CLOCK: [2016-07-29 Fri 17:28]--[2016-07-29 Fri 18:19] =>  0:51
-[[file:cleancode.org]]
-     SCHEDULED: <2016-08-02 Tue +5d>
+     SCHEDULED: <2016-08-22 Mon +5d>
      - State "DONE"       from "TODO"       [2016-07-22 Fri 16:46]
      - State "DONE"       from "TODO"       [2016-07-19 Tue 10:29]
      - State "DONE"       from "TODO"       [2016-07-11 Mon 11:32]
@@ -167,12 +166,15 @@ file:programming_pearls.org
      - State "DONE"       from "TODO"       [2016-06-28 Tue 17:23]
      - State "DONE"       from "TODO"       [2016-06-23 Thu 18:59]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-07-29 Fri 18:19]
+     :LAST_REPEAT: [2016-08-04 Thu 11:18]
      :END:
+[[file:cleancode.org]]
 
 **** DONE clean code review
      SCHEDULED: <2016-07-08 Fri>
-
+**** TODO clean code review
+     SCHEDULED: <2016-08-10 Wed>
+     
 **** TODO clean code review
 
 *** TODO read code complete					       :book:
@@ -190,7 +192,7 @@ file:programming_pearls.org
     :LAST_REPEAT: [2016-07-29 Fri 15:55]
     :END:
 
-
+    
 
 * misc 
 ** TODO build a home theater 
