@@ -24,8 +24,6 @@ else
     MATCH=$(find $DES -name "*$TEMP_FILE_NAME")
     echo $MATCH
 
-
-    
     if [[ $MATCH = "" ]]; then
 	NEW_FILE_NAME="$DES$NEW_FILE_NAME"
 	echo "NOT MATCH.. run convertion: $NEW_FILE_NAME"
@@ -34,7 +32,13 @@ else
 	NEW_FILE_NAME="$MATCH"
 	echo $NEW_FILE_NAME
     fi
-    
-    
-    
+
+    pandoc $OLD_FILE_NAME -o $NEW_FILE_NAME
+
+    # git commit
+    cd $DES
+    git add $NEW_FILE_NAME
+    git commit -m "updating $OLD_FILE_NAME"
+    git pull
+    git push
 fi

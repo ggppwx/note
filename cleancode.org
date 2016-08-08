@@ -1,4 +1,13 @@
 #+TITLE: clean code notes
+#+BEGIN_HTML
+---
+layout: post
+title: clean code notes
+date: 2016-08-07
+tags: [notes, code]
+descritipn: clean code
+---
+#+END_HTML
 
 * content
   

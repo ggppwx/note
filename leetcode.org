@@ -1,4 +1,14 @@
 #+TITLE: leetcode problems 
+#+BEGIN_HTML
+---
+layout: post
+title: leet code notes (simple) 
+date: 2016-08-07
+tags: [notes, leetcode]
+descritipn: leetcode problem solving. 
+---
+#+END_HTML
+
 
 * guild line 
 - think before coding 

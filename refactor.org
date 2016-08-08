@@ -1,4 +1,14 @@
 #+TITLE: refactoring 
+#+BEGIN_HTML
+---
+layout: post
+title: code refactoring 
+date: 2016-08-07
+tags: [notes, code, video]
+descritipn: refactoring 
+---
+#+END_HTML
+
 
 * outline [2/3]
 18 vidos in total, 15 min each tutorial 
