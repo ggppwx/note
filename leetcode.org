@@ -5,7 +5,7 @@ layout: post
 title: leet code notes (simple) 
 date: 2016-08-07
 tags: [notes, leetcode]
-descritipn: leetcode problem solving. 
+description: leetcode problem solving. 
 ---
 #+END_HTML
 

@@ -5,7 +5,7 @@ layout: post
 title: design pattern notes
 date: 2016-08-01
 tags: [notes]
-descritipn: a simple notes to design pattern 
+description: a simple notes to design pattern 
 ---
 #+END_HTML
 

@@ -1,4 +1,15 @@
 #+TITLE: reading notes of the book programming pearls 
+#+BEGIN_HTML
+---
+layout: post
+title: programming pearls 
+date: 2016-08-08
+tags: [notes, code]
+description: note for programming pearls
+---
+#+END_HTML
+
+
 
 * DONE Part 1 
 
