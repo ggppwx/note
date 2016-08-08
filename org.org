@@ -65,8 +65,8 @@ supporting different tags for each events, random event based on tags
 - archive org obsolete items 
 - convert to markdown language when publishing
 
-** TODO [#A] org publish to personal web 
-   DEADLINE: <2016-08-07 Sun>
+** DONE [#A] org publish to personal web 
+   CLOSED: [2016-08-07 Sun 23:32] DEADLINE: <2016-08-07 Sun>
 - a script to convert & publish org to md/html
 - publish to my personal blog 
 
@@ -126,12 +126,13 @@ file:designpattern.org
 
 *** javascript design pattern. 					       :book:
 **** TODO read javascript design pattern. 
-     SCHEDULED: <2016-08-06 Sat +4d>
+     SCHEDULED: <2016-08-10 Wed +4d>
+     - State "DONE"       from "TODO"       [2016-08-08 Mon 01:32]
      - State "DONE"       from "TODO"       [2016-08-02 Tue 10:24]
      - State "DONE"       from "TODO"       [2016-07-27 Wed 10:49]
      - State "DONE"       from "TODO"       [2016-07-24 Sun 23:03]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-08-02 Tue 10:24]
+     :LAST_REPEAT: [2016-08-08 Mon 01:32]
      :END:
 
 
@@ -182,7 +183,8 @@ file:programming_pearls.org
 
 
 *** TODO read object oriented thought process			       :book:
-    SCHEDULED: <2016-08-05 Fri .+1w>
+    SCHEDULED: <2016-08-15 Mon .+1w>
+    - State "DONE"       from "TODO"       [2016-08-08 Mon 01:32]
     - State "DONE"       from "TODO"       [2016-07-29 Fri 15:55]
     CLOCK: [2016-07-29 Fri 15:44]--[2016-07-29 Fri 15:55] =>  0:11
     CLOCK: [2016-07-29 Fri 15:00]--[2016-07-29 Fri 15:14] =>  0:14
@@ -190,7 +192,7 @@ file:programming_pearls.org
     CLOCK: [2016-07-25 Mon 16:52]--[2016-07-25 Mon 17:48] =>  0:56
     - State "DONE"       from "TODO"       [2016-07-22 Fri 00:03]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-07-29 Fri 15:55]
+    :LAST_REPEAT: [2016-08-08 Mon 01:32]
     :END:
 
     
@@ -238,12 +240,13 @@ trainning focus:
 - 132 in total. 
 - appro 80 days. 
 *** TODO leetcode 2 problems medium
-    SCHEDULED: <2016-08-07 Sun .+4d>
+    SCHEDULED: <2016-08-12 Fri .+4d>
+    - State "DONE"       from "TODO"       [2016-08-08 Mon 01:33]
     - State "DONE"       from "TODO"       [2016-08-03 Wed 17:18]
     - State "DONE"       from "TODO"       [2016-07-22 Fri 11:17]
     - State "DONE"       from "TODO"       [2016-06-14 Tue 19:01]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-08-03 Wed 17:18]
+    :LAST_REPEAT: [2016-08-08 Mon 01:33]
     :END:
 
 ** TODO hard
