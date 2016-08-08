@@ -160,6 +160,8 @@ ios mail app is updated support bulk archieve
 ** DONE GTD
    DEADLINE: <2016-07-24 Sun>
 
+** TODO [#B] mouse-less work flow
+
 
 * pet project thoughts
 ** TODO a text processor 
@@ -175,7 +177,7 @@ the text processor process the text to find new vocabulary
 
 
 
-** TODO a email processor 
+** a email processor 
 Analyze your email.
 
 

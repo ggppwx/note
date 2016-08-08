@@ -31,3 +31,8 @@ file:refactor.org
 ** DONE fix drqses <2016-05-03 Tue 11:57> 
 drqs in queue
 
+
+
+* retrospect
+** TODO [#A] filling out scratch pad 
+   SCHEDULED: <2016-08-08 Mon ++2d>
