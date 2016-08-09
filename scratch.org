@@ -162,6 +162,7 @@ ios mail app is updated support bulk archieve
 
 ** TODO [#B] mouse-less work flow
 
+** TODO daily work work-flow
 
 * pet project thoughts
 ** TODO a text processor 
