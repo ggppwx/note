@@ -1,5 +1,11 @@
 #+TITLE: tasks at work 
 
+* projects
+** Market structure report 
+*** TODO JIRA issue: UI for date section.
+- test driven ? 
+
+
 * work productitvity 
 + set the goal 
 + use jira to track the daily effort 
@@ -30,6 +36,10 @@ file:refactor.org
 ** DONE the first entry of the work template 
 ** DONE fix drqses <2016-05-03 Tue 11:57> 
 drqs in queue
+
+
+
+
 
 
 

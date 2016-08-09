@@ -25,35 +25,40 @@ function git-autopush
     git push origin master
 }
 
-
-# if [[ "$#" != "1" ]] ; then
-#     echo "should have 1 argument !"
-#     exit
-# else
-#     echo $1
-#     if [[ $1 = "pull" ]]; then
-#         git-pull
-#     fi
-#     if [[ $1 = "push" ]]; then
-#         git-autopush
-#     fi    
-#     exit
-# fi
-
-
 # schedule run
-counter=0
-while true
-do
-    if [ $counter = 10 ]; then
-	git-pull
-	counter=0
-    else
-	git-autopush
-    fi
-    sleep 5000    
-done
+function schedule
+{
+    counter=0
+    while true
+    do
+	if [ $counter = 10 ]; then
+	    git-pull
+	    counter=0
+	else
+	    git-autopush
+	fi
+	sleep 5000    
+    done
+}
 
+
+
+if [[ "$#" = "0" ]] ; then
+    echo "no argument! bring up a process"
+    schedule    
+    exit
+elif [[ "$#" = "1" ]]; then
+    echo $1
+    if [[ $1 = "pull" ]]; then
+        git-pull
+    fi
+    if [[ $1 = "push" ]]; then
+        git-autopush
+    fi    
+    exit
+else
+    echo "argument number ERROR"
+fi
 
 
 
