@@ -107,11 +107,11 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 - [ ] 
 
 
-** emacs coding snipts
+** emacs coding snippets
 *** TODO create template for common language
 
 ** emacs shortcut 
-*** DONE install emacs shotcut 
+*** DONE install emacs shortcut 
 *** TODO install emacs window management 
     
 ** emacs helm mode 
