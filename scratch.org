@@ -191,6 +191,7 @@ Analyze your email.
 * learn new things 
 ** TODO try out unit-test. 
 - test driven development 
+- unit test for nodejs project
 
 
 * entertainment
