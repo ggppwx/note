@@ -187,6 +187,12 @@ Analyze your email.
 
 
 
+
+* learn new things 
+** TODO try out unit-test. 
+- test driven development 
+
+
 * entertainment
 ** DONE create a music playlist
    DEADLINE: <2016-07-10 Sun>
