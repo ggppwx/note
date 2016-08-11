@@ -123,13 +123,14 @@ file:designpattern.org
 
 *** javascript design pattern.					       :book:
 **** TODO read javascript design pattern. 
-     SCHEDULED: <2016-08-10 Wed +4d>
+     SCHEDULED: <2016-08-14 Sun +4d>
+     - State "DONE"       from "TODO"       [2016-08-11 Thu 15:32]
      - State "DONE"       from "TODO"       [2016-08-08 Mon 01:32]
      - State "DONE"       from "TODO"       [2016-08-02 Tue 10:24]
      - State "DONE"       from "TODO"       [2016-07-27 Wed 10:49]
      - State "DONE"       from "TODO"       [2016-07-24 Sun 23:03]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-08-08 Mon 01:32]
+     :LAST_REPEAT: [2016-08-11 Thu 15:32]
      :END:
 
 
