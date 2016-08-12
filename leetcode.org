@@ -174,3 +174,10 @@ for(int i = 2 ; i <= (int)sqrt(n) ; i++ ){  // if i > sqrt(n), situation already
 
 ** 268. Missing Number
 - simple algebra calculation 
+
+** 319 bulb switcher
+math. write the number and find the regular pattern
+sqrt(n)
+
+** 144 binary tree preorder traverse
+iteration method? I think we should use stack 
