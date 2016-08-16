@@ -46,6 +46,14 @@
 
 - high quality life comes from material , spiritual, pysical
 
+
+
+** TODO [#A] set the goal for WORK every day. 
+- drqs
+- projects 
+- next things to do
+- work until 5:00 - 5:30 pm
+
 ** TODO spent 1 ~ 2 hours non work related projects.			:gtd:
 - i.e. reading, self studying 
 
