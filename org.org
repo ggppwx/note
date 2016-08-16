@@ -199,7 +199,7 @@ file:programming_pearls.org
 * writing 							    :writing:
 ** DONE writing my first blog					    
 
-** TODO writing practice.
+** DONE writing practice.
    DEADLINE: <2016-08-15 Mon>
 - weekly writing.
 - each article should have a topic  
