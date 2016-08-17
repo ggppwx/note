@@ -199,8 +199,8 @@ file:programming_pearls.org
 * writing 							    :writing:
 ** DONE writing my first blog					    
 
-** TODO [#A] writing practice.
-   DEADLINE: <2016-08-15 Mon>
+** DONE [#A] writing practice.
+   CLOSED: [2016-08-16 Tue 00:28] DEADLINE: <2016-08-15 Mon>
 - weekly writing.
 - each article should have a topic  
 - refer to [[http://www.yinwang.org/]]
