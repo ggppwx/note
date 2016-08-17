@@ -134,6 +134,9 @@ file:designpattern.org
      :LAST_REPEAT: [2016-08-16 Tue 22:04]
      :END:
 
+**** TODO review javascript design pattern 
+     DEADLINE: <2016-08-21 Sun>
+
 
 *** programming pearls [2/3]					       :book:
 8 chapters left 

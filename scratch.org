@@ -48,7 +48,7 @@
 
 
 
-** TODO [#A] set the goal for WORK every day. 
+** DONE [#A] set the goal for WORK every day. 
 - drqs
 - projects 
 - next things to do
