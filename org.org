@@ -75,7 +75,7 @@ supporting different tags for each events, random event based on tags
 
 
 * online tutorial 
-** TODO coursea
+** coursea
    - [X] week 1
    - [ ] week 2
    - [ ] week 3
@@ -123,14 +123,15 @@ file:designpattern.org
 
 *** javascript design pattern.					       :book:
 **** TODO read javascript design pattern. 
-     SCHEDULED: <2016-08-14 Sun +4d>
+     SCHEDULED: <2016-08-18 Thu +4d>
+     - State "DONE"       from "TODO"       [2016-08-16 Tue 22:04]
      - State "DONE"       from "TODO"       [2016-08-11 Thu 15:32]
      - State "DONE"       from "TODO"       [2016-08-08 Mon 01:32]
      - State "DONE"       from "TODO"       [2016-08-02 Tue 10:24]
      - State "DONE"       from "TODO"       [2016-07-27 Wed 10:49]
      - State "DONE"       from "TODO"       [2016-07-24 Sun 23:03]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-08-11 Thu 15:32]
+     :LAST_REPEAT: [2016-08-16 Tue 22:04]
      :END:
 
 
@@ -174,8 +175,9 @@ file:programming_pearls.org
 
 **** DONE clean code review
      SCHEDULED: <2016-07-08 Fri>
-**** TODO clean code review
-     SCHEDULED: <2016-08-10 Wed>
+**** DONE clean code review
+     CLOSED: [2016-08-17 Wed 00:35] SCHEDULED: <2016-08-10 Wed>
+     CLOCK: [2016-08-16 Tue 23:58]--[2016-08-17 Wed 00:35] =>  0:37
      
 
 *** TODO read code complete					       :book:
@@ -211,6 +213,16 @@ file:programming_pearls.org
 
 
 
+** TODO reflection
+   SCHEDULED: <2016-08-19 Fri ++3d>
+   - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
+   CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
+   :PROPERTIES:
+   :LAST_REPEAT: [2016-08-16 Tue 23:30]
+   :END:
+- writing journals 
+
+
 * misc 
 ** TODO build a home theater 
 
@@ -222,7 +234,7 @@ file:programming_pearls.org
 
    
 ** DONE ergo work space
-
+   
 
 * leetcode							   :leetcode:
 file:leetcode.org

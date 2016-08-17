@@ -94,13 +94,18 @@ public class CodeAnalyzer implements JavaFileAnalysis {
     and navigational methods like save/find
 
 ** unit tests
+   - Note taken on [2016-08-17 Wed 00:23] \\
+     IMO, it's very hard to do real test-driven development. but that doesn't necessary unit test is unnecessary,
+     on the contrary, good unit test is helpful. But I also don't think it's good to write unit-test after production 
+     code, that is integration test.
 - laws of TDD:
   - write failing unit test. 
 - test and production code are written together
 - having dirty test = having no test
 - test code is as important as the production one
 - readability is very important !
-- build - operate - check pattern
+- build - operate - check pattern, test should have 3 parts, create utility function to make
+  code clean.
 - one assert per test
 - single concept per test
 - FIRST rule
@@ -109,4 +114,18 @@ public class CodeAnalyzer implements JavaFileAnalysis {
   - repeatable in any environment
   - self-validating: fail or pass, not a log line
   - timely: should be written before the production code that makes them pass 
+- do not test private methods
+- no need to test all conner cases, test is used to help develop
 
+** classes 
+- classes should be small 
+  - a brief class description should be less than 25 words
+  - avoid Processor, Manager
+  - SRP, single responsibility principle
+- in class cohesion should be high
+- use derived classes to replace a single class. SQL generator example
+- class should be open to extension but close to modification
+- minimize coupling. stock exchange example, never depend on concrete class.
+  - write a stock exchange interface, write a testable dummy concrete class
+
+** systems
