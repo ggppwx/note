@@ -123,7 +123,8 @@ file:designpattern.org
 
 *** javascript design pattern.					       :book:
 **** TODO read javascript design pattern. 
-     SCHEDULED: <2016-08-18 Thu +4d>
+     SCHEDULED: <2016-08-22 Mon +4d>
+     - State "DONE"       from "TODO"       [2016-08-18 Thu 00:00]
      - State "DONE"       from "TODO"       [2016-08-16 Tue 22:04]
      - State "DONE"       from "TODO"       [2016-08-11 Thu 15:32]
      - State "DONE"       from "TODO"       [2016-08-08 Mon 01:32]
@@ -131,7 +132,7 @@ file:designpattern.org
      - State "DONE"       from "TODO"       [2016-07-27 Wed 10:49]
      - State "DONE"       from "TODO"       [2016-07-24 Sun 23:03]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-08-16 Tue 22:04]
+     :LAST_REPEAT: [2016-08-18 Thu 00:00]
      :END:
 
 **** TODO review javascript design pattern 
@@ -216,7 +217,7 @@ file:programming_pearls.org
 
 
 
-** TODO reflection
+** TODO [#A] reflection
    SCHEDULED: <2016-08-19 Fri ++3d>
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25

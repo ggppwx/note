@@ -60,7 +60,7 @@
 
 
 * emacs learning						 :move:emacs:
-** learn lisp language
+** TODO learn lisp language
 https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
 *** DONE emacs sync online ? 
     CLOSED: [2016-05-02 Mon 22:03]
@@ -92,6 +92,8 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 
 *** DONE capture template 
     CLOSED: [2016-05-03 Tue 11:48]
+*** TODO planning & recording tasks 
+
 
 ** DONE emacs code templating 
    CLOSED: [2016-05-21 Sat 23:18]
@@ -163,7 +165,7 @@ file:refactor.org
 
 * Productivity
 ** DONE clean email 
-ios mail app is updated support bulk archieve 
+ios mail app is updated support bulk archive
 
 ** TODO find a way to learn more in work 
 
@@ -201,6 +203,8 @@ Analyze your email.
 - test driven development 
 - unit test for nodejs project
 
+** TODO subscribe programming blogs
+- coding horror 
 
 * entertainment
 ** DONE create a music playlist
