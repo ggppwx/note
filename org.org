@@ -75,16 +75,7 @@ supporting different tags for each events, random event based on tags
 
 
 * online tutorial 
-** coursea
-   - [X] week 1
-   - [ ] week 2
-   - [ ] week 3
-   - [ ] week 4 
-
-
-
-
-
+** TODO  coursea
 
 
 * 读书&写作
