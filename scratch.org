@@ -1,5 +1,6 @@
 #+TITLE: scratch 
 #+DATE: <2016-04-26>
+#+TODO: TODO(t) WAIT(w@/!) | DONE(d!)
 
 * 长期目标 
 ** full-stack engineer 
@@ -54,7 +55,7 @@
 - next things to do
 - work until 5:00 - 5:30 pm
 
-** TODO spent 1 ~ 2 hours non work related projects.			:gtd:
+** DONE spent 1 ~ 2 hours non work related projects.			:gtd:
 - i.e. reading, self studying 
 
 
@@ -62,6 +63,7 @@
 * emacs learning						 :move:emacs:
 ** TODO learn lisp language
 https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
+[[http://ergoemacs.org/emacs/elisp_basics.html]]
 *** DONE emacs sync online ? 
     CLOSED: [2016-05-02 Mon 22:03]
 auto sync 

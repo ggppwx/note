@@ -208,13 +208,14 @@ file:programming_pearls.org
 
 
 
-** TODO [#A] reflection
+** TODO [#A] reflection, writing journal
    SCHEDULED: <2016-08-19 Fri ++3d>
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
    :LAST_REPEAT: [2016-08-16 Tue 23:30]
    :END:
+- reading past journals
 - writing journals 
 
 
@@ -268,6 +269,7 @@ trainning focus:
     - State "DONE"       from "TODO"       [2016-07-22 Fri 11:17]
     - State "DONE"       from "TODO"       [2016-06-14 Tue 19:01]
     :PROPERTIES:
+    :STYLE:    habit
     :LAST_REPEAT: [2016-08-10 Wed 22:19]
     :END:
 
