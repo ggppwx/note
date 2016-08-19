@@ -5,6 +5,7 @@
 *** TODO JIRA issue: UI for date section.
 - test driven ? 
 
+*** TODO next project
 
 
 * KTLO
@@ -19,13 +20,16 @@
    :END:
 
 ** TODO [#A] spent 1 hour on KTLO 
-   SCHEDULED: <2016-08-19 Fri ++1d>
+   SCHEDULED: <2016-08-20 Sat ++1d>
+   - State "DONE"       from "TODO"       [2016-08-19 Fri 16:09]
+   CLOCK: [2016-08-19 Fri 14:49]--[2016-08-19 Fri 16:09] =>  1:20
+   CLOCK: [2016-08-19 Fri 12:39]--[2016-08-19 Fri 13:02] =>  0:23
    - State "DONE"       from "TODO"       [2016-08-18 Thu 11:43]
    CLOCK: [2016-08-18 Thu 10:35]--[2016-08-18 Thu 11:43] =>  1:08
    CLOCK: [2016-08-17 Wed 18:05]--[2016-08-17 Wed 18:20] =>  0:15
    :PROPERTIES:
    :Effort:   1:00
-   :LAST_REPEAT: [2016-08-18 Thu 11:43]
+   :LAST_REPEAT: [2016-08-19 Fri 16:09]
    :END:
 - clock-in this task 
 - task to JIRA board
