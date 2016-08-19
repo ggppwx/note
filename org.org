@@ -53,6 +53,7 @@ supporting different tags for each events, random event based on tags
 
 
 ** TODO [#C] org mode + omni focus				      :emacs:
+   DEADLINE: <2016-09-30 Fri>
 - sync org file with omni focus. 
 - a script 
 - process the org file. 
@@ -73,6 +74,8 @@ supporting different tags for each events, random event based on tags
 
 ** TODO enhance the github personal website
 
+
+** TODO integrate blog with personal site.
 
 * online tutorial 
 ** TODO  coursea

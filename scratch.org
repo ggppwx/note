@@ -1,6 +1,6 @@
 #+TITLE: scratch 
 #+DATE: <2016-04-26>
-#+TODO: TODO(t) WAIT(w@/!) | DONE(d!)
+#+TODO: TODO REVIEW | DONE
 
 * 长期目标 
 ** full-stack engineer 
@@ -205,7 +205,8 @@ Analyze your email.
 - test driven development 
 - unit test for nodejs project
 
-** TODO subscribe programming blogs
+** DONE subscribe programming blogs
+   CLOSED: [2016-08-18 Thu 23:19]
 - coding horror 
 
 * entertainment
