@@ -12,3 +12,8 @@ description: notes of javascript design pattern video tutorial
 
 
 * contents 
+** module design pattern 
+
+** creational design pattern 
+
+** structural design pattern 
