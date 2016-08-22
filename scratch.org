@@ -34,7 +34,6 @@
 - spent too long on gaming 
 
 <2016-06-16 Thu>
-- long time no gym, scrawny already
 - gaming too much
 - sleep too late. really bad habit 
 - m routine is good. not too many, keep it ! the rule is don't do it at night
@@ -45,7 +44,6 @@
 - utilize what you learn in daily programming 
 
 
-- high quality life comes from material , spiritual, pysical
 
 
 
@@ -202,6 +200,7 @@ Analyze your email.
 
 * learn new things 
 ** TODO try out unit-test. 
+   CLOCK: [2016-08-22 Mon 18:00]--[2016-08-22 Mon 18:23] =>  0:23
 - test driven development 
 - unit test for nodejs project
 
