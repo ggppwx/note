@@ -76,6 +76,8 @@ supporting different tags for each events, random event based on tags
 
 
 ** TODO integrate blog with personal site.
+   SCHEDULED: <2016-08-26 Fri>
+- [ ] remove the comment section. make it anonymous only
 
 * online tutorial 
 ** TODO  coursea
@@ -214,11 +216,13 @@ file:programming_pearls.org
 
 
 ** TODO [#A] reflection, writing journal
-   SCHEDULED: <2016-08-19 Fri ++3d>
+   SCHEDULED: <2016-08-22 Mon ++3d>
+   - State "DONE"       from "TODO"       [2016-08-21 Sun 22:36]
+   CLOCK: [2016-08-21 Sun 22:24]--[2016-08-21 Sun 22:36] =>  0:12
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
-   :LAST_REPEAT: [2016-08-16 Tue 23:30]
+   :LAST_REPEAT: [2016-08-21 Sun 22:36]
    :END:
 - reading past journals
 - writing journals 
@@ -266,7 +270,7 @@ trainning focus:
 - most important problems 
 - 132 in total. 
 - appro 80 days. 
-*** TODO leetcode 2 problems medium
+*** TODO [#B] leetcode 2 problems medium
     SCHEDULED: <2016-08-14 Sun .+4d>
     - State "DONE"       from "TODO"       [2016-08-10 Wed 22:19]
     - State "DONE"       from "TODO"       [2016-08-08 Mon 01:33]
@@ -284,9 +288,16 @@ trainning focus:
 
 * finance
 ** investment							  :investing:
-*** TODO [#B] learn stock basic
-    DEADLINE: <2016-07-30 Sat>
+*** DONE [#B] learn stock basic
+    CLOSED: [2016-08-21 Sun 23:21] DEADLINE: <2016-07-30 Sat>
+    CLOCK: [2016-08-21 Sun 22:47]--[2016-08-21 Sun 23:21] =>  0:34
 
+*** TODO read neatest guide to stock			       :reading:book:
+    SCHEDULED: <2016-09-04 Sun>
+
+
+*** TODO IB basics 
+    DEADLINE: <2016-08-28 Sun>
 
 
 
@@ -298,4 +309,3 @@ trainning focus:
 
 
 
-l
