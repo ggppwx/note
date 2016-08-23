@@ -216,13 +216,15 @@ file:programming_pearls.org
 
 
 ** TODO [#A] reflection, writing journal
-   SCHEDULED: <2016-08-22 Mon ++3d>
+   SCHEDULED: <2016-08-25 Thu ++3d>
+   - State "DONE"       from "TODO"       [2016-08-22 Mon 21:04]
+   CLOCK: [2016-08-22 Mon 20:53]--[2016-08-22 Mon 21:04] =>  0:11
    - State "DONE"       from "TODO"       [2016-08-21 Sun 22:36]
    CLOCK: [2016-08-21 Sun 22:24]--[2016-08-21 Sun 22:36] =>  0:12
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
-   :LAST_REPEAT: [2016-08-21 Sun 22:36]
+   :LAST_REPEAT: [2016-08-22 Mon 21:04]
    :END:
 - reading past journals
 - writing journals 
@@ -259,7 +261,7 @@ trainning focus:
     :END:
 
 *** TODO leetcode easy problem review				     :review:
-    DEADLINE: <2016-08-15 Wed .+1w>
+    DEADLINE: <2016-08-27 Sat .+1w>
     - State "DONE"       from "TODO"       [2016-07-27 Wed 10:59]
     :PROPERTIES:
     :LAST_REPEAT: [2016-07-27 Wed 10:59]
@@ -271,7 +273,8 @@ trainning focus:
 - 132 in total. 
 - appro 80 days. 
 *** TODO [#B] leetcode 2 problems medium
-    SCHEDULED: <2016-08-14 Sun .+4d>
+    SCHEDULED: <2016-08-26 Fri .+4d>
+    - State "DONE"       from "TODO"       [2016-08-22 Mon 21:36]
     - State "DONE"       from "TODO"       [2016-08-10 Wed 22:19]
     - State "DONE"       from "TODO"       [2016-08-08 Mon 01:33]
     - State "DONE"       from "TODO"       [2016-08-03 Wed 17:18]
@@ -279,7 +282,7 @@ trainning focus:
     - State "DONE"       from "TODO"       [2016-06-14 Tue 19:01]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2016-08-10 Wed 22:19]
+    :LAST_REPEAT: [2016-08-22 Mon 21:36]
     :END:
 
 ** TODO leetcode hard problems 
