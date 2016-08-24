@@ -13,7 +13,139 @@ description: notes of javascript design pattern video tutorial
 
 * contents 
 ** module design pattern 
+- use module to achieve encapsulation 
+#+BEGIN_SRC javascript
+(function(win, doc, $) {
+  var chatModule = (function(){ // module design pattern, not a class
+    function _echo(msg) { // private
+      $('.advert').html("<div>" + msg + "</div>")
+    }  
+
+    function talk(msg) { 
+      _echo(msg);
+    }
+    return {
+      talk : talk //public
+    };
+
+  })();  // define and run the function. 
+
+  $(doc).ready(function() {
+    chatModule.talk("cool");
+ 
+  });
+
+})(window, document, jQuery);
+
+#+END_SRC
+
+
 
 ** creational design pattern 
+- singleton 
+- factory 
+- abstract factory 
+- builder
+- prototype 
+#+BEGIN_SRC javascript
+(function(win, $) {
+
+// ---------- Obj --------------------
+function Circle() {
+  this.item = $('<div class="circle"/>');
+}
+Circle.prototype.color = function(clr) { // prototype
+  this.tiem.css('background', clr);
+};
+Circle.prototype.move = function(left, top) {
+  // ....
+};
+Circle.prototype.get = function() {
+  return this.item;
+};
+// -----------------------------------
+
+// ------------ Prototype -------------
+function clone(src, out) {
+  for (var attr in src.prototype) {
+    out.prototype[attr] = src.prototype[attr];
+  }
+}
+function Rect() {
+  this.item = $('<div class="rect"/>')
+}
+clone(Circle, Rect);
+
+
+// ------------- Builder --------------
+function RedCircleBuilder() {
+  this.item = new Circle();
+}
+RedCircleBuilder.prototype.get = function() {
+  return this.item;
+};
+
+function BlueCircleBuilder() {
+  this.item = new Circle();
+  // somthing else
+}
+// --------------------------------------
+
+
+// ------------- Factory ----------------
+var CircleFactory = function() { // factory class 
+  this.types = {};
+  this.create = function(type) { 
+    this.types[type]().get(); // call builder
+    // --> this.RedCircleBuilder().get()
+    // finally, it creates Circle Object. 
+    // new Circle()
+ 
+  };
+  this.register = function(type, cls) { // register a builder
+    this.types[type] = cls;
+  };
+
+};
+
+// ---------------- Singleton ------------
+var CircleGeneratorSingleton = (function() {
+  var instance;
+  
+  function init() {  // this actual generator 
+    var _aCircle = [],
+    _stage = $('.advert'),
+    _cf = new CircleFactory();  // factory obj
+    _cf.register("red", RedCircleBuilder);
+    _cf.register("blue", BlueCircleBuilder);
+    
+    
+    function create(left, top, type) {
+      var circle = _cf.create(type); // use factory
+      circle.move(left, top);
+      return circle;
+    }
+   
+    return {
+      create: create
+    };
+  }
+
+  return {
+    getInstance : function() {
+      if(!instance) {
+        instance = init();
+      }
+      return instance;
+    }
+  };
+
+})();  // this is an object, more like static, because it's executed 
+
+
+
+})(window, jQuery);
+#+END_SRC
+
 
 ** structural design pattern 
