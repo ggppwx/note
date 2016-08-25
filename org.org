@@ -53,13 +53,16 @@ supporting different tags for each events, random event based on tags
 
 
 ** TODO [#A] org mode/omni focus mail drop			      :emacs:
-   DEADLINE: <2016-09-03 Sat>
+   SCHEDULED: <2016-08-27 Sat> DEADLINE: <2016-09-03 Sat>
    CLOCK: [2016-08-24 Wed 23:26]--[2016-08-25 Thu 00:47] =>  1:21
 - [X] apply on domain 
 - [ ] build a personal email sever
 - [ ] sample pop3
 - [ ] project structure
 - [ ] test cases 
+- [ ] adding org entry with python 
+- [ ] re-factoring 
+- [ ] daemon 
 
 ** DONE [#A] org publish to personal web 
    CLOSED: [2016-08-07 Sun 23:32] DEADLINE: <2016-08-07 Sun>
