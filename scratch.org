@@ -1,6 +1,6 @@
 #+TITLE: scratch 
 #+DATE: <2016-04-26>
-#+TODO: TODO REVIEW | DONE
+#+TODO: TODO PROGRESS | DONE
 
 * 长期目标 
 ** full-stack engineer 
@@ -92,7 +92,7 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 
 *** DONE capture template 
     CLOSED: [2016-05-03 Tue 11:48]
-*** TODO planning & recording tasks 
+*** PROGRESS planning & recording tasks 
 
 
 ** DONE emacs code templating 
@@ -219,3 +219,7 @@ Analyze your email.
 
 
 
+
+
+
+* INBOX
