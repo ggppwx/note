@@ -52,19 +52,14 @@ supporting different tags for each events, random event based on tags
 
 
 
-** TODO [#C] org mode/omni focus mail drop 			      :emacs:
-   DEADLINE: <2016-09-30 Fri>
-- sync org file with omni focus. 
-- a script 
-- process the org file. 
-- mail drop. 
-- marked once it's dropped 
-- more
-  - post it to the board 
-  - sync the board when commit. 
-  - publish org mode to github page 
-- archive org obsolete items 
-- convert to markdown language when publishing
+** TODO [#A] org mode/omni focus mail drop			      :emacs:
+   DEADLINE: <2016-09-03 Sat>
+   CLOCK: [2016-08-24 Wed 23:26]--[2016-08-25 Thu 00:47] =>  1:21
+- [X] apply on domain 
+- [ ] build a personal email sever
+- [ ] sample pop3
+- [ ] project structure
+- [ ] test cases 
 
 ** DONE [#A] org publish to personal web 
    CLOSED: [2016-08-07 Sun 23:32] DEADLINE: <2016-08-07 Sun>
