@@ -59,7 +59,7 @@
 
 
 * emacs learning						 :move:emacs:
-** TODO learn lisp language
+** PROGRESS learn lisp language
 https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
 [[http://ergoemacs.org/emacs/elisp_basics.html]]
 *** DONE emacs sync online ? 
