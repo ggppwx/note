@@ -14,7 +14,10 @@
 
 * health
 - going upstairs 3 times a day in office
-- 8 cups of water per day
+** TODO 8 cups of water per day
+** go to bed early ( 12:00 )
+remember the lesson you learn 
+** TODO rest well, recover from cold 
 
 * career
 ** TODO interview preparation
@@ -60,6 +63,7 @@
 
 * emacs learning						 :move:emacs:
 ** PROGRESS learn lisp language
+   SCHEDULED: <2016-09-04 Sun>
 https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
 [[http://ergoemacs.org/emacs/elisp_basics.html]]
 *** DONE emacs sync online ? 
