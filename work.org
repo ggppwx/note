@@ -13,7 +13,9 @@
 
 * KTLO
 ** TODO go through team bf/bb queue 
-   SCHEDULED: <2016-08-28 Sun +2d>
+   SCHEDULED: <2016-09-01 Thu +2d>
+   - State "DONE"       from "TODO"       [2016-08-30 Tue 11:42]
+   - State "DONE"       from "TODO"       [2016-08-30 Tue 11:42]
    - State "DONE"       from "TODO"       [2016-08-26 Fri 11:13]
    CLOCK: [2016-08-26 Fri 11:03]--[2016-08-26 Fri 11:13] =>  0:10
    - State "DONE"       from "TODO"       [2016-08-25 Thu 14:37]
@@ -24,11 +26,12 @@
    - State "DONE"       from "TODO"       [2016-08-17 Wed 18:04]
    CLOCK: [2016-08-17 Wed 17:40]--[2016-08-17 Wed 18:04] =>  0:24
    :PROPERTIES:
-   :LAST_REPEAT: [2016-08-26 Fri 11:13]
+   :LAST_REPEAT: [2016-08-30 Tue 11:42]
    :END:
 
 ** TODO [#A] spent 1 hour on KTLO 
-   SCHEDULED: <2016-08-27 Sat ++1d>
+   SCHEDULED: <2016-08-31 Wed ++1d>
+   - State "DONE"       from "TODO"       [2016-08-30 Tue 17:37]
    - State "DONE"       from "TODO"       [2016-08-26 Fri 13:48]
    - State "DONE"       from "TODO"       [2016-08-25 Thu 15:19]
    - State "DONE"       from "TODO"       [2016-08-24 Wed 18:53]
@@ -46,7 +49,7 @@
    CLOCK: [2016-08-17 Wed 18:05]--[2016-08-17 Wed 18:20] =>  0:15
    :PROPERTIES:
    :Effort:   1:00
-   :LAST_REPEAT: [2016-08-26 Fri 13:48]
+   :LAST_REPEAT: [2016-08-30 Tue 17:37]
    :END:
 - clock-in this task 
 - task to JIRA board
@@ -99,7 +102,8 @@ drqs in queue
 
 * retrospect
 ** TODO [#A] filling out scratch pad 
-   SCHEDULED: <2016-08-30 Tue ++2d>
+   SCHEDULED: <2016-09-01 Thu ++2d>
+   - State "DONE"       from "TODO"       [2016-08-31 Wed 11:38]
    - State "DONE"       from "TODO"       [2016-08-26 Fri 17:41]
    - State "DONE"       from "TODO"       [2016-08-25 Thu 18:18]
    - State "DONE"       from "TODO"       [2016-08-23 Tue 18:45]
@@ -110,6 +114,6 @@ drqs in queue
    - State "DONE"       from "TODO"       [2016-08-11 Thu 15:33]
    - State "DONE"       from "TODO"       [2016-08-09 Tue 12:28]
    :PROPERTIES:
-   :LAST_REPEAT: [2016-08-26 Fri 17:41]
+   :LAST_REPEAT: [2016-08-31 Wed 11:38]
    :Effort:   0:15
    :END:
