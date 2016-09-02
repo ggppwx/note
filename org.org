@@ -75,7 +75,7 @@ supporting different tags for each events, random event based on tags
 
 
 ** TODO integrate blog with personal site.
-   SCHEDULED: <2016-08-26 Fri>
+   SCHEDULED: <2016-09-09 Fri>
 - [ ] remove the comment section. make it anonymous only
 
 * online tutorial 
@@ -118,8 +118,7 @@ file:designpattern.org
 
 *** javascript design pattern.					       :book:
 **** TODO read javascript design pattern. 
-     SCHEDULED: <2016-08-26 Fri ++4d>
-     - State "DONE"       from "TODO"       [2016-08-28 Sun 22:53]
+     SCHEDULED: <2016-09-05 Mon +4d>
      - State "DONE"       from "TODO"       [2016-08-18 Thu 00:00]
      - State "DONE"       from "TODO"       [2016-08-16 Tue 22:04]
      - State "DONE"       from "TODO"       [2016-08-11 Thu 15:32]
@@ -128,7 +127,7 @@ file:designpattern.org
      - State "DONE"       from "TODO"       [2016-07-27 Wed 10:49]
      - State "DONE"       from "TODO"       [2016-07-24 Sun 23:03]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-08-28 Sun 22:53]
+     :LAST_REPEAT: [2016-08-18 Thu 00:00]
      :END:
 
 **** DONE review javascript design pattern 
@@ -156,12 +155,12 @@ file:programming_pearls.org
 
 *** read clean code						       :book:
 **** TODO read clean code 1 chapter 
-     - State "DONE"       from "TODO"       [2016-08-31 Wed 22:28]
+     - State "DONE"       from "TODO"       [2016-09-02 Fri 15:15]
      - State "DONE"       from "TODO"       [2016-08-12 Fri 16:43]
      CLOCK: [2016-08-12 Fri 16:07]--[2016-08-12 Fri 16:35] =>  0:28
      - State "DONE"       from "TODO"       [2016-08-04 Thu 11:18]
      CLOCK: [2016-07-29 Fri 17:28]--[2016-07-29 Fri 18:19] =>  0:51
-     SCHEDULED: <2016-09-01 Thu ++5d>
+     SCHEDULED: <2016-09-06 Tue ++5d>
      - State "DONE"       from "TODO"       [2016-07-22 Fri 16:46]
      - State "DONE"       from "TODO"       [2016-07-19 Tue 10:29]
      - State "DONE"       from "TODO"       [2016-07-11 Mon 11:32]
@@ -170,7 +169,7 @@ file:programming_pearls.org
      - State "DONE"       from "TODO"       [2016-06-28 Tue 17:23]
      - State "DONE"       from "TODO"       [2016-06-23 Thu 18:59]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-08-31 Wed 22:28]
+     :LAST_REPEAT: [2016-09-02 Fri 15:15]
      :END:
 [[file:cleancode.org]]
 
@@ -218,9 +217,8 @@ file:programming_pearls.org
 
 ** TODO [#A] reflection, writing journal
    SCHEDULED: <2016-09-03 Sat +3d>
-   - State "DONE"       from "TODO"       [2016-08-31 Wed 22:24]
-   CLOCK: [2016-08-31 Wed 22:22]--[2016-08-31 Wed 22:24] =>  0:02
-   - State "DONE"       from "TODO"       [2016-08-29 Mon 23:19]
+   - State "DONE"       from "TODO"       [2016-09-02 Fri 12:03]
+   - State "DONE"       from "TODO"       [2016-09-02 Fri 12:03]
    - State "DONE"       from "TODO"       [2016-08-23 Tue 23:46]
    CLOCK: [2016-08-23 Tue 23:35]--[2016-08-23 Tue 23:46] =>  0:11
    - State "DONE"       from "TODO"       [2016-08-22 Mon 21:04]
@@ -230,7 +228,7 @@ file:programming_pearls.org
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
-   :LAST_REPEAT: [2016-08-31 Wed 22:24]
+   :LAST_REPEAT: [2016-09-02 Fri 12:03]
    :END:
 - reading past journals
 - writing journals 
@@ -267,7 +265,7 @@ trainning focus:
     :END:
 
 *** TODO leetcode easy problem review				     :review:
-    DEADLINE: <2016-08-27 Sat .+1w>
+    DEADLINE: <2016-09-11 Sun .+1w>
     - State "DONE"       from "TODO"       [2016-07-27 Wed 10:59]
     :PROPERTIES:
     :LAST_REPEAT: [2016-07-27 Wed 10:59]
@@ -306,7 +304,7 @@ trainning focus:
 
 
 *** TODO IB basics 
-    DEADLINE: <2016-08-28 Sun>
+    DEADLINE: <2016-09-11 Sun>
 
 
 
