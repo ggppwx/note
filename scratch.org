@@ -63,7 +63,7 @@ remember the lesson you learn
 
 * emacs learning						 :move:emacs:
 ** PROGRESS learn lisp language
-   SCHEDULED: <2016-09-04 Sun>
+   SCHEDULED: <2016-09-10 Sat>
 https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
 [[http://ergoemacs.org/emacs/elisp_basics.html]]
 *** DONE emacs sync online ? 

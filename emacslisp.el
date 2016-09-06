@@ -55,5 +55,29 @@
 ;; A function with the (interactive …) clause is called a command, and can be called by execute-extended-command (that is, pressing 【Alt+x】).
 
 
+(point)
+
+(goto-char 39)
+
+
+;; strings
+
+(length "abc")
+
+
+(buffer-name)
+
+
+(find-file "~/")
+
+
+
+
+(defun insert-p-tag ()
+  "insert <p> at cursor point"
+  (interactive)
+  (insert "<p></p>")
+  (backward-char 4))
+
 
 
