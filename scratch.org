@@ -17,7 +17,7 @@
 ** TODO 8 cups of water per day
 ** go to bed early ( 12:00 )
 remember the lesson you learn 
-** TODO rest well, recover from cold 
+** DONE rest well, recover from cold 
 
 * career
 ** TODO interview preparation
