@@ -19,7 +19,10 @@ base.root.append_clean(new_todo)
 # base.save_to_file("out.org")
 
 
-
-
+# adds to the botton of the file
 with open('scratch.org', 'a') as f:
-    f.write("** TODO a new test ")
+    text = """
+** TODO a new test
+test1 description. do what you wanna do 
+"""
+    f.write(text)
