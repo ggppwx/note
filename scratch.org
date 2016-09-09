@@ -175,6 +175,7 @@ file:refactor.org
 ** DONE clean email 
 ios mail app is updated support bulk archive
 
+** TODO publish script to publish article
 ** TODO find a way to learn more in work 
 
 ** DONE GTD
@@ -221,7 +222,6 @@ Analyze your email.
    DEADLINE: <2016-07-10 Sun>
    - Note taken on [2016-07-11 Mon 16:16] \\
      postpone 
-
 
 
 
