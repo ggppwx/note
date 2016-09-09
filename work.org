@@ -13,9 +13,7 @@
 
 * KTLO
 ** TODO go through team bf/bb queue 
-   SCHEDULED: <2016-09-10 Sat .+2d>
-   - State "DONE"       from "TODO"       [2016-09-08 Thu 17:30]
-   CLOCK: [2016-09-08 Thu 17:26]--[2016-09-08 Thu 17:30] =>  0:04
+   SCHEDULED: <2016-09-08 Thu .+2d>
    - State "DONE"       from "TODO"       [2016-09-06 Tue 13:40]
    - State "DONE"       from "TODO"       [2016-09-06 Tue 13:40]
    - State "DONE"       from "TODO"       [2016-09-02 Fri 14:59]
@@ -32,12 +30,12 @@
    - State "DONE"       from "TODO"       [2016-08-17 Wed 18:04]
    CLOCK: [2016-08-17 Wed 17:40]--[2016-08-17 Wed 18:04] =>  0:24
    :PROPERTIES:
-   :LAST_REPEAT: [2016-09-08 Thu 17:30]
+   :LAST_REPEAT: [2016-09-06 Tue 13:40]
    :END:
 
 ** TODO [#A] spent 1 hour on KTLO 
-   SCHEDULED: <2016-09-09 Fri ++1d>
-   - State "DONE"       from "TODO"       [2016-09-08 Thu 17:31]
+   SCHEDULED: <2016-09-10 Sat ++2d>
+   - State "DONE"       from "TODO"       [2016-09-09 Fri 10:46]
    - State "DONE"       from "TODO"       [2016-09-07 Wed 11:14]
    CLOCK: [2016-09-07 Wed 11:14]--[2016-09-07 Wed 11:14] =>  0:00
    - State "DONE"       from "TODO"       [2016-09-06 Tue 13:40]
@@ -61,7 +59,7 @@
    CLOCK: [2016-08-17 Wed 18:05]--[2016-08-17 Wed 18:20] =>  0:15
    :PROPERTIES:
    :Effort:   1:00
-   :LAST_REPEAT: [2016-09-08 Thu 17:31]
+   :LAST_REPEAT: [2016-09-09 Fri 10:46]
    :END:
 - clock-in this task 
 - task to JIRA board
