@@ -77,8 +77,10 @@ supporting different tags for each events, random event based on tags
 ** TODO integrate blog with personal site.
    SCHEDULED: <2016-09-09 Fri>
 - [ ] remove the comment section. make it anonymous only
+- [ ] create a link to my blog. (easy lol )
+
 ** TODO migrate blog to google cloud
-- [ ] find a blog template. (static blog )
+- [ ] find a website template
 
 
 * online tutorial 
