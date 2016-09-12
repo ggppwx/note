@@ -63,10 +63,11 @@ remember the lesson you learn
 
 * emacs learning						 :move:emacs:
 ** PROGRESS learn lisp language
-   SCHEDULED: <2016-09-11 Sun>
+   SCHEDULED: <2016-09-16 Fri ++5d>
+   - State "DONE"       from "PROGRESS"   [2016-09-12 Mon 17:57]
    - State "DONE"       from "PROGRESS"   [2016-09-08 Thu 16:06]
    :PROPERTIES:
-   :LAST_REPEAT: [2016-09-08 Thu 16:06]
+   :LAST_REPEAT: [2016-09-12 Mon 17:57]
    :END:
 https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
 [[http://ergoemacs.org/emacs/elisp_basics.html]]
