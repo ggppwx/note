@@ -10,6 +10,7 @@
 * spiritual life 
 
 * workout 
+** TODO writing a workout plan 
 [[file:workout.org]]
 
 * health
@@ -236,6 +237,8 @@ Analyze your email.
 
 
 
+** TODO game list
+- writing down the games plan to play
 * INBOX 
 ** TODO eBay sell items  
 ** TODO call python script in emacs?  
