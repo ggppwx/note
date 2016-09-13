@@ -176,7 +176,7 @@ file:refactor.org
 ** DONE clean email 
 ios mail app is updated support bulk archive
 
-** TODO publish script to publish article
+** DONE publish script to publish article
 ** TODO find a way to learn more in work 
 
 ** DONE GTD

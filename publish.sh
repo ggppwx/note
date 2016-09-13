@@ -61,7 +61,7 @@ else
 
     # convert
     if [[ $NEED_CONVERT = true ]]; then
-	echo "converting via pandoc..."
+	echo "converting via pandoc"
 	pandoc $OLD_FILE_NAME -o $NEW_FILE_PATH
     else
 	echo "direct copy..."
@@ -69,6 +69,6 @@ else
     fi
     
     # git commit
-    # git_push $NEW_FILE_NAME
+    git_push $NEW_FILE_NAME
 
 fi
