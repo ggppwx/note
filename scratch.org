@@ -237,3 +237,7 @@ Analyze your email.
 
 
 * INBOX 
+** TODO eBay sell items  
+** TODO call python script in emacs?  
+** TODO things you r interested in.  
+** TODO record time 
