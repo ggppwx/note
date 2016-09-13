@@ -8,6 +8,16 @@ TIMESTAMP=`date +%Y-%m-%d`
 # convert it to html/md
 
 # copy to a cerntain directory
+DES="/Users/jingweigu/Documents/workspace/ggppwx.github.io/_posts/"
+
+function git_push
+{
+    cd $DES
+    git add $NEW_FILE_NAME
+    git commit -m "updating $OLD_FILE_NAME"
+    git pull
+    git push
+}
 
 
 # git-push to sync
@@ -15,30 +25,33 @@ if [[ $# != "1" ]] ;then
     echo "ERROR...."
 else
     OLD_FILE_NAME=$1
+
+    
+
+    # org to html 
     TEMP_FILE_NAME="${OLD_FILE_NAME%.org}.html"
     NEW_FILE_NAME="$TIMESTAMP-$TEMP_FILE_NAME"    
     echo $NEW_FILE_NAME
 
     # new file in dir ?
-    DES="/Users/jingweigu/Documents/workspace/ggppwx.github.io/_posts/"
     MATCH=$(find $DES -name "*$TEMP_FILE_NAME")
     echo $MATCH
 
     if [[ $MATCH = "" ]]; then
-	NEW_FILE_NAME="$DES$NEW_FILE_NAME"
+	NEW_FILE_PATH="$DES$NEW_FILE_NAME"
 	echo "NOT MATCH.. run convertion: $NEW_FILE_NAME"
     else
 	echo "MATCH.. update"
-	NEW_FILE_NAME="$MATCH"
-	echo $NEW_FILE_NAME
+	NEW_FILE_PATH="$MATCH"
+	echo $NEW_FILE_PATH
     fi
 
-    pandoc $OLD_FILE_NAME -o $NEW_FILE_NAME
+
+    
+    # convert 
+    pandoc $OLD_FILE_NAME -o $NEW_FILE_PATH
 
     # git commit
-    cd $DES
-    git add $NEW_FILE_NAME
-    git commit -m "updating $OLD_FILE_NAME"
-    git pull
-    git push
+    git_push $NEW_FILE_NAME
+
 fi
