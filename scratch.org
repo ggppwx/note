@@ -155,7 +155,8 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 
 * self-improvement 
 ** TODO code refactoring tutorial				   :worktime:
-   SCHEDULED: <2016-08-19 Fri ++1w>
+   SCHEDULED: <2016-09-16 Fri ++1w>
+   - State "DONE"       from "PROGRESS"   [2016-09-15 Thu 18:18]
    - State "DONE"       from "TODO"       [2016-07-22 Fri 16:45]
    - State "DONE"       from "TODO"       [2016-07-22 Fri 16:45]
    - State "DONE"       from "TODO"       [2016-07-22 Fri 16:45]
@@ -165,7 +166,7 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
    - State "DONE"       from "TODO"       [2016-06-09 Thu 18:53]
    - State "DONE"       from "TODO"       [2016-05-17 Tue 03:50]
    :PROPERTIES:
-   :LAST_REPEAT: [2016-07-22 Fri 16:45]
+   :LAST_REPEAT: [2016-09-15 Thu 18:18]
    :END:
 file:refactor.org
 

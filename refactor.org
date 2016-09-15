@@ -5,7 +5,7 @@ layout: post
 title: code refactoring 
 date: 2016-08-07
 tags: [notes, code, video]
-descritipn: refactoring 
+description: refactoring 
 ---
 #+END_HTML
 
@@ -286,3 +286,48 @@ class GetBonus implements Pay{
 #+END_SRC
 
 * eliminate duplication by using template
+- here the template is a template class 
+- not the template signature in c++, not generic type in java
+#+BEGIN_SRC java
+public class Hamburger {
+  private bool hasMeat;
+  public void makeSandwich() {
+    addHam();
+    if (hasmeat) {
+      addMeat();
+    }
+  }
+}
+
+
+public abstract class Sandwich {
+  final public void makeSandwich() {
+    cutBun();
+    if (needsMeat()) {
+      addMeat();
+    }
+
+    addVege();
+    wrap();
+  }
+
+  abstract void addMeat(); //force override
+  public void cutbun() { ... } //optional 
+  public void wrap() { ... }
+  public boolean needsMeat() { return true; }
+}
+
+// ------> change Hamburger class
+public class Hamburger extends Sandwich{
+  @override
+  public void addMeat() { .. }
+}
+
+public class Vegesub extends Sandwich{
+  boolean needsMeat() { return false; }
+  
+  @override
+  public void addMeat() {  }
+}
+
+#+END_SRC
