@@ -220,7 +220,9 @@ file:programming_pearls.org
 
 
 ** TODO [#A] reflection, writing journal
-   SCHEDULED: <2016-09-15 Thu +3d>
+   SCHEDULED: <2016-09-18 Sun +3d>
+   - State "DONE"       from "TODO"       [2016-09-15 Thu 01:05]
+   CLOCK: [2016-09-15 Thu 00:57]--[2016-09-15 Thu 01:05] =>  0:08
    - State "DONE"       from "TODO"       [2016-09-13 Tue 00:01]
    - State "DONE"       from "TODO"       [2016-09-13 Tue 00:01]
    CLOCK: [2016-09-12 Mon 22:28]--[2016-09-13 Tue 00:01] =>  1:33
@@ -237,7 +239,7 @@ file:programming_pearls.org
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
-   :LAST_REPEAT: [2016-09-13 Tue 00:01]
+   :LAST_REPEAT: [2016-09-15 Thu 01:05]
    :END:
 - reading past journals
 - writing journals 
@@ -281,7 +283,6 @@ trainning focus:
     :END:
 
 ** medium 
-   DEADLINE: <2016-09-10 Sat>
 - most important problems 
 - 132 in total. 
 - appro 80 days. 
