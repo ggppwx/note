@@ -158,13 +158,14 @@ file:programming_pearls.org
 
 *** read clean code						       :book:
 **** TODO read clean code 1 chapter 
+     - State "DONE"       from "TODO"       [2016-09-15 Thu 11:51]
      - State "DONE"       from "TODO"       [2016-09-14 Wed 09:21]
      - State "DONE"       from "TODO"       [2016-09-02 Fri 15:15]
      - State "DONE"       from "TODO"       [2016-08-12 Fri 16:43]
      CLOCK: [2016-08-12 Fri 16:07]--[2016-08-12 Fri 16:35] =>  0:28
      - State "DONE"       from "TODO"       [2016-08-04 Thu 11:18]
      CLOCK: [2016-07-29 Fri 17:28]--[2016-07-29 Fri 18:19] =>  0:51
-     SCHEDULED: <2016-09-16 Fri ++5d>
+     SCHEDULED: <2016-09-21 Wed ++5d>
      - State "DONE"       from "TODO"       [2016-07-22 Fri 16:46]
      - State "DONE"       from "TODO"       [2016-07-19 Tue 10:29]
      - State "DONE"       from "TODO"       [2016-07-11 Mon 11:32]
@@ -173,7 +174,7 @@ file:programming_pearls.org
      - State "DONE"       from "TODO"       [2016-06-28 Tue 17:23]
      - State "DONE"       from "TODO"       [2016-06-23 Thu 18:59]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-09-14 Wed 09:21]
+     :LAST_REPEAT: [2016-09-15 Thu 11:51]
      :END:
 [[file:cleancode.org]]
 
