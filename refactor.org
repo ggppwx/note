@@ -284,3 +284,5 @@ class GetBonus implements Pay{
   }
 }
 #+END_SRC
+
+* eliminate duplication by using template
