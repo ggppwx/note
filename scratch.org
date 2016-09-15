@@ -240,6 +240,12 @@ Analyze your email.
 
 ** TODO game list
 - writing down the games plan to play
+
+** TODO overclock the cpu 
+- to 4.6 ghz, multiplier to 23 ? 
+
+
+
 * INBOX 
 ** TODO eBay sell items  
 ** TODO call python script in emacs?  
