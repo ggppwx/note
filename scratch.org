@@ -188,7 +188,7 @@ ios mail app is updated support bulk archive
 
 ** TODO daily work work-flow
 
-* pet project thoughts
+* PET project thoughts
 ** TODO a text processor 
 the text processor process the text to find new vocabulary 
 
@@ -199,7 +199,7 @@ the text processor process the text to find new vocabulary
 - what can be done to help better investment 
 
 ** stock tracker.
-
+- depending on [[file:org.org::investment]]
 
 
 ** a email processor 
@@ -209,6 +209,8 @@ Analyze your email.
 
 
 
+
+** communicate board with miaomiao
 
 * learn new things 
 ** TODO try out unit-test. 
@@ -249,5 +251,10 @@ Analyze your email.
 ** TODO eBay sell items  
 ** TODO call python script in emacs?  
 ** TODO things you r interested in.  
-** TODO record time 
+** PROGRESS record time 
+- recording daily time spent on website
+
+
+
 ** TODO breakfast plan 
+** TODO discuss with miaomiao what to do next 
