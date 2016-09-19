@@ -214,7 +214,7 @@ Analyze your email.
 
 * learn new things 
 ** TODO try out unit-test. 
-   CLOCK: [2016-09-19 Mon 15:25]
+   CLOCK: [2016-09-19 Mon 15:25]--[2016-09-19 Mon 16:51] =>  1:26
    CLOCK: [2016-08-22 Mon 18:00]--[2016-08-22 Mon 18:23] =>  0:23
 - test driven development 
 - unit test for nodejs project
