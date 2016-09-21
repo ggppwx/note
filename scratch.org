@@ -103,6 +103,7 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 *** DONE capture template 
     CLOSED: [2016-05-03 Tue 11:48]
 *** PROGRESS planning & recording tasks 
+*** TODO better looking org.
 
 
 ** DONE emacs code templating 
@@ -188,6 +189,12 @@ ios mail app is updated support bulk archive
 
 ** TODO daily work work-flow
 
+** TODO archive for org mode.
+
+
+
+
+
 * PET project thoughts
 ** TODO a text processor 
 the text processor process the text to find new vocabulary 
@@ -239,6 +246,24 @@ Analyze your email.
 
 ** DONE install gtx 1070 and play
    CLOSED: [2016-09-15 Thu 00:55]
+
+
+
+** TODO overclock the system.
+- [ ] resolve the driver issue. follow the steps
+  - check disk: chkdsk C: /f /r /x
+  - download the latest intel burn test
+  - stock voltage. 
+  - run with the max fan speed 
+  - another power plan. 
+  - check gpu voltage temp.
+  - mem-test
+  - switch the cord 
+  - calculate the power consumption 
+
+- [ ] overclock the system to stable 
+  - 4.2 ghz for now 
+  - 4.4 ghz is the goal 
 
 
 
