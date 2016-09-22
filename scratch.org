@@ -258,12 +258,28 @@ Analyze your email.
   - another power plan. 
   - check gpu voltage temp.
   - mem-test
-  - switch the cord 
+  - switch the cord  
   - calculate the power consumption 
 
 - [ ] overclock the system to stable 
-  - 4.2 ghz for now 
-  - 4.4 ghz is the goal 
+  - [ ] 4.2 ghz for now 
+  - [ ] 4.4 ghz is the goal 
+
+- current spec, 
+  - 4.2 g
+  - adaptive core voltage: turbo 1.2v
+  - cpu llc calibration set to 5
+  - set up in bios 
+  - cpu fan no extreme quiet mode
+  - [ ] prime 95
+  - [ ] intel extreme 
+  - bench score: 
+    
+- notes
+  - the max voltage should be < 1.3
+  - llc calibration to avoid vdrop, otherwise can't reach 1.2 
+
+
 
 
 
