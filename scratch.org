@@ -176,22 +176,15 @@ file:refactor.org
 
 
 * Productivity
-** DONE clean email 
-ios mail app is updated support bulk archive
-
 ** DONE publish script to publish article
 ** TODO find a way to learn more in work 
-
-** DONE GTD
-   DEADLINE: <2016-07-24 Sun>
 
 ** TODO [#B] mouse-less work flow
 
 ** TODO daily work work-flow
 
 ** TODO archive for org mode.
-
-
+- make a emacs command 
 
 
 
@@ -220,7 +213,7 @@ Analyze your email.
 ** communicate board with miaomiao
 
 * learn new things 
-** TODO try out unit-test. 
+** PROGRESS try out unit-test. 
    CLOCK: [2016-09-19 Mon 15:25]--[2016-09-19 Mon 16:51] =>  1:26
    CLOCK: [2016-08-22 Mon 18:00]--[2016-08-22 Mon 18:23] =>  0:23
 - test driven development 
@@ -249,7 +242,7 @@ Analyze your email.
 
 
 
-** TODO overclock the system.
+** PROGRESS overclock the system.
 - [ ] resolve the driver issue. follow the steps
   - check disk: chkdsk C: /f /r /x
   - download the latest intel burn test
@@ -261,32 +254,33 @@ Analyze your email.
   - switch the cord  
   - calculate the power consumption 
 
-- [ ] overclock the system to stable 
-  - [ ] 4.2 ghz for now 
-  - [ ] 4.4 ghz is the goal 
+- [X] overclock the system to stable 
+  - [X] 4.2 ghz for now 
+  - [X] 4.4 ghz is the goal 
 
-- current spec, 
-  - 4.2 g
-  - adaptive core voltage: turbo 1.2v
+- 4.2 g spec, 
+  - adaptive core voltage: turbo 1.19v
   - cpu llc calibration set to 5
   - set up in bios 
   - cpu fan no extreme quiet mode
-  - [ ] prime 95
-  - [ ] intel extreme 
-  - bench score: 
-    
+  - [X] prime 95
+  - [X] intel extreme score: 
+
+- 4.4 g spec
+  - adaptive core voltage: turbo 1.19v
+  - cpu llc calibration set to 5
+  - [X] prime 95 1 night 
+  - intel extreme score:
+
 - notes
   - the max voltage should be < 1.3
   - llc calibration to avoid vdrop, otherwise can't reach 1.2 
 
 
 
-
-
 ** TODO game list
 - writing down the games plan to play
 
-** TODO install a new cpu 
 
 
 * INBOX 
@@ -299,4 +293,7 @@ Analyze your email.
 
 
 ** TODO breakfast plan 
+- starch, protein 
+- eat before going to work 
+
 ** TODO discuss with miaomiao what to do next 
