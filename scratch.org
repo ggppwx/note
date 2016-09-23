@@ -289,7 +289,7 @@ Analyze your email.
 ** TODO things you r interested in.  
 ** PROGRESS record time 
 - recording daily time spent on website
-
+- weekly analysis 
 
 
 ** TODO breakfast plan 
