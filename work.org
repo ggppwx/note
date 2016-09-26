@@ -43,7 +43,8 @@
    :END:
 
 ** TODO [#A] spent 1 hour on KTLO 
-   SCHEDULED: <2016-09-24 Sat ++2d>
+   SCHEDULED: <2016-09-28 Wed ++2d>
+   - State "DONE"       from "TODO"       [2016-09-26 Mon 14:50]
    - State "DONE"       from "TODO"       [2016-09-23 Fri 14:55]
    - State "DONE"       from "TODO"       [2016-09-19 Mon 15:20]
    - State "DONE"       from "TODO"       [2016-09-16 Fri 17:38]
@@ -75,7 +76,7 @@
    CLOCK: [2016-08-17 Wed 18:05]--[2016-08-17 Wed 18:20] =>  0:15
    :PROPERTIES:
    :Effort:   1:00
-   :LAST_REPEAT: [2016-09-23 Fri 14:55]
+   :LAST_REPEAT: [2016-09-26 Mon 14:50]
    :END:
 - clock-in this task 
 - task to JIRA board
