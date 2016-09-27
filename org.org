@@ -164,6 +164,7 @@ file:programming_pearls.org
 
 *** read clean code 						       :book:
 **** TODO read clean code 1 chapter 
+     SCHEDULED: <2016-09-30 Fri .+4d>
      - State "DONE"       from "TODO"       [2016-09-26 Mon 17:25]
      CLOCK: [2016-09-26 Mon 16:58]--[2016-09-26 Mon 17:25] =>  0:27
      - State "DONE"       from "TODO"       [2016-09-15 Thu 11:51]
@@ -173,7 +174,6 @@ file:programming_pearls.org
      CLOCK: [2016-08-12 Fri 16:07]--[2016-08-12 Fri 16:35] =>  0:28
      - State "DONE"       from "TODO"       [2016-08-04 Thu 11:18]
      CLOCK: [2016-07-29 Fri 17:28]--[2016-07-29 Fri 18:19] =>  0:51
-     SCHEDULED: <2016-10-01 Sat ++5d>
      - State "DONE"       from "TODO"       [2016-07-22 Fri 16:46]
      - State "DONE"       from "TODO"       [2016-07-19 Tue 10:29]
      - State "DONE"       from "TODO"       [2016-07-11 Mon 11:32]
@@ -229,7 +229,8 @@ file:programming_pearls.org
 
 
 ** TODO [#A] reflection, writing journal
-   SCHEDULED: <2016-09-18 Sun +3d>
+   SCHEDULED: <2016-09-30 Fri .+3d/5d>
+   - State "DONE"       from "PROGRESS"   [2016-09-27 Tue 17:35]
    - State "DONE"       from "TODO"       [2016-09-15 Thu 01:05]
    CLOCK: [2016-09-15 Thu 00:57]--[2016-09-15 Thu 01:05] =>  0:08
    - State "DONE"       from "TODO"       [2016-09-13 Tue 00:01]
@@ -248,7 +249,8 @@ file:programming_pearls.org
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
-   :LAST_REPEAT: [2016-09-15 Thu 01:05]
+   :LAST_REPEAT: [2016-09-27 Tue 17:35]
+   :STYLE:    habit
    :END:
 - reading past journals
 - writing journals 
@@ -306,7 +308,6 @@ trainning focus:
     - State "DONE"       from "TODO"       [2016-07-22 Fri 11:17]
     - State "DONE"       from "TODO"       [2016-06-14 Tue 19:01]
     :PROPERTIES:
-    :STYLE:    habit
     :LAST_REPEAT: [2016-09-14 Wed 17:58]
     :END:
 
