@@ -76,8 +76,8 @@ supporting different tags for each events, random event based on tags
 - publish to my personal blog 
 
 
-** TODO enhance the github personal website
-- [ ] better publishing tool, to publish article 
+** PROGRESS enhance the github personal website
+- [X] better publishing tool, to publish article 
 
 ** PROGRESS integrate blog with personal site.
    SCHEDULED: <2016-09-09 Fri>
@@ -151,7 +151,6 @@ file:programming_pearls.org
 **** DONE read one chapter
      CLOSED: [2016-04-28 Thu 23:59]
 **** TODO programming pearls read 1 chapter  
-     SCHEDULED: <2016-09-17 Sat ++1w>
      - Note taken on [2016-07-11 Mon 18:11] \\
        this has been delayed for too long.
      - State "DONE"       from "TODO"       [2016-06-30 Thu 10:34]
