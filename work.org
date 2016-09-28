@@ -44,7 +44,7 @@
    :STYLE:    habit
    :END:      
 
-** TODO [#A] spent 1 hour on KTLO 
+** TODO spent 1 hour on KTLO 
    SCHEDULED: <2016-09-28 Wed ++2d>
    - State "DONE"       from "TODO"       [2016-09-26 Mon 14:50]
    - State "DONE"       from "TODO"       [2016-09-23 Fri 14:55]
