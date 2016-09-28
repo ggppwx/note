@@ -13,7 +13,7 @@
     
 * KTLO
 ** TODO go through team bf/bb queue 
-   SCHEDULED: <2016-09-28 Wed .+2d/4d>
+   SCHEDULED: <2016-09-28 Wed .+3d/4d>
    - State "DONE"       from "TODO"       [2016-09-26 Mon 17:29]
    - State "DONE"       from "TODO"       [2016-09-23 Fri 14:55]
    - State "DONE"       from "TODO"       [2016-09-21 Wed 12:32]
@@ -45,7 +45,7 @@
    :END:      
 
 ** TODO spent 1 hour on KTLO 
-   SCHEDULED: <2016-09-28 Wed ++2d>
+   SCHEDULED: <2016-09-30 Fri ++2d>
    - State "DONE"       from "TODO"       [2016-09-26 Mon 14:50]
    - State "DONE"       from "TODO"       [2016-09-23 Fri 14:55]
    - State "DONE"       from "TODO"       [2016-09-19 Mon 15:20]
