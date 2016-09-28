@@ -64,7 +64,7 @@ remember the lesson you learn
 
 * emacs learning						 :move:emacs:
 ** PROGRESS learn lisp language
-   SCHEDULED: <2016-09-16 Fri ++5d>
+   SCHEDULED: <2016-09-19 Mon ++5d>
    - State "DONE"       from "PROGRESS"   [2016-09-12 Mon 17:57]
    - State "DONE"       from "PROGRESS"   [2016-09-08 Thu 16:06]
    :PROPERTIES:

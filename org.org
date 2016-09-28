@@ -53,16 +53,17 @@ supporting different tags for each events, random event based on tags
 
 
 ** TODO [#A] org mode/omni focus mail drop			      :emacs:
-   SCHEDULED: <2016-08-27 Sat> DEADLINE: <2016-09-03 Sat>
+   SCHEDULED: <2016-09-18 Sun> DEADLINE: <2016-09-30 Fri>
+   - Note taken on [2016-09-17 Sat 15:02] \\
+     need to focus on new feature on this script
    CLOCK: [2016-08-25 Thu 22:07]--[2016-08-25 Thu 23:44] =>  1:37
    CLOCK: [2016-08-24 Wed 23:26]--[2016-08-25 Thu 00:47] =>  1:21
 - [X] apply on domain 
-- [ ] build a personal email sever
 - [X] sample pop3
 - [X] project structure
 - [ ] test cases 
-- [ ] adding org entry with python 
-- [ ] re-factoring 
+- [X] adding org entry with python 
+- [X] re-factoring 
 - [ ] daemon 
 
 ** DONE [#A] org publish to personal web 
@@ -75,7 +76,6 @@ supporting different tags for each events, random event based on tags
 
 
 ** TODO integrate blog with personal site.
-   SCHEDULED: <2016-09-09 Fri>
 - [ ] remove the comment section. make it anonymous only
 - [ ] create a link to my blog. (easy lol )
 - [ ] better publishing tool, to publish article 
@@ -313,10 +313,11 @@ trainning focus:
     CLOCK: [2016-08-21 Sun 22:47]--[2016-08-21 Sun 23:21] =>  0:34
 
 *** TODO read neatest guide to stock			       :reading:book:
-    SCHEDULED: <2016-09-11 Sun +1w>
+    SCHEDULED: <2016-09-18 Sun +1w>
+    - State "DONE"       from "TODO"       [2016-09-17 Sat 15:00]
     - State "DONE"       from "TODO"       [2016-09-12 Mon 22:26]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-09-12 Mon 22:26]
+    :LAST_REPEAT: [2016-09-17 Sat 15:00]
     :END:
 
 
