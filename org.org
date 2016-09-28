@@ -1,4 +1,5 @@
 #+TITLE: main panel for org mode 
+#+TODO: TODO PROGRESS | DONE
 
 * this is the orgnizer for org mode 
 here I will list the main framework of my org documents. 
@@ -9,6 +10,10 @@ here I will list the main framework of my org documents.
 
 
 * project scratch						    :project:
+  :PROPERTIES:
+  :LOGGING:  TODO WAIT  DONE(!) 
+  :END:      
+
 here are several projects we need to focus on 
 
 ** DONE create a website based on github 
@@ -72,13 +77,17 @@ supporting different tags for each events, random event based on tags
 - publish to my personal blog 
 
 
-** TODO enhance the github personal website
+** PROGRESS enhance the github personal website
+- [X] better publishing tool, to publish article 
 
 
-** TODO integrate blog with personal site.
-- [ ] remove the comment section. make it anonymous only
+** PROGRESS integrate blog with personal site.
+   SCHEDULED: <2016-09-09 Fri>
+- [X] remove the comment section. make it anonymous only
 - [ ] create a link to my blog. (easy lol )
-- [ ] better publishing tool, to publish article 
+- [ ] adding log-in session 
+- [X] domain name for the cloud app. 
+
 
 
 * online tutorial 
@@ -145,7 +154,6 @@ file:programming_pearls.org
 **** DONE read one chapter
      CLOSED: [2016-04-28 Thu 23:59]
 **** TODO programming pearls read 1 chapter  
-     SCHEDULED: <2016-09-17 Sat ++1w>
      - Note taken on [2016-07-11 Mon 18:11] \\
        this has been delayed for too long.
      - State "DONE"       from "TODO"       [2016-06-30 Thu 10:34]
@@ -156,8 +164,11 @@ file:programming_pearls.org
      :END:
 
 
-*** read clean code						       :book:
+*** read clean code 						       :book:
 **** TODO read clean code 1 chapter 
+     SCHEDULED: <2016-09-30 Fri .+4d>
+     - State "DONE"       from "TODO"       [2016-09-26 Mon 17:25]
+     CLOCK: [2016-09-26 Mon 16:58]--[2016-09-26 Mon 17:25] =>  0:27
      - State "DONE"       from "TODO"       [2016-09-15 Thu 11:51]
      - State "DONE"       from "TODO"       [2016-09-14 Wed 09:21]
      - State "DONE"       from "TODO"       [2016-09-02 Fri 15:15]
@@ -165,7 +176,6 @@ file:programming_pearls.org
      CLOCK: [2016-08-12 Fri 16:07]--[2016-08-12 Fri 16:35] =>  0:28
      - State "DONE"       from "TODO"       [2016-08-04 Thu 11:18]
      CLOCK: [2016-07-29 Fri 17:28]--[2016-07-29 Fri 18:19] =>  0:51
-     SCHEDULED: <2016-09-21 Wed ++5d>
      - State "DONE"       from "TODO"       [2016-07-22 Fri 16:46]
      - State "DONE"       from "TODO"       [2016-07-19 Tue 10:29]
      - State "DONE"       from "TODO"       [2016-07-11 Mon 11:32]
@@ -174,7 +184,7 @@ file:programming_pearls.org
      - State "DONE"       from "TODO"       [2016-06-28 Tue 17:23]
      - State "DONE"       from "TODO"       [2016-06-23 Thu 18:59]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-09-15 Thu 11:51]
+     :LAST_REPEAT: [2016-09-26 Mon 17:25]
      :END:
 [[file:cleancode.org]]
 
@@ -185,11 +195,11 @@ file:programming_pearls.org
      CLOCK: [2016-08-16 Tue 23:58]--[2016-08-17 Wed 00:35] =>  0:37
      
 
-*** TODO read code complete					       :book:
+*** TODO read code complete 					       :book:
 
 
 *** TODO read object oriented thought process			       :book:
-    SCHEDULED: <2016-08-26 Fri .+1w>
+    # SCHEDULED: <2016-08-26 Fri .+1w>
     - State "DONE"       from "TODO"       [2016-08-19 Fri 17:57]
     CLOCK: [2016-08-19 Fri 16:58]--[2016-08-19 Fri 17:57] =>  0:59
     - State "DONE"       from "TODO"       [2016-08-08 Mon 01:32]
@@ -221,7 +231,8 @@ file:programming_pearls.org
 
 
 ** TODO [#A] reflection, writing journal
-   SCHEDULED: <2016-09-18 Sun +3d>
+   SCHEDULED: <2016-09-30 Fri .+3d/5d>
+   - State "DONE"       from "PROGRESS"   [2016-09-27 Tue 17:35]
    - State "DONE"       from "TODO"       [2016-09-15 Thu 01:05]
    CLOCK: [2016-09-15 Thu 00:57]--[2016-09-15 Thu 01:05] =>  0:08
    - State "DONE"       from "TODO"       [2016-09-13 Tue 00:01]
@@ -240,7 +251,8 @@ file:programming_pearls.org
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
-   :LAST_REPEAT: [2016-09-15 Thu 01:05]
+   :LAST_REPEAT: [2016-09-27 Tue 17:35]
+   :STYLE:    habit
    :END:
 - reading past journals
 - writing journals 
@@ -298,7 +310,6 @@ trainning focus:
     - State "DONE"       from "TODO"       [2016-07-22 Fri 11:17]
     - State "DONE"       from "TODO"       [2016-06-14 Tue 19:01]
     :PROPERTIES:
-    :STYLE:    habit
     :LAST_REPEAT: [2016-09-14 Wed 17:58]
     :END:
 
@@ -313,12 +324,12 @@ trainning focus:
     CLOCK: [2016-08-21 Sun 22:47]--[2016-08-21 Sun 23:21] =>  0:34
 
 *** TODO read neatest guide to stock			       :reading:book:
-    SCHEDULED: <2016-09-18 Sun +1w>
-    - State "DONE"       from "TODO"       [2016-09-17 Sat 15:00]
+    SCHEDULED: <2016-09-27 Tue +1w>
+    - State "DONE"       from "TODO"       [2016-09-19 Mon 15:24]
+    - State "DONE"       from "TODO"       [2016-09-19 Mon 15:22]
     - State "DONE"       from "TODO"       [2016-09-12 Mon 22:26]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-09-17 Sat 15:00]
-    :END:
+    :LAST_REPEAT: [2016-09-19 Mon 15:24]
 
 
 *** TODO IB basics 
