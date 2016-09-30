@@ -1,4 +1,5 @@
 #+TITLE: main panel for org mode 
+#+DESCRIPTION: this file is to track projects, track is NOT the main purpose. organizing is
 #+TODO: TODO PROGRESS | DONE
 
 * this is the orgnizer for org mode 
@@ -53,8 +54,8 @@ supporting different tags for each events, random event based on tags
 
 
 
-** TODO [#A] org mode/omni focus mail drop			      :emacs:
-   SCHEDULED: <2016-09-18 Sun> DEADLINE: <2016-09-30 Fri>
+** DONE [#A] org mode/omni focus mail drop			      :emacs:
+   CLOSED: [2016-09-30 Fri 17:03] SCHEDULED: <2016-09-18 Sun> DEADLINE: <2016-09-30 Fri>
    - Note taken on [2016-09-17 Sat 15:02] \\
      need to focus on new feature on this script
    CLOCK: [2016-08-25 Thu 22:07]--[2016-08-25 Thu 23:44] =>  1:37
