@@ -348,4 +348,10 @@ trainning focus:
 
 
 
+<<<<<<< HEAD
+=======
+*** TODO do research on your own investing history 
+- gain & lose 
+- bucket of stocks 
+>>>>>>> e87bff0c130c5a6bed05744eeaa565eaaa892991
 
