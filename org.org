@@ -80,7 +80,7 @@ supporting different tags for each events, random event based on tags
 ** PROGRESS integrate blog with personal site.
    SCHEDULED: <2016-09-09 Fri>
 - [X] remove the comment section. make it anonymous only
-- [ ] create a link to my blog. (easy lol )
+- [X] create a link to my blog. (easy lol )
 - [ ] adding log-in session 
 - [X] domain name for the cloud app. 
 
@@ -342,16 +342,8 @@ trainning focus:
     
 
 
-   
-
-
-
-
-
-<<<<<<< HEAD
-=======
 *** TODO do research on your own investing history 
 - gain & lose 
 - bucket of stocks 
->>>>>>> e87bff0c130c5a6bed05744eeaa565eaaa892991
+
 
