@@ -5,15 +5,10 @@
 here I will list the main framework of my org documents. 
 - scratch pad  file:scratch.org
 
-
  
 
 
 * project scratch						    :project:
-  :PROPERTIES:
-  :LOGGING:  TODO WAIT  DONE(!) 
-  :END:      
-
 here are several projects we need to focus on 
 
 ** DONE create a website based on github 
@@ -52,8 +47,9 @@ supporting different tags for each events, random event based on tags
   - adding event name + dealine. 
   - progress bar 
   - integrate with tagging in the future
-   
 ** TODO tagging systems for todo 
+   - State "DONE"       from "TODO"       [2016-09-28 Wed 23:02]
+   
 
 
 
@@ -321,6 +317,7 @@ trainning focus:
 
 * finance
 ** investment							  :investing:
+[[file:invest.org]]
 *** DONE [#B] learn stock basic
     CLOSED: [2016-08-21 Sun 23:21] DEADLINE: <2016-07-30 Sat>
     CLOCK: [2016-08-21 Sun 22:47]--[2016-08-21 Sun 23:21] =>  0:34
@@ -346,6 +343,8 @@ trainning focus:
 
 
    
+
+
 
 
 
