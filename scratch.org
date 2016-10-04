@@ -37,7 +37,7 @@ remember the lesson you learn
 *** the menu
 in office 
 - cereal with milk
-- hot cereal w/ milk
+- hot cereal w/ milk + banana
 - sandwich with ham/ sausage 
 - fruit after breakfast. apple/banana 
 
@@ -333,7 +333,7 @@ I think it's better writing game journal/reviview
 
 
 
-*** TODO setting up config for ark 
+*** PROGRESS setting up config for ark 
     SCHEDULED: <2016-10-03 Mon>
     - Note taken on [2016-10-04 Tue 13:01] \\
       after first try, everything seems fine. but the fps doesn't change a lot
@@ -360,7 +360,7 @@ this is good game to play with miaomiao.
 
 
 ** TODO discuss with miaomiao what to do next 
-
+** TODO create a menu list 
 
 
 
