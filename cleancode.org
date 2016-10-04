@@ -82,7 +82,7 @@ public class CodeAnalyzer implements JavaFileAnalysis {
 - white spaces 
 - expand the indent , not in one-line
 
-
+  
 ** objects and data structure
 - object or data structure: 2 approaches 
   - data structure: expose data, no function. 
@@ -129,3 +129,5 @@ public class CodeAnalyzer implements JavaFileAnalysis {
   - write a stock exchange interface, write a testable dummy concrete class
 
 ** systems
+
+** test-driven development

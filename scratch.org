@@ -132,7 +132,8 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 *** DONE capture template 
     CLOSED: [2016-05-03 Tue 11:48]
 *** PROGRESS planning & recording tasks 
-*** TODO better looking org.
+*** PROGRESS better looking org.
+- [X] more striking headlines : another theme 
 
 
 ** DONE emacs code templating 
