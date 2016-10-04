@@ -131,3 +131,7 @@ public class CodeAnalyzer implements JavaFileAnalysis {
 ** systems
 
 ** test-driven development
+- all about discipline 
+- because code rots 
+
+
