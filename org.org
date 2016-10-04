@@ -324,13 +324,14 @@ trainning focus:
     CLOCK: [2016-08-21 Sun 22:47]--[2016-08-21 Sun 23:21] =>  0:34
 
 *** TODO read neatest guide to stock			       :reading:book:
-    SCHEDULED: <2016-10-04 Tue +1w>
+    SCHEDULED: <2016-10-11 Tue +1w>
+    - State "DONE"       from "PROGRESS"   [2016-10-04 Tue 12:29]
     - State "DONE"       from "TODO"       [2016-09-27 Tue 23:57]
     - State "DONE"       from "TODO"       [2016-09-19 Mon 15:24]
     - State "DONE"       from "TODO"       [2016-09-19 Mon 15:22]
     - State "DONE"       from "TODO"       [2016-09-12 Mon 22:26]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-09-27 Tue 23:57]
+    :LAST_REPEAT: [2016-10-04 Tue 12:29]
     :END:
 :LAST_REPEAT: [2016-09-19 Mon 15:24]
 
