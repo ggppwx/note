@@ -22,14 +22,15 @@ remember the lesson you learn
 ** DONE rest well, recover from cold 
 
 ** TODO breakfast habit 
-   SCHEDULED: <2016-10-05 Wed .+1d>
+   SCHEDULED: <2016-10-06 Thu .+1d>
+   - State "DONE"       from "TODO"       [2016-10-05 Wed 11:16]
    - State "DONE"       from "TODO"       [2016-10-04 Tue 12:07]
    - State "DONE"       from "TODO"       [2016-10-03 Mon 15:28]
    - State "DONE"       from "PROGRESS"   [2016-09-30 Fri 16:36]
    - State "DONE"       from "PROGRESS"   [2016-09-28 Wed 22:57]
    :PROPERTIES:
    :STYLE:    habit
-   :LAST_REPEAT: [2016-10-04 Tue 12:07]
+   :LAST_REPEAT: [2016-10-05 Wed 11:16]
    :END:
 - starch, protein 
 - eat before going to work 
@@ -328,7 +329,9 @@ writing down the games plan to play
 
 I think it's better writing game journal/reviview
 *** READY gaming benchmark 
-- [ ] witcher 3 
+    SCHEDULED: <2016-10-05 Wed>
+- under nvidia default advanced setting
+- [ ] witcher 3 : hair-work AA off, vsync off, large town 
 - [ ] gta 
 - [ ] total war 
 
@@ -344,21 +347,23 @@ this is good game to play with miaomiao.
   - gpu, freq, temp. utilization, gpu mem, freq 
   - mem, usage. 
 
-- [ ] setting 
-  - resolution scaling should be 100 %
-  - disable the audio
-  - nvidia panel setting to default.
-  - new rivatuner 
-
+- setting 
+  - [X] resolution scaling should be 100 %
+  - [X] disable the audio
+  - [X] nvidia panel setting to default: let's try let 3d app decide
+  - [ ] tweak nvidia panel
+  - [ ] try board-less 
 
 * INBOX 
-** PROGRESS eBay sell items  
+** COMP eBay sell items  
+   CLOSED: [2016-10-05 Wed 11:19]
 ** TODO call python script in emacs?  
 ** TODO things you r interested in.  
 ** PROGRESS record time 
 - recording daily time spent on website
 - weekly analysis 
-
+- give reports 
+- migrate this item to habit 
 
 ** TODO discuss with miaomiao what to do next 
 ** TODO create a menu list 
