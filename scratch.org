@@ -221,9 +221,6 @@ file:refactor.org
 
 
 * PET project thoughts						    :project:
-** TODO a text processor 
-the text processor process the text to find new vocabulary 
-
 ** idea, automate everything. 
 - what can be automated during work? 
 - what can be done during daily work 
@@ -236,10 +233,6 @@ the text processor process the text to find new vocabulary
 
 ** a email processor 
 Analyze your email.
-
-
-
-
 
 
 ** communicate board with miaomiao

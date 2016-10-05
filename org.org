@@ -86,14 +86,25 @@ supporting different tags for each events, random event based on tags
 
 
 
+** TODO a text processor 
+- the text processor process the text to find new vocabulary 
+- shanbay api. 
+- analyze the article, get new vocabulary
+
+
+
 * online tutorial 
 ** TODO  coursea
 
 
 * 读书&写作
 ** reading							    :reading:
-daily reading progress 
-*** design pattern [2/4]					       :book:
+*** TODO daily English reading
+- advanced English 
+- novel, newspaper, etc. 
+
+
+*** design pattern [2/4] 					       :book:
 26 tutorials, 15 min each 
 file:designpattern.org 
 
