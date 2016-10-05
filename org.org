@@ -50,9 +50,7 @@ supporting different tags for each events, random event based on tags
   - progress bar 
   - integrate with tagging in the future
 ** TODO tagging systems for todo 
-   - State "DONE"       from "TODO"       [2016-09-28 Wed 23:02]
    
-
 
 
 ** DONE [#A] org mode/omni focus mail drop			      :emacs:

@@ -331,13 +331,16 @@ writing down the games plan to play
 I think it's better writing game journal/reviview
 *** READY gaming benchmark 
     SCHEDULED: <2016-10-05 Wed>
+    :PROPERTIES:
+    :Effort:   30m
+    :END:
 - under nvidia default advanced setting
   let 3d application decides
-- hwinfo + rivtuner does it affect the performance 
+- hwinfo + rivtuner does it affect the performance (test total war) 
 
+- [ ] total war: all ultra 
 - [ ] witcher 3 : hair-work AA off, vsync off, large town 
-- [ ] gta 
-- [ ] total war
+- [ ] GTA  
 
 
 
@@ -357,6 +360,13 @@ this is good game to play with miaomiao.
   - [ ] tweak nvidia panel
   - [ ] try board-less 
 
+** gaming goals 
+*** Ark.
+**** TODO writing notes in game 
+- build raft 
+- explore other places 
+- new colony.
+
 * INBOX 
 ** COMP eBay sell items  
    CLOSED: [2016-10-05 Wed 11:19]
@@ -370,6 +380,7 @@ this is good game to play with miaomiao.
 
 ** TODO discuss with miaomiao what to do next 
 ** TODO create a menu list 
+- adding menu to the web 
 
 
 
