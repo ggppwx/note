@@ -102,6 +102,7 @@ supporting different tags for each events, random event based on tags
 *** TODO daily English reading
 - advanced English 
 - novel, newspaper, etc. 
+- considering to use the text processor 
 
 
 *** design pattern [2/4] 					       :book:
