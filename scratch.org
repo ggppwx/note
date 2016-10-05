@@ -331,9 +331,12 @@ I think it's better writing game journal/reviview
 *** READY gaming benchmark 
     SCHEDULED: <2016-10-05 Wed>
 - under nvidia default advanced setting
+  let 3d application decides
+- hwinfo + rivtuner does it affect the performance 
+
 - [ ] witcher 3 : hair-work AA off, vsync off, large town 
 - [ ] gta 
-- [ ] total war 
+- [ ] total war
 
 
 
@@ -346,7 +349,6 @@ this is good game to play with miaomiao.
   - cpu, freq 1-4, temp 1-4, utilization 1-4 
   - gpu, freq, temp. utilization, gpu mem, freq 
   - mem, usage. 
-
 - setting 
   - [X] resolution scaling should be 100 %
   - [X] disable the audio
