@@ -13,7 +13,7 @@
     
 * KTLO
 ** TODO go through team bf/bb queue 
-   SCHEDULED: <2016-10-06 Thu .+3d/5d>
+   SCHEDULED: <2016-10-06 Thu +3d/5d>
    - State "DONE"       from "TODO"       [2016-10-03 Mon 15:28]
    - State "DONE"       from "TODO"       [2016-09-28 Wed 12:10]
    - State "DONE"       from "TODO"       [2016-09-26 Mon 17:29]
@@ -47,7 +47,7 @@
    :END:      
 
 ** TODO spent 1 hour on KTLO 
-   SCHEDULED: <2016-10-06 Thu ++2d>
+   SCHEDULED: <2016-10-06 Thu ++2d/3d>
    - State "DONE"       from "TODO"       [2016-10-04 Tue 12:07]
    - State "DONE"       from "TODO"       [2016-10-03 Mon 15:28]
    - State "DONE"       from "TODO"       [2016-09-26 Mon 14:50]
@@ -90,7 +90,7 @@
 
 
 
-* work productitvity 
+* work productivity 
 + set the goal 
 + use jira to track the daily effort 
 + update the daily effort. this is important since it makes you have a general
@@ -108,7 +108,7 @@ understanding of the work
 
 
 * misc  
-** read codebase 
+** read code base 
 
 
 ** better javascript code 
