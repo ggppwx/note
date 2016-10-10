@@ -154,6 +154,7 @@ var CircleGeneratorSingleton = (function() {
 - mimic one through another 
 #+BEGIN_SRC javascript
 function binder(scope, func) { // this is a proxy 
+// function fowardcall would be a better name 
   return function() {
     return func.apply(scope, arguments);
   }
@@ -171,6 +172,5 @@ function shapeFacade(shp) {
   }
   
 }
-
 
 #+END_SRC
