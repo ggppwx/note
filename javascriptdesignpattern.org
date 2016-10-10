@@ -149,3 +149,28 @@ var CircleGeneratorSingleton = (function() {
 
 
 ** structural design pattern 
+
+*** proxy design pattern 
+- mimic one through another 
+#+BEGIN_SRC javascript
+function binder(scope, func) { // this is a proxy 
+  return function() {
+    return func.apply(scope, arguments);
+  }
+} // uses the func 
+
+function shapeFacade(shp) {
+  return {
+    // replace:
+    // move : function(x, y) {
+    //  shp.move(x, y);
+    // }
+    // avoid calling shp.move
+    move : binder(shp, shp.move),
+
+  }
+  
+}
+
+
+#+END_SRC

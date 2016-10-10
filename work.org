@@ -141,7 +141,7 @@ drqs in queue
 
 * retrospect
 ** TODO [#A] filling out scratch pad 
-   SCHEDULED: <2016-10-07 Fri ++2d>
+   SCHEDULED: <2016-10-07 Fri ++1w>
    - State "DONE"       from "TODO"       [2016-10-05 Wed 11:16]
    - State "DONE"       from "TODO"       [2016-10-04 Tue 12:07]
    - State "DONE"       from "TODO"       [2016-09-27 Tue 15:22]
