@@ -332,7 +332,8 @@ trainning focus:
 - 132 in total. 
 - appro 80 days. 
 *** TODO [#B] leetcode 2 problems medium
-    SCHEDULED: <2016-09-18 Sun .+4d>
+    SCHEDULED: <2016-10-15 Sat .+4d>
+    - State "DONE"       from "TODO"       [2016-10-11 Tue 18:20]
     - State "DONE"       from "TODO"       [2016-09-14 Wed 17:58]
     CLOCK: [2016-09-14 Wed 17:35]--[2016-09-14 Wed 17:58] =>  0:23
     - State "DONE"       from "TODO"       [2016-08-22 Mon 21:36]
@@ -342,7 +343,7 @@ trainning focus:
     - State "DONE"       from "TODO"       [2016-07-22 Fri 11:17]
     - State "DONE"       from "TODO"       [2016-06-14 Tue 19:01]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-09-14 Wed 17:58]
+    :LAST_REPEAT: [2016-10-11 Tue 18:20]
     :END:
 
 ** TODO leetcode hard problems 
