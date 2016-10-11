@@ -100,6 +100,12 @@ supporting different tags for each events, random event based on tags
 * 读书&写作
 ** reading							    :reading:
 *** TODO daily English reading
+    SCHEDULED: <2016-10-11 Tue .+1d/3d>
+    - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
+    :PROPERTIES:
+    :STYLE:    habit
+    :LAST_REPEAT: [2016-10-10 Mon 15:32]
+    :END:
 - advanced English 
 - novel, newspaper, etc. 
 - considering to use the text processor 
@@ -138,7 +144,9 @@ file:designpattern.org
 
 *** javascript design pattern.					       :book:
 **** TODO read javascript design pattern. 
-     SCHEDULED: <2016-09-05 Mon +4d>
+     SCHEDULED: <2016-09-09 Fri +4d>
+     - State "DONE"       from "TODO"       [2016-10-10 Mon 17:22]
+     CLOCK: [2016-10-10 Mon 17:02]--[2016-10-10 Mon 17:22] =>  0:20
      - State "DONE"       from "TODO"       [2016-08-18 Thu 00:00]
      - State "DONE"       from "TODO"       [2016-08-16 Tue 22:04]
      - State "DONE"       from "TODO"       [2016-08-11 Thu 15:32]
@@ -147,7 +155,7 @@ file:designpattern.org
      - State "DONE"       from "TODO"       [2016-07-27 Wed 10:49]
      - State "DONE"       from "TODO"       [2016-07-24 Sun 23:03]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-08-18 Thu 00:00]
+     :LAST_REPEAT: [2016-10-10 Mon 17:22]
      :END:
 
 **** DONE review javascript design pattern 
@@ -277,8 +285,6 @@ file:programming_pearls.org
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
    :LAST_REPEAT: [2016-10-07 Fri 17:48]
-   :STYLE:    habit
-   :END:
 - reading past journals
 - writing journals 
 
