@@ -100,11 +100,12 @@ supporting different tags for each events, random event based on tags
 * 读书&写作
 ** reading							    :reading:
 *** TODO daily English reading
-    SCHEDULED: <2016-10-11 Tue .+1d/3d>
+    SCHEDULED: <2016-10-12 Wed .+1d/3d>
+    - State "DONE"       from "TODO"       [2016-10-11 Tue 15:33]
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2016-10-10 Mon 15:32]
+    :LAST_REPEAT: [2016-10-11 Tue 15:33]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
