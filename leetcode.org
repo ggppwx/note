@@ -14,6 +14,40 @@ description: leetcode problem solving.
 - think before coding 
 - syntax check 
 
+* category 
+** data structure 
+*** array 
+
+*** linklist 
+
+*** hashtable 
+
+*** 2 points 
+
+
+*** binary search 
+
+*** tree
+
+*** graph
+
+*** stack
+
+*** heap 
+
+** algorithm
+*** math
+
+*** sort
+
+*** backtracking 
+
+*** divide and conquer
+
+*** [#A] dynamic programming 
+
+*** greedy 
+
 * problems 
 ** 226 invert binary tree
 note we need to invert the pointer to left/right child, not the value.
