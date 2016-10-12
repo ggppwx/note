@@ -100,7 +100,7 @@ supporting different tags for each events, random event based on tags
 * 读书&写作
 ** reading							    :reading:
 *** TODO daily English reading
-    SCHEDULED: <2016-10-12 Wed .+1d/3d>
+    SCHEDULED: <2016-10-12 Wed .+1d>
     - State "DONE"       from "TODO"       [2016-10-11 Tue 15:33]
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
@@ -332,7 +332,7 @@ trainning focus:
 - 132 in total. 
 - appro 80 days. 
 *** TODO [#B] leetcode 2 problems medium
-    SCHEDULED: <2016-10-15 Sat .+4d>
+    SCHEDULED: <2016-10-15 Sat +3d>
     - State "DONE"       from "TODO"       [2016-10-11 Tue 18:20]
     - State "DONE"       from "TODO"       [2016-09-14 Wed 17:58]
     CLOCK: [2016-09-14 Wed 17:35]--[2016-09-14 Wed 17:58] =>  0:23
