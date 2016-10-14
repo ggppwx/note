@@ -14,6 +14,36 @@ description: leetcode problem solving.
 - think before coding 
 - syntax check 
 
+
+* road map 
+- for the first round, focus on medium problems 
+- 2 problems each * 16 = 32 
+
+
+
+| category         | round 1 | round 2 | round 3 |
+|------------------+---------+---------+---------|
+| array            |         |         |         |
+| linklist         |         |         |         |
+| hashtable        |         |         |         |
+| 2 points         |         |         |         |
+| binary search    |         |         |         |
+| tree             |         |         |         |
+| graph            |         |         |         |
+| stack            |         |         |         |
+| heap             |         |         |         |
+| bit              |         |         |         |
+|------------------+---------+---------+---------|
+| math             |         |         |         |
+| sort             |         |         |         |
+| backtracking     |         |         |         |
+| dp               |         |         |         |
+| greedy           |         |         |         |
+| divide & conquer |         |         |         |
+|                  |         |         |         |
+
+
+
 * category 
 ** data structure 
 *** array 
