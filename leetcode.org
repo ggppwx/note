@@ -17,6 +17,8 @@ description: leetcode problem solving.
 * category 
 ** data structure 
 *** array 
+77 problems 
+
 
 *** linklist 
 
