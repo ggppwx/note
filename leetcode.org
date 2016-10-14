@@ -19,8 +19,6 @@ description: leetcode problem solving.
 - for the first round, focus on medium problems 
 - 2 problems each * 16 = 32 
 
-
-
 | category         | round 1 (2) | round 2 | round 3 | total |
 |------------------+-------------+---------+---------+-------|
 | array            |             |         |         |     0 |
@@ -44,7 +42,6 @@ description: leetcode problem solving.
 |------------------+-------------+---------+---------+-------|
 | Total            |             |         |         |     0 |
 #+TBLFM: $5='( + (if (string= $2 "X") 2 0) (if (string= $3 "X") 1 0) (if (string= $4 "X") 1 0))::@19$5=vsum(@2$5..@18$5)
-
 
 
 * category 

@@ -140,6 +140,8 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 *** DONE capture template 
     CLOSED: [2016-05-03 Tue 11:48]
 *** PROGRESS planning & recording tasks 
+    - Note taken on [2016-10-14 Fri 18:13] \\
+      know how to use table to record the task
 *** DONE learn emacs batch mode
     CLOSED: [2016-10-07 Fri 16:00]
 *** COMP better looking org.
