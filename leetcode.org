@@ -42,8 +42,8 @@ description: leetcode problem solving.
 | divide & conquer |             |         |         |     0 |
 |                  |             |         |         |     0 |
 |------------------+-------------+---------+---------+-------|
-| Total            |             |         |         |       |
-#+TBLFM: $5='( + (if (string= $2 "X") 1 0) (if (string= $3 "X") 1 0) (if (string= $4 "X") 1 0))
+| Total            |             |         |         |     0 |
+#+TBLFM: $5='( + (if (string= $2 "X") 2 0) (if (string= $3 "X") 1 0) (if (string= $4 "X") 1 0))::@19$5=vsum(@2$5..@18$5)
 
 
 

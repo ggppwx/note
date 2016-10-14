@@ -8,7 +8,6 @@
 
 (integerp 3)
 
-
 (if t "yes" "no")
 
 
