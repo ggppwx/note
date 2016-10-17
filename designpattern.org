@@ -32,6 +32,14 @@ learn 20 maybe
 
 
 
+* tips 
+http://programmers.stackexchange.com/questions/7055/what-is-the-most-frequently-used-design-pattern
+
+
+
+
+
+
 * review oop 
 ** Encapsulation 
 parameter vs argument 
@@ -108,7 +116,7 @@ sparky.tryToFly();
 
 
 
-* DONE observor 
+* DONE observer 
   CLOSED: [2016-04-26]
 ** when to use observer pattern 
 - loose coupling
@@ -795,6 +803,8 @@ public class ATMProxy implements GetAtmData {
 
 
 #+END_SRC
+
+
 
 
 

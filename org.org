@@ -1,6 +1,6 @@
 #+TITLE: main panel for org mode 
 #+DESCRIPTION: this file is to track projects, track is NOT the main purpose. organizing is
-#+TODO: READY PROGRESS | COMP
+#+TODO: READY PROGRESS(!) | COMP
 #+TODO: TODO | DONE
 
 * this is the orgnizer for org mode 
@@ -90,6 +90,15 @@ supporting different tags for each events, random event based on tags
 - the text processor process the text to find new vocabulary 
 - shanbay api. 
 - analyze the article, get new vocabulary
+
+
+** PROGRESS push current todos to your mail.  
+   - State "PROGRESS"   from "READY"      [2016-10-17 Mon 17:48]
+work should be done: 
+- [ ] adding a summary page when uploading   
+- [ ] repo analysis
+- [X] push message 
+- [X] schedule task
 
 
 
@@ -289,6 +298,7 @@ file:programming_pearls.org
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
    :LAST_REPEAT: [2016-10-12 Wed 22:33]
+   :STYLE:    habit
    :END:
 :LAST_REPEAT: [2016-10-07 Fri 17:48]
 - reading past journals
