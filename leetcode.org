@@ -15,34 +15,6 @@ description: leetcode problem solving.
 - syntax check 
 
 
-* road map 
-- for the first round, focus on medium problems 
-- 2 problems each * 16 = 32 
-
-| category         | round 1 (2) | round 2 | round 3 | total |
-|------------------+-------------+---------+---------+-------|
-| array            |             |         |         |     0 |
-| linklist         |             |         |         |     0 |
-| hashtable        |             |         |         |     0 |
-| 2 points         |             |         |         |     0 |
-| binary search    |             |         |         |     0 |
-| tree             |             |         |         |     0 |
-| graph            |             |         |         |     0 |
-| stack            |             |         |         |     0 |
-| heap             |             |         |         |     0 |
-| bit              |             |         |         |     0 |
-|------------------+-------------+---------+---------+-------|
-| math             |             |         |         |     0 |
-| sort             |             |         |         |     0 |
-| backtracking     |             |         |         |     0 |
-| dp               |             |         |         |     0 |
-| greedy           |             |         |         |     0 |
-| divide & conquer |             |         |         |     0 |
-|                  |             |         |         |     0 |
-|------------------+-------------+---------+---------+-------|
-| Total            |             |         |         |     0 |
-#+TBLFM: $5='( + (if (string= $2 "X") 2 0) (if (string= $3 "X") 1 0) (if (string= $4 "X") 1 0))::@19$5=vsum(@2$5..@18$5)
-
 
 * category 
 ** data structure 
