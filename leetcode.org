@@ -19,8 +19,12 @@ description: leetcode problem solving.
 * category 
 ** data structure 
 *** array 
-77 problems 
+77 problems in total 
 
+- 162 peak number
+  - INT_MIN vs INT_MAX
+- 153 min in rotated sorted array
+  - always think about 'else case' when coding
 
 *** linklist 
 
