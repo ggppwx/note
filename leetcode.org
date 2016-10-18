@@ -28,6 +28,21 @@ description: leetcode problem solving.
 
 *** linklist 
 
+- 143 link list cycle 
+  - finding if it's cyclic is easy, in order to find the starting point,
+    need to find the loop size
+  - once found the loop size, check each node + loopsize is itself 
+  - be aware of the return clause after the a code block 
+  - be aware of the code block after while 
+  - check if the return case covers all scenarios  
+
+
+- 143 reversed link list.
+  - draw link picture to assist 
+  - when writing node -> next = node2, there are usually multiple link manipulation. 
+    i.e. node1->next = node->next; node -> next = node1; 
+
+
 *** hashtable 
 
 *** 2 points 
