@@ -125,7 +125,7 @@ work should be done:
 - considering to use the text processor 
 
 
-*** design pattern [2/4] 					       :book:
+*** design pattern [2/3] 					       :book:
 26 tutorials, 15 min each 
 file:designpattern.org 
 
@@ -148,11 +148,12 @@ file:designpattern.org
      :END:
 
 **** TODO review design pattern					     :review:
-     SCHEDULED: <2016-08-26 Fri +1m>
+     SCHEDULED: <2016-09-26 Mon +1m>
+     - State "DONE"       from "TODO"       [2016-10-18 Tue 17:16]
      - State "DONE"       from "TODO"       [2016-07-28 Thu 18:46]
      - State "DONE"       from "TODO"       [2016-07-06 Wed 19:07]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-07-28 Thu 18:46]
+     :LAST_REPEAT: [2016-10-18 Tue 17:16]
      :END:
 
 
@@ -330,8 +331,8 @@ file:leetcode.org
 | category         | round 1 (2) | round 2 | round 3 | total |
 |------------------+-------------+---------+---------+-------|
 | array            | X           |         |         |     2 |
-| linklist         |             |         |         |     0 |
-| hashtable        |             |         |         |     0 |
+| linked list      |             |         |         |     0 |
+| hash table       |             |         |         |     0 |
 | 2 points         |             |         |         |     0 |
 | binary search    |             |         |         |     0 |
 | tree             |             |         |         |     0 |
