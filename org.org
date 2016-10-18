@@ -109,7 +109,8 @@ work should be done:
 * 读书&写作
 ** reading							    :reading:
 *** TODO daily English reading
-    SCHEDULED: <2016-10-18 Tue .+1d>
+    SCHEDULED: <2016-10-19 Wed .+1d>
+    - State "DONE"       from "TODO"       [2016-10-18 Tue 14:19]
     - State "DONE"       from "TODO"       [2016-10-17 Mon 22:19]
     - State "DONE"       from "TODO"       [2016-10-13 Thu 21:25]
     - State "DONE"       from "TODO"       [2016-10-12 Wed 15:14]
@@ -117,7 +118,7 @@ work should be done:
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2016-10-17 Mon 22:19]
+    :LAST_REPEAT: [2016-10-18 Tue 14:19]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
