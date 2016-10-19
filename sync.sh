@@ -25,6 +25,12 @@ function git-autopush
     git push origin master
 }
 
+function create-summary
+{
+    bash $DIR/emacsBatch.sh > agenda.md
+}
+
+
 # schedule run
 function schedule
 {
@@ -35,6 +41,7 @@ function schedule
 	    git-pull
 	    counter=0
 	else
+	    create-summary
 	    git-autopush
 	fi
 	sleep 5000    
@@ -53,8 +60,13 @@ elif [[ "$#" = "1" ]]; then
         git-pull
     fi
     if [[ $1 = "push" ]]; then
+	create-summary
         git-autopush
+    fi
+    if [[ $1 = "summary" ]]; then
+	create-summary
     fi    
+    
     exit
 else
     echo "argument number ERROR"
