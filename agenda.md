@@ -13,7 +13,6 @@ Thursday   20 October 2016
   org:        39 d. ago:  TODO IB basics                            :investing::
   org:         4 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
   work:       TODO spent 1 hour on KTLO               ** *   *         !       
-  scratch:    TODO breakfast habit                 *  *****  *****  ***!       
   org:        TODO daily English reading                     ****   ***!       :
   work:       TODO go through team bf/bb queue        *  *   *      *  !       
   org:        TODO [#A] reflection, writing journa        *    *    *  !       :
