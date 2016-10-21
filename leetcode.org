@@ -33,7 +33,7 @@ description: leetcode problem solving.
     need to find the loop size
   - once found the loop size, check each node + loopsize is itself 
   - be aware of the return clause after the a code block 
-  - be aware of the code block after while 
+  - be aware of the code block after while  
   - check if the return case covers all scenarios  
 
 
@@ -44,6 +44,9 @@ description: leetcode problem solving.
 
 
 *** hashtable 
+- 49 group anagrams 
+    
+
 
 *** 2 points 
 
