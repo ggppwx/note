@@ -95,7 +95,7 @@ supporting different tags for each events, random event based on tags
 ** PROGRESS push current todos to your mail.  
    - State "PROGRESS"   from "READY"      [2016-10-17 Mon 17:48]
 work should be done: 
-- [ ] adding a summary page when uploading   
+- [X] adding a summary page when uploading   
 - [ ] repo analysis
 - [X] push message 
 - [X] schedule task
