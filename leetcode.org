@@ -45,8 +45,11 @@ description: leetcode problem solving.
 
 *** hashtable 
 - 49 group anagrams 
-    
+  - array initialization, using vector is safer !
+  - convert a string to a bitmap, each bit is from 0 - 25. then generate a hash 
 
+
+- 274 H-index
 
 *** 2 points 
 
