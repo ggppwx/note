@@ -7,5 +7,5 @@ echo "$AGENDA"
 
 
 
-TODO=$(emacs -batch -l ~/.emacs -eval '(org-batch-agenda-csv "t")')
+# TODO=$(emacs -batch -l ~/.emacs -eval '(org-batch-agenda-csv "t")')
 # echo "$TODO" 

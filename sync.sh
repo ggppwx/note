@@ -27,7 +27,7 @@ function git-autopush
 
 function create-summary
 {
-    bash $DIR/emacsBatch.sh > agenda.md
+    bash $DIR/emacsBatch.sh > agenda
 }
 
 
