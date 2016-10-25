@@ -48,11 +48,18 @@ description: leetcode problem solving.
   - array initialization, using vector is safer !
   - convert a string to a bitmap, each bit is from 0 - 25. then generate a hash 
 
+- 3 Longest Substring Without Repeating Characters
+  - window slides, move rP first, until hits the duplicated char, then move lR
+  - the key is to determine when lR moves, if the key is in the map, it moves, otherwise 
+    only moves rP. 
+  - no how loops work 
 
 - 274 H-index
 
 *** 2 points 
+- 61 rotate list 
 
+- 75 sort colors 
 
 *** binary search 
 

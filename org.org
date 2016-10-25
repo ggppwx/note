@@ -109,7 +109,9 @@ work should be done:
 * 读书&写作
 ** reading							    :reading:
 *** TODO daily English reading
-    SCHEDULED: <2016-10-21 Fri .+1d>
+    SCHEDULED: <2016-10-26 Wed .+1d>
+    - State "DONE"       from "TODO"       [2016-10-25 Tue 13:58]
+    - State "DONE"       from "TODO"       [2016-10-24 Mon 14:56]
     - State "DONE"       from "TODO"       [2016-10-20 Thu 21:39]
     - State "DONE"       from "TODO"       [2016-10-19 Wed 15:29]
     - State "DONE"       from "TODO"       [2016-10-18 Tue 14:19]
@@ -120,7 +122,7 @@ work should be done:
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2016-10-20 Thu 21:39]
+    :LAST_REPEAT: [2016-10-25 Tue 13:58]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
@@ -334,7 +336,7 @@ file:leetcode.org
 |------------------+-------------+---------+---------+-------|
 | array            | X           |         |         |     2 |
 | linked list      | X           |         |         |     2 |
-| hash table       |             |         |         |     0 |
+| hash table       | X           |         |         |     2 |
 | 2 points         |             |         |         |     0 |
 | binary search    |             |         |         |     0 |
 | tree             |             |         |         |     0 |
@@ -351,7 +353,7 @@ file:leetcode.org
 | divide & conquer |             |         |         |     0 |
 |                  |             |         |         |     0 |
 |------------------+-------------+---------+---------+-------|
-| Total            |             |         |         |     4 |
+| Total            |             |         |         |     6 |
 #+TBLFM: $5='( + (if (string= $2 "X") 2 0) (if (string= $3 "X") 1 0) (if (string= $4 "X") 1 0))::@19$5=vsum(@2$5..@18$5)
 
 
@@ -382,7 +384,8 @@ trainning focus:
 - 132 in total. 
 - appro 80 days. 
 *** TODO [#B] leetcode 2 problems medium
-    SCHEDULED: <2016-10-21 Fri +2d>
+    SCHEDULED: <2016-10-23 Sun +2d>
+    - State "DONE"       from "TODO"       [2016-10-24 Mon 20:01]
     - State "DONE"       from "TODO"       [2016-10-18 Tue 18:49]
     - State "DONE"       from "TODO"       [2016-10-17 Mon 22:48]
     - State "DONE"       from "TODO"       [2016-10-12 Wed 13:13]
@@ -396,7 +399,7 @@ trainning focus:
     - State "DONE"       from "TODO"       [2016-07-22 Fri 11:17]
     - State "DONE"       from "TODO"       [2016-06-14 Tue 19:01]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-10-18 Tue 18:49]
+    :LAST_REPEAT: [2016-10-24 Mon 20:01]
     :END:      
 
 ** TODO leetcode hard problems 

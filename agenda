@@ -1,25 +1,28 @@
-Week-agenda (W42):
-Monday     17 October 2016 W42
-Tuesday    18 October 2016
-  org:        Scheduled:  TODO clean code review                      :reading::
-Wednesday  19 October 2016
-  org:        Scheduled:  TODO read javascript design pattern.        :reading::
-Thursday   20 October 2016
-Friday     21 October 2016
-  work:       Scheduled:  TODO [#A] filling out scratch pad
-  org:        Sched.43x:  PROGRESS integrate blog with personal site. :project::
-  org:        Sched.26x:  TODO review design pattern           :reading::review:
-  org:        Sched. 4x:  TODO clean code review                      :reading::
+Week-agenda (W43):
+Monday     24 October 2016 W43
+Tuesday    25 October 2016
+  work:       Sched. 5x:  TODO [#A] filling out scratch pad
+  org:        Sched.47x:  PROGRESS integrate blog with personal site. :project::
+  org:        Sched.30x:  TODO review design pattern           :reading::review:
+  scratch:    Sched. 5x:  TODO code refactoring tutorial              :worktime:
   org:        Sched. 3x:  TODO read javascript design pattern.        :reading::
-  scratch:    Scheduled:  TODO code refactoring tutorial              :worktime:
+  org:        Scheduled:  TODO clean code review                      :reading::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
-  org:        40 d. ago:  TODO IB basics                            :investing::
-  org:         5 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
-  work:       TODO spent 1 hour on KTLO              ** *   *          !       
-  org:        TODO daily English reading                    ****   ****!       :
-  org:        TODO [#A] reflection, writing journa       *    *    *   !       :
-Saturday   22 October 2016
-Sunday     23 October 2016
+  org:        Scheduled:  TODO read neatest guide to stock :investing::reading:book:
+  org:        44 d. ago:  TODO IB basics                            :investing::
+  org:         2 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
+  work:       TODO spent 1 hour on KTLO           * *   *              !       
+  org:        TODO [#A] reflection, writing journa   *    *    *       !       :
+  work:       TODO go through team bf/bb queue      *   *      *   *   !       
+Wednesday  26 October 2016
+  org:        Scheduled:  TODO review design pattern           :reading::review:
+Thursday   27 October 2016
   org:        Scheduled:  TODO read javascript design pattern.        :reading::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
+Friday     28 October 2016
+  work:       Scheduled:  TODO [#A] filling out scratch pad
+  scratch:    Scheduled:  TODO code refactoring tutorial              :worktime:
+Saturday   29 October 2016
+  org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
+Sunday     30 October 2016
   org:        Deadline:   TODO leetcode easy problem review :leetcode:interview::review:
