@@ -58,7 +58,11 @@ description: leetcode problem solving.
 
 *** 2 points 
 - 61 rotate list 
-
+  - trade space for time
+  - corner case: 
+    - no link list, link_len = 0
+    - k = 0 
+   
 - 75 sort colors 
 
 *** binary search 
