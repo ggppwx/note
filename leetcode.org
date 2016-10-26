@@ -64,8 +64,14 @@ description: leetcode problem solving.
     - k = 0 
    
 - 75 sort colors 
+  - 2 points, zero = 0 two = n -1
+  - the cursor i, when it reaches 0, swaps 0 to the left, reaches 2
+    swap 2 to right
+  - need to redo checking after swap 
+  - since it goes from left to right, need to swap 2 first.
 
 *** binary search 
+
 
 *** tree
 
