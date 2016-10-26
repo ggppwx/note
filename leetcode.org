@@ -71,6 +71,9 @@ description: leetcode problem solving.
   - since it goes from left to right, need to swap 2 first.
 
 *** binary search 
+- 33 Search in Rotated Sorted Array
+
+- 74 Search a 2D Matrix
 
 
 *** tree
