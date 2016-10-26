@@ -72,6 +72,8 @@ description: leetcode problem solving.
 
 *** binary search 
 - 33 Search in Rotated Sorted Array
+  - corner cases 
+  - needs review 
 
 - 74 Search a 2D Matrix
 
