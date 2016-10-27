@@ -22,7 +22,8 @@ remember the lesson you learn
 ** DONE rest well, recover from cold 
 
 ** TODO breakfast habit 
-   SCHEDULED: <2016-10-27 Thu .+1d>
+   SCHEDULED: <2016-10-28 Fri .+1d>
+   - State "DONE"       from "TODO"       [2016-10-27 Thu 15:07]
    - State "DONE"       from "TODO"       [2016-10-26 Wed 10:24]
    - State "DONE"       from "TODO"       [2016-10-25 Tue 10:06]
    - State "DONE"       from "TODO"       [2016-10-24 Mon 10:43]
@@ -45,7 +46,7 @@ remember the lesson you learn
    - State "DONE"       from "PROGRESS"   [2016-09-28 Wed 22:57]
    :PROPERTIES:
    :STYLE:    habit
-   :LAST_REPEAT: [2016-10-26 Wed 10:24]
+   :LAST_REPEAT: [2016-10-27 Thu 15:07]
    :END:
 - starch, protein 
 - eat before going to work 
