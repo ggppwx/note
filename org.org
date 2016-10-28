@@ -339,7 +339,7 @@ file:leetcode.org
 | linked list      | X           |         |         |     2 |
 | hash table       | X           |         |         |     2 |
 | 2 points         | X           |         |         |     2 |
-| binary search    |             |         |         |     0 |
+| binary search    | X           |         |         |     2 |
 | tree             |             |         |         |     0 |
 | graph            |             |         |         |     0 |
 | stack            |             |         |         |     0 |
@@ -354,7 +354,7 @@ file:leetcode.org
 | divide & conquer |             |         |         |     0 |
 |                  |             |         |         |     0 |
 |------------------+-------------+---------+---------+-------|
-| Total            |             |         |         |     8 |
+| Total            |             |         |         |    10 |
 #+TBLFM: $5='( + (if (string= $2 "X") 2 0) (if (string= $3 "X") 1 0) (if (string= $4 "X") 1 0))::@19$5=vsum(@2$5..@18$5)
 
 
@@ -385,7 +385,8 @@ trainning focus:
 - 132 in total. 
 - appro 80 days. 
 *** TODO [#B] leetcode 2 problems medium
-    SCHEDULED: <2016-10-25 Tue +2d>
+    SCHEDULED: <2016-10-27 Thu +2d>
+    - State "DONE"       from "TODO"       [2016-10-27 Thu 18:46]
     - State "DONE"       from "TODO"       [2016-10-26 Wed 10:22]
     - State "DONE"       from "TODO"       [2016-10-24 Mon 20:01]
     - State "DONE"       from "TODO"       [2016-10-18 Tue 18:49]
@@ -401,11 +402,15 @@ trainning focus:
     - State "DONE"       from "TODO"       [2016-07-22 Fri 11:17]
     - State "DONE"       from "TODO"       [2016-06-14 Tue 19:01]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-10-26 Wed 10:22]
+    :LAST_REPEAT: [2016-10-27 Thu 18:46]
     :END:      
 
 ** TODO leetcode hard problems 
  
+** TODO leetcode review 
+   SCHEDULED: <2016-10-31 Mon>
+
+
 
 
 * finance

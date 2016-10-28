@@ -76,9 +76,15 @@ description: leetcode problem solving.
   - needs review 
 
 - 74 Search a 2D Matrix
-
+  - pretty smooth 
+  - the only caveat is right = mid + 1. not right = mid. 
+    so that lp == rp could still be in the while loop 
 
 *** tree
+- 98 Validate Binary Search Tree
+
+- 230 Kth Smallest Element in a BST
+
 
 *** graph
 
@@ -87,15 +93,18 @@ description: leetcode problem solving.
 *** heap 
 
 ** algorithm
+*** [#A] dynamic programming 
+
+*** backtracking 
+
+
 *** math
 
 *** sort
 
-*** backtracking 
 
 *** divide and conquer
 
-*** [#A] dynamic programming 
 
 *** greedy 
 
