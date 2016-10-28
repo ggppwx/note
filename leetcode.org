@@ -86,7 +86,8 @@ description: leetcode problem solving.
   - be aware of typo. check typo first 
 
 - 230 Kth Smallest Element in a BST
-
+  - inorder traversal
+  - nothing much 
 
 *** graph
 
