@@ -82,6 +82,8 @@ description: leetcode problem solving.
 
 *** tree
 - 98 Validate Binary Search Tree
+  - classic problems. 
+  - be aware of typo. check typo first 
 
 - 230 Kth Smallest Element in a BST
 
