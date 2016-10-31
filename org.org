@@ -109,7 +109,8 @@ work should be done:
 * 读书&写作
 ** reading							    :reading:
 *** TODO daily English reading
-    SCHEDULED: <2016-10-26 Wed .+1d>
+    SCHEDULED: <2016-11-01 Tue .+1d>
+    - State "DONE"       from "TODO"       [2016-10-31 Mon 14:43]
     - State "DONE"       from "TODO"       [2016-10-25 Tue 13:58]
     - State "DONE"       from "TODO"       [2016-10-24 Mon 14:56]
     - State "DONE"       from "TODO"       [2016-10-20 Thu 21:39]
@@ -122,7 +123,7 @@ work should be done:
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2016-10-25 Tue 13:58]
+    :LAST_REPEAT: [2016-10-31 Mon 14:43]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
@@ -230,11 +231,12 @@ file:programming_pearls.org
      CLOCK: [2016-08-16 Tue 23:58]--[2016-08-17 Wed 00:35] =>  0:37
      
 **** TODO clean code review 
-     SCHEDULED: <2016-10-11 Tue +1w>
+     SCHEDULED: <2016-12-01 Thu .+1m>
+     - State "DONE"       from "TODO"       [2016-10-31 Mon 18:32]
      - State "DONE"       from "TODO"       [2016-10-05 Wed 11:16]
      CLOCK: [2016-10-04 Tue 17:37]--[2016-10-05 Wed 11:16] => 17:39
      :PROPERTIES:
-     :LAST_REPEAT: [2016-10-05 Wed 11:16]
+     :LAST_REPEAT: [2016-10-31 Mon 18:32]
      :END:
 - watch video 
 - summarize 
@@ -341,10 +343,10 @@ file:leetcode.org
 | 2 points         | X           |         |         |     2 |
 | binary search    | X           |         |         |     2 |
 | tree             | X           |         |         |     2 |
-| graph            |             |         |         |     0 |
 | stack            |             |         |         |     0 |
 | heap             |             |         |         |     0 |
 | bit              |             |         |         |     0 |
+| graph            |             |         |         |     0 |
 |------------------+-------------+---------+---------+-------|
 | math             |             |         |         |     0 |
 | sort             |             |         |         |     0 |

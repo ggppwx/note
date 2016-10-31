@@ -22,7 +22,8 @@ remember the lesson you learn
 ** DONE rest well, recover from cold 
 
 ** TODO breakfast habit 
-   SCHEDULED: <2016-10-28 Fri .+1d>
+   SCHEDULED: <2016-11-01 Tue .+1d>
+   - State "DONE"       from "TODO"       [2016-10-31 Mon 11:18]
    - State "DONE"       from "TODO"       [2016-10-27 Thu 15:07]
    - State "DONE"       from "TODO"       [2016-10-26 Wed 10:24]
    - State "DONE"       from "TODO"       [2016-10-25 Tue 10:06]
@@ -46,7 +47,7 @@ remember the lesson you learn
    - State "DONE"       from "PROGRESS"   [2016-09-28 Wed 22:57]
    :PROPERTIES:
    :STYLE:    habit
-   :LAST_REPEAT: [2016-10-27 Thu 15:07]
+   :LAST_REPEAT: [2016-10-31 Mon 11:18]
    :END:
 - starch, protein 
 - eat before going to work 
@@ -336,9 +337,11 @@ writing down the games plan to play
 - pillars of eternity 
 - xcom 2
 - ark
+- metal gear solid 
 - casual 
   - overwatch
   - league of legend 
+
 
 I think it's better writing game journal/reviview
 *** COMP gaming benchmark 
@@ -376,7 +379,8 @@ this is good game to play with miaomiao.
 
 ** gaming goals 
 *** Ark.
-**** TODO writing notes in game 
+**** DONE writing notes in game 
+     CLOSED: [2016-10-31 Mon 15:21]
 - build raft 
 - explore other places 
 - new colony.
@@ -401,8 +405,8 @@ this is good game to play with miaomiao.
 ** TODO message push system 
 
 
-** TODO jiff 
-   DEADLINE: <2016-10-28 Fri>
+** DONE jiff 
+   CLOSED: [2016-10-31 Mon 13:09] DEADLINE: <2016-10-28 Fri>
 
-** TODO writing eval 
+** TODO [#A] writing eval 
    SCHEDULED: <2016-10-28 Fri>

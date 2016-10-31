@@ -89,9 +89,15 @@ description: leetcode problem solving.
   - inorder traversal
   - nothing much 
 
-*** graph
 
 *** stack
+- 394 Decode String
+
+- 402 Remove K Digits
+
+*** graph
+
+
 
 *** heap 
 
