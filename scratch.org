@@ -408,5 +408,5 @@ this is good game to play with miaomiao.
 ** DONE jiff 
    CLOSED: [2016-10-31 Mon 13:09] DEADLINE: <2016-10-28 Fri>
 
-** TODO [#A] writing eval 
-   SCHEDULED: <2016-10-28 Fri>
+** DONE [#A] writing eval 
+   CLOSED: [2016-11-01 Tue 10:36] SCHEDULED: <2016-10-28 Fri>
