@@ -109,7 +109,10 @@ work should be done:
 * 读书&写作
 ** reading							    :reading:
 *** TODO daily English reading
-    SCHEDULED: <2016-10-21 Fri .+1d>
+    SCHEDULED: <2016-12-05 Mon .+1d>
+    - State "DONE"       from "TODO"       [2016-12-04 Sun 15:58]
+    - State "DONE"       from "TODO"       [2016-11-19 Sat 21:52]
+    - State "DONE"       from "TODO"       [2016-11-13 Sun 21:07]
     - State "DONE"       from "TODO"       [2016-10-20 Thu 21:39]
     - State "DONE"       from "TODO"       [2016-10-19 Wed 15:29]
     - State "DONE"       from "TODO"       [2016-10-18 Tue 14:19]
@@ -120,7 +123,7 @@ work should be done:
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2016-10-20 Thu 21:39]
+    :LAST_REPEAT: [2016-12-04 Sun 15:58]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
@@ -278,7 +281,11 @@ file:programming_pearls.org
 
 
 ** TODO [#A] reflection, writing journal
-   SCHEDULED: <2016-10-20 Thu .+3d/5d>
+   SCHEDULED: <2016-12-07 Wed .+3d/5d>
+   - State "DONE"       from "TODO"       [2016-12-04 Sun 15:58]
+   - State "DONE"       from "TODO"       [2016-11-19 Sat 21:08]
+   - State "DONE"       from "TODO"       [2016-11-13 Sun 22:18]
+   - State "DONE"       from "TODO"       [2016-10-21 Fri 01:26]
    - State "DONE"       from "TODO"       [2016-10-17 Mon 22:52]
    - State "DONE"       from "TODO"       [2016-10-12 Wed 22:33]
    - State "DONE"       from "TODO"       [2016-10-07 Fri 17:48]
@@ -303,7 +310,7 @@ file:programming_pearls.org
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
-   :LAST_REPEAT: [2016-10-17 Mon 22:52]
+   :LAST_REPEAT: [2016-12-04 Sun 15:58]
    :STYLE:    habit
    :END:
 :LAST_REPEAT: [2016-10-07 Fri 17:48]
@@ -411,7 +418,8 @@ trainning focus:
     CLOCK: [2016-08-21 Sun 22:47]--[2016-08-21 Sun 23:21] =>  0:34
 
 *** TODO read neatest guide to stock			       :reading:book:
-    SCHEDULED: <2016-10-25 Tue +1w>
+    SCHEDULED: <2016-11-01 Tue +1w>
+    - State "DONE"       from "TODO"       [2016-11-13 Sun 22:26]
     - State "DONE"       from "TODO"       [2016-10-12 Wed 22:33]
     - State "DONE"       from "TODO"       [2016-10-06 Thu 10:54]
     - State "DONE"       from "PROGRESS"   [2016-10-04 Tue 12:29]
@@ -420,7 +428,7 @@ trainning focus:
     - State "DONE"       from "TODO"       [2016-09-19 Mon 15:22]
     - State "DONE"       from "TODO"       [2016-09-12 Mon 22:26]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-10-12 Wed 22:33]
+    :LAST_REPEAT: [2016-11-13 Sun 22:26]
     :END:
 :LAST_REPEAT: [2016-09-19 Mon 15:24]
 
