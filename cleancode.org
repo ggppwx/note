@@ -135,3 +135,58 @@ public class CodeAnalyzer implements JavaFileAnalysis {
 - because code rots 
 
 
+
+
+
+* notes from wangyin's art of programming 
+- elegant code. 
+  - tree structure, always have if else block 
+
+- modulize code 
+  - the function should be less than 50 lines (one page )
+  - create utility functions 
+  - one purpose function 
+    - no "generic" functions 
+    - preFoo(); foo() { preFoo();  ... }
+    
+  - avoid using global variable/ member variable to pass info
+    - they don't have IN-OUT pipeline structure 
+
+
+- readable code
+  - meaningful function/variables
+  - local variable close to where it's used 
+  - temp local variable should be short
+  - don't reuse local variable, do not be afraid of defining new ones
+  - use middle variable.(this contradicts with some coding style)
+
+
+- write "simple" code 
+  - avoid using ++i/--i
+  - NEVER omit {}
+  - use ()
+  - avoid continue; break;
+    - move break to the while condition 
+    - !  continue condition 
+
+- write straight forward code 
+  - avoid using action1() || action2() || action3()
+    instead, using multiple if
+
+- use if-else, avoid using control-flow as else. 
+  - in this case, note that if-else may SHARE common code !
+  - I think we could use control flow in the case above 
+
+- error handling 
+  - when catching error, stop using generic "Exception" 
+  - try-catch block should be short and neat 
+
+
+- null pointer 
+  - avoid using NULL pointer
+    - not initialization
+    - not return 
+  - stop catching NullPointerException
+  - check null immediately after its possible occurrence 
+
+- stop over-engineering 
