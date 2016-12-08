@@ -292,7 +292,7 @@ Analyze your email.
 
 
 ** DONE overclock the system.
-- [ ] resolve the driver issue. follow the steps
+- [X] resolve the driver issue. follow the steps
   - check disk: chkdsk C: /f /r /x
   - download the latest intel burn test
   - stock voltage. 
@@ -302,6 +302,7 @@ Analyze your email.
   - mem-test
   - switch the cord  
   - calculate the power consumption 
+  - caused by overclock & unstable voltage 
 
 - [X] overclock the system to stable 
   - [X] 4.2 ghz for now 
@@ -324,12 +325,15 @@ Analyze your email.
 - notes
   - the max voltage should be < 1.3
   - llc calibration to avoid vdrop, otherwise can't reach 1.2 
+  - should test prime95 blend ! otherwise memory may not be stable 
 
 ** TODO future cpu overclock
-  - [ ] testing in game in-game OSD
+  - [X] testing in game in-game OSD
   - [ ] lower voltage 
   - [ ] to 4.5 ghz
-  - [ ] mem setting 
+    - 1.21 above ! otherwise the system is unstable 
+  - [X] mem setting 
+    - xmp 2.0  reaches 3000 mhz 
 
 ** TODO game list
 writing down the games plan to play
