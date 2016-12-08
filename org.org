@@ -109,7 +109,10 @@ work should be done:
 * 读书&写作
 ** reading							    :reading:
 *** TODO daily English reading
-    SCHEDULED: <2016-11-01 Tue .+1d>
+    SCHEDULED: <2016-12-09 Fri .+1d>
+    - State "DONE"       from "TODO"       [2016-12-08 Thu 09:51]
+    - State "DONE"       from "TODO"       [2016-11-08 Tue 13:50]
+    - State "DONE"       from "TODO"       [2016-11-07 Mon 16:27]
     - State "DONE"       from "TODO"       [2016-10-31 Mon 14:43]
     - State "DONE"       from "TODO"       [2016-10-25 Tue 13:58]
     - State "DONE"       from "TODO"       [2016-10-24 Mon 14:56]
@@ -123,7 +126,7 @@ work should be done:
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2016-10-31 Mon 14:43]
+    :LAST_REPEAT: [2016-12-08 Thu 09:51]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
@@ -282,7 +285,8 @@ file:programming_pearls.org
 
 
 ** TODO [#A] reflection, writing journal
-   SCHEDULED: <2016-10-28 Fri .+3d/5d>
+   SCHEDULED: <2016-12-11 Sun .+3d/5d>
+   - State "DONE"       from "TODO"       [2016-12-08 Thu 09:51]
    - State "DONE"       from "TODO"       [2016-10-25 Tue 19:04]
    - State "DONE"       from "TODO"       [2016-10-17 Mon 22:52]
    - State "DONE"       from "TODO"       [2016-10-12 Wed 22:33]
@@ -308,7 +312,7 @@ file:programming_pearls.org
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
-   :LAST_REPEAT: [2016-10-25 Tue 19:04]
+   :LAST_REPEAT: [2016-12-08 Thu 09:51]
    :STYLE:    habit
    :END:
 :LAST_REPEAT: [2016-10-07 Fri 17:48]
