@@ -1,32 +1,29 @@
-Week-agenda (W50):
-Monday     12 December 2016 W50
-  org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
-Tuesday    13 December 2016
-Wednesday  14 December 2016
-  org:        Scheduled:  TODO read javascript design pattern.        :reading::
-  org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
-Thursday   15 December 2016
-  work:       Sched. 7x:  TODO [#A] filling out scratch pad
-  org:        Sched.98x:  PROGRESS integrate blog with personal site. :project::
-  org:        Sched.46x:  TODO leetcode review                       :leetcode::
-  org:        Sched.20x:  TODO review design pattern           :reading::review:
-  org:        Sched.15x:  TODO clean code review                      :reading::
-  scratch:    Sched. 7x:  TODO code refactoring tutorial              :worktime:
+Week-agenda (W51):
+Monday     19 December 2016 W51
+  work:       Sched. 4x:  TODO [#A] filling out scratch pad
+  org:        Sched.102x:  PROGRESS integrate blog with personal site. :project::
+  org:        Sched.50x:  TODO leetcode review                       :leetcode::
+  org:        Sched.24x:  TODO review design pattern           :reading::review:
+  org:        Sched.19x:  TODO clean code review                      :reading::
+  scratch:    Sched. 4x:  TODO code refactoring tutorial              :worktime:
   org:        Sched. 2x:  TODO read javascript design pattern.        :reading::
   org:        Sched. 2x:  TODO [#B] leetcode 2 problems medium       :leetcode::
-  org:        95 d. ago:  TODO IB basics                            :investing::
-  org:         4 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
+  org:        99 d. ago:  TODO IB basics                            :investing::
+  org:         1 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
   work:       TODO spent 1 hour on KTLO                                !       
-  work:       TODO go through team bf/bb queue                         !       
-  org:        TODO [#A] reflection, writing journa              *      !       :
-  scratch:    TODO breakfast habit                              **    *!       
-  org:        TODO daily English reading                        **    *!       :
-Friday     16 December 2016
-  work:       Scheduled:  TODO [#A] filling out scratch pad
-  scratch:    Scheduled:  TODO code refactoring tutorial              :worktime:
+  org:        TODO [#A] reflection, writing journa          *          !       :
+  scratch:    TODO breakfast habit                          **    * *  !       
+  work:       TODO go through team bf/bb queue                      *  !       
+Tuesday    20 December 2016
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
-Saturday   17 December 2016
-Sunday     18 December 2016
+Wednesday  21 December 2016
+Thursday   22 December 2016
   org:        Scheduled:  TODO read javascript design pattern.        :reading::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
+Friday     23 December 2016
+  work:       Scheduled:  TODO [#A] filling out scratch pad
+  scratch:    Scheduled:  TODO code refactoring tutorial              :worktime:
+Saturday   24 December 2016
+  org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
+Sunday     25 December 2016
   org:        Deadline:   TODO leetcode easy problem review :leetcode:interview::review:
