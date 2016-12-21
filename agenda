@@ -1,18 +1,20 @@
 Week-agenda (W51):
 Monday     19 December 2016 W51
 Tuesday    20 December 2016
-  org:        Sched.103x:  PROGRESS integrate blog with personal site. :project::
-  org:        Sched.51x:  TODO leetcode review                       :leetcode::
-  org:        Sched.25x:  TODO review design pattern           :reading::review:
-  org:        Sched.20x:  TODO clean code review                      :reading::
-  scratch:    Sched. 5x:  TODO code refactoring tutorial              :worktime:
-  org:        Sched. 3x:  TODO read javascript design pattern.        :reading::
-  org:        100 d. ago:  TODO IB basics                           :investing::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
-  org:         2 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
-  org:        TODO [#A] reflection, writing journa         *           !       :
-  scratch:    TODO breakfast habit                         **    * *   !       
 Wednesday  21 December 2016
+  org:        Sched.104x:  PROGRESS integrate blog with personal site. :project::
+  org:        Sched.52x:  TODO leetcode review                       :leetcode::
+  org:        Sched.26x:  TODO review design pattern           :reading::review:
+  org:        Sched.21x:  TODO clean code review                      :reading::
+  scratch:    Sched. 6x:  TODO code refactoring tutorial              :worktime:
+  org:        Sched. 4x:  TODO read javascript design pattern.        :reading::
+  org:        101 d. ago:  TODO IB basics                           :investing::
+  org:        Sched. 2x:  TODO [#B] leetcode 2 problems medium       :leetcode::
+  org:         3 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
+  org:        TODO [#A] reflection, writing journa        *            !       :
+  scratch:    TODO breakfast habit                        **    * *    !       
+  org:        TODO daily English reading                  **    ***  **!       :
 Thursday   22 December 2016
   org:        Scheduled:  TODO read javascript design pattern.        :reading::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
