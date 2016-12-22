@@ -418,7 +418,8 @@ this is good game to play with miaomiao.
 ** TODO message push system 
 
 
-** TODO back to work plan 
+** DONE back to work plan 
+   CLOSED: [2016-12-22 Thu 12:08]
 
 ** DONE jiff 
    CLOSED: [2016-10-31 Mon 13:09] DEADLINE: <2016-10-28 Fri>
