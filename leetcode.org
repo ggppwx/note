@@ -98,8 +98,13 @@ description: leetcode problem solving.
     use confusing names
 
 - 402 Remove K Digits
-
-
+  - using stack as temp container 
+  - remove all digits in stack > current digit 
+  - corner case 
+  - output, only print out the correct number of digits 
+  - NOTE: local variable may be changed !!!!!!
+    find where it's defined 
+  
 *** graph
 
 

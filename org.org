@@ -444,7 +444,7 @@ trainning focus:
     - State "DONE"       from "TODO"       [2016-09-19 Mon 15:22]
     - State "DONE"       from "TODO"       [2016-09-12 Mon 22:26]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-10-12 Wed 22:33]
+    :LAST_REPEAT: [2016-11-13 Sun 22:26]
     :END:
 :LAST_REPEAT: [2016-09-19 Mon 15:24]
 
