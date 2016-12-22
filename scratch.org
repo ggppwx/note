@@ -22,7 +22,13 @@ remember the lesson you learn
 ** DONE rest well, recover from cold 
 
 ** TODO breakfast habit 
-   SCHEDULED: <2016-11-02 Wed .+1d>
+   SCHEDULED: <2016-12-17 Sat .+1d>
+   - State "DONE"       from "TODO"       [2016-12-16 Fri 10:44]
+   - State "DONE"       from "TODO"       [2016-12-14 Wed 10:39]
+   - State "DONE"       from "TODO"       [2016-12-09 Fri 17:31]
+   - State "DONE"       from "TODO"       [2016-12-08 Thu 09:51]
+   - State "DONE"       from "TODO"       [2016-11-08 Tue 11:15]
+   - State "DONE"       from "TODO"       [2016-11-07 Mon 09:39]
    - State "DONE"       from "TODO"       [2016-11-01 Tue 14:04]
    - State "DONE"       from "TODO"       [2016-10-31 Mon 11:18]
    - State "DONE"       from "TODO"       [2016-10-27 Thu 15:07]
@@ -48,7 +54,7 @@ remember the lesson you learn
    - State "DONE"       from "PROGRESS"   [2016-09-28 Wed 22:57]
    :PROPERTIES:
    :STYLE:    habit
-   :LAST_REPEAT: [2016-11-01 Tue 14:04]
+   :LAST_REPEAT: [2016-12-16 Fri 10:44]
    :END:
 - starch, protein 
 - eat before going to work 
@@ -289,7 +295,7 @@ Analyze your email.
 
 
 ** DONE overclock the system.
-- [ ] resolve the driver issue. follow the steps
+- [X] resolve the driver issue. follow the steps
   - check disk: chkdsk C: /f /r /x
   - download the latest intel burn test
   - stock voltage. 
@@ -299,6 +305,7 @@ Analyze your email.
   - mem-test
   - switch the cord  
   - calculate the power consumption 
+  - caused by overclock & unstable voltage 
 
 - [X] overclock the system to stable 
   - [X] 4.2 ghz for now 
@@ -321,14 +328,18 @@ Analyze your email.
 - notes
   - the max voltage should be < 1.3
   - llc calibration to avoid vdrop, otherwise can't reach 1.2 
+  - should test prime95 blend ! otherwise memory may not be stable 
 
 ** TODO future cpu overclock
-  - [ ] testing in game in-game OSD
+  - [X] testing in game in-game OSD
   - [ ] lower voltage 
   - [ ] to 4.5 ghz
-  - [ ] mem setting 
+    - 1.21 above ! otherwise the system is unstable 
+  - [X] mem setting 
+    - xmp 2.0  reaches 3000 mhz 
 
-** TODO game list
+** DONE game list
+   CLOSED: [2016-12-16 Fri 15:21]
 writing down the games plan to play
 - dark souls 3 
 - total war warhammer
@@ -397,7 +408,8 @@ this is good game to play with miaomiao.
 - give reports 
 - migrate this item to habit 
 
-** TODO discuss with miaomiao what to do next 
+** DONE discuss with miaomiao what to do next 
+   CLOSED: [2016-12-16 Fri 16:28]
 ** TODO create a menu list 
 - adding menu to the web 
 
@@ -413,4 +425,4 @@ this is good game to play with miaomiao.
 
 ** DONE [#A] writing eval 
    CLOSED: [2016-11-01 Tue 10:36] SCHEDULED: <2016-10-28 Fri>
-
+** TODO [#A] baby schedule 

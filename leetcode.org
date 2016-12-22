@@ -92,8 +92,13 @@ description: leetcode problem solving.
 
 *** stack
 - 394 Decode String
+  - treat integer as string and insert it into stack
+  - don't forget pop_back() the stack.
+  - chose the variable name wisely. do not 
+    use confusing names
 
 - 402 Remove K Digits
+
 
 *** graph
 
