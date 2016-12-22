@@ -9,8 +9,8 @@ function git-pull
 {
     echo "git pull ......"
     cd $DIR
-    git stash
-    git pull origin master
+    # git stash
+    git pull origin master -X theirs
 }
 
 #export GIT_SSL_NO_VERIFY=1
