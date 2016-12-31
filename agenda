@@ -1,27 +1,25 @@
-Week-agenda (W51):
-Monday     19 December 2016 W51
-Tuesday    20 December 2016
+Week-agenda (W52):
+Monday     26 December 2016 W52
+  org:        Scheduled:  TODO review design pattern      :reading:book::review:
+  org:        Scheduled:  TODO read javascript design pattern.   :reading:book::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
-Wednesday  21 December 2016
-Thursday   22 December 2016
-  org:        Scheduled:  TODO read javascript design pattern.        :reading::
+Tuesday    27 December 2016
+Wednesday  28 December 2016
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
-Friday     23 December 2016
-  work:       Scheduled:  TODO [#A] filling out scratch pad
-  org:        Sched.106x:  PROGRESS integrate blog with personal site. :project::
-  org:        Sched.54x:  TODO leetcode review                       :leetcode::
-  org:        Sched.28x:  TODO review design pattern           :reading::review:
-  org:        Sched.23x:  TODO clean code review                      :reading::
-  org:        103 d. ago:  TODO IB basics                           :investing::
-  org:        Sched. 2x:  TODO read javascript design pattern.        :reading::
-  org:        Sched. 2x:  TODO [#B] leetcode 2 problems medium       :leetcode::
+Thursday   29 December 2016
+Friday     30 December 2016
+  gtd:        Sched.91x:  TODO workout plan
+  org:        Sched.61x:  TODO leetcode review                       :leetcode::
+  org:        Sched.30x:  TODO clean code review                 :reading:book::
+  org:        110 d. ago:  TODO IB basics                           :investing::
+  org:        Sched. 5x:  TODO review design pattern      :reading:book::review:
   scratch:    Scheduled:  TODO code refactoring tutorial              :worktime:
-  org:         5 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
-  org:        TODO [#A] reflection, writing journa      *              !       :
-  scratch:    TODO breakfast habit                      **    * *     *!       
-  org:        TODO daily English reading                **    ***  ****!       :
-  work:       TODO go through team bf/bb queue                  *   *  !       
-Saturday   24 December 2016
+  org:        Scheduled:  TODO read javascript design pattern.   :reading:book::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
-Sunday     25 December 2016
+  org:         5 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
+  org:        TODO [#A] reflection, writ                *    !        :writing::
+Saturday   31 December 2016
+Sunday      1 January 2017
+  org:        Scheduled:  TODO clean code review                 :reading:book::
+  org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
   org:        Deadline:   TODO leetcode easy problem review :leetcode:interview::review:

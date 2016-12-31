@@ -77,8 +77,8 @@ supporting different tags for each events, random event based on tags
 - [X] better publishing tool, to publish article 
 
 
-** PROGRESS integrate blog with personal site.
-   SCHEDULED: <2016-09-09 Fri>
+** COMP integrate blog with personal site.
+   CLOSED: [2016-12-30 Fri 20:38] SCHEDULED: <2016-09-09 Fri>
 - [X] remove the comment section. make it anonymous only
 - [X] create a link to my blog. (easy lol )
 - [ ] adding log-in session 
@@ -92,13 +92,15 @@ supporting different tags for each events, random event based on tags
 - analyze the article, get new vocabulary
 
 
-** PROGRESS push current todos to your mail.  
+** COMP push current todos to your mail.  
+   CLOSED: [2016-12-29 Thu 16:46]
    - State "PROGRESS"   from "READY"      [2016-10-17 Mon 17:48]
 work should be done: 
 - [X] adding a summary page when uploading   
 - [ ] repo analysis
 - [X] push message 
 - [X] schedule task
+
 
 
 
@@ -109,7 +111,10 @@ work should be done:
 * 读书&写作
 ** reading							    :reading:
 *** TODO daily English reading
-    SCHEDULED: <2016-12-23 Fri .+1d>
+    SCHEDULED: <2016-12-31 Sat .+1d>
+    - State "DONE"       from "TODO"       [2016-12-30 Fri 20:35]
+    - State "DONE"       from "TODO"       [2016-12-29 Thu 15:51]
+    - State "DONE"       from "TODO"       [2016-12-25 Sun 14:07]
     - State "DONE"       from "TODO"       [2016-12-22 Thu 11:41]
     - State "DONE"       from "TODO"       [2016-12-21 Wed 14:08]
     - State "DONE"       from "TODO"       [2016-12-20 Tue 16:21]
@@ -134,7 +139,7 @@ work should be done:
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2016-12-22 Thu 11:41]
+    :LAST_REPEAT: [2016-12-30 Fri 20:35]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
@@ -293,7 +298,8 @@ file:programming_pearls.org
 
 
 ** TODO [#A] reflection, writing journal
-   SCHEDULED: <2016-12-11 Sun .+3d/5d>
+   SCHEDULED: <2016-12-28 Wed .+3d/5d>
+   - State "DONE"       from "TODO"       [2016-12-25 Sun 14:44]
    - State "DONE"       from "TODO"       [2016-12-08 Thu 09:51]
    - State "DONE"       from "TODO"       [2016-10-25 Tue 19:04]
    - State "DONE"       from "TODO"       [2016-10-17 Mon 22:52]
@@ -320,7 +326,7 @@ file:programming_pearls.org
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
-   :LAST_REPEAT: [2016-12-08 Thu 09:51]
+   :LAST_REPEAT: [2016-12-25 Sun 14:44]
    :STYLE:    habit
    :END:
 :LAST_REPEAT: [2016-10-07 Fri 17:48]
