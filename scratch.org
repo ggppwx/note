@@ -247,8 +247,6 @@ file:refactor.org
 ** TODO archive for org mode.
 - make a emacs command 
 
-
-
 * PET project thoughts						    :project:
 ** idea, automate everything. 
 - what can be automated during work? 
@@ -265,6 +263,7 @@ Analyze your email.
 
 
 ** communicate board with miaomiao
+
 
 * learn new things 
 ** PROGRESS try out unit-test. 
