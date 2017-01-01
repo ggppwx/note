@@ -29,7 +29,14 @@
     )
   )
 
-(run-at-time "5 sec" nil  #'sync-push )
+
+;;;###autoload
+(defun sync-timer-start ()
+  "start the sync time"
+  (interactive)
+  (run-at-time "5 sec" nil  #'sync-push )  
+  )
+
 
 (provide 'note)
 
