@@ -33,12 +33,22 @@
 
 ;;;###autoload
 (defun sync-timer-start ()
-  "start the sync time"
+  "start the sync timer"
   (interactive)
-  (setq sync-timer (run-at-time "5 sec" nil  #'sync-push ))
+  (setq sync-timer (run-at-time "5 sec" (* 60 60 6)  'sync-push ))
+  )
+
+
+;;;###autoload
+(defun sync-timer-stop ()
+  "stop the sync timer"
+  (interactive)
+  (cancel-timer sync-timer)
   )
 
 
 (provide 'note)
 
 ;;; note.el ends here 
+
+(* 3 4)
