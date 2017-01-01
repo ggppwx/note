@@ -29,7 +29,7 @@
     )
   )
 
-
+(run-at-time "5 sec" nil  #'sync-push )
 
 (provide 'note)
 
