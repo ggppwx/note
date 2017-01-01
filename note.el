@@ -24,7 +24,7 @@
   "call sync pull function, use theirs"
   (interactive)
   (let (cmdStr)    
-    (setq cmdStr (concat note-dir "sync.sh push"))
+    (setq cmdStr (concat note-dir "sync.sh pull"))
     (shell-command cmdStr)
     )
   )
