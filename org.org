@@ -102,7 +102,7 @@ work should be done:
 - [X] schedule task
 
 ** READY customized emacs function
-- [ ] function to execute push/pull script 
+- [X] function to execute push/pull script 
 
 
 * online tutorial 

@@ -2,6 +2,11 @@
 ;;
 ;;
 
+(defcustom note-dir '/Users/jingweigu/Documents/note/'
+  "set the note directory"
+  :type '(string)
+  :group 'note
+  )
 
 
 ;;;###autoload
@@ -9,17 +14,17 @@
   "call sync push function, push the changes to github"
   (interactive)
   (let (cmdStr)
-    (setq cmdStr "/Users/jingweigu/Documents/note/sync.sh push")
+    (setq cmdStr (concat note-dir "sync.sh push"))
     (shell-command cmdStr)
     )
   )
 
 ;;;###autoload
 (defun sync-pull ()
-  "call sync push function, push the changes to github"
+  "call sync pull function, use theirs"
   (interactive)
-  (let (cmdStr)
-    (setq cmdStr "/Users/jingweigu/Documents/note/sync.sh pull")
+  (let (cmdStr)    
+    (setq cmdStr (concat note-dir "sync.sh push"))
     (shell-command cmdStr)
     )
   )
