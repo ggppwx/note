@@ -14,7 +14,7 @@
   "call sync push function, push the changes to github"
   (interactive)
   (let (cmdStr)
-    (setq cmdStr (concat note-dir "sync.sh push"))
+    (setq cmdStr (concat note-dir "sync.sh push &"))
     (shell-command cmdStr)
     )
   )
