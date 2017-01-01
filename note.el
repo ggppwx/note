@@ -8,6 +8,7 @@
   :group 'note
   )
 
+(defvar sync-timer)
 
 ;;;###autoload
 (defun sync-push ()
@@ -24,7 +25,7 @@
   "call sync pull function, use theirs"
   (interactive)
   (let (cmdStr)    
-    (setq cmdStr (concat note-dir "sync.sh pull"))
+    (setq cmdStr (concat note-dir "sync.sh pull &"))
     (shell-command cmdStr)
     )
   )
@@ -34,7 +35,7 @@
 (defun sync-timer-start ()
   "start the sync time"
   (interactive)
-  (run-at-time "5 sec" nil  #'sync-push )  
+  (setq sync-timer (run-at-time "5 sec" nil  #'sync-push ))
   )
 
 
