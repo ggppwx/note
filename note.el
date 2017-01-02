@@ -50,5 +50,3 @@
 (provide 'note)
 
 ;;; note.el ends here 
-
-(* 3 4)
