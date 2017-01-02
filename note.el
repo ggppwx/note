@@ -26,7 +26,7 @@
   (interactive)
   (let (cmdStr)    
     (setq cmdStr (concat note-dir "sync.sh pull &"))
-    (shell-command cmdStr)
+    (call-process-shell-command cmdStr nil 0)
     )
   )
 
