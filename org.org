@@ -462,6 +462,7 @@ trainning focus:
 
 
 *** TODO review investing strategy 
+    DEADLINE: <2017-01-08 Sun>
 
 *** TODO IB basics 
     DEADLINE: <2016-09-11 Sun>
@@ -472,6 +473,7 @@ trainning focus:
 
 
 *** TODO do research on your own investing history 
+    DEADLINE: <2017-01-08 Sun>
 - gain & lose 
 - bucket of stocks 
 
