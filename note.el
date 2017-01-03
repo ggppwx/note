@@ -11,6 +11,17 @@
 (defvar sync-timer)
 
 ;;;###autoload
+(defun sync-push-in-buffer ()
+  "call sync push function, push the changes to github in buffer"
+  (interactive)
+  (let (cmdStr)
+    (setq cmdStr (concat note-dir "sync.sh push &"))
+    (shell-command cmdStr)
+    )
+  )
+
+
+;;;###autoload
 (defun sync-push ()
   "call sync push function, push the changes to github"
   (interactive)
