@@ -8,6 +8,16 @@
   :group 'note
   )
 
+(defcustom note-sync-push-timer 6
+  "set the sync push timer (hour)"
+  :type 'number
+  :group 'note
+  )
+
+
+
+
+
 (defvar sync-timer)
 
 ;;;###autoload
@@ -46,7 +56,7 @@
 (defun sync-timer-start ()
   "start the sync timer"
   (interactive)
-  (setq sync-timer (run-at-time "5 sec" (* 60 60 6)  'sync-push ))
+  (setq sync-timer (run-at-time "5 sec" (* 60 60 note-sync-push-timer)  'sync-push ))
   )
 
 
