@@ -57,6 +57,7 @@
   "start the sync timer"
   (interactive)
   (setq sync-timer (run-at-time "5 sec" (* 60 60 note-sync-push-timer)  'sync-push ))
+  (message "start sync timer")
   )
 
 
