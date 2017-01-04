@@ -101,7 +101,8 @@ work should be done:
 - [X] push message 
 - [X] schedule task
 
-** READY customized emacs function
+** PROGRESS customized emacs function
+   - State "PROGRESS"   from "READY"      [2017-01-04 Wed 15:11]
 - [X] function to execute push/pull script 
 
 
