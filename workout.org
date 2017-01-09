@@ -32,7 +32,21 @@
   - nutrition before/after the exercise 
   - don't exceed the time
 
+* plan 
+C: cardio, running (20 minutes + )
+U: upper body (core)
+L: lower body (core)
+M: misc 
 
+
+| Week start       | Mon | Tue | Wed | Tue | Fri | Sat | Sun |
+|------------------+-----+-----+-----+-----+-----+-----+-----|
+| <2017-01-02 Mon> |     |     |     |     |     |     |     |
+| <2017-01-09 Mon> |     |     |     |     |     |     |     |
+| <2017-01-16 Mon> |     |     |     |     |     |     |     |
+| <2017-01-23 Mon> |     |     |     |     |     |     |     |
+| <2017-01-30 Mon> |     |     |     |     |     |     |     |
+|                  |     |     |     |     |     |     |     |
 
 
 * thoughts 
@@ -42,3 +56,6 @@
 情绪的好方法。 要设定一个跑步计划
 
 
+** 开始恢复训练 <2017-01-02 Mon>
+- 运动完以后一定要洗澡，不然晚上简直没法睡觉
+- 补充足够的水分，不然腰痛
