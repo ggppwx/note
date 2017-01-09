@@ -17,6 +17,7 @@
   (let (cmdStr)
     (setq cmdStr (concat note-dir "sync.sh push &"))
     (call-process-shell-command cmdStr nil 0)
+    (message "sync-push done")
     )
   )
 
@@ -27,6 +28,7 @@
   (let (cmdStr)    
     (setq cmdStr (concat note-dir "sync.sh pull &"))
     (call-process-shell-command cmdStr nil 0)
+    (message "sync-push done")
     )
   )
 
