@@ -14,6 +14,19 @@ function git-pull
 }
 
 #export GIT_SSL_NO_VERIFY=1
+function git-push-force
+{
+    echo "git push file $@"
+    cd $DIR
+    for file in  "$@"
+    do
+	git add "$file"
+    done
+    git commit -m "force push file $@"
+    git push origin master -f     
+}
+
+
 function git-autopush
 {
     timestamp=$(date +"%m-%d-%y_%H:%M")
@@ -42,6 +55,7 @@ function schedule
 	    counter=0
 	else
 	    create-summary
+	    git-push-force "agenda.html" "agenda"
 	    git-autopush
 	fi
 	sleep 5000    
@@ -65,7 +79,7 @@ elif [[ "$#" = "1" ]]; then
     fi
     if [[ $1 = "summary" ]]; then
 	create-summary
-    fi    
+    fi
     
     exit
 else
