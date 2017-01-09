@@ -2,25 +2,28 @@ Week-agenda (W02):
 Monday      9 January 2017 W02
   org:        Sched.71x:  TODO leetcode review                       :leetcode::
   org:        120 d. ago:  TODO IB basics                           :investing::
-  org:        Sched.15x:  TODO review design pattern      :reading:book::review:
-  org:        Sched. 9x:  TODO clean code review                 :reading:book::
+  org:        Sched.15x:  TODO review design pattern           :reading::review:
+  org:        Sched. 9x:  TODO clean code review                      :reading::
   scratch:    Sched. 4x:  TODO code refactoring tutorial              :worktime:
-  org:        Sched. 3x:  TODO read javascript design pattern.   :reading:book::
+  org:        Sched. 3x:  TODO read javascript design pattern.        :reading::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
   org:         1 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
-  workout:    plan
-  scratch:    TODO breakfast habit         *       *         !       
-  org:        TODO daily English reading****  *   ** **     *!        :reading::
+  org:         1 d. ago:  TODO review investing strategy            :investing::
+  org:         1 d. ago:  TODO do research on your own investing history :investing::
+  scratch:    TODO breakfast habit                   *       *   **    !       
+  org:        TODO daily English reading          ****  *   ** **     *!       :
+  work:       TODO go through team bf/bb queue     *                *  !       
 Tuesday    10 January 2017
 Wednesday  11 January 2017
-  org:        Scheduled:  TODO read javascript design pattern.   :reading:book::
+  org:        Scheduled:  TODO read javascript design pattern.        :reading::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
 Thursday   12 January 2017
 Friday     13 January 2017
+  work:       Scheduled:  TODO [#A] filling out scratch pad
   scratch:    Scheduled:  TODO code refactoring tutorial              :worktime:
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
 Saturday   14 January 2017
 Sunday     15 January 2017
-  org:        Scheduled:  TODO read javascript design pattern.   :reading:book::
+  org:        Scheduled:  TODO read javascript design pattern.        :reading::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
   org:        Deadline:   TODO leetcode easy problem review :leetcode:interview::review:
