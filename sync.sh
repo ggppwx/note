@@ -75,6 +75,7 @@ elif [[ "$#" = "1" ]]; then
     fi
     if [[ $1 = "push" ]]; then
 	create-summary
+	git-push-force "agenda.html" "agenda"
         git-autopush
     fi
     if [[ $1 = "summary" ]]; then
