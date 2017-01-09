@@ -16,13 +16,14 @@ function git-pull
 #export GIT_SSL_NO_VERIFY=1
 function git-push-force
 {
-    echo "git push file $@"
+    echo "git push file $*"
     cd $DIR
     for file in  "$@"
     do
+	
 	git add "$file"
     done
-    git commit -m "force push file $@"
+    git commit -m "force push file $*"
     git push origin master -f     
 }
 
