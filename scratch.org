@@ -11,7 +11,8 @@
 * spiritual life 
 
 * workout 
-** TODO writing a workout plan 
+** DONE writing a workout plan 
+   CLOSED: [2017-01-02 Mon 06:14]
 [[file:workout.org]]
 
 * health
@@ -401,7 +402,8 @@ this is good game to play with miaomiao.
 * INBOX 
 ** COMP eBay sell items  
    CLOSED: [2016-10-05 Wed 11:19]
-** TODO call python script in emacs?  
+** DONE call python script in emacs?  
+   CLOSED: [2017-01-02 Mon 05:28]
 ** TODO things you r interested in.  
 ** PROGRESS record time 
 - recording daily time spent on website
@@ -416,7 +418,8 @@ this is good game to play with miaomiao.
 
 
 
-** TODO message push system 
+** DONE message push system 
+   CLOSED: [2017-01-02 Mon 05:28]
 
 
 ** DONE back to work plan 

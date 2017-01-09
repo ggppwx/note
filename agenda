@@ -1,17 +1,7 @@
 Week-agenda (W01):
 Monday      2 January 2017 W01
-  gtd:        Sched.94x:  TODO workout plan
-  org:        Sched.64x:  TODO leetcode review                       :leetcode::
-  org:        113 d. ago:  TODO IB basics                           :investing::
-  org:        Sched. 8x:  TODO review design pattern      :reading:book::review:
-  scratch:    Sched. 4x:  TODO code refactoring tutorial              :worktime:
-  org:        Sched. 4x:  TODO read javascript design pattern.   :reading:book::
-  org:        Sched. 2x:  TODO clean code review                 :reading:book::
-  org:        Sched. 2x:  TODO [#B] leetcode 2 problems medium       :leetcode::
-  org:         1 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
-  scratch:    TODO breakfast habit        * *     *       *  !       
-  org:        TODO daily English reading  ***  ****  *   ** *!        :reading::
-  org:        TODO [#A] reflection, writ             *    *  !        :writing::
+  workout:    plan
+  workout:    开始恢复训练 
 Tuesday     3 January 2017
   org:        Scheduled:  TODO read javascript design pattern.   :reading:book::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
@@ -24,4 +14,15 @@ Saturday    7 January 2017
   org:        Scheduled:  TODO read javascript design pattern.   :reading:book::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
 Sunday      8 January 2017
+  gtd:        Sched.100x:  TODO workout plan
+  org:        Sched.70x:  TODO leetcode review                       :leetcode::
+  org:        119 d. ago:  TODO IB basics                           :investing::
+  org:        Sched.14x:  TODO review design pattern      :reading:book::review:
+  org:        Sched. 8x:  TODO clean code review                 :reading:book::
+  scratch:    Sched. 3x:  TODO code refactoring tutorial              :worktime:
+  org:        Sched. 2x:  TODO read javascript design pattern.   :reading:book::
+  org:        Sched. 2x:  TODO [#B] leetcode 2 problems medium       :leetcode::
   org:        Deadline:   TODO leetcode easy problem review :leetcode:interview::review:
+  scratch:    TODO breakfast habit          *       *        !       
+  org:        TODO daily English reading ****  *   ** **     !        :reading::
+  org:        TODO [#A] reflection, writ       *    *        !        :writing::
