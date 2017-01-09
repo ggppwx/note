@@ -55,6 +55,7 @@ function schedule
 	    counter=0
 	else
 	    create-summary
+	    sleep 5
 	    git-push-force "agenda.html" "agenda"
 	    git-autopush
 	fi
@@ -75,6 +76,7 @@ elif [[ "$#" = "1" ]]; then
     fi
     if [[ $1 = "push" ]]; then
 	create-summary
+	sleep 5
 	git-push-force "agenda.html" "agenda"
         git-autopush
     fi
