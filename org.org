@@ -345,15 +345,22 @@ file:programming_pearls.org
 * misc 
 ** TODO build a home theater 
 
-** TODO build the a server 
-   - [ ] do research online 
-
+** TODO build a server 
+   DEADLINE: <2017-01-14 Sat>
+- [X] do research online 
+- [X] buy all components 
+- [ ] resemble the server 
+- [ ] software environment setup
+- [ ] deploy apps 
 
 
 
    
 ** DONE ergo work space
    
+
+
+
 
 * leetcode							   :leetcode:
 file:leetcode.org
