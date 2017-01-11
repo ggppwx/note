@@ -349,7 +349,7 @@ file:programming_pearls.org
    DEADLINE: <2017-01-14 Sat>
 - [X] do research online 
 - [X] buy all components 
-- [ ] resemble the server 
+- [X] resemble the server 
 - [ ] software environment setup
 - [ ] deploy apps 
 
