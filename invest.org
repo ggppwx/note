@@ -1,0 +1,19 @@
+#+TITLE: about investment 
+
+* book notes for neatest guide to investing
+
+
+
+
+
+
+
+* investment history 
+** interactive broker 
+*** current status 
+- 11654 (-2888 unrealized loss )
+- 1148 in cash 
+- p&L per year
+  - 2016: unknown 
+  - 2015: - 30%
+

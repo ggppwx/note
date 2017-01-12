@@ -53,7 +53,7 @@
   (let (cmdStr)    
     (setq cmdStr (concat note-dir "sync.sh pull &"))
     (call-process-shell-command cmdStr nil 0)
-    (message "sync-push done")
+    (message "sync-pull done")
     )
   )
 
