@@ -305,7 +305,8 @@ file:programming_pearls.org
 
 
 ** TODO [#A] reflection, writing journal
-   SCHEDULED: <2017-01-11 Wed .+3d/5d>
+   SCHEDULED: <2017-01-15 Sun .+3d/5d>
+   - State "DONE"       from "TODO"       [2017-01-12 Thu 00:49]
    - State "DONE"       from "TODO"       [2017-01-08 Sun 22:14]
    - State "DONE"       from "TODO"       [2016-12-30 Fri 21:37]
    - State "DONE"       from "TODO"       [2016-12-25 Sun 14:44]
@@ -335,7 +336,7 @@ file:programming_pearls.org
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
-   :LAST_REPEAT: [2017-01-08 Sun 22:14]
+   :LAST_REPEAT: [2017-01-12 Thu 00:49]
    :STYLE:    habit
    :END:
 :LAST_REPEAT: [2016-10-07 Fri 17:48]
