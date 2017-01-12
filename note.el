@@ -8,7 +8,28 @@
   :group 'note
   )
 
+(defcustom note-sync-push-timer 6
+  "set the sync push timer (hour)"
+  :type 'number
+  :group 'note
+  )
+
+
+
+
+
 (defvar sync-timer)
+
+;;;###autoload
+(defun sync-push-in-buffer ()
+  "call sync push function, push the changes to github in buffer"
+  (interactive)
+  (let (cmdStr)
+    (setq cmdStr (concat note-dir "sync.sh push &"))
+    (shell-command cmdStr)
+    )
+  )
+
 
 ;;;###autoload
 (defun sync-push ()
@@ -41,7 +62,8 @@
 (defun sync-timer-start ()
   "start the sync timer"
   (interactive)
-  (setq sync-timer (run-at-time "5 sec" (* 60 60 6)  'sync-push ))
+  (setq sync-timer (run-at-time "07pm" (* 60 60 note-sync-push-timer)  'sync-push ))
+  (message "start sync timer")
   )
 
 

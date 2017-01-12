@@ -101,7 +101,8 @@ work should be done:
 - [X] push message 
 - [X] schedule task
 
-** READY customized emacs function
+** PROGRESS customized emacs function
+   - State "PROGRESS"   from "READY"      [2017-01-04 Wed 15:11]
 - [X] function to execute push/pull script 
 
 
@@ -112,7 +113,9 @@ work should be done:
 * 读书&写作
 ** reading							    :reading:
 *** TODO daily English reading
-    SCHEDULED: <2017-01-09 Mon .+1d>
+    SCHEDULED: <2017-01-12 Thu .+1d>
+    - State "DONE"       from "TODO"       [2017-01-11 Wed 17:28]
+    - State "DONE"       from "TODO"       [2017-01-09 Mon 11:54]
     - State "DONE"       from "TODO"       [2017-01-08 Sun 22:12]
     - State "DONE"       from "TODO"       [2017-01-02 Mon 05:01]
     - State "DONE"       from "TODO"       [2017-01-01 Sun 12:51]
@@ -143,7 +146,7 @@ work should be done:
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2017-01-08 Sun 22:12]
+    :LAST_REPEAT: [2017-01-11 Wed 17:28]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
@@ -343,15 +346,22 @@ file:programming_pearls.org
 * misc 
 ** TODO build a home theater 
 
-** TODO build the a server 
-   - [ ] do research online 
-
+** TODO build a server 
+   DEADLINE: <2017-01-14 Sat>
+- [X] do research online 
+- [X] buy all components 
+- [X] resemble the server 
+- [ ] software environment setup
+- [ ] deploy apps 
 
 
 
    
 ** DONE ergo work space
    
+
+
+
 
 * leetcode							   :leetcode:
 file:leetcode.org
@@ -464,6 +474,7 @@ trainning focus:
 
 
 *** TODO review investing strategy 
+    DEADLINE: <2017-01-08 Sun>
 
 *** TODO IB basics 
     DEADLINE: <2016-09-11 Sun>
@@ -474,6 +485,7 @@ trainning focus:
 
 
 *** TODO do research on your own investing history 
+    DEADLINE: <2017-01-08 Sun>
 - gain & lose 
 - bucket of stocks 
 
