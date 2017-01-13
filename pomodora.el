@@ -7,13 +7,11 @@
   )
 
 (defun org-pomo-in ()
-    (org-clock-in)
     (show-alert "start working !!" )
   )
 
 
 (defun org-pomo-out ()
-    (org-clock-out)
     (show-alert "time to break !!" )
   )
 
