@@ -354,7 +354,7 @@ file:programming_pearls.org
 - [X] do research online 
 - [X] buy all components 
 - [X] resemble the server 
-- [ ] software environment setup
+- [X] software environment setup
 - [ ] deploy apps 
 
 ** TODO a org web service running on personal server
