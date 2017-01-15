@@ -349,13 +349,13 @@ file:programming_pearls.org
 * misc 
 ** TODO build a home theater 
 
-** TODO build a server 
-   DEADLINE: <2017-01-14 Sat>
+** DONE build a server 
+   CLOSED: [2017-01-15 Sun 11:24] DEADLINE: <2017-01-14 Sat>
 - [X] do research online 
 - [X] buy all components 
 - [X] resemble the server 
 - [X] software environment setup
-- [ ] deploy apps 
+- [X] deploy apps 
 
 ** TODO a org web service running on personal server
 - [ ] always sync org with github
