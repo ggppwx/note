@@ -34,6 +34,7 @@ function git-autopush
     echo "git autopush ....."
     echo "----------- auto-commit@ $timestamp --------------"    
     cd $DIR
+    git pull origin master 
     git add -u
     git commit -m "auto-commit@ $timestamp"
     git push origin master
