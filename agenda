@@ -1,30 +1,28 @@
-Week-agenda (W02):
-Monday      9 January 2017 W02
-  org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
+Week-agenda (W03):
+Monday     16 January 2017 W03
   workout:    plan
-Tuesday    10 January 2017
-Wednesday  11 January 2017
+Tuesday    17 January 2017
+  org:        Sched.79x:  TODO leetcode review                       :leetcode::
+  org:        128 d. ago:  TODO IB basics                           :investing::
+  org:        Sched.23x:  TODO review design pattern      :reading:book::review:
+  org:        Sched.17x:  TODO clean code review                 :reading:book::
+  scratch:    Sched. 5x:  TODO code refactoring tutorial              :worktime:
+  org:        Sched. 3x:  TODO read javascript design pattern.   :reading:book::
+  org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
+  org:         9 d. ago:  TODO review investing strategy            :investing::
+  org:         9 d. ago:  TODO do research on your own investing history :investing::
+  org:         3 d. ago:  TODO emacs pomodora techniques
+  org:         2 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
+  scratch:    TODO breakfast habit         *   **    * *  ** !       
+  org:        TODO daily English reading  ** **     ** *** * !        :reading::
+  org:        TODO [#A] reflection, writ   *        *   *    !        :writing::
+Wednesday  18 January 2017
+Thursday   19 January 2017
   org:        Scheduled:  TODO read javascript design pattern.   :reading:book::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
-Thursday   12 January 2017
-Friday     13 January 2017
+Friday     20 January 2017
   scratch:    Scheduled:  TODO code refactoring tutorial              :worktime:
+Saturday   21 January 2017
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
-Saturday   14 January 2017
-  org:        Deadline:   DONE build a server
-  org:        Deadline:   TODO emacs pomodora techniques
-Sunday     15 January 2017
-  org:        Sched.77x:  TODO leetcode review                       :leetcode::
-  org:        126 d. ago:  TODO IB basics                           :investing::
-  org:        Sched.21x:  TODO review design pattern      :reading:book::review:
-  org:        Sched.15x:  TODO clean code review                 :reading:book::
-  scratch:    Sched. 3x:  TODO code refactoring tutorial              :worktime:
-  org:        Scheduled:  TODO read javascript design pattern.   :reading:book::
-  org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
-  org:         7 d. ago:  TODO review investing strategy            :investing::
-  org:         7 d. ago:  TODO do research on your own investing history :investing::
-  org:         1 d. ago:  TODO emacs pomodora techniques
+Sunday     22 January 2017
   org:        Deadline:   TODO leetcode easy problem review :leetcode:interview::review:
-  org:        TODO daily English reading*   ** **     ** *** !        :reading::
-  scratch:    TODO breakfast habit           *   **    * *  *!       
-  org:        TODO [#A] reflection, writ*    *        *   *  !        :writing::
