@@ -19,6 +19,17 @@
   :group 'pomodora
   )
 
+(defun trim-string (string)
+  "Remove white spaces in beginning and ending of STRING.
+White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
+  (replace-regexp-in-string "\\`[ \t\n]*" "" (replace-regexp-in-string "[ \t\n]*\\'" "" string))
+)
+
+(defun lock-screen ()
+  (when (eq system-type 'gnu/linux) 
+    (shell-command "gnome-screensaver-command -l")
+    )
+  )
 
 (defun org-pomo-in ()
     (show-alert "start working !!" )
@@ -26,7 +37,8 @@
 
 
 (defun org-pomo-out ()
-    (show-alert "time to break !!" )
+  (show-alert "time to break !!" )
+  (lock-screen)
   )
 
 
@@ -87,35 +99,47 @@
     (goto-char table-end-pos)
     (beginning-of-line)
     (forward-char 1)
-    (setq table-end-line (org-table-current-line))
+    (setq table-end-line (org-table-current-dline))
     )
 
   (save-excursion
     (org-table-goto-line 2)
-    ;;(forward-char 1)    
-    (while ( < (org-table-current-line) table-end-line)
-      (message "a line %d" (org-table-current-line))
-      (let (( date (org-table-get-field 1))
-	(content (org-table-get-field 2)))
+    ;;(forward-char 1)
+    (setq currentline 2)
+    (while ( <= currentline table-end-line)
+      (message "a line %d" currentline)
+      (let (( date (trim-string (org-table-get-field 1)))
+	(content  (trim-string (org-table-get-field 2))))
 	(message "%s - %s" date content)
 
 	;; if heading == content && date == datestamp
-	;; modify the status 
-
-	
+	;; modify the status
+	(save-excursion
+	  (when (and (string= date timestamp) (string= content heading))
+	    (org-table-put currentline 3 "test111....") 
+	    )
+	  )
 	)
 
       ;; go to next line
-      (org-table-goto-line (+ (org-table-current-line) 1 ))
+      (setq currentline (+ currentline 1 ))
+      (org-table-goto-line currentline)
       )
     )
 
-
+  (org-table-align)
   
   (goto-char (+ table-end-pos 1))
   
-  (insert "|"  timestamp "|" heading "|" "" "|" "\n")
-  (org-table-align)
+  ;;(insert "|"  timestamp "|" heading "|" "" "|" "\n")
+  ;; (org-table-align)
   ;;(goto-char (+ (point) 1))
   
+  )
+
+
+;;;###autoload
+(defun org-pomodora-test ()
+  (interactive)
+  (lock-screen)
   )
