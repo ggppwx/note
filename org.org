@@ -113,7 +113,8 @@ work should be done:
 * 读书&写作
 ** reading							    :reading:
 *** TODO daily English reading
-    SCHEDULED: <2017-01-20 Fri .+1d>
+    SCHEDULED: <2017-01-21 Sat .+1d>
+    - State "DONE"       from "TODO"       [2017-01-20 Fri 17:57]
     - State "DONE"       from "TODO"       [2017-01-19 Thu 13:25]
     - State "DONE"       from "TODO"       [2017-01-17 Tue 18:37]
     - State "DONE"       from "TODO"       [2017-01-15 Sun 19:47]
@@ -151,7 +152,7 @@ work should be done:
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2017-01-19 Thu 13:25]
+    :LAST_REPEAT: [2017-01-20 Fri 17:57]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
@@ -310,7 +311,8 @@ file:programming_pearls.org
 
 
 ** TODO [#A] reflection, writing journal
-   SCHEDULED: <2017-01-20 Fri .+3d/5d>
+   SCHEDULED: <2017-01-23 Mon .+3d/5d>
+   - State "DONE"       from "TODO"       [2017-01-20 Fri 17:57]
    - State "DONE"       from "TODO"       [2017-01-17 Tue 18:37]
    - State "DONE"       from "TODO"       [2017-01-12 Thu 00:49]
    - State "DONE"       from "TODO"       [2017-01-08 Sun 22:14]
@@ -342,7 +344,7 @@ file:programming_pearls.org
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
-   :LAST_REPEAT: [2017-01-17 Tue 18:37]
+   :LAST_REPEAT: [2017-01-20 Fri 17:57]
    :STYLE:    habit
    :END:
 :LAST_REPEAT: [2016-10-07 Fri 17:48]
@@ -371,7 +373,7 @@ file:programming_pearls.org
 - [ ] video 
 
 ** TODO emacs pomodora techniques 
-   DEADLINE: <2017-01-14 Sat>
+   DEADLINE: <2017-01-21 Sat>
 - [ ] time tracker 
 - [ ] time tracker that will modify the file
 - [ ] generate a report table 

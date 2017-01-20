@@ -43,34 +43,39 @@
 
 * new entry
 
-* 2017-01-16
-  
-* 2017-01-16
-* content
 
-#+NAME: pomodora
-|       date | item               | status      |
-|------------+--------------------+-------------|
-| 2017-01-16 | content            | test....    |
-| 2017-01-16 | content            | test....    |
-| 2017-01-16 | content            | test....    |
-| 2017-01-16 | content            | test....    |
-| 2017-01-16 | content            | test....    |
-| 2017-01-16 | content            | test....    |
-| 2017-01-16 | content            | test....    |
-| 2017-01-16 | TODO test item1    | test....    |
-| 2017-01-16 | TODO sample task   | test....    |
-| 2017-01-19 | TODO test item1    | test111.... |
-| 2017-01-19 | new entry          | test111.... |
-| 2017-01-19 | new entry          | test111.... |
-| 2017-01-19 | new entry          | test111.... |
-| 2017-01-19 | new entry          | test111.... |
-| 2017-01-19 | new entry          | test111.... |
-| 2017-01-19 | new entry          | test111.... |
-| 2017-01-19 | new entry          | test111.... |
-| 2017-01-19 | TODO sample task   | test111.... |
-| 2017-01-19 | TODO workflow test | test111.... |
-| 2017-01-19 | TODO test item1    | test111.... |
+* TODO spectre work
+* TODO test1
+
+#+Name: pomodora
+|       date | item               | status             |
+|------------+--------------------+--------------------|
+| 2017-01-16 | content            | test....           |
+| 2017-01-16 | content            | test....           |
+| 2017-01-16 | content            | test....           |
+| 2017-01-16 | content            | test....           |
+| 2017-01-16 | content            | test....           |
+| 2017-01-16 | content            | test....           |
+| 2017-01-16 | content            | test....           |
+| 2017-01-16 | TODO test item1    | test....           |
+| 2017-01-16 | TODO sample task   | test....           |
+| 2017-01-19 | TODO test item1    | test111....        |
+| 2017-01-19 | new entry          | test111....        |
+| 2017-01-19 | new entry          | test111....        |
+| 2017-01-19 | new entry          | test111....        |
+| 2017-01-19 | new entry          | test111....        |
+| 2017-01-19 | new entry          | test111....        |
+| 2017-01-19 | new entry          | test111....        |
+| 2017-01-19 | new entry          | test111....        |
+| 2017-01-19 | TODO sample task   | test111....        |
+| 2017-01-19 | TODO workflow test | test111....        |
+| 2017-01-19 | TODO test item1    | test111....        |
+| 2017-01-20 | TODO sample task   | test111....        |
+| 2017-01-20 | TODO test item1    | [x]                |
+| 2017-01-20 | new entry          | test111....        |
+| 2017-01-20 | TODO spectre work  | test111....        |
+| 2017-01-20 | TODO test1         | test111....[x]     |
+| 2017-01-20 | TODO workflow test | [x][x][x][x][x][x] |
 
 
 

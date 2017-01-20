@@ -102,7 +102,8 @@ drqs in queue
 
 * retrospect
 ** TODO [#A] filling out scratch pad 
-   SCHEDULED: <2017-01-20 Fri ++1w>
+   SCHEDULED: <2017-01-27 Fri ++1w>
+   - State "DONE"       from "TODO"       [2017-01-20 Fri 17:58]
    - State "DONE"       from "TODO"       [2017-01-09 Mon 18:04]
    - State "DONE"       from "TODO"       [2017-01-06 Fri 17:53]
    - State "DONE"       from "TODO"       [2016-12-20 Tue 16:21]
@@ -132,6 +133,6 @@ drqs in queue
    - State "DONE"       from "TODO"       [2016-08-11 Thu 15:33]
    - State "DONE"       from "TODO"       [2016-08-09 Tue 12:28]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-01-09 Mon 18:04]
+   :LAST_REPEAT: [2017-01-20 Fri 17:58]
    :Effort:   0:15
    :END:
