@@ -4,22 +4,24 @@ Tuesday    17 January 2017
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
 Wednesday  18 January 2017
 Thursday   19 January 2017
-  org:        Sched.81x:  TODO leetcode review                       :leetcode::
-  org:        130 d. ago:  TODO IB basics                           :investing::
-  org:        Sched.25x:  TODO review design pattern           :reading::review:
-  org:        Sched.19x:  TODO clean code review                      :reading::
-  scratch:    Sched. 7x:  TODO code refactoring tutorial              :worktime:
   org:        Scheduled:  TODO read javascript design pattern.        :reading::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
-  org:        11 d. ago:  TODO review investing strategy            :investing::
-  org:        11 d. ago:  TODO do research on your own investing history :investing::
-  org:         5 d. ago:  TODO emacs pomodora techniques
-  org:         4 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
-  work:       TODO go through team bf/bb queue            *  *         !       
 Friday     20 January 2017
-  work:       Scheduled:  TODO [#A] filling out scratch pad
+  org:        Sched.82x:  TODO leetcode review                       :leetcode::
+  org:        131 d. ago:  TODO IB basics                           :investing::
+  org:        Sched.26x:  TODO review design pattern           :reading::review:
+  org:        Sched.20x:  TODO clean code review                      :reading::
+  org:        Sched. 2x:  TODO read javascript design pattern.        :reading::
+  org:        Sched. 2x:  TODO [#B] leetcode 2 problems medium       :leetcode::
   scratch:    Scheduled:  TODO code refactoring tutorial              :worktime:
+  org:        12 d. ago:  TODO review investing strategy            :investing::
+  org:        12 d. ago:  TODO do research on your own investing history :investing::
+  org:         5 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
+  org:        In   1 d.:  TODO emacs pomodora techniques
+  work:       TODO go through team bf/bb queue           *  *          !       
+  scratch:    TODO breakfast habit                *   **    * *  **   *!       
 Saturday   21 January 2017
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
+  org:        Deadline:   TODO emacs pomodora techniques
 Sunday     22 January 2017
   org:        Deadline:   TODO leetcode easy problem review :leetcode:interview::review:
