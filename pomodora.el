@@ -4,6 +4,13 @@
 
 
 (defvar org-pomodora-current-work)
+(defvar org-pomodora-timer0)
+(defvar org-pomodora-timer1)
+(defvar org-pomodora-timer2)
+(defvar org-pomodora-timer3)
+(defvar org-pomodora-timer4)
+(defvar org-pomodora-timer5)
+(defvar org-pomodora-timer6)
 
 (when (eq system-type 'gnu/linux) 
   (setq alert-default-style 'libnotify)
@@ -22,6 +29,20 @@
   :group 'pomodora
   )
 
+
+(defcustom pomodora-work-period 25
+  "set work period"
+  :type 'integer
+  :group 'pomodora
+  )
+
+(defcustom pomodora-break-period 10
+  "set break period"
+  :type 'integer
+  :group 'pomodora
+  )
+
+
 (defun trim-string (string)
   "Remove white spaces in beginning and ending of STRING.
 White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
@@ -38,20 +59,36 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
     (show-alert "start working !!" )
   )
 
-
+;; one pomodora complete, set the status 
 (defun org-pomo-out ()
   (show-alert "time to break !!" )
   ;; add complete sign
   (let ( ( heading (nth 0 org-pomodora-current-work)) (timestamp (nth 1 org-pomodora-current-work)) )
-     (org-pomodora heading timestamp "[X]")
+    (message "org-pomo-out: %s on %s" heading timestamp)
+    (org-pomodora heading timestamp "[X]")
     )
   (lock-screen)
   )
 
+(defun org-pomo-complete ()
+  (show-alert "pomodora complete, take a long break" )
+  (let ( ( heading (nth 0 org-pomodora-current-work)) (timestamp (nth 1 org-pomodora-current-work)) )
+    (message "org-pomo-out: %s on %s" heading timestamp)
+    (org-pomodora heading timestamp "[X]")
+    )
+  (lock-screen)
+  )
 
 (defun show-alert (info)
   (alert info :title "pomodora warning" :severity 'high)
   )
+
+;;;###autoload
+(defun org-pomo-current-work ()
+  (interactive)
+  (message "%s  at: %s" (nth 0 org-pomodora-current-work)  (nth 1 org-pomodora-current-work))
+  )
+
 
 ;;;###autoload
 (defun org-start-pomodora ()
@@ -61,29 +98,50 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   (setq heading (org-get-heading))
   (setq timestamp (format-time-string "%Y-%m-%d"))
   (message "start work: %s on %s" heading timestamp)
-  (setq  org-pomodora-current-work [heading, timestamp])
-  
-  (setq ret (run-at-time "3 sec" nil  #'org-pomo-in))
+  (setq  org-pomodora-current-work `(,heading ,timestamp))
+
+  (setq current-period 0)
+  (setq  org-pomodora-timer0 (run-at-time "3 sec" nil  #'org-pomo-in))
   ;; work  25
-  (setq ret (run-at-time "25 min" nil  #'org-pomo-out))
+  (setq current-period (+ current-period pomodora-work-period ))
+  (setq  org-pomodora-timer1 (run-at-time (format "%d min"  current-period ) nil  #'org-pomo-out))
   ;; break 10
-  (setq ret (run-at-time "30 min" nil  #'org-pomo-in))
+  (setq current-period (+ current-period pomodora-break-period ))
+  (setq  org-pomodora-timer2 (run-at-time  (format "%d min"  current-period )  nil  #'org-pomo-in))
   ;; work 25
-  (setq ret (run-at-time "55 min" nil  #'org-pomo-out))
+  (setq current-period (+ current-period pomodora-work-period ))
+  (setq  org-pomodora-timer (run-at-time  (format "%d min"  current-period ) nil  #'org-pomo-out))
   ;; break 10
-  (setq ret (run-at-time "65 min" nil  #'org-pomo-in))
+  (setq current-period (+ current-period pomodora-break-period ))
+  (setq  org-pomodora-timer3 (run-at-time  (format "%d min"  current-period ) nil  #'org-pomo-in))
   ;; work 25
-  (setq ret (run-at-time "90 min" nil  #'org-pomo-out))
+  (setq current-period (+ current-period pomodora-work-period ))
+  (setq  org-pomodora-timer4 (run-at-time  (format "%d min"  current-period ) nil  #'org-pomo-out))
   ;; break 10
-  (setq ret (run-at-time "100 min" nil  #'org-pomo-in))
+  (setq current-period (+ current-period pomodora-break-period ))
+  (setq  org-pomodora-timer5 (run-at-time  (format "%d min"  current-period ) nil  #'org-pomo-in))
   ;; work 25 complete
-  (setq ret (run-at-time "125 min" nil  #'org-pomo-out))
+  (setq current-period (+ current-period pomodora-work-period ))
+  (setq  org-pomodora-timer6 (run-at-time  (format "%d min"  current-period )  nil  #'org-pomo-complete))
+  )
+
+;;;###autoload
+(defun org-stop-pomodora ()
+  " stop the pomodora time tracking  "
+  (interactive)
+  (message "stop all pomodora timer")
+  (cancel-timer org-pomodora-timer0)
+  (cancel-timer org-pomodora-timer1)
+  (cancel-timer org-pomodora-timer2)
+  (cancel-timer org-pomodora-timer3)
+  (cancel-timer org-pomodora-timer4)
+  (cancel-timer org-pomodora-timer5)
+  (cancel-timer org-pomodora-timer6)  
   )
 
 
-
+;; util function 
 (defun org-pomodora (heading timestamp marks)
-
   (when (and heading  timestamp)  
     (find-file pomodora-path)  
     ;; go to table
@@ -139,6 +197,8 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
       )
     
     (org-table-align)
+
+    (save-buffer)        
     )  
   )
 
@@ -149,5 +209,14 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   (setq heading (org-get-heading))
   (setq timestamp (format-time-string "%Y-%m-%d"))
   (message "start work: %s on %s" heading timestamp)
-  (org-pomodora heading timestamp "[x]")
+  (setq  org-pomodora-current-work `(,heading ,timestamp))
+  (message "out at: %s" (nth 1 org-pomodora-current-work))
+  )
+
+
+;;;###autoload
+(defun org-pomodora-test-out ()
+  (interactive)
+  (setq  org-pomodora-timer (run-at-time "1 sec" 10  #'message "hello world"))
+  (cancel-timer org-pomodora-timer)
   )

@@ -374,8 +374,8 @@ file:programming_pearls.org
 - [X] samba server  
 - [ ] video 
 
-** TODO emacs pomodora techniques 
-   DEADLINE: <2017-01-21 Sat>
+** DONE emacs pomodora techniques 
+   CLOSED: [2017-01-24 Tue 15:56] DEADLINE: <2017-01-21 Sat>
 - [ ] time tracker 
 - [ ] time tracker that will modify the file
 - [ ] generate a report table 

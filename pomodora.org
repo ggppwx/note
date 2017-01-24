@@ -1,6 +1,6 @@
-#+TITLE: pomodora techniques
+x#+TITLE: pomodora techniques
 #+DESCRIPTION: RT
-
+#+STARTUP: overview
 * TODO test item1 
   CLOCK: [2017-01-13 Fri 16:56]--[2017-01-13 Fri 16:57] =>  0:01
   CLOCK: [2017-01-13 Fri 16:42]--[2017-01-13 Fri 16:55] =>  0:13
@@ -39,43 +39,29 @@
 
 
 
-* new entry
 
-* new entry
+* TODO MSR comparison
+
+* TODO emacs pomodora project 
+
+* TODO eval 
 
 
-* TODO spectre work
-* TODO test1
 
+
+
+
+
+* summary table 
+  :PROPERTIES:
+  :VISIBILITY: all
+  :END:
 #+Name: pomodora
-|       date | item               | status             |
-|------------+--------------------+--------------------|
-| 2017-01-16 | content            | test....           |
-| 2017-01-16 | content            | test....           |
-| 2017-01-16 | content            | test....           |
-| 2017-01-16 | content            | test....           |
-| 2017-01-16 | content            | test....           |
-| 2017-01-16 | content            | test....           |
-| 2017-01-16 | content            | test....           |
-| 2017-01-16 | TODO test item1    | test....           |
-| 2017-01-16 | TODO sample task   | test....           |
-| 2017-01-19 | TODO test item1    | test111....        |
-| 2017-01-19 | new entry          | test111....        |
-| 2017-01-19 | new entry          | test111....        |
-| 2017-01-19 | new entry          | test111....        |
-| 2017-01-19 | new entry          | test111....        |
-| 2017-01-19 | new entry          | test111....        |
-| 2017-01-19 | new entry          | test111....        |
-| 2017-01-19 | new entry          | test111....        |
-| 2017-01-19 | TODO sample task   | test111....        |
-| 2017-01-19 | TODO workflow test | test111....        |
-| 2017-01-19 | TODO test item1    | test111....        |
-| 2017-01-20 | TODO sample task   | test111....        |
-| 2017-01-20 | TODO test item1    | [x]                |
-| 2017-01-20 | new entry          | test111....        |
-| 2017-01-20 | TODO spectre work  | test111....        |
-| 2017-01-20 | TODO test1         | test111....[x]     |
-| 2017-01-20 | TODO workflow test | [x][x][x][x][x][x] |
+|       date | item                        | status             |
+|------------+-----------------------------+--------------------|
+| 2017-01-20 | TODO workflow test          | [x][x][x][x][x][x] |
+| 2017-01-24 | TODO MSR comparison         | [X][X][X]          |
+| 2017-01-24 | TODO emacs pomodora project | [X]                |
 
 
 
