@@ -59,8 +59,7 @@ x#+TITLE: pomodora techniques
 #+Name: pomodora
 |       date | item                        | status             |
 |------------+-----------------------------+--------------------|
-| 2017-01-20 | TODO workflow test          | [x][x][x][x][x][x] |
-| 2017-01-24 | TODO MSR comparison         | [X][X][X]          |
+| 2017-01-24 | TODO MSR comparison         | [X][X][X][X][X][X] |
 | 2017-01-24 | TODO emacs pomodora project | [X]                |
 
 

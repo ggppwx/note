@@ -211,6 +211,9 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   (message "start work: %s on %s" heading timestamp)
   (setq  org-pomodora-current-work `(,heading ,timestamp))
   (message "out at: %s" (nth 1 org-pomodora-current-work))
+  (save-excursion
+    (find-file pomodora-path)
+    )
   )
 
 
