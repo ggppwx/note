@@ -76,6 +76,7 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
     (message "org-pomo-out: %s on %s" heading timestamp)
     (org-pomodora heading timestamp "[X]")
     )
+  (setq  org-pomodora-current-work '(nil , nil))
   (lock-screen)
   )
 
@@ -136,7 +137,8 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   (cancel-timer org-pomodora-timer3)
   (cancel-timer org-pomodora-timer4)
   (cancel-timer org-pomodora-timer5)
-  (cancel-timer org-pomodora-timer6)  
+  (cancel-timer org-pomodora-timer6)
+  (setq  org-pomodora-current-work '(nil , nil))
   )
 
 

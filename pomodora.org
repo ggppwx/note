@@ -61,6 +61,7 @@ x#+TITLE: pomodora techniques
 |------------+-----------------------------+--------------------|
 | 2017-01-24 | TODO MSR comparison         | [X][X][X][X][X][X] |
 | 2017-01-24 | TODO emacs pomodora project | [X]                |
+| 2017-01-25 | TODO MSR comparison         | [X][X][X][X]       |
 
 
 
