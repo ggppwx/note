@@ -13,7 +13,8 @@
     
 * KTLO
 ** TODO go through team bf/bb queue 
-   SCHEDULED: <2017-01-26 Thu .+3d/5d>
+   SCHEDULED: <2017-01-30 Mon .+3d/5d>
+   - State "DONE"       from "TODO"       [2017-01-27 Fri 21:19]
    - State "DONE"       from "TODO"       [2017-01-23 Mon 18:06]
    - State "DONE"       from "TODO"       [2017-01-09 Mon 16:11]
    - State "DONE"       from "TODO"       [2017-01-06 Fri 17:53]
@@ -51,7 +52,7 @@
    - State "DONE"       from "TODO"       [2016-08-17 Wed 18:04]
    CLOCK: [2016-08-17 Wed 17:40]--[2016-08-17 Wed 18:04] =>  0:24
    :PROPERTIES:
-   :LAST_REPEAT: [2017-01-23 Mon 18:06]
+   :LAST_REPEAT: [2017-01-27 Fri 21:19]
    :STYLE:    habit
    :END:      
 
