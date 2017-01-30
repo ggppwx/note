@@ -30,6 +30,13 @@
   )
 
 
+
+(defcustom pomodora-sound-file "./alarm.wav"
+  "sound file location"
+  :type 'string
+  :group 'pomodora
+ )
+
 (defcustom pomodora-work-period 25
   "set work period"
   :type 'integer
@@ -67,6 +74,7 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
     (message "org-pomo-out: %s on %s" heading timestamp)
     (org-pomodora heading timestamp "[X]")
     )
+  (play-sound pomodora-sound-file)
   (lock-screen)
   )
 
@@ -77,11 +85,20 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
     (org-pomodora heading timestamp "[X]")
     )
   (setq  org-pomodora-current-work '(nil , nil))
+  (play-sound pomodora-sound-file)
   (lock-screen)
   )
 
 (defun show-alert (info)
   (alert info :title "pomodora warning" :severity 'high)
+  )
+
+
+(defun play-sound (file)
+  (let (cmdStr)
+    (setq cmdStr (concat "play " file))
+    (call-process-shell-command cmdStr nil 0)
+    )  
   )
 
 ;;;###autoload
@@ -222,6 +239,6 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
 ;;;###autoload
 (defun org-pomodora-test-out ()
   (interactive)
-  (setq  org-pomodora-timer (run-at-time "1 sec" 10  #'message "hello world"))
-  (cancel-timer org-pomodora-timer)
+  (setq  org-pomodora-timer (run-at-time "1 sec" nil  #'show-alert "hello world"))
+  ;; (cancel-timer org-pomodora-timer)
   )
