@@ -74,8 +74,8 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
     (message "org-pomo-out: %s on %s" heading timestamp)
     (org-pomodora heading timestamp "[X]")
     )
-  (play-sound pomodora-sound-file)
   (lock-screen)
+  (play-sound pomodora-sound-file)
   )
 
 (defun org-pomo-complete ()
@@ -85,8 +85,8 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
     (org-pomodora heading timestamp "[X]")
     )
   (setq  org-pomodora-current-work '(nil , nil))
-  (play-sound pomodora-sound-file)
   (lock-screen)
+  (play-sound pomodora-sound-file)
   )
 
 (defun show-alert (info)
