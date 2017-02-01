@@ -1,4 +1,4 @@
-x#+TITLE: pomodora techniques
+#+TITLE: pomodora techniques
 #+DESCRIPTION: RT
 #+STARTUP: overview
 * TODO test item1 
