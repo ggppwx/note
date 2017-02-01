@@ -22,7 +22,7 @@ function git_push
 
 # git-push to sync
 if [[ $# != "1" ]] ;then
-    echo "ERROR...."
+    echo "ERROR.... no file name"
 else
     OLD_FILE_NAME=$1
     echo "processing $OLD_FILE_NAME..."

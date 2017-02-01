@@ -34,7 +34,7 @@ learn 20 maybe
 
 * tips 
 http://programmers.stackexchange.com/questions/7055/what-is-the-most-frequently-used-design-pattern
-
+https://addyosmani.com/resources/essentialjsdesignpatterns/book/
 
 
 
@@ -771,6 +771,7 @@ public class SongsOfThe80s implements SongIterator{
 }
 #+END_SRC
 
+
 * DONE proxy
 - limit access to another class 
 #+BEGIN_SRC java
@@ -804,8 +805,33 @@ public class ATMProxy implements GetAtmData {
 
 #+END_SRC
 
+** proxy in python
+python has delegation mechanism built in
+#+BEGIN_SRC python
+class implementaion:
+  def f(self):
+    pass
+
+  def g(self):
+    pass
+
+class proxy:
+  def __init__(self):
+    self._imp = Implementaion()
+
+  def __getattr__(self, name):
+    getattr(self._imp, name)
 
 
+p = proxy()
+p.f()
+# if you wanna set a p.f = sth
+# def __setattr__(self, name)
+
+#+END_SRC
+
+** proxy in javascript
+- in jquery, method: $.proxy(function() {} ,  this ), the implementation is the function inside 
 
 
 
@@ -897,3 +923,20 @@ public class RectFactory {
 
 
 
+
+* MVC design pattern 
+- model, view, controller 
+#+BEGIN_SRC javascript
+function controller (model , view) 
+{
+  this._model = model;
+  this._view = view;
+}
+
+controller.prototype = {
+  addItem : function () {
+    this._model.addItem(item);
+
+  }
+};
+#+END_SRC
