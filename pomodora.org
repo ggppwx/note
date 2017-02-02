@@ -58,14 +58,15 @@
   :VISIBILITY: all
   :END:
 #+Name: pomodora
-|       date | item                        | status             |
-|------------+-----------------------------+--------------------|
-| 2017-01-24 | TODO MSR comparison         | [X][X][X][X][X][X] |
-| 2017-01-24 | TODO emacs pomodora project | [X]                |
-| 2017-01-25 | TODO MSR comparison         | [X][X][X][X]       |
-| 2017-01-26 | TODO MSR wgted avg          | [X][X][X][X]       |
-| 2017-01-30 | TODO MSR comparison         | [X][X][X][X]       |
-| 2017-02-01 | TODO plan new work to do    | [X][X][X]          |
+|       date | item                             | status             |
+|------------+----------------------------------+--------------------|
+| 2017-01-24 | TODO MSR comparison              | [X][X][X][X][X][X] |
+| 2017-01-24 | TODO emacs pomodora project      | [X]                |
+| 2017-01-25 | TODO MSR comparison              | [X][X][X][X]       |
+| 2017-01-26 | TODO MSR wgted avg               | [X][X][X][X]       |
+| 2017-01-30 | TODO MSR comparison              | [X][X][X][X]       |
+| 2017-02-01 | TODO plan new work to do         | [X][X][X]          |
+| 2017-02-02 | TODO add documentation to precog | [X][X][X][X]       |
 
 
 
