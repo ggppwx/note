@@ -1,26 +1,29 @@
 Week-agenda (W05):
 Monday     30 January 2017 W05
+  workout:    plan
 Tuesday    31 January 2017
-  org:        Scheduled:  TODO read javascript design pattern.        :reading::
+  org:        Scheduled:  TODO read javascript design pattern.   :reading:book::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
 Wednesday   1 February 2017
-  org:        Scheduled:  TODO clean code review                      :reading::
+  org:        Scheduled:  TODO clean code review                 :reading:book::
 Thursday    2 February 2017
-  org:        Sched.95x:  TODO leetcode review                       :leetcode::
-  org:        144 d. ago:  TODO IB basics                           :investing::
-  org:        Sched. 8x:  TODO review design pattern           :reading::review:
-  scratch:    Sched. 7x:  TODO code refactoring tutorial              :worktime:
-  org:        Sched. 3x:  TODO read javascript design pattern.        :reading::
-  org:        Sched. 2x:  TODO clean code review                      :reading::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
-  org:        25 d. ago:  TODO review investing strategy            :investing::
-  org:        25 d. ago:  TODO do research on your own investing history :investing::
-  org:         4 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
 Friday      3 February 2017
-  work:       Scheduled:  TODO [#A] filling out scratch pad
+  org:        Sched.96x:  TODO leetcode review                       :leetcode::
+  org:        145 d. ago:  TODO IB basics                           :investing::
+  org:        Sched. 9x:  TODO review design pattern      :reading:book::review:
+  org:        Sched. 4x:  TODO read javascript design pattern.   :reading:book::
+  org:        Sched. 3x:  TODO clean code review                 :reading:book::
+  org:        Sched. 2x:  TODO [#B] leetcode 2 problems medium       :leetcode::
   scratch:    Scheduled:  TODO code refactoring tutorial              :worktime:
+  org:        26 d. ago:  TODO review investing strategy            :investing::
+  org:        26 d. ago:  TODO do research on your own investing history :investing::
+  org:         5 d. ago:  TODO leetcode easy problem review :leetcode:interview::review:
+  scratch:    TODO breakfast habit       **   *   *** *  * **!       
+  org:        TODO daily English reading* * * **  * * * * ***!        :reading::
 Saturday    4 February 2017
-  org:        Scheduled:  TODO read javascript design pattern.        :reading::
+  org:        Scheduled:  TODO read javascript design pattern.   :reading:book::
   org:        Scheduled:  TODO [#B] leetcode 2 problems medium       :leetcode::
 Sunday      5 February 2017
+  workout:    Scheduled:  TODO 30 min workout                          :workout:
   org:        Deadline:   TODO leetcode easy problem review :leetcode:interview::review:
