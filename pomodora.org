@@ -1,13 +1,15 @@
 #+TITLE: pomodora techniques
 #+DESCRIPTION: RT
 #+STARTUP: overview
-* TODO test item1 
+* DONE test item1 
+  CLOSED: [2017-02-02 Thu 22:56]
   CLOCK: [2017-01-13 Fri 16:56]--[2017-01-13 Fri 16:57] =>  0:01
   CLOCK: [2017-01-13 Fri 16:42]--[2017-01-13 Fri 16:55] =>  0:13
   
 
 
-* TODO workflow test
+* DONE workflow test
+  CLOSED: [2017-02-02 Thu 22:56]
 - select a TODO task. 
 - run org-start-pomodora
 - auto record each pomodora
@@ -15,7 +17,8 @@
 - utilize the table 
 
 
-* TODO sample task 
+* DONE sample task 
+  CLOSED: [2017-02-02 Thu 22:56]
   CLOCK: [2017-01-15 Sun 20:57]--[2017-01-15 Sun 20:58] =>  0:01
 
 
@@ -40,18 +43,26 @@
 
 
 
-* TODO MSR comparison
+* DONE MSR comparison
+  CLOSED: [2017-02-02 Thu 22:56]
 
-* TODO emacs pomodora project 
+* DONE emacs pomodora project 
+  CLOSED: [2017-02-02 Thu 22:56]
 
-* TODO eval 
-
-
-
-
+* DONE eval 
+  CLOSED: [2017-02-02 Thu 22:56]
 
 
-* TODO MSR wgted avg
+
+
+
+
+* DONE MSR wgted avg
+  CLOSED: [2017-02-02 Thu 22:56]
+
+
+* TODO MISC
+this is a place holder
 
 * summary table 
   :PROPERTIES:
