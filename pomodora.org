@@ -67,6 +67,7 @@
 | 2017-01-30 | TODO MSR comparison              | [X][X][X][X]       |
 | 2017-02-01 | TODO plan new work to do         | [X][X][X]          |
 | 2017-02-02 | TODO add documentation to precog | [X][X][X][X]       |
+| 2017-02-03 | TODO add breg support            | [X][X][X][X][X][X] |
 
 
 

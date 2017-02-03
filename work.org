@@ -97,7 +97,8 @@ drqs in queue
    :Effort:   10 min
    :END:
 ** TODO [#A] filling out scratch pad 
-   SCHEDULED: <2017-02-03 Fri ++1w>
+   SCHEDULED: <2017-02-10 Fri ++1w>
+   - State "DONE"       from "TODO"       [2017-02-03 Fri 18:17]
    - State "DONE"       from "TODO"       [2017-02-02 Thu 10:39]
    - State "DONE"       from "TODO"       [2017-01-20 Fri 17:58]
    - State "DONE"       from "TODO"       [2017-01-09 Mon 18:04]
@@ -129,12 +130,17 @@ drqs in queue
    - State "DONE"       from "TODO"       [2016-08-11 Thu 15:33]
    - State "DONE"       from "TODO"       [2016-08-09 Tue 12:28]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-02-02 Thu 10:39]
+   :LAST_REPEAT: [2017-02-03 Fri 18:17]
    :Effort:   0:15
    :END:
 
 
+
+* TODO MISC jobs
+
 * TODOLIST
+** TODO add breg support
+
 ** TODO add documentation to precog 
 
 ** TODO UI change 
