@@ -2,6 +2,7 @@
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 export GIT_SSL_NO_VERIFY=1
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+HOSTNAME=$(hostname)
 echo $DIR
 
 
@@ -36,7 +37,7 @@ function git-autopush
     cd $DIR
     git pull origin master 
     git add -u
-    git commit -m "auto-commit@ $timestamp"
+    git commit -m "auto-commit@ $timestamp from $HOSTNAME"
     git push origin master
 }
 
