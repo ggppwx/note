@@ -34,10 +34,10 @@ function git-autopush
     timestamp=$(date +"%m-%d-%y_%H:%M")
     echo "git autopush ....."
     echo "----------- auto-commit@ $timestamp --------------"    
-    cd $DIR
-    git pull origin master 
+    cd $DIR    
     git add -u
     git commit -m "auto-commit@ $timestamp from $HOSTNAME"
+    git pull origin master 
     git push origin master
 }
 
