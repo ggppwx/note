@@ -60,6 +60,10 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   (when (eq system-type 'gnu/linux) 
     (shell-command "gnome-screensaver-command -l")
     )
+  (when (eq system-type 'darwin) 
+    (shell-command "/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend")
+    )
+  
   )
 
 (defun org-pomo-in ()

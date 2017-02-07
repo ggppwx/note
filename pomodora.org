@@ -1,57 +1,9 @@
 #+TITLE: pomodora techniques
 #+DESCRIPTION: RT
 #+STARTUP: overview
-* TODO test item1 
-  CLOCK: [2017-01-13 Fri 16:56]--[2017-01-13 Fri 16:57] =>  0:01
-  CLOCK: [2017-01-13 Fri 16:42]--[2017-01-13 Fri 16:55] =>  0:13
-  
 
-
-* TODO workflow test
-- select a TODO task. 
-- run org-start-pomodora
-- auto record each pomodora
-- allow org-intercept-pomodora
-- utilize the table 
-
-
-* TODO sample task 
-  CLOCK: [2017-01-15 Sun 20:57]--[2017-01-15 Sun 20:58] =>  0:01
-
-
-
-#+BEGIN: clocktable :maxlevel 2 :scope subtree
-#+CAPTION: Clock summary at [2017-01-15 Sun 20:58]
-| Headline         | Time   |
-|------------------+--------|
-| *Total time*     | *0:01* |
-|------------------+--------|
-| TODO sample task | 0:01   |
-#+END:
-
-
-
-| <25> task name            | <25>  status              |
-|---------------------------+---------------------------|
-| test1                     | [X][X][.][X]              |
-| test2                     | [X]                       |
-|                           |                           |
-
-
-
-
-* TODO MSR comparison
-
-* TODO emacs pomodora project 
-
-* TODO eval 
-
-
-
-
-
-
-* TODO MSR wgted avg
+* TODO MISC
+this is a place holder
 
 * summary table 
   :PROPERTIES:
@@ -67,8 +19,11 @@
 | 2017-01-30 | TODO MSR comparison              | [X][X][X][X]       |
 | 2017-02-01 | TODO plan new work to do         | [X][X][X]          |
 | 2017-02-02 | TODO add documentation to precog | [X][X][X][X]       |
+| 2017-02-04 | TODO MISC                        | [X][X][X][X]       |
+| 2017-02-05 | TODO login system                | [X][X][X][X]       |
 | 2017-02-03 | TODO add breg support            | [X][X][X][X][X][X] |
 | 2017-02-06 | TODO UI change                   | [X][X][X][X]       |
+
 
 
 

@@ -136,7 +136,8 @@ on the road
 
 
 * emacs learning						 :move:emacs:
-** PROGRESS learn lisp language
+** COMP learn lisp language
+   CLOSED: [2017-02-03 Fri 01:08]
    - State "DONE"       from "PROGRESS"   [2016-09-12 Mon 17:57]
    - State "DONE"       from "PROGRESS"   [2016-09-08 Thu 16:06]
    :PROPERTIES:
@@ -174,7 +175,8 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 
 *** DONE capture template 
     CLOSED: [2016-05-03 Tue 11:48]
-*** PROGRESS planning & recording tasks 
+*** COMP planning & recording tasks 
+    CLOSED: [2017-02-03 Fri 01:08]
     - Note taken on [2016-10-14 Fri 18:13] \\
       know how to use table to record the task
 *** DONE learn emacs batch mode
@@ -421,7 +423,8 @@ this is good game to play with miaomiao.
 ** DONE call python script in emacs?  
    CLOSED: [2017-01-02 Mon 05:28]
 ** TODO things you r interested in.  
-** PROGRESS record time 
+** COMP record time 
+   CLOSED: [2017-02-02 Thu 23:10]
 - recording daily time spent on website
 - weekly analysis 
 - give reports 
@@ -429,7 +432,8 @@ this is good game to play with miaomiao.
 
 ** DONE discuss with miaomiao what to do next 
    CLOSED: [2016-12-16 Fri 16:28]
-** TODO create a menu list 
+** DONE create a menu list 
+   CLOSED: [2017-02-02 Thu 23:09]
 - adding menu to the web 
 
 
