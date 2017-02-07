@@ -21,6 +21,8 @@ this is a place holder
 | 2017-02-02 | TODO add documentation to precog | [X][X][X][X]       |
 | 2017-02-04 | TODO MISC                        | [X][X][X][X]       |
 | 2017-02-05 | TODO login system                | [X][X][X][X]       |
+| 2017-02-03 | TODO add breg support            | [X][X][X][X][X][X] |
+
 
 
 
