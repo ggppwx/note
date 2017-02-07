@@ -1,4 +1,6 @@
-#+TITLE: tasks at work     
+#+TITLE:tasks at work     
+#+CATEGORY: bbwork
+
 * KTLO
 ** TODO go through team bf/bb queue 
    SCHEDULED: <2017-02-04 Sat .+3d/5d>
@@ -138,6 +140,7 @@ drqs in queue
 
 * TODO MISC jobs
 
+  
 * TODOLIST
 ** TODO add breg support
 
@@ -145,13 +148,14 @@ drqs in queue
 
 ** TODO UI change 
 ** TODO MSR universe comparison 
-** TODO better debugging mechanism
+** DONE better debugging mechanism
+   CLOSED: [2017-02-06 Mon 12:44]
 - fix the broken send error message 
-
-
 
 ** TODO unit test cases 
 - check the json item
+
+** TODO deploy precog 
 
 
 
