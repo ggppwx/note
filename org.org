@@ -515,11 +515,11 @@ trainning focus:
 :LAST_REPEAT: [2016-09-19 Mon 15:24]
 
 
-*** TODO review investing strategy 
-    DEADLINE: <2017-01-08 Sun>
+*** DONE review investing strategy 
+    CLOSED: [2017-02-10 Fri 00:20] DEADLINE: <2017-01-08 Sun>
 
-*** TODO IB basics 
-    DEADLINE: <2016-09-11 Sun>
+*** DONE IB basics 
+    CLOSED: [2017-02-10 Fri 00:21] DEADLINE: <2016-09-11 Sun>
 
 
 
