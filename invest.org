@@ -2,10 +2,39 @@
 
 * book notes for neatest guide to investing
 
+** how masters tell us
+- clear defined strategy
+- strong income/ balance / high profit margin 
+- insider stock 
+- EXERCISE on stock 
+  - ask why you want to buy the stock ON PAPER
+- buy more working stocks 
+- buy when price dips
+
+** How history tells us
+- price-to-sales is all purpose value 
+- dividend yield measure against large companies 
+- relative strength is for growth 
+  - avoid last year's biggest loser 
 
 
+** permanent portfolio
+- IJR small company ETF
+- DOW Jones
+  - 10 highest yielding of 30 DOW Johnes 
+  - 2 * Dow Jones
+- S&P midcap 400 index
+- avoid the downside using SMA MACD RSI
 
 
+** the book's strategy 
+- build a core portfolio with permanent portfolio
+- worksheet to maintain other stocks ( at most 10 )
+- prune stocks 
+- gradual purchases/sells
+- AVOID emotional investment 
+  - using limit & reason worksheet 
+- use charts to avoid big bear 
 
 
 * investment history 
