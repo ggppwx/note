@@ -14,7 +14,11 @@
   :group 'note
   )
 
-
+(defcustom note-checkout-time "07pm"
+  "set the checkout time"
+  :type 'string
+  :group 'note
+  )
 
 
 
@@ -57,12 +61,22 @@
     )
   )
 
+;;;###autoload
+(defun sync-start-day ()
+  "start a day"
+  (interactive)
+  (setq sync-timer (run-at-time note-checkout-time nil  'sync-push ))
+  (message "check out at %s" note-checkout-time)
+  )
+
+
+
 
 ;;;###autoload
 (defun sync-timer-start ()
   "start the sync timer"
   (interactive)
-  (setq sync-timer (run-at-time "07pm" (* 60 60 note-sync-push-timer)  'sync-push ))
+  (setq sync-timer (run-at-time note-checkout-time (* 60 60 note-sync-push-timer)  'sync-push ))
   (message "start sync timer")
   )
 
