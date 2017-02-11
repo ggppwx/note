@@ -106,8 +106,12 @@ work should be done:
 - [X] function to execute push/pull script 
 
 
-** READY online manager enhancement 
-*** TODO login system 
+** PROGRESS online manager enhancement 
+   - State "PROGRESS"   from "READY"      [2017-02-11 Sat 14:20]
+*** DONE login system 
+    CLOSED: [2017-02-11 Sat 14:21]
+
+*** TODO visualization
 
 * online tutorial 
 ** TODO  coursea
