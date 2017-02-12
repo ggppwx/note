@@ -111,7 +111,21 @@ work should be done:
 *** DONE login system 
     CLOSED: [2017-02-11 Sat 14:21]
 
-*** TODO visualization
+*** DONE visualization
+    CLOSED: [2017-02-11 Sat 21:53]
+
+
+*** TODO generic visualization
+
+** READY emacs lisp toolkit
+*** TODO make the pomodora run in agenda mode
+
+
+** TODO workout record 
+- could make it generic record in the future 
+
+
+
 
 * online tutorial 
 ** TODO  coursea
@@ -404,9 +418,7 @@ file:programming_pearls.org
 - [ ] time tracker 
 - [ ] time tracker that will modify the file
 - [ ] generate a report table 
-- after considerations, I think I should borrow python scripts to do this
   
-   
 
 
 

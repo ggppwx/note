@@ -104,7 +104,7 @@
 
 
 (defun export-table-in-org-file (path name)
-  (with-current-buffer (find-file-noselect path)
+  (with-current-buffer (find-file-noselect path) ;;; this makes function run in backgroud
     (export-table-in-org name))
   )
 
