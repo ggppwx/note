@@ -50,7 +50,6 @@ M: misc
 |                  |     |     |     |     |     |     |     |
 
 
-
 #+NAME: exercise
 |------------+---------|
 |       date | workout |

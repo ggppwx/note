@@ -41,6 +41,7 @@
   (interactive)
   (let (cmdStr)
     (setq cmdStr (concat note-dir "sync.sh push &"))
+    (export-exercise)
     (call-process-shell-command cmdStr nil 0)
     (message "sync-push done")
     )
@@ -102,7 +103,16 @@
       (message "no"))))
 
 
+(defun export-table-in-org-file (path name)
+  (with-current-buffer (find-file-noselect path)
+    (export-table-in-org name))
+  )
 
+;;;###autoload
+(defun export-exercise ()
+  (interactive)
+  (export-table-in-org-file (concat note-dir "/" "workout.org") "exercise")  
+  )
 (provide 'note)
 
 ;;; note.el ends here 
