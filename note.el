@@ -113,6 +113,15 @@
   (interactive)
   (export-table-in-org-file (concat note-dir "/" "workout.org") "exercise")  
   )
+
+
+;;;###autoload
+(defun export-pomodora ()
+  (interactive)
+  (export-table-in-org-file (concat note-dir "/" "pomodora.org") "pomodora")  
+  )
+
+
 (provide 'note)
 
 ;;; note.el ends here 
