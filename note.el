@@ -42,6 +42,7 @@
   (let (cmdStr)
     (setq cmdStr (concat note-dir "sync.sh push &"))
     (export-exercise)
+    (export-pomodora)
     (call-process-shell-command cmdStr nil 0)
     (message "sync-push done")
     )
