@@ -165,63 +165,65 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
 
 ;; util function 
 (defun org-pomodora (heading timestamp marks)
-  (when (and heading  timestamp)  
-    (find-file pomodora-path)  
-    ;; go to table
-    (goto-char (point-min))
-    (search-forward "#+NAME: pomodora")
-    (setq table-start-pos (+ (line-end-position ) 1))
-    (goto-char table-start-pos) ;; start of the table 
-    
-    (setq table-end-pos ( - (re-search-forward "^\s*$") 1))
+  (when (and heading  timestamp)
 
-    (save-excursion
-      (goto-char table-end-pos)
-      (beginning-of-line)
-      (forward-char 1)
-      (setq table-end-line (org-table-current-dline))
-      )
-    
-    
-    (setq found nil)
-    (save-excursion
-      (org-table-goto-line 2)
-      ;;(forward-char 1)
-      (setq currentline 2)
-      (while ( <= currentline table-end-line)
-	(message "a line %d" currentline)
-	(let (( date (trim-string (org-table-get-field 1)))
-	      (content  (trim-string (org-table-get-field 2)))
-	      (status (trim-string (org-table-get-field 3)))
-	      )
-	  (message "%s - %s" date content)
-	  
-	  ;; if heading == content && date == datestamp
-	  ;; modify the status
-	  (save-excursion
-	    (when (and (string= date timestamp) (string= content heading))
-	      (org-table-put currentline 3 (concat status marks))
-	      (setq found t)
-	    )
-	    )
-	  )
-	
-	;; go to next line
-	(setq currentline (+ currentline 1 ))
-	(org-table-goto-line currentline)
+    (with-current-buffer (find-file-noselect pomodora-path)  
+      ;; go to table
+      (goto-char (point-min))
+      (search-forward "#+NAME: pomodora")
+      (setq table-start-pos (+ (line-end-position ) 1))
+      (goto-char table-start-pos) ;; start of the table 
+      
+      (setq table-end-pos ( - (re-search-forward "^\s*$") 1))
+
+      (save-excursion
+	(goto-char table-end-pos)
+	(beginning-of-line)
+	(forward-char 1)
+	(setq table-end-line (org-table-current-dline))
 	)
-      )
-        
-    ;; if nothing found, create a new entry
-    ( when (eq found nil)
-      (goto-char table-start-pos)  
-      (re-search-forward "^\s*$") 
-      (insert "|"  timestamp "|" heading "|" marks "|" "\n")
-      )
+      
     
-    (org-table-align)
+      (setq found nil)
+      (save-excursion
+	(org-table-goto-line 2)
+	;;(forward-char 1)
+	(setq currentline 2)
+	(while ( <= currentline table-end-line)
+	  (message "a line %d" currentline)
+	  (let (( date (trim-string (org-table-get-field 1)))
+		(content  (trim-string (org-table-get-field 2)))
+		(status (trim-string (org-table-get-field 3)))
+		)
+	    (message "%s - %s" date content)
+	    
+	    ;; if heading == content && date == datestamp
+	    ;; modify the status
+	    (save-excursion
+	      (when (and (string= date timestamp) (string= content heading))
+		(org-table-put currentline 3 (concat status marks))
+		(setq found t)
+		)
+	      )
+	    )
+	  
+	  ;; go to next line
+	  (setq currentline (+ currentline 1 ))
+	  (org-table-goto-line currentline)
+	  )
+	)
+      
+      ;; if nothing found, create a new entry
+      ( when (eq found nil)
+	(goto-char table-start-pos)  
+	(re-search-forward "^\s*$") 
+	(insert "|"  timestamp "|" heading "|" marks "|" "\n")
+	)
+      
+      (org-table-align)    
+      (save-buffer)
 
-    (save-buffer)        
+      )    
     )  
   )
 

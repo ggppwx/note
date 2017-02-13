@@ -144,12 +144,14 @@ drqs in queue
 
   
 * TODOLIST
-** TODO add breg support
+** DONE add breg support
+   CLOSED: [2017-02-13 Mon 14:54]
 
 ** TODO add documentation to precog 
 
 ** TODO UI change 
-** TODO MSR universe comparison 
+** DONE MSR universe comparison 
+   CLOSED: [2017-02-13 Mon 14:54]
 ** DONE better debugging mechanism
    CLOSED: [2017-02-06 Mon 12:44]
 - fix the broken send error message 
@@ -157,8 +159,9 @@ drqs in queue
 ** TODO unit test cases 
 - check the json item
 
-** TODO deploy precog 
+** DONE deploy precog 
+   CLOSED: [2017-02-13 Mon 14:54]
 
-
+** TODO Uncl migration 
 
 
