@@ -114,8 +114,9 @@ work should be done:
 *** DONE visualization
     CLOSED: [2017-02-11 Sat 21:53]
 
+*** PROGRESS generic visualization
 
-*** TODO generic visualization
+**** TODO org agenda/task table display 
 
 ** READY emacs lisp toolkit
 *** TODO make the pomodora run in agenda mode
@@ -547,10 +548,14 @@ trainning focus:
     
 
 
-*** TODO do research on your own investing history 
-    DEADLINE: <2017-01-08 Sun>
+*** DONE do research on your own investing history 
+    CLOSED: [2017-02-14 Tue 00:25] DEADLINE: <2017-01-08 Sun>
 - gain & lose 
 - bucket of stocks 
 
-
+*** TODO history analysis, keep note 
+    SCHEDULED: <2017-02-18 Sat +1w>
+    :PROPERTIES:
+    :STYLE:    habit
+    :END:
 
