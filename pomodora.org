@@ -10,21 +10,22 @@ this is a place holder
   :VISIBILITY: all
   :END:
 #+NAME: pomodora
-|       date | item                             | status             |
-|------------+----------------------------------+--------------------|
-| 2017-01-24 | TODO MSR comparison              | [X][X][X][X][X][X] |
-| 2017-01-24 | TODO emacs pomodora project      | [X]                |
-| 2017-01-25 | TODO MSR comparison              | [X][X][X][X]       |
-| 2017-01-26 | TODO MSR wgted avg               | [X][X][X][X]       |
-| 2017-01-30 | TODO MSR comparison              | [X][X][X][X]       |
-| 2017-02-01 | TODO plan new work to do         | [X][X][X]          |
-| 2017-02-02 | TODO add documentation to precog | [X][X][X][X]       |
-| 2017-02-04 | TODO MISC                        | [X][X][X][X]       |
-| 2017-02-05 | TODO login system                | [X][X][X][X]       |
-| 2017-02-03 | TODO add breg support            | [X][X][X][X][X][X] |
-| 2017-02-06 | TODO UI change                   | [X][X][X][X]       |
-| 2017-02-11 | TODO visualization               | [X][X][X][X]       |
-| 2017-02-13 | TODO MISC jobs                   | [X][X]             |
+|       date | item                                           | status             |
+|------------+------------------------------------------------+--------------------|
+| 2017-01-24 | TODO MSR comparison                            | [X][X][X][X][X][X] |
+| 2017-01-24 | TODO emacs pomodora project                    | [X]                |
+| 2017-01-25 | TODO MSR comparison                            | [X][X][X][X]       |
+| 2017-01-26 | TODO MSR wgted avg                             | [X][X][X][X]       |
+| 2017-01-30 | TODO MSR comparison                            | [X][X][X][X]       |
+| 2017-02-01 | TODO plan new work to do                       | [X][X][X]          |
+| 2017-02-02 | TODO add documentation to precog               | [X][X][X][X]       |
+| 2017-02-04 | TODO MISC                                      | [X][X][X][X]       |
+| 2017-02-05 | TODO login system                              | [X][X][X][X]       |
+| 2017-02-03 | TODO add breg support                          | [X][X][X][X][X][X] |
+| 2017-02-06 | TODO UI change                                 | [X][X][X][X]       |
+| 2017-02-11 | TODO visualization                             | [X][X][X][X]       |
+| 2017-02-13 | TODO MISC jobs                                 | [X][X]             |
+| 2017-02-13 | TODO do research on your own investing history | [X][X][X]          |
 
 
 
