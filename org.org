@@ -335,6 +335,9 @@ file:programming_pearls.org
 
 
 
+
+*** READY read careercup 150					  :interview:
+
 * writing 							    :writing:
 ** DONE writing my first blog					    
 
