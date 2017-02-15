@@ -555,8 +555,10 @@ trainning focus:
 - bucket of stocks 
 
 *** TODO history analysis, keep note 
-    SCHEDULED: <2017-02-18 Sat +1w>
+    SCHEDULED: <2017-02-25 Sat +1w>
+    - State "DONE"       from "TODO"       [2017-02-15 Wed 00:24]
     :PROPERTIES:
     :STYLE:    habit
+    :LAST_REPEAT: [2017-02-15 Wed 00:24]
     :END:
 
