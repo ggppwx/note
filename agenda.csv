@@ -1,23 +1,29 @@
-workout,30 min workout,scheduled,TODO,workout,2017-2-14,,Scheduled:,,1099,2017-2-14
 org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-2-14,,Scheduled:,B,1099,2017-2-14
-org,leetcode review,past-scheduled,TODO,leetcode,2016-10-31,,Sched.108x:,,1206,2017-2-15
-org,review design pattern,past-scheduled,TODO,reading:book:review,2017-1-26,,Sched.21x:,,1119,2017-2-15
-org,clean code review,past-scheduled,TODO,reading:book,2017-2-1,,Sched.15x:,,1113,2017-2-15
-scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-2-10,,Sched. 6x:,,1104,2017-2-15
-org,read javascript design pattern.,past-scheduled,TODO,reading:book,2017-2-12,,Sched. 4x:,,1102,2017-2-15
-workout,30 min workout,past-scheduled,TODO,workout,2017-2-14,,Sched. 2x:,,1100,2017-2-15
-org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-2-14,,Sched. 2x:,B,1100,2017-2-15
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-2-12,,3 d. ago:,,1003,2017-2-15
-scratch,breakfast habit,scheduled,TODO,,2017-2-15,,,,1210,2017-2-15
-org,read javascript design pattern.,scheduled,TODO,reading:book,2017-2-16,,Scheduled:,,1099,2017-2-16
+org,leetcode review,past-scheduled,TODO,leetcode,2016-10-31,,Sched.109x:,,1207,2017-2-16
+org,review design pattern,past-scheduled,TODO,reading:review,2017-1-26,,Sched.22x:,,1120,2017-2-16
+org,clean code review,past-scheduled,TODO,reading,2017-2-1,,Sched.16x:,,1114,2017-2-16
+scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-2-10,,Sched. 7x:,,1105,2017-2-16
+org,read javascript design pattern.,scheduled,TODO,reading,2017-2-16,,Scheduled:,,1099,2017-2-16
 org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-2-16,,Scheduled:,B,1099,2017-2-16
-workout,30 min workout,scheduled,TODO,workout,2017-2-17,,Scheduled:,,1099,2017-2-17
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-2-12,,4 d. ago:,,1004,2017-2-16
+bbwork,go through team bf/bb queue,scheduled,TODO,,2017-2-16,,,,1560,2017-2-16
+scratch,breakfast habit,scheduled,TODO,,2017-2-16,,,,1320,2017-2-16
+org,daily English reading,scheduled,TODO,reading,2017-2-16,,,,1100,2017-2-16
+org,reflection; writing journal,scheduled,TODO,writing,2017-2-16,,,A,990,2017-2-16
+bbwork,filling out scratch pad,scheduled,TODO,,2017-2-17,,Scheduled:,A,2099,2017-2-17
 scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-2-17,,Scheduled:,,1099,2017-2-17
 org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-2-18,,Scheduled:,B,1099,2017-2-18
 org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-2-19,,Deadline:,,1000,2017-2-19
+bbwork,filling out scratch pad,todo,TODO,,,,,A,2001,
 scratch,baby schedule,todo,TODO,,,,,A,2001,
 org,reflection; writing journal,todo,TODO,writing,,,,A,2001,
-workout,30 min workout,todo,TODO,workout,,,,,1001,
+bbwork,go through team bf/bb queue,todo,TODO,,,,,,1001,
+bbwork,plan new work to do,todo,TODO,,,,,,1001,
+bbwork,MISC jobs,todo,TODO,,,,,,1001,
+bbwork,add documentation to precog,todo,TODO,,,,,,1001,
+bbwork,UI change,todo,TODO,,,,,,1001,
+bbwork,unit test cases,todo,TODO,,,,,,1001,
+bbwork,Uncl migration,todo,TODO,,,,,,1001,
 scratch,8 cups of water per day,todo,TODO,,,,,,1001,
 scratch,breakfast habit,todo,TODO,,,,,,1001,
 scratch,interview preparation,todo,TODO,,,,,,1001,
@@ -46,10 +52,10 @@ org,make the pomodora run in agenda mode,todo,TODO,project,,,,,1001,
 org,workout record,todo,TODO,project,,,,,1001,
 org,coursea,todo,TODO,,,,,,1001,
 org,daily English reading,todo,TODO,reading,,,,,1001,
-org,review design pattern,todo,TODO,reading:book:review,,,,,1001,
-org,read javascript design pattern.,todo,TODO,reading:book,,,,,1001,
-org,programming pearls read 1 chapter,todo,TODO,reading:book,,,,,1001,
-org,clean code review,todo,TODO,reading:book,,,,,1001,
+org,review design pattern,todo,TODO,reading:review,,,,,1001,
+org,read javascript design pattern.,todo,TODO,reading,,,,,1001,
+org,programming pearls read 1 chapter,todo,TODO,reading,,,,,1001,
+org,clean code review,todo,TODO,reading,,,,,1001,
 org,read code complete,todo,TODO,reading:book,,,,,1001,
 org,read object oriented thought process,todo,TODO,reading:book,,,,,1001,
 org,read careercup 150,todo,READY,reading:interview,,,,,1001,
@@ -61,6 +67,3 @@ org,leetcode 2 problems medium,todo,TODO,leetcode,,,,B,1001,
 org,leetcode hard problems,todo,TODO,leetcode,,,,,1001,
 org,leetcode review,todo,TODO,leetcode,,,,,1001,
 org,history analysis; keep note,todo,TODO,investing,,,,,1001,
-gtd,cleaning,todo,TODO,,,,,,1001,
-gtd,online shopping for miao miao,todo,TODO,,,,,,1001,
-gtd,writing blog,todo,TODO,,,,,,1001,
