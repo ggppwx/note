@@ -93,7 +93,6 @@
 ;;;###autoload
 (defun export-table-in-org (name)
   "Search for table named `NAME` and export."
-  (interactive "s")
   (goto-char (point-min))
   (let ((case-fold-search t))
     (if (search-forward-regexp (concat "#\\+NAME: +" name) nil t)
