@@ -73,7 +73,6 @@ M: misc
    - State "DONE"       from "TODO"       [2017-02-02 Thu 22:46]
    :PROPERTIES:
    :LAST_REPEAT: [2017-02-02 Thu 22:46]
-   :STYLE:    habit
    :END:
 
 * thoughts 
