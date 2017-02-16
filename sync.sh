@@ -43,7 +43,7 @@ function git-autopush
 
 function create-summary
 {
-    bash $DIR/emacsBatch.sh > $DIR/agenda
+    bash $DIR/emacsBatch.sh > $DIR/agenda.csv
 }
 
 
