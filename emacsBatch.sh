@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-AGENDA=$(emacs -batch -l ~/.emacs -eval '(org-batch-agenda-csv "a")')
+AGENDA=$(emacs -batch -l ~/.emacs -eval '(org-batch-agenda-csv "n")')
 echo "$AGENDA" 
 
 # emacs -eval '(org-batch-store-agenda-views)' -kill
