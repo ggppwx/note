@@ -119,7 +119,8 @@ work should be done:
 **** TODO org agenda/task table display 
 
 ** READY emacs lisp toolkit
-*** TODO make the pomodora run in agenda mode
+*** DONE make the pomodora run in agenda mode
+    CLOSED: [2017-02-17 Fri 18:38]
 
 
 ** TODO workout record 
