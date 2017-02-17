@@ -248,3 +248,8 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   (setq  org-pomodora-timer (run-at-time "1 sec" nil  #'show-alert "hello world"))
   ;; (cancel-timer org-pomodora-timer)
   )
+
+
+(provide 'pomodora)
+
+;;; pomodora.el ends here 
