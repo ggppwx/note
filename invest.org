@@ -113,6 +113,7 @@ FXI china large cap
 ** Core portfolio
 IJR
 MVV
+UPRO
 
 
 ** other companies 
