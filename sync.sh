@@ -37,7 +37,7 @@ function git-autopush
     cd $DIR    
     git add -u
     git commit -m "auto-commit@ $timestamp from $HOSTNAME"
-    git pull origin master 
+    git rebase origin/master 
     git push origin master
 }
 

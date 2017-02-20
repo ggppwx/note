@@ -1,17 +1,16 @@
 workout,30 min workout,scheduled,TODO,workout,2017-2-14,,Scheduled:,,1099,2017-2-14
 org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-2-14,,Scheduled:,B,1099,2017-2-14
-org,read javascript design pattern.,scheduled,TODO,reading:book,2017-2-16,,Scheduled:,,1099,2017-2-16
+org,read javascript design pattern.,scheduled,TODO,reading,2017-2-16,,Scheduled:,,1099,2017-2-16
 org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-2-16,,Scheduled:,B,1099,2017-2-16
+bbwork,filling out scratch pad,scheduled,TODO,,2017-2-17,,Scheduled:,A,2099,2017-2-17
 org,leetcode review,past-scheduled,TODO,leetcode,2016-10-31,,Sched.110x:,,1208,2017-2-17
-org,review design pattern,past-scheduled,TODO,reading:book:review,2017-1-26,,Sched.23x:,,1121,2017-2-17
-org,clean code review,past-scheduled,TODO,reading:book,2017-2-1,,Sched.17x:,,1115,2017-2-17
-org,read javascript design pattern.,past-scheduled,TODO,reading:book,2017-2-16,,Sched. 2x:,,1100,2017-2-17
+org,review design pattern,past-scheduled,TODO,reading:review,2017-1-26,,Sched.23x:,,1121,2017-2-17
+org,clean code review,past-scheduled,TODO,reading,2017-2-1,,Sched.17x:,,1115,2017-2-17
+org,read javascript design pattern.,past-scheduled,TODO,reading,2017-2-16,,Sched. 2x:,,1100,2017-2-17
 org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-2-16,,Sched. 2x:,B,1100,2017-2-17
-workout,30 min workout,scheduled,TODO,workout,2017-2-17,,Scheduled:,,1099,2017-2-17
 scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-2-17,,Scheduled:,,1099,2017-2-17
 org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-2-12,,5 d. ago:,,1005,2017-2-17
-scratch,breakfast habit,scheduled,TODO,,2017-2-17,,,,1430,2017-2-17
-org,daily English reading,scheduled,TODO,reading,2017-2-17,,,,1100,2017-2-17
+bbwork,go through team bf/bb queue,past-scheduled,TODO,,2017-2-16,,,,1670,2017-2-17
 org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-2-18,,Scheduled:,B,1099,2017-2-18
 org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-2-19,,Deadline:,,1000,2017-2-19
 scratch,baby schedule,todo,TODO,,,,,A,2001,
@@ -41,7 +40,6 @@ org,online manager enhancement,todo,PROGRESS,project,,,,,1001,
 org,generic visualization,todo,PROGRESS,project,,,,,1001,
 org,org agenda/task table display,todo,TODO,project,,,,,1001,
 org,emacs lisp toolkit,todo,READY,project,,,,,1001,
-org,make the pomodora run in agenda mode,todo,TODO,project,,,,,1001,
 org,workout record,todo,TODO,project,,,,,1001,
 org,coursea,todo,TODO,,,,,,1001,
 org,daily English reading,todo,TODO,reading,,,,,1001,

@@ -111,11 +111,18 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   (message "%s  at: %s" (nth 0 org-pomodora-current-work)  (nth 1 org-pomodora-current-work))
   )
 
-
 ;;;###autoload
 (defun org-start-pomodora ()
   " start the pomodora time tracking  "
   (interactive)
+  (if (nth 0 org-pomodora-current-work)
+      (message "TASK: %s in progress..." (nth 0 org-pomodora-current-work))
+    (org-start-pomodora-imp))
+  )
+
+
+(defun org-start-pomodora-imp ()
+  " start the pomodora time tracking  "
   ;; record the task name 2
   (setq heading (org-get-heading))
   (setq timestamp (format-time-string "%Y-%m-%d"))
@@ -147,6 +154,25 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   (setq  org-pomodora-timer6 (run-at-time  (format "%d min"  current-period )  nil  #'org-pomo-complete))
   )
 
+
+
+;;;###autoload
+(defun org-agenda-start-pomodora ()
+  (interactive)
+  (let* ( (marker (or (org-get-at-bol 'org-marker)
+		     (org-agenda-error)))
+	 (buffer (marker-buffer marker))
+	 (pos (marker-position marker)))
+
+    (with-current-buffer buffer
+      (goto-char pos)
+      (message "%s" (org-get-heading))
+      (org-start-pomodora)
+      )    
+    )
+  )
+
+
 ;;;###autoload
 (defun org-stop-pomodora ()
   " stop the pomodora time tracking  "
@@ -159,7 +185,7 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   (cancel-timer org-pomodora-timer4)
   (cancel-timer org-pomodora-timer5)
   (cancel-timer org-pomodora-timer6)
-  (setq  org-pomodora-current-work '(nil , nil))
+  (setq  org-pomodora-current-work '(nil nil))
   )
 
 
@@ -245,6 +271,23 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
 ;;;###autoload
 (defun org-pomodora-test-out ()
   (interactive)
-  (setq  org-pomodora-timer (run-at-time "1 sec" nil  #'show-alert "hello world"))
+  (let* ( (marker (or (org-get-at-bol 'org-marker)
+		     (org-agenda-error)))
+	 (buffer (marker-buffer marker))
+	 (pos (marker-position marker)))
+
+    (with-current-buffer buffer
+      (goto-char pos)
+      (message "%s" (org-get-heading))
+      (org-start-pomodora)
+      )    
+    )
+  
+  ;; (setq  org-pomodora-timer (run-at-time "1 sec" nil  #'show-alert "hello world"))
   ;; (cancel-timer org-pomodora-timer)
   )
+
+
+(provide 'pomodora)
+
+;;; pomodora.el ends here 

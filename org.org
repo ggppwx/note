@@ -119,7 +119,8 @@ work should be done:
 **** TODO org agenda/task table display 
 
 ** READY emacs lisp toolkit
-*** TODO make the pomodora run in agenda mode
+*** DONE make the pomodora run in agenda mode
+    CLOSED: [2017-02-17 Fri 18:38]
 
 
 ** TODO workout record 
@@ -135,8 +136,8 @@ work should be done:
 * 读书&写作
 ** reading							    :reading:
 *** TODO daily English reading
-    SCHEDULED: <2017-02-17 Fri .+1d>
-    - State "DONE"       from "TODO"       [2017-02-16 Thu 21:23]
+    SCHEDULED: <2017-02-18 Sat .+1d>
+    - State "DONE"       from "TODO"       [2017-02-17 Fri 12:14]
     - State "DONE"       from "TODO"       [2017-02-15 Wed 19:24]
     - State "DONE"       from "TODO"       [2017-02-14 Tue 21:39]
     - State "DONE"       from "TODO"       [2017-02-13 Mon 14:46]
@@ -193,7 +194,7 @@ work should be done:
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2017-02-16 Thu 21:23]
+    :LAST_REPEAT: [2017-02-17 Fri 12:14]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
@@ -357,7 +358,7 @@ file:programming_pearls.org
 
 ** TODO [#A] reflection, writing journal
    SCHEDULED: <2017-02-20 Mon .+3d/5d>
-   - State "DONE"       from "TODO"       [2017-02-17 Fri 00:20]
+   - State "DONE"       from "TODO"       [2017-02-17 Fri 11:18]
    - State "DONE"       from "TODO"       [2017-02-13 Mon 10:35]
    - State "DONE"       from "TODO"       [2017-02-09 Thu 21:51]
    - State "DONE"       from "TODO"       [2017-02-06 Mon 20:55]
@@ -396,7 +397,7 @@ file:programming_pearls.org
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
-   :LAST_REPEAT: [2017-02-17 Fri 00:20]
+   :LAST_REPEAT: [2017-02-17 Fri 11:18]
    :STYLE:    habit
    :END:
 :LAST_REPEAT: [2016-10-07 Fri 17:48]
