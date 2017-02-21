@@ -115,6 +115,11 @@ work should be done:
     CLOSED: [2017-02-11 Sat 21:53]
 
 *** PROGRESS generic visualization
+    DEADLINE: <2017-02-26 Sun>
+- [ ] adding support to leetcode
+- [ ] refactoring code, the code generic 
+- [ ] research ways to adding visualization
+
 
 **** TODO org agenda/task table display 
 - [ ] new table on todos

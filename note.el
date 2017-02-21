@@ -53,7 +53,7 @@
 
 
 ;;;###autoload
-(defun sync-pull ()
+(defun sync-overwrite-pull ()
   "call sync pull function, use theirs"
   (interactive)
   (let (cmdStr)    
