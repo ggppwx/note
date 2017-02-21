@@ -339,8 +339,14 @@ file:programming_pearls.org
 
     
 
-*** READY read careercup 150					  :interview:
-    SCHEDULED: <2017-02-20 Mon +1w>
+*** PROGRESS read careercup 150					  :interview:
+    SCHEDULED: <2017-02-27 Mon +1w>
+    - State "PROGRESS"   from "READY"      [2017-02-21 Tue 00:17]
+    - State "COMP"       from "PROGRESS"   [2017-02-21 Tue 00:16]
+    - State "PROGRESS"   from "READY"      [2017-02-21 Tue 00:11]
+    :PROPERTIES:
+    :LAST_REPEAT: [2017-02-21 Tue 00:16]
+    :END:
 
 
 * writing 							    :writing:
