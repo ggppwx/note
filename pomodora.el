@@ -3,14 +3,14 @@
 (setq debug-on-error t)
 
 
-(defvar org-pomodora-current-work)
-(defvar org-pomodora-timer0)
-(defvar org-pomodora-timer1)
-(defvar org-pomodora-timer2)
-(defvar org-pomodora-timer3)
-(defvar org-pomodora-timer4)
-(defvar org-pomodora-timer5)
-(defvar org-pomodora-timer6)
+(defvar org-pomodora-current-work nil)
+(defvar org-pomodora-timer0 nil)
+(defvar org-pomodora-timer1 nil)
+(defvar org-pomodora-timer2 nil)
+(defvar org-pomodora-timer3 nil)
+(defvar org-pomodora-timer4 nil)
+(defvar org-pomodora-timer5 nil)
+(defvar org-pomodora-timer6 nil)
 
 (when (eq system-type 'gnu/linux) 
   (setq alert-default-style 'libnotify)
@@ -106,7 +106,7 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   )
 
 ;;;###autoload
-(defun org-pomo-current-work ()
+(defun org-current-pomo-work ()
   (interactive)
   (message "%s  at: %s" (nth 0 org-pomodora-current-work)  (nth 1 org-pomodora-current-work))
   )
@@ -115,9 +115,9 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
 (defun org-start-pomodora ()
   " start the pomodora time tracking  "
   (interactive)
-  (if (nth 0 org-pomodora-current-work)
+  (if (and org-pomodora-current-work (nth 0 org-pomodora-current-work))
       (message "TASK: %s in progress..." (nth 0 org-pomodora-current-work))
-    (org-start-pomodora-imp))
+    (org-start-pomodora-imp))  
   )
 
 
@@ -257,6 +257,12 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
 ;;;###autoload
 (defun org-pomodora-test ()
   (interactive)
+
+  (if org-pomodora-current-work
+      (message "yes")
+    (message "no")
+    )
+  
   (setq heading (org-get-heading))
   (setq timestamp (format-time-string "%Y-%m-%d"))
   (message "start work: %s on %s" heading timestamp)
