@@ -1,15 +1,17 @@
-org,leetcode review,past-scheduled,TODO,leetcode,2016-10-31,,Sched.113x:,,1211,2017-2-20
-org,review design pattern,past-scheduled,TODO,reading:book:review,2017-1-26,,Sched.26x:,,1124,2017-2-20
-org,clean code review,past-scheduled,TODO,reading:book,2017-2-1,,Sched.20x:,,1118,2017-2-20
-scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-2-17,,Sched. 4x:,,1102,2017-2-20
 workout,30 min workout,scheduled,TODO,workout,2017-2-20,,Scheduled:,,1099,2017-2-20
 org,read javascript design pattern.,scheduled,TODO,reading:book,2017-2-20,,Scheduled:,,1099,2017-2-20
-org,read careercup 150,scheduled,READY,reading:interview,2017-2-20,,Scheduled:,,1099,2017-2-20
 org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-2-20,,Scheduled:,B,1099,2017-2-20
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-2-19,,1 d. ago:,,1001,2017-2-20
-scratch,breakfast habit,scheduled,TODO,,2017-2-20,,,,1320,2017-2-20
-org,daily English reading,scheduled,TODO,reading,2017-2-20,,,,1320,2017-2-20
+org,leetcode review,past-scheduled,TODO,leetcode,2016-10-31,,Sched.114x:,,1212,2017-2-21
+org,review design pattern,past-scheduled,TODO,reading:book:review,2017-1-26,,Sched.27x:,,1125,2017-2-21
+org,clean code review,past-scheduled,TODO,reading:book,2017-2-1,,Sched.21x:,,1119,2017-2-21
+scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-2-17,,Sched. 5x:,,1103,2017-2-21
+workout,30 min workout,past-scheduled,TODO,workout,2017-2-20,,Sched. 2x:,,1100,2017-2-21
+org,read javascript design pattern.,past-scheduled,TODO,reading:book,2017-2-20,,Sched. 2x:,,1100,2017-2-21
+org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-2-20,,Sched. 2x:,B,1100,2017-2-21
 scratch,create music list,scheduled,TODO,,2017-2-21,,Scheduled:,,1099,2017-2-21
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-2-19,,2 d. ago:,,1002,2017-2-21
+scratch,breakfast habit,scheduled,TODO,,2017-2-21,,,,1430,2017-2-21
+org,daily English reading,scheduled,TODO,reading,2017-2-21,,,,1430,2017-2-21
 org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-2-22,,Scheduled:,B,1099,2017-2-22
 workout,30 min workout,scheduled,TODO,workout,2017-2-23,,Scheduled:,,1099,2017-2-23
 scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-2-24,,Scheduled:,,1099,2017-2-24
@@ -58,7 +60,7 @@ org,programming pearls read 1 chapter,todo,TODO,reading:book,,,,,1001,
 org,clean code review,todo,TODO,reading:book,,,,,1001,
 org,read code complete,todo,TODO,reading:book,,,,,1001,
 org,read object oriented thought process,todo,TODO,reading:book,,,,,1001,
-org,read careercup 150,todo,READY,reading:interview,,,,,1001,
+org,read careercup 150,todo,PROGRESS,reading:interview,,,,,1001,
 org,build a home theater,todo,TODO,,,,,,1001,
 org,a org web service running on personal server,todo,TODO,,,,,,1001,
 org,file/media server,todo,TODO,,,,,,1001,
