@@ -424,36 +424,9 @@ this is good game to play with miaomiao.
 - new colony.
 
 * INBOX 
-** COMP eBay sell items  
-   CLOSED: [2016-10-05 Wed 11:19]
-** DONE call python script in emacs?  
-   CLOSED: [2017-01-02 Mon 05:28]
+
 ** TODO things you r interested in.  
-** COMP record time 
-   CLOSED: [2017-02-02 Thu 23:10]
-- recording daily time spent on website
-- weekly analysis 
-- give reports 
-- migrate this item to habit 
-
-** DONE discuss with miaomiao what to do next 
-   CLOSED: [2016-12-16 Fri 16:28]
-** DONE create a menu list 
-   CLOSED: [2017-02-02 Thu 23:09]
-- adding menu to the web 
-
-
-
-** DONE message push system 
-   CLOSED: [2017-01-02 Mon 05:28]
-
-
-** DONE back to work plan 
-   CLOSED: [2016-12-22 Thu 12:08]
-
-** DONE jiff 
-   CLOSED: [2016-10-31 Mon 13:09] DEADLINE: <2016-10-28 Fri>
-
-** DONE [#A] writing eval 
-   CLOSED: [2016-11-01 Tue 10:36] SCHEDULED: <2016-10-28 Fri>
 ** TODO [#A] baby schedule 
+** TODO create music list 
+   SCHEDULED: <2017-02-21 Tue>
+** TODO review past todos 
