@@ -125,7 +125,7 @@ work should be done:
 - [ ] new table on todos
 - [ ] adding highlight
 
-** READY emacs lisp toolkit
+** READY emacs lisp toolkit					      :emacs:
 *** DONE make the pomodora run in agenda mode
     CLOSED: [2017-02-17 Fri 18:38]
 
@@ -419,6 +419,9 @@ file:programming_pearls.org
 - reading past journals
 - writing journals 
 
+
+** TODO writing blog 
+   SCHEDULED: <2017-02-25 Sat +1w>
 
 * misc 
 ** TODO build a home theater 
