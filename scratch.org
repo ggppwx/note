@@ -426,7 +426,9 @@ this is good game to play with miaomiao.
 * INBOX 
 
 ** TODO things you r interested in.  
-** TODO [#A] baby schedule 
-** TODO create music list 
-   SCHEDULED: <2017-02-21 Tue>
+** DONE [#A] baby schedule 
+   CLOSED: [2017-02-21 Tue 21:33]
+** DONE create music list 
+   CLOSED: [2017-02-21 Tue 21:32] SCHEDULED: <2017-02-21 Tue>
 ** TODO review past todos 
+** TODO clean-up org 
