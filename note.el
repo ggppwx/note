@@ -99,7 +99,7 @@
 	(progn 
 	  (message "yes")      
 	  (forward-line)
-	  (org-table-export (format "%s.csv" name) "orgtbl-to-csv"))
+	  (org-table-export (format "csv/%s.csv" name) "orgtbl-to-csv"))
       (message "no"))))
 
 
