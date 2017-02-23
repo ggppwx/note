@@ -80,7 +80,7 @@ elif [[ "$#" = "1" ]]; then
     if [[ $1 = "push" ]]; then
 	create-summary
 	sleep 5
-	git-push-force "agenda.csv" "exercise.csv" "pomodora.csv"
+	git-push-force "agenda.csv" "exercise.csv" "pomodora.csv" "csv/*"
         git-autopush
     fi
     if [[ $1 = "summary" ]]; then
