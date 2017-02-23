@@ -43,7 +43,7 @@ function git-autopush
 
 function create-summary
 {
-    bash $DIR/emacsBatch.sh > $DIR/agenda.csv
+    bash $DIR/emacsBatch.sh > $DIR/csv/agenda.csv
 }
 
 
@@ -80,7 +80,7 @@ elif [[ "$#" = "1" ]]; then
     if [[ $1 = "push" ]]; then
 	create-summary
 	sleep 5
-	git-push-force "agenda.csv" "exercise.csv" "pomodora.csv" "csv/*"
+	git-push-force  "csv/*"
         git-autopush
     fi
     if [[ $1 = "summary" ]]; then
