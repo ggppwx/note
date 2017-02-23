@@ -433,3 +433,4 @@ this is good game to play with miaomiao.
    CLOSED: [2017-02-21 Tue 21:32] SCHEDULED: <2017-02-21 Tue>
 ** TODO review past todos 
 ** TODO clean-up org 
+** TODO always forget starting pomodora

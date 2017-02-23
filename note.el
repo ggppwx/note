@@ -122,6 +122,38 @@
   )
 
 
+
+
+;; go through all todos in id list
+;; save them to a csv file
+;; id, heading, date
+
+
+
+
+;;;###autoload
+(defun my-org-get-date ()
+  (interactive)
+  (with-current-buffer (find-file-noselect (concat note-dir "/" "org.org"))
+    (org-find-entry-with-id "jsdp")
+    (my-org-entry-get-subtree "jsdp")
+    )
+  )
+
+(defun my-org-entry-get-subtree (id)
+  (interactive)
+  (save-excursion
+    (save-restriction
+      (org-narrow-to-subtree)
+      (goto-char (point-max))
+      (save-match-data
+        (cl-loop while (re-search-backward (format "State.*\\(%s\\)" (org-re-timestamp 'inactive)) nil t)
+                 ;;collect (org-entry-get (point) property)
+		 do (message "%s , %s" id (match-string 1))
+		 )))))
+
+
+
 (provide 'note)
 
 ;;; note.el ends here 

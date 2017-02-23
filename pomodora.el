@@ -11,6 +11,7 @@
 (defvar org-pomodora-timer4 nil)
 (defvar org-pomodora-timer5 nil)
 (defvar org-pomodora-timer6 nil)
+(defvar org-pomodora-timer7 nil)
 
 (when (eq system-type 'gnu/linux) 
   (setq alert-default-style 'libnotify)
@@ -139,19 +140,19 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   (setq  org-pomodora-timer2 (run-at-time  (format "%d min"  current-period )  nil  #'org-pomo-in))
   ;; work 25
   (setq current-period (+ current-period pomodora-work-period ))
-  (setq  org-pomodora-timer (run-at-time  (format "%d min"  current-period ) nil  #'org-pomo-out))
+  (setq  org-pomodora-timer3 (run-at-time  (format "%d min"  current-period ) nil  #'org-pomo-out))
   ;; break 10
   (setq current-period (+ current-period pomodora-break-period ))
-  (setq  org-pomodora-timer3 (run-at-time  (format "%d min"  current-period ) nil  #'org-pomo-in))
+  (setq  org-pomodora-timer4 (run-at-time  (format "%d min"  current-period ) nil  #'org-pomo-in))
   ;; work 25
   (setq current-period (+ current-period pomodora-work-period ))
-  (setq  org-pomodora-timer4 (run-at-time  (format "%d min"  current-period ) nil  #'org-pomo-out))
+  (setq  org-pomodora-timer5 (run-at-time  (format "%d min"  current-period ) nil  #'org-pomo-out))
   ;; break 10
   (setq current-period (+ current-period pomodora-break-period ))
-  (setq  org-pomodora-timer5 (run-at-time  (format "%d min"  current-period ) nil  #'org-pomo-in))
+  (setq  org-pomodora-timer6 (run-at-time  (format "%d min"  current-period ) nil  #'org-pomo-in))
   ;; work 25 complete
   (setq current-period (+ current-period pomodora-work-period ))
-  (setq  org-pomodora-timer6 (run-at-time  (format "%d min"  current-period )  nil  #'org-pomo-complete))
+  (setq  org-pomodora-timer7 (run-at-time  (format "%d min"  current-period )  nil  #'org-pomo-complete))
   )
 
 

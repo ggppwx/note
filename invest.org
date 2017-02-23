@@ -109,9 +109,18 @@ FXI china large cap
 - apple 
 - amazon 
 - facebook 
+- real estate index 
 
 
 *** thoughts 
+- from the performance in scottrade account, most companies i bought are tech. most of them 
+  have at least 100% after 5 years, which matches the increase of SPX
+- generally speaking, IT companies beat the market, some companies has better performance than
+  real estate market in China 
+- most companies are at all-time high record, for example MSFT exceeds the value of bubble time
+- for good companies, the lose in the market crash is tiny compared to the huge wins 
+- the interest rate is still low comparing to 2000/2008. I think market will strive until interest 
+  rate reaches another high level 
 
 
 * My strategy 
