@@ -21,6 +21,13 @@
   )
 
 
+(defcustom note-export-state-ids '('jsdp 'lc1)
+  "set add state ids"
+  :type (list 'string)
+  :group 'note
+  )
+
+
 
 (defvar sync-timer)
 
@@ -123,25 +130,46 @@
 
 
 
+(defun write-non-empty-list-to-a-file (file-name lst)
+  "writes a non empty list to a file if the list is empty creates the file with a return"
+  (with-current-buffer (find-file-noselect file-name)
+	    (setq buf (current-buffer))
+	    (erase-buffer)
+	    (fundamental-mode)
+	    (dolist ( line lst) (insert line "\n"))	    
+	    (save-buffer))
+  (kill-buffer buf)
+  )
+
+
+(defun flatten (list-of-lists)
+  (apply #'append list-of-lists))
+
 
 ;; go through all todos in id list
 ;; save them to a csv file
 ;; id, heading, date
-
-
-
-
 ;;;###autoload
-(defun my-org-get-date ()
+(defun export-state-date ()
+  (interactive)
+
+  (setq all (flatten (loop for id in note-export-state-ids
+		  collect (my-org-get-date id)
+		  )))
+  (message "%s" all)
+  (write-non-empty-list-to-a-file "csv/state.csv" all)
+  )
+
+
+(defun my-org-get-date (id)
   (interactive)
   (with-current-buffer (find-file-noselect (concat note-dir "/" "org.org"))
-    (org-find-entry-with-id "jsdp")
-    (my-org-entry-get-subtree "jsdp")
+    (org-find-entry-with-id id)
+    (my-org-entry-get-subtree id)
     )
   )
 
 (defun my-org-entry-get-subtree (id)
-  (interactive)
   (save-excursion
     (save-restriction
       (org-narrow-to-subtree)
@@ -149,7 +177,7 @@
       (save-match-data
         (cl-loop while (re-search-backward (format "State.*\\(%s\\)" (org-re-timestamp 'inactive)) nil t)
                  ;;collect (org-entry-get (point) property)
-		 do (message "%s , %s" id (match-string 1))
+		 collect (format  "%s,%s" id (match-string 1))
 		 )))))
 
 
