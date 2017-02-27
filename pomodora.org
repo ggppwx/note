@@ -43,6 +43,8 @@ this is a place holder
 | 2017-02-27 | TODO Uncl migration                                                       | [X][X]                   |
 | 2017-02-27 | TODO go through team bf/bb queue                                          | [X]                      |
 | 2017-02-27 | TODO [#A] filling out scratch pad                                         | [X][X][X]                |
+| 2017-02-27 | TODO more details in pomodora                                             | [X]                      |
+| 2017-02-27 | TODO always forget starting pomodora                                      | [X][X]                   |
 
 
 

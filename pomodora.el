@@ -124,10 +124,12 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
 (defun org-pomodora-current ()
   (interactive)
   (if (nth 0 org-pomodora-current-work)
-      (let ( ( heading (nth 0 org-pomodora-current-work)) (timestamp (nth 1 org-pomodora-current-work))
-	     (secs (float-time (time-subtract (current-time) org-pomodora-start-time)) ))
+
+      (let ( ( heading (nth 0 org-pomodora-current-work)) (timestamp (nth 1 org-pomodora-current-work)))
 	(if org-pomodora-start-time
-	    (message "%s on: %s on: %d min" heading timestamp (/ secs 60))
+	    ( let ( (secs (float-time (time-subtract (current-time) org-pomodora-start-time)) ))
+	      (message "%s on: %s on: %d min" heading timestamp (/ secs 60))
+	      )	    
 	  (message "%s on: %s in break" heading timestamp)
 	  )      	
 	)
