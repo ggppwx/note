@@ -12,6 +12,7 @@
 (defvar org-pomodora-timer5 nil)
 (defvar org-pomodora-timer6 nil)
 (defvar org-pomodora-timer7 nil)
+(defvar org-pomodora-start-time nil)
 
 (when (eq system-type 'gnu/linux) 
   (setq alert-default-style 'libnotify)
@@ -68,12 +69,20 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   )
 
 (defun org-pomo-in ()
-    (show-alert "start working !!" )
+  (show-alert "start working !!" )
+  (when (not org-pomodora-start-time)
+    (setq org-pomodora-start-time (current-time))
+    )  
   )
 
 ;; one pomodora complete, set the status 
 (defun org-pomo-out ()
   (show-alert "time to break !!" )
+
+  (when org-pomodora-start-time
+    (setq org-pomodora-start-time nil)
+    )  
+
   ;; add complete sign
   (let ( ( heading (nth 0 org-pomodora-current-work)) (timestamp (nth 1 org-pomodora-current-work)) )
     (message "org-pomo-out: %s on %s" heading timestamp)
@@ -85,6 +94,11 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
 
 (defun org-pomo-complete ()
   (show-alert "pomodora complete, take a long break" )
+
+  (when org-pomodora-start-time
+    (setq org-pomodora-start-time nil)
+    )  
+
   (let ( ( heading (nth 0 org-pomodora-current-work)) (timestamp (nth 1 org-pomodora-current-work)) )
     (message "org-pomo-out: %s on %s" heading timestamp)
     (org-pomodora heading timestamp "[X]")
@@ -107,9 +121,18 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   )
 
 ;;;###autoload
-(defun org-current-pomo-work ()
+(defun org-pomodora-current ()
   (interactive)
-  (message "%s  at: %s" (nth 0 org-pomodora-current-work)  (nth 1 org-pomodora-current-work))
+  (if (nth 0 org-pomodora-current-work)
+      (let ( ( heading (nth 0 org-pomodora-current-work)) (timestamp (nth 1 org-pomodora-current-work))
+	     (secs (float-time (time-subtract (current-time) org-pomodora-start-time)) ))
+	(if org-pomodora-start-time
+	    (message "%s on: %s on: %d min" heading timestamp (/ secs 60))
+	  (message "%s on: %s in break" heading timestamp)
+	  )      	
+	)
+      (message "no work in progress")
+    )
   )
 
 ;;;###autoload
@@ -179,6 +202,8 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   " stop the pomodora time tracking  "
   (interactive)
   (message "stop all pomodora timer")
+  (setq org-pomodora-start-time nil)
+  
   (cancel-timer org-pomodora-timer0)
   (cancel-timer org-pomodora-timer1)
   (cancel-timer org-pomodora-timer2)
@@ -294,6 +319,17 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   ;; (cancel-timer org-pomodora-timer)
   )
 
+;;;###autoload
+(defun org-pomodora-test-time ()
+  (interactive)
+  (if org-pomodora-start-time
+      (message "%d" (float-time (time-subtract (current-time) org-pomodora-start-time)))
+      (setq org-pomodora-start-time (current-time))
+      )
+
+
+  
+  )
 
 (provide 'pomodora)
 
