@@ -110,6 +110,14 @@ description: leetcode problem solving.
 
 
 *** heap 
+**** 451 Sort Characters By Frequency
+  - just simply use map, one time pass good.
+  - considering use heap ?
+
+**** 313 Super Ugly Number 					       :flag:
+- the later one result is based on previous ones 
+
+**** TODO ugly number 2
 
 ** algorithm
 *** [#A] dynamic programming 

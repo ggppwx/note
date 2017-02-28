@@ -45,6 +45,7 @@ this is a place holder
 | 2017-02-27 | TODO [#A] filling out scratch pad                                         | [X][X][X]                |
 | 2017-02-27 | TODO more details in pomodora                                             | [X]                      |
 | 2017-02-27 | TODO always forget starting pomodora                                      | [X][X]                   |
+| 2017-02-27 | TODO [#B] leetcode 2 problems medium                                      | [X][X][X][X]             |
 
 
 

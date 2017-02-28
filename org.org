@@ -475,7 +475,7 @@ file:leetcode.org
 | binary search    | X           |         |         |     2 |
 | tree             | X           |         |         |     2 |
 | stack            | X           |         |         |     2 |
-| heap             |             |         |         |     0 |
+| heap             | X           |         |         |     0 |
 | bit              |             |         |         |     0 |
 | graph            |             |         |         |     0 |
 |------------------+-------------+---------+---------+-------|
@@ -518,7 +518,8 @@ trainning focus:
 - 132 in total. 
 - appro 80 days. 
 *** TODO [#B] leetcode 2 problems medium
-    SCHEDULED: <2016-11-04 Fri +2d>
+    SCHEDULED: <2016-11-06 Sun +2d>
+    - State "DONE"       from "TODO"       [2017-02-28 Tue 00:19]
     - State "DONE"       from "TODO"       [2016-12-22 Thu 11:34]
     - State "DONE"       from "TODO"       [2016-10-28 Fri 18:46]
     - State "DONE"       from "TODO"       [2016-10-27 Thu 18:46]
@@ -537,7 +538,7 @@ trainning focus:
     - State "DONE"       from "TODO"       [2016-07-22 Fri 11:17]
     - State "DONE"       from "TODO"       [2016-06-14 Tue 19:01]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-12-22 Thu 11:34]
+    :LAST_REPEAT: [2017-02-28 Tue 00:19]
     :STYLE:    habit
     :CUSTOM_ID: lc1
     :END:      
