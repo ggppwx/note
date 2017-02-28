@@ -283,9 +283,21 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
 
 
 ;;;###autoload
-(defun org-pomodora-test ()
+(defun org-agenda-custom-command-n ()
   (interactive)
+  (org-agenda nil "n")
+  )
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; TEST CASES ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;###autoload
+(defun org-pomodora-test1 ()
+  (interactive)
+  (org-agenda nil "n")
+  )
+
+
+(defun org-pomodora-test ()
   (if org-pomodora-current-work
       (message "yes")
     (message "no")
@@ -302,9 +314,7 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   )
 
 
-;;;###autoload
 (defun org-pomodora-test-out ()
-  (interactive)
   (let* ( (marker (or (org-get-at-bol 'org-marker)
 		     (org-agenda-error)))
 	 (buffer (marker-buffer marker))
@@ -321,9 +331,7 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   ;; (cancel-timer org-pomodora-timer)
   )
 
-;;;###autoload
 (defun org-pomodora-test-time ()
-  (interactive)
   (if org-pomodora-start-time
       (message "%d" (float-time (time-subtract (current-time) org-pomodora-start-time)))
       (setq org-pomodora-start-time (current-time))

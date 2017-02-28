@@ -23,7 +23,8 @@ remember the lesson you learn
 ** DONE rest well, recover from cold 
 
 ** TODO breakfast habit 
-   SCHEDULED: <2017-02-28 Tue .+1d>
+   SCHEDULED: <2017-03-01 Wed .+1d>
+   - State "DONE"       from "TODO"       [2017-02-28 Tue 13:06]
    - State "DONE"       from "TODO"       [2017-02-27 Mon 15:51]
    - State "DONE"       from "TODO"       [2017-02-23 Thu 19:08]
    - State "DONE"       from "TODO"       [2017-02-22 Wed 10:07]
@@ -82,7 +83,7 @@ remember the lesson you learn
    - State "DONE"       from "PROGRESS"   [2016-09-28 Wed 22:57]
    :PROPERTIES:
    :STYLE:    habit
-   :LAST_REPEAT: [2017-02-27 Mon 15:51]
+   :LAST_REPEAT: [2017-02-28 Tue 13:06]
    :END:
 - starch, protein 
 - eat before going to work 
@@ -129,85 +130,10 @@ on the road
 - should write cleaner code. 
 - utilize what you learn in daily programming 
 
-
-
-
-
-** DONE [#A] set the goal for WORK every day. 
-- drqs
-- projects 
-- next things to do
-- work until 5:00 - 5:30 pm
-
-** DONE spent 1 ~ 2 hours non work related projects.			:gtd:
-- i.e. reading, self studying 
-
+** TODO scratch as a INBOX
 
 
 * emacs learning						 :move:emacs:
-** COMP learn lisp language
-   CLOSED: [2017-02-03 Fri 01:08]
-   - State "DONE"       from "PROGRESS"   [2016-09-12 Mon 17:57]
-   - State "DONE"       from "PROGRESS"   [2016-09-08 Thu 16:06]
-   :PROPERTIES:
-   :LAST_REPEAT: [2016-09-12 Mon 17:57]
-   :END:
-https://www.gnu.org/software/emacs/manual/html_mono/eintr.html
-[[http://ergoemacs.org/emacs/elisp_basics.html]]
-*** DONE emacs sync online ? 
-    CLOSED: [2016-05-02 Mon 22:03]
-auto sync 
-
-** org mode 
-*** DONE get familar with org mode [6/6]
-    - Note taken on [2016-05-02 Mon 15:50] \\
-      including regular org mode operations
-    CLOCK: [2016-05-02 Mon 15:38]--[2016-05-02 Mon 16:43] =>  1:05
-    CLOCK: [2016-05-02 Mon 15:35]--[2016-05-02 Mon 15:36] =>  0:01
-http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
-- [X] adding timestamps to closed todo 
-- [X] adding links 
-- [X] adding bookmarks 
-- [X] todo management  
-- [X] agenda view
-- [X] org mode log a task 
-
-*** DONE org mode links 
-    CLOSED: [2016-04-25 Mon 23:30]
-    
-*** DONE table mode for emacs 
-    CLOSED: [2016-04-28 Thu 18:04]
-*** DONE create diary
-    CLOSED: [2016-05-03 Tue 11:48]
-- [X] create a journal
-- [ ] create a diary template
-
-*** DONE capture template 
-    CLOSED: [2016-05-03 Tue 11:48]
-*** COMP planning & recording tasks 
-    CLOSED: [2017-02-03 Fri 01:08]
-    - Note taken on [2016-10-14 Fri 18:13] \\
-      know how to use table to record the task
-*** DONE learn emacs batch mode
-    CLOSED: [2016-10-07 Fri 16:00]
-*** COMP better looking org.
-    CLOSED: [2016-10-05 Wed 15:02]
-- [X] more striking headlines : another theme 
-
-
-** DONE emacs code templating 
-   CLOSED: [2016-05-21 Sat 23:18]
-- choose a plugin
-- adding simple templates
-
-** magit tutorial 
-*** DONE getting started 
-    CLOSED: [2016-04-25 Mon 19:18]
-
-*** DONE setting git on virtual machine 
-    CLOSED: [2016-04-26 Tue 13:58]
-
-
 ** emacs lint 
 *** DONE flycheck setting 
 
@@ -226,9 +152,6 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 *** DONE install emacs shortcut 
 *** TODO install emacs window management 
     
-** emacs helm mode 
-*** DONE regular helm mode 
-    CLOSED: [2016-04-28 Thu 17:31]
 
 
 ** emacs mode cheetsheet
@@ -241,7 +164,11 @@ http://www.fuzihao.org/blog/2015/02/19/org-mode%E6%95%99%E7%A8%8B/
 
 
 
-** DONE emacs code re-factoring 
+
+
+
+
+
 
 * self-improvement 
 ** TODO code refactoring tutorial				   :worktime:

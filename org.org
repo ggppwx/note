@@ -115,8 +115,8 @@ work should be done:
     CLOSED: [2017-02-11 Sat 21:53]
 
 *** PROGRESS generic visualization
-    DEADLINE: <2017-02-26 Sun>
-- [ ] adding support to leetcode
+    DEADLINE: <2017-03-05 Sun>
+- [X] adding support to leetcode
 - [ ] refactoring code, the code generic 
 - [ ] research ways to adding visualization
 
@@ -138,6 +138,8 @@ work should be done:
 - could make it generic record in the future 
 
 
+** TODO emacs GTD						      :emacs:
+
 
 
 * online tutorial 
@@ -147,7 +149,8 @@ work should be done:
 * 读书&写作
 ** reading							    :reading:
 *** TODO daily English reading
-    SCHEDULED: <2017-02-28 Tue .+1d>
+    SCHEDULED: <2017-03-01 Wed .+1d>
+    - State "DONE"       from "TODO"       [2017-02-28 Tue 13:06]
     - State "DONE"       from "TODO"       [2017-02-27 Mon 12:02]
     - State "DONE"       from "TODO"       [2017-02-25 Sat 13:01]
     - State "DONE"       from "TODO"       [2017-02-24 Fri 10:23]
@@ -211,7 +214,7 @@ work should be done:
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2017-02-27 Mon 12:02]
+    :LAST_REPEAT: [2017-02-28 Tue 13:06]
     :END:
 - advanced English 
 - novel, newspaper, etc. 

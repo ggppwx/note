@@ -125,9 +125,11 @@ FXI china large cap
 
 * My strategy 
 ** Core portfolio
-IJR
-MVV
-UPRO
+- IJR
+- MVV
+- UPRO
+- TNA
+
 
 
 ** other companies 
@@ -135,6 +137,12 @@ UPRO
 
 
 ** Goal
+
+
+* watch list 
+defense company:
+- LMT
+- BA
 
 *** buy condition
 
