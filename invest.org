@@ -142,7 +142,7 @@ FXI china large cap
 * watch list 
 defense company:
 - LMT
-- BA
+- * BA
 
 *** buy condition
 

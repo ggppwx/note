@@ -174,3 +174,28 @@ function shapeFacade(shp) {
 }
 
 #+END_SRC
+
+
+
+* most common design patterns
+** modules
+- is a javascript class
+#+BEGIN_SRC javascript
+var instance  = (function() {  
+  return {
+    dosomething : function() {}
+  }
+})();
+#+END_SRC
+
+** prototype
+- it relies on prototypical inheritance 
+- used for creating objects performance-intensive situations 
+
+
+
+
+** observer 
+
+
+** singleton
