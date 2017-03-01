@@ -215,6 +215,7 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   (cancel-timer org-pomodora-timer4)
   (cancel-timer org-pomodora-timer5)
   (cancel-timer org-pomodora-timer6)
+  (cancel-timer org-pomodora-timer7)
   (setq  org-pomodora-current-work '(nil nil))
   )
 

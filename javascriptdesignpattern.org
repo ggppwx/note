@@ -191,8 +191,22 @@ var instance  = (function() {
 ** prototype
 - it relies on prototypical inheritance 
 - used for creating objects performance-intensive situations 
+- cloned objects are shallow clones of original one
+#+BEGIN_SRC javascript
+var model = function() {
+  // constructor
+  this.member = 1;
+}
 
+// revealed module 
+model.prototype = function () {
+  var dodo = function () {};
+  return {
+   dosomething : dodo
+  };
+}();
 
+#+END_SRC
 
 
 ** observer 
