@@ -260,19 +260,21 @@ file:designpattern.org
      :END:
 
 **** TODO review design pattern					     :review:
-     SCHEDULED: <2016-10-26 Wed +1m>
+     SCHEDULED: <2017-03-01 Wed +1m>
+     - State "DONE"       from "TODO"       [2017-03-01 Wed 17:24]
      - State "DONE"       from "TODO"       [2017-02-01 Wed 17:25]
      - State "DONE"       from "TODO"       [2016-10-18 Tue 17:16]
      - State "DONE"       from "TODO"       [2016-07-28 Thu 18:46]
      - State "DONE"       from "TODO"       [2016-07-06 Wed 19:07]
      :PROPERTIES:
-     :LAST_REPEAT: [2017-02-01 Wed 17:25]
+     :LAST_REPEAT: [2017-03-01 Wed 17:24]
      :END:
 
 
 *** javascript design pattern.					       :book:
 **** TODO read javascript design pattern. 
-     SCHEDULED: <2016-09-09 Fri +4d>
+     SCHEDULED: <2016-09-13 Tue +4d>
+     - State "DONE"       from "TODO"       [2017-03-01 Wed 17:26]
      - State "DONE"       from "TODO"       [2016-10-10 Mon 17:22]
      CLOCK: [2016-10-10 Mon 17:02]--[2016-10-10 Mon 17:22] =>  0:20
      - State "DONE"       from "TODO"       [2016-08-18 Thu 00:00]
@@ -283,7 +285,7 @@ file:designpattern.org
      - State "DONE"       from "TODO"       [2016-07-27 Wed 10:49]
      - State "DONE"       from "TODO"       [2016-07-24 Sun 23:03]
      :PROPERTIES:
-     :LAST_REPEAT: [2016-10-10 Mon 17:22]
+     :LAST_REPEAT: [2017-03-01 Wed 17:26]
      :CUSTOM_ID: jsdp
      :END:
 
