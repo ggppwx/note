@@ -86,10 +86,10 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   ;; add complete sign
   (let ( ( heading (nth 0 org-pomodora-current-work)) (timestamp (nth 1 org-pomodora-current-work)) )
     (message "org-pomo-out: %s on %s" heading timestamp)
-    (org-pomodora heading timestamp "[X]")
-    )
-  (lock-screen)
-  (play-sound pomodora-sound-file)
+    (when heading
+      (org-pomodora heading timestamp "[X]")  
+      (lock-screen)
+      (play-sound pomodora-sound-file)))
   )
 
 (defun org-pomo-complete ()
@@ -101,11 +101,13 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
 
   (let ( ( heading (nth 0 org-pomodora-current-work)) (timestamp (nth 1 org-pomodora-current-work)) )
     (message "org-pomo-out: %s on %s" heading timestamp)
-    (org-pomodora heading timestamp "[X]")
+      (when heading
+	(org-pomodora heading timestamp "[X]")
+	(lock-screen)
+	(play-sound pomodora-sound-file)	
+	)
     )
   (setq  org-pomodora-current-work '(nil , nil))
-  (lock-screen)
-  (play-sound pomodora-sound-file)
   )
 
 (defun show-alert (info)

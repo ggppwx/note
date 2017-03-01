@@ -106,7 +106,7 @@ description: leetcode problem solving.
     find where it's defined 
   
 *** graph
-
+**** TODO 399. Evaluate Division
 
 
 *** heap 
@@ -114,11 +114,14 @@ description: leetcode problem solving.
   - just simply use map, one time pass good.
   - considering use heap ?
 
-**** 313 Super Ugly Number 					       :flag:
+**** 313 Super Ugly Number					    :dp:flag:
 - the later one result is based on previous ones 
 
-**** TODO ugly number 2
-
+**** DONE ugly number 2
+     CLOSED: [2017-02-28 Tue 22:01]
+- easy version of previous problem 
+- it's a 3 pointer problem 
+- what if there are only 2 prime number ? 2 pointer problem 
 ** algorithm
 *** [#A] dynamic programming 
 
