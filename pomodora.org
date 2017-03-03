@@ -53,5 +53,12 @@ this is a place holder
 | 2017-03-01 | TODO Uncl migration                                                       | [X][X][X][X]             |
 | 2017-03-01 | TODO review design pattern                                       :review: | [X]                      |
 | 2017-03-01 | PROGRESS smart button count                                               | [X]                      |
+| 2017-03-02 | TODO Generic work                                                         | [X][X][X][X]             |
+| 2017-03-02 | TODO [#A] Generic work                                                    | [X][X][X][X]             |
+| 2017-03-03 | TODO [#A] Generic work                                                    | [X][X][X][X]             |
+| 2017-03-03 | TODO review design pattern                                       :review: | [X]                      |
+| 2017-03-03 | TODO review design pattern                                       :review: | [X]                      |
+| 2017-03-03 | TODO review design pattern                                       :review: | [X]                      |
+| 2017-03-03 | TODO review design pattern                                       :review: | [X]                      |
 
 

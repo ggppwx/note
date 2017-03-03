@@ -209,7 +209,74 @@ model.prototype = function () {
 #+END_SRC
 
 
-** observer 
+** observer
+- in angular js, $scope object updates, event will be triggered, broadcasts to others 
+- MVC is another example, decoupling the view from the model 
+
+
+#+BEGIN_SRC javascript
+// controller
+// - publish/subscribe 
+$scope.$on('nameChanged', function(event, args){
+// subscriber 
+})
+
+
+$scope.userNameChanged = function(name){
+// publisher
+  $scope.$emit('nameChanged', {name: name}); 
+  // or
+  $scope.$broadcast('nameChanged', {name: name}); 
+};
+
+
+
+
+var Subject = function() {
+  return {
+    subscribeObserver : function(ob) {}
+    notifyAllObservers : function() {}
+  }
+}
+
+
+var Observer = function() {
+  return {
+    notify : function() {}
+  }
+}
+
+var s = new Subject()
+s.subscribeObserver(new Observer);
+
+#+END_SRC
+
+
+
+
+
 
 
 ** singleton
+- share the same resource 
+- in angular js, we have service/factories/providers as singleton
+- be aware of race condition 
+
+#+BEGIN_SRC javascript
+// use closure to achieve static variable 
+var printer = (function() {
+  var printerInstance;
+  return {
+    getInstance : function() {
+      if(!printerInstance) {
+        printerInstance = create();
+      }
+      return printerInstance;
+    }
+  }
+})();
+
+
+
+
+#+END_SRC

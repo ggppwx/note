@@ -3,7 +3,8 @@
 
 * KTLO
 ** TODO go through team bf/bb queue 
-   SCHEDULED: <2017-03-02 Thu .+3d/5d>
+   SCHEDULED: <2017-03-06 Mon .+3d/5d>
+   - State "DONE"       from "TODO"       [2017-03-03 Fri 15:59]
    - State "DONE"       from "TODO"       [2017-02-27 Mon 15:50]
    - State "DONE"       from "TODO"       [2017-02-07 Tue 10:21]
    - State "DONE"       from "TODO"       [2017-02-01 Wed 18:05]
@@ -45,7 +46,7 @@
    - State "DONE"       from "TODO"       [2016-08-17 Wed 18:04]
    CLOCK: [2016-08-17 Wed 17:40]--[2016-08-17 Wed 18:04] =>  0:24
    :PROPERTIES:
-   :LAST_REPEAT: [2017-02-27 Mon 15:50]
+   :LAST_REPEAT: [2017-03-03 Fri 15:59]
    :STYLE:    habit
    :END:      
 
@@ -143,8 +144,13 @@ drqs in queue
 
 
 
+* TODO [#A] Generic work 
+
 * TODO MISC jobs
 
+* productivity
+** TODO a better grep
+** TODO code template snippet
   
 * TODOLIST
 ** TODO add documentation to precog 
