@@ -1,23 +1,22 @@
-org,read careercup 150,scheduled,PROGRESS,reading:interview,2017-2-27,,Scheduled:,,1099,2017-2-27
-org,read javascript design pattern.,scheduled,TODO,reading,2017-2-28,,Scheduled:,,1099,2017-2-28
-org,clean code review,scheduled,TODO,reading,2017-3-1,,Scheduled:,,1099,2017-3-1
-org,leetcode review,past-scheduled,TODO,leetcode,2016-10-31,,Sched.124x:,,1222,2017-3-3
-org,writing blog,past-scheduled,TODO,writing,2017-2-25,,Sched. 7x:,,1105,2017-3-3
-org,read careercup 150,past-scheduled,PROGRESS,reading:interview,2017-2-27,,Sched. 5x:,,1103,2017-3-3
-org,read javascript design pattern.,past-scheduled,TODO,reading,2017-2-28,,Sched. 4x:,,1102,2017-3-3
-org,clean code review,past-scheduled,TODO,reading,2017-3-1,,Sched. 3x:,,1101,2017-3-3
-scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-3-3,,Scheduled:,,1099,2017-3-3
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-2-26,,5 d. ago:,,1005,2017-3-3
-org,generic visualization,upcoming-deadline,PROGRESS,project,2017-3-3,,In   2 d.:,,998,2017-3-3
-org,smart button count,upcoming-deadline,PROGRESS,project,2017-3-3,,In   2 d.:,,998,2017-3-3
-org,history analysis; keep note,past-scheduled,TODO,investing,2017-3-1,,,,1320,2017-3-3
-org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-3-2,,,B,1210,2017-3-3
-org,reflection; writing journal,scheduled,TODO,writing,2017-3-3,,,A,990,2017-3-3
-org,read javascript design pattern.,scheduled,TODO,reading,2017-3-4,,Scheduled:,,1099,2017-3-4
-org,writing blog,scheduled,TODO,writing,2017-3-4,,Scheduled:,,1099,2017-3-4
-org,generic visualization,deadline,PROGRESS,project,2017-3-5,,Deadline:,,1000,2017-3-5
-org,smart button count,deadline,PROGRESS,project,2017-3-5,,Deadline:,,1000,2017-3-5
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-3-5,,Deadline:,,1000,2017-3-5
+org,read careercup 150,scheduled,PROGRESS,reading:interview,2017-3-6,,Scheduled:,,1099,2017-3-6
+org,leetcode review,past-scheduled,TODO,leetcode:review,2016-10-31,,Sched.128x:,,1226,2017-3-7
+org,clean code review,past-scheduled,TODO,reading:review,2017-3-1,,Sched. 7x:,,1105,2017-3-7
+scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-3-3,,Sched. 5x:,,1103,2017-3-7
+org,read javascript design pattern.,past-scheduled,TODO,reading,2017-3-4,,Sched. 4x:,,1102,2017-3-7
+org,writing blog,past-scheduled,TODO,writing,2017-3-4,,Sched. 4x:,,1102,2017-3-7
+org,read careercup 150,past-scheduled,PROGRESS,reading:interview,2017-3-6,,Sched. 2x:,,1100,2017-3-7
+org,generic visualization,deadline,PROGRESS,project,2017-3-5,,2 d. ago:,,1002,2017-3-7
+org,smart button count,deadline,PROGRESS,project,2017-3-5,,2 d. ago:,,1002,2017-3-7
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-3-5,,2 d. ago:,,1002,2017-3-7
+org,history analysis; keep note,past-scheduled,TODO,investing,2017-3-1,,,,1760,2017-3-7
+org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-3-6,,,B,1650,2017-3-7
+org,reflection; writing journal,past-scheduled,TODO,writing,2017-3-6,,,A,1340,2017-3-7
+org,read javascript design pattern.,scheduled,TODO,reading,2017-3-8,,Scheduled:,,1099,2017-3-8
+bbwork,filling out scratch pad,scheduled,TODO,,2017-3-10,,Scheduled:,A,2099,2017-3-10
+scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-3-10,,Scheduled:,,1099,2017-3-10
+org,writing blog,scheduled,TODO,writing,2017-3-11,,Scheduled:,,1099,2017-3-11
+org,read javascript design pattern.,scheduled,TODO,reading,2017-3-12,,Scheduled:,,1099,2017-3-12
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-3-12,,Deadline:,,1000,2017-3-12
 bbwork,filling out scratch pad,todo,TODO,,,,,A,2001,
 bbwork,Generic work,todo,TODO,,,,,A,2001,
 bbwork,create a demo template,todo,TODO,,,,,A,2001,
@@ -68,7 +67,7 @@ org,daily English reading,todo,TODO,reading,,,,,1001,
 org,review design pattern,todo,TODO,reading:review,,,,,1001,
 org,read javascript design pattern.,todo,TODO,reading,,,,,1001,
 org,programming pearls read 1 chapter,todo,TODO,reading,,,,,1001,
-org,clean code review,todo,TODO,reading,,,,,1001,
+org,clean code review,todo,TODO,reading:review,,,,,1001,
 org,read code complete,todo,TODO,reading:book,,,,,1001,
 org,read object oriented thought process,todo,TODO,reading:book,,,,,1001,
 org,read careercup 150,todo,PROGRESS,reading:interview,,,,,1001,
@@ -79,6 +78,6 @@ org,file/media server,todo,TODO,,,,,,1001,
 org,leetcode easy problem review,todo,TODO,leetcode:interview:review,,,,,1001,
 org,leetcode 2 problems medium,todo,TODO,leetcode,,,,B,1001,
 org,leetcode hard problems,todo,TODO,leetcode,,,,,1001,
-org,leetcode review,todo,TODO,leetcode,,,,,1001,
+org,leetcode review,todo,TODO,leetcode:review,,,,,1001,
 org,history analysis; keep note,todo,TODO,investing,,,,,1001,
 org,learn market scanner,todo,TODO,investing,,,,,1001,
