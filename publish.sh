@@ -13,19 +13,19 @@ DES="/home/jgu4/Desktop/"
 function git_push
 {
     cd $DES
-    git add $1
-    git commit -m "updating $1"
+    git commit -am "updating all"
     git pull
     git push
 }
 
 
 # git-push to sync
-if [[ $# != "1" ]] ;then
+if [[ $# != "2" ]] ;then
     echo "ERROR.... no file name"
 else
     OLD_FILE_NAME=$1
-    echo "processing $OLD_FILE_NAME..."
+    DES=$2
+    echo "processing $OLD_FILE_NAME...in...$DES"
 		 
     NEED_CONVERT=true
     
@@ -51,24 +51,24 @@ else
     echo $MATCH
 
     if [[ $MATCH = "" ]]; then
-	NEW_FILE_PATH="$DES$NEW_FILE_NAME"
-	echo "NOT MATCH.. creaating new: $NEW_FILE_NAME"
+	MATCH="$NEW_FILE_NAME"
+	NEW_FILE_PATH_MATCH="$DES$NEW_FILE_NAME"
+	echo "NOT MATCH.. creaating new: $NEW_FILE_NAME_MATCH"
     else
 	echo "MATCH.. update"
-	NEW_FILE_PATH="$MATCH"
-	echo $NEW_FILE_PATH
+	NEW_FILE_PATH_MATCH="$MATCH"
+	echo $NEW_FILE_PATH_MATCH
     fi
 
     # convert
     if [[ $NEED_CONVERT = true ]]; then
-	echo "converting via pandoc"
-	pandoc $OLD_FILE_NAME -o $NEW_FILE_PATH
+	echo "converting $OLD_FILE_NAME via pandoc to $NEW_FILE_PATH_MATCH"
+	pandoc $OLD_FILE_NAME -o $NEW_FILE_PATH_MATCH
     else
 	echo "direct copy..."
-	cp $OLD_FILE_NAME $NEW_FILE_PATH
+	cp $OLD_FILE_NAME $NEW_FILE_PATH_MATCH
     fi
     
     # git commit
-    git_push $NEW_FILE_NAME
-
+    git_push
 fi
