@@ -159,7 +159,9 @@ drqs in queue
 ** TODO UI change 
 ** TODO unit test cases 
 - check the json 
-** TODO Uncl migration 
+** DONE Uncl migration 
+   CLOSED: [2017-03-09 Thu 11:45]
 - make the prototype work tomorrow 
 
 ** TODO [#A] create a demo template 
+** TODO msr layout tweak 
