@@ -1,17 +1,16 @@
 org,read careercup 150,scheduled,PROGRESS,reading:interview,2017-3-6,,Scheduled:,,1099,2017-3-6
 org,read javascript design pattern.,scheduled,TODO,reading,2017-3-8,,Scheduled:,,1099,2017-3-8
-org,leetcode review,past-scheduled,TODO,leetcode:review,2016-10-31,,Sched.130x:,,1228,2017-3-9
-scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-3-3,,Sched. 7x:,,1105,2017-3-9
-org,writing blog,past-scheduled,TODO,writing,2017-3-4,,Sched. 6x:,,1104,2017-3-9
-org,read careercup 150,past-scheduled,PROGRESS,reading:interview,2017-3-6,,Sched. 4x:,,1102,2017-3-9
-org,read javascript design pattern.,past-scheduled,TODO,reading,2017-3-8,,Sched. 2x:,,1100,2017-3-9
-org,generic visualization,deadline,PROGRESS,project,2017-3-5,,4 d. ago:,,1004,2017-3-9
-org,smart button count,deadline,PROGRESS,project,2017-3-5,,4 d. ago:,,1004,2017-3-9
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-3-5,,4 d. ago:,,1004,2017-3-9
-org,history analysis; keep note,past-scheduled,TODO,investing,2017-3-8,,,,1980,2017-3-9
-org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-3-8,,,B,1870,2017-3-9
-bbwork,filling out scratch pad,scheduled,TODO,,2017-3-10,,Scheduled:,A,2099,2017-3-10
+org,leetcode review,past-scheduled,TODO,leetcode:review,2016-10-31,,Sched.131x:,,1229,2017-3-10
+org,writing blog,past-scheduled,TODO,writing,2017-3-4,,Sched. 7x:,,1105,2017-3-10
+org,read careercup 150,past-scheduled,PROGRESS,reading:interview,2017-3-6,,Sched. 5x:,,1103,2017-3-10
+org,read javascript design pattern.,past-scheduled,TODO,reading,2017-3-8,,Sched. 3x:,,1101,2017-3-10
 scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-3-10,,Scheduled:,,1099,2017-3-10
+org,generic visualization,deadline,PROGRESS,project,2017-3-5,,5 d. ago:,,1005,2017-3-10
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-3-5,,5 d. ago:,,1005,2017-3-10
+org,history analysis; keep note,past-scheduled,TODO,investing,2017-3-8,,,,2090,2017-3-10
+org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-3-10,,,B,1980,2017-3-10
+bbwork,go through team bf/bb queue,scheduled,TODO,,2017-3-10,,,,990,2017-3-10
+org,reflection; writing journal,scheduled,TODO,writing,2017-3-10,,,A,990,2017-3-10
 org,writing blog,scheduled,TODO,writing,2017-3-11,,Scheduled:,,1099,2017-3-11
 org,read javascript design pattern.,scheduled,TODO,reading,2017-3-12,,Scheduled:,,1099,2017-3-12
 org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-3-12,,Deadline:,,1000,2017-3-12
@@ -28,6 +27,7 @@ bbwork,add documentation to precog,todo,TODO,,,,,,1001,
 bbwork,UI change,todo,TODO,,,,,,1001,
 bbwork,unit test cases,todo,TODO,,,,,,1001,
 bbwork,msr layout tweak,todo,TODO,,,,,,1001,
+bbwork,code refactoring,todo,TODO,,,,,,1001,
 scratch,8 cups of water per day,todo,TODO,,,,,,1001,
 scratch,breakfast habit,todo,TODO,,,,,,1001,
 scratch,interview preparation,todo,TODO,,,,,,1001,
@@ -56,7 +56,6 @@ org,customized emacs function,todo,PROGRESS,project,,,,,1001,
 org,online manager enhancement,todo,PROGRESS,project,,,,,1001,
 org,generic visualization,todo,PROGRESS,project,,,,,1001,
 org,org agenda/task table display,todo,TODO,project,,,,,1001,
-org,smart button count,todo,PROGRESS,project,,,,,1001,
 org,emacs lisp toolkit,todo,READY,project:emacs,,,,,1001,
 org,package the toolkit; make it portable,todo,TODO,project:emacs,,,,,1001,
 org,workout record,todo,TODO,project,,,,,1001,
