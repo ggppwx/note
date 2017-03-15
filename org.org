@@ -149,7 +149,7 @@ work should be done:
 
 *** TODO smart button enhancement
 - https://jsfiddle.net/dbzx1rzg/1/#&togetherjs=VOPMzHpE3q
-- [ ] daily timeline
+- [X] daily timeline
 - [ ] go to prod
  
 *** TODO smart button enhancement
