@@ -67,5 +67,6 @@ this is a place holder
 | 2017-03-09 | TODO MISC jobs                                                            | [X][X][X][X]             |
 | 2017-03-13 | TODO msr layout tweak                                                     | [X][X][X][X]             |
 | 2017-03-14 | TODO smart button enhancement                                             | [X][X][X][X]             |
+| 2017-03-15 | TODO IDE on windows                                                       | [X][X][X][X]             |
 
 
