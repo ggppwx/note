@@ -166,5 +166,5 @@ drqs in queue
 - make the prototype work tomorrow 
 
 ** TODO [#A] create a demo template 
-** TODO msr layout tweak 
+** DONE msr layout tweak 
 ** TODO code refactoring 
