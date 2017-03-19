@@ -147,10 +147,11 @@ work should be done:
 - [ ] undo
 - [ ] restrain ? 
 
-*** TODO smart button enhancement
+*** DONE smart button enhancement
+    CLOSED: [2017-03-19 Sun 00:00]
 - https://jsfiddle.net/dbzx1rzg/1/#&togetherjs=VOPMzHpE3q
 - [X] daily timeline
-- [ ] go to prod
+- [X] go to prod
  
 *** TODO smart button enhancement
 - [ ] undo 
