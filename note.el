@@ -2,7 +2,7 @@
 ;;
 ;;
 
-(defcustom note-dir '/Users/jingweigu/Documents/note/'
+(defcustom note-dir "/Users/jingweigu/Documents/note/"
   "set the note directory"
   :type '(string)
   :group 'note
@@ -10,13 +10,13 @@
 
 (defcustom note-sync-push-timer 6
   "set the sync push timer (hour)"
-  :type 'number
+  :type '(number)
   :group 'note
   )
 
 (defcustom note-checkout-time "07pm"
   "set the checkout time"
-  :type 'string
+  :type '(string)
   :group 'note
   )
 

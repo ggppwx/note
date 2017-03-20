@@ -27,7 +27,7 @@
 
 (defcustom pomodora-path "/Users/jingweigu/Documents/note/pomodora.org"
   "set the note directory"
-  :type 'string
+  :type '(string)
   :group 'pomodora
   )
 
@@ -35,19 +35,19 @@
 
 (defcustom pomodora-sound-file "./alarm.wav"
   "sound file location"
-  :type 'string
+  :type '(string)
   :group 'pomodora
  )
 
 (defcustom pomodora-work-period 25
   "set work period"
-  :type 'integer
+  :type '(integer)
   :group 'pomodora
   )
 
 (defcustom pomodora-break-period 10
   "set break period"
-  :type 'integer
+  :type '(integer)
   :group 'pomodora
   )
 
