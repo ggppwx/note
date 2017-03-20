@@ -171,9 +171,6 @@ work should be done:
 - [ ] current time 
 *** TODO package the toolkit, make it portable
 
-** TODO workout record 
-- could make it generic record in the future 
-
 
 ** TODO emacs GTD						      :emacs:
 

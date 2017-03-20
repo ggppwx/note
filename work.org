@@ -168,3 +168,4 @@ drqs in queue
 ** TODO [#A] create a demo template 
 ** DONE msr layout tweak 
 ** TODO code refactoring 
+** TODO creating team page 
