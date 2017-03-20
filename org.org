@@ -154,6 +154,7 @@ work should be done:
 - [X] go to prod
  
 *** TODO smart button enhancement
+    DEADLINE: <2017-03-26 Sun>
 - [ ] undo 
 - [ ] responsive 
 
