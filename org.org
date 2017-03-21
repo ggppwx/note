@@ -484,7 +484,11 @@ file:programming_pearls.org
 
 
 ** TODO writing blog 
-   SCHEDULED: <2017-02-25 Sat +1w>
+   SCHEDULED: <2017-03-04 Sat +1w>
+   - State "DONE"       from "TODO"       [2017-03-21 Tue 10:55]
+   :PROPERTIES:
+   :LAST_REPEAT: [2017-03-21 Tue 10:55]
+   :END:
 
 * misc 
 ** TODO build a home theater 

@@ -154,6 +154,8 @@ drqs in queue
 * productivity
 ** TODO a better grep
 ** TODO code template snippet
+** DONE new xterm theme 
+** TODO setup programming env
   
 * TODOLIST
 ** TODO add documentation to precog 

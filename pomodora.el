@@ -24,6 +24,11 @@
   (setq alert-fade-time 40)
   )
 
+(when (eq system-type 'cygwin) 
+  (setq alert-default-style 'message)
+  (setq alert-fade-time 40)
+  )
+
 
 (defcustom pomodora-path "/Users/jingweigu/Documents/note/pomodora.org"
   "set the note directory"
@@ -65,7 +70,9 @@ White space here is any of: space, tab, emacs newline (line feed, ASCII 10)."
   (when (eq system-type 'darwin) 
     (shell-command "/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend")
     )
-  
+  (when (eq system-type 'cygwin) 
+    (shell-command "rundll32.exe user32.dll,LockWorkStation")
+    )
   )
 
 (defun org-pomo-in ()
