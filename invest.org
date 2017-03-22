@@ -137,6 +137,11 @@ FXI china large cap
 
 
 ** Goal
+- interactive broker has no flat transaction fee. that's good. 
+- checking interval : 1 week 
+- stop loss trigger: 8% 
+- re-balance every month 
+- evaluation every 3 month 
 
 
 * watch list 
@@ -147,3 +152,13 @@ defense company:
 *** buy condition
 
 *** sell condition
+
+
+* automate the process 
+- [ ] auto sell order 
+- [ ] data visualization
+
+
+| ticker | price | position | safe guard price | goal price |
+|--------+-------+----------+------------------+------------|
+|        |       |          |                  |            |
