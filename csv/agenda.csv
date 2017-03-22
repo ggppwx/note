@@ -1,29 +1,46 @@
 org,read javascript design pattern.,scheduled,TODO,reading:book,2017-3-20,,Scheduled:,,1099,2017-3-20
 org,read careercup 150,scheduled,PROGRESS,reading:interview,2017-3-20,,Scheduled:,,1099,2017-3-20
-bbwork,filling out scratch pad,past-scheduled,TODO,,2017-3-17,,Sched. 5x:,A,2103,2017-3-21
-org,leetcode review,past-scheduled,TODO,leetcode:review,2016-10-31,,Sched.142x:,,1240,2017-3-21
-scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-3-17,,Sched. 5x:,,1103,2017-3-21
-org,writing blog,past-scheduled,TODO,writing,2017-3-18,,Sched. 4x:,,1102,2017-3-21
-org,read javascript design pattern.,past-scheduled,TODO,reading:book,2017-3-20,,Sched. 2x:,,1100,2017-3-21
-org,read careercup 150,past-scheduled,PROGRESS,reading:interview,2017-3-20,,Sched. 2x:,,1100,2017-3-21
-org,generic visualization,deadline,PROGRESS,project,2017-3-5,,16 d. ago:,,1016,2017-3-21
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-3-19,,2 d. ago:,,1002,2017-3-21
-org,smart button enhancement,upcoming-deadline,TODO,project,2017-3-21,,In   5 d.:,,995,2017-3-21
-org,history analysis; keep note,past-scheduled,TODO,investing,2017-3-15,,,,3300,2017-3-21
-org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-3-20,,,B,3190,2017-3-21
-scratch,breakfast habit,scheduled,TODO,,2017-3-21,,,,1650,2017-3-21
-bbwork,go through team bf/bb queue,scheduled,TODO,,2017-3-21,,,,1230,2017-3-21
-org,daily English reading,scheduled,TODO,reading,2017-3-21,,,,1100,2017-3-21
-bbwork,filling out scratch pad,scheduled,TODO,,2017-3-24,,Scheduled:,A,2099,2017-3-24
-org,read javascript design pattern.,scheduled,TODO,reading:book,2017-3-24,,Scheduled:,,1099,2017-3-24
+org,leetcode review,past-scheduled,TODO,leetcode:review,2016-10-31,,Sched.143x:,,1241,2017-3-22
+scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-3-17,,Sched. 6x:,,1104,2017-3-22
+org,writing blog,past-scheduled,TODO,writing,2017-3-18,,Sched. 5x:,,1103,2017-3-22
+org,read javascript design pattern.,past-scheduled,TODO,reading:book,2017-3-20,,Sched. 3x:,,1101,2017-3-22
+org,read careercup 150,past-scheduled,PROGRESS,reading:interview,2017-3-20,,Sched. 3x:,,1101,2017-3-22
+workout,30 min workout,scheduled,TODO,workout,2017-3-22,,Scheduled:,,1099,2017-3-22
+org,generic visualization,deadline,PROGRESS,project,2017-3-5,,17 d. ago:,,1017,2017-3-22
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-3-19,,3 d. ago:,,1003,2017-3-22
+org,history analysis; keep note,scheduled,TODO,investing,2017-3-22,,,,3410,2017-3-22
+org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-3-22,,,B,3300,2017-3-22
+scratch,breakfast habit,scheduled,TODO,,2017-3-22,,,,1760,2017-3-22
+org,daily English reading,scheduled,TODO,reading,2017-3-22,,,,1210,2017-3-22
+org,reflection; writing journal,scheduled,TODO,writing,2017-3-22,,,A,990,2017-3-22
 scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-3-24,,Scheduled:,,1099,2017-3-24
+org,read javascript design pattern.,scheduled,TODO,reading:book,2017-3-24,,Scheduled:,,1099,2017-3-24
+workout,30 min workout,scheduled,TODO,workout,2017-3-25,,Scheduled:,,1099,2017-3-25
 org,writing blog,scheduled,TODO,writing,2017-3-25,,Scheduled:,,1099,2017-3-25
 org,smart button enhancement,deadline,TODO,project,2017-3-26,,Deadline:,,1000,2017-3-26
 org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-3-26,,Deadline:,,1000,2017-3-26
 org,reflection; writing journal,todo,TODO,writing,,,,A,2001,
-bbwork,filling out scratch pad,todo,TODO,,,,,A,2001,
-bbwork,Generic work,todo,TODO,,,,,A,2001,
-bbwork,create a demo template,todo,TODO,,,,,A,2001,
+workout,30 min workout,todo,TODO,workout,,,,,1001,
+scratch,8 cups of water per day,todo,TODO,,,,,,1001,
+scratch,breakfast habit,todo,TODO,,,,,,1001,
+scratch,interview preparation,todo,TODO,,,,,,1001,
+scratch,scratch as a INBOX,todo,TODO,,,,,,1001,
+scratch,set environment in work environment,todo,TODO,move:emacs,,,,,1001,
+scratch,introduce UML to emacs,todo,TODO,move:emacs,,,,,1001,
+scratch,create template for common language,todo,TODO,move:emacs,,,,,1001,
+scratch,install emacs window management,todo,TODO,move:emacs,,,,,1001,
+scratch,code refactoring tutorial,todo,TODO,worktime,,,,,1001,
+scratch,find a way to learn more in work,todo,TODO,,,,,,1001,
+scratch,mouse-less work flow,todo,TODO,,,,,B,1001,
+scratch,daily work work-flow,todo,TODO,,,,,,1001,
+scratch,archive for org mode.,todo,TODO,,,,,,1001,
+scratch,try out unit-test.,todo,PROGRESS,,,,,,1001,
+scratch,future cpu overclock,todo,TODO,,,,,,1001,
+scratch,things you r interested in.,todo,TODO,,,,,,1001,
+scratch,review past todos,todo,TODO,,,,,,1001,
+scratch,clean-up org,todo,TODO,,,,,,1001,
+scratch,always forget starting pomodora,todo,TODO,,,,,,1001,
+scratch,reward time,todo,TODO,,,,,,1001,
 org,adding a countdown timmer,todo,TODO,project,,,,,1001,
 org,tagging systems for todo,todo,TODO,project,,,,,1001,
 org,enhance the github personal website,todo,PROGRESS,project,,,,,1001,
@@ -55,34 +72,4 @@ org,leetcode hard problems,todo,TODO,leetcode,,,,,1001,
 org,leetcode review,todo,TODO,leetcode:review,,,,,1001,
 org,history analysis; keep note,todo,TODO,investing,,,,,1001,
 org,learn market scanner,todo,TODO,investing,,,,,1001,
-scratch,8 cups of water per day,todo,TODO,,,,,,1001,
-scratch,breakfast habit,todo,TODO,,,,,,1001,
-scratch,interview preparation,todo,TODO,,,,,,1001,
-scratch,scratch as a INBOX,todo,TODO,,,,,,1001,
-scratch,set environment in work environment,todo,TODO,move:emacs,,,,,1001,
-scratch,introduce UML to emacs,todo,TODO,move:emacs,,,,,1001,
-scratch,create template for common language,todo,TODO,move:emacs,,,,,1001,
-scratch,install emacs window management,todo,TODO,move:emacs,,,,,1001,
-scratch,code refactoring tutorial,todo,TODO,worktime,,,,,1001,
-scratch,find a way to learn more in work,todo,TODO,,,,,,1001,
-scratch,mouse-less work flow,todo,TODO,,,,,B,1001,
-scratch,daily work work-flow,todo,TODO,,,,,,1001,
-scratch,archive for org mode.,todo,TODO,,,,,,1001,
-scratch,try out unit-test.,todo,PROGRESS,,,,,,1001,
-scratch,future cpu overclock,todo,TODO,,,,,,1001,
-scratch,things you r interested in.,todo,TODO,,,,,,1001,
-scratch,review past todos,todo,TODO,,,,,,1001,
-scratch,clean-up org,todo,TODO,,,,,,1001,
-scratch,always forget starting pomodora,todo,TODO,,,,,,1001,
-scratch,reward time,todo,TODO,,,,,,1001,
-bbwork,go through team bf/bb queue,todo,TODO,,,,,,1001,
-bbwork,plan new work to do,todo,TODO,,,,,,1001,
-bbwork,MISC jobs,todo,TODO,,,,,,1001,
-bbwork,a better grep,todo,TODO,,,,,,1001,
-bbwork,code template snippet,todo,TODO,,,,,,1001,
-bbwork,setup programming env,todo,TODO,,,,,,1001,
-bbwork,add documentation to precog,todo,TODO,,,,,,1001,
-bbwork,UI change,todo,TODO,,,,,,1001,
-bbwork,unit test cases,todo,TODO,,,,,,1001,
-bbwork,code refactoring,todo,TODO,,,,,,1001,
-bbwork,creating team page,todo,TODO,,,,,,1001,
+gtd,writing blog,todo,TODO,,,,,,1001,
