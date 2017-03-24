@@ -155,6 +155,7 @@ defense company:
 
 
 * automate the process 
+- [ ] do this in excel 
 - [ ] auto sell order 
 - [ ] data visualization
 

@@ -3,7 +3,8 @@
 
 * KTLO
 ** TODO go through team bf/bb queue 
-   SCHEDULED: <2017-03-18 Sat .+3d/5d>
+   SCHEDULED: <2017-03-25 Sat .+3d/5d>
+   - State "DONE"       from "TODO"       [2017-03-22 Wed 13:55]
    - State "DONE"       from "TODO"       [2017-03-15 Wed 17:43]
    - State "DONE"       from "TODO"       [2017-03-07 Tue 12:05]
    - State "DONE"       from "TODO"       [2017-03-03 Fri 15:59]
@@ -48,7 +49,7 @@
    - State "DONE"       from "TODO"       [2016-08-17 Wed 18:04]
    CLOCK: [2016-08-17 Wed 17:40]--[2016-08-17 Wed 18:04] =>  0:24
    :PROPERTIES:
-   :LAST_REPEAT: [2017-03-15 Wed 17:43]
+   :LAST_REPEAT: [2017-03-22 Wed 13:55]
    :STYLE:    habit
    :END:      
 
@@ -103,8 +104,9 @@ drqs in queue
    :PROPERTIES:
    :Effort:   10 min
    :END:
-** TODO [#A] filling out scratch pad 
-   SCHEDULED: <2017-03-17 Fri ++1w>
+** DONE [#A] filling out scratch pad 
+   CLOSED: [2017-03-24 Fri 12:52]
+   - State "DONE"       from "TODO"       [2017-03-23 Thu 12:59]
    - State "DONE"       from "TODO"       [2017-03-10 Fri 15:05]
    - State "DONE"       from "TODO"       [2017-02-27 Mon 17:32]
    - State "DONE"       from "TODO"       [2017-02-24 Fri 17:56]
@@ -141,14 +143,14 @@ drqs in queue
    - State "DONE"       from "TODO"       [2016-08-11 Thu 15:33]
    - State "DONE"       from "TODO"       [2016-08-09 Tue 12:28]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-03-10 Fri 15:05]
+   :LAST_REPEAT: [2017-03-23 Thu 12:59]
    :Effort:   0:15
    :END:
 
 
 
 * TODO [#A] Generic work 
-
+** TODO fix bugs 
 * TODO MISC jobs
 
 * productivity

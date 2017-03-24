@@ -155,8 +155,8 @@ work should be done:
  
 *** TODO smart button enhancement
     DEADLINE: <2017-03-26 Sun>
-- [ ] undo 
-- [ ] responsive 
+- [X] responsive 
+https://plnkr.co/edit/VrYYTLV4xfpGSOA5IfjA
 
 
 
@@ -174,6 +174,7 @@ work should be done:
 
 ** TODO emacs GTD						      :emacs:
 
+** READY portfolio tracker 
 
 
 * online tutorial 
@@ -183,7 +184,9 @@ work should be done:
 * 读书&写作
 ** reading							    :reading:
 *** TODO daily English reading
-    SCHEDULED: <2017-03-23 Thu .+1d>
+    SCHEDULED: <2017-03-25 Sat .+1d>
+    - State "DONE"       from "TODO"       [2017-03-24 Fri 12:04]
+    - State "DONE"       from "TODO"       [2017-03-23 Thu 11:08]
     - State "DONE"       from "TODO"       [2017-03-22 Wed 13:27]
     - State "DONE"       from "TODO"       [2017-03-20 Mon 15:44]
     - State "DONE"       from "TODO"       [2017-03-15 Wed 17:40]
@@ -259,7 +262,7 @@ work should be done:
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2017-03-22 Wed 13:27]
+    :LAST_REPEAT: [2017-03-24 Fri 12:04]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
@@ -485,10 +488,11 @@ file:programming_pearls.org
 
 
 ** TODO writing blog 
-   SCHEDULED: <2017-03-04 Sat +1w>
+   SCHEDULED: <2017-03-26 Sun +1w>
+   - State "DONE"       from "TODO"       [2017-03-23 Thu 11:09]
    - State "DONE"       from "TODO"       [2017-03-21 Tue 10:55]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-03-21 Tue 10:55]
+   :LAST_REPEAT: [2017-03-23 Thu 11:09]
    :END:
 
 * misc 
@@ -652,12 +656,13 @@ trainning focus:
 - bucket of stocks 
 
 *** TODO history analysis, keep note 
-    SCHEDULED: <2017-03-01 Wed +1w>
+    SCHEDULED: <2017-04-01 Sat +1w>
+    - State "DONE"       from "TODO"       [2017-03-23 Thu 11:09]
     - State "DONE"       from "TODO"       [2017-02-22 Wed 22:04]
     - State "DONE"       from "TODO"       [2017-02-15 Wed 00:24]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2017-02-22 Wed 22:04]
+    :LAST_REPEAT: [2017-03-23 Thu 11:09]
     :END:
 
 *** TODO learn market scanner 
