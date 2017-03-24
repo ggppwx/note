@@ -1,31 +1,23 @@
 org,read javascript design pattern.,scheduled,TODO,reading,2017-3-20,,Scheduled:,,1099,2017-3-20
 org,read careercup 150,scheduled,PROGRESS,reading:interview,2017-3-20,,Scheduled:,,1099,2017-3-20
-bbwork,filling out scratch pad,past-scheduled,TODO,,2017-3-17,,Sched. 6x:,A,2104,2017-3-22
-org,leetcode review,past-scheduled,TODO,leetcode:review,2016-10-31,,Sched.143x:,,1241,2017-3-22
-scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-3-17,,Sched. 6x:,,1104,2017-3-22
-org,writing blog,past-scheduled,TODO,writing,2017-3-18,,Sched. 5x:,,1103,2017-3-22
-org,read javascript design pattern.,past-scheduled,TODO,reading,2017-3-20,,Sched. 3x:,,1101,2017-3-22
-org,read careercup 150,past-scheduled,PROGRESS,reading:interview,2017-3-20,,Sched. 3x:,,1101,2017-3-22
-org,generic visualization,deadline,PROGRESS,project,2017-3-5,,17 d. ago:,,1017,2017-3-22
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-3-19,,3 d. ago:,,1003,2017-3-22
-org,smart button enhancement,upcoming-deadline,TODO,project,2017-3-22,,In   4 d.:,,996,2017-3-22
-org,history analysis; keep note,scheduled,TODO,investing,2017-3-22,,,,3410,2017-3-22
-org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-3-22,,,B,3300,2017-3-22
-scratch,breakfast habit,scheduled,TODO,,2017-3-22,,,,1760,2017-3-22
-bbwork,go through team bf/bb queue,past-scheduled,TODO,,2017-3-21,,,,1340,2017-3-22
-org,reflection; writing journal,scheduled,TODO,writing,2017-3-22,,,A,990,2017-3-22
-bbwork,filling out scratch pad,scheduled,TODO,,2017-3-24,,Scheduled:,A,2099,2017-3-24
+org,leetcode review,past-scheduled,TODO,leetcode:review,2016-10-31,,Sched.145x:,,1243,2017-3-24
+org,read careercup 150,past-scheduled,PROGRESS,reading:interview,2017-3-20,,Sched. 5x:,,1103,2017-3-24
 scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-3-24,,Scheduled:,,1099,2017-3-24
 org,read javascript design pattern.,scheduled,TODO,reading,2017-3-24,,Scheduled:,,1099,2017-3-24
-org,writing blog,scheduled,TODO,writing,2017-3-25,,Scheduled:,,1099,2017-3-25
+org,generic visualization,deadline,PROGRESS,project,2017-3-5,,19 d. ago:,,1019,2017-3-24
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-3-19,,5 d. ago:,,1005,2017-3-24
+org,smart button enhancement,upcoming-deadline,TODO,project,2017-3-24,,In   2 d.:,,998,2017-3-24
+org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-3-24,,,B,3520,2017-3-24
+org,reflection; writing journal,past-scheduled,TODO,writing,2017-3-22,,,A,1170,2017-3-24
+org,writing blog,scheduled,TODO,writing,2017-3-26,,Scheduled:,,1099,2017-3-26
 org,smart button enhancement,deadline,TODO,project,2017-3-26,,Deadline:,,1000,2017-3-26
 org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-3-26,,Deadline:,,1000,2017-3-26
-bbwork,filling out scratch pad,todo,TODO,,,,,A,2001,
 bbwork,Generic work,todo,TODO,,,,,A,2001,
 bbwork,create a demo template,todo,TODO,,,,,A,2001,
 org,reflection; writing journal,todo,TODO,writing,,,,A,2001,
 bbwork,go through team bf/bb queue,todo,TODO,,,,,,1001,
 bbwork,plan new work to do,todo,TODO,,,,,,1001,
+bbwork,fix bugs,todo,TODO,,,,,,1001,
 bbwork,MISC jobs,todo,TODO,,,,,,1001,
 bbwork,a better grep,todo,TODO,,,,,,1001,
 bbwork,code template snippet,todo,TODO,,,,,,1001,
@@ -55,6 +47,7 @@ scratch,review past todos,todo,TODO,,,,,,1001,
 scratch,clean-up org,todo,TODO,,,,,,1001,
 scratch,always forget starting pomodora,todo,TODO,,,,,,1001,
 scratch,reward time,todo,TODO,,,,,,1001,
+scratch,coding IDE,todo,TODO,,,,,,1001,
 org,adding a countdown timmer,todo,TODO,project,,,,,1001,
 org,tagging systems for todo,todo,TODO,project,,,,,1001,
 org,enhance the github personal website,todo,PROGRESS,project,,,,,1001,
@@ -67,6 +60,7 @@ org,smart button enhancement,todo,TODO,project,,,,,1001,
 org,emacs lisp toolkit,todo,READY,project:emacs,,,,,1001,
 org,package the toolkit; make it portable,todo,TODO,project:emacs,,,,,1001,
 org,emacs GTD,todo,TODO,project:emacs,,,,,1001,
+org,portfolio tracker,todo,READY,project,,,,,1001,
 org,coursea,todo,TODO,,,,,,1001,
 org,daily English reading,todo,TODO,reading,,,,,1001,
 org,review design pattern,todo,TODO,reading:review,,,,,1001,
