@@ -157,7 +157,8 @@ work should be done:
     DEADLINE: <2017-03-26 Sun>
 - [X] responsive 
 https://plnkr.co/edit/VrYYTLV4xfpGSOA5IfjA
-
+*** TODO smart button enhancement
+- [ ] adding comment 
 
 
 

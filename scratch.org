@@ -372,3 +372,4 @@ this is good game to play with miaomiao.
 - reward after achieve the goal 
 
 ** TODO coding IDE
+** TODO clean note/
