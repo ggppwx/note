@@ -374,3 +374,4 @@ this is good game to play with miaomiao.
 
 ** TODO coding IDE
 ** TODO clean note/
+** TODO go through todos, and think 
