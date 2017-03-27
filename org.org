@@ -153,8 +153,8 @@ work should be done:
 - [X] daily timeline
 - [X] go to prod
  
-*** TODO smart button enhancement
-    DEADLINE: <2017-03-26 Sun>
+*** DONE smart button enhancement
+    CLOSED: [2017-03-26 Sun 22:56] DEADLINE: <2017-03-26 Sun>
 - [X] responsive 
 https://plnkr.co/edit/VrYYTLV4xfpGSOA5IfjA
 *** TODO smart button enhancement
@@ -436,7 +436,8 @@ file:programming_pearls.org
 
 
 ** TODO [#A] reflection, writing journal
-   SCHEDULED: <2017-03-22 Wed .+3d/5d>
+   SCHEDULED: <2017-03-30 Thu .+3d/5d>
+   - State "DONE"       from "TODO"       [2017-03-27 Mon 00:35]
    - State "DONE"       from "TODO"       [2017-03-19 Sun 23:50]
    - State "DONE"       from "TODO"       [2017-03-07 Tue 22:26]
    - State "DONE"       from "TODO"       [2017-02-28 Tue 22:14]
@@ -480,7 +481,7 @@ file:programming_pearls.org
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
-   :LAST_REPEAT: [2017-03-19 Sun 23:50]
+   :LAST_REPEAT: [2017-03-27 Mon 00:35]
    :STYLE:    habit
    :END:
 :LAST_REPEAT: [2016-10-07 Fri 17:48]
