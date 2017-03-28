@@ -150,7 +150,7 @@ drqs in queue
 
 
 
-* TODO [#A] Generic work 
+* TODO Generic work 
 ** TODO fix bugs 
 * TODO MISC jobs
 
@@ -170,7 +170,7 @@ drqs in queue
    CLOSED: [2017-03-09 Thu 11:45]
 - make the prototype work tomorrow 
 
-** TODO [#A] create a demo template 
+** TODO [#C] create a demo template 
 ** DONE msr layout tweak 
 ** TODO code refactoring 
 ** Sprint

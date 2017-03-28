@@ -125,6 +125,7 @@ work should be done:
 - [X] new table on todos
 - [ ] adding highlight
 
+*** TODO fix the broken org page
 
 ** COMP smart button count 
    CLOSED: [2017-03-10 Fri 18:09] DEADLINE: <2017-03-05 Sun>
@@ -586,7 +587,7 @@ trainning focus:
 - most important problems 
 - 132 in total. 
 - appro 80 days. 
-*** TODO [#B] leetcode 2 problems medium
+*** TODO leetcode 2 problems medium
     SCHEDULED: <2017-03-02 Thu .+2d>
     - State "DONE"       from "TODO"       [2017-02-28 Tue 22:07]
     - State "DONE"       from "TODO"       [2017-02-28 Tue 00:19]
@@ -622,6 +623,14 @@ trainning focus:
    
 
 * finance
+** TODO [#A] weekly investment review 
+   SCHEDULED: <2017-04-02 Sun ++1w>
+- go over the portfolio
+- loss & profit 
+- plan 
+
+
+
 ** investment							  :investing:
 [[file:invest.org]]
 *** DONE [#B] learn stock basic
