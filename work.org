@@ -2,8 +2,9 @@
 #+CATEGORY: bbwork
 
 * KTLO
-** TODO go through team bf/bb queue 
-   SCHEDULED: <2017-03-30 Thu .+3d/5d>
+** TODO [#B] go through team bf/bb queue 
+   SCHEDULED: <2017-04-02 Sun .+3d/5d>
+   - State "DONE"       from "TODO"       [2017-03-30 Thu 13:57]
    - State "DONE"       from "TODO"       [2017-03-27 Mon 14:40]
    - State "DONE"       from "TODO"       [2017-03-22 Wed 13:55]
    - State "DONE"       from "TODO"       [2017-03-15 Wed 17:43]
@@ -50,7 +51,7 @@
    - State "DONE"       from "TODO"       [2016-08-17 Wed 18:04]
    CLOCK: [2016-08-17 Wed 17:40]--[2016-08-17 Wed 18:04] =>  0:24
    :PROPERTIES:
-   :LAST_REPEAT: [2017-03-27 Mon 14:40]
+   :LAST_REPEAT: [2017-03-30 Thu 13:57]
    :STYLE:    habit
    :END:      
 
@@ -101,7 +102,8 @@ drqs in queue
 
 
 * retrospect
-** TODO plan new work to do 
+** TODO [#B] plan new work to do 
+   SCHEDULED: <2017-04-03 Mon ++1w>
    :PROPERTIES:
    :Effort:   10 min
    :END:
@@ -174,7 +176,8 @@ drqs in queue
 ** DONE msr layout tweak 
 ** TODO code refactoring 
 ** Sprint
-*** TODO creating team page for msr reprot 
+*** DONE creating team page for msr reprot 
+    CLOSED: [2017-03-30 Thu 16:19]
 *** TODO sort universe 
 *** TODO sort aggregation 
 

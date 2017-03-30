@@ -17,13 +17,12 @@
 
 * health
 - going upstairs 3 times a day in office
-** TODO 8 cups of water per day
 ** go to bed early ( 12:00 )
 remember the lesson you learn 
 ** DONE rest well, recover from cold 
 
-** TODO breakfast habit 
-   SCHEDULED: <2017-03-28 Tue .+1d>
+** DONE breakfast habit 
+   CLOSED: [2017-03-30 Thu 10:43]
    - State "DONE"       from "TODO"       [2017-03-27 Mon 14:40]
    - State "DONE"       from "TODO"       [2017-03-24 Fri 12:04]
    - State "DONE"       from "TODO"       [2017-03-15 Wed 17:40]
@@ -180,7 +179,7 @@ on the road
 
 
 * self-improvement 
-** TODO code refactoring tutorial				   :worktime:
+** TODO [#B] code refactoring tutorial				   :worktime:
    SCHEDULED: <2016-09-30 Fri ++1w>
    - State "DONE"       from "PROGRESS"   [2016-09-15 Thu 18:18]
    - State "DONE"       from "TODO"       [2016-07-22 Fri 16:45]
@@ -227,6 +226,9 @@ Analyze your email.
 
 
 ** communicate board with miaomiao
+
+
+** TODO 8 cups of water alarm 
 
 
 * learn new things 
