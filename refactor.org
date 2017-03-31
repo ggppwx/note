@@ -331,3 +331,10 @@ public class Vegesub extends Sandwich{
 }
 
 #+END_SRC
+
+* python refactoring
+
+** speed test
+#+BEGIN_SRC python
+print time_execution(function_to_test(using_this))
+#+END_SRC

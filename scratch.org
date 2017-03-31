@@ -138,7 +138,7 @@ on the road
 - should write cleaner code. 
 - utilize what you learn in daily programming 
 
-** TODO scratch as a INBOX
+** TODO [#B] scratch as a INBOX
 
 
 * emacs learning						 :move:emacs:
@@ -180,7 +180,8 @@ on the road
 
 * self-improvement 
 ** TODO [#B] code refactoring tutorial				   :worktime:
-   SCHEDULED: <2016-09-30 Fri ++1w>
+   SCHEDULED: <2017-04-07 Fri ++1w>
+   - State "DONE"       from "TODO"       [2017-03-31 Fri 17:54]
    - State "DONE"       from "PROGRESS"   [2016-09-15 Thu 18:18]
    - State "DONE"       from "TODO"       [2016-07-22 Fri 16:45]
    - State "DONE"       from "TODO"       [2016-07-22 Fri 16:45]
@@ -191,7 +192,7 @@ on the road
    - State "DONE"       from "TODO"       [2016-06-09 Thu 18:53]
    - State "DONE"       from "TODO"       [2016-05-17 Tue 03:50]
    :PROPERTIES:
-   :LAST_REPEAT: [2016-09-15 Thu 18:18]
+   :LAST_REPEAT: [2017-03-31 Fri 17:54]
    :END:
 file:refactor.org
 
@@ -228,7 +229,7 @@ Analyze your email.
 ** communicate board with miaomiao
 
 
-** TODO 8 cups of water alarm 
+** TODO [#C] 8 cups of water alarm 
 
 
 * learn new things 
@@ -367,7 +368,8 @@ this is good game to play with miaomiao.
 * INBOX 
 
 ** TODO things you r interested in.  
-** TODO review past todos 
+** DONE review past todos 
+   CLOSED: [2017-03-30 Thu 18:06]
 ** TODO clean-up org 
 ** TODO always forget starting pomodora
 ** TODO reward time 
@@ -376,4 +378,18 @@ this is good game to play with miaomiao.
 
 ** TODO coding IDE
 ** TODO clean note/
-** TODO go through todos, and think 
+** DONE go through todos, and think 
+   CLOSED: [2017-03-30 Thu 18:06]
+
+
+* TEMP
+** TODO [#A] REMOVE TODAY
+   SCHEDULED: <2017-03-31 Fri>
+- played too much game
+- reading book on the train, which is good
+- I will do willpower training this weekend 
+- what I learn
+  - meditation
+  - breath 
+  - exercise
+  - sleep 

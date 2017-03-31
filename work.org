@@ -157,7 +157,8 @@ drqs in queue
 * TODO MISC jobs
 
 * productivity
-** TODO a better grep
+** DONE a better grep
+   CLOSED: [2017-03-30 Thu 18:02]
 ** TODO code template snippet
 ** DONE new xterm theme 
 ** TODO setup programming env
