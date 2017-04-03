@@ -25,7 +25,7 @@
   - 2 * Dow Jones
 - S&P midcap 400 index
 - avoid the downside using SMA MACD RSI
-
+  
 
 ** the book's strategy 
 - build a core portfolio with permanent portfolio

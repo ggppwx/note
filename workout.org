@@ -68,7 +68,7 @@ M: misc
 
 
   
-** TODO 30 min workout						    :workout:
+** TODO 15 min workout 						    :workout:
    SCHEDULED: <2017-02-05 Sun +3d>
    - State "DONE"       from "TODO"       [2017-02-02 Thu 22:46]
    :PROPERTIES:

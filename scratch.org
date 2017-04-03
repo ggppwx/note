@@ -383,13 +383,5 @@ this is good game to play with miaomiao.
 
 
 * TEMP
-** TODO [#A] REMOVE TODAY
-   SCHEDULED: <2017-03-31 Fri>
-- played too much game
-- reading book on the train, which is good
-- I will do willpower training this weekend 
-- what I learn
-  - meditation
-  - breath 
-  - exercise
-  - sleep 
+** DONE [#A] REMOVE TODAY
+   CLOSED: [2017-04-02 Sun 14:10] SCHEDULED: <2017-03-31 Fri>
