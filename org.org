@@ -139,7 +139,8 @@ work should be done:
 - [X] new table on todos
 - [ ] adding highlight
 
-*** TODO [#B] fix the broken org page
+*** DONE [#B] fix the broken org page
+    CLOSED: [2017-04-03 Mon 01:00]
 
 ** COMP smart button count 
    CLOSED: [2017-03-10 Fri 18:09] DEADLINE: <2017-03-05 Sun>
