@@ -103,7 +103,7 @@ drqs in queue
 
 
 * retrospect
-** TODO [#B] plan new work to do 
+** TODO [#B] plan new BB work to do 
    SCHEDULED: <2017-04-03 Mon ++1w>
    :PROPERTIES:
    :Effort:   10 min
