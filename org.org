@@ -35,7 +35,6 @@ here I will list the main framework of my org documents.
 * project scratch						    :project:
 here are several projects we need to focus on 
 
-** TODO web design template 
 ** DONE create a website based on github 
    CLOSED: [2016-04-29 Fri 00:19]
    - [X] create the framework 
@@ -78,6 +77,9 @@ here are several projects we need to focus on
 
 
 
+*** TODO apply admin theme to website 
+
+
 ** emacs toolkit 						      :emacs:
 *** TODO package the toolkit, make it portable
 
@@ -85,6 +87,16 @@ here are several projects we need to focus on
 ** TODO emacs GTD						      :emacs:
 
 ** READY portfolio tracker 
+
+
+
+** TODO [#B] website template 
+   DEADLINE: <2017-04-09 Sun>
+- create a website demo 
+  https://startbootstrap.com/template-overviews/creative/
+
+- add a online store page 
+
 
 
 * project KTLO

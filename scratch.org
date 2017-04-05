@@ -10,7 +10,7 @@
 * 短期目标
 
 * workout 
-** TODO writing a workout plan 
+** TODO [#B] writing a workout plan 
 [[file:workout.org]]
 
 * health
@@ -49,7 +49,8 @@ remember the lesson you learn
 
 
 * emacs learning						 :move:emacs:
-** TODO set environment in work environment 
+** DONE set environment in work environment 
+   CLOSED: [2017-04-05 Wed 17:23]
     
 
 ** TODO introduce UML to emacs 
@@ -106,7 +107,8 @@ file:refactor.org
 
 ** TODO [#B] mouse-less work flow
 
-** TODO daily work work-flow
+** TODO [#A] daily work work-flow
+   DEADLINE: <2017-04-07 Fri>
 
 ** TODO archive for org mode.
 - make a emacs command 
@@ -210,7 +212,6 @@ this is good game to play with miaomiao.
 - reward after achieve the goal 
 
 ** TODO coding IDE
-** TODO clean note/
 ** DONE go through todos, and think 
    CLOSED: [2017-03-30 Thu 18:06]
 

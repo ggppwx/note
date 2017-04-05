@@ -126,3 +126,15 @@ file:refactor.org
 ** TODO setup programming env
 ** TODO integrate jira with bbgithub   
 
+
+
+
+
+* NOTE
+** what is the most interesting bug you meet ? 
+
+
+** most challenging project ?
+
+
+** what are technologies used in the project ? 
