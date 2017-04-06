@@ -107,8 +107,8 @@ file:refactor.org
 
 ** TODO [#B] mouse-less work flow
 
-** TODO [#A] daily work work-flow
-   DEADLINE: <2017-04-07 Fri>
+** DONE [#A] daily work work-flow
+   CLOSED: [2017-04-06 Thu 18:04] DEADLINE: <2017-04-07 Fri>
 
 ** TODO archive for org mode.
 - make a emacs command 

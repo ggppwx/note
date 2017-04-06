@@ -9,11 +9,12 @@ here I will list the main framework of my org documents.
 
 * ORG MODE routine
 ** TODO [#A] prioritize the tasks 
-   SCHEDULED: <2017-04-05 Wed +4d>
+   SCHEDULED: <2017-04-09 Sun +4d>
+   - State "DONE"       from "TODO"       [2017-04-05 Wed 17:18]
    - State "DONE"       from "TODO"       [2017-04-02 Sun 22:45]
    - State "DONE"       from "TODO"       [2017-03-30 Thu 18:01]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-04-02 Sun 22:45]
+   :LAST_REPEAT: [2017-04-05 Wed 17:18]
    :END:
 - prioritize EVERY tasks in agenda view 
 - A: must-do, can't move to any other task if undone.
@@ -50,7 +51,7 @@ here are several projects we need to focus on
 ** TODO tagging systems for todo 
    
 
-** PROGRESS enhance the github personal website
+** PROGRESS [#C] enhance the github personal website
 - [X] better publishing tool, to publish article 
 
 
@@ -71,13 +72,14 @@ here are several projects we need to focus on
 - [ ] refactoring code, the code generic 
 - [ ] research ways to adding visualization
 
-**** TODO org agenda/task table display 
+**** DONE org agenda/task table display 
+     CLOSED: [2017-04-05 Wed 17:21]
 - [X] new table on todos
 - [ ] adding highlight
 
 
 
-*** TODO apply admin theme to website 
+*** TODO [#C] apply admin theme to website 
 
 
 ** emacs toolkit 						      :emacs:
@@ -86,7 +88,7 @@ here are several projects we need to focus on
 
 ** TODO emacs GTD						      :emacs:
 
-** READY portfolio tracker 
+** READY [#C] portfolio tracker 
 
 
 
@@ -94,13 +96,14 @@ here are several projects we need to focus on
    DEADLINE: <2017-04-09 Sun>
 - create a website demo 
   https://startbootstrap.com/template-overviews/creative/
-
+  http://adrianmejia.com/blog/2014/09/28/angularjs-tutorial-for-beginners-with-nodejs-expressjs-and-mongodb/
+  https://scotch.io/tutorials/setting-up-a-mean-stack-single-page-application
 - add a online store page 
 
 
 
 * project KTLO
-** TODO smart button enhancement
+** TODO [#B] smart button enhancement
 - [ ] adding comment 
 
 
@@ -116,7 +119,9 @@ here are several projects we need to focus on
 * 读书&写作
 ** reading							    :reading:
 *** TODO [#B] daily English reading
-    SCHEDULED: <2017-04-05 Wed .+1d>
+    SCHEDULED: <2017-04-07 Fri .+1d>
+    - State "DONE"       from "TODO"       [2017-04-06 Thu 12:16]
+    - State "DONE"       from "TODO"       [2017-04-05 Wed 17:18]
     - State "DONE"       from "TODO"       [2017-04-04 Tue 11:21]
     - State "DONE"       from "TODO"       [2017-04-03 Mon 11:26]
     - State "DONE"       from "TODO"       [2017-04-02 Sun 14:21]
@@ -201,7 +206,7 @@ here are several projects we need to focus on
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2017-04-04 Tue 11:21]
+    :LAST_REPEAT: [2017-04-06 Thu 12:16]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
@@ -213,7 +218,7 @@ here are several projects we need to focus on
 file:designpattern.org 
 
 **** TODO [#C] review design pattern				     :review:
-     SCHEDULED: <2017-04-01 Sat +1m>
+     SCHEDULED: <2017-04-22 Sat +1m>
      - State "DONE"       from "TODO"       [2017-03-03 Fri 16:49]
      - State "DONE"       from "TODO"       [2017-03-01 Wed 17:24]
      - State "DONE"       from "TODO"       [2017-02-01 Wed 17:25]
@@ -261,7 +266,7 @@ file:programming_pearls.org
 
 
 *** read clean code 						       :book:
-**** TODO clean code review					     :review:
+**** TODO [#B] clean code review				     :review:
      SCHEDULED: <2017-04-07 Fri .+1m>
      - State "DONE"       from "TODO"       [2017-03-07 Tue 22:21]
      - State "DONE"       from "TODO"       [2016-10-31 Mon 18:32]
@@ -295,7 +300,6 @@ file:programming_pearls.org
     
 
 *** PROGRESS [#C] read careercup 150				  :interview:
-    SCHEDULED: <2017-02-27 Mon +1w>
     - State "PROGRESS"   from "READY"      [2017-02-21 Tue 00:17]
     - State "COMP"       from "PROGRESS"   [2017-02-21 Tue 00:16]
     - State "PROGRESS"   from "READY"      [2017-02-21 Tue 00:11]
@@ -363,6 +367,8 @@ file:programming_pearls.org
 
 ** TODO [#B] writing blog 
    SCHEDULED: <2017-04-02 Sun ++1w>
+   - Note taken on [2017-04-06 Thu 18:07] \\
+     write book note
    - State "DONE"       from "TODO"       [2017-04-03 Mon 17:45]
    - State "DONE"       from "TODO"       [2017-03-23 Thu 11:09]
    - State "DONE"       from "TODO"       [2017-03-21 Tue 10:55]
@@ -372,7 +378,8 @@ file:programming_pearls.org
 
 
 * misc 
-** TODO build a home theater 
+** DONE build a home theater 
+   CLOSED: [2017-04-05 Wed 17:17]
 
 
 
@@ -494,5 +501,5 @@ trainning focus:
     :LAST_REPEAT: [2017-04-02 Sun 22:47]
     :END:
 
-*** TODO learn market scanner 
+*** TODO [#C] learn market scanner 
 

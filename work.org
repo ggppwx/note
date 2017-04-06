@@ -1,21 +1,18 @@
 #+TITLE:tasks at work     
 #+CATEGORY: bbwork
-* TODOLIST
-** TODO add documentation to precog 
-
-** TODO UI change 
-** TODO unit test cases 
-- check the json 
-** TODO [#C] create a demo template 
-
-** Sprint
-*** TODO sort universe 
-*** TODO sort aggregation 
-*** TODO framework for single portfolio report 
+* workflow
+** TODO [#A] daily workflow
+SCHEDULED: <2017-04-10 Mon ++1w>   
+SCHEDULED: <2017-04-11 Tue ++1w>   
+SCHEDULED: <2017-04-12 Wed ++1w>   
+SCHEDULED: <2017-04-07 Fri ++1w>   
+*** reading work email   
+*** reading jira tasks 
+*** reading bbwork board
 
 
 
-* KTLO
+
 ** TODO [#B] go through team bf/bb queue 
    SCHEDULED: <2017-04-06 Thu .+3d/5d>
    - State "DONE"       from "TODO"       [2017-04-03 Mon 16:41]
@@ -70,6 +67,25 @@
    :STYLE:    habit
    :END:      
 
+
+
+
+* TODOLIST
+** TODO add documentation to precog 
+
+** TODO UI change 
+** TODO unit test cases 
+- check the json 
+** TODO [#C] create a demo template 
+
+** Sprint
+*** TODO sort universe 
+*** TODO sort aggregation 
+*** TODO framework for single portfolio report 
+
+
+
+* KTLO
 
 
 * work productivity 
