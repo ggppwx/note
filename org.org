@@ -101,7 +101,10 @@ here are several projects we need to focus on
 
 
 
-** DONE [#B] website template 
+
+
+** TODO huichi wang project 
+*** DONE [#B] website template 
    CLOSED: [2017-04-09 Sun 23:39] DEADLINE: <2017-04-09 Sun>
 - create a website demo 
   https://startbootstrap.com/template-overviews/creative/
@@ -109,6 +112,10 @@ here are several projects we need to focus on
   https://scotch.io/tutorials/setting-up-a-mean-stack-single-page-application
 - add a online store page 
 
+*** TODO adding content to the website 
+
+*** TODO adding login/signup to the project 
+    DEADLINE: <2017-04-16 Sun>
 
 
 * project KTLO
