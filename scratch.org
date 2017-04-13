@@ -82,7 +82,8 @@ remember the lesson you learn
 
 * self-improvement 
 ** TODO [#A] code refactoring tutorial				   :worktime:
-   SCHEDULED: <2017-04-07 Fri ++1w>
+   SCHEDULED: <2017-04-14 Fri ++1w>
+   - State "DONE"       from "TODO"       [2017-04-13 Thu 17:11]
    - State "DONE"       from "TODO"       [2017-03-31 Fri 17:54]
    - State "DONE"       from "PROGRESS"   [2016-09-15 Thu 18:18]
    - State "DONE"       from "TODO"       [2016-07-22 Fri 16:45]
@@ -94,7 +95,7 @@ remember the lesson you learn
    - State "DONE"       from "TODO"       [2016-06-09 Thu 18:53]
    - State "DONE"       from "TODO"       [2016-05-17 Tue 03:50]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-03-31 Fri 17:54]
+   :LAST_REPEAT: [2017-04-13 Thu 17:11]
    :END:
 file:refactor.org
 
@@ -134,7 +135,7 @@ Analyze your email.
 
 
 * learn new things 
-** PROGRESS try out unit-test. 
+** PROGRESS [#B] try out unit-test. 
    CLOCK: [2016-09-19 Mon 15:25]--[2016-09-19 Mon 16:51] =>  1:26
    CLOCK: [2016-08-22 Mon 18:00]--[2016-08-22 Mon 18:23] =>  0:23
 - [X] test driven development 
