@@ -64,7 +64,7 @@ remember the lesson you learn
 ** emacs shortcut 
 *** TODO install emacs window management 
     
-** TODO emacs mode cheetsheet
+** TODO [#C] emacs mode cheetsheet
 | <11> mode name | <20> link            |
 |----------------+----------------------|
 | helm           |                      |
@@ -204,11 +204,11 @@ this is good game to play with miaomiao.
 
 * INBOX 
 
-** TODO things you r interested in.  
+** TODO [#C] things you r interested in.  
 ** DONE review past todos 
    CLOSED: [2017-03-30 Thu 18:06]
-** TODO always forget starting pomodora
-** TODO reward time 
+** TODO [#B] always forget starting pomodora
+** TODO [#B] reward time 
 - daily contract 
 - reward after achieve the goal 
 

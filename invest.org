@@ -149,6 +149,10 @@ defense company:
 - LMT
 - * BA
 
+- intel
+- nvidia
+
+
 *** buy condition
 
 *** sell condition
