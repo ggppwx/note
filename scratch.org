@@ -218,3 +218,52 @@ this is good game to play with miaomiao.
 
 
 * TEMP
+
+** huichi project scratch 
+*** phase 1 notes
+- no angular js routing 
+- old style project structure 
+
+
+
+*** strucutre
+root/
+-app.js
+-*config.js
+
+-view/
+--index.ejs
+
+-routes/
+--api/
+---auth.js : restful api 
+
+--index.js
+
+
+-models/
+--user.js
+-passport/
+
+
+-public/
+--javascripts/
+---views/
+----template1.html
+----template2.html
+
+---controller/
+----controller1.js
+
+
+---router/
+
+
+
+--stylesheets/
+--images/
+
+--libs/
+
+
+

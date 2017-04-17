@@ -133,6 +133,12 @@ here are several projects we need to focus on
 
 
 
+
+** TODO [#A] fix google charts
+   DEADLINE: <2017-04-22 Sat>
+
+
+
 * online tutorial 
 ** TODO  coursea
 
