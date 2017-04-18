@@ -1,16 +1,10 @@
-bbwork,plan new BB work to do,scheduled,TODO,,2017-4-17,,Scheduled:,B,1099,2017-4-17
 scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-4-14,,Sched. 5x:,A,2103,2017-4-18
-org,adding login/signup to the project,deadline,TODO,project,2017-4-16,,2 d. ago:,A,2002,2017-4-18
 org,fix google charts,upcoming-deadline,TODO,,2017-4-18,,In   4 d.:,A,1996,2017-4-18
 org,clean code review,past-scheduled,TODO,reading:review,2017-4-7,,Sched.12x:,B,1110,2017-4-18
-bbwork,plan new BB work to do,past-scheduled,TODO,,2017-4-17,,Sched. 2x:,B,1100,2017-4-18
 org,clean-up org,scheduled,TODO,,2017-4-18,,Scheduled:,B,1099,2017-4-18
 org,leetcode review,past-scheduled,TODO,leetcode:review,2016-10-31,,Sched.170x:,C,268,2017-4-18
 org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-4-16,,2 d. ago:,C,2,2017-4-18
 org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-4-17,,,C,6270,2017-4-18
-bbwork,go through team bf/bb queue,past-scheduled,TODO,,2017-4-16,,,B,1450,2017-4-18
-org,reflection; writing journal,scheduled,TODO,writing,2017-4-18,,,A,1230,2017-4-18
-org,daily English reading,scheduled,TODO,reading,2017-4-18,,,B,1100,2017-4-18
 scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-4-21,,Scheduled:,A,2099,2017-4-21
 org,prioritize the tasks,scheduled,TODO,,2017-4-21,,Scheduled:,A,2099,2017-4-21
 org,fix google charts,deadline,TODO,,2017-4-22,,Deadline:,A,2000,2017-4-22
@@ -22,7 +16,6 @@ bbwork,daily workflow,todo,TODO,,,,,A,2001,
 scratch,code refactoring tutorial,todo,TODO,worktime,,,,A,2001,
 org,prioritize the tasks,todo,TODO,,,,,A,2001,
 org,review tasks,todo,TODO,,,,,A,2001,
-org,adding login/signup to the project,todo,TODO,project,,,,A,2001,
 org,fix google charts,todo,TODO,,,,,A,2001,
 org,reflection; writing journal,todo,TODO,writing,,,,A,2001,
 org,weekly investment review,todo,TODO,,,,,A,2001,
