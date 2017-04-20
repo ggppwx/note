@@ -15,37 +15,9 @@
 
 * health
 - going upstairs 3 times a day in office
-** go to bed early ( 12:00 )
-remember the lesson you learn 
 
 * career
 ** TODO interview preparation
-
-
-* thoughts 
-- 最近浪费时间浪费的太多了。 基本上周末都在玩游戏中度过了
-- leetcode上的题目没有及时复习，要忘记光了
-- 书也没有看。
-- 没有健身，好像自从结婚以后人就懒掉了。
-  - 设定一个健身计划
-  - file:workout.org
-- 写代码低级bug太多了。 
-  - 看别人编写代码视频
-- git hub all projects
-- utilize stand desk 
-- spent too long on gaming 
-
-<2016-06-16 Thu>
-- gaming too much
-- sleep too late. really bad habit 
-- m routine is good. not too many, keep it ! the rule is don't do it at night
-
-<2016-06-29 Wed>
-- should spent more time on online code practice 
-- should write cleaner code. 
-- utilize what you learn in daily programming 
-
-
 
 
 * emacs learning						 :move:emacs:
@@ -125,12 +97,9 @@ file:refactor.org
 ** stock tracker.
 - depending on [[file:org.org::investment]]
 
-
 ** a email processor 
-Analyze your email.
-
-** communicate board with miaomiao
-
+- Analyze your email.
+- make it a scheduled task on server 
 
 ** TODO [#C] 8 cups of water alarm 
 
@@ -151,23 +120,7 @@ Analyze your email.
   - [X] mem setting 
     - xmp 2.0  reaches 3000 mhz 
 
-** DONE game list
-   CLOSED: [2016-12-16 Fri 15:21]
-writing down the games plan to play
-- dark souls 3 
-- total war warhammer
-  - w/ new dlc 
-- gta 5
-- witcher 3 
-- pillars of eternity 
-- xcom 2
-- ark
-- metal gear solid 
-- casual 
-  - overwatch
-  - league of legend 
-
-
+** game list
 I think it's better writing game journal/reviview
 *** COMP gaming benchmark 
     CLOSED: [2016-10-17 Mon 17:10] SCHEDULED: <2016-10-05 Wed>
@@ -180,34 +133,14 @@ I think it's better writing game journal/reviview
   let 3d application decides
 - hwinfo + rivtuner does it affect the performance (test total war) 
 
-- [X] total war: all ultra 100+ fps
+- [X] total war: all ultra 100+ fps AA doesn't matter 
 - [X] witcher 3 : hair-work AA off, vsync off, large town 60+ fps
 - [X] GTA  60+ fps
-
-
-
-*** COMP setting up config for ark 
-    CLOSED: [2016-10-07 Fri 12:13] SCHEDULED: <2016-10-03 Mon>
-    - Note taken on [2016-10-04 Tue 13:01] \\
-      after first try, everything seems fine. but the fps doesn't change a lot
-this is good game to play with miaomiao. 
-- [X] benchmark. 
-  - cpu, freq 1-4, temp 1-4, utilization 1-4 
-  - gpu, freq, temp. utilization, gpu mem, freq 
-  - mem, usage. 
-- setting 
-  - [X] resolution scaling should be 100 %
-  - [X] disable the audio
-  - [X] nvidia panel setting to default: let's try let 3d app decide
-  - [X] tweak nvidia panel
-  - [X] try board-less 
 
 
 * INBOX 
 
 ** TODO [#C] things you r interested in.  
-** DONE review past todos 
-   CLOSED: [2017-03-30 Thu 18:06]
 ** TODO [#B] always forget starting pomodora
 ** TODO [#B] reward time 
 - daily contract 

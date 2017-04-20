@@ -85,18 +85,13 @@ SCHEDULED: <2017-04-25 Tue ++1w>
 * TODOLIST
 ** TODO add documentation to precog 
 
-** TODO UI change 
-** TODO unit test cases 
+** TODO more unit test cases 
 - check the json 
 ** TODO [#C] create a demo template 
 
 ** Sprint
 *** TODO framework for single portfolio report
 - unit tests  
-
-
-
-
 
 
 * KTLO
@@ -108,22 +103,6 @@ SCHEDULED: <2017-04-25 Tue ++1w>
 - tryout new technology 
 - productivity boost 
 - online shopping 
-
-
-* misc  
-** read code base 
-
-
-** better javascript code 
-
-   
-** better at emacs 
-[[file:scratch.org::*emacs learning]]
-
-** learn refactoring 
-file:refactor.org
-
-
 
 
 * retrospect
@@ -140,12 +119,22 @@ file:refactor.org
 * TODO Generic work 
 ** TODO fix bugs 
 * TODO MISC jobs
+** read code base 
+
+
+** better javascript code 
+
+   
+** better at emacs 
+[[file:scratch.org::*emacs learning]]
+
+** learn refactoring 
+file:refactor.org
+
+
 
 * productivity
-** DONE a better grep
-   CLOSED: [2017-03-30 Thu 18:02]
 ** TODO code template snippet
-** DONE new xterm theme 
 ** TODO setup programming env
 ** TODO integrate jira with bbgithub   
 

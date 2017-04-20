@@ -40,10 +40,11 @@ here I will list the main framework of my org documents.
 - relocate tasks 
 
 ** TODO [#B] clean-up org 
-   SCHEDULED: <2017-04-18 Tue ++2w>
+   SCHEDULED: <2017-05-02 Tue ++2w>
+   - State "DONE"       from "TODO"       [2017-04-20 Thu 18:09]
    - State "DONE"       from "TODO"       [2017-04-04 Tue 17:58]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-04-04 Tue 17:58]
+   :LAST_REPEAT: [2017-04-20 Thu 18:09]
    :END:
 * project scratch						    :project:
 here are several projects we need to focus on 
@@ -72,7 +73,8 @@ here are several projects we need to focus on
 - shanbay api. 
 - analyze the article, get new vocabulary
 
-** PROGRESS customized emacs function
+** COMP customized emacs function
+   CLOSED: [2017-04-20 Thu 18:18]
    - State "PROGRESS"   from "READY"      [2017-01-04 Wed 15:11]
 - [X] function to execute push/pull script 
 - [ ] track repeated task 
@@ -84,13 +86,6 @@ here are several projects we need to focus on
 - [ ] refactoring code, the code generic 
 - [ ] research ways to adding visualization
 
-**** DONE org agenda/task table display 
-     CLOSED: [2017-04-05 Wed 17:21]
-- [X] new table on todos
-- [ ] adding highlight
-
-
-
 *** TODO [#C] apply admin theme to website 
 
 
@@ -99,6 +94,7 @@ here are several projects we need to focus on
 
 
 ** TODO emacs GTD						      :emacs:
+- daily routine [[ORG MODE routine]]
 
 ** READY [#C] portfolio tracker 
 
@@ -146,7 +142,8 @@ here are several projects we need to focus on
 * 读书&写作
 ** reading							    :reading:
 *** TODO [#B] daily English reading
-    SCHEDULED: <2017-04-20 Thu .+1d>
+    SCHEDULED: <2017-04-21 Fri .+1d>
+    - State "DONE"       from "TODO"       [2017-04-20 Thu 16:41]
     - State "DONE"       from "TODO"       [2017-04-19 Wed 11:15]
     - State "DONE"       from "TODO"       [2017-04-18 Tue 11:45]
     - State "DONE"       from "TODO"       [2017-04-17 Mon 14:50]
@@ -239,7 +236,7 @@ here are several projects we need to focus on
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2017-04-19 Wed 11:15]
+    :LAST_REPEAT: [2017-04-20 Thu 16:41]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
@@ -341,7 +338,6 @@ file:programming_pearls.org
     :END:
 
 
-* writing 							    :writing:
 ** TODO [#A] reflection, writing journal
    SCHEDULED: <2017-04-21 Fri .+3d/5d>
    - State "DONE"       from "TODO"       [2017-04-18 Tue 10:38]
@@ -416,10 +412,7 @@ file:programming_pearls.org
 
 
 * misc 
-** DONE build a home theater 
-   CLOSED: [2017-04-05 Wed 17:17]
-
-
+** TODO setting up a auto downloading service 
 
 * leetcode							   :leetcode:
 file:leetcode.org
@@ -530,17 +523,6 @@ trainning focus:
 
 ** investment							  :investing:
 [[file:invest.org]]
-*** DONE [#B] history analysis, keep note 
-    CLOSED: [2017-04-17 Mon 17:07]
-    - State "DONE"       from "TODO"       [2017-04-02 Sun 22:47]
-    - State "DONE"       from "TODO"       [2017-03-23 Thu 11:09]
-    - State "DONE"       from "TODO"       [2017-02-22 Wed 22:04]
-    - State "DONE"       from "TODO"       [2017-02-15 Wed 00:24]
-    :PROPERTIES:
-    :STYLE:    habit
-    :LAST_REPEAT: [2017-04-02 Sun 22:47]
-    :END:
-
 *** TODO [#C] learn market scanner 
 
 *** TODO [#C] investment book note 
