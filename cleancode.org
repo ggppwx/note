@@ -95,7 +95,7 @@ public class CodeAnalyzer implements JavaFileAnalysis {
 
 ** unit tests
    - Note taken on [2016-08-17 Wed 00:23] \\
-     IMO, it's very hard to do real test-driven development. but that doesn't necessary unit test is unnecessary,
+     IMO, it's very hard to do real test-driven development. but that doesn't means unit test is unnecessary,
      on the contrary, good unit test is helpful. But I also don't think it's good to write unit-test after production 
      code, that is integration test.
 - laws of TDD:
