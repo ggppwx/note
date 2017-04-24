@@ -1,26 +1,35 @@
-scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-4-21,,Scheduled:,A,2099,2017-4-21
-org,prioritize the tasks,scheduled,TODO,,2017-4-21,,Scheduled:,A,2099,2017-4-21
-org,fix google charts,upcoming-deadline,TODO,,2017-4-21,,In   1 d.:,A,1999,2017-4-21
-org,clean code review,past-scheduled,TODO,reading:review,2017-4-7,,Sched.15x:,B,1113,2017-4-21
-org,leetcode review,past-scheduled,TODO,leetcode:review,2016-10-31,,Sched.173x:,C,271,2017-4-21
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-4-16,,5 d. ago:,C,5,2017-4-21
-org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-4-21,,,C,6600,2017-4-21
-org,reflection; writing journal,scheduled,TODO,,2017-4-21,,,A,990,2017-4-21
-org,fix google charts,deadline,TODO,,2017-4-22,,Deadline:,A,2000,2017-4-22
-org,review design pattern,scheduled,TODO,reading:review,2017-4-22,,Scheduled:,C,99,2017-4-22
-org,weekly investment review,scheduled,TODO,,2017-4-23,,Scheduled:,A,2099,2017-4-23
-org,writing blog,scheduled,TODO,,2017-4-23,,Scheduled:,B,1099,2017-4-23
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-4-23,,Deadline:,C,0,2017-4-23
+scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-4-21,,Sched. 4x:,A,2102,2017-4-24
+org,weekly investment review,past-scheduled,TODO,,2017-4-23,,Sched. 2x:,A,2100,2017-4-24
+org,fix google charts,upcoming-deadline,TODO,,2017-4-24,,In   4 d.:,A,1996,2017-4-24
+org,clean code review,past-scheduled,TODO,reading:review,2017-4-7,,Sched.18x:,B,1116,2017-4-24
+org,writing blog,past-scheduled,TODO,,2017-4-23,,Sched. 2x:,B,1100,2017-4-24
+org,leetcode review,past-scheduled,TODO,leetcode:review,2016-10-31,,Sched.176x:,C,274,2017-4-24
+org,review design pattern,past-scheduled,TODO,reading:review,2017-4-22,,Sched. 3x:,C,101,2017-4-24
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-4-23,,1 d. ago:,C,1,2017-4-24
+org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-4-23,,,C,6930,2017-4-24
+org,reflection; writing journal,scheduled,TODO,,2017-4-24,,,A,1230,2017-4-24
+bbwork,daily workflow,scheduled,TODO,,2017-4-25,,Scheduled:,A,2099,2017-4-25
+org,prioritize the tasks,scheduled,TODO,,2017-4-25,,Scheduled:,A,2099,2017-4-25
+scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-4-28,,Scheduled:,A,2099,2017-4-28
+org,fix google charts,deadline,TODO,,2017-4-28,,Deadline:,A,2000,2017-4-28
+org,prioritize the tasks,scheduled,TODO,,2017-4-29,,Scheduled:,A,2099,2017-4-29
+org,weekly investment review,scheduled,TODO,,2017-4-30,,Scheduled:,A,2099,2017-4-30
+org,writing blog,scheduled,TODO,,2017-4-30,,Scheduled:,B,1099,2017-4-30
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-4-30,,Deadline:,C,0,2017-4-30
 bbwork,daily workflow,todo,TODO,,,,,A,2001,
 scratch,code refactoring tutorial,todo,TODO,worktime,,,,A,2001,
 org,prioritize the tasks,todo,TODO,,,,,A,2001,
 org,review tasks,todo,TODO,,,,,A,2001,
+org,adding content to the website,todo,TODO,project,,,,A,2001,
+org,setup a demo server,todo,TODO,project,,,,A,2001,
 org,fix google charts,todo,TODO,,,,,A,2001,
 org,reflection; writing journal,todo,TODO,,,,,A,2001,
 org,weekly investment review,todo,TODO,,,,,A,2001,
 bbwork,go through team bf/bb queue,todo,TODO,,,,,B,1001,
 bbwork,add documentation to precog,todo,TODO,,,,,B,1001,
 bbwork,more unit test cases,todo,TODO,,,,,B,1001,
+bbwork,refactoring xquery scripts,todo,TODO,,,,,B,1001,
+bbwork,unit tests for each bug,todo,TODO,,,,,B,1001,
 bbwork,plan new BB work to do,todo,TODO,,,,,B,1001,
 bbwork,Generic work,todo,TODO,,,,,,1001,
 bbwork,fix bugs,todo,TODO,,,,,,1001,
@@ -49,7 +58,6 @@ org,generic visualization,todo,PROGRESS,project,,,,,1001,
 org,package the toolkit; make it portable,todo,TODO,project:emacs,,,,,1001,
 org,emacs GTD,todo,TODO,project:emacs,,,,,1001,
 org,huichi wang project,todo,TODO,project,,,,B,1001,
-org,adding content to the website,todo,TODO,project,,,,B,1001,
 org,back-end support,todo,TODO,project,,,,B,1001,
 org,smart button enhancement,todo,TODO,,,,,B,1001,
 org,coursea,todo,TODO,,,,,,1001,
