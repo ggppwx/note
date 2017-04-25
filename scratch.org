@@ -148,18 +148,21 @@ I think it's better writing game journal/reviview
 - reward after achieve the goal 
 
 ** TODO coding IDE
-** DONE go through todos, and think 
-   CLOSED: [2017-03-30 Thu 18:06]
-
-
+*** TODO [#B] try atom IDE
+   SCHEDULED: <2017-04-26 Wed>
 * TEMP
 
 ** huichi project scratch 
 *** phase 1 notes
 - no angular js routing 
 - old style project structure 
+**** setting up a demo site
+- route to local machine 
+- port forwarding 
 
-
+**** adding content 
+- articles 
+- images 
 
 *** strucutre
 root/
