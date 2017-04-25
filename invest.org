@@ -145,12 +145,19 @@ FXI china large cap
 
 
 * watch list 
-defense company:
+** defense company:
 - LMT
 - * BA
-
+** hardware
 - intel
 - nvidia
+
+** internet
+- aapl
+- fb
+
+** bank
+- gs
 
 
 *** buy condition
