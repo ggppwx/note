@@ -1,17 +1,16 @@
 org,setup a demo server,scheduled,DONE,project,2017-4-25,,Scheduled:,A,2099,2017-4-25
 scratch,try atom IDE,scheduled,TODO,,2017-4-26,,Scheduled:,B,1099,2017-4-26
-org,fix google charts,upcoming-deadline,TODO,,2017-4-27,,In   1 d.:,A,1999,2017-4-27
-org,adding content to the website,upcoming-deadline,TODO,project,2017-4-27,,In   3 d.:,A,1997,2017-4-27
-org,writing blog,past-scheduled,TODO,,2017-4-23,,Sched. 5x:,B,1103,2017-4-27
-scratch,try atom IDE,past-scheduled,TODO,,2017-4-26,,Sched. 2x:,B,1100,2017-4-27
-org,leetcode review,past-scheduled,TODO,leetcode:review,2016-10-31,,Sched.179x:,C,277,2017-4-27
-org,review design pattern,past-scheduled,TODO,reading:review,2017-4-22,,Sched. 6x:,C,104,2017-4-27
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-4-23,,4 d. ago:,C,4,2017-4-27
-org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-4-27,,,C,7260,2017-4-27
-org,reflection; writing journal,scheduled,TODO,,2017-4-27,,,A,1560,2017-4-27
-bbwork,go through team bf/bb queue,scheduled,TODO,,2017-4-27,,,B,990,2017-4-27
 scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-4-28,,Scheduled:,A,2099,2017-4-28
 org,fix google charts,deadline,TODO,,2017-4-28,,Deadline:,A,2000,2017-4-28
+org,adding content to the website,upcoming-deadline,TODO,project,2017-4-28,,In   2 d.:,A,1998,2017-4-28
+org,writing blog,past-scheduled,TODO,,2017-4-23,,Sched. 6x:,B,1104,2017-4-28
+scratch,try atom IDE,past-scheduled,TODO,,2017-4-26,,Sched. 3x:,B,1101,2017-4-28
+org,leetcode review,past-scheduled,TODO,leetcode:review,2016-10-31,,Sched.180x:,C,278,2017-4-28
+org,review design pattern,past-scheduled,TODO,reading:review,2017-4-22,,Sched. 7x:,C,105,2017-4-28
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-4-23,,5 d. ago:,C,5,2017-4-28
+org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-4-27,,,C,7370,2017-4-28
+org,reflection; writing journal,past-scheduled,TODO,,2017-4-27,,,A,1670,2017-4-28
+org,daily English reading,scheduled,TODO,reading,2017-4-28,,,B,1100,2017-4-28
 org,prioritize the tasks,scheduled,TODO,,2017-4-29,,Scheduled:,A,2099,2017-4-29
 org,weekly investment review,scheduled,TODO,,2017-4-30,,Scheduled:,A,2099,2017-4-30
 org,adding content to the website,deadline,TODO,project,2017-4-30,,Deadline:,A,2000,2017-4-30
@@ -34,6 +33,7 @@ bbwork,plan new BB work to do,todo,TODO,,,,,B,1001,
 bbwork,Generic work,todo,TODO,,,,,,1001,
 bbwork,fix bugs,todo,TODO,,,,,,1001,
 bbwork,MISC jobs,todo,TODO,,,,,,1001,
+bbwork,reading code,todo,TODO,,,,,,1001,
 bbwork,code template snippet,todo,TODO,,,,,,1001,
 bbwork,setup programming env,todo,TODO,,,,,,1001,
 bbwork,integrate jira with bbgithub,todo,TODO,,,,,,1001,
