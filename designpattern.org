@@ -80,13 +80,14 @@ parameter vs argument
   CLOSED: [2016-04-21]
 
 ** basic
-+ eliminate duplicate 
++ _eliminate duplicate_
 + one class should not affect the ohters 
 + use one / several behaviors dynamicly 
 - increased number of classes 
 
 ** use interface 
 #+BEGIN_SRC java
+// method as class
 public interface Fly{
    String fly();
 }
@@ -106,6 +107,7 @@ public String fly(){
 ** composition 
 + can change without side effects 
 + Animal can be a abstruct class. abstruct class can have concrete method
++ _method as class type_
 #+BEGIN_SRC java
 public class Animal {
   public Fly flyingType;  //setter method somewhere 
@@ -148,6 +150,7 @@ sparky.tryToFly();
 
 
 ** sample 
+- _subject register observers_
 #+BEGIN_SRC java
 public interface Subject{
     public void register(Observer o);
@@ -205,7 +208,7 @@ public class StockObserver implments Observer {
 }
 
 
-// use multi-thread subjects 
+// multi thread
 public class GetTheStock implments Runnable {
    private Subject stockGrabber;  // subject 
 
@@ -226,7 +229,7 @@ public class GetTheStock implments Runnable {
 
 public static void main() {
 
-  StockGrabber stockgrabber = new StockGrabber(); // subject
+  StockGrabber stockgrabber = new StockGrabber(); // subject need to be monitored 
 
   StockObserver o1 = new StockObserver(stockgrabber);
   StockObserver o2 = new StockObserver(stockgrabber); // subject regiester object here
@@ -245,7 +248,6 @@ public static void main() {
   new Thread(t2).start();
 }
  
-
 #+END_SRC
 
 
@@ -316,10 +318,11 @@ int main(){
 like a factory but everything is encapsulated
 - create families of related objects 
 - polymorphism
-+ *in a nutshell, abstruct factory pattern creates different kinds of factory,
-  it makes the factory abstruct*
++ _in a nutshell, abstruct factory pattern creates different kinds of factory,_
+  it makes the factory abstruct_
 + *normal factory just create abstruct object*
 + THE KEY: pass abstruct factory to a abstruct product
++ _different object different factories_
 
 #+BEGIN_SRC c++
 class EnemyShipBuilding{  // abstruct class/ virtual class
@@ -340,7 +343,7 @@ class EnemyShipBuilding : public EnemyShipBuilding {
   EnemyShip* makeEnemyShip(std:string type) {
     if(type == "UFO") { // create different factory instead of object
        // we also can call f1, platform(factory)
-       EnemyShipFactory *f1 = new UFOEnemyShipFactory();  // create factory
+       EnemyShipFactory *f1 = new UFOEnemyShipFactory();  // create factory for UFO
        return new UFO(f1);
     }      
   }
@@ -402,7 +405,7 @@ int main(){
 ** when 
 - it's used when you want to eliminate the option of 
 instantiating more than one object
-
+- _prerequirements: disable constructor, destructor_
 #+BEGIN_SRC c++
 
 class Singleton{
@@ -466,7 +469,7 @@ public class Singleton{
 
 #+END_SRC
 
-
+* TODO placeholder at <2017-04-28 Fri>
 
 
 * DONE builder
