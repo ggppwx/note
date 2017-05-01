@@ -151,6 +151,7 @@ I think it's better writing game journal/reviview
 ** TODO coding IDE
 *** DONE [#B] try atom IDE
     CLOSED: [2017-05-01 Mon 11:11] SCHEDULED: <2017-04-26 Wed>
+*** TODO sublime advanced
 * TEMP
 
 ** huichi project scratch 

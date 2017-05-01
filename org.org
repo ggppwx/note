@@ -31,12 +31,13 @@ here I will list the main framework of my org documents.
   - sitting in schedule too long: more than 10
 
 ** TODO [#A] review tasks 
-   SCHEDULED: <2017-05-01 Mon ++1w>
+   SCHEDULED: <2017-05-08 Mon ++1w>
+   - State "DONE"       from "TODO"       [2017-05-01 Mon 18:25]
    - State "DONE"       from "TODO"       [2017-04-24 Mon 17:42]
    - State "DONE"       from "TODO"       [2017-04-17 Mon 13:34]
    - State "DONE"       from "TODO"       [2017-04-10 Mon 12:31]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-04-24 Mon 17:42]
+   :LAST_REPEAT: [2017-05-01 Mon 18:25]
    :END:
 - go through all todo lists 
 - check org/scratch 
@@ -109,6 +110,7 @@ here are several projects we need to focus on
 
 
 ** TODO [#B] huichi wang project 
+*** TODO go through the business plan 
 *** DONE [#B] website template 
    CLOSED: [2017-04-09 Sun 23:39] DEADLINE: <2017-04-09 Sun>
 - create a website demo 
@@ -130,6 +132,7 @@ here are several projects we need to focus on
 
 *** DONE [#A] setup a demo server 
     CLOSED: [2017-04-26 Wed 20:32] SCHEDULED: <2017-04-25 Tue>
+
 
 * project KTLO
 ** TODO [#B] smart button enhancement
@@ -480,7 +483,7 @@ trainning focus:
     :END:
 
 *** TODO [#C] leetcode easy problem review			     :review:
-    DEADLINE: <2016-09-11 Sun ++1w>
+    DEADLINE: <2017-05-31 Wed ++1w>
     - State "DONE"       from "TODO"       [2016-07-27 Wed 10:59]
     :PROPERTIES:
     :LAST_REPEAT: [2016-07-27 Wed 10:59]
@@ -520,7 +523,7 @@ trainning focus:
 ** TODO leetcode hard problems 
  
 ** TODO [#C] leetcode review					     :review:
-   SCHEDULED: <2016-10-31 Mon>
+   SCHEDULED: <2017-05-17 Wed>
 
 
    
