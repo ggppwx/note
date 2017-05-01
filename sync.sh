@@ -10,7 +10,7 @@ function git-pull
 {
     echo "git pull ......"
     cd $DIR
-    # git stash
+    git stash
     git pull origin master -X theirs
 }
 
