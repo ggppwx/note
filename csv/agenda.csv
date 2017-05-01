@@ -1,36 +1,41 @@
-org,weekly investment review,scheduled,TODO,,2017-4-30,,Scheduled:,A,2099,2017-4-30
-org,adding content to the website,deadline,TODO,project,2017-4-30,,Deadline:,A,2000,2017-4-30
-workout,15 min workout,scheduled,TODO,workout,2017-4-30,,Scheduled:,B,1099,2017-4-30
-org,writing blog,scheduled,TODO,,2017-4-30,,Scheduled:,B,1099,2017-4-30
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-4-30,,Deadline:,C,0,2017-4-30
-scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-4-28,,Sched. 4x:,A,2102,2017-5-1
 org,prioritize the tasks,past-scheduled,TODO,,2017-4-29,,Sched. 3x:,A,2101,2017-5-1
 org,weekly investment review,past-scheduled,TODO,,2017-4-30,,Sched. 2x:,A,2100,2017-5-1
 org,review tasks,scheduled,TODO,,2017-5-1,,Scheduled:,A,2099,2017-5-1
-org,fix google charts,deadline,TODO,,2017-4-28,,3 d. ago:,A,2003,2017-5-1
-org,adding content to the website,deadline,TODO,project,2017-4-30,,1 d. ago:,A,2001,2017-5-1
-scratch,try atom IDE,past-scheduled,TODO,,2017-4-26,,Sched. 6x:,B,1104,2017-5-1
-workout,15 min workout,past-scheduled,TODO,workout,2017-4-30,,Sched. 2x:,B,1100,2017-5-1
 org,writing blog,past-scheduled,TODO,,2017-4-30,,Sched. 2x:,B,1100,2017-5-1
+bbwork,plan new BB work to do,scheduled,TODO,,2017-5-1,,Scheduled:,B,1099,2017-5-1
 org,leetcode review,past-scheduled,TODO,leetcode:review,2016-10-31,,Sched.183x:,C,281,2017-5-1
-org,review design pattern,past-scheduled,TODO,reading:book:review,2017-4-22,,Sched.10x:,C,108,2017-5-1
+org,review design pattern,past-scheduled,TODO,reading:review,2017-4-22,,Sched.10x:,C,108,2017-5-1
 org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-4-30,,1 d. ago:,C,1,2017-5-1
 org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-5-1,,,C,7700,2017-5-1
 org,reflection; writing journal,past-scheduled,TODO,,2017-4-30,,,A,2000,2017-5-1
-org,daily English reading,scheduled,TODO,reading,2017-5-1,,,B,1540,2017-5-1
+bbwork,go through team bf/bb queue,past-scheduled,TODO,,2017-4-30,,,B,1010,2017-5-1
+bbwork,daily workflow,scheduled,TODO,,2017-5-2,,Scheduled:,A,2099,2017-5-2
 org,clean-up org,scheduled,TODO,,2017-5-2,,Scheduled:,B,1099,2017-5-2
 org,prioritize the tasks,scheduled,TODO,,2017-5-3,,Scheduled:,A,2099,2017-5-3
-workout,15 min workout,scheduled,TODO,workout,2017-5-3,,Scheduled:,B,1099,2017-5-3
 scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-5-5,,Scheduled:,A,2099,2017-5-5
-workout,15 min workout,scheduled,TODO,workout,2017-5-6,,Scheduled:,B,1099,2017-5-6
+org,prioritize the tasks,scheduled,TODO,,2017-5-7,,Scheduled:,A,2099,2017-5-7
+org,weekly investment review,scheduled,TODO,,2017-5-7,,Scheduled:,A,2099,2017-5-7
+org,writing blog,scheduled,TODO,,2017-5-7,,Scheduled:,B,1099,2017-5-7
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-5-7,,Deadline:,C,0,2017-5-7
+bbwork,daily workflow,todo,TODO,,,,,A,2001,
 scratch,code refactoring tutorial,todo,TODO,worktime,,,,A,2001,
 org,prioritize the tasks,todo,TODO,,,,,A,2001,
 org,review tasks,todo,TODO,,,,,A,2001,
-org,adding content to the website,todo,TODO,project,,,,A,2001,
-org,fix google charts,todo,TODO,,,,,A,2001,
 org,reflection; writing journal,todo,TODO,,,,,A,2001,
 org,weekly investment review,todo,TODO,,,,,A,2001,
-workout,15 min workout,todo,TODO,workout,,,,B,1001,
+bbwork,go through team bf/bb queue,todo,TODO,,,,,B,1001,
+bbwork,add documentation to precog,todo,TODO,,,,,B,1001,
+bbwork,more unit test cases,todo,TODO,,,,,B,1001,
+bbwork,refactoring xquery scripts,todo,TODO,,,,,B,1001,
+bbwork,unit tests for each bug,todo,TODO,,,,,B,1001,
+bbwork,plan new BB work to do,todo,TODO,,,,,B,1001,
+bbwork,Generic work,todo,TODO,,,,,,1001,
+bbwork,fix bugs,todo,TODO,,,,,,1001,
+bbwork,MISC jobs,todo,TODO,,,,,,1001,
+bbwork,reading code,todo,TODO,,,,,,1001,
+bbwork,code template snippet,todo,TODO,,,,,,1001,
+bbwork,setup programming env,todo,TODO,,,,,,1001,
+bbwork,integrate jira with bbgithub,todo,TODO,,,,,,1001,
 scratch,writing a workout plan,todo,TODO,,,,,B,1001,
 scratch,interview preparation,todo,TODO,,,,,,1001,
 scratch,introduce UML to emacs,todo,TODO,move:emacs,,,,,1001,
@@ -43,7 +48,6 @@ scratch,future cpu overclock,todo,TODO,,,,,,1001,
 scratch,always forget starting pomodora,todo,TODO,,,,,B,1001,
 scratch,reward time,todo,TODO,,,,,B,1001,
 scratch,coding IDE,todo,TODO,,,,,,1001,
-scratch,try atom IDE,todo,TODO,,,,,B,1001,
 org,clean-up org,todo,TODO,,,,,B,1001,
 org,adding a countdown timmer,todo,TODO,project,,,,,1001,
 org,tagging systems for todo,todo,TODO,project,,,,,1001,
@@ -57,13 +61,13 @@ org,back-end support,todo,TODO,project,,,,B,1001,
 org,smart button enhancement,todo,TODO,,,,,B,1001,
 org,coursea,todo,TODO,,,,,,1001,
 org,daily English reading,todo,TODO,reading,,,,B,1001,
-org,read javascript design pattern.,todo,TODO,reading:book,,,,,1001,
-org,programming pearls read 1 chapter,todo,TODO,reading:book,,,,,1001,
-org,clean code review,todo,TODO,reading:book:review,,,,B,1001,
+org,read javascript design pattern.,todo,TODO,reading,,,,,1001,
+org,programming pearls read 1 chapter,todo,TODO,reading,,,,,1001,
+org,clean code review,todo,TODO,reading:review,,,,B,1001,
 org,read object oriented thought process,todo,TODO,reading:book,,,,,1001,
 org,writing blog,todo,TODO,,,,,B,1001,
 org,leetcode hard problems,todo,TODO,leetcode,,,,,1001,
-gtd,writing blog,todo,TODO,,,,,,1001,
+bbwork,create a demo template,todo,TODO,,,,,C,1,
 scratch,emacs mode cheetsheet,todo,TODO,move:emacs,,,,C,1,
 scratch,find a way to learn more in work,todo,TODO,,,,,C,1,
 scratch,8 cups of water alarm,todo,TODO,project,,,,C,1,
@@ -72,7 +76,7 @@ org,enhance the github personal website,todo,PROGRESS,project,,,,C,1,
 org,apply admin theme to website,todo,TODO,project,,,,C,1,
 org,portfolio tracker,todo,READY,project,,,,C,1,
 org,angular js front end support,todo,TODO,project,,,,C,1,
-org,review design pattern,todo,TODO,reading:book:review,,,,C,1,
+org,review design pattern,todo,TODO,reading:review,,,,C,1,
 org,read code complete,todo,TODO,reading:book,,,,C,1,
 org,read careercup 150,todo,PROGRESS,reading:interview,,,,C,1,
 org,setting up a auto downloading service,todo,TODO,,,,,C,1,
