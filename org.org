@@ -47,11 +47,12 @@ here I will list the main framework of my org documents.
   - pass the schedule date 
 
 ** TODO [#B] clean-up org 
-   SCHEDULED: <2017-05-02 Tue ++2w>
+   SCHEDULED: <2017-05-16 Tue ++2w>
+   - State "DONE"       from "TODO"       [2017-05-02 Tue 18:21]
    - State "DONE"       from "TODO"       [2017-04-20 Thu 18:09]
    - State "DONE"       from "TODO"       [2017-04-04 Tue 17:58]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-04-20 Thu 18:09]
+   :LAST_REPEAT: [2017-05-02 Tue 18:21]
    :END:
 * project scratch						    :project:
 here are several projects we need to focus on 
@@ -142,11 +143,6 @@ here are several projects we need to focus on
 
 
 
-
-
-
-** DONE [#A] fix google charts
-   CLOSED: [2017-05-01 Mon 11:11] DEADLINE: <2017-04-28 Sat>
 
 
 

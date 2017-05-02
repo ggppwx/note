@@ -21,10 +21,6 @@
 
 
 * emacs learning						 :move:emacs:
-** DONE set environment in work environment 
-   CLOSED: [2017-04-05 Wed 17:23]
-    
-
 ** TODO introduce UML to emacs 
 - [X] image solution
 - [ ] 
@@ -149,16 +145,19 @@ I think it's better writing game journal/reviview
 - reward after achieve the goal 
 
 ** TODO coding IDE
-*** DONE [#B] try atom IDE
-    CLOSED: [2017-05-01 Mon 11:11] SCHEDULED: <2017-04-26 Wed>
 *** TODO sublime advanced
 * TEMP
+
+** sublime config
+- sftp
+- emacs config
+- boxy theme 
 
 ** huichi project scratch 
 *** phase 1 notes
 - no angular js routing 
 - old style project structure 
-**** setting up a demo site
+**** DONE setting up a demo site
 - route to local machine 
 - port forwarding 
 
