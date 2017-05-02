@@ -155,6 +155,7 @@ FXI china large cap
 ** internet
 - aapl
 - fb
+- * tencent 
 
 ** bank
 - gs
