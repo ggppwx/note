@@ -1,11 +1,8 @@
-org,prioritize the tasks,past-scheduled,TODO,,2017-4-29,,Sched. 3x:,A,2101,2017-5-1
-org,weekly investment review,past-scheduled,TODO,,2017-4-30,,Sched. 2x:,A,2100,2017-5-1
-org,writing blog,past-scheduled,TODO,,2017-4-30,,Sched. 2x:,B,1100,2017-5-1
-bbwork,plan new BB work to do,scheduled,TODO,,2017-5-1,,Scheduled:,B,1099,2017-5-1
-org,review design pattern,past-scheduled,TODO,reading:book:review,2017-4-22,,Sched.10x:,C,108,2017-5-1
-org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-5-1,,,C,7700,2017-5-1
-bbwork,daily workflow,scheduled,TODO,,2017-5-2,,Scheduled:,A,2099,2017-5-2
+org,prioritize the tasks,past-scheduled,TODO,,2017-4-29,,Sched. 4x:,A,2102,2017-5-2
+org,writing blog,past-scheduled,TODO,,2017-4-30,,Sched. 3x:,B,1101,2017-5-2
 org,clean-up org,scheduled,TODO,,2017-5-2,,Scheduled:,B,1099,2017-5-2
+org,review design pattern,past-scheduled,TODO,reading:book:review,2017-4-22,,Sched.11x:,C,109,2017-5-2
+org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-5-1,,,C,7810,2017-5-2
 org,prioritize the tasks,scheduled,TODO,,2017-5-3,,Scheduled:,A,2099,2017-5-3
 scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-5-5,,Scheduled:,A,2099,2017-5-5
 org,prioritize the tasks,scheduled,TODO,,2017-5-7,,Scheduled:,A,2099,2017-5-7
@@ -52,16 +49,14 @@ scratch,coding IDE,todo,TODO,,,,,,1001,
 scratch,sublime advanced,todo,TODO,,,,,,1001,
 bbwork,go through team bf/bb queue,todo,TODO,,,,,B,1001,
 bbwork,add documentation to precog,todo,TODO,,,,,B,1001,
-bbwork,more unit test cases,todo,TODO,,,,,B,1001,
-bbwork,refactoring xquery scripts,todo,TODO,,,,,B,1001,
 bbwork,unit tests for each bug,todo,TODO,,,,,B,1001,
+bbwork,create a csv report end-to-end,todo,TODO,,,,,,1001,
 bbwork,plan new BB work to do,todo,TODO,,,,,B,1001,
 bbwork,Generic work,todo,TODO,,,,,,1001,
 bbwork,fix bugs,todo,TODO,,,,,,1001,
 bbwork,MISC jobs,todo,TODO,,,,,,1001,
 bbwork,reading code,todo,TODO,,,,,,1001,
 bbwork,code template snippet,todo,TODO,,,,,,1001,
-bbwork,setup programming env,todo,TODO,,,,,,1001,
 bbwork,integrate jira with bbgithub,todo,TODO,,,,,,1001,
 org,enhance the github personal website,todo,PROGRESS,project,,,,C,1,
 org,apply admin theme to website,todo,TODO,project,,,,C,1,
