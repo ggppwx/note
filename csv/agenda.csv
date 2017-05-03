@@ -1,8 +1,6 @@
-org,prioritize the tasks,scheduled,TODO,,2017-5-3,,Scheduled:,A,2099,2017-5-3
 org,writing blog,past-scheduled,TODO,,2017-4-30,,Sched. 4x:,B,1102,2017-5-3
 org,review design pattern,past-scheduled,TODO,reading:book:review,2017-4-22,,Sched.12x:,C,110,2017-5-3
 org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-5-3,,,C,7920,2017-5-3
-org,daily English reading,scheduled,TODO,reading,2017-5-3,,,B,1100,2017-5-3
 scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-5-5,,Scheduled:,A,2099,2017-5-5
 org,prioritize the tasks,scheduled,TODO,,2017-5-7,,Scheduled:,A,2099,2017-5-7
 org,weekly investment review,scheduled,TODO,,2017-5-7,,Scheduled:,A,2099,2017-5-7
@@ -38,7 +36,6 @@ scratch,interview preparation,todo,TODO,,,,,,1001,
 scratch,introduce UML to emacs,todo,TODO,move:emacs,,,,,1001,
 scratch,create template for common language,todo,TODO,move:emacs,,,,,1001,
 scratch,install emacs window management,todo,TODO,move:emacs,,,,,1001,
-scratch,source code reading,todo,TODO,,,,,B,1001,
 scratch,mouse-less work flow,todo,TODO,,,,,B,1001,
 scratch,archive for org mode.,todo,TODO,,,,,,1001,
 scratch,try out unit-test.,todo,PROGRESS,,,,,B,1001,
@@ -55,7 +52,7 @@ bbwork,plan new BB work to do,todo,TODO,,,,,B,1001,
 bbwork,Generic work,todo,TODO,,,,,,1001,
 bbwork,fix bugs,todo,TODO,,,,,,1001,
 bbwork,MISC jobs,todo,TODO,,,,,,1001,
-bbwork,reading code,todo,TODO,,,,,,1001,
+bbwork,source code reading,todo,TODO,,,,,B,1001,
 bbwork,code template snippet,todo,TODO,,,,,,1001,
 bbwork,integrate jira with bbgithub,todo,TODO,,,,,,1001,
 org,enhance the github personal website,todo,PROGRESS,project,,,,C,1,
