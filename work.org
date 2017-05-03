@@ -137,8 +137,8 @@ SCHEDULED: <2017-05-09 Tue ++1w>
 ** learn refactoring 
 file:refactor.org
 
+** TODO [#B] source code reading 
 
-** TODO reading code 
 
 * productivity
 ** TODO code template snippet
