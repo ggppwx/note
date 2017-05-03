@@ -9,7 +9,8 @@ here I will list the main framework of my org documents.
 
 * ORG MODE routine
 ** TODO [#A] prioritize the tasks 
-   SCHEDULED: <2017-04-29 Sat +4d>
+   SCHEDULED: <2017-05-03 Wed +4d>
+   - State "DONE"       from "TODO"       [2017-05-03 Wed 15:03]
    - State "DONE"       from "TODO"       [2017-04-25 Tue 11:52]
    - State "DONE"       from "TODO"       [2017-04-24 Mon 17:43]
    - State "DONE"       from "TODO"       [2017-04-17 Mon 14:49]
@@ -19,7 +20,7 @@ here I will list the main framework of my org documents.
    - State "DONE"       from "TODO"       [2017-04-02 Sun 22:45]
    - State "DONE"       from "TODO"       [2017-03-30 Thu 18:01]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-04-25 Tue 11:52]
+   :LAST_REPEAT: [2017-05-03 Wed 15:03]
    :END:
 - prioritize EVERY tasks in agenda view 
 - A: must-do, can't move to any other task if undone.
