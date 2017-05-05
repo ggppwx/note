@@ -147,7 +147,21 @@ I think it's better writing game journal/reviview
 - reward after achieve the goal 
 
 ** TODO coding IDE
-*** TODO sublime advanced
+*** DONE sublime advanced
+*** TODO online coding IDE
+*** TODO local-remote sync 
+- sftp ? 
+- how do we test ? 
+
+*** TODO home programming workstation. 
+- better monitor ? yeah i need a bigger screen 
+- desk ? 
+- switch between gaming system to workstation ? 
+- utilize the current monitor + macbook pro set 
+
+
+
+
 * TEMP
 
 ** sublime config

@@ -264,6 +264,7 @@ here are several projects we need to focus on
 - novel, newspaper, etc. 
 - considering to use the text processor 
 
+*** TODO [#B] the willpower instinct 
 
 *** design pattern [2/3] 					       :book:
 26 tutorials, 15 min each 
@@ -552,3 +553,4 @@ trainning focus:
 *** TODO [#C] learn market scanner 
 
 *** TODO [#C] investment book note 
+*** TODO IB API use 
