@@ -50,7 +50,7 @@
 
 * self-improvement 
 ** TODO [#A] code refactoring tutorial				   :worktime:
-   SCHEDULED: <2017-05-12 Fri ++1w>
+   SCHEDULED: <2017-05-31 Wed ++1w>
    - State "DONE"       from "TODO"       [2017-05-05 Fri 16:04]
    - State "DONE"       from "TODO"       [2017-05-01 Mon 11:11]
    - State "DONE"       from "TODO"       [2017-04-24 Mon 17:45]
@@ -80,9 +80,6 @@ file:refactor.org
 ** TODO [#C] find a way to learn more in work 
 
 ** TODO [#B] mouse-less work flow
-
-** DONE [#A] daily work work-flow
-   CLOSED: [2017-04-06 Thu 18:04] DEADLINE: <2017-04-07 Fri>
 
 ** TODO archive for org mode.
 - make a emacs command 
@@ -162,7 +159,8 @@ I think it's better writing game journal/reviview
 
 
 ** vacation homework 
-*** TODO reading 
+*** TODO reading willpower instinct
+
 
 
 
@@ -226,3 +224,8 @@ root/
 
 
 
+
+** willpower training 
+- step 1. self-awareness
+  - figure out when you give in to the temptation 
+  - what do you think at that time
