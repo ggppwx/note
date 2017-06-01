@@ -1,10 +1,13 @@
-org,prioritize the tasks,scheduled,TODO,,2017-5-31,,Scheduled:,A,2099,2017-5-31
 scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-5-31,,Scheduled:,A,2099,2017-5-31
-org,clean code review,past-scheduled,TODO,reading:book:review,2017-5-24,,Sched. 8x:,B,1106,2017-5-31
-org,writing blog,past-scheduled,TODO,,2017-5-28,,Sched. 4x:,B,1102,2017-5-31
-org,review design pattern,past-scheduled,TODO,reading:book:review,2017-5-22,,Sched.10x:,C,108,2017-5-31
 org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-5-31,,Deadline:,C,0,2017-5-31
-org,reflection; writing journal,past-scheduled,TODO,,2017-5-29,,,A,1450,2017-5-31
+scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-5-31,,Sched. 2x:,A,2100,2017-6-1
+org,clean code review,past-scheduled,TODO,reading:book:review,2017-5-24,,Sched. 9x:,B,1107,2017-6-1
+org,writing blog,past-scheduled,TODO,,2017-5-28,,Sched. 5x:,B,1103,2017-6-1
+org,review design pattern,past-scheduled,TODO,reading:book:review,2017-5-22,,Sched.11x:,C,109,2017-6-1
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-5-31,,1 d. ago:,C,1,2017-6-1
+org,reflection; writing journal,scheduled,TODO,,2017-6-1,,,A,1560,2017-6-1
+org,daily English reading,scheduled,TODO,reading,2017-6-1,,,B,1100,2017-6-1
+org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-6-1,,,C,1100,2017-6-1
 bbwork,daily workflow,scheduled,TODO,,2017-6-2,,Scheduled:,A,2099,2017-6-2
 org,leetcode review,scheduled,TODO,leetcode:review,2017-6-2,,Scheduled:,C,99,2017-6-2
 org,prioritize the tasks,scheduled,TODO,,2017-6-4,,Scheduled:,A,2099,2017-6-4
@@ -36,6 +39,7 @@ org,clean code review,todo,TODO,reading:book:review,,,,B,1001,
 org,read object oriented thought process,todo,TODO,reading:book,,,,,1001,
 org,writing blog,todo,TODO,,,,,B,1001,
 org,leetcode hard problems,todo,TODO,leetcode,,,,,1001,
+org,more strategy; program strategy on books,todo,TODO,investing,,,,,1001,
 scratch,writing a workout plan,todo,TODO,,,,,B,1001,
 scratch,interview preparation,todo,TODO,,,,,,1001,
 scratch,introduce UML to emacs,todo,TODO,move:emacs,,,,,1001,
