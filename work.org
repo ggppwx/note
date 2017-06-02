@@ -149,9 +149,7 @@ file:refactor.org
 
 * productivity
 ** TODO code template snippet
-** DONE setup programming env
 ** TODO integrate jira with bbgithub   
-
 
 
 

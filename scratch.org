@@ -180,6 +180,9 @@ I think it's better writing game journal/reviview
 - articles 
 - images 
 
+**** TODO choose another theme 
+- please follow the blue apron !!!
+
 *** strucutre
 root/
 -app.js
