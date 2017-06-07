@@ -122,6 +122,10 @@ description: leetcode problem solving.
 - easy version of previous problem 
 - it's a 3 pointer problem 
 - what if there are only 2 prime number ? 2 pointer problem 
+
+*** bit map 
+
+
 ** algorithm
 *** [#A] dynamic programming 
 

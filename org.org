@@ -157,7 +157,8 @@ here are several projects we need to focus on
 * 读书&写作
 ** reading							    :reading:
 *** TODO [#B] daily English reading
-    SCHEDULED: <2017-06-06 Tue .+1d>
+    SCHEDULED: <2017-06-07 Wed .+1d>
+    - State "DONE"       from "TODO"       [2017-06-06 Tue 09:24]
     - State "DONE"       from "TODO"       [2017-06-05 Mon 11:17]
     - State "DONE"       from "TODO"       [2017-06-02 Fri 12:21]
     - State "DONE"       from "TODO"       [2017-06-01 Thu 10:50]
@@ -271,7 +272,7 @@ here are several projects we need to focus on
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2017-06-05 Mon 11:17]
+    :LAST_REPEAT: [2017-06-06 Tue 09:24]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
@@ -480,7 +481,7 @@ file:leetcode.org
 | binary search    | X           |         |         |     2 |
 | tree             | X           |         |         |     2 |
 | stack            | X           |         |         |     2 |
-| heap             | X           |         |         |     0 |
+| heap             | X           |         |         |     2 |
 | bit              |             |         |         |     0 |
 | graph            |             |         |         |     0 |
 |------------------+-------------+---------+---------+-------|
@@ -492,7 +493,7 @@ file:leetcode.org
 | divide & conquer |             |         |         |     0 |
 |                  |             |         |         |     0 |
 |------------------+-------------+---------+---------+-------|
-| Total            |             |         |         |    14 |
+| Total            |             |         |         |    16 |
 #+TBLFM: $5='( + (if (string= $2 "X") 2 0) (if (string= $3 "X") 1 0) (if (string= $4 "X") 1 0))::@19$5=vsum(@2$5..@18$5)
 
 
@@ -523,7 +524,8 @@ trainning focus:
 - 132 in total. 
 - appro 80 days. 
 *** TODO [#C] leetcode 2 problems medium
-    SCHEDULED: <2017-06-01 Thu .+2d>
+    SCHEDULED: <2017-06-08 Thu .+2d>
+    - State "DONE"       from "TODO"       [2017-06-06 Tue 18:20]
     - State "DONE"       from "TODO"       [2017-02-28 Tue 22:07]
     - State "DONE"       from "TODO"       [2017-02-28 Tue 00:19]
     - State "DONE"       from "TODO"       [2016-12-22 Thu 11:34]
@@ -544,7 +546,7 @@ trainning focus:
     - State "DONE"       from "TODO"       [2016-07-22 Fri 11:17]
     - State "DONE"       from "TODO"       [2016-06-14 Tue 19:01]
     :PROPERTIES:
-    :LAST_REPEAT: [2017-02-28 Tue 22:07]
+    :LAST_REPEAT: [2017-06-06 Tue 18:20]
     :STYLE:    habit
     :CUSTOM_ID: lc1
     :END:      
