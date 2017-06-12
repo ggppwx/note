@@ -29,9 +29,7 @@
 ** emacs coding snippets
 *** TODO create template for common language
 
-** emacs shortcut 
-*** TODO install emacs window management 
-    
+** emacs shortcut     
 ** TODO [#C] emacs mode cheetsheet
 | <11> mode name | <20> link            |
 |----------------+----------------------|
@@ -102,7 +100,7 @@ file:refactor.org
 ** TODO [#C] 8 cups of water alarm 
 
 ** TODO list ORG mode page on web 
-*** TODO [#A] research
+*** TODO [#A] ORG mode page research
     DEADLINE: <2017-06-14 Wed>
 
 * learn new things 
@@ -163,7 +161,8 @@ I think it's better writing game journal/reviview
 
 ** TODO [#A] learn driving 
 
-** TODO prepare for new team
+** TODO [#B] prepare for new team
+
 
 * TEMP
 
