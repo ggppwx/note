@@ -101,6 +101,9 @@ file:refactor.org
 
 ** TODO [#C] 8 cups of water alarm 
 
+** TODO list ORG mode page on web 
+*** TODO [#A] research
+    DEADLINE: <2017-06-14 Wed>
 
 * learn new things 
 ** PROGRESS [#B] try out unit-test. 
@@ -160,6 +163,7 @@ I think it's better writing game journal/reviview
 
 ** TODO [#A] learn driving 
 
+** TODO prepare for new team
 
 * TEMP
 
