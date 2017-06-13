@@ -1,7 +1,6 @@
 scratch,ORG mode page research,upcoming-deadline,TODO,project,2017-6-12,,In   2 d.:,A,1998,2017-6-12
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-6-7,,5 d. ago:,B,1005,2017-6-12
+org,leetcode easy problem review,upcoming-deadline,TODO,leetcode:interview:review,2017-6-12,,In   2 d.:,B,998,2017-6-12
 org,review design pattern,past-scheduled,TODO,reading:book:review,2017-5-22,,Sched.22x:,C,120,2017-6-12
-org,leetcode review,past-scheduled,TODO,leetcode:review,2017-6-2,,Sched.11x:,C,109,2017-6-12
 org,clean-up org,scheduled,TODO,,2017-6-13,,Scheduled:,B,1099,2017-6-13
 scratch,ORG mode page research,deadline,TODO,project,2017-6-14,,Deadline:,A,2000,2017-6-14
 workout,15 min workout,scheduled,TODO,workout,2017-6-14,,Scheduled:,B,1099,2017-6-14
@@ -73,7 +72,6 @@ org,read code complete,todo,TODO,reading:book,,,,C,1,
 org,read careercup 150,todo,PROGRESS,reading:interview,,,,C,1,
 org,setting up a auto downloading service,todo,TODO,,,,,C,1,
 org,leetcode 2 problems medium,todo,TODO,leetcode,,,,C,1,
-org,leetcode review,todo,TODO,leetcode:review,,,,C,1,
 org,learn market scanner,todo,TODO,investing,,,,C,1,
 org,investment book note,todo,TODO,investing,,,,C,1,
 org,IB API use,todo,TODO,investing,,,,C,1,
