@@ -514,7 +514,7 @@ file:leetcode.org
 #+TBLFM: $5='( + (if (string= $2 "X") 2 0) (if (string= $3 "X") 1 0) (if (string= $4 "X") 1 0))::@19$5=vsum(@2$5..@18$5)
 
 
-** easy problems	[50%]					  :interview:
+** easy problems	[50%] 					  :interview:
    CLOSED: [2016-05-19 Thu 09:41]
 - 50 problems in total 
 - do review each week. 
@@ -530,10 +530,11 @@ trainning focus:
     :END:
 
 *** TODO [#B] leetcode easy problem review			     :review:
-    DEADLINE: <2017-05-31 Wed ++1w>
+    DEADLINE: <2017-06-14 Wed ++1w>
+    - State "DONE"       from "TODO"       [2017-06-12 Mon 23:06]
     - State "DONE"       from "TODO"       [2016-07-27 Wed 10:59]
     :PROPERTIES:
-    :LAST_REPEAT: [2016-07-27 Wed 10:59]
+    :LAST_REPEAT: [2017-06-12 Mon 23:06]
     :END:
 
 ** medium
@@ -572,8 +573,8 @@ trainning focus:
 
 ** TODO leetcode hard problems 
  
-** TODO [#C] leetcode review					     :review:
-   SCHEDULED: <2017-06-02 Fri>
+** DONE [#C] leetcode review					     :review:
+   CLOSED: [2017-06-12 Mon 23:06] SCHEDULED: <2017-06-02 Fri>
 
 
    
