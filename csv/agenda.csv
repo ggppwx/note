@@ -1,19 +1,19 @@
-scratch,ORG mode page research,deadline,TODO,project,2017-6-14,,Deadline:,A,2000,2017-6-14
+scratch,ORG mode page research,deadline,DONE,project,2017-6-14,,Deadline:,A,2000,2017-6-14
 org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-6-14,,Deadline:,B,1000,2017-6-14
 org,review design pattern,past-scheduled,TODO,reading:book:review,2017-5-22,,Sched.24x:,C,122,2017-6-14
-org,daily English reading,scheduled,TODO,reading,2017-6-14,,,B,1100,2017-6-14
 org,reflection; writing journal,scheduled,TODO,,2017-6-14,,,A,990,2017-6-14
 org,prioritize the tasks,scheduled,TODO,,2017-6-16,,Scheduled:,A,2099,2017-6-16
 bbwork,daily workflow,scheduled,TODO,,2017-6-16,,Scheduled:,A,2099,2017-6-16
+bbwork,effective python,scheduled,TODO,,2017-6-16,,Scheduled:,C,99,2017-6-16
 org,leetbook,scheduled,TODO,reading,2017-6-17,,Scheduled:,B,1099,2017-6-17
 org,writing blog,scheduled,TODO,,2017-6-18,,Scheduled:,B,1099,2017-6-18
+bbwork,effective python,scheduled,TODO,,2017-6-18,,Scheduled:,C,99,2017-6-18
 org,prioritize the tasks,todo,TODO,,,,,A,2001,
 org,review tasks,todo,TODO,,,,,A,2001,
 org,reflection; writing journal,todo,TODO,,,,,A,2001,
 org,weekly investment review,todo,TODO,,,,,A,2001,
 org,monthly investment review,todo,TODO,,,,,A,2001,
 scratch,code refactoring tutorial,todo,TODO,worktime,,,,A,2001,
-scratch,ORG mode page research,todo,TODO,project,,,,A,2001,
 scratch,learn driving,todo,TODO,,,,,A,2001,
 bbwork,daily workflow,todo,TODO,,,,,A,2001,
 org,clean-up org,todo,TODO,,,,,B,1001,
@@ -60,6 +60,7 @@ bbwork,go through team bf/bb queue,todo,TODO,,,,,B,1001,
 bbwork,add documentation to precog,todo,TODO,,,,,B,1001,
 bbwork,reporting test daily run,todo,TODO,,,,,,1001,
 bbwork,unit tests for each bug,todo,TODO,,,,,B,1001,
+bbwork,PRMC enhancement,todo,TODO,,,,,,1001,
 bbwork,plan new BB work to do,todo,TODO,,,,,B,1001,
 bbwork,Generic work,todo,TODO,,,,,,1001,
 bbwork,fix bugs,todo,TODO,,,,,,1001,
@@ -86,3 +87,4 @@ scratch,find a way to learn more in work,todo,TODO,,,,,C,1,
 scratch,8 cups of water alarm,todo,TODO,project,,,,C,1,
 scratch,things you r interested in.,todo,TODO,,,,,C,1,
 bbwork,create a demo template,todo,TODO,,,,,C,1,
+bbwork,effective python,todo,TODO,,,,,C,1,
