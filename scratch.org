@@ -100,7 +100,7 @@ file:refactor.org
 ** TODO [#C] 8 cups of water alarm 
 
 ** TODO list ORG mode page on web 
-*** TODO [#A] ORG mode page research
+*** DONE [#A] ORG mode page research
     DEADLINE: <2017-06-14 Wed>
 
 * learn new things 

@@ -107,6 +107,7 @@ SCHEDULED: <2017-06-20 Tue ++1w>
 *** TODO reporting test daily run 
 *** TODO [#B] unit tests for each bug 
 
+** TODO PRMC enhancement
 * KTLO
 
 
@@ -218,6 +219,12 @@ file:refactor.org
 
 
 
-* effective python
+* TODO [#C] effective python
+  SCHEDULED: <2017-06-16 Fri ++2d>
+  - State "DONE"       from "TODO"       [2017-06-14 Wed 16:19]
+  :PROPERTIES:
+  :LAST_REPEAT: [2017-06-14 Wed 16:19]
+  :END:
 ** pythonic 
 ** function
+
