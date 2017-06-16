@@ -1,11 +1,12 @@
 scratch,ORG mode page research,deadline,DONE,project,2017-6-14,,Deadline:,A,2000,2017-6-14
 org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-6-14,,Deadline:,B,1000,2017-6-14
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-6-14,,1 d. ago:,B,1001,2017-6-15
-org,review design pattern,past-scheduled,TODO,reading:book:review,2017-5-22,,Sched.25x:,C,123,2017-6-15
-org,reflection; writing journal,past-scheduled,TODO,,2017-6-14,,,A,1010,2017-6-15
 org,prioritize the tasks,scheduled,TODO,,2017-6-16,,Scheduled:,A,2099,2017-6-16
 bbwork,daily workflow,scheduled,TODO,,2017-6-16,,Scheduled:,A,2099,2017-6-16
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-6-14,,2 d. ago:,B,1002,2017-6-16
+org,review design pattern,past-scheduled,TODO,reading:book:review,2017-5-22,,Sched.26x:,C,124,2017-6-16
 bbwork,effective python,scheduled,TODO,,2017-6-16,,Scheduled:,C,99,2017-6-16
+org,reflection; writing journal,past-scheduled,TODO,,2017-6-14,,,A,1170,2017-6-16
+org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-6-16,,,C,1100,2017-6-16
 org,leetbook,scheduled,TODO,reading,2017-6-17,,Scheduled:,B,1099,2017-6-17
 org,writing blog,scheduled,TODO,,2017-6-18,,Scheduled:,B,1099,2017-6-18
 bbwork,effective python,scheduled,TODO,,2017-6-18,,Scheduled:,C,99,2017-6-18
@@ -23,6 +24,7 @@ org,tagging systems for todo,todo,TODO,project,,,,,1001,
 org,a text processor,todo,TODO,project,,,,,1001,
 org,online manager enhancement,todo,PROGRESS,project,,,,,1001,
 org,generic visualization,todo,PROGRESS,project,,,,,1001,
+org,better notebook management,todo,TODO,project,,,,B,1001,
 org,package the toolkit; make it portable,todo,TODO,project:emacs,,,,,1001,
 org,emacs GTD,todo,TODO,project:emacs,,,,,1001,
 org,huichi wang project,todo,TODO,project,,,,B,1001,
