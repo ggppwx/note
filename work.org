@@ -2,7 +2,8 @@
 #+CATEGORY: bbwork
 * workflow
 ** TODO [#A] daily workflow
-   SCHEDULED: <2017-06-19 Mon ++1w>   
+   SCHEDULED: <2017-06-26 Mon ++1w>   
+   - State "DONE"       from "TODO"       [2017-06-20 Tue 10:45]
    - State "DONE"       from "TODO"       [2017-06-09 Fri 13:19]
    - State "DONE"       from "TODO"       [2017-06-02 Fri 12:21]
    - State "DONE"       from "TODO"       [2017-05-31 Wed 10:03]
@@ -13,13 +14,13 @@
    - State "DONE"       from "TODO"       [2017-04-17 Mon 12:02]
    - State "DONE"       from "TODO"       [2017-04-10 Mon 12:34]
    - State "DONE"       from "TODO"       [2017-04-07 Fri 11:28]
-SCHEDULED: <2017-06-20 Tue ++1w>   
-SCHEDULED: <2017-06-21 Wed ++1w>   
-SCHEDULED: <2017-06-16 Fri ++1w>   
-SCHEDULED: <2017-06-19 Mon ++1w>   
-SCHEDULED: <2017-06-20 Tue ++1w>   
+SCHEDULED: <2017-06-27 Tue ++1w>   
+SCHEDULED: <2017-06-28 Wed ++1w>   
+SCHEDULED: <2017-06-23 Fri ++1w>   
+SCHEDULED: <2017-06-26 Mon ++1w>   
+SCHEDULED: <2017-06-27 Tue ++1w>   
    :PROPERTIES:
-   :LAST_REPEAT: [2017-06-09 Fri 13:19]
+   :LAST_REPEAT: [2017-06-20 Tue 10:45]
    :END:
 - reading work email   
 - reading jira tasks 
@@ -122,7 +123,8 @@ SCHEDULED: <2017-06-20 Tue ++1w>
 
 * retrospect
 ** TODO [#B] plan new BB work to do 
-   SCHEDULED: <2017-06-19 Mon ++1w>
+   SCHEDULED: <2017-06-26 Mon ++1w>
+   - State "DONE"       from "TODO"       [2017-06-20 Tue 10:46]
    - State "DONE"       from "TODO"       [2017-06-13 Tue 16:49]
    - State "DONE"       from "TODO"       [2017-06-06 Tue 11:04]
    - State "DONE"       from "TODO"       [2017-05-31 Wed 15:22]
@@ -134,7 +136,7 @@ SCHEDULED: <2017-06-20 Tue ++1w>
    - State "DONE"       from "TODO"       [2017-04-04 Tue 18:15]
    :PROPERTIES:
    :Effort:   10 min
-   :LAST_REPEAT: [2017-06-13 Tue 16:49]
+   :LAST_REPEAT: [2017-06-20 Tue 10:46]
    :END:
 
 * TODO Generic work 
