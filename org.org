@@ -9,7 +9,8 @@ here I will list the main framework of my org documents.
 
 * ORG MODE routine
 ** TODO [#A] prioritize the tasks 
-   SCHEDULED: <2017-06-16 Fri ++4d>
+   SCHEDULED: <2017-06-20 Tue ++4d>
+   - State "DONE"       from "TODO"       [2017-06-19 Mon 22:45]
    - State "DONE"       from "TODO"       [2017-06-12 Mon 15:44]
    - State "DONE"       from "TODO"       [2017-06-08 Thu 10:33]
    - State "DONE"       from "TODO"       [2017-06-05 Mon 16:51]
@@ -27,7 +28,7 @@ here I will list the main framework of my org documents.
    - State "DONE"       from "TODO"       [2017-04-02 Sun 22:45]
    - State "DONE"       from "TODO"       [2017-03-30 Thu 18:01]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-06-12 Mon 15:44]
+   :LAST_REPEAT: [2017-06-19 Mon 22:45]
    :END:
 - prioritize EVERY tasks in agenda view 
 - A: must-do, can't move to any other task if undone.
@@ -39,7 +40,8 @@ here I will list the main framework of my org documents.
   - sitting in schedule too long: more than 10
 
 ** TODO [#A] review tasks 
-   SCHEDULED: <2017-06-19 Mon ++1w>
+   SCHEDULED: <2017-06-26 Mon ++1w>
+   - State "DONE"       from "TODO"       [2017-06-19 Mon 22:41]
    - State "DONE"       from "TODO"       [2017-06-12 Mon 15:48]
    - State "DONE"       from "TODO"       [2017-06-05 Mon 16:51]
    - State "DONE"       from "TODO"       [2017-05-31 Wed 14:36]
@@ -50,7 +52,7 @@ here I will list the main framework of my org documents.
    - State "DONE"       from "TODO"       [2017-04-17 Mon 13:34]
    - State "DONE"       from "TODO"       [2017-04-10 Mon 12:31]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-06-12 Mon 15:48]
+   :LAST_REPEAT: [2017-06-19 Mon 22:41]
    :END:
 - go through all todo lists 
 - check org/scratch 
@@ -162,7 +164,8 @@ here are several projects we need to focus on
 * 读书&写作
 ** reading							    :reading:
 *** TODO [#B] daily English reading
-    SCHEDULED: <2017-06-17 Sat .+1d>
+    SCHEDULED: <2017-06-20 Tue .+1d>
+    - State "DONE"       from "TODO"       [2017-06-19 Mon 22:40]
     - State "DONE"       from "TODO"       [2017-06-16 Fri 09:54]
     - State "DONE"       from "TODO"       [2017-06-15 Thu 16:04]
     - State "DONE"       from "TODO"       [2017-06-14 Wed 11:26]
@@ -285,7 +288,7 @@ here are several projects we need to focus on
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2017-06-16 Fri 09:54]
+    :LAST_REPEAT: [2017-06-19 Mon 22:40]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
@@ -411,7 +414,8 @@ file:programming_pearls.org
 
 
 ** TODO [#A] reflection, writing journal
-   SCHEDULED: <2017-06-14 Wed .+3d/5d>
+   SCHEDULED: <2017-06-22 Thu .+3d/5d>
+   - State "DONE"       from "TODO"       [2017-06-19 Mon 22:45]
    - State "DONE"       from "TODO"       [2017-06-11 Sun 21:34]
    - State "DONE"       from "TODO"       [2017-06-05 Mon 22:06]
    - State "DONE"       from "TODO"       [2017-05-23 Tue 11:04]
@@ -467,7 +471,7 @@ file:programming_pearls.org
    - State "DONE"       from "TODO"       [2016-08-16 Tue 23:30]
    CLOCK: [2016-08-16 Tue 23:05]--[2016-08-16 Tue 23:30] =>  0:25
    :PROPERTIES:
-   :LAST_REPEAT: [2017-06-11 Sun 21:34]
+   :LAST_REPEAT: [2017-06-19 Mon 22:45]
    :STYLE:    habit
    :END:
 :LAST_REPEAT: [2016-10-07 Fri 17:48]
@@ -594,7 +598,8 @@ trainning focus:
 
 * finance
 ** TODO [#A] weekly investment review 
-   SCHEDULED: <2017-06-19 Mon ++1w>
+   SCHEDULED: <2017-06-26 Mon ++1w>
+   - State "DONE"       from "TODO"       [2017-06-19 Mon 22:41]
    - State "DONE"       from "TODO"       [2017-06-12 Mon 22:20]
    - State "DONE"       from "TODO"       [2017-06-05 Mon 16:51]
    - State "DONE"       from "TODO"       [2017-05-31 Wed 15:21]
@@ -605,7 +610,7 @@ trainning focus:
    - State "DONE"       from "TODO"       [2017-04-10 Mon 22:00]
    - State "DONE"       from "TODO"       [2017-04-02 Sun 22:45]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-06-12 Mon 22:20]
+   :LAST_REPEAT: [2017-06-19 Mon 22:41]
    :END:
 - go over the portfolio
 - loss & profit 
