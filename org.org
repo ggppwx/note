@@ -165,7 +165,9 @@ here are several projects we need to focus on
 * 读书&写作
 ** reading							    :reading:
 *** TODO [#B] daily English reading
-    SCHEDULED: <2017-06-21 Wed .+1d>
+    SCHEDULED: <2017-06-24 Sat .+1d>
+    - State "DONE"       from "TODO"       [2017-06-23 Fri 17:27]
+    - State "DONE"       from "TODO"       [2017-06-22 Thu 10:43]
     - State "DONE"       from "TODO"       [2017-06-20 Tue 10:46]
     - State "DONE"       from "TODO"       [2017-06-19 Mon 22:40]
     - State "DONE"       from "TODO"       [2017-06-16 Fri 09:54]
@@ -290,7 +292,7 @@ here are several projects we need to focus on
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2017-06-20 Tue 10:46]
+    :LAST_REPEAT: [2017-06-23 Fri 17:27]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
