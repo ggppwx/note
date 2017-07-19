@@ -133,7 +133,8 @@ https://bootsnipp.com/snippets/d0lAe
 
 
 
-** TODO [#A] huichi wang project 
+** TODO [#A] huichi wang project phase 1
+   DEADLINE: <2017-09-10 Sun>
 *** TODO go through the business plan 
 *** DONE [#B] website template 
    CLOSED: [2017-04-09 Sun 23:39] DEADLINE: <2017-04-09 Sun>
