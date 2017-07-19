@@ -1,19 +1,18 @@
-org,leetbook,scheduled,TODO,reading,2017-6-26,,Scheduled:,B,1099,2017-6-26
-org,prioritize the tasks,scheduled,TODO,,2017-6-28,,Scheduled:,A,2099,2017-6-28
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-6-28,,Deadline:,B,1000,2017-6-28
-org,leetbook,scheduled,TODO,reading,2017-6-29,,Scheduled:,B,1099,2017-6-29
-org,prioritize the tasks,past-scheduled,TODO,,2017-6-28,,Sched. 3x:,A,2101,2017-6-30
-org,writing blog,past-scheduled,TODO,,2017-6-25,,Sched. 6x:,B,1104,2017-6-30
-org,leetbook,past-scheduled,TODO,reading,2017-6-29,,Sched. 2x:,B,1100,2017-6-30
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-6-28,,2 d. ago:,B,1002,2017-6-30
-org,review design pattern,past-scheduled,TODO,reading:book:review,2017-6-22,,Sched. 9x:,C,107,2017-6-30
-org,effective python,upcoming-deadline,PROGRESS,reading:work,2017-6-30,,In   9 d.:,C,-9,2017-6-30
-org,reflection; writing journal,past-scheduled,TODO,,2017-6-28,,,A,1780,2017-6-30
-org,monthly investment review,scheduled,TODO,,2017-7-1,,Scheduled:,A,2099,2017-7-1
-bbwork,effective python,scheduled,TODO,,2017-7-1,,Scheduled:,C,99,2017-7-1
-org,prioritize the tasks,scheduled,TODO,,2017-7-2,,Scheduled:,A,2099,2017-7-2
-org,leetbook,scheduled,TODO,reading,2017-7-2,,Scheduled:,B,1099,2017-7-2
-org,writing blog,scheduled,TODO,,2017-7-2,,Scheduled:,B,1099,2017-7-2
+org,leetbook,scheduled,TODO,reading,2017-7-17,,Scheduled:,B,1099,2017-7-17
+scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-7-16,,Sched. 4x:,A,2102,2017-7-19
+org,clean code review,past-scheduled,TODO,reading:book:review,2017-7-5,,Sched.15x:,B,1113,2017-7-19
+org,writing blog,past-scheduled,TODO,,2017-7-16,,Sched. 4x:,B,1102,2017-7-19
+org,leetbook,past-scheduled,TODO,reading,2017-7-17,,Sched. 3x:,B,1101,2017-7-19
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-7-19,,Deadline:,B,1000,2017-7-19
+org,review design pattern,past-scheduled,TODO,reading:book:review,2017-6-22,,Sched.28x:,C,126,2017-7-19
+org,effective python,past-scheduled,PROGRESS,reading:work,2017-7-8,,Sched.12x:,C,110,2017-7-19
+org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-7-18,,,C,2970,2017-7-19
+org,leetbook,scheduled,TODO,reading,2017-7-20,,Scheduled:,B,1099,2017-7-20
+org,prioritize the tasks,scheduled,TODO,,2017-7-22,,Scheduled:,A,2099,2017-7-22
+org,review design pattern,scheduled,TODO,reading:book:review,2017-7-22,,Scheduled:,C,99,2017-7-22
+scratch,code refactoring tutorial,scheduled,TODO,worktime,2017-7-23,,Scheduled:,A,2099,2017-7-23
+org,leetbook,scheduled,TODO,reading,2017-7-23,,Scheduled:,B,1099,2017-7-23
+org,writing blog,scheduled,TODO,,2017-7-23,,Scheduled:,B,1099,2017-7-23
 org,prioritize the tasks,todo,TODO,,,,,A,2001,
 org,review tasks,todo,TODO,,,,,A,2001,
 org,huichi wang project,todo,TODO,project,,,,A,2001,
