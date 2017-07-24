@@ -35,7 +35,8 @@ SCHEDULED: <2017-08-08 Tue ++1w>
 
 
 ** TODO [#B] go through team bf/bb queue 
-   SCHEDULED: <2017-07-22 Sat .+3d/5d>
+   SCHEDULED: <2017-07-27 Thu .+3d/5d>
+   - State "DONE"       from "TODO"       [2017-07-24 Mon 12:02]
    - State "DONE"       from "TODO"       [2017-07-19 Wed 17:25]
    - State "DONE"       from "TODO"       [2017-06-30 Fri 15:19]
    - State "DONE"       from "TODO"       [2017-06-26 Mon 16:13]
@@ -103,7 +104,7 @@ SCHEDULED: <2017-08-08 Tue ++1w>
    - State "DONE"       from "TODO"       [2016-08-17 Wed 18:04]
    CLOCK: [2016-08-17 Wed 17:40]--[2016-08-17 Wed 18:04] =>  0:24
    :PROPERTIES:
-   :LAST_REPEAT: [2017-07-19 Wed 17:25]
+   :LAST_REPEAT: [2017-07-24 Mon 12:02]
    :STYLE:    habit
    :END:      
 
@@ -133,7 +134,8 @@ SCHEDULED: <2017-08-08 Tue ++1w>
 
 * retrospect
 ** TODO [#B] plan new BB work to do 
-   SCHEDULED: <2017-07-24 Mon ++1w>
+   SCHEDULED: <2017-07-31 Mon ++1w>
+   - State "DONE"       from "TODO"       [2017-07-24 Mon 12:02]
    - State "DONE"       from "TODO"       [2017-07-19 Wed 17:25]
    - State "DONE"       from "TODO"       [2017-06-26 Mon 16:12]
    - State "DONE"       from "TODO"       [2017-06-20 Tue 10:46]
@@ -148,7 +150,7 @@ SCHEDULED: <2017-08-08 Tue ++1w>
    - State "DONE"       from "TODO"       [2017-04-04 Tue 18:15]
    :PROPERTIES:
    :Effort:   10 min
-   :LAST_REPEAT: [2017-07-19 Wed 17:25]
+   :LAST_REPEAT: [2017-07-24 Mon 12:02]
    :END:
 
 * TODO Generic work 
