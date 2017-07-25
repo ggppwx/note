@@ -1,16 +1,13 @@
-org,prioritize the tasks,past-scheduled,TODO,,2017-7-22,,Sched. 3x:,A,2101,2017-7-24
-scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-7-23,,Sched. 2x:,A,2100,2017-7-24
-org,review tasks,scheduled,TODO,,2017-7-24,,Scheduled:,A,2099,2017-7-24
-org,weekly investment review,scheduled,TODO,,2017-7-24,,Scheduled:,A,2099,2017-7-24
-org,clean code review,past-scheduled,TODO,reading:book:review,2017-7-5,,Sched.20x:,B,1118,2017-7-24
-org,leetbook,past-scheduled,TODO,reading,2017-7-23,,Sched. 2x:,B,1100,2017-7-24
-org,writing blog,past-scheduled,TODO,,2017-7-23,,Sched. 2x:,B,1100,2017-7-24
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-7-19,,5 d. ago:,B,1005,2017-7-24
-org,effective python,past-scheduled,PROGRESS,reading:work,2017-7-8,,Sched.17x:,C,115,2017-7-24
-org,review design pattern,past-scheduled,TODO,reading:book:review,2017-7-22,,Sched. 3x:,C,101,2017-7-24
-org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-7-24,,,C,3520,2017-7-24
-org,reflection; writing journal,past-scheduled,TODO,,2017-7-22,,,A,1170,2017-7-24
+scratch,code refactoring tutorial,past-scheduled,TODO,worktime,2017-7-23,,Sched. 3x:,A,2101,2017-7-25
+org,clean code review,past-scheduled,TODO,reading:book:review,2017-7-5,,Sched.21x:,B,1119,2017-7-25
+org,leetbook,past-scheduled,TODO,reading,2017-7-23,,Sched. 3x:,B,1101,2017-7-25
+org,writing blog,past-scheduled,TODO,,2017-7-23,,Sched. 3x:,B,1101,2017-7-25
 org,clean-up org,scheduled,TODO,,2017-7-25,,Scheduled:,B,1099,2017-7-25
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-7-19,,6 d. ago:,B,1006,2017-7-25
+org,effective python,past-scheduled,PROGRESS,reading:work,2017-7-8,,Sched.18x:,C,116,2017-7-25
+org,review design pattern,past-scheduled,TODO,reading:book:review,2017-7-22,,Sched. 4x:,C,102,2017-7-25
+org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-7-24,,,C,3630,2017-7-25
+org,reflection; writing journal,scheduled,TODO,,2017-7-25,,,A,1230,2017-7-25
 org,prioritize the tasks,scheduled,TODO,,2017-7-26,,Scheduled:,A,2099,2017-7-26
 org,leetbook,scheduled,TODO,reading,2017-7-26,,Scheduled:,B,1099,2017-7-26
 org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-7-26,,Deadline:,B,1000,2017-7-26
