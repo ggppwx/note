@@ -48,7 +48,6 @@
 
 * self-improvement 
 ** TODO [#A] code refactoring tutorial				   :worktime:
-   SCHEDULED: <2017-07-09 Sun ++1w>
    - State "DONE"       from "TODO"       [2017-06-02 Fri 12:21]
    - State "DONE"       from "TODO"       [2017-05-05 Fri 16:04]
    - State "DONE"       from "TODO"       [2017-05-01 Mon 11:11]
