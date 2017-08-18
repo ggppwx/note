@@ -161,7 +161,9 @@ https://bootsnipp.com/snippets/d0lAe
 * 读书&写作
 ** reading							    :reading:
 *** TODO [#B] daily English reading
-    SCHEDULED: <2017-08-16 Wed .+1d>
+    SCHEDULED: <2017-08-19 Sat .+1d>
+    - State "DONE"       from "TODO"       [2017-08-18 Fri 13:39]
+    - State "DONE"       from "TODO"       [2017-08-16 Wed 19:37]
     - State "DONE"       from "TODO"       [2017-08-15 Tue 17:35]
     - State "DONE"       from "TODO"       [2017-07-26 Wed 14:39]
     - State "DONE"       from "TODO"       [2017-07-25 Tue 17:29]
@@ -297,7 +299,7 @@ https://bootsnipp.com/snippets/d0lAe
     - State "DONE"       from "TODO"       [2016-10-10 Mon 15:32]
     :PROPERTIES:
     :STYLE:    habit
-    :LAST_REPEAT: [2017-08-15 Tue 17:35]
+    :LAST_REPEAT: [2017-08-18 Fri 13:39]
     :END:
 - advanced English 
 - novel, newspaper, etc. 
@@ -356,7 +358,8 @@ file:programming_pearls.org
 
 *** read clean code 						       :book:
 **** TODO [#B] clean code review				     :review:
-     SCHEDULED: <2017-07-05 Wed .+1m>
+     SCHEDULED: <2017-09-18 Mon .+1m>
+     - State "DONE"       from "TODO"       [2017-08-18 Fri 17:15]
      - State "DONE"       from "TODO"       [2017-06-05 Mon 16:51]
      - State "DONE"       from "TODO"       [2017-04-24 Mon 17:59]
      - State "DONE"       from "TODO"       [2017-03-07 Tue 22:21]
@@ -364,7 +367,7 @@ file:programming_pearls.org
      - State "DONE"       from "TODO"       [2016-10-05 Wed 11:16]
      CLOCK: [2016-10-04 Tue 17:37]--[2016-10-05 Wed 11:16] => 17:39
      :PROPERTIES:
-     :LAST_REPEAT: [2017-06-05 Mon 16:51]
+     :LAST_REPEAT: [2017-08-18 Fri 17:15]
      :END:
 - watch video 
 - summarize 
@@ -600,7 +603,8 @@ trainning focus:
 
 * finance
 ** TODO [#A] weekly investment review 
-   SCHEDULED: <2017-07-31 Mon ++1w>
+   SCHEDULED: <2017-08-21 Mon ++1w>
+   - State "DONE"       from "TODO"       [2017-08-16 Wed 19:21]
    - State "DONE"       from "TODO"       [2017-07-25 Tue 17:28]
    - State "DONE"       from "TODO"       [2017-07-19 Wed 17:26]
    - State "DONE"       from "TODO"       [2017-06-26 Mon 10:32]
@@ -615,7 +619,7 @@ trainning focus:
    - State "DONE"       from "TODO"       [2017-04-10 Mon 22:00]
    - State "DONE"       from "TODO"       [2017-04-02 Sun 22:45]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-07-25 Tue 17:28]
+   :LAST_REPEAT: [2017-08-16 Wed 19:21]
    :END:
 - go over the portfolio
 - loss & profit 
@@ -623,10 +627,11 @@ trainning focus:
 
 
 ** TODO [#A] monthly investment review
-   SCHEDULED: <2017-08-01 Tue ++1m>
+   SCHEDULED: <2017-09-01 Fri ++1m>
+   - State "DONE"       from "TODO"       [2017-08-16 Wed 19:21]
    - State "DONE"       from "TODO"       [2017-07-19 Wed 17:25]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-07-19 Wed 17:25]
+   :LAST_REPEAT: [2017-08-16 Wed 19:21]
    :END:
 ** investment							  :investing:
 [[file:invest.org]]
