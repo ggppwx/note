@@ -1,16 +1,11 @@
-org,weekly investment review,scheduled,TODO,,2017-8-14,,Scheduled:,A,2099,2017-8-14
-org,monthly investment review,past-scheduled,TODO,,2017-8-1,,Sched.15x:,A,2113,2017-8-15
-org,weekly investment review,past-scheduled,TODO,,2017-8-14,,Sched. 2x:,A,2100,2017-8-15
-org,clean code review,past-scheduled,TODO,reading:review,2017-8-5,,Sched.11x:,B,1109,2017-8-15
-org,leetbook,past-scheduled,TODO,reading,2017-8-13,,Sched. 3x:,B,1101,2017-8-15
-org,writing blog,past-scheduled,TODO,,2017-8-13,,Sched. 3x:,B,1101,2017-8-15
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-8-9,,6 d. ago:,B,1006,2017-8-15
-org,effective python,past-scheduled,PROGRESS,reading:work,2017-7-8,,Sched.39x:,C,137,2017-8-15
-org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-8-15,,,C,5940,2017-8-15
-bbwork,daily workflow,scheduled,TODO,,2017-8-16,,Scheduled:,A,2099,2017-8-16
 org,leetbook,scheduled,TODO,reading,2017-8-16,,Scheduled:,B,1099,2017-8-16
 org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-8-16,,Deadline:,B,1000,2017-8-16
-bbwork,daily workflow,scheduled,TODO,,2017-8-18,,Scheduled:,A,2099,2017-8-18
+org,writing blog,past-scheduled,TODO,,2017-8-13,,Sched. 6x:,B,1104,2017-8-18
+org,leetbook,past-scheduled,TODO,reading,2017-8-16,,Sched. 3x:,B,1101,2017-8-18
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-8-16,,2 d. ago:,B,1002,2017-8-18
+org,effective python,past-scheduled,PROGRESS,reading:work,2017-7-8,,Sched.42x:,C,140,2017-8-18
+org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-8-17,,,C,6270,2017-8-18
+org,reflection; writing journal,scheduled,TODO,,2017-8-18,,,A,990,2017-8-18
 org,prioritize the tasks,scheduled,TODO,,2017-8-19,,Scheduled:,A,2099,2017-8-19
 org,leetbook,scheduled,TODO,reading,2017-8-19,,Scheduled:,B,1099,2017-8-19
 org,writing blog,scheduled,TODO,,2017-8-20,,Scheduled:,B,1099,2017-8-20
