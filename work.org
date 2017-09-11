@@ -2,7 +2,9 @@
 #+CATEGORY: bbwork
 * workflow
 ** TODO [#A] daily workflow
-   SCHEDULED: <2017-08-28 Mon ++1w>   
+   SCHEDULED: <2017-09-18 Mon ++1w>   
+   - State "DONE"       from "TODO"       [2017-09-11 Mon 14:16]
+   - State "DONE"       from "TODO"       [2017-09-06 Wed 13:15]
    - State "DONE"       from "TODO"       [2017-08-16 Wed 19:37]
    - State "DONE"       from "TODO"       [2017-08-15 Tue 17:34]
    - State "DONE"       from "TODO"       [2017-07-19 Wed 17:25]
@@ -21,13 +23,13 @@
    - State "DONE"       from "TODO"       [2017-04-17 Mon 12:02]
    - State "DONE"       from "TODO"       [2017-04-10 Mon 12:34]
    - State "DONE"       from "TODO"       [2017-04-07 Fri 11:28]
-SCHEDULED: <2017-08-29 Tue ++1w>   
-SCHEDULED: <2017-08-23 Wed ++1w>   
-SCHEDULED: <2017-08-25 Fri ++1w>   
-SCHEDULED: <2017-08-28 Mon ++1w>   
-SCHEDULED: <2017-08-29 Tue ++1w>   
+SCHEDULED: <2017-09-19 Tue ++1w>   
+SCHEDULED: <2017-09-20 Wed ++1w>   
+SCHEDULED: <2017-09-15 Fri ++1w>   
+SCHEDULED: <2017-09-18 Mon ++1w>   
+SCHEDULED: <2017-09-19 Tue ++1w>   
    :PROPERTIES:
-   :LAST_REPEAT: [2017-08-16 Wed 19:37]
+   :LAST_REPEAT: [2017-09-11 Mon 14:16]
    :END:
 - reading work email   
 - reading jira tasks 
@@ -36,98 +38,9 @@ SCHEDULED: <2017-08-29 Tue ++1w>
 
 
 
-** TODO [#B] go through team bf/bb queue 
-   SCHEDULED: <2017-08-21 Mon .+3d/5d>
-   - State "DONE"       from "TODO"       [2017-08-18 Fri 13:38]
-   - State "DONE"       from "TODO"       [2017-08-15 Tue 17:35]
-   - State "DONE"       from "TODO"       [2017-07-24 Mon 12:02]
-   - State "DONE"       from "TODO"       [2017-07-19 Wed 17:25]
-   - State "DONE"       from "TODO"       [2017-06-30 Fri 15:19]
-   - State "DONE"       from "TODO"       [2017-06-26 Mon 16:13]
-   - State "DONE"       from "TODO"       [2017-06-23 Fri 17:27]
-   - State "DONE"       from "TODO"       [2017-06-20 Tue 14:26]
-   - State "DONE"       from "TODO"       [2017-06-15 Thu 16:04]
-   - State "DONE"       from "TODO"       [2017-06-12 Mon 13:55]
-   - State "DONE"       from "TODO"       [2017-06-09 Fri 13:19]
-   - State "DONE"       from "TODO"       [2017-06-05 Mon 10:16]
-   - State "DONE"       from "TODO"       [2017-05-31 Wed 10:03]
-   - State "DONE"       from "TODO"       [2017-05-08 Mon 18:03]
-   - State "DONE"       from "TODO"       [2017-05-04 Thu 14:41]
-   - State "DONE"       from "TODO"       [2017-05-01 Mon 17:26]
-   - State "DONE"       from "TODO"       [2017-04-27 Thu 12:04]
-   - State "DONE"       from "TODO"       [2017-04-24 Mon 13:52]
-   - State "DONE"       from "TODO"       [2017-04-21 Fri 11:58]
-   - State "DONE"       from "TODO"       [2017-04-18 Tue 11:45]
-   - State "DONE"       from "TODO"       [2017-04-10 Mon 12:38]
-   - State "DONE"       from "TODO"       [2017-04-07 Fri 17:14]
-   - State "DONE"       from "TODO"       [2017-04-03 Mon 16:41]
-   - State "DONE"       from "TODO"       [2017-03-30 Thu 13:57]
-   - State "DONE"       from "TODO"       [2017-03-27 Mon 14:40]
-   - State "DONE"       from "TODO"       [2017-03-22 Wed 13:55]
-   - State "DONE"       from "TODO"       [2017-03-15 Wed 17:43]
-   - State "DONE"       from "TODO"       [2017-03-07 Tue 12:05]
-   - State "DONE"       from "TODO"       [2017-03-03 Fri 15:59]
-   - State "DONE"       from "TODO"       [2017-02-27 Mon 15:50]
-   - State "DONE"       from "TODO"       [2017-02-07 Tue 10:21]
-   - State "DONE"       from "TODO"       [2017-02-01 Wed 18:05]
-   - State "DONE"       from "TODO"       [2017-01-27 Fri 21:19]
-   - State "DONE"       from "TODO"       [2017-01-23 Mon 18:06]
-   - State "DONE"       from "TODO"       [2017-01-09 Mon 16:11]
-   - State "DONE"       from "TODO"       [2017-01-06 Fri 17:53]
-   - State "DONE"       from "TODO"       [2016-12-20 Tue 17:42]
-   - State "DONE"       from "TODO"       [2016-12-16 Fri 15:16]
-   - State "DONE"       from "TODO"       [2016-10-21 Fri 16:48]
-   - State "DONE"       from "TODO"       [2016-10-17 Mon 14:44]
-   - State "DONE"       from "TODO"       [2016-10-10 Mon 11:53]
-   - State "DONE"       from "TODO"       [2016-10-06 Thu 17:53]
-   - State "DONE"       from "TODO"       [2016-10-03 Mon 15:28]
-   - State "DONE"       from "TODO"       [2016-09-28 Wed 12:10]
-   - State "DONE"       from "TODO"       [2016-09-26 Mon 17:29]
-   - State "DONE"       from "TODO"       [2016-09-23 Fri 14:55]
-   - State "DONE"       from "TODO"       [2016-09-21 Wed 12:32]
-   - State "DONE"       from "TODO"       [2016-09-19 Mon 15:21]
-   - State "DONE"       from "TODO"       [2016-09-16 Fri 10:59]
-   - State "DONE"       from "TODO"       [2016-09-15 Thu 12:26]
-   CLOCK: [2016-09-15 Thu 11:54]--[2016-09-15 Thu 12:26] =>  0:32
-   - State "DONE"       from "TODO"       [2016-09-13 Tue 12:02]
-   - State "DONE"       from "TODO"       [2016-09-12 Mon 14:06]
-   CLOCK: [2016-09-12 Mon 13:47]--[2016-09-12 Mon 14:06] =>  0:19
-   - State "DONE"       from "TODO"       [2016-09-06 Tue 13:40]
-   - State "DONE"       from "TODO"       [2016-09-06 Tue 13:40]
-   - State "DONE"       from "TODO"       [2016-09-02 Fri 14:59]
-   CLOCK: [2016-09-02 Fri 14:23]--[2016-09-02 Fri 14:59] =>  0:36
-   - State "DONE"       from "TODO"       [2016-08-30 Tue 11:42]
-   - State "DONE"       from "TODO"       [2016-08-30 Tue 11:42]
-   - State "DONE"       from "TODO"       [2016-08-26 Fri 11:13]
-   CLOCK: [2016-08-26 Fri 11:03]--[2016-08-26 Fri 11:13] =>  0:10
-   - State "DONE"       from "TODO"       [2016-08-25 Thu 14:37]
-   CLOCK: [2016-08-25 Thu 14:30]--[2016-08-25 Thu 14:37] =>  0:07
-   - State "DONE"       from "TODO"       [2016-08-22 Mon 16:36]
-   - State "DONE"       from "TODO"       [2016-08-19 Fri 12:23]
-   CLOCK: [2016-08-19 Fri 12:08]--[2016-08-19 Fri 12:23] =>  0:15
-   - State "DONE"       from "TODO"       [2016-08-17 Wed 18:04]
-   CLOCK: [2016-08-17 Wed 17:40]--[2016-08-17 Wed 18:04] =>  0:24
-   :PROPERTIES:
-   :LAST_REPEAT: [2017-08-18 Fri 13:38]
-   :STYLE:    habit
-   :END:      
-
-
-
-
 * TODOLIST
-** TODO [#B] add documentation to precog 
 
-** TODO [#C] create a demo template 
-
-** Sprint
-*** TODO reporting test daily run 
-*** TODO [#B] unit tests for each bug 
-
-** TODO PRMC enhancement
 * KTLO
-
-
 
 * extra projects. 
 - reading books 
@@ -138,7 +51,8 @@ SCHEDULED: <2017-08-29 Tue ++1w>
 
 * retrospect
 ** TODO [#B] plan new BB work to do 
-   SCHEDULED: <2017-08-21 Mon ++1w>
+   SCHEDULED: <2017-09-18 Mon ++1w>
+   - State "DONE"       from "TODO"       [2017-09-11 Mon 14:16]
    - State "DONE"       from "TODO"       [2017-08-15 Tue 17:35]
    - State "DONE"       from "TODO"       [2017-07-24 Mon 12:02]
    - State "DONE"       from "TODO"       [2017-07-19 Wed 17:25]
@@ -155,7 +69,7 @@ SCHEDULED: <2017-08-29 Tue ++1w>
    - State "DONE"       from "TODO"       [2017-04-04 Tue 18:15]
    :PROPERTIES:
    :Effort:   10 min
-   :LAST_REPEAT: [2017-08-15 Tue 17:35]
+   :LAST_REPEAT: [2017-09-11 Mon 14:16]
    :END:
 
 * TODO Generic work 

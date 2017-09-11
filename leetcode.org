@@ -129,7 +129,7 @@ description: leetcode problem solving.
 ** algorithm
 *** [#A] dynamic programming 
 
-l*** backtracking 
+*** backtracking 
 
 
 *** math
