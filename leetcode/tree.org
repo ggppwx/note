@@ -1,1 +1,38 @@
 #+TITLE: tree
+* 98 Validate Binary Search Tree
+Given a binary tree, determine if it is a valid binary search tree (BST).
+Assume a BST is defined as follows:
+
+The left subtree of a node contains only nodes with keys less than the node's key.
+The right subtree of a node contains only nodes with keys greater than the node's key.
+Both the left and right subtrees must also be binary search trees.
+Example 1:
+    2
+   / \
+  1   3
+Binary tree [2,1,3], return true.
+Example 2:
+    1
+   / \
+  2   3
+Binary tree [1,2,3], return false.
+
+** hint 
+  - classic problems. 
+  - be aware of typo. check typo first 
+
+* 230 Kth Smallest Element in a BST
+Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
+
+Note: 
+You may assume k is always valid, 1 ≤ k ≤ BST's total elements.
+
+Follow up:
+What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?
+
+Credits:
+Special thanks to @ts for adding this problem and creating all test cases.
+
+** hint 
+  - inorder traversal
+  - nothing much 

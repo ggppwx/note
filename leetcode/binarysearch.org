@@ -1,1 +1,28 @@
 #+TITLE: binary search 
+* 33 Search in Rotated Sorted Array
+Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
+(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
+You are given a target value to search. If found in the array return its index, otherwise return -1.
+You may assume no duplicate exists in the array.
+
+** hint 
+  - corner cases 
+  - needs review 
+
+* 74 Search a 2D Matrix
+Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
+Integers in each row are sorted from left to right.
+The first integer of each row is greater than the last integer of the previous row.
+For example,
+Consider the following matrix:
+[
+  [1,   3,  5,  7],
+  [10, 11, 16, 20],
+  [23, 30, 34, 50]
+]
+Given target = 3, return true.
+
+** hint 
+  - pretty smooth 
+  - the only caveat is right = mid + 1. not right = mid. 
+    so that lp == rp could still be in the while loop 

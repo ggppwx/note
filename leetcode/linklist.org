@@ -1,1 +1,25 @@
 #+TITLE: linked list
+* 142 link list cycle 
+Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
+Note: Do not modify the linked list.
+Follow up:
+Can you solve it without using extra space?
+** hint 
+  - finding if it's cyclic is easy, in order to find the starting point,
+    need to find the loop size
+  - once found the loop size, check each node + loopsize is itself 
+  - be aware of the return clause after the a code block 
+  - be aware of the code block after while  
+  - check if the return case covers all scenarios  
+
+
+* 143 reorder link list.
+Given a singly linked list L: L0?L1?…?Ln-1?Ln,
+reorder it to: L0?Ln?L1?Ln-1?L2?Ln-2?…
+You must do this in-place without altering the nodes' values.
+For example,
+Given {1,2,3,4}, reorder it to {1,4,2,3}.
+** hint 
+  - draw link picture to assist 
+  - when writing node -> next = node2, there are usually multiple link manipulation. 
+    i.e. node1->next = node->next; node -> next = node1; 
