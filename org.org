@@ -18,7 +18,8 @@ here I will list the main framework of my org documents.
   - sitting in schedule too long: more than 10
 
 ** TODO [#A] review tasks 
-   SCHEDULED: <2017-09-18 Mon ++1w>
+   SCHEDULED: <2017-10-23 Mon ++1w>
+   - State "DONE"       from "TODO"       [2017-10-16 Mon 15:32]
    - State "DONE"       from "TODO"       [2017-09-11 Mon 14:16]
    - State "DONE"       from "TODO"       [2017-09-06 Wed 13:18]
    - State "DONE"       from "TODO"       [2017-08-15 Tue 17:34]
@@ -36,7 +37,7 @@ here I will list the main framework of my org documents.
    - State "DONE"       from "TODO"       [2017-04-17 Mon 13:34]
    - State "DONE"       from "TODO"       [2017-04-10 Mon 12:31]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-09-11 Mon 14:16]
+   :LAST_REPEAT: [2017-10-16 Mon 15:32]
    :END:
 - go through all todo lists 
 - check org/scratch 
@@ -62,6 +63,10 @@ here I will list the main framework of my org documents.
 * project scratch						    :project:
 here are several projects we need to focus on 
 
+** TODO new website like evernote
+
+
+
 ** TODO adding a countdown timmer
 - requirement
   - portable component
@@ -82,14 +87,13 @@ here are several projects we need to focus on
 
 ** PROGRESS online manager enhancement 
    - State "PROGRESS"   from "READY"      [2017-02-11 Sat 14:20]
-*** PROGRESS generic visualization
+*** COMP generic visualization
 - [X] adding support to leetcode
 - [ ] refactoring code, the code generic 
 - [ ] research ways to adding visualization
 
 *** TODO [#C] apply admin theme to website 
 
-*** TODO [#B] better notebook management 
 
 *** TODO [#B] adding a editable table
 https://bootsnipp.com/snippets/d0lAe
@@ -434,7 +438,8 @@ trainning focus:
 
 * finance
 ** TODO [#A] weekly investment review 
-   SCHEDULED: <2017-09-18 Mon ++1w>
+   SCHEDULED: <2017-10-23 Mon ++1w>
+   - State "DONE"       from "TODO"       [2017-10-17 Tue 09:41]
    - State "DONE"       from "TODO"       [2017-09-11 Mon 15:11]
    - State "DONE"       from "TODO"       [2017-09-06 Wed 13:18]
    - State "DONE"       from "TODO"       [2017-08-16 Wed 19:21]
@@ -452,7 +457,7 @@ trainning focus:
    - State "DONE"       from "TODO"       [2017-04-10 Mon 22:00]
    - State "DONE"       from "TODO"       [2017-04-02 Sun 22:45]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-09-11 Mon 15:11]
+   :LAST_REPEAT: [2017-10-17 Tue 09:41]
    :END:
 - go over the portfolio
 - loss & profit 
@@ -460,11 +465,13 @@ trainning focus:
 
 
 ** TODO [#A] monthly investment review
-   SCHEDULED: <2017-09-01 Fri ++1m>
+   SCHEDULED: <2017-11-01 Wed ++1m>
+   - State "DONE"       from "TODO"       [2017-10-17 Tue 09:41]
+   - State "DONE"       from "TODO"       [2017-09-13 Wed 18:37]
    - State "DONE"       from "TODO"       [2017-08-16 Wed 19:21]
    - State "DONE"       from "TODO"       [2017-07-19 Wed 17:25]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-08-16 Wed 19:21]
+   :LAST_REPEAT: [2017-10-17 Tue 09:41]
    :END:
 ** investment							  :investing:
 [[file:invest.org]]

@@ -1,1 +1,46 @@
 #+TITLE: dynamic programming
+* reference 
+https://www.topcoder.com/community/data-science/data-science-tutorials/dynamic-programming-from-novice-to-advanced/
+ 
+* note
+basic problem: coin problem, find minimum number of coins the sum of which is S.
+- a state: a sub solution 
+
+#+BEGIN_SRC
+Set Min[i] equal to Infinity for all of i
+Min[0]=0
+
+For i = 1 to S
+For j = 0 to N - 1
+   If (Vj<=i AND Min[i-Vj]+1<Min[i])
+Then Min[i]=Min[i-Vj]+1
+Output Min[S]
+
+#+END_SRC
+here Min is a state 
+
+** elementary problems 
+For that we will introduce a new term called recurrent relation
+Q: Given a sequence of N numbers – A[1] , A[2] , …, A[N] . Find the length of the longest non-decreasing sequence.
+in most cases, states reply on lower states. 
+
+#+BEGIN_SRC 
+for j = 0 to i 
+compare A[j] A[i]
+if A[j] <= A[i]
+
+check if  S[j] + 1 > S[i] 
+      S[i] = S[j] + 1
+#+END_SRC
+
+** bi demension problems 
+A table composed of N x M cells, each having a certain quantity of apples, is given. 
+You start from the upper-left corner. At each step you can go down or right one cell. 
+Find the maximum number of apples you can collect.
+- first, we have to find the states 
+
+#+begin_src
+
+#+end_src
+
+

@@ -309,3 +309,12 @@ sqrt(n)
 
 ** 144 binary tree preorder traverse
 iteration method? I think we should use stack 
+
+
+
+
+* sandbox
+#+begin_src python
+def test(self):
+  hi = 1
+#+end_src
