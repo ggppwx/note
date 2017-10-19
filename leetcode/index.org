@@ -1,0 +1,38 @@
+#+begin_html
+---
+layout: default
+title: INDEX
+---
+#+end_html
+
+* index 
+
+* data structre
+** array 
+** linklist
+** stack
+** heap
+** hashtable
+** tree
+** bitmap
+** graph
+
+* method
+** 2 points 
+** binary search 
+** sorting 
+** dynamic programming
+** divide & conquer
+** greedy
+** backtracking
+** math
+
+
+
+
+
+
+
+
+
+
