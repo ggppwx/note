@@ -47,7 +47,8 @@ here I will list the main framework of my org documents.
   - pass the schedule date 
 
 ** TODO [#B] clean-up org 
-   SCHEDULED: <2017-09-26 Tue ++3w>
+   SCHEDULED: <2017-11-07 Tue ++3w>
+   - State "DONE"       from "TODO"       [2017-10-19 Thu 16:27]
    - State "DONE"       from "TODO"       [2017-09-06 Wed 13:19]
    - State "DONE"       from "TODO"       [2017-08-15 Tue 18:14]
    - State "DONE"       from "TODO"       [2017-07-19 Wed 17:25]
@@ -58,7 +59,7 @@ here I will list the main framework of my org documents.
    - State "DONE"       from "TODO"       [2017-04-20 Thu 18:09]
    - State "DONE"       from "TODO"       [2017-04-04 Tue 17:58]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-09-06 Wed 13:19]
+   :LAST_REPEAT: [2017-10-19 Thu 16:27]
    :END:
 * project scratch						    :project:
 here are several projects we need to focus on 
@@ -67,7 +68,7 @@ here are several projects we need to focus on
 
 
 
-** TODO adding a countdown timmer
+** DONE adding a countdown timmer
 - requirement
   - portable component
   - adding event name + dealine. 
@@ -113,15 +114,8 @@ https://bootsnipp.com/snippets/d0lAe
 
 
 ** TODO [#A] huichi wang project phase 1
-   DEADLINE: <2017-10-31 Tue>
 *** DONE go through the business plan 
 *** TODO [#B] back-end support 
-*** TODO [#C] angular js front end support 
-
-
-
-
-
 * project KTLO
 ** TODO [#B] smart button enhancement
 - [ ] adding comment 
@@ -250,7 +244,7 @@ file:programming_pearls.org
     - State "PROGRESS"   from "READY"      [2017-06-13 Tue 14:10]
 
 
-** TODO [#A] reflection, writing journal
+** DONE [#A] reflection, writing journal
    SCHEDULED: <2017-08-18 Fri .+3d/5d>
    - State "DONE"       from "TODO"       [2017-08-15 Tue 17:35]
    - State "DONE"       from "TODO"       [2017-07-19 Wed 17:25]

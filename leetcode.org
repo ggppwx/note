@@ -318,3 +318,6 @@ iteration method? I think we should use stack
 def test(self):
   hi = 1
 #+end_src
+
+** non-repeated substring 
+- using array rather than map. 
