@@ -102,38 +102,7 @@ file:refactor.org
 *** DONE [#A] ORG mode page research
     DEADLINE: <2017-06-14 Wed>
 
-* learn new things 
-** PROGRESS [#B] try out unit-test. 
-   CLOCK: [2016-09-19 Mon 15:25]--[2016-09-19 Mon 16:51] =>  1:26
-   CLOCK: [2016-08-22 Mon 18:00]--[2016-08-22 Mon 18:23] =>  0:23
-- [X] test driven development 
-- [ ] unit test for nodejs project
 
-* entertainment
-** TODO future cpu overclock
-  - [X] testing in game in-game OSD
-  - [ ] lower voltage 
-  - [ ] to 4.5 ghz
-    - 1.21 above ! otherwise the system is unstable 
-  - [X] mem setting 
-    - xmp 2.0  reaches 3000 mhz 
-
-** game list
-I think it's better writing game journal/reviview
-*** COMP gaming benchmark 
-    CLOSED: [2016-10-17 Mon 17:10] SCHEDULED: <2016-10-05 Wed>
-    - Note taken on [2016-10-17 Mon 17:09] \\
-      conclusion: only Ark doesn't reach its full potential
-    :PROPERTIES:
-    :Effort:   30m
-    :END:
-- under nvidia default advanced setting
-  let 3d application decides
-- hwinfo + rivtuner does it affect the performance (test total war) 
-
-- [X] total war: all ultra 100+ fps AA doesn't matter 
-- [X] witcher 3 : hair-work AA off, vsync off, large town 60+ fps
-- [X] GTA  60+ fps
 
 
 * INBOX 

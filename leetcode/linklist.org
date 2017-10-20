@@ -1,4 +1,37 @@
 #+TITLE: linked list
+
+* 2 add two numbers
+You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.+
+Input: (2 -> 4 -> 3) + (5 -> 6 -> 4) Output: 7 -> 0 -> 8
+
+** hint 
+- link list may have different length
+- calculate 2 lists diffferently 
+
+
+* 19 remove nth node
+Given a linked list, remove the nth node from the end of list and return its head.+
+
+For example,
+Given linked list: 1->2->3->4->5, and n = 2.
+After removing the second node from the end, the linked list becomes 1->2->3->5.
+
+** req
+- 1 time traversal
+
+** hint 
+- 2 pointers
+  - 1st pointers goes to n, 2nd pointer starts. 
+  - when 1st pointer finishes, 2nd pointer goes to END - n 
+- starts from -1 position 
+
+- recursion 
+  - level n+1 is its parent node
+
+
+* 23 merging k sorted link list
+
+
 * 142 link list cycle 
 Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
 Note: Do not modify the linked list.
