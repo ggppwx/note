@@ -1,13 +1,13 @@
-org,clean code review,scheduled,TODO,reading:book:review,2017-10-18,,Scheduled:,B,1099,2017-10-18
-org,leetbook,scheduled,TODO,reading,2017-10-18,,Scheduled:,B,1099,2017-10-18
+org,clean code review,scheduled,TODO,book:review,2017-10-18,,Scheduled:,B,1099,2017-10-18
+org,leetbook,scheduled,TODO,,2017-10-18,,Scheduled:,B,1099,2017-10-18
 org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-10-18,,Deadline:,B,1000,2017-10-18
-org,writing blog,past-scheduled,TODO,,2017-10-15,,Sched. 5x:,B,1103,2017-10-19
-org,clean code review,past-scheduled,TODO,reading:book:review,2017-10-18,,Sched. 2x:,B,1100,2017-10-19
-org,leetbook,past-scheduled,TODO,reading,2017-10-18,,Sched. 2x:,B,1100,2017-10-19
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-10-18,,1 d. ago:,B,1001,2017-10-19
-org,effective python,past-scheduled,PROGRESS,reading:work,2017-7-8,,Sched.104x:,C,202,2017-10-19
-org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-10-18,,,C,13090,2017-10-19
-org,leetbook,scheduled,TODO,reading,2017-10-21,,Scheduled:,B,1099,2017-10-21
+org,writing blog,past-scheduled,TODO,,2017-10-15,,Sched. 6x:,B,1104,2017-10-20
+org,clean code review,past-scheduled,TODO,book:review,2017-10-18,,Sched. 3x:,B,1101,2017-10-20
+org,leetbook,past-scheduled,TODO,,2017-10-18,,Sched. 3x:,B,1101,2017-10-20
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-10-18,,2 d. ago:,B,1002,2017-10-20
+org,effective python,past-scheduled,PROGRESS,work,2017-7-8,,Sched.105x:,C,203,2017-10-20
+org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-10-20,,,C,13200,2017-10-20
+org,leetbook,scheduled,TODO,,2017-10-21,,Scheduled:,B,1099,2017-10-21
 org,writing blog,scheduled,TODO,,2017-10-22,,Scheduled:,B,1099,2017-10-22
 org,review tasks,todo,TODO,,,,,A,2001,
 org,huichi wang project phase 1,todo,TODO,project,,,,A,2001,
@@ -27,11 +27,11 @@ org,emacs GTD,todo,TODO,project:emacs,,,,,1001,
 org,back-end support,todo,TODO,project,,,,B,1001,
 org,smart button enhancement,todo,TODO,,,,,B,1001,
 org,coursea,todo,TODO,,,,,,1001,
-org,read javascript design pattern.,todo,TODO,reading:book,,,,,1001,
-org,programming pearls read 1 chapter,todo,TODO,reading:book,,,,,1001,
-org,clean code review,todo,TODO,reading:book:review,,,,B,1001,
-org,read object oriented thought process,todo,TODO,reading:book,,,,,1001,
-org,leetbook,todo,TODO,reading,,,,B,1001,
+org,read javascript design pattern.,todo,TODO,book,,,,,1001,
+org,programming pearls read 1 chapter,todo,TODO,book,,,,,1001,
+org,clean code review,todo,TODO,book:review,,,,B,1001,
+org,read object oriented thought process,todo,TODO,book,,,,,1001,
+org,leetbook,todo,TODO,,,,,B,1001,
 org,writing blog,todo,TODO,,,,,B,1001,
 org,leetcode easy problem review,todo,TODO,leetcode:interview:review,,,,B,1001,
 org,leetcode hard problems,todo,TODO,leetcode,,,,,1001,
@@ -43,8 +43,6 @@ scratch,create template for common language,todo,TODO,move:emacs,,,,,1001,
 scratch,mouse-less work flow,todo,TODO,,,,,B,1001,
 scratch,archive for org mode.,todo,TODO,,,,,,1001,
 scratch,list ORG mode page on web,todo,TODO,project,,,,,1001,
-scratch,try out unit-test.,todo,PROGRESS,,,,,B,1001,
-scratch,future cpu overclock,todo,TODO,,,,,,1001,
 scratch,always forget starting pomodora,todo,TODO,,,,,B,1001,
 scratch,reward time,todo,TODO,,,,,B,1001,
 scratch,coding IDE,todo,TODO,,,,,,1001,
@@ -63,10 +61,10 @@ bbwork,read code base,todo,TODO,,,,,,1001,
 org,enhance the github personal website,todo,PROGRESS,project,,,,C,1,
 org,apply admin theme to website,todo,TODO,project,,,,C,1,
 org,portfolio tracker,todo,READY,project,,,,C,1,
-org,review design pattern,todo,TODO,reading:book:review,,,,C,1,
-org,read code complete,todo,TODO,reading:book,,,,C,1,
-org,read careercup 150,todo,PROGRESS,reading:interview,,,,C,1,
-org,effective python,todo,PROGRESS,reading:work,,,,C,1,
+org,review design pattern,todo,TODO,book:review,,,,C,1,
+org,read code complete,todo,TODO,book,,,,C,1,
+org,read careercup 150,todo,PROGRESS,interview,,,,C,1,
+org,effective python,todo,PROGRESS,work,,,,C,1,
 org,setting up a auto downloading service,todo,TODO,,,,,C,1,
 org,leetcode 2 problems medium,todo,TODO,leetcode,,,,C,1,
 org,learn market scanner,todo,TODO,investing,,,,C,1,
