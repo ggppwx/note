@@ -432,7 +432,8 @@ trainning focus:
 
 * finance
 ** TODO [#A] weekly investment review 
-   SCHEDULED: <2017-10-23 Mon ++1w>
+   SCHEDULED: <2017-10-30 Mon ++1w>
+   - State "DONE"       from "TODO"       [2017-10-23 Mon 16:10]
    - State "DONE"       from "TODO"       [2017-10-17 Tue 09:41]
    - State "DONE"       from "TODO"       [2017-09-11 Mon 15:11]
    - State "DONE"       from "TODO"       [2017-09-06 Wed 13:18]
@@ -451,7 +452,7 @@ trainning focus:
    - State "DONE"       from "TODO"       [2017-04-10 Mon 22:00]
    - State "DONE"       from "TODO"       [2017-04-02 Sun 22:45]
    :PROPERTIES:
-   :LAST_REPEAT: [2017-10-17 Tue 09:41]
+   :LAST_REPEAT: [2017-10-23 Mon 16:10]
    :END:
 - go over the portfolio
 - loss & profit 

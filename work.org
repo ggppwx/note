@@ -53,7 +53,8 @@ SCHEDULED: <2017-10-24 Tue ++1w>
 
 * retrospect
 ** TODO [#B] plan new BB work to do 
-   SCHEDULED: <2017-10-23 Mon ++1w>
+   SCHEDULED: <2017-10-30 Mon ++1w>
+   - State "DONE"       from "TODO"       [2017-10-23 Mon 16:10]
    - State "DONE"       from "TODO"       [2017-10-19 Thu 16:27]
    - State "DONE"       from "TODO"       [2017-09-11 Mon 14:16]
    - State "DONE"       from "TODO"       [2017-08-15 Tue 17:35]
@@ -72,7 +73,7 @@ SCHEDULED: <2017-10-24 Tue ++1w>
    - State "DONE"       from "TODO"       [2017-04-04 Tue 18:15]
    :PROPERTIES:
    :Effort:   10 min
-   :LAST_REPEAT: [2017-10-19 Thu 16:27]
+   :LAST_REPEAT: [2017-10-23 Mon 16:10]
    :END:
 
 * TODO Generic work 

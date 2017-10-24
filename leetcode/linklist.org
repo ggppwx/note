@@ -30,6 +30,41 @@ After removing the second node from the end, the linked list becomes 1->2->3->5.
 
 
 * 23 merging k sorted link list
+Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.+
+Subscribe to see which companies asked this question
+
+** hint 
+- node starts from 0
+#+begin_src
+Node *result = new Node(0);
+Node *tmp = result;
+tmp -> next = l1;
+return result->next;
+#+end_src
+
+- merge 2 link list first 
+- after that merge step = step * 2 list 
+- logN * k 
+
+
+* swap nodes in pairs
+Given a linked list, swap every two adjacent nodes and return its head.+
+
+For example, Given 1->2->3->4, you should return the list as 2->1->4->3.
+Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
+
+** hint
+- swap node, not swap value of the node 
+#+begin_src
+Node *head = new Node(0);
+Node *current = head;
+
+Node *p1 = current -> next;
+Node *p2 = current -> next -> next;
+
+current = current -> next -> next;
+#+end_src
+
 
 
 * 142 link list cycle 
