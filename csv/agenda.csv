@@ -1,14 +1,18 @@
-org,clean code review,scheduled,TODO,book:review,2017-10-18,,Scheduled:,B,1099,2017-10-18
-org,leetbook,scheduled,TODO,,2017-10-18,,Scheduled:,B,1099,2017-10-18
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-10-18,,Deadline:,B,1000,2017-10-18
-org,writing blog,past-scheduled,TODO,,2017-10-15,,Sched. 6x:,B,1104,2017-10-20
-org,clean code review,past-scheduled,TODO,book:review,2017-10-18,,Sched. 3x:,B,1101,2017-10-20
-org,leetbook,past-scheduled,TODO,,2017-10-18,,Sched. 3x:,B,1101,2017-10-20
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-10-18,,2 d. ago:,B,1002,2017-10-20
-org,effective python,past-scheduled,PROGRESS,work,2017-7-8,,Sched.105x:,C,203,2017-10-20
-org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-10-20,,,C,13200,2017-10-20
-org,leetbook,scheduled,TODO,,2017-10-21,,Scheduled:,B,1099,2017-10-21
-org,writing blog,scheduled,TODO,,2017-10-22,,Scheduled:,B,1099,2017-10-22
+org,review tasks,scheduled,TODO,,2017-10-23,,Scheduled:,A,2099,2017-10-23
+org,review tasks,past-scheduled,TODO,,2017-10-23,,Sched. 2x:,A,2100,2017-10-24
+bbwork,daily workflow,scheduled,TODO,,2017-10-24,,Scheduled:,A,2099,2017-10-24
+bbwork,daily workflow,scheduled,TODO,,2017-10-24,,Scheduled:,A,2099,2017-10-24
+org,clean code review,past-scheduled,TODO,book:review,2017-10-18,,Sched. 7x:,B,1105,2017-10-24
+org,writing blog,past-scheduled,TODO,,2017-10-22,,Sched. 3x:,B,1101,2017-10-24
+org,leetbook,scheduled,TODO,,2017-10-24,,Scheduled:,B,1099,2017-10-24
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-10-18,,6 d. ago:,B,1006,2017-10-24
+org,effective python,past-scheduled,PROGRESS,work,2017-7-8,,Sched.109x:,C,207,2017-10-24
+org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-10-24,,,C,13640,2017-10-24
+bbwork,daily workflow,scheduled,TODO,,2017-10-25,,Scheduled:,A,2099,2017-10-25
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-10-25,,Deadline:,B,1000,2017-10-25
+bbwork,daily workflow,scheduled,TODO,,2017-10-27,,Scheduled:,A,2099,2017-10-27
+org,leetbook,scheduled,TODO,,2017-10-27,,Scheduled:,B,1099,2017-10-27
+org,writing blog,scheduled,TODO,,2017-10-29,,Scheduled:,B,1099,2017-10-29
 org,review tasks,todo,TODO,,,,,A,2001,
 org,huichi wang project phase 1,todo,TODO,project,,,,A,2001,
 org,weekly investment review,todo,TODO,,,,,A,2001,
