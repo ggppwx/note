@@ -23,6 +23,7 @@ description: leetcode problem solving.
 
 - 162 peak number
   - INT_MIN vs INT_MAX
+
 - 153 min in rotated sorted array
   - always think about 'else case' when coding
 

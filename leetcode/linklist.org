@@ -1,35 +1,112 @@
 #+TITLE: linked list
 
-* 2 add two numbers
+* add two numbers (2)
 You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.+
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4) Output: 7 -> 0 -> 8
 
 ** hint 
 - link list may have different length
-- calculate 2 lists diffferently 
+- calculate 2 lists differently 
+- don't forget last digit 
 
+** code 
+#+BEGIN_SRC c
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+    
+public:
+    ListNode *addTwoNumbers(ListNode *l1, ListNode *l2) {
+        int x=0, y=0, carry=0, sum=0;
+        ListNode *h=NULL, **t=&h;
+        
+        while (l1!=NULL || l2!=NULL){
+            x = getValueAndMoveNext(l1);
+            y = getValueAndMoveNext(l2);
+            
+            sum = carry + x + y;
+            
+            ListNode *node = new ListNode(sum%10);
+            *t = node;
+            t = (&node->next);
+            
+            carry = sum/10;
+        }
+        
+        if (carry > 0) {
+            ListNode *node = new ListNode(carry%10);
+            *t = node;
+        }
+        
+        return h;
+    }
+private:
+    int getValueAndMoveNext(ListNode* &l){
+        int x = 0;
+        if (l != NULL){
+            x = l->val;
+            l = l->next;
+        }
+        return x;
+    }
+};
+#+END_SRC
 
-* 19 remove nth node
+* remove nth node (19)
 Given a linked list, remove the nth node from the end of list and return its head.+
 
 For example,
 Given linked list: 1->2->3->4->5, and n = 2.
 After removing the second node from the end, the linked list becomes 1->2->3->5.
 
-** req
+** requirement 
 - 1 time traversal
 
 ** hint 
 - 2 pointers
   - 1st pointers goes to n, 2nd pointer starts. 
   - when 1st pointer finishes, 2nd pointer goes to END - n 
-- starts from -1 position 
+- starts from -1 position, to make removing 1st node 
 
 - recursion 
   - level n+1 is its parent node
 
+** code 
+#+begin_src cpp
+class Solution {
+public:
+    ListNode *removeNthFromEnd(ListNode *head, int n) {
+        if (head==NULL || n<=0){
+            return NULL;
+        }
+        ListNode fakeHead(0);
+        fakeHead.next=head;
+        head=&fakeHead;
+        
+        ListNode *p1, *p2;
+        p1=p2=head;
+        for(int i=0; i<n; i++){
+            if (p2==NULL) return NULL;
+            p2=p2->next;
+        }
+        while (p2->next!=NULL){
+            p2=p2->next;
+            p1=p1->next;
+        }
+        
+        p1->next = p1->next->next;
+        return head->next;
+    }
+};
+#+end_src 
 
-* 23 merging k sorted link list
+* merging k sorted link list (23)
 Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.+
 Subscribe to see which companies asked this question
 
@@ -46,6 +123,167 @@ return result->next;
 - after that merge step = step * 2 list 
 - logN * k 
 
+** code 
+#+begin_src cpp
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <iostream>
+#include <vector>
+ListNode *mergeTwoLists(ListNode* head1, ListNode* head2);
+ListNode *mergeTwoLists01(ListNode* head1, ListNode* head2);
+ListNode *mergeTwoLists02(ListNode* head1, ListNode* head2);
+
+ListNode *mergeKLists(vector<ListNode *> &lists) {
+    ListNode *p, *p1, *p2;
+    while(lists.size()>1) {
+        p1 = lists.back();    
+        lists.pop_back();
+        p2 = lists.back();    
+        lists.pop_back();
+        p = mergeTwoLists(p1, p2);
+        lists.insert(lists.begin(), p);
+    }
+    return lists.size()==1 ? lists[0] : NULL;
+
+    /* the following method is not fast enough! */
+    /*
+    ListNode* pHead = NULL;
+    for (int i=0; i<lists.size(); i++){
+        pHead = mergeTwoLists(pHead, lists[i]);
+    }
+    return pHead;
+    */
+}
+
+static int n=0;
+ListNode *mergeTwoLists(ListNode* head1, ListNode* head2){
+    if (n){
+        //cout << "------ method 01 ------" <<endl;
+        return mergeTwoLists01(head1, head2);
+    }
+    //cout << "------ method 02 ------" <<endl;
+    return mergeTwoLists02(head1, head2);
+}
+/*======================================================================*/
+/*                            Method One                                */
+/*======================================================================*/
+
+//#define INT_MAX   2147483647
+//#define INT_MIN   (-INT_MAX - 1)
+
+ListNode *mergeTwoLists01(ListNode* head1, ListNode* head2){
+    ListNode *p1 = head1,  *p2=head2;
+    static ListNode dummy(0);
+
+    dummy.next = p1;
+    ListNode *prev = &dummy;
+
+    while(p1 && p2){
+        if(p1->val < p2->val){
+            prev = p1;
+            p1 = p1->next;
+        }else{
+            prev->next = p2;
+            p2 = p2->next;
+            prev = prev->next;
+            prev->next = p1;
+        }
+    }
+    if (p2){
+        prev->next = p2;
+    }
+
+    return dummy.next;
+}
+
+/*======================================================================*/
+/*                            Method Two                                */
+/*======================================================================*/
+
+
+void TakeOutNode(ListNode*& head, ListNode*& tail, ListNode*& p);
+
+ListNode *mergeTwoLists02(ListNode* head1, ListNode* head2) {
+    ListNode *p1 = head1,  *p2=head2;
+
+    ListNode *pHead = NULL, *pTail=NULL;
+    while(p1 && p2){
+        if(p1->val < p2->val){
+            TakeOutNode(pHead, pTail, p1);
+        }else{
+            TakeOutNode(pHead, pTail, p2);
+        }
+    }
+
+    ListNode *p=NULL;
+    if (p1){
+        p = p1;
+    }else if (p2){
+        p = p2;
+    }
+    if (pHead==NULL){
+        return p;
+    }
+    pTail->next = p;
+    return pHead;
+}
+
+void TakeOutNode(ListNode*& head, ListNode*& tail, ListNode*& p){
+    ListNode *pNext = p->next;
+    if (head==NULL){
+        head = tail = p;
+    }else{
+        tail->next = p;
+        tail = p;
+    }
+    p->next = NULL;
+    p = pNext;
+}
+
+ListNode* createList(int a[], int n)
+{
+    ListNode *head=NULL, *p=NULL;
+    for(int i=0; i<n; i++){
+        if (head == NULL){
+            head = p = new ListNode(a[i]);
+        }else{
+            p->next = new ListNode(a[i]);
+            p = p->next;
+        }
+    }
+    return head;
+}
+
+
+int main(int argc, char**argv)
+{
+    srand(time(0));
+    if (argc>1){
+        n = atoi(argv[1]) % 2;
+    }
+
+    int a[] = {1,3,5,6,7,10};
+    int b[] = {0,4,6,8,9,11,20,30,40};
+    ListNode* p1 = createList(a, sizeof(a)/sizeof(int));
+    ListNode* p2 = createList(b, sizeof(b)/sizeof(int));
+
+    printList( mergeTwoLists(p1,p2) );
+    //mergeTwoLists(p1,p2) ;
+
+
+    vector<ListNode*> v;
+    for(int i=0; i<10240; i++) {
+        v.push_back(new ListNode(random()%100));
+    }
+    printList( mergeKLists(v) );
+    //mergeKLists(v);
+
+
+    cout << "method " << n+1 << endl;
+    return 0;
+}
+#+end_src
 
 * swap nodes in pairs
 Given a linked list, swap every two adjacent nodes and return its head.+
@@ -55,6 +293,11 @@ Your algorithm should use only constant space. You may not modify the values in 
 
 ** hint
 - swap node, not swap value of the node 
+- 2 points 
+- use dummy node
+
+
+
 #+begin_src
 Node *head = new Node(0);
 Node *current = head;
@@ -66,8 +309,63 @@ current = current -> next -> next;
 #+end_src
 
 
+** code 
+#+begin_src cpp
+class Solution {
+public:
+    Solution(){
+        srand(time(NULL));
+    }
+    /*
+     * Here we have two ways to solve this problem:
+     * 1) keep the list's nodes no change. only swap the data in the list node.
+     * 2) swap the list node physically.
+     */
+    ListNode *swapPairs(ListNode *head) {
+        if(random()%2){
+            return swapPairs1(head);
+        }
+        return swapPairs2(head);
+    }
+    /*just swap the node's value instead of node*/
+    ListNode *swapPairs1(ListNode *head) {
+        for (ListNode *p = head; p && p->next; p = p->next->next) {
+            int n = p->val;
+            p->val = p->next->val;
+            p->next->val = n;
+        }
+        return head;
+    }
+    /*swap the list nodes physically*/ 
+    ListNode *swapPairs2(ListNode *head) {
+        ListNode *h = NULL;
+        //using `*p` to traverse the linked list
+        for (ListNode *p = head; p && p->next; p = p->next) {
+            //`n` is `p`'s next node, and swap `p` and `n` physcially
+            ListNode *n = p->next;
+            p->next = n->next;
+            n->next = p;
+            //using `h` as `p`'s previous node
+            if (h){
+                h->next = n;
+            }
+            h=p;
+            
+            //determin the really 'head' pointer
+            if (head == p){
+                head = n;
+            }
+        }
+        
+        return head;
+    }
+};
+#+end_src
 
-* 142 link list cycle 
+
+
+
+* link list cycle (142)
 Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
 Note: Do not modify the linked list.
 Follow up:
@@ -80,8 +378,58 @@ Can you solve it without using extra space?
   - be aware of the code block after while  
   - check if the return case covers all scenarios  
 
+#+BEGIN_SRC
+2x + 2k = x + k + l
+x + k = l 
+l - k = x
+#+END_SRC
 
-* 143 reorder link list.
+#+BEGIN_SRC cpp
+class Solution {
+    
+private:
+    ListNode *p1, *p2;
+public:
+    bool hasCycle(ListNode *head) {
+        
+        if (head==NULL) return false;
+        p1=head;
+        p2=head;
+        
+        while (p1!=NULL && p2!=NULL){
+            
+            p1=p1->next;
+            
+            if (p2->next == NULL) return false;
+            
+            p2=p2->next->next;
+            
+            if (p1==p2) return true;
+        }
+        
+        return false;
+        
+    }  
+    
+    ListNode *detectCycle(ListNode *head) {
+        
+        if (hasCycle(head)==false){
+            return NULL;
+        }
+        
+        p1 = head;
+        
+        while (p1!=p2) {
+            p1 = p1->next;
+            p2 = p2->next;
+        }
+        
+        return p1;
+    }
+);
+#+END_SRC
+
+*  reorder link list (143)
 Given a singly linked list L: L0?L1?…?Ln-1?Ln,
 reorder it to: L0?Ln?L1?Ln-1?L2?Ln-2?…
 You must do this in-place without altering the nodes' values.
@@ -91,3 +439,43 @@ Given {1,2,3,4}, reorder it to {1,4,2,3}.
   - draw link picture to assist 
   - when writing node -> next = node2, there are usually multiple link manipulation. 
     i.e. node1->next = node->next; node -> next = node1; 
+
+** code 
+#+BEGIN_SRC cpp
+    void reorderList(ListNode *head) {
+        ListNode *pMid = findMidPos(head);
+        pMid = reverseList(pMid);
+        head = Merge(head, pMid);
+    }
+
+
+    ListNode* reverseList(ListNode *head){
+        ListNode* h = NULL;
+        ListNode *p;
+        while (head!=NULL){
+            p = head;
+            head = head->next;
+            p->next = h;
+            h = p;
+        }
+        return h;
+    }
+
+    ListNode* Merge(ListNode *h1, ListNode* h2) {
+        ListNode *p1=h1, *p2=h2, *p1nxt, *p2nxt;
+        while(p1!=NULL && p2!=NULL){
+            p1nxt = p1->next;
+            p2nxt = p2->next;
+            
+            p1->next = p2;
+            p2->next = p1nxt;
+            
+            if (p1nxt==NULL){
+                p2->next = p2nxt;
+                break;
+            }
+            p1=p1nxt;
+            p2=p2nxt;
+        }
+    }
+#+END_SRC
