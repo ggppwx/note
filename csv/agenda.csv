@@ -1,25 +1,43 @@
-org,review tasks,scheduled,TODO,,2017-10-23,,Scheduled:,A,2099,2017-10-23
-org,review tasks,past-scheduled,TODO,,2017-10-23,,Sched. 2x:,A,2100,2017-10-24
-bbwork,daily workflow,scheduled,TODO,,2017-10-24,,Scheduled:,A,2099,2017-10-24
-bbwork,daily workflow,scheduled,TODO,,2017-10-24,,Scheduled:,A,2099,2017-10-24
-org,clean code review,past-scheduled,TODO,book:review,2017-10-18,,Sched. 7x:,B,1105,2017-10-24
-org,writing blog,past-scheduled,TODO,,2017-10-22,,Sched. 3x:,B,1101,2017-10-24
-org,leetbook,scheduled,TODO,,2017-10-24,,Scheduled:,B,1099,2017-10-24
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-10-18,,6 d. ago:,B,1006,2017-10-24
-org,effective python,past-scheduled,PROGRESS,work,2017-7-8,,Sched.109x:,C,207,2017-10-24
-org,leetcode 2 problems medium,scheduled,TODO,leetcode,2017-10-24,,,C,13640,2017-10-24
-bbwork,daily workflow,scheduled,TODO,,2017-10-25,,Scheduled:,A,2099,2017-10-25
-org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-10-25,,Deadline:,B,1000,2017-10-25
-bbwork,daily workflow,scheduled,TODO,,2017-10-27,,Scheduled:,A,2099,2017-10-27
-org,leetbook,scheduled,TODO,,2017-10-27,,Scheduled:,B,1099,2017-10-27
-org,writing blog,scheduled,TODO,,2017-10-29,,Scheduled:,B,1099,2017-10-29
+org,review tasks,past-scheduled,TODO,,2017-10-23,,Sched.21x:,A,2120,2017-11-13
+org,weekly investment review,past-scheduled,TODO,,2017-10-30,,Sched.14x:,A,2113,2017-11-13
+org,monthly investment review,past-scheduled,TODO,,2017-11-1,,Sched.12x:,A,2111,2017-11-13
+workout,15 min workout,past-scheduled,TODO,workout,2017-6-14,,Sched.152x:,B,1251,2017-11-13
+org,writing blog,past-scheduled,TODO,,2017-6-18,,Sched.148x:,B,1247,2017-11-13
+org,leetbook,past-scheduled,TODO,,2017-9-15,,Sched.59x:,B,1158,2017-11-13
+org,clean code review,past-scheduled,TODO,book:review,2017-9-18,,Sched.56x:,B,1155,2017-11-13
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-6-14,,152 d. ago:,B,1152,2017-11-13
+org,clean-up org,past-scheduled,TODO,,2017-11-7,,Sched. 6x:,B,1105,2017-11-13
+org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-7-2,,Sched.134x:,C,233,2017-11-13
+org,effective python,past-scheduled,PROGRESS,work,2017-7-8,,Sched.128x:,C,227,2017-11-13
+workout,15 min workout,past-scheduled,TODO,workout,2017-6-14,,Scheduled:,B,1252,2017-11-14
+org,leetbook,past-scheduled,TODO,,2017-9-15,,Scheduled:,B,1159,2017-11-14
+org,leetcode easy problem review,deadline,TODO,leetcode:interview:review,2017-6-14,,Deadline:,B,1000,2017-11-15
+org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-7-2,,Scheduled:,C,235,2017-11-15
+workout,15 min workout,past-scheduled,TODO,workout,2017-6-14,,Scheduled:,B,1255,2017-11-17
+org,leetbook,past-scheduled,TODO,,2017-9-15,,Scheduled:,B,1162,2017-11-17
+org,leetcode 2 problems medium,past-scheduled,TODO,leetcode,2017-7-2,,Scheduled:,C,237,2017-11-17
+org,clean code review,past-scheduled,TODO,book:review,2017-9-18,,Scheduled:,B,1160,2017-11-18
+scratch,code refactoring tutorial,todo,TODO,worktime,,,,A,2001,
+scratch,learn driving,todo,TODO,,,,,A,2001,
 org,review tasks,todo,TODO,,,,,A,2001,
 org,huichi wang project phase 1,todo,TODO,project,,,,A,2001,
 org,weekly investment review,todo,TODO,,,,,A,2001,
 org,monthly investment review,todo,TODO,,,,,A,2001,
-scratch,code refactoring tutorial,todo,TODO,worktime,,,,A,2001,
-scratch,learn driving,todo,TODO,,,,,A,2001,
-bbwork,daily workflow,todo,TODO,,,,,A,2001,
+workout,15 min workout,todo,TODO,workout,,,,B,1001,
+scratch,writing a workout plan,todo,TODO,,,,,B,1001,
+scratch,interview preparation,todo,TODO,,,,,,1001,
+scratch,introduce UML to emacs,todo,TODO,move:emacs,,,,,1001,
+scratch,create template for common language,todo,TODO,move:emacs,,,,,1001,
+scratch,mouse-less work flow,todo,TODO,,,,,B,1001,
+scratch,archive for org mode.,todo,TODO,,,,,,1001,
+scratch,list ORG mode page on web,todo,TODO,project,,,,,1001,
+scratch,always forget starting pomodora,todo,TODO,,,,,B,1001,
+scratch,reward time,todo,TODO,,,,,B,1001,
+scratch,coding IDE,todo,TODO,,,,,,1001,
+scratch,online coding IDE,todo,TODO,,,,,,1001,
+scratch,local-remote sync,todo,TODO,,,,,,1001,
+scratch,home programming workstation.,todo,TODO,,,,,,1001,
+scratch,prepare for new team,todo,TODO,,,,,B,1001,
 org,clean-up org,todo,TODO,,,,,B,1001,
 org,new website like evernote,todo,TODO,project,,,,,1001,
 org,tagging systems for todo,todo,TODO,project,,,,,1001,
@@ -40,28 +58,11 @@ org,writing blog,todo,TODO,,,,,B,1001,
 org,leetcode easy problem review,todo,TODO,leetcode:interview:review,,,,B,1001,
 org,leetcode hard problems,todo,TODO,leetcode,,,,,1001,
 org,more strategy; program strategy on books,todo,TODO,investing,,,,,1001,
-scratch,writing a workout plan,todo,TODO,,,,,B,1001,
-scratch,interview preparation,todo,TODO,,,,,,1001,
-scratch,introduce UML to emacs,todo,TODO,move:emacs,,,,,1001,
-scratch,create template for common language,todo,TODO,move:emacs,,,,,1001,
-scratch,mouse-less work flow,todo,TODO,,,,,B,1001,
-scratch,archive for org mode.,todo,TODO,,,,,,1001,
-scratch,list ORG mode page on web,todo,TODO,project,,,,,1001,
-scratch,always forget starting pomodora,todo,TODO,,,,,B,1001,
-scratch,reward time,todo,TODO,,,,,B,1001,
-scratch,coding IDE,todo,TODO,,,,,,1001,
-scratch,online coding IDE,todo,TODO,,,,,,1001,
-scratch,local-remote sync,todo,TODO,,,,,,1001,
-scratch,home programming workstation.,todo,TODO,,,,,,1001,
-scratch,prepare for new team,todo,TODO,,,,,B,1001,
-bbwork,plan new BB work to do,todo,TODO,,,,,B,1001,
-bbwork,Generic work,todo,TODO,,,,,,1001,
-bbwork,fix bugs,todo,TODO,,,,,,1001,
-bbwork,MISC jobs,todo,TODO,,,,,,1001,
-bbwork,source code reading,todo,TODO,,,,,B,1001,
-bbwork,code template snippet,todo,TODO,,,,,,1001,
-bbwork,integrate jira with bbgithub,todo,TODO,,,,,,1001,
-bbwork,read code base,todo,TODO,,,,,,1001,
+gtd,writing blog,todo,TODO,,,,,,1001,
+scratch,emacs mode cheetsheet,todo,TODO,move:emacs,,,,C,1,
+scratch,find a way to learn more in work,todo,TODO,,,,,C,1,
+scratch,8 cups of water alarm,todo,TODO,project,,,,C,1,
+scratch,things you r interested in.,todo,TODO,,,,,C,1,
 org,enhance the github personal website,todo,PROGRESS,project,,,,C,1,
 org,apply admin theme to website,todo,TODO,project,,,,C,1,
 org,portfolio tracker,todo,READY,project,,,,C,1,
@@ -74,8 +75,3 @@ org,leetcode 2 problems medium,todo,TODO,leetcode,,,,C,1,
 org,learn market scanner,todo,TODO,investing,,,,C,1,
 org,investment book note,todo,TODO,investing,,,,C,1,
 org,IB API use,todo,TODO,investing,,,,C,1,
-scratch,emacs mode cheetsheet,todo,TODO,move:emacs,,,,C,1,
-scratch,find a way to learn more in work,todo,TODO,,,,,C,1,
-scratch,8 cups of water alarm,todo,TODO,project,,,,C,1,
-scratch,things you r interested in.,todo,TODO,,,,,C,1,
-bbwork,effective python,todo,TODO,,,,,C,1,
