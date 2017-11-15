@@ -229,12 +229,13 @@ file:programming_pearls.org
     :END:
 
 
-*** TODO [#B] leetbook 
-    SCHEDULED: <2017-09-15 Fri ++3d>
+*** DONE [#B] leetbook 
+    SCHEDULED: <2017-11-17 Fri ++3d>
+    - State "DONE"       from "TODO"       [2017-11-15 Wed 17:24]
     - State "DONE"       from "TODO"       [2017-09-13 Wed 18:01]
     - State "DONE"       from "TODO"       [2017-06-13 Tue 14:09]
     :PROPERTIES:
-    :LAST_REPEAT: [2017-09-13 Wed 18:01]
+    :LAST_REPEAT: [2017-11-15 Wed 17:24]
     :END:
 
 

@@ -113,22 +113,6 @@ file:refactor.org
 - daily contract 
 - reward after achieve the goal 
 
-** TODO coding IDE
-*** DONE sublime advanced
-*** TODO online coding IDE
-- bootply 
-- bootstrap studio
-
-
-*** TODO local-remote sync 
-- sftp ? 
-- how do we test ? 
-
-*** TODO home programming workstation. 
-- better monitor ? yeah i need a bigger screen 
-- desk ? 
-- switch between gaming system to workstation ? 
-- utilize the current monitor + macbook pro set 
 
 
 ** TODO [#A] learn driving 
@@ -137,11 +121,6 @@ file:refactor.org
 
 
 * TEMP
-
-** sublime config
-- sftp
-- emacs config
-- boxy theme 
 
 ** huichi project scratch 
 *** phase 1 notes
