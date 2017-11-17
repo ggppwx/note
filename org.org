@@ -68,12 +68,6 @@ here are several projects we need to focus on
 
 
 
-** DONE adding a countdown timmer
-- requirement
-  - portable component
-  - adding event name + dealine. 
-  - progress bar 
-  - integrate with tagging in the future
 ** TODO tagging systems for todo 
    
 
@@ -104,13 +98,8 @@ https://bootsnipp.com/snippets/d0lAe
 *** TODO package the toolkit, make it portable
 
 
-** TODO emacs GTD						      :emacs:
-- daily routine [[ORG MODE routine]]
 
 ** READY [#C] portfolio tracker 
-
-
-
 
 
 ** TODO [#A] huichi wang project phase 1
@@ -127,8 +116,6 @@ https://bootsnipp.com/snippets/d0lAe
 
 
 
-* online tutorial 
-** TODO  coursea
 
 
 * READING
@@ -168,19 +155,6 @@ file:designpattern.org
      :END:
 
 
-
-*** programming pearls [2/3]					       :book:
-8 chapters left 
-file:programming_pearls.org 
-**** TODO programming pearls read 1 chapter  
-     - Note taken on [2016-07-11 Mon 18:11] \\
-       this has been delayed for too long.
-     - State "DONE"       from "TODO"       [2016-06-30 Thu 10:34]
-     - State "DONE"       from "TODO"       [2016-06-02 Thu 13:35]
-     - State "DONE"       from "TODO"       [2016-05-09 Mon 12:09]
-     :PROPERTIES:
-     :LAST_REPEAT: [2016-06-30 Thu 10:34]
-     :END:
 
 
 *** read clean code 						       :book:
@@ -228,15 +202,6 @@ file:programming_pearls.org
     :LAST_REPEAT: [2017-02-21 Tue 00:16]
     :END:
 
-
-*** DONE [#B] leetbook 
-    SCHEDULED: <2017-11-17 Fri ++3d>
-    - State "DONE"       from "TODO"       [2017-11-15 Wed 17:24]
-    - State "DONE"       from "TODO"       [2017-09-13 Wed 18:01]
-    - State "DONE"       from "TODO"       [2017-06-13 Tue 14:09]
-    :PROPERTIES:
-    :LAST_REPEAT: [2017-11-15 Wed 17:24]
-    :END:
 
 
 *** PROGRESS [#C] effective python				       :work:
@@ -432,43 +397,6 @@ trainning focus:
    
 
 * finance
-** TODO [#A] weekly investment review 
-   SCHEDULED: <2017-10-30 Mon ++1w>
-   - State "DONE"       from "TODO"       [2017-10-23 Mon 16:10]
-   - State "DONE"       from "TODO"       [2017-10-17 Tue 09:41]
-   - State "DONE"       from "TODO"       [2017-09-11 Mon 15:11]
-   - State "DONE"       from "TODO"       [2017-09-06 Wed 13:18]
-   - State "DONE"       from "TODO"       [2017-08-16 Wed 19:21]
-   - State "DONE"       from "TODO"       [2017-07-25 Tue 17:28]
-   - State "DONE"       from "TODO"       [2017-07-19 Wed 17:26]
-   - State "DONE"       from "TODO"       [2017-06-26 Mon 10:32]
-   - State "DONE"       from "TODO"       [2017-06-19 Mon 22:41]
-   - State "DONE"       from "TODO"       [2017-06-12 Mon 22:20]
-   - State "DONE"       from "TODO"       [2017-06-05 Mon 16:51]
-   - State "DONE"       from "TODO"       [2017-05-31 Wed 15:21]
-   - State "DONE"       from "TODO"       [2017-05-15 Mon 09:05]
-   - State "DONE"       from "TODO"       [2017-05-02 Tue 12:03]
-   - State "DONE"       from "TODO"       [2017-04-25 Tue 18:11]
-   - State "DONE"       from "TODO"       [2017-04-17 Mon 13:34]
-   - State "DONE"       from "TODO"       [2017-04-10 Mon 22:00]
-   - State "DONE"       from "TODO"       [2017-04-02 Sun 22:45]
-   :PROPERTIES:
-   :LAST_REPEAT: [2017-10-23 Mon 16:10]
-   :END:
-- go over the portfolio
-- loss & profit 
-- plan 
-
-
-** TODO [#A] monthly investment review
-   SCHEDULED: <2017-11-01 Wed ++1m>
-   - State "DONE"       from "TODO"       [2017-10-17 Tue 09:41]
-   - State "DONE"       from "TODO"       [2017-09-13 Wed 18:37]
-   - State "DONE"       from "TODO"       [2017-08-16 Wed 19:21]
-   - State "DONE"       from "TODO"       [2017-07-19 Wed 17:25]
-   :PROPERTIES:
-   :LAST_REPEAT: [2017-10-17 Tue 09:41]
-   :END:
 ** investment							  :investing:
 [[file:invest.org]]
 *** TODO [#C] learn market scanner 
