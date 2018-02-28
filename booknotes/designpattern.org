@@ -469,7 +469,6 @@ public class Singleton{
 
 #+END_SRC
 
-* TODO placeholder at <2017-04-28 Fri>
 
 
 * DONE builder

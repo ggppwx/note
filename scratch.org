@@ -96,7 +96,7 @@ file:refactor.org
 - Analyze your email.
 - make it a scheduled task on server 
 
-** TODO [#C] 8 cups of water alarm 
+** DONE [#C] 8 cups of water alarm 
 
 ** TODO list ORG mode page on web 
 *** DONE [#A] ORG mode page research
