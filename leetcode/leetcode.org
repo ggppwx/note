@@ -1,0 +1,324 @@
+#+TITLE: leetcode problems 
+#+BEGIN_HTML
+---
+layout: post
+title: leet code notes (simple) 
+date: 2016-08-07
+tags: [notes, leetcode]
+description: leetcode problem solving. 
+---
+#+END_HTML
+
+
+* guild line 
+- think before coding 
+- syntax check 
+
+
+
+* category 
+** data structure 
+*** array 
+77 problems in total 
+
+- 162 peak number
+  - INT_MIN vs INT_MAX
+
+- 153 min in rotated sorted array
+  - always think about 'else case' when coding
+
+*** linklist 
+
+- 143 link list cycle 
+  - finding if it's cyclic is easy, in order to find the starting point,
+    need to find the loop size
+  - once found the loop size, check each node + loopsize is itself 
+  - be aware of the return clause after the a code block 
+  - be aware of the code block after while  
+  - check if the return case covers all scenarios  
+
+
+- 143 reversed link list.
+  - draw link picture to assist 
+  - when writing node -> next = node2, there are usually multiple link manipulation. 
+    i.e. node1->next = node->next; node -> next = node1; 
+
+
+*** hashtable 
+- 49 group anagrams 
+  - array initialization, using vector is safer !
+  - convert a string to a bitmap, each bit is from 0 - 25. then generate a hash 
+
+- 3 Longest Substring Without Repeating Characters
+  - window slides, move rP first, until hits the duplicated char, then move lR
+  - the key is to determine when lR moves, if the key is in the map, it moves, otherwise 
+    only moves rP. 
+  - no how loops work 
+
+- 274 H-index
+
+*** 2 points 
+  - 61 rotate list 
+   - trade space for time
+   - corner case: 
+    - no link list, link_len = 0
+    - k = 0 
+   
+- 75 sort colors 
+  - 2 points, zero = 0 two = n -1
+  - the cursor i, when it reaches 0, swaps 0 to the left, reaches 2
+    swap 2 to right
+  - need to redo checking after swap 
+  - since it goes from left to right, need to swap 2 first.
+
+*** binary search 
+- 33 Search in Rotated Sorted Array
+  - corner cases 
+  - needs review 
+
+- 74 Search a 2D Matrix
+  - pretty smooth 
+  - the only caveat is right = mid + 1. not right = mid. 
+    so that lp == rp could still be in the while loop 
+
+*** tree
+- 98 Validate Binary Search Tree
+  - classic problems. 
+  - be aware of typo. check typo first 
+
+- 230 Kth Smallest Element in a BST
+  - inorder traversal
+  - nothing much 
+
+
+*** stack
+- 394 Decode String
+  - treat integer as string and insert it into stack
+  - don't forget pop_back() the stack.
+  - chose the variable name wisely. do not 
+    use confusing names
+
+- 402 Remove K Digits
+  - using stack as temp container 
+  - remove all digits in stack > current digit 
+  - corner case 
+  - output, only print out the correct number of digits 
+  - NOTE: local variable may be changed !!!!!!
+    find where it's defined 
+  
+*** graph
+**** TODO 399. Evaluate Division
+
+
+*** heap 
+**** 451 Sort Characters By Frequency
+  - just simply use map, one time pass good.
+  - considering use heap ?
+
+**** 313 Super Ugly Number					    :dp:flag:
+- the later one result is based on previous ones 
+
+**** DONE ugly number 2
+     CLOSED: [2017-02-28 Tue 22:01]
+- easy version of previous problem 
+- it's a 3 pointer problem 
+- what if there are only 2 prime number ? 2 pointer problem 
+
+*** bit map 
+
+
+** algorithm
+*** [#A] dynamic programming 
+
+*** backtracking 
+
+
+*** math
+
+*** sort
+
+
+*** divide and conquer
+
+
+*** greedy 
+
+* problems 
+** 226 invert binary tree
+note we need to invert the pointer to left/right child, not the value.
+
+** 292 nim game
+You are playing the following Nim Game with your friend: 
+There is a heap of stones on the table, each time one of you take 
+turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.
+Both of you are very clever and have optimal strategies for the game. Write a function to determine whether you can win the game given the number of stones in the heap.
+For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend.
+
+*** code
+#+BEGIN_SRC c++
+class Solution {
+public:
+    bool canWinNim(int n) {
+        return n%4 != 0;      
+    }
+};
+#+END_SRC
+
+*** thoughs
+JUST write down each number and find the pattern
+
+
+** 237 delete Node in a tree 
+since it's a signle link list. instead of deleting the node itself, we should change the value 
+
+** 100 is same tree 
+check the tree value 
+
+** 171 excel sheet number 
+get base to the power exponent:  pow()
+
+
+
+
+** 206 reverse linke
+be aware of the conner case. don't forget the first node, don't forget some 
+extream cases
+
+
+
+
+** [#A] 198 house robber 
+this is a DP problem. recursive solution is better. 
+
+
+
+** 101 symmetric tree
+
+
+** realize the conner case 
+
+
+** 107 Binary Tree Level Order Traversal 
+traverse each level, save in vector 
+
+** 118 pascal's triangle
+#+BEGIN_SRC c++
+for (int i = 0; i< numRows;++i) {
+  for (int j = 0; j < i; ++j) {} // this should be the level number ! not numRows
+}
+#+END_SRC
+
+** 102 Binary Tree Level Order Traversal 
+unlike 107, it's top-down traverse. 
+we could get left , right child, then merge 
+
+
+** 172 Factorial Trailing Zeroes  
+if it has 5, it will have trailing 0. 
++ 5, 10, 15 ..
++ 25, 50, .... (has 2 '0' )
++ 125, 250, ....
+#+BEGIN_SRC c++
+    int trailingZeroes(int n) {
+         if ( n<0 ) return -1;
+        int sum = 0;
+        for (long i=5; i <= n ; i= i*5) { // why should i be long 
+            sum += n / i;
+        }        
+        return sum;
+    }
+#+END_SRC
+
+** 9 Palindrome Number
+sum += sum * 10 + remainder 
+----> sum = sum + sum * 10 + remainder 
+ 
+** valid sukoku
+to validate a square 
+#+BEGIN_SRC c++
+for (int k1 = 0; k1 < 3; ++k1) {
+for (int k2 = 0; k2 < 3; ++k2) {
+  // for each box
+  for (int i =0; i < 3; ++i)
+    for(int j=0; j < 3; ++j){
+       int newi = i + k1 * 3; // the real coordinate
+       int newj = j + k2 * 3;
+     }
+
+}
+}
+#+END_SRC
+
+** 88 merge sorted array
+- in-space merge. 
+- 2 exit condition
+#+BEGIN_SRC c++
+for (i = 0, j =0 ; i < m || j < n; ){
+    if (i == m ){ // i reach m,  j < n 
+      continue;  // don't forget skip the loop
+    }
+    if ( j == n){ // j == n, i < m
+      continue;
+    }
+}
+#+END_SRC c++
+
+
+** 223 rectangle area
+- calculate the overlap.
+- draw picture, discuss case by case 
+  - no overlap
+  - overlap. x = ( C > G ? G : C ) - ( A > E ? A : E  )
+ 
+** 189 rotate array
+check the function. return vs pass by ref
+
+** 165 compare version number
+
+** 155 min stack
+don't forget to reset min 
+min = INT_MAX; a constant value
+
+** [#A] 204 count prime
+- the first solution exceeds the time limit 
+- use bottom-up solution 
+- any number = i * [1 - x ] is not prime
+- use array to solve dp problem. 
+#+BEGIN_SRC c++
+for(int i = 2 ; i <= (int)sqrt(n) ; i++ ){  // if i > sqrt(n), situation already covered by i, prevous prime not work anymore 
+   if (isPrime[i] == true) // only check possible prime
+   for(int j = i + i; j < n; j += i){
+      // j is not prime 
+      isPrime[i] = false;
+   }
+}
+#+END_SRC
+
+
+** 357 Count Numbers with Unique Digits
+
+** 343 Integer Break
+- find regularity 
+- try bottom-up approach 
+
+** 268. Missing Number
+- simple algebra calculation 
+
+** 319 bulb switcher
+math. write the number and find the regular pattern
+sqrt(n)
+
+** 144 binary tree preorder traverse
+iteration method? I think we should use stack 
+
+
+
+
+* sandbox
+#+begin_src python
+def test(self):
+  hi = 1
+#+end_src
+
+** non-repeated substring 
+- using array rather than map. 
