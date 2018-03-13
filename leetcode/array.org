@@ -22,3 +22,151 @@ You may assume no duplicate exists in the array.
 
 ** hint
 always think about 'else case' when coding
+
+
+* 2 sum 
+Given an array of integers,
+find two numbers such that they add up to a specific target number.
+** hint
+   - if the array is sorted, then use 2 pointer is better solution 
+   - remeber this probelm is retunning indices, not the acutal number 
+     
+** code 
+#+BEGIN_SRC python
+class Solution(object):
+    def twoSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[int]
+        """
+        map = {}
+        for i, num in enumerate(nums): 
+            if target - num in map:
+                return [ map[target - num], i ]
+            else:
+                map[num] = i
+
+        return []
+#+END_SRC
+
+
+* palindrome integer
+palindrome integer is 121, 112211
+
+** hint
+ the key is to check if the number overflows
+
+** code 
+#+BEGIN_SRC cpp
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        int sum = 0;
+        int origin = x;
+        while(x > 0) {     
+            if (sum  > origin/10) // check if it overflows 
+                return false;
+            
+            sum = sum * 10 + x % 10;                        
+            x = x /10;             
+        }
+        return sum == origin;
+    }
+};
+#+END_SRC
+
+* implement strstr
+** hint 
+corner case:
+"" ""
+"a" "b"
+** code 
+#+BEGIN_SRC cpp
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        for (int i = 0; ; i ++ ) { // no need to set the boundary 
+            for (int j = 0; ; j++) {
+                if (j == needle.size()){ // check it first, to avoid conner case
+                    return i;
+                }
+                if (i+j == haystack.size()) return -1;
+
+                if (haystack[i + j] != needle[j]){ 
+                    // compare i+j, so if not work, backtrace to i 
+                    break;
+                }                
+            }            
+        }      
+    }
+};
+#+END_SRC
+
+
+* Reverse Words in a String
+Given s = "the sky is blue",
+return "blue is sky the".
+** hint
+need to reduce the space, we could retrieve the word 
+** code 
+#+BEGIN_SRC cpp
+class Solution {
+public:
+    void reverseWords(string &s) {
+        vector<string> words;
+        string word;
+        for (int i = 0; i < s.size(); i++){
+            if (s[i] != ' ') {
+                word += s[i];
+            } else {
+                if (!word.empty())
+                    words.push_back(word);
+                    word = ""; // reset string, don't use clear()
+            }
+        }
+        if (!word.empty())
+            words.push_back(word);
+        
+        s ="";
+        for (int i = words.size() - 1; i> 0; i--){
+            s = s +  words[i] + " ";
+        }
+        if (words.size() > 0) // check before accessing an array 
+            s += words[0];
+        
+    }
+};
+#+END_SRC
+
+
+* reverse words 2 
+
+*  Longest Substring Without Repeating Characters
+Given "abcabcbb", the answer is "abc", which the length is 3.
+** hint 
+   - use map to save the index
+   - compare start < indexMap
+
+** code
+#+begin_src cpp
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        // sliding window, change the start point 
+        // another solution is to 
+        int start  = 0;
+        map<char, int> charMap;
+        int maxLen = 0;
+        for ( int i = 0; i< s.size() ; i++) {
+            if (charMap.find(s[i]) != charMap.end() && charMap[s[i]] >= start) {
+                // unable to find the char 
+                start =  charMap[s[i]] + 1;
+            } 
+            charMap[s[i]] = i;
+            maxLen = maxLen > (i - start + 1) ? maxLen : (i - start + 1);
+        }
+        return maxLen;
+    }
+};
+#+end_src
