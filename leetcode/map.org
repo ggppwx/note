@@ -2,13 +2,159 @@
 #+TITLE: leetcode mind map
 
 [[file:map_diagram.png]]
+* data structre
+** min stack                                                           :WARN:
+   做的不好，限制条件完全没有考虑
+   use a stack to track min, only pops when nums.pop() <= minlast
+   python = [] is a list 
+
+* linked list
+** remove nth node from end of the list 
+   use Dummy node is the key, it saves a lot of time 
+
+** reverse linked list                                                :ERROR:
+   这么简单的题目想复杂了。太不应该了
+   保存足够多的temp pointers to iterate 
+   dont forget conner case list = []
+
+** merging 2 link list
+   don't forget move the node: n1 = n1.next
 
 * 2 pointers
+** Remove Duplicates from Sorted Array
+   good. but be aware of coner case 
+
+** Best Time to Buy and Sell Stock II
+   good. use while do for loop
+#+begin_src python
+class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        profit = 0
+        i = 0
+        j = 0
+        while i < len(prices): # use while do for loop 
+            j = i + 1
+            while j < len(prices) and prices[j] > prices[j-1]:
+                j = j + 1
+                
+            profit = profit + prices[j-1] - prices[i]            
+            i = j
+            
+        return profit
+#+end_src
+
 ** Longest Substring Without Repeating Characters
 
 
+** rotate array in place
+   concept not clear, k steps could be larger than length
+   思路对了。解题时候又忘记了.所以还是要想清楚了再写
+#+begin_src python
+class Solution(object):
+    def rotate(self, nums, k):
+        def rota(nums, i, j):            
+            while i < j:
+                tmp = nums[i]            
+                nums[i] = nums[j]
+                nums[j] = tmp
+                i = i+1
+                j = j-1
+        
+        rota(nums, 0, len(nums)-1)  # don't forget this 
+        rota(nums, 0, k%len(nums)-1)
+        rota(nums, k%len(nums), len(nums)-1)
+#+end_src
 
 
+* sorting & searching
+** Merge Sorted Array                                                 :ERROR:
+   没做出来
+   To save space, loop from END to START
+#+begin_src python
+class Solution(object):
+    def merge(self, nums1, m, nums2, n):
+        i = m - 1
+        j = n - 1
+        idx = 0
+        while i >=0 and j >= 0:  # loop from end to start 
+            if nums1[i] > nums2[j]:
+                nums1[m + n - 1 - idx] = nums1[i]
+                i = i -1
+            else:
+                nums1[m + n - 1 - idx] = nums2[j]
+                j = j -1
+            idx = idx + 1
+            
+        while j >= 0 :  # only check nums2, because nums1 is in-place 
+            nums1[m + n - 1 - idx] = nums2[j]
+            j = j - 1
+            idx = idx + 1        
+#+end_src
+
+** first bad version
+   typical binary searching, recursive solution 不要想太多。
+#+begin_src python
+class Solution(object):
+    def firstBadVersion(self, n):
+        self.lastBad = -1  # python closure 
+        def search(i, j):
+            if i > j:
+                return            
+            mid = (i + j)/2
+            if isBadVersion(mid): # left side
+                # inner functin can't change IMMUTABLE variable 
+                # OR use:
+                # nonlocal lastBad
+                self.lastBad = mid
+                search(i, mid - 1)
+            else:
+                search(mid + 1, j)
+        
+        search(1, n)
+        return self.lastBad
+#+end_src
+* trees
+** max depth of binary tree
+   finish in time
+** valid BST
+   finish in time, having some slight troube doing python
+
+** symmtric tree
+   stuck on this problem for a while.
+   思维定势了，一开始想直接递归，但发现和subtree问题根本没关系
+#+begin_src python
+class Solution(object):
+    def isSymmetric(self, root):
+        if root == None:
+            return True        
+        return self.traverse(root.left, root.right)
+    
+    def traverse(self, left, right): # how to compare the val parallelly ? recursion
+        if left == None and right == None:
+            return True
+        
+        elif left == None or right == None:
+            return False
+        
+        if left.val != right.val:
+            return False
+        
+        return self.traverse(left.left, right.right) and 
+        self.traverse(left.right, right.left) # don't forget compare another branch    
+#+end_src
+
+** binary tree level order traverse
+   check if array has index i? check the length of the array 
+   python data structre 
+
+** sorted array to BST
+   didn't come up with the solution
+   recursive solution, get the mid value everytime 
+   building tree is different from traverse tree, don't confuse 
 
 * dynamic programming
 ** Climbing Stairs
@@ -45,7 +191,11 @@ public:
 #+end_src
 
 ** best time buy & sell
+this time it's not ending with i, it's the profit <= i. 
+need to save state lowest
+
 #+begin_src cpp
+// 降维
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
@@ -57,18 +207,26 @@ public:
         
         // think about how brute force will do 
         // DP must be better than brute force 
+        int Lowest = INT_MIN;
         vector<int> profit(prices.size(), 0);        
         for (int i = 0; i < prices.size(); i++) {
             if ( i == 0 ) {
                 profit[i] = 0;
+                Lowest = prices[i];
             } else {
                 int max = 0;
+                // only need to track lowest prices
+                max = prices[i] - Lowest; 
+
+                /*
                 for (int j = 0; j <= i - 1 ; j++) {
                     max = max > (prices[i] -  prices[j]) ? max : (prices[i] -  prices[j]);
                 }
+                */
                 
                 int result = profit[i-1] > max ? profit[i-1] : max;
-                profit[i] = result;                
+                profit[i] = result;  
+                Lowest = Lowest < prices[i] ? Lowest : prices[i];              
             }            
         }
         
@@ -79,6 +237,85 @@ public:
 #+end_src
 
 
+** max subarray 
+ending with i is the key to trasfer the problem to 1 demension 
+#+begin_src cpp
+// Kadane algorithm
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums) {
+        if (nums.size() == 0) {
+            return 0;
+        }
+        
+        vector<int> memo(nums.size(), INT_MIN);
+        
+        int max = INT_MIN;
+        for (int i = 0; i < nums.size(); ++i) {
+            int tmp = maxSumEnding(i, nums, memo) ;
+            max = max > tmp ? max : tmp;
+        }
+        return max;
+    }
+    
+    int maxSumEnding(int idx, const vector<int> &nums, vector<int> &memo) {
+        // find the max ENDING with index i 
+        // use a DP solution
+        if (memo[idx] != INT_MIN) {
+            return memo[idx];
+        }
+        
+        if (idx == 0) {
+            return nums[idx];
+        }
+        
+        int tmp = maxSumEnding(idx - 1, nums, memo) + nums[idx];
+        int result = nums[idx] > tmp ? nums[idx] : tmp;
+        memo[idx] = result;
+        return result;
+    }
+};
+#+end_src
+
+** house robber
+得到状态方程是最重要的
+#+begin_src cpp
+class Solution {
+public:
+    int rob(vector<int>& nums) {
+        vector<int> rob(nums.size(), 0); // Ending with i
+        vector<int> maxR(nums.size(), 0); // max among 
+        for (int i = 0 ; i < nums.size(); i++) {            
+            if (i == 0) {
+                rob[i] = nums[i];
+                maxR[i] = nums[i];
+            }
+            else if (i == 1) {
+                rob[i] = nums[i];
+                maxR[i] =  nums[i] > nums[i-1] ? nums[i] : nums[i-1];                  
+            }
+            else{
+                /*
+                    maxR[i-2] = max ( rob[0] -> rob[i-2])
+                    save the sate if you don't want to compute max again 
+                */         
+                rob[i] = maxR[i-2] + nums[i];
+                maxR[i] =maxR[i-1] > rob[i] ? maxR[i-1] : rob[i]; // getting the correct minR
+
+/*
+or use: BETTER solution: 
+                maxR[i] = max ( maxR[i-2] + nums[i] ,  maxR[i-1] )
+*/
+            }            
+        }
+        int max = 0;
+        for (int i = 0; i < nums.size(); i++) {
+            max = max > rob[i] ? max : rob[i];
+        }
+        return max;
+    }
+};
+#+end_src
 ** Longest Palindromic Substring
 For example, “aba” is a palindome, “abc” is not.
 #+begin_src cpp
@@ -167,3 +404,19 @@ public:
 #+end_src
 
 
+* bit map 
+** Single Number                                                      :ERROR:
+   use bit opertion. 
+   没做出来
+#+begin_src python
+class Solution(object):
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        x = 0
+        for num in nums:
+            x = x ^ num
+        return x
+#+end_src

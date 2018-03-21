@@ -1,0 +1,10 @@
+#+TITLE: emacs cheat sheet
+* current config 
+- spacemacs 
+
+* useful shortcut 
+
+
+
+
+
