@@ -1,0 +1,58 @@
+#+TITLE: work in bloomberg
+
+* what did I do ? 
+** products I am working on 
+*** desktop reporting 
+**** p2ftsvc a metadata mapping service 
+**** alinris reporting generating service 
+     - cpp service 
+     - in memoroy database sqlite 
+     - xml as object 
+**** pisvc an interface service 
+**** reporting UI
+**** multiple report types 
+*** PREP/POINT reporting
+**** PREP UI
+***** TODO how does javascript work.
+     - javascript        
+     - prepsvc saving report definition 
+**** precog report generating engine 
+     - python service with xquery 
+       - a python bas service 
+     - use xquery to generate xml
+     - no database, direct xml control ( sorting, grouping etc. ) 
+     - refactored later, moving xml generation part out to forssvc 
+     - data transfer is done in database. artsmgr service 
+       - amazon s3 webstore 
+     - blob_helper: generating xml in python using lxml lib 
+     - performace 
+       - date merging 
+       - partial response 
+**** lshost 
+     - a job manager written in LUA. 
+**** cognos reporting workflow 
+***** boatload/rptcgsv java service to upload data to database 
+***** spectre, a service to generate cognos spec 
+**** plan b, forssvc workflow 
+***** forssvc aggregation service
+      - takes a ads data. cpp API reads to memory 
+      - field based aggregation 
+
+* tech
+** c++ 
+*** template 
+*** forward declaration 
+*** allocator 
+*** gtest
+
+
+** python
+** lua 
+** java
+** design patterns used ? 
+** desgin decisions 
+
+* Todo List 
+
+
+

@@ -1,8 +1,40 @@
 #+TITLE: emacs cheat sheet
+
 * current config 
 - spacemacs 
 
 * useful shortcut 
+
+| <40>                                     | <20>                 |
+|------------------------------------------+----------------------|
+| begin of buffer                          | M-<                  |
+| end of buffer                            | M->                  |
+|                                          |                      |
+| previous paren                           | M-C-p                |
+| next paren                               | M-C-n                |
+|                                          |                      |
+| search at point                          | M-s .                |
+| select at point                          | M-m v                |
+|                                          |                      |
+|                                          |                      |
+| swiper                                   |                      |
+| replace in swiper                        | M-q                  |
+|                                          |                      |
+|                                          |                      |
+|                                          |                      |
+|                                          |                      |
+| find file in projectile                  | M-m p f              |
+|                                          |                      |
+|                                          |                      |
+| git grep                                 | M-m s g p            |
+| git grep at point                        | M-m s g P            |
+|                                          |                      |
+|                                          |                      |
+| disply buffer                            | M-m b b              |
+|                                          |                      |
+|                                          |                      |
+
+
 
 
 
