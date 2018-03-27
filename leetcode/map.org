@@ -12,7 +12,7 @@
 ** remove nth node from end of the list 
    use Dummy node is the key, it saves a lot of time 
 
-** reverse linked list                                                :ERROR:
+** reverse linked list                                             :reviewed:
    这么简单的题目想复杂了。太不应该了
    保存足够多的temp pointers to iterate 
    dont forget conner case list = []
@@ -20,6 +20,124 @@
 ** merging 2 link list
    don't forget move the node: n1 = n1.next
 
+** Palindrome Linked List
+#+begin_src python
+class Solution(object):
+    def isPalindrome(self, head):
+        """
+        :type head: ListNode
+        :rtype: bool
+        """
+        node = head
+        result1 = ""
+        result2 = ""
+        while node:
+            result1 = result1 + str(node.val)
+            result2 = str(node.val) + result2
+            node = node.next
+        
+        return result1 == result2
+#+end_src
+
+** Linked List Cycle                                                   :WARN:
+   classic problem
+   2 nodes start at the same postion 
+#+begin_src python
+class Solution(object):
+    def hasCycle(self, head):
+        if head == None:
+            return False
+        
+        node1 = head # starting at the same position 
+        node2 = head
+        while node1 and node2 and node2.next: 
+            node1 = node1.next
+            # first check node2.next but it requires node2
+            # so check both
+            node2 = node2.next.next 
+            if node1 == node2:
+                return True        
+        return False
+#+end_src
+
+* array 
+** Plus One
+   - python array appending 
+   - don't forget adding 1 first 
+   - don't forget inserting last carry 
+
+** move zero 
+   - python range(n) = 0, 1, 2, ... n-1
+
+* string 
+** Reverse String                                                     :ERROR:
+   python 基础不行啊
+#+begin_src python
+    def reverseString(self, s):
+        # [begin:end:step]
+        # python string is inmutable
+        return s[::-1]
+#+end_src
+
+** reverse integer                                                     :WARN:
+   - consider overflow 
+   - max singed integer 2³¹-1
+   - python power 2**31
+
+** First Unique Character in a String                                  :WARN:
+   - use straght-foward solution first !!!!
+   - O(n)
+#+begin_src python
+class Solution(object):
+    def firstUniqChar(self, s):
+        map = {}
+        for i, c in enumerate(s):
+            if c not in map:
+                map[c] = i  # save the index
+            else:
+                map[c] = len(s)
+                
+        
+        min = len(s)
+        for key in map:
+            if map[key] < min:
+                min = map[key]
+        
+        if min == len(s):
+            return -1
+        else:
+            return min
+#+end_src
+
+** Valid Anagram
+   - if no unicode, we could use a array whose index is char - 'a'
+
+** Valid Palindrome                                                    :WARN:
+   - python check isalnum
+   - HAVING LOOP, CONSIDER EXIT ( avoid infinite loop ) 
+#+begin_src python
+class Solution(object):
+    def isPalindrome(self, s):
+        begin = 0
+        end = len(s) - 1
+        while begin < end:
+            while not s[begin].lower().isalnum() and begin < end:
+            # use while to pass invalid chars 
+                begin = begin + 1
+                
+            while not s[end].lower().isalnum() and begin < end:
+                end = end - 1            
+                
+            if begin < end and s[begin].lower() != s[end].lower():
+                return False
+            
+            begin = begin + 1
+            end = end - 1
+            
+        return True
+            
+        
+#+end_src
 * 2 pointers
 ** Remove Duplicates from Sorted Array
    good. but be aware of coner case 
@@ -61,8 +179,8 @@ class Solution(object):
                 tmp = nums[i]            
                 nums[i] = nums[j]
                 nums[j] = tmp
-                i = i+1
-                j = j-1
+                i += 1 # python's i++
+                j -= 1
         
         rota(nums, 0, len(nums)-1)  # don't forget this 
         rota(nums, 0, k%len(nums)-1)
@@ -71,7 +189,7 @@ class Solution(object):
 
 
 * sorting & searching
-** Merge Sorted Array                                                 :ERROR:
+** Merge Sorted Array                                              :reviewed:
    没做出来
    To save space, loop from END to START
 #+begin_src python
@@ -123,7 +241,7 @@ class Solution(object):
 ** valid BST
    finish in time, having some slight troube doing python
 
-** symmtric tree
+** symmtric tree                                                       :WARN:
    stuck on this problem for a while.
    思维定势了，一开始想直接递归，但发现和subtree问题根本没关系
 #+begin_src python
@@ -151,12 +269,14 @@ class Solution(object):
    check if array has index i? check the length of the array 
    python data structre 
 
-** sorted array to BST
+** sorted array to BST                                             :reviewed:
    didn't come up with the solution
    recursive solution, get the mid value everytime 
    building tree is different from traverse tree, don't confuse 
 
 * dynamic programming
+  - 2 approaches: recursion and bottom up
+  - key: save the states  
 ** Climbing Stairs
 #+begin_src cpp
 // classic DP
@@ -405,7 +525,7 @@ public:
 
 
 * bit map 
-** Single Number                                                      :ERROR:
+** Single Number                                                   :reviewed:
    use bit opertion. 
    没做出来
 #+begin_src python
