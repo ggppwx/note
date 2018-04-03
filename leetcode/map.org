@@ -68,9 +68,161 @@ class Solution(object):
 
 ** move zero 
    - python range(n) = 0, 1, 2, ... n-1
+** valid sudoku                                                        :WARN:
+   - 难点是How to go through each cell 
+#+begin_src python
+class Solution(object):
+    def isValidSudoku(self, board):
+        i = 0
+        j = 0
+        for i in range(len(board)):
+            check = {}
+            check2 = {}
+            check3 = {}
+            for j in range(len(board)):
+                if board[i][j] in check:
+                    return False
+                elif board[i][j] != '.':
+                    check[board[i][j]] = 1
+                    
+                if board[j][i] in check2:
+                    return False
+                elif board[j][i] != '.':
+                    check2[board[j][i]] = 1
+                
+                # key is here, consider i as number not axis.
+                # we have i=9 blocks starting at 
+                # (0,0) (0,3) (0,6) (3, 0) ... 
+                num = board[i/3 * 3 + j/3][i%3 * 3 + j%3]
+                if num in check3:
+                    return False
+                elif num != '.':
+                    check3[num] = 1
+                                      
+        return True                    
+#+end_src
+
+** Rotate Image                                                    :reviewed:
+   - 完全不会做 ！
+   - matrix就是薄弱环节
+   - write down the example 
+#+begin_src python
+class Solution(object):
+    def rotate(self, matrix):
+        length = len(matrix)
+        # roate 4 points a time, similar to reverse link list problem 
+        # to make the problem easy: first 
+        """
+        tmp = m[0][0]
+        m[0][0] = m[n][0]
+        m[n][0] = m[n][n]
+        m[n][n] = m[0][n]
+        m[0][n] = tmp
+        after that, considering + offset 
+        after that, considering go deeper m[0][0] --> m[i][i+offset]
+        (0 ---> i; n ---> n-i)
+        """
+        for i in range(length-1):
+            offset = 0
+            while i + offset < length - 1 - i:
+                tmp = matrix[i][i + offset]
+                matrix[i][i + offset] = matrix[length - 1 - offset-i][i]
+                matrix[length - 1 - offset-i][i] = matrix[length - 1-i][length - 1 - offset-i ]
+                matrix[length - 1-i][length - 1 - offset-i] = matrix[i + offset ][length - 1 -i]
+                matrix[i + offset ][length - 1 -i] = tmp
+                offset += 1
+#+end_src
+
+
+** longest common prefix                                               :WARN:
+   - be ware of corner case
+   - 不要咬指甲！！！ 
+
+
+** count and say
+   - when writing a function:
+     - check signiture
+     - check return 
+     - check exit condition if recursive 
+       - no harm to add more exit condition 
+#+begin_src python
+class Solution(object):
+    def countAndSay(self, n):
+        def cal(a):
+            # 111221
+            if len(a) == 0:
+                return ''            
+            count = 1
+            pre = a[0]
+            result = ''
+            for c in a[1:]:
+                if c == pre:
+                    count += 1
+                else:
+                    result += str(count) + pre
+                    pre = c
+                    count = 1
+            
+            result += str(count) + pre
+            return result  # forget return type 
+                    
+        a = [None] * (n+1)   # pythonic reserve 
+        for i in range(n+1):
+            # a[i] = cala[i-1]
+            if i == 0:
+                a[0] = ''
+            if i == 1:
+                a[1] = '1'
+            if i > 1:
+                a[i] = cal(a[i-1])
+            
+        return a[n]            
+#+end_src
+
+** shuffle array                                                   :reviewed:
+   - Be aware of member variable, you need to reset it after calling function
+   - 严重超时。
+   - this is "Fisher-Yates Algorithm"
+   - python pass by reference, when in doubt, deepycopy
+#+begin_src python
+class Solution(object):
+    def __init__(self, nums):
+        self._nums = nums
+        self._original = list(nums) # python need to take care of deepy copy
+        
+
+    def reset(self):
+        self._nums = list(self._original) # deepcody 
+        return  self._nums
+
+    def shuffle(self):
+        for i in range(len(self._nums)):
+            swapidx = random.randrange(i, len(self._nums))
+            self._nums[i], self._nums[swapidx] = self._nums[swapidx], self._nums[i]
+                
+        return self._nums
+#+end_src
+
+** generate all possible combinations
+#+begin_src python
+def gen(nums):
+    if len(nums) == 0:
+        return []
+    if len(nums) == 1:  # no harm to add more exit condition
+        return [nums]
+    
+    result = []
+    for num in nums:
+        left = ... 
+        for comb in gen(left):
+             result.append([num] + comb)
+
+    return result
+#+end_src
+
 
 * string 
-** Reverse String                                                     :ERROR:
+** Reverse String                                                  :reviewed:
    python 基础不行啊
 #+begin_src python
     def reverseString(self, s):
@@ -138,6 +290,50 @@ class Solution(object):
             
         
 #+end_src
+
+** implement strStr()
+   - corner case ""
+   - pre-check to ingore cases not possible, this saves time
+
+** atoi                                                                :WARN:
+   - overflow: positive/negtive
+   - invalid string
+   - signed
+   - empty 
+   - white space
+#+begin_src python
+class Solution(object):
+    def myAtoi(self, str):
+        # overflow problem 
+        # invalid 
+        # negtive         
+        if len(str) == 0:
+            return 0
+        str = str.strip(' ')        
+        signed = 1
+        if str[0] == '-':
+            signed = -1
+            str = str[1:]
+        elif str[0] == '+':  #能用if-else就用
+            str = str[1:]
+            
+        MAX = 2**31 - 1
+        MIN = -2**31
+        result = 0
+        for s in str:
+            if not s.isdigit():
+                return signed * result
+            
+            d = int(s)            
+            if signed == 1 and result > (MAX - d)/10:
+                return MAX
+            
+            if signed == -1 and result > (-1 * MIN - d)/10:
+                return MIN
+            
+            result = result * 10 + d # += --> ++ do not use it often                         
+        return signed * result
+#+end_src
 * 2 pointers
 ** Remove Duplicates from Sorted Array
    good. but be aware of coner case 
@@ -186,7 +382,6 @@ class Solution(object):
         rota(nums, 0, k%len(nums)-1)
         rota(nums, k%len(nums), len(nums)-1)
 #+end_src
-
 
 * sorting & searching
 ** Merge Sorted Array                                              :reviewed:
@@ -274,7 +469,7 @@ class Solution(object):
    recursive solution, get the mid value everytime 
    building tree is different from traverse tree, don't confuse 
 
-* dynamic programming
+* TODO dynamic programming
   - 2 approaches: recursion and bottom up
   - key: save the states  
 ** Climbing Stairs
@@ -342,10 +537,8 @@ public:
                 for (int j = 0; j <= i - 1 ; j++) {
                     max = max > (prices[i] -  prices[j]) ? max : (prices[i] -  prices[j]);
                 }
-                */
-                
-                int result = profit[i-1] > max ? profit[i-1] : max;
-                profit[i] = result;  
+                */                
+                profit[i] = profit[i-1] > max ? profit[i-1] : max;
                 Lowest = Lowest < prices[i] ? Lowest : prices[i];              
             }            
         }
@@ -437,7 +630,8 @@ or use: BETTER solution:
 };
 #+end_src
 ** Longest Palindromic Substring
-For example, “aba” is a palindome, “abc” is not.
+   - For example, “aba” is a palindome, “abc” is not.
+   - how to go through a matrix ? (using offset ) 
 #+begin_src cpp
 // this is a typical DP problem 
 // still not careful enough, forgeting the exit condition
@@ -540,3 +734,41 @@ class Solution(object):
             x = x ^ num
         return x
 #+end_src
+
+* math
+** Fizz Buzz
+   - python range(start, [stop], [step])
+** count primes                                                       :ERROR:
+   - Sieve of Eratosthenes algorithm
+   - prime number: 2, 3, 4 ...  1 is not prime 
+#+begin_src python
+class Solution(object):
+    def countPrimes(self, n):
+        if n == 0:
+            return 0        
+        if n == 1:
+            return 0        
+        if n == 2:
+            return 0        
+        if n == 3:
+            return 1        
+        state = [False] * (n)
+        state[1] = False        
+        for k in range(2, int(n**(0.5))+1):
+            if not state[k]: 
+                #i = k
+                #j = k * i
+                j = k ** 2
+                while j < n:
+                    state[j] = True
+                    #i += 1
+                    #j = k * i
+                    j += k                    
+        res = 0            
+        for k in range(2, n):
+            if not state[k]:
+                res += 1
+            
+        return res        
+#+end_src
+
