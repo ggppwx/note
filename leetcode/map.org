@@ -7,219 +7,323 @@
    做的不好，限制条件完全没有考虑
    use a stack to track min, only pops when nums.pop() <= minlast
    python = [] is a list 
+** valid parathesis
+   - 不要背题目！！！! ! ! 背思路
+   - python[-1] need to check index
+     - a = '' if not list else list[-1]
+
 
 * linked list
-** remove nth node from end of the list 
-   use Dummy node is the key, it saves a lot of time 
+** easy
+*** remove nth node from end of the list 
+    use Dummy node is the key, it saves a lot of time 
 
-** reverse linked list                                             :reviewed:
-   这么简单的题目想复杂了。太不应该了
-   保存足够多的temp pointers to iterate 
-   dont forget conner case list = []
+*** reverse linked list                                            :reviewed:
+    这么简单的题目想复杂了。太不应该了
+    保存足够多的temp pointers to iterate 
+    dont forget conner case list = []
 
-** merging 2 link list
-   don't forget move the node: n1 = n1.next
+*** merging 2 link list
+    don't forget move the node: n1 = n1.next
 
-** Palindrome Linked List
+*** Palindrome Linked List
+ #+begin_src python
+ class Solution(object):
+     def isPalindrome(self, head):
+         """
+         :type head: ListNode
+         :rtype: bool
+         """
+         node = head
+         result1 = ""
+         result2 = ""
+         while node:
+             result1 = result1 + str(node.val)
+             result2 = str(node.val) + result2
+             node = node.next
+        
+         return result1 == result2
+ #+end_src
+
+*** Linked List Cycle                                                  :WARN:
+    classic problem
+    2 nodes start at the same postion 
+ #+begin_src python
+ class Solution(object):
+     def hasCycle(self, head):
+         if head == None:
+             return False
+        
+         node1 = head # starting at the same position 
+         node2 = head
+         while node1 and node2 and node2.next: 
+             node1 = node1.next
+             # first check node2.next but it requires node2
+             # so check both
+             node2 = node2.next.next 
+             if node1 == node2:
+                 return True        
+         return False
+ #+end_src
+
+** medium
+*** add two numbers 
 #+begin_src python
 class Solution(object):
-    def isPalindrome(self, head):
-        """
-        :type head: ListNode
-        :rtype: bool
-        """
-        node = head
-        result1 = ""
-        result2 = ""
-        while node:
-            result1 = result1 + str(node.val)
-            result2 = str(node.val) + result2
+    def addTwoNumbers(self, l1, l2):
+        l = l1
+        r = l2
+        carry = 0
+        dummy = ListNode(-1)
+        dummy.next = None # trick 1 
+        node = dummy
+        
+        while l or r: # trick 2 
+            left = l.val if l else 0 # need to check if l/r is at the end 
+            right = r.val if r else 0
+            tmp = left + right + carry 
+            new_val = tmp % 10
+            carry = tmp / 10  
+            node.next = ListNode(new_val)            
             node = node.next
+            l = l.next if l else None  # DON'T forget check this !! at last 
+            r = r.next if r else None
+            
+        if carry:    # trick 3, don't forget carry 
+            node.next = ListNode(carry)
         
-        return result1 == result2
+        return dummy.next        
 #+end_src
 
-** Linked List Cycle                                                   :WARN:
-   classic problem
-   2 nodes start at the same postion 
-#+begin_src python
-class Solution(object):
-    def hasCycle(self, head):
-        if head == None:
-            return False
-        
-        node1 = head # starting at the same position 
-        node2 = head
-        while node1 and node2 and node2.next: 
-            node1 = node1.next
-            # first check node2.next but it requires node2
-            # so check both
-            node2 = node2.next.next 
-            if node1 == node2:
-                return True        
-        return False
-#+end_src
+
+** medium
+*** odd even linked list
+    - 2 pointers
+    - dummy pointer
+    - check None (conner cases )
+    - check next, next.next. just make sure no nullptr  exception 
+*** intersection linked list
+    - get the diff of len(listA) and len(listB)
+
 
 * array 
-** Plus One
-   - python array appending 
-   - don't forget adding 1 first 
-   - don't forget inserting last carry 
+** easy
+*** Plus One
+    - python array appending 
+    - don't forget adding 1 first 
+    - don't forget inserting last carry 
 
-** move zero 
-   - python range(n) = 0, 1, 2, ... n-1
-** valid sudoku                                                        :WARN:
-   - 难点是How to go through each cell 
-#+begin_src python
-class Solution(object):
-    def isValidSudoku(self, board):
-        i = 0
-        j = 0
-        for i in range(len(board)):
-            check = {}
-            check2 = {}
-            check3 = {}
-            for j in range(len(board)):
-                if board[i][j] in check:
-                    return False
-                elif board[i][j] != '.':
-                    check[board[i][j]] = 1
+*** move zero 
+    - python range(n) = 0, 1, 2, ... n-1
+*** valid sudoku                                                       :WARN:
+    - 难点是How to go through each cell 
+ #+begin_src python
+ class Solution(object):
+     def isValidSudoku(self, board):
+         i = 0
+         j = 0
+         for i in range(len(board)):
+             check = {}
+             check2 = {}
+             check3 = {}
+             for j in range(len(board)):
+                 if board[i][j] in check:
+                     return False
+                 elif board[i][j] != '.':
+                     check[board[i][j]] = 1
                     
-                if board[j][i] in check2:
-                    return False
-                elif board[j][i] != '.':
-                    check2[board[j][i]] = 1
+                 if board[j][i] in check2:
+                     return False
+                 elif board[j][i] != '.':
+                     check2[board[j][i]] = 1
                 
-                # key is here, consider i as number not axis.
-                # we have i=9 blocks starting at 
-                # (0,0) (0,3) (0,6) (3, 0) ... 
-                num = board[i/3 * 3 + j/3][i%3 * 3 + j%3]
-                if num in check3:
-                    return False
-                elif num != '.':
-                    check3[num] = 1
+                 # key is here, consider i as number not axis.
+                 # we have i=9 blocks starting at 
+                 # (0,0) (0,3) (0,6) (3, 0) ... 
+                 num = board[i/3 * 3 + j/3][i%3 * 3 + j%3]
+                 if num in check3:
+                     return False
+                 elif num != '.':
+                     check3[num] = 1
                                       
-        return True                    
-#+end_src
+         return True                    
+ #+end_src
 
-** Rotate Image                                                    :reviewed:
-   - 完全不会做 ！
-   - matrix就是薄弱环节
-   - write down the example 
-#+begin_src python
-class Solution(object):
-    def rotate(self, matrix):
-        length = len(matrix)
-        # roate 4 points a time, similar to reverse link list problem 
-        # to make the problem easy: first 
-        """
-        tmp = m[0][0]
-        m[0][0] = m[n][0]
-        m[n][0] = m[n][n]
-        m[n][n] = m[0][n]
-        m[0][n] = tmp
-        after that, considering + offset 
-        after that, considering go deeper m[0][0] --> m[i][i+offset]
-        (0 ---> i; n ---> n-i)
-        """
-        for i in range(length-1):
-            offset = 0
-            while i + offset < length - 1 - i:
-                tmp = matrix[i][i + offset]
-                matrix[i][i + offset] = matrix[length - 1 - offset-i][i]
-                matrix[length - 1 - offset-i][i] = matrix[length - 1-i][length - 1 - offset-i ]
-                matrix[length - 1-i][length - 1 - offset-i] = matrix[i + offset ][length - 1 -i]
-                matrix[i + offset ][length - 1 -i] = tmp
-                offset += 1
-#+end_src
-
-
-** longest common prefix                                               :WARN:
-   - be ware of corner case
-   - 不要咬指甲！！！ 
+*** Rotate Image                                                   :reviewed:
+    - 完全不会做 ！
+    - matrix就是薄弱环节
+    - write down the example 
+ #+begin_src python
+ class Solution(object):
+     def rotate(self, matrix):
+         length = len(matrix)
+         # roate 4 points a time, similar to reverse link list problem 
+         # to make the problem easy: first 
+         """
+         tmp = m[0][0]
+         m[0][0] = m[n][0]
+         m[n][0] = m[n][n]
+         m[n][n] = m[0][n]
+         m[0][n] = tmp
+         after that, considering + offset 
+         after that, considering go deeper m[0][0] --> m[i][i+offset]
+         (0 ---> i; n ---> n-i)
+         """
+         for i in range(length-1):
+             offset = 0
+             while i + offset < length - 1 - i:
+                 tmp = matrix[i][i + offset]
+                 matrix[i][i + offset] = matrix[length - 1 - offset-i][i]
+                 matrix[length - 1 - offset-i][i] = matrix[length - 1-i][length - 1 - offset-i ]
+                 matrix[length - 1-i][length - 1 - offset-i] = matrix[i + offset ][length - 1 -i]
+                 matrix[i + offset ][length - 1 -i] = tmp
+                 offset += 1
+ #+end_src
 
 
-** count and say
-   - when writing a function:
-     - check signiture
-     - check return 
-     - check exit condition if recursive 
-       - no harm to add more exit condition 
-#+begin_src python
-class Solution(object):
-    def countAndSay(self, n):
-        def cal(a):
-            # 111221
-            if len(a) == 0:
-                return ''            
-            count = 1
-            pre = a[0]
-            result = ''
-            for c in a[1:]:
-                if c == pre:
-                    count += 1
-                else:
-                    result += str(count) + pre
-                    pre = c
-                    count = 1
+*** longest common prefix                                              :WARN:
+    - be ware of corner case
+    - 不要咬指甲！！！ 
+
+
+*** count and say
+    - when writing a function:
+      - check signiture
+      - check return 
+      - check exit condition if recursive 
+        - no harm to add more exit condition 
+ #+begin_src python
+ class Solution(object):
+     def countAndSay(self, n):
+         def cal(a):
+             # 111221
+             if len(a) == 0:
+                 return ''            
+             count = 1
+             pre = a[0]
+             result = ''
+             for c in a[1:]:
+                 if c == pre:
+                     count += 1
+                 else:
+                     result += str(count) + pre
+                     pre = c
+                     count = 1
             
-            result += str(count) + pre
-            return result  # forget return type 
+             result += str(count) + pre
+             return result  # forget return type 
                     
-        a = [None] * (n+1)   # pythonic reserve 
-        for i in range(n+1):
-            # a[i] = cala[i-1]
-            if i == 0:
-                a[0] = ''
-            if i == 1:
-                a[1] = '1'
-            if i > 1:
-                a[i] = cal(a[i-1])
+         a = [None] * (n+1)   # pythonic reserve 
+         for i in range(n+1):
+             # a[i] = cala[i-1]
+             if i == 0:
+                 a[0] = ''
+             if i == 1:
+                 a[1] = '1'
+             if i > 1:
+                 a[i] = cal(a[i-1])
             
-        return a[n]            
-#+end_src
+         return a[n]            
+ #+end_src
 
-** shuffle array                                                   :reviewed:
-   - Be aware of member variable, you need to reset it after calling function
-   - 严重超时。
-   - this is "Fisher-Yates Algorithm"
-   - python pass by reference, when in doubt, deepycopy
-#+begin_src python
-class Solution(object):
-    def __init__(self, nums):
-        self._nums = nums
-        self._original = list(nums) # python need to take care of deepy copy
+*** shuffle array                                                  :reviewed:
+    - Be aware of member variable, you need to reset it after calling function
+    - 严重超时。
+    - this is "Fisher-Yates Algorithm"
+    - python pass by reference, when in doubt, deepycopy
+ #+begin_src python
+ class Solution(object):
+     def __init__(self, nums):
+         self._nums = nums
+         self._original = list(nums) # python need to take care of deepy copy
         
 
-    def reset(self):
-        self._nums = list(self._original) # deepcody 
-        return  self._nums
+     def reset(self):
+         self._nums = list(self._original) # deepcody 
+         return  self._nums
 
-    def shuffle(self):
-        for i in range(len(self._nums)):
-            swapidx = random.randrange(i, len(self._nums))
-            self._nums[i], self._nums[swapidx] = self._nums[swapidx], self._nums[i]
+     def shuffle(self):
+         for i in range(len(self._nums)):
+             swapidx = random.randrange(i, len(self._nums))
+             self._nums[i], self._nums[swapidx] = self._nums[swapidx], self._nums[i]
                 
-        return self._nums
-#+end_src
+         return self._nums
+ #+end_src
 
-** generate all possible combinations
-#+begin_src python
-def gen(nums):
-    if len(nums) == 0:
-        return []
-    if len(nums) == 1:  # no harm to add more exit condition
-        return [nums]
+*** generate all possible combinations
+ #+begin_src python
+ def gen(nums):
+     if len(nums) == 0:
+         return []
+     if len(nums) == 1:  # no harm to add more exit condition
+         return [nums]
     
-    result = []
-    for num in nums:
-        left = ... 
-        for comb in gen(left):
-             result.append([num] + comb)
+     result = []
+     for num in nums:
+         left = ... 
+         for comb in gen(left):
+              result.append([num] + comb)
 
-    return result
+     return result
+ #+end_src
+
+
+
+
+** medium
+*** Group Anagrams
+    - better solution ?
+
+*** Longest Substring Without Repeating Characters                     :WARN:
+    - python while/for, do not forget i += 1
+#+begin_src python
+class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        startpos = 0
+        lsubl = 0
+        
+        while startpos < len(s):
+            used = {}
+            subl = 0
+            prev_idx = len(s)
+            c_i = startpos
+            while c_i < len(s):
+                c = s[c_i]
+                if c not in used:
+                    subl += 1
+                    used[c] = c_i
+                else: 
+                    prev_idx = used[c]
+                    break
+                c_i += 1    # DONT FORGET THIS
+                    
+            lsubl = subl if subl > lsubl else lsubl
+            startpos = prev_idx + 1 
+        
+        return lsubl
 #+end_src
 
+
+*** Increasing Triplet Subsequence
+    - Be careful, always use explcit MAX
+    - 不要图省事，用一个大数字，数字一般不够大的 ！！
+#+begin_src python
+class Solution:
+    def increasingTriplet(self, nums):
+        INT_MAX = 2 ** 32
+        min1 = INT_MAX
+        min2 = INT_MAX
+        min3 = INT_MAX
+        for num in nums:
+            if num <= min1:
+                min1 = num
+            elif num <= min2:
+                min2 = num
+            elif num <= min3:
+                min3 = num
+        
+        return min1 != INT_MAX and min2 != INT_MAX and min3 != INT_MAX
+#+end_src
 
 * string 
 ** Reverse String                                                  :reviewed:
@@ -335,52 +439,131 @@ class Solution(object):
         return signed * result
 #+end_src
 * 2 pointers
-** Remove Duplicates from Sorted Array
-   good. but be aware of coner case 
+** easy
+*** Remove Duplicates from Sorted Array
+    good. but be aware of coner case 
 
-** Best Time to Buy and Sell Stock II
-   good. use while do for loop
-#+begin_src python
-class Solution(object):
-    def maxProfit(self, prices):
-        """
-        :type prices: List[int]
-        :rtype: int
-        """
-        profit = 0
-        i = 0
-        j = 0
-        while i < len(prices): # use while do for loop 
-            j = i + 1
-            while j < len(prices) and prices[j] > prices[j-1]:
-                j = j + 1
+*** Best Time to Buy and Sell Stock II
+    good. use while do for loop
+ #+begin_src python
+ class Solution(object):
+     def maxProfit(self, prices):
+         """
+         :type prices: List[int]
+         :rtype: int
+         """
+         profit = 0
+         i = 0
+         j = 0
+         while i < len(prices): # use while do for loop 
+             j = i + 1
+             while j < len(prices) and prices[j] > prices[j-1]:
+                 j = j + 1
                 
-            profit = profit + prices[j-1] - prices[i]            
-            i = j
+             profit = profit + prices[j-1] - prices[i]            
+             i = j
             
-        return profit
-#+end_src
+         return profit
+ #+end_src
 
-** Longest Substring Without Repeating Characters
+*** Longest Substring Without Repeating Characters
 
+*** rotate array in place
+    concept not clear, k steps could be larger than length
+    思路对了。解题时候又忘记了.所以还是要想清楚了再写
+ #+begin_src python
+ class Solution(object):
+     def rotate(self, nums, k):
+         def rota(nums, i, j):            
+             while i < j:
+                 tmp = nums[i]            
+                 nums[i] = nums[j]
+                 nums[j] = tmp
+                 i += 1 # python's i++
+                 j -= 1
+        
+         rota(nums, 0, len(nums)-1)  # don't forget this 
+         rota(nums, 0, k%len(nums)-1)
+         rota(nums, k%len(nums), len(nums)-1)
+ #+end_src
 
-** rotate array in place
-   concept not clear, k steps could be larger than length
-   思路对了。解题时候又忘记了.所以还是要想清楚了再写
+** medium
+*** 3 sum                                                              :WARN:
+    - better way to check unique 
+    - remember if a then b.  if not a then exit 
+    - better to check explicitly (check len())
 #+begin_src python
 class Solution(object):
-    def rotate(self, nums, k):
-        def rota(nums, i, j):            
-            while i < j:
-                tmp = nums[i]            
-                nums[i] = nums[j]
-                nums[j] = tmp
-                i += 1 # python's i++
-                j -= 1
+    def threeSum(self, nums):
+        def hashed(nums):
+            return ':'.join(str(num) for num in nums)
+                            
+        if  len(nums) < 3:
+            return []
         
-        rota(nums, 0, len(nums)-1)  # don't forget this 
-        rota(nums, 0, k%len(nums)-1)
-        rota(nums, k%len(nums), len(nums)-1)
+        result = []
+        nums.sort()            
+        index_c = len(nums) - 1
+        used = set([]) # we could use hash to check 
+        used_c = set([]) # why this line, to optimize the time
+        while index_c > 0:            
+            num_c = nums[index_c]
+            if num_c in used_c:
+                index_c -= 1
+                continue
+            used_c.add(num_c)
+            
+            tmp = self.twoSum(nums[:index_c], -num_c) 
+            if  tmp:   # not tmp means if tmp is empty !!! 
+                for t in tmp:
+                    if  t:
+                        r = t + [num_c]
+                        h_r = hashed(r)
+                        if h_r not in used:
+                            result.append(r)
+                            used.add(h_r)
+                        
+            index_c -= 1            
+        return result
+    
+    def twoSum(self, nums, target):
+        if len(nums) < 2:
+            return [] 
+
+        start = 0
+        end = len(nums) - 1
+        result = []
+        while start < end:
+            tmp = nums[start] + nums[end]
+            if tmp > target:
+                end -= 1
+            elif tmp < target:
+                start += 1
+            else:
+                result.append([nums[start], nums[end]])
+                end -= 1
+                start += 1                    
+        return result            
+#+end_src
+*** set matrix 0 
+    - sample solution is easy. what about don't use a lot extra space ?
+#+begin_src python
+class Solution(object):
+    def setZeroes(self, matrix):        
+        m = len(matrix)
+        n = len(matrix[0])
+        row = [-1] * m
+        column = [-1] * n
+        for i in range(m):
+            for j in range(n):
+                if matrix[i][j] == 0:
+                    row[i] = 0
+                    column[j] = 0                                          
+                        
+        for i in range(m):
+            for j in range(n):
+                if row[i] == 0 or column[j] == 0:                
+                    matrix[i][j] = 0
 #+end_src
 
 * sorting & searching
@@ -431,43 +614,148 @@ class Solution(object):
         return self.lastBad
 #+end_src
 * trees
-** max depth of binary tree
-   finish in time
-** valid BST
-   finish in time, having some slight troube doing python
+** easy
+*** max depth of binary tree
+    finish in time
+*** valid BST
+    finish in time, having some slight troube doing python
 
-** symmtric tree                                                       :WARN:
-   stuck on this problem for a while.
-   思维定势了，一开始想直接递归，但发现和subtree问题根本没关系
-#+begin_src python
-class Solution(object):
-    def isSymmetric(self, root):
-        if root == None:
-            return True        
-        return self.traverse(root.left, root.right)
+*** symmtric tree                                                      :WARN:
+    stuck on this problem for a while.
+    思维定势了，一开始想直接递归，但发现和subtree问题根本没关系
+ #+begin_src python
+ class Solution(object):
+     def isSymmetric(self, root):
+         if root == None:
+             return True        
+         return self.traverse(root.left, root.right)
     
-    def traverse(self, left, right): # how to compare the val parallelly ? recursion
-        if left == None and right == None:
-            return True
+     def traverse(self, left, right): # how to compare the val parallelly ? recursion
+         if left == None and right == None:
+             return True
         
-        elif left == None or right == None:
-            return False
+         elif left == None or right == None:
+             return False
         
-        if left.val != right.val:
-            return False
+         if left.val != right.val:
+             return False
         
-        return self.traverse(left.left, right.right) and 
-        self.traverse(left.right, right.left) # don't forget compare another branch    
+         return self.traverse(left.left, right.right) and 
+         self.traverse(left.right, right.left) # don't forget compare another branch    
+ #+end_src
+
+*** binary tree level order traverse
+    check if array has index i? check the length of the array 
+    python data structre 
+
+*** sorted array to BST                                            :reviewed:
+    didn't come up with the solution
+    recursive solution, get the mid value everytime 
+    building tree is different from traverse tree, don't confuse 
+
+** medium
+*** binary tree in order traverse (iterative)                         :ERROR:
+    - traverse a tree like a link-list node = node.left
+    - antoher solution ? 
+#+begin_src python
+class Solution:
+    def inorderTraversal(self, root):
+        if root == None:
+            return []
+        
+        result = []
+        queue = []
+        node = root
+        while True:  # use while true condition in queue/stack problem
+            if node:  
+                queue.append(node)
+                node = node.left
+            else:
+                if (len(queue) == 0):
+                    return result
+                top = queue.pop()
+                result.append(top.val)
+                node = top.right
+                                            
 #+end_src
-
-** binary tree level order traverse
-   check if array has index i? check the length of the array 
-   python data structre 
-
-** sorted array to BST                                             :reviewed:
-   didn't come up with the solution
-   recursive solution, get the mid value everytime 
-   building tree is different from traverse tree, don't confuse 
+*** Binary Tree Zigzag Level Order Traversal                           :WARN:
+    - 想复杂了。一开始就钻牛角尖，放入queue都时候不需要reverse
+    - same as the normal level order traversel, only diffence is insert/append
+      when pop up 
+    - 2 ways to do in order traversal: recursive/iterative
+#+begin_src python
+class Solution:
+    def zigzagLevelOrder(self, root):
+        if root == None:
+            return []
+        
+        result = []
+        queue = []
+        depth = 0
+        queue.append((root, 0))
+        while queue:
+            front, depth = queue.pop(0)
+            if (len(result) == depth):
+                result.append([])
+            
+            if depth % 2 == 0:
+                result[depth].append(front.val)
+            else:
+                result[depth].insert(0,front.val)
+                
+            if front.left:
+                queue.append((front.left, depth + 1))
+            if front.right:
+                queue.append((front.right, depth + 1))
+                
+        return result        
+#+end_src
+*** Construct Binary Tree from Preorder and Inorder Traversal          :WARN:
+    - a[-n] be aware of n = 0
+    - the best practice is to not using a[-n] unless n has a exact number
+#+begin_src python
+class Solution:
+    def buildTree(self, preorder, inorder):
+        if not preorder:
+            return None 
+        if not inorder:
+            return None
+       
+        root_val = preorder[0]
+        root = TreeNode(root_val)  #粗心了
+        # find root in inorder
+        root_index = inorder.index(root_val)
+        left_num = root_index
+        
+        # use a[-n] with cautious
+            
+        root.left = self.buildTree(preorder[1:1+left_num], inorder[:root_index])
+        root.right = self.buildTree(preorder[1+left_num:], inorder[root_index+1:])
+            
+        
+        return root
+#+end_src
+*** Populating Next Right Pointers in Each Node
+    - utlize the exsiting NEXT pointer
+    - always need to check if pointer exists before using it 
+#+begin_src python
+class Solution:
+    def connect(self, root):
+        if not root:
+            return 
+        
+        if not root.left or not root.right: # leaf
+            return 
+        
+        root.left.next = root.right
+        if root.next:
+            root.right.next = root.next.left
+        else:
+            root.right.next = None
+            
+        self.connect(root.left)
+        self.connect(root.right)                
+#+end_src
 
 * TODO dynamic programming
   - 2 approaches: recursion and bottom up
@@ -677,6 +965,40 @@ public:
 #+end_src
 
 
+** longest palindome substring python
+   - [None] * n only works for 1 d array 
+   - python init 2-d array 不要想当然！！！
+#+begin_src python
+class Solution(object):
+    def longestPalindrome(self, s):
+        LEN = len(s)
+        P = [[False] * LEN for _ in range(LEN)] #!!!!!!!!!!
+            
+        for offset in range(LEN):
+            for i in range(LEN):
+                if i + offset >= LEN:
+                    break
+                
+                if offset == 0:
+                    P[i][i] =True
+                    continue
+                    
+                if offset == 1:
+                    P[i][i+1] = (s[i] == s[i+1])
+                    continue
+                
+                P[i][i+offset] = P[i+1][i+offset-1] and (s[i] == s[i+offset])
+                
+        lsub = ''
+        for i in range(LEN):
+            for j in range(i, LEN):
+                if P[i][j]:
+                    if j-i+1 > len(lsub):
+                        lsub = s[i:j+1]
+                    
+        return lsub
+                    
+#+end_src
 ** Palindromic Substrings
 #+begin_src cpp
 // Given a string, your task is to count how many palindromic substrings 
@@ -735,6 +1057,20 @@ class Solution(object):
         return x
 #+end_src
 
+** reverse Bits
+   - python bit opertion 
+#+begin_src python
+    def reverseBits(self, n):
+        sum = 0
+        for i in range(32):
+            remainder = n & 1 # % operatror get reminder
+            sum = sum << 1 
+            sum = sum ^ remainder 
+            n = n >> 1
+        return sum   
+#+end_src
+
+
 * math
 ** Fizz Buzz
    - python range(start, [stop], [step])
@@ -771,4 +1107,41 @@ class Solution(object):
             
         return res        
 #+end_src
+** hamming distance
+   - use xor
+   - in python3 5/2 => 2.5 (not 2), so you need to convert: int(5/2)
+** roman to integer
+   - reverse array a[start, stop, steps] ====> a[-1::-1)
+   - unassigned in list => END 
+#+begin_src python
+class Solution(object):
+    def romanToInt(self, s):
+        map = {
+            'I' : 1,
+            'V' : 5,
+            'X' : 10,
+            'L' : 50,
+            'C' : 100,
+            'D' : 500,
+            'M' : 1000            
+        }
+        sum = 0
+        prev = 0
+        for c in s[::-1]:  # this is reverse
+            current = map[c]
+            if current >= prev:
+                sum += current
+            else:
+                sum -= current
+            
+            prev = current
+            
+        return sum 
+#+end_src
 
+
+* others
+** Pascal's Triangle
+   - python reserve [[]] * n
+   - another approach: Binomial coefficient
+     
