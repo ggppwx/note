@@ -757,6 +757,80 @@ class Solution:
         self.connect(root.right)                
 #+end_src
 
+
+* backtracking
+** medium
+*** Letter Combinations of a Phone Number 
+    - using recursion to replace N nested loops
+
+*** Generate Parentheses                                              :ERROR:
+    - all combinations could be added in exit condition.
+      - not always as a return 
+    - () seems to be a 2 dimension problem, need to convert it to 1 dimension
+      - adding (/) one by one 
+    - 不要想当然，自己随便想的排列组合法肯定是错的
+    - how to do this in brute force? 
+      - adding )/( step by step, 
+    - how to optimize brute force? only adding valid
+    - recursion argeuments:
+      - a starting point: could be an state, string, node etc. 
+      - what is in result usually appears in the argeuments(in some form)
+
+#+begin_src python
+'''brute force generate:
+(        )
+((  ()   )(   ))
+'''
+def gen(a):
+    if len(a) == 2* n:
+        result.append(a) # no return recursion
+        return 
+
+    gen(a+'(')
+    gen(a+')')
+
+class Solution(object):
+    def generateParenthesis(self, n):
+        result = []  
+        def gen(current, left, right):
+            if left == n and right == n:
+                result.append(current)
+                return 
+            
+            if left < n:
+                gen(current + '(', left + 1, right)
+                
+            if right < left:
+                gen(current + ')', left, right + 1)
+            
+        gen('', 0, 0 )
+        return result
+#+end_src
+
+
+*** Permutations
+    - just like previous problem 
+#+begin_src python
+class Solution(object):
+    def permute(self, nums):
+        if not nums:
+            return []
+        
+        result = []
+        def gen(current, left):
+            if len(current) == len(nums):
+                result.append(current)
+                return 
+            
+            for i, num in enumerate(left):
+                gen(current + [num], left[:i] + left[i+1:] ) 
+                
+        gen([], nums)
+        return result                                
+#+end_src
+
+
+
 * TODO dynamic programming
   - 2 approaches: recursion and bottom up
   - key: save the states  
