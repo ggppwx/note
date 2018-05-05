@@ -167,14 +167,19 @@ class Solution(object):
 * array 
 ** easy
 *** Plus One
+**** summary
     - python array appending 
     - don't forget adding 1 first 
     - don't forget inserting last carry 
 
 *** move zero 
+**** summary
     - python range(n) = 0, 1, 2, ... n-1
 *** valid sudoku                                                       :WARN:
+**** thoughts 
+    - 应用枚举发，先把可能性写下来
     - 难点是How to go through each cell 
+**** code 
  #+begin_src python
  class Solution(object):
      def isValidSudoku(self, board):
@@ -208,9 +213,10 @@ class Solution(object):
  #+end_src
 
 *** Rotate Image                                                   :reviewed:
-    - 完全不会做 ！
-    - matrix就是薄弱环节
+**** thoughts
+    - do this in-place, 
     - write down the example 
+**** code
  #+begin_src python
  class Solution(object):
      def rotate(self, matrix):
@@ -237,19 +243,22 @@ class Solution(object):
                  matrix[i + offset ][length - 1 -i] = tmp
                  offset += 1
  #+end_src
+**** summary
+    - 完全不会做 ！
+    - matrix就是薄弱环节
 
-
+** medium
 *** longest common prefix                                              :WARN:
+**** thoughts
+     conner case, what if list is empty
+**** summary
     - be ware of corner case
     - 不要咬指甲！！！ 
 
-
 *** count and say
-    - when writing a function:
-      - check signiture
-      - check return 
-      - check exit condition if recursive 
-        - no harm to add more exit condition 
+**** thoughts
+     - logic is easy, just be aware of conner case
+**** code 
  #+begin_src python
  class Solution(object):
      def countAndSay(self, n):
@@ -283,12 +292,18 @@ class Solution(object):
             
          return a[n]            
  #+end_src
+**** summary
+    - when writing a function:
+      - check signiture
+      - check return 
+      - check exit condition if recursive 
+        - no harm to add more exit condition (defensive programming)
 
 *** shuffle array                                                  :reviewed:
-    - Be aware of member variable, you need to reset it after calling function
-    - 严重超时。
-    - this is "Fisher-Yates Algorithm"
+**** thoughts
+    - straght forward solution, use random.randrange()
     - python pass by reference, when in doubt, deepycopy
+**** code
  #+begin_src python
  class Solution(object):
      def __init__(self, nums):
@@ -307,6 +322,11 @@ class Solution(object):
                 
          return self._nums
  #+end_src
+
+**** summary
+    - Be aware of member variable, you need to reset it after calling function
+    - 严重超时。
+    - this is "Fisher-Yates Algorithm"
 
 *** generate all possible combinations
  #+begin_src python
@@ -384,118 +404,122 @@ class Solution:
 #+end_src
 
 * string 
-** Reverse String                                                  :reviewed:
-   python 基础不行啊
-#+begin_src python
-    def reverseString(self, s):
-        # [begin:end:step]
-        # python string is inmutable
-        return s[::-1]
-#+end_src
+** easy
+*** Reverse String                                                 :reviewed:
+***** thoughts
+      - simple solution
+***** code 
+ #+begin_src python
+     def reverseString(self, s):
+         # [begin:end:step]
+         # python string is inmutable
+         return s[::-1]
+ #+end_src
 
-** reverse integer                                                     :WARN:
-   - consider overflow 
-   - max singed integer 2³¹-1
-   - python power 2**31
+*** reverse integer                                                    :WARN:
+**** thoughts
+    - consider overflow 
+    - max singed integer 2³¹-1
+    - python power 2**31
 
-** First Unique Character in a String                                  :WARN:
-   - use straght-foward solution first !!!!
-   - O(n)
-#+begin_src python
-class Solution(object):
-    def firstUniqChar(self, s):
-        map = {}
-        for i, c in enumerate(s):
-            if c not in map:
-                map[c] = i  # save the index
-            else:
-                map[c] = len(s)
+*** First Unique Character in a String                                 :WARN:
+    - use straght-foward solution first !!!!
+    - O(n)
+ #+begin_src python
+ class Solution(object):
+     def firstUniqChar(self, s):
+         map = {}
+         for i, c in enumerate(s):
+             if c not in map:
+                 map[c] = i  # save the index
+             else:
+                 map[c] = len(s)
                 
         
-        min = len(s)
-        for key in map:
-            if map[key] < min:
-                min = map[key]
+         min = len(s)
+         for key in map:
+             if map[key] < min:
+                 min = map[key]
         
-        if min == len(s):
-            return -1
-        else:
-            return min
-#+end_src
+         if min == len(s):
+             return -1
+         else:
+             return min
+ #+end_src
 
-** Valid Anagram
-   - if no unicode, we could use a array whose index is char - 'a'
+*** Valid Anagram
+    - if no unicode, we could use a array whose index is char - 'a'
 
-** Valid Palindrome                                                    :WARN:
-   - python check isalnum
-   - HAVING LOOP, CONSIDER EXIT ( avoid infinite loop ) 
-#+begin_src python
-class Solution(object):
-    def isPalindrome(self, s):
-        begin = 0
-        end = len(s) - 1
-        while begin < end:
-            while not s[begin].lower().isalnum() and begin < end:
-            # use while to pass invalid chars 
-                begin = begin + 1
+*** Valid Palindrome                                                   :WARN:
+    - python check isalnum
+    - HAVING LOOP, CONSIDER EXIT ( avoid infinite loop ) 
+ #+begin_src python
+ class Solution(object):
+     def isPalindrome(self, s):
+         begin = 0
+         end = len(s) - 1
+         while begin < end:
+             while not s[begin].lower().isalnum() and begin < end:
+             # use while to pass invalid chars 
+                 begin = begin + 1
                 
-            while not s[end].lower().isalnum() and begin < end:
-                end = end - 1            
+             while not s[end].lower().isalnum() and begin < end:
+                 end = end - 1            
                 
-            if begin < end and s[begin].lower() != s[end].lower():
-                return False
+             if begin < end and s[begin].lower() != s[end].lower():
+                 return False
             
-            begin = begin + 1
-            end = end - 1
+             begin = begin + 1
+             end = end - 1
             
-        return True
+         return True
             
         
-#+end_src
+ #+end_src
 
-** implement strStr()
-   - corner case ""
-   - pre-check to ingore cases not possible, this saves time
+*** implement strStr()
+    - corner case ""
+    - pre-check to ingore cases not possible, this saves time
 
-** atoi                                                                :WARN:
-   - overflow: positive/negtive
-   - invalid string
-   - signed
-   - empty 
-   - white space
-#+begin_src python
-class Solution(object):
-    def myAtoi(self, str):
-        # overflow problem 
-        # invalid 
-        # negtive         
-        if len(str) == 0:
-            return 0
-        str = str.strip(' ')        
-        signed = 1
-        if str[0] == '-':
-            signed = -1
-            str = str[1:]
-        elif str[0] == '+':  #能用if-else就用
-            str = str[1:]
+*** atoi                                                               :WARN:
+    - overflow: positive/negtive
+    - invalid string
+    - signed
+    - empty 
+    - white space
+ #+begin_src python
+ class Solution(object):
+     def myAtoi(self, str):
+         # overflow problem 
+         # invalid 
+         # negtive         
+         if len(str) == 0:
+             return 0
+         str = str.strip(' ')        
+         signed = 1
+         if str[0] == '-':
+             signed = -1
+             str = str[1:]
+         elif str[0] == '+':  #能用if-else就用
+             str = str[1:]
             
-        MAX = 2**31 - 1
-        MIN = -2**31
-        result = 0
-        for s in str:
-            if not s.isdigit():
-                return signed * result
+         MAX = 2**31 - 1
+         MIN = -2**31
+         result = 0
+         for s in str:
+             if not s.isdigit():
+                 return signed * result
             
-            d = int(s)            
-            if signed == 1 and result > (MAX - d)/10:
-                return MAX
+             d = int(s)            
+             if signed == 1 and result > (MAX - d)/10:
+                 return MAX
             
-            if signed == -1 and result > (-1 * MIN - d)/10:
-                return MIN
+             if signed == -1 and result > (-1 * MIN - d)/10:
+                 return MIN
             
-            result = result * 10 + d # += --> ++ do not use it often                         
-        return signed * result
-#+end_src
+             result = result * 10 + d # += --> ++ do not use it often                         
+         return signed * result
+ #+end_src
 * 2 pointers
 ** easy
 *** Remove Duplicates from Sorted Array
