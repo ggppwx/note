@@ -1,10 +1,26 @@
-#+TITLE: emacs cheat sheet
+#+TITLE: REAL emacs cheat sheet
 
 * current config 
 - spacemacs 
 
+** python 
+
+
+
+** c++ 
+
+
+
+** org mode 
+
+
 * useful shortcut 
 
+** mode 
+editing style: holy-mode 
+
+
+** browsing  
 | <40>                                     | <20>                 |
 |------------------------------------------+----------------------|
 | begin of buffer                          | M-<                  |
@@ -31,9 +47,14 @@
 |                                          |                      |
 |                                          |                      |
 | disply buffer                            | M-m b b              |
-|                                          |                      |
+| swtich buffer                            | C-x b                |
 |                                          |                      |
 
+** Editing 
+| <40>                                     | <20>                 |
+|------------------------------------------+----------------------|
+| kill word                                | M-d                  |
+|                                          |                      |
 
 
 
