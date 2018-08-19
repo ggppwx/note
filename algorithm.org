@@ -1,0 +1,33 @@
+#+TITLE: algorithm
+
+
+* review guideline
+** binary search 
+** 2 pointers 
+** Bfs
+** topological sorting 
+** dfs
+** combination-based dfs
+** graphic-based dfs
+** data structure 
+*** stack
+*** queue
+*** heap
+*** hash map 
+*** arrray
+*** interval
+*** matrix 
+*** binary indexed tree
+*** deque 
+** union find
+** trie 
+** sweep line
+** dynamic programming 
+
+
+
+
+
+
+
+
