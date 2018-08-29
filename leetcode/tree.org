@@ -1,38 +1,526 @@
 #+TITLE: tree
-* 98 Validate Binary Search Tree
-Given a binary tree, determine if it is a valid binary search tree (BST).
-Assume a BST is defined as follows:
+#+INFOJS_OPT: path:org-info.js
+#+INFOJS_OPT: toc:nil ltoc:t view:info mouse:underline buttons:nil
+#+INFOJS_OPT: up:https://orgmode.org/worg/
+#+INFOJS_OPT: home:https://orgmode.org
 
-The left subtree of a node contains only nodes with keys less than the node's key.
-The right subtree of a node contains only nodes with keys greater than the node's key.
-Both the left and right subtrees must also be binary search trees.
-Example 1:
-    2
-   / \
-  1   3
-Binary tree [2,1,3], return true.
-Example 2:
-    1
-   / \
-  2   3
-Binary tree [1,2,3], return false.
 
-** hint 
+* trees
+** easy
+*** 230 Kth Smallest Element in a BST
+  Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
+
+  Note: 
+  You may assume k is always valid, 1 ≤ k ≤ BST's total elements.
+
+  Follow up:
+  What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?
+**** hint 
+    - inorder traversal
+    - nothing much 
+
+
+
+*** max depth of binary tree
+    finish in time
+*** valid BST
+    finish in time, having some slight troube doing python
+
+*** symmtric tree                                                      :WARN:
+    stuck on this problem for a while.
+    思维定势了，一开始想直接递归，但发现和subtree问题根本没关系
+ #+begin_src python
+ class Solution(object):
+     def isSymmetric(self, root):
+         if root == None:
+             return True        
+         return self.traverse(root.left, root.right)
+    
+     def traverse(self, left, right): # how to compare the val parallelly ? recursion
+         if left == None and right == None:
+             return True
+        
+         elif left == None or right == None:
+             return False
+        
+         if left.val != right.val:
+             return False
+        
+         return self.traverse(left.left, right.right) and 
+         self.traverse(left.right, right.left) # don't forget compare another branch    
+ #+end_src
+
+*** binary tree level order traverse
+    check if array has index i? check the length of the array 
+    python data structre 
+
+*** sorted array to BST                                            :reviewed:
+    didn't come up with the solution
+    recursive solution, get the mid value everytime 
+    building tree is different from traverse tree, don't confuse 
+
+
+*** Merge Two Binary Trees   
+**** Thoughts
+     - simple merge 
+**** summary
+     - everytime doing node.left/right, check if node is NULL (defensive)
+
+
+*** Convert BST to Greater Tree    
+**** Thoughts
+     - Note it is a BST tree
+     - post-in-order traversal 
+**** summary
+***** TODO review in order traversal's iterate solution
+
+
+*** Diameter of Binary Tree                                           :ERROR:
+**** Thoughts
+     - you have to compare a lot of nodes 
+     - for each node, how to find the longest diameter ?
+       - left + right 
+**** code
+     #+begin_src python
+class Solution(object):
+    def diameterOfBinaryTree(self, root):
+        def getmaxdepth(node):
+            if node == None:
+                return 0
+                        
+            left = getmaxdepth(node.left)
+            right = getmaxdepth(node.right)
+            return max(left, right) + 1
+        
+        self.res = 0
+        def visit(node):
+            if node == None:
+                return 
+            
+            # go through node
+            left = 0
+            if node.left:
+                left = getmaxdepth(node.left) 
+            right = 0
+            if node.right:
+                right = getmaxdepth(node.right) 
+                
+            self.res = max(right + left, self.res)
+            
+            visit(node.left)
+            visit(node.right)
+            
+        visit(root)
+        return self.res
+     #+end_src
+**** summary
+     - for each node, find the longest path which goes through that node
+     - a non empty node's max depth is 1, 不要多加 ！
+
+
+***  Subtree of Another Tree
+**** summary
+     - 千万不要偷懒，永远defensive programming
+
+
+
+*** Path Sum III
+**** Thoughts
+     - for a tree calcute the path use node as root 
+     - dfs each node 
+**** code
+     #+begin_src python
+ class Solution(object):
+     def pathSum(self, root, sum):
+         def path_node_as_root_sum(node, sum):  # focus on this function 
+             if node == None:
+                 return 0
+            
+             count = 0
+             if sum == node.val:  # if current node meets condition should we cointinue ? 
+                 count =  1
+                
+             left_n = path_node_as_root_sum(node.left, sum - node.val)
+             right_n = path_node_as_root_sum(node.right, sum - node.val)
+             return left_n + right_n + count
+        
+         if root == None:
+             return 0
+         return ( path_node_as_root_sum(root, sum) + 
+                 self.pathSum(root.left, sum ) + 
+                 self.pathSum(root.right, sum ) )                        
+     #+end_src
+**** summary
+     - in each recursive function, we should focus on that 
+       - so when sum == node.val, THATS NOT THE END. DONT RETURN 
+         - it means root it self meets requirement 
+
+
+
+
+
+
+** medium
+*** 98 Validate Binary Search Tree
+  Given a binary tree, determine if it is a valid binary search tree (BST).
+  Assume a BST is defined as follows:
+
+  The left subtree of a node contains only nodes with keys less than the node's key.
+  The right subtree of a node contains only nodes with keys greater than the node's key.
+  Both the left and right subtrees must also be binary search trees.
+  Example 1:
+      2
+     / \
+    1   3
+  Binary tree [2,1,3], return true.
+  Example 2:
+      1
+     / \
+    2   3
+  Binary tree [1,2,3], return false.
+
+**** hint 
   - classic problems. 
   - be aware of typo. check typo first 
 
-* 230 Kth Smallest Element in a BST
-Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
 
-Note: 
-You may assume k is always valid, 1 ≤ k ≤ BST's total elements.
+*** binary tree in order traverse (iterative)                  :ERROR:review:
+    - traverse a tree like a link-list node = node.left
+    - antoher solution ? 
+    - 复习了还是不会 ！
+    - we are using stack to store parent node 
+      - stack served as STATE
+    - exit condition is not len(stack) == 0
+    - in order is different from post-pre-order
+      - in order: insert 1 node each time, use current node + stack 
+      - post order: insert 2 nodes each time, use 2 stacks 
+#+begin_src python
+class Solution:
+    def inorderTraversal(self, root):
+        if root == None:
+            return []
+        
+        result = []
+        queue = []
+        node = root
+        while True:  # use while true condition in queue/stack problem
+            if node:  
+                queue.append(node)
+                node = node.left
+            else:
+                if (len(queue) == 0):
+                    return result
+                top = queue.pop()
+                result.append(top.val)
+                node = top.right
+                                            
+#+end_src
+*** Binary Tree Zigzag Level Order Traversal                           :WARN:
+    - 想复杂了。一开始就钻牛角尖，放入queue都时候不需要reverse
+    - same as the normal level order traversel, only diffence is insert/append
+      when pop up 
+    - 2 ways to do in order traversal: recursive/iterative
+#+begin_src python
+class Solution:
+    def zigzagLevelOrder(self, root):
+        if root == None:
+            return []
+        
+        result = []
+        queue = []
+        depth = 0
+        queue.append((root, 0))
+        while queue:
+            front, depth = queue.pop(0)
+            if (len(result) == depth):
+                result.append([])
+            
+            if depth % 2 == 0:
+                result[depth].append(front.val)
+            else:
+                result[depth].insert(0,front.val)
+                
+            if front.left:
+                queue.append((front.left, depth + 1))
+            if front.right:
+                queue.append((front.right, depth + 1))
+                
+        return result        
+#+end_src
+*** Construct Binary Tree from Preorder and Inorder Traversal          :WARN:
+    - a[-n] be aware of n = 0
+    - the best practice is to not using a[-n] unless n has a exact number
+#+begin_src python
+class Solution:
+    def buildTree(self, preorder, inorder):
+        if not preorder:
+            return None 
+        if not inorder:
+            return None
+       
+        root_val = preorder[0]
+        root = TreeNode(root_val)  #粗心了
+        # find root in inorder
+        root_index = inorder.index(root_val)
+        left_num = root_index
+        
+        # use a[-n] with cautious
+            
+        root.left = self.buildTree(preorder[1:1+left_num], inorder[:root_index])
+        root.right = self.buildTree(preorder[1+left_num:], inorder[root_index+1:])
+            
+        
+        return root
+#+end_src
+*** Populating Next Right Pointers in Each Node
+    - utlize the exsiting NEXT pointer
+    - always need to check if pointer exists before using it 
+#+begin_src python
+class Solution:
+    def connect(self, root):
+        if not root:
+            return 
+        
+        if not root.left or not root.right: # leaf
+            return 
+        
+        root.left.next = root.right
+        if root.next:
+            root.right.next = root.next.left
+        else:
+            root.right.next = None
+            
+        self.connect(root.left)
+        self.connect(root.right)                
+#+end_src
 
-Follow up:
-What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?
+*** Kth Smallest Element in a BST
+    - convert the problem to an in-order traverse
+**** code
+#+begin_src python
+class Solution:
+    def kthSmallest(self, root, k):
+        res = []
+        stack = []
+        node = root
+        while True:
+            if len(res) == k:
+                return res[k-1]
 
-Credits:
-Special thanks to @ts for adding this problem and creating all test cases.
+            if node:
+                stack.append(node)
+                node = node.left
+            else:  
+                top = stack.pop()
+                res.append(top.val)
+                node = top.right
+                
+        return None
+        
+#+end_src
 
-** hint 
-  - inorder traversal
-  - nothing much 
+
+***  Serialize and Deserialize Binary Tree                            :ERROR:
+    - tree traverse not good 
+      - BFS, DFS
+      - pre-order, in-order, post-order
+#+begin_src python
+class Codec:
+# BFS: use a queue to achieve BFS
+    def serialize(self, root):
+        if not root:
+            return None
+        
+        queue = [root]
+        res = []
+        while queue:
+            top = queue.pop(0)
+            if top == None:
+                res.append(None)
+            else:
+                res.append(top.val)
+                
+            if top:
+                queue.append(top.left)
+                queue.append(top.right)
+            
+        return json.dumps(res)
+        
+
+    def deserialize(self, data):
+        if not data:
+            return None
+        
+        array = json.loads(data)        
+        index = 0
+        root = TreeNode(array[0])
+        queue = [root]
+        while queue:   #
+            if index >= len(array):
+                break
+            
+            node = queue.pop(0)
+            if node:
+                index += 1
+                node.left = TreeNode(array[index]) if index < len(array) and array[index] != None  else None
+                index += 1
+                node.right = TreeNode(array[index]) if index < len(array) and array[index] != None else None
+                
+                queue.append(node.left)
+                queue.append(node.right)
+        return root
+#+end_src
+*** number of islands                                                 :ERROR:
+    - graph dfs !!!
+    - naive soution is O(n^2), which is bad. graph solution is O(n*k)
+    - be careful about the input type, is it string or int ?
+**** code
+#+begin_src python
+class Solution:
+    def numIslands(self, grid):
+        if not grid:
+            return 0
+        
+        self.m = len(grid)
+        self.n = len(grid[0])
+        visited = [[False] * self.n for _ in range(self.m)]
+        islands = []
+        count = 0
+        for i in range(self.m):
+            for j in range(self.n):
+                # when to start running dfs
+                #dont forget check if is 1
+                if not visited[i][j] and grid[i][j] == '1':  
+                    self.dfs(i, j, grid, visited)
+                    count += 1
+        return count 
+    
+    def dfs(self, i, j, grid,visited):
+        if visited[i][j]:
+            return 
+        
+        visited[i][j] = True        
+        if i + 1 < self.m and grid[i+1][j] == '1':
+            self.dfs(i+1, j, grid, visited)
+        
+        if i > 0 and grid[i-1][j] == '1':
+            self.dfs(i-1, j, grid, visited)
+            
+        if j + 1 < self.n and grid[i][j+1] == '1':
+            self.dfs(i, j + 1, grid, visited)
+            
+        if j > 0 and grid[i][j-1] == '1':
+            self.dfs(i, j - 1, grid, visited)
+                    
+#+end_src
+
+
+
+
+
+
+*** Lowest Common Ancestor of a Binary Tree
+**** Thoughts
+     - convert the problem to a tree traversal
+     - backtracking
+**** code
+     #+begin_src python
+class Solution(object):
+    def lowestCommonAncestor(self, root, p, q):
+        self.result1 = []
+        self.result2 = []
+        self.path = []
+        def findNode(node):
+            if node == None:
+                return
+            
+            self.path.append(node)
+            
+            if not self.result1 and node == p:
+                self.result1 = list(self.path)  # deepcopy !!
+            
+            if not self.result2 and node == q:
+                self.result2 = list(self.path)
+            
+            if self.result1 and self.result2:
+                return 
+            
+            findNode(node.left)
+            findNode(node.right)
+            self.path.pop() # push 1, pop 1, basic back tracking 
+        
+
+        findNode(root)
+        LCA = None
+        for i in range(min(len(self.result1), len(self.result2))):
+            if self.result1[i] == self.result2[i]:
+                LCA = self.result1[i]
+            else:
+                break
+        return LCA                
+     #+end_src
+**** summary
+     - always thinking deepy copy when doing object assignment (defensive)
+     - back tracking, 1 push 1 pop
+       Fun A
+         Fun B
+           Fun null
+           Fun null
+           pop()  -- B
+         Fun C
+         ...
+
+
+*** House Robber III
+**** Thoughts
+     - 太牛逼了，这个想不到啊
+**** code
+     #+begin_src python
+ class Solution(object):
+     def rob(self, root):
+         def dfs(node):
+             if node == None:
+                 return (0, 0)
+            
+             left = dfs(node.left)
+             right = dfs(node.right)
+            
+             max_chose_node = left[1] + right[1] + node.val
+             max_not_chose_node = max(left[0], left[1]) + max(right[0], right[1])
+             return (max_chose_node, max_not_chose_node)
+        
+         res = dfs(root)
+         return max(res[0], res[1])
+     #+end_src
+**** summary
+
+*** Unique Binary Search Trees                                        :ERROR:
+**** Thoughts
+**** code
+     #+begin_src python
+class Solution(object):
+    def numTrees(self, n):
+        f = [0] * (n+2)
+        f[0] = 1
+        f[1] = 1
+        for i in range(2, n+1):
+            for offset in range(0, i):
+                f[i] += f[i-1 - offset] * f[offset]
+                
+        return f[n]
+     #+end_src
+**** summary
+
+
+
+*** Flatten Binary Tree to Linked List
+**** Thoughts
+     - thinking of dfs traversal 
+**** code
+     #+begin_src python
+     #+end_src
+**** summary
+
+
+
+

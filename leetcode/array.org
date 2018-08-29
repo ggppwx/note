@@ -1,172 +1,654 @@
 #+TITLE: array 
-* 162 peak number
-A peak element is an element that is greater than its neighbors.
-Given an input array where num[i] ≠ num[i+1], find a peak element and return its index.
-The array may contain multiple peaks, in that case return the index to any one of the peaks is fine.
-You may imagine that num[-1] = num[n] = -∞.
-For example, in array [1, 2, 3, 1], 3 is a peak element and your function should return the index number 2.
-click to show spoilers.
-Credits:
-Special thanks to @ts for adding this problem and creating all test cases.
+#+INFOJS_OPT: path:org-info.js
+#+INFOJS_OPT: toc:nil ltoc:t view:info mouse:underline buttons:nil
+#+INFOJS_OPT: up:https://orgmode.org/worg/
+#+INFOJS_OPT: home:https://orgmode.org
 
-** hint
-INT_MIN vs INT_MAX
+* array 
+** easy
+*** Plus One
+**** summary
+    - python array appending 
+    - don't forget adding 1 first 
+    - don't forget inserting last carry 
+
+*** move zero 
+**** summary
+    - python range(n) = 0, 1, 2, ... n-1
+*** valid sudoku                                                       :WARN:
+**** thoughts 
+    - 应用枚举发，先把可能性写下来
+    - 难点是How to go through each cell 
+**** code 
+ #+begin_src python
+ class Solution(object):
+     def isValidSudoku(self, board):
+         i = 0
+         j = 0
+         for i in range(len(board)):
+             check = {}
+             check2 = {}
+             check3 = {}
+             for j in range(len(board)):
+                 if board[i][j] in check:
+                     return False
+                 elif board[i][j] != '.':
+                     check[board[i][j]] = 1
+                    
+                 if board[j][i] in check2:
+                     return False
+                 elif board[j][i] != '.':
+                     check2[board[j][i]] = 1
+                
+                 # key is here, consider i as number not axis.
+                 # we have i=9 blocks starting at 
+                 # (0,0) (0,3) (0,6) (3, 0) ... 
+                 num = board[i/3 * 3 + j/3][i%3 * 3 + j%3]
+                 if num in check3:
+                     return False
+                 elif num != '.':
+                     check3[num] = 1
+                                      
+         return True                    
+ #+end_src
+
+*** Rotate Image                                                   :reviewed:
+**** thoughts
+    - do this in-place, 
+    - write down the example 
+**** code
+ #+begin_src python
+ class Solution(object):
+     def rotate(self, matrix):
+         length = len(matrix)
+         # roate 4 points a time, similar to reverse link list problem 
+         # to make the problem easy: first 
+         """
+         tmp = m[0][0]
+         m[0][0] = m[n][0]
+         m[n][0] = m[n][n]
+         m[n][n] = m[0][n]
+         m[0][n] = tmp
+         after that, considering + offset 
+         after that, considering go deeper m[0][0] --> m[i][i+offset]
+         (0 ---> i; n ---> n-i)
+         """
+         for i in range(length-1):
+             offset = 0
+             while i + offset < length - 1 - i:
+                 tmp = matrix[i][i + offset]
+                 matrix[i][i + offset] = matrix[length - 1 - offset-i][i]
+                 matrix[length - 1 - offset-i][i] = matrix[length - 1-i][length - 1 - offset-i ]
+                 matrix[length - 1-i][length - 1 - offset-i] = matrix[i + offset ][length - 1 -i]
+                 matrix[i + offset ][length - 1 -i] = tmp
+                 offset += 1
+ #+end_src
+**** summary
+    - 完全不会做 ！
+    - matrix就是薄弱环节
 
 
-
-* 153 min in rotated sorted array
-Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
-(i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
-Find the minimum element.
-You may assume no duplicate exists in the array.
-
-** hint
-always think about 'else case' when coding
-
-
-* 2 sum 
-Given an array of integers,
-find two numbers such that they add up to a specific target number.
-** hint
-   - if the array is sorted, then use 2 pointer is better solution 
-   - remeber this probelm is retunning indices, not the acutal number 
-     
-** code 
-#+BEGIN_SRC python
+*** Find All Numbers Disappeared in an Array
+**** Thoughts
+     - using extra space is easy, how to use constant space ? 
+     - 这个数组有什么特点？想到number和index有对应关系
+       - if number not exist, that index will be related
+**** code
+     #+begin_src python
 class Solution(object):
-    def twoSum(self, nums, target):
+    def findDisappearedNumbers(self, nums):
+        for num in nums:
+            nums[abs(num)-1] = abs(nums[abs(num)-1]) * -1
+            
+        res = []
+        for i, num in enumerate(nums):
+            if num > 0:
+                res.append(i+1)
+        
+        return res
+     #+end_src
+**** summary
+     - 非常巧妙的方法，把数字和index联系起来
+
+
+*** Container With Most Water
+**** Thoughts
+     - looks like a 2 pointers problem 
+     - so question is, how to move pointer ?
+     - greedy approach, always move the shorter one 
+**** code
+     #+begin_src python
+class Solution(object):
+    def maxArea(self, height):
+        """
+        :type height: List[int]
+        :rtype: int
+        """
+        i = 0
+        j = len(height) - 1
+        res = 0
+        while i < j:
+            ai = height[i]
+            aj = height[j]
+            tmp = min(ai, aj) * (j - i)
+            res = tmp if tmp > res else res
+            
+            if ai < aj:           
+                i += 1
+            else:         
+                j -= 1
+                
+        return res
+     #+end_src
+**** summary
+     greedy algorithm, Time: O(n)
+
+*** find duplate numbers                                              :ERROR:
+**** Thoughts
+     - use sorting, need to change array or extra space
+     - use map, extra space 
+     - without both, problem is hard
+**** code
+     #+begin_src python
+class Solution(object):
+    def findDuplicate(self, nums):
         """
         :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
+        :rtype: int
         """
-        map = {}
-        for i, num in enumerate(nums): 
-            if target - num in map:
-                return [ map[target - num], i ]
-            else:
-                map[num] = i
-
-        return []
-#+END_SRC
-
-
-* palindrome integer
-palindrome integer is 121, 112211
-
-** hint
- the key is to check if the number overflows
-
-** code 
-#+BEGIN_SRC cpp
-class Solution {
-public:
-    bool isPalindrome(int x) {
-        int sum = 0;
-        int origin = x;
-        while(x > 0) {     
-            if (sum  > origin/10) // check if it overflows 
-                return false;
+        i = 0
+        j = len(nums) - 1
+        
+        while i < j:
+            mid = (i + j) /2
             
-            sum = sum * 10 + x % 10;                        
-            x = x /10;             
-        }
-        return sum == origin;
-    }
-};
-#+END_SRC
-
-* implement strstr
-** hint 
-corner case:
-"" ""
-"a" "b"
-** code 
-#+BEGIN_SRC cpp
-class Solution {
-public:
-    int strStr(string haystack, string needle) {
-        for (int i = 0; ; i ++ ) { // no need to set the boundary 
-            for (int j = 0; ; j++) {
-                if (j == needle.size()){ // check it first, to avoid conner case
-                    return i;
-                }
-                if (i+j == haystack.size()) return -1;
-
-                if (haystack[i + j] != needle[j]){ 
-                    // compare i+j, so if not work, backtrace to i 
-                    break;
-                }                
-            }            
-        }      
-    }
-};
-#+END_SRC
+            count = 0
+            for num in nums:
+                if num <= mid:
+                    count += 1
+            if count <= mid:
+                i = mid + 1
+            else:
+                j = mid
+       
+        return i 
+     #+end_src
+**** summary
+     - 理解题目出现错误. 这是一个抽屉原理题目
+     - brute for is to check if each target in for num in nums
+     - using binary serach, instad of looping through target, do binray search
 
 
-* Reverse Words in a String
-Given s = "the sky is blue",
-return "blue is sky the".
-** hint
-need to reduce the space, we could retrieve the word 
-** code 
-#+BEGIN_SRC cpp
-class Solution {
-public:
-    void reverseWords(string &s) {
-        vector<string> words;
-        string word;
-        for (int i = 0; i < s.size(); i++){
-            if (s[i] != ' ') {
-                word += s[i];
-            } else {
-                if (!word.empty())
-                    words.push_back(word);
-                    word = ""; // reset string, don't use clear()
-            }
-        }
-        if (!word.empty())
-            words.push_back(word);
+*** Maximum Product Subarray                                           :WARN:
+**** Thoughts
+     - thinking about DP.
+     - the substring ending with N
+**** code
+     #+begin_src python
+ class Solution(object):
+     def maxProduct(self, nums):
+         if not nums:
+             return None
         
-        s ="";
-        for (int i = words.size() - 1; i> 0; i--){
-            s = s +  words[i] + " ";
-        }
-        if (words.size() > 0) // check before accessing an array 
-            s += words[0];
+         pstates = [None] * len(nums)
+         nstates = [None] * len(nums)
         
-    }
-};
-#+END_SRC
+         if nums[0] > 0:
+             pstates[0] = nums[0]
+         elif nums[0] < 0:
+             nstates[0] = nums[0]
+         else:
+             pstates[0] = 0
+             nstates[0] = 0
+        
+         for i in range(1, len(nums)):                                    
+             if nums[i] > 0: 
+                 if pstates[i-1]:
+                     tmp = pstates[i-1] * nums[i]
+                     pstates[i] = tmp if tmp > nums[i] else nums[i]
+                 else:
+                     pstates[i] = nums[i]
+                    
+                 if nstates[i-1]:
+                     tmp1 = nstates[i-1] * nums[i]
+                     nstates[i] = tmp1
+                    
+             elif nums[i] < 0:
+                 if pstates[i-1]:
+                     tmp = pstates[i-1] * nums[i]
+                     nstates[i] = tmp if tmp < nums[i] else nums[i]
+                 else:
+                     nstates[i] = nums[i]
+                 if nstates[i-1]:
+                     tmp1 = nstates[i-1] * nums[i]
+                     pstates[i] = tmp1
+             else:
+                 pstates[i] = 0
+                 nstates[i] = 0
+                    
+                    
+         maxp = -1000000            
+         for p in pstates + nstates:
+             maxp = p if p > maxp else maxp
+            
+         return maxp
+     #+end_src
+**** summary
+     - use straight forward implementation 
+     - 不要取巧，直接用None来初始化state table
+
+*** Spiral Matrix
+**** Thoughts
+     - 找规律, find the common law
+     - matrix problem, write down the first interation, then adding K 
+     - Exit condition ? 
+**** code
+     #+begin_src python
+ class Solution(object):
+     def spiralOrder(self, matrix):
+         if not matrix:
+             return []
+        
+         im = len(matrix)
+         jn = len(matrix[0])
+         res = []
+         k = 0
+         count = 0
+         while True:               
+             for j in range(k, jn-k):
+                 res.append(matrix[k][j])
+                 count += 1
+            
+             if count >= im * jn:
+                 break
+                        
+             for i in range(k+1, im - k):
+                 res.append(matrix[i][jn-1-k])
+                 count += 1
+                
+             if count >= im * jn:
+                 break                
+                
+             for j in range(jn-1-1-k, -1+k, -1):
+                 res.append(matrix[im-1-k][j])
+                 count += 1
+                
+             if count >= im * jn:
+                 break
+                
+             for i in range(im-1-1-k, 0+k, -1):
+                 res.append(matrix[i][0+k])
+                 count += 1
+            
+             if count >= im * jn:
+                 break                            
+             k += 1
+         return res
+                    
+     #+end_src
+**** summary
+     - How to Exit ? a easy way is to check the number of result array 
+     - array problem, always has corner cases 
 
 
-* reverse words 2 
 
-*  Longest Substring Without Repeating Characters
-Given "abcabcbb", the answer is "abc", which the length is 3.
-** hint 
-   - use map to save the index
-   - compare start < indexMap
+*** Minimum Path Sum
+**** Thoughts
+     - obviously it's a DP problem 
+**** code
+     #+begin_src python
+ class Solution(object):
+     def minPathSum(self, grid):
+         # f(i, j ) = f(i-1, j) or f(i, j-1)
+         if not grid:
+             return 0
+            
+         r_num = len(grid)
+         c_num = len(grid[0])
+        
+         state = [[None] * c_num for _ in range(r_num)]
+        
+         k = 0
+         state[0][0] = grid[0][0]
+        
+         while k < r_num and k < c_num:
+             for j in range(k, c_num):
+                 if k == 0:
+                     if j > 0:
+                         state[0][j] = state[0][j-1] + grid[0][j]
+                 else:
+                     state[k][j] = min(state[k-1][j], state[k][j-1]) + grid[k][j]
+                
+             for i in range(k, r_num):
+                 if k == 0:
+                     if i > 0:
+                         state[i][0] = state[i-1][0] + grid[i][0]
+                 else:
+                     state[i][k] = min(state[i-1][k], state[i][k-1]) + grid[i][k]                
+             k += 1         
+         return state[r_num-1][c_num-1]
+     #+end_src
+**** summary
 
-** code
-#+begin_src cpp
-class Solution {
-public:
-    int lengthOfLongestSubstring(string s) {
-        // sliding window, change the start point 
-        // another solution is to 
-        int start  = 0;
-        map<char, int> charMap;
-        int maxLen = 0;
-        for ( int i = 0; i< s.size() ; i++) {
-            if (charMap.find(s[i]) != charMap.end() && charMap[s[i]] >= start) {
-                // unable to find the char 
-                start =  charMap[s[i]] + 1;
-            } 
-            charMap[s[i]] = i;
-            maxLen = maxLen > (i - start + 1) ? maxLen : (i - start + 1);
-        }
-        return maxLen;
-    }
-};
+*** Subarray Sum Equals K                                             :ERROR:
+**** Thoughts
+     - brute force + state array 
+     - at first thinking about i,j 
+       - better solution: sum(i) - sum(j) == k 
+     - best solution, using map to save sum_state for quick access 
+**** code
+     #+begin_src python
+ class Solution(object):
+     def subarraySum(self, nums, k):
+         count = 0
+         sum_map = { 0 : 1 }
+         sum = 0
+         for i in range(len(nums)):
+             sum += nums[i]
+             if sum - k in sum_map:
+                 count += sum_map[sum-k]
+            
+             sum_map[sum] = sum_map.get(sum, 0) + 1
+        
+         return count 
+     #+end_src
+**** summary
+     - n^2 brute force can usally converted to 1 dimension state array 
+     - 求和，考虑反其道，看看能不能用减法
+       - for example, 2 sum, 3 sum 
+
+*** Next Permutation                                                  :ERROR:
+**** Thoughts
+     - 只能想到brute force
+**** code
+     #+begin_src python
+ class Solution:
+     def nextPermutation(self, nums):
+         def reverse(index, nums):  # could also using sorting 
+             i = index
+             j = len(nums) -1
+             while i < j:
+                 nums[i], nums[j] = nums[j], nums[i]
+                 i += 1
+                 j -= 1
+        
+         # find first descending from right 
+         i = len(nums) - 2
+         while i >= 0 and nums[i] >= nums[i+1]:
+             i -= 1
+            
+         # find the one just larger 
+         j = len(nums) - 1
+         while j >= 0 and nums[j] <= nums[i]:
+             j -= 1
+        
+         if i >= 0 and i >=0:
+             nums[i], nums[j] = nums[j], nums[i]
+        
+         # reverse i + 1
+         reverse(i+1, nums)                        
+     #+end_src
+**** summary
+     - while loop, still forget ++ or -- 
+     - 找规律类型题目还是不行啊
+
+
+
+*** Game of life
+**** Thoughts
+     - doing this in place is hard part
+       - thinking to change the val in matrix to antoher then
+         map it back 
+**** code
+     #+begin_src python
+class Solution(object):
+    def gameOfLife(self, board):
+        def live(val):
+            # 0 -> 0, 1 -> 1,
+            # 00 -> 2, 01 -> 3, 10 -> 4, 11 -> 5
+            if val == 0 or val == 2 or val== 3:
+                return False
+            else:
+                return True
+        
+        def new_live(val):
+            if val == 1 or val == 3 or val == 5:
+                return True
+            else:
+                return False
+        
+        
+        if not board:
+            return
+            
+        m = len(board)
+        n = len(board[0])
+        
+        for i in range(m):
+            for j in range(n):
+                current_val = board[i][j]
+                count_live = 0
+                count_dead = 0
+                for ik in range(i-1, i+2):
+                    for jk in range(j-1, j+2):
+                        if ik == i and jk == j:
+                            # current cell
+                            pass
+                        elif ik >= 0 and ik < m and jk >= 0 and jk < n:
+                            val = board[ik][jk]
+                            if live(val):
+                                count_live += 1
+                            else:
+                                count_dead += 1
+                                
+                if live(current_val) and count_live < 2:
+                    # dead
+                    board[i][j] = 4
+                    
+                elif live(current_val) and count_live >=2 and count_live <=3:
+                    # live
+                    board[i][j] = 5
+                    
+                elif live(current_val) and count_live > 3:
+                    # dead
+                    board[i][j] = 4
+                elif not live(current_val) and count_live == 3:
+                    # live 
+                    board[i][j] = 3
+                    
+        for i in range(m):
+            for j in range(n):
+                val = board[i][j]
+                if new_live(val):
+                    board[i][j] = 1
+                else:
+                    board[i][j] = 0
+               
+     #+end_src
+**** summary
+     - very good, 一遍通过
+     - corner case first. defensive programming  
+     - use small functions. 
+     - write comments to avoid bugs 
+
+** medium
+*** shuffle array                                                  :reviewed:
+**** thoughts
+    - straght forward solution, use random.randrange()
+    - python pass by reference, when in doubt, deepycopy
+**** code
+ #+begin_src python
+ class Solution(object):
+     def __init__(self, nums):
+         self._nums = nums
+         self._original = list(nums) # python need to take care of deepy copy
+        
+
+     def reset(self):
+         self._nums = list(self._original) # deepcody 
+         return  self._nums
+
+     def shuffle(self):
+         for i in range(len(self._nums)):
+             swapidx = random.randrange(i, len(self._nums))
+             self._nums[i], self._nums[swapidx] = self._nums[swapidx], self._nums[i]
+                
+         return self._nums
+ #+end_src
+
+**** summary
+    - Be aware of member variable, you need to reset it after calling function
+    - 严重超时。
+    - this is "Fisher-Yates Algorithm"
+
+*** generate all possible combinations
+ #+begin_src python
+ def gen(nums):
+     if len(nums) == 0:
+         return []
+     if len(nums) == 1:  # no harm to add more exit condition
+         return [nums]
+    
+     result = []
+     for num in nums:
+         left = ... 
+         for comb in gen(left):
+              result.append([num] + comb)
+
+     return result
+ #+end_src
+
+
+ 
+
+
+
+
+*** Increasing Triplet Subsequence
+    - Be careful, always use explcit MAX
+    - 不要图省事，用一个大数字，数字一般不够大的 ！！
+#+begin_src python
+class Solution:
+    def increasingTriplet(self, nums):
+        INT_MAX = 2 ** 32
+        min1 = INT_MAX
+        min2 = INT_MAX
+        min3 = INT_MAX
+        for num in nums:
+            if num <= min1:
+                min1 = num
+            elif num <= min2:
+                min2 = num
+            elif num <= min3:
+                min3 = num
+        
+        return min1 != INT_MAX and min2 != INT_MAX and min3 != INT_MAX
 #+end_src
+
+* others 
+** others
+*** 162 peak number
+  A peak element is an element that is greater than its neighbors.
+  Given an input array where num[i] ≠ num[i+1], find a peak element and return its index.
+  The array may contain multiple peaks, in that case return the index to any one of the peaks is fine.
+  You may imagine that num[-1] = num[n] = -∞.
+  For example, in array [1, 2, 3, 1], 3 is a peak element and your function should return the index number 2.
+  click to show spoilers.
+  Credits:
+  Special thanks to @ts for adding this problem and creating all test cases.
+
+**** hint
+  INT_MIN vs INT_MAX
+
+
+
+*** 153 min in rotated sorted array
+  Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
+  (i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
+  Find the minimum element.
+  You may assume no duplicate exists in the array.
+
+**** hint
+  always think about 'else case' when coding
+
+
+*** 2 sum 
+  Given an array of integers,
+  find two numbers such that they add up to a specific target number.
+**** hint
+     - if the array is sorted, then use 2 pointer is better solution 
+     - remeber this probelm is retunning indices, not the acutal number 
+     
+**** code 
+  #+BEGIN_SRC python
+  class Solution(object):
+      def twoSum(self, nums, target):
+          """
+          :type nums: List[int]
+          :type target: int
+          :rtype: List[int]
+          """
+          map = {}
+          for i, num in enumerate(nums): 
+              if target - num in map:
+                  return [ map[target - num], i ]
+              else:
+                  map[num] = i
+
+          return []
+  #+END_SRC
+
+
+*** palindrome integer
+  palindrome integer is 121, 112211
+
+**** hint
+   the key is to check if the number overflows
+
+**** code 
+  #+BEGIN_SRC cpp
+  class Solution {
+  public:
+      bool isPalindrome(int x) {
+          int sum = 0;
+          int origin = x;
+          while(x > 0) {     
+              if (sum  > origin/10) // check if it overflows 
+                  return false;
+            
+              sum = sum * 10 + x % 10;                        
+              x = x /10;             
+          }
+          return sum == origin;
+      }
+  };
+  #+END_SRC
+
+*** implement strstr
+**** hint 
+  corner case:
+  "" ""
+  "a" "b"
+**** code 
+  #+BEGIN_SRC cpp
+  class Solution {
+  public:
+      int strStr(string haystack, string needle) {
+          for (int i = 0; ; i ++ ) { // no need to set the boundary 
+              for (int j = 0; ; j++) {
+                  if (j == needle.size()){ // check it first, to avoid conner case
+                      return i;
+                  }
+                  if (i+j == haystack.size()) return -1;
+
+                  if (haystack[i + j] != needle[j]){ 
+                      // compare i+j, so if not work, backtrace to i 
+                      break;
+                  }                
+              }            
+          }      
+      }
+  };
+  #+END_SRC
+
+
