@@ -32,12 +32,12 @@
     CLOSED: [2018-07-02 Mon 20:57]
 *** DONE trie
     CLOSED: [2018-07-02 Mon 20:57]
+*** TODO two pointers
 *** TODO dynamic programming
 *** TODO divide and conquer
     - what is d&D
     - online video 
 *** TODO math
-*** TODO two pointers
 *** TODO stack/heap/queue
 *** TODO greedy
 *** TODO sort
@@ -50,6 +50,31 @@
 *** TODO geometry
 *** TODO reservoir sampling 
 *** TODO minimax
+
+
+** review guideline
+*** binary search 
+*** 2 pointers 
+*** Bfs
+*** topological sorting 
+*** dfs
+*** combination-based dfs
+*** graphic-based dfs
+*** data structure 
+**** stack
+**** queue
+**** heap
+**** hash map 
+**** arrray
+**** interval
+**** matrix 
+**** binary indexed tree
+**** deque 
+*** union find
+*** trie 
+*** sweep line
+*** DONE dynamic programming 
+    CLOSED: [2018-09-03 Mon 14:15]
 
 ** leetcode review
 done conditions: review a topic, spent at least 1 hour 
@@ -466,6 +491,7 @@ class Solution(object):
       - why? because it's sorted !!
     - no extra space because of 2 pointer approach
 
+
 ** set matrix 0 
     - sample solution is easy. what about don't use a lot extra space ?
 #+begin_src python
@@ -487,6 +513,41 @@ class Solution(object):
                     matrix[i][j] = 0
 #+end_src
 
+
+
+** 881. Boats to Save People
+*** problem
+The i-th person has weight people[i], and each boat can carry a maximum weight of limit.
+Each boat carries at most 2 people at the same time, provided the sum of the weight of those people is at most limit.
+Return the minimum number of boats to carry every given person.  (It is guaranteed each person can be carried by a boat.)
+*** Thoughts
+     - thinking about 2sum, use l/r 2 pointers
+     - when moving l/r, also update the result 
+     - corner case: if l == r
+*** code
+    #+begin_src python
+class Solution(object):
+    def numRescueBoats(self, people, limit):
+        result = 0
+        people = sorted(people)
+        l = 0
+        r = len(people) - 1
+        while l <= r:
+            if l == r:
+                result += 1
+                break
+                
+            if people[l] + people[r] > limit:
+                result += 1
+                r -= 1
+            else:
+                result += 1
+                r -= 1
+                l += 1
+                
+        return result 
+    #+end_src
+*** summary
 
 
 * stack/heap/queue
@@ -1129,7 +1190,7 @@ class Solution(object):
 
 
 * linked list
-
+** {{{color(red, Medium)}}}
 ** remove nth node from end of the list 
 *** thoughts
     2 pointers 
@@ -1356,6 +1417,62 @@ class Solution(object):
      #+end_src
 *** summary
     - could also be solved by merge sort 
+
+
+** 82. Remove Duplicates from Sorted List II
+*** problem
+Given a sorted linked list, delete all nodes that have duplicate numbers, leaving only distinct numbers from the original list.
+Example 1:
+Input: 1->2->3->3->4->4->5
+Output: 1->2->5
+
+Example 2:
+Input: 1->1->1->2->3
+Output: 2->3
+*** Thoughts
+    - keeping old node in order to remove a node
+    - dummy node trick 
+*** code
+    #+begin_src cpp
+class Solution {
+public:
+    ListNode* deleteDuplicates(ListNode* head) {
+        if (head == NULL) {
+            return head;
+        }
+        if (head->next == NULL) {
+            return head;
+        }
+        
+        ListNode *dummy = new ListNode(-1);
+        dummy->next = head;
+        ListNode *pre = dummy;
+        ListNode *l = head;
+        ListNode *r = head->next;
+        
+        while(pre != NULL && l != NULL && r != NULL){
+            if (l->val != r->val){
+                pre = pre->next;
+                l = l -> next;
+                r = r -> next;
+                continue;
+            }                        
+            while(r != NULL && l->val == r->val){
+                r = r->next;
+            }
+            pre->next = r;
+            l = r;
+            if (r != NULL) {
+                r = r-> next;
+            }            
+        }            
+        return dummy->next;                
+    }
+};
+    #+end_src
+*** summary
+
+
 
 
 * hash table 
@@ -3794,6 +3911,128 @@ class Solution(object):
 
 
 
+
+
+
+
+** 529. Minesweeper
+*** problem
+Input: 
+
+[['E', 'E', 'E', 'E', 'E'],
+ ['E', 'E', 'M', 'E', 'E'],
+ ['E', 'E', 'E', 'E', 'E'],
+ ['E', 'E', 'E', 'E', 'E']]
+
+Click : [3,0]
+
+Output: 
+
+[['B', '1', 'E', '1', 'B'],
+ ['B', '1', 'M', '1', 'B'],
+ ['B', '1', '1', '1', 'B'],
+ ['B', 'B', 'B', 'B', 'B']]
+*** Thoughts
+    - BFS
+*** code
+    #+begin_src python
+class Solution(object):
+    def updateBoard(self, board, click):
+        R_len = len(board)
+        C_len = len(board[0])
+        
+        if board[click[0]][click[1]] == 'M':
+            board[click[0]][click[1]] = 'X'
+            return board
+        
+        # x row, y col
+        def has_mine_around(x, y):
+            count = 0
+            if x + 1 < R_len and y < C_len and board[x+1][y] == 'M':
+                count += 1
+            if x - 1 >= 0 and board[x-1][y] == 'M':
+                count += 1
+            if x < R_len and y + 1 < C_len and board[x][y+1] == 'M':
+                count += 1
+            if y - 1 >= 0 and board[x][y-1] == 'M':
+                count += 1
+            if x + 1 < R_len and y + 1 < C_len and board[x+1][y+1] == 'M':
+                count += 1
+            if x + 1 < R_len and y - 1 >= 0 and board[x+1][y-1] == 'M':
+                count += 1
+            if x - 1 >= 0 and y + 1 < C_len and board[x-1][y+1] == 'M':
+                count += 1
+            if x - 1 >= 0 and y - 1 >= 0 and board[x-1][y-1] == 'M':
+                count += 1
+            return count 
+            
+        def valid(x, y):
+            if x >= 0 and x < R_len and y >= 0 and y < C_len and board[x][y] == 'E':
+                return True
+            return False
+        
+        
+        def bfs(pos):
+            visited = [[0 for _ in range(C_len)] for _ in range(R_len) ]
+            queue = []
+            visited[pos[0]][pos[1]] = 1
+            queue.append(pos)
+            while queue:
+                x, y = queue.pop()
+                
+                if board[x][y] == 'M':
+                    board[x][y] = 'X'
+                    continue
+                    
+                if board[x][y] == 'B':
+                    continue
+                
+                mine_around = has_mine_around(x, y) 
+                if mine_around > 0:
+                    board[x][y] = str(mine_around)
+                    continue
+                    
+                if board[x][y] == 'E':
+                    board[x][y] = 'B'
+                
+                
+                # check the neighbors
+                if valid(x+1,  y) and visited[x+1][y] == 0:
+                    visited[x+1][y] = 1
+                    queue.append((x+1, y))
+                
+                if valid(x-1, y) and visited[x-1][y] == 0:
+                    visited[x-1][y] = 1
+                    queue.append((x-1, y))
+                
+                if valid(x, y+1) and visited[x][y+1] == 0:
+                    visited[x][y+1] = 1
+                    queue.append((x, y+1))
+                
+                if valid(x, y-1) and visited[x][y-1] == 0:
+                    visited[x][y-1] = 1
+                    queue.append((x, y-1))
+                
+                if valid(x+1, y+1) and visited[x+1][y+1] == 0:
+                    visited[x+1][y+1] = 1
+                    queue.append((x+1, y+1))
+                
+                if valid(x+1, y-1) and visited[x+1][y-1] == 0:
+                    visited[x+1][y-1] = 1
+                    queue.append((x+1, y-1))
+                
+                if valid(x-1, y+1) and visited[x-1][y+1] == 0:
+                    visited[x-1][y+1] = 1
+                    queue.append((x-1, y+1))
+                
+                if valid(x-1, y-1) and visited[x-1][y-1] == 0:
+                    visited[x-1][y-1] = 1
+                    queue.append((x-1,y-1))
+                
+        bfs((click[0], click[1]))        
+        return board                
+    #+end_src
+*** summary
 
 
 
