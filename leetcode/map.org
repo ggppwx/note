@@ -3,6 +3,7 @@
 #+OPTIONS:   num:nil
 #+MACRO: color @@html:<span style="color: $1">$2</span>@@
 #+HTML_HEAD: <script> var HS_STARTUP_FOLDED = true; var HS_COLLAPSIBLE_HEADERS_MAX = 3</script>
+#+bind: org-export-publishing-directory "../docs"
 * guide
 ** test1
 *** test2
@@ -55,6 +56,7 @@
 ** review guideline
 *** binary search 
 *** 2 pointers 
+    2 pointers is usually on  sorted array/list 
 *** Bfs
 *** topological sorting 
 *** dfs
@@ -77,15 +79,7 @@
     CLOSED: [2018-09-03 Mon 14:15]
 
 ** leetcode review
-done conditions: review a topic, spent at least 1 hour 
-*** DONE binary search 
-    CLOSED: [2018-06-11 Mon 21:59]
-*** DONE [[array][Array]]
-    CLOSED: [2018-07-02 Mon 20:57]
-*** TODO [[string][String]]
-*** TODO linked list 
-*** TODO tree/bst
-
+   see TODOs 
 
 ** 解题报告模版
 - 思路
@@ -95,7 +89,7 @@ done conditions: review a topic, spent at least 1 hour
  - 时间空间复杂度
 
 
-* binary serach 
+* binary serach
 ** {{{color(red, Easy)}}}
 ** Find Smallest Letter Greater Than Target
 *** problem
@@ -345,7 +339,7 @@ class Solution:
 
 
 
-* 2 pointers
+* TODO 2 pointers
 ** {{{color(red, Easy)}}}
 ** Remove Duplicates from Sorted Array
    good. but be aware of coner case 
@@ -492,6 +486,42 @@ class Solution(object):
     - no extra space because of 2 pointer approach
 
 
+** 80. Remove Duplicates from Sorted Array II
+*** problem
+Given nums = [1,1,1,2,2,3],
+Your function should return length = 5, with the first five elements of nums being 1, 1, 2, 2 and 3 respectively.
+It doesn't matter what you leave beyond the returned length.
+*** Thoughts
+*** code
+    #+begin_src python
+class Solution(object):
+    def removeDuplicates(self, nums):
+        # 0, 0, 1, 1, 1, 1, 2, 3, 3
+        p = 0         
+        for r in range(len(nums)):
+            curr = nums[r]
+            if p == 0:
+                nums[p] = curr
+                p += 1
+            elif p == 1:
+                nums[p] = curr
+                p += 1
+                
+            elif nums[p-1] != curr:
+                nums[p] = curr
+                p += 1
+                              
+            elif nums[p-1] == curr and nums[p-2] != curr:
+                nums[p] = curr
+                p += 1
+            elif nums[p-1] == curr and nums[p-2] == curr:
+                # no change
+                continue                
+        return p
+    #+end_src
+*** summary
+
+
 ** set matrix 0 
     - sample solution is easy. what about don't use a lot extra space ?
 #+begin_src python
@@ -548,6 +578,86 @@ class Solution(object):
         return result 
     #+end_src
 *** summary
+
+
+
+** 567. Permutation in String
+*** problem
+Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string's permutations is the substring of the second string.
+*** Thoughts
+    - approach 1: brute force 
+    - approach 2: sliding window 
+*** code
+    #+begin_src python
+class Solution(object):
+    def checkInclusion(self, s1, s2):
+        s1_map = [0] * 26
+        for s in s1:
+            idx = ord(s) - ord('a')
+            s1_map[idx] +=  1
+                
+        temp_map = list(s1_map)
+        i = 0
+        counter = 0
+        while i + counter < len(s2):
+            s = s2[i+counter]
+            idx = ord(s) - ord('a')
+            if temp_map[idx] > 0:
+                temp_map[idx] -= 1
+                counter += 1
+            elif counter > 0:
+                temp_map = list(s1_map)
+                i = i + 1
+                counter = 0 
+            else:
+                i = i + 1
+                 
+            if counter == len(s1):
+                return True
+        
+        return False
+
+# sliding window approach
+class Solution(object):
+    def checkInclusion(self, s1, s2):
+        if len(s1) > len(s2):
+            return False
+        
+        s1_map = [0] * 26
+        for s in s1:
+            idx = ord(s) - ord('a')
+            s1_map[idx] += 1
+                
+
+        temp_map = [0] * 26
+        counter = 0
+        while counter < len(s1):
+            s = s2[counter]
+            idx = ord(s) - ord('a')
+            temp_map[idx] += 1
+            counter += 1
+            
+        len1 = len(s1)
+        i = 0
+        while i + len1 < len(s2):
+            #print s1_map 
+            #print temp_map
+            if s1_map == temp_map:
+                return True
+            else:
+                temp_map[ord(s2[i]) - ord('a')] -= 1
+                temp_map[ord(s2[i+len1]) - ord('a')] +=  1
+                i = i + 1
+            
+        
+        return s1_map == temp_map
+    #+end_src
+*** summary
+    - in some cases, sliding window may not be faster, because it's always go through len(s1)
+    - time saving happens when updating the map, no need to copy the whole map 
+    - be a ware of corner case: if window reaches the last 
+      - let's say len(s1) == len(s2), not going into the loop at all 
+
 
 
 * stack/heap/queue
