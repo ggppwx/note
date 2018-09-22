@@ -75,8 +75,7 @@
 *** union find
 *** trie 
 *** sweep line
-*** DONE dynamic programming 
-    CLOSED: [2018-09-03 Mon 14:15]
+*** dynamic programming 
 
 ** leetcode review
    see TODOs 
@@ -339,7 +338,8 @@ class Solution:
 
 
 
-* TODO 2 pointers
+* DONE 2 pointers
+  CLOSED: [2018-09-22 Sat 11:26]
 ** {{{color(red, Easy)}}}
 ** Remove Duplicates from Sorted Array
    good. but be aware of coner case 
@@ -4147,7 +4147,8 @@ class Solution(object):
 
 
 
-* DFS
+* TODO DFS
+** {{{color(red, Medium)}}}
 ** Target Sum
 *** Thoughts
     - brute force recursion
@@ -4288,6 +4289,38 @@ class Solution(object):
         return self.notwork == False
     #+end_src
 *** summary
+
+
+** 113. path sum ii
+_*problem*_  
+Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
+_*thoughts*_  
+- simple dfs saving temp states 
+- note the value could be negative or positive, so 不需要剪枝
+_*code*_  
+#+begin_src python
+class Solution(object):
+    def pathSum(self, root, sum):
+        result = []
+        def dfs(node, left, tmp, result):
+            if node == None:
+                return
+            
+            curr_val = node.val
+            if node.left == None and node.right == None:
+                # leaf
+                if curr_val == left:
+                    result.append(tmp + [curr_val])
+                return 
+                                    
+            dfs(node.left, left - curr_val, tmp + [curr_val], result)
+            dfs(node.right, left - curr_val, tmp + [curr_val], result )
+        tmp = []
+        dfs(root, sum, tmp, result )
+        return result 
+#+end_src
+
+
 
 
 * sorting & searching
