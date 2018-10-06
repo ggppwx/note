@@ -5,13 +5,6 @@
 #+HTML_HEAD: <script> var HS_STARTUP_FOLDED = true; var HS_COLLAPSIBLE_HEADERS_MAX = 3</script>
 #+bind: org-export-publishing-directory "../docs"
 * guide
-** test1
-*** test2
-**** test3
-     text 3
-***** test4
-      text 4
-
 ** leetcode on topic plan
 *** DONE [[array][Array]]
     CLOSED: [2018-05-26 Sat 11:22]
@@ -53,29 +46,30 @@
 *** TODO minimax
 
 
-** review guideline
-*** binary search 
-*** 2 pointers 
-    2 pointers is usually on  sorted array/list 
-*** Bfs
-*** topological sorting 
-*** dfs
-*** combination-based dfs
-*** graphic-based dfs
-*** data structure 
-**** stack
-**** queue
-**** heap
-**** hash map 
-**** arrray
-**** interval
-**** matrix 
-**** binary indexed tree
-**** deque 
-*** union find
-*** trie 
-*** sweep line
-*** dynamic programming 
+** review guideline [0/4]
+   - [ ] binary search
+   - [ ] 2 pointers 
+     2 pointers is usually on  sorted array/list 
+   - [ ] Bfs
+   - [ ] topological sorting 
+   - [ ] dfs
+   - [ ] combination-based dfs
+   - [ ] graphic-based dfs
+   - [ ]data structure 
+     - stack
+     - queue
+     - heap
+     - hash map 
+     - arrray
+     - interval
+     - matrix 
+     - binary indexed tree
+     - deque 
+   - [ ] union find
+   - [ ] trie 
+   - [ ] sweep line
+   - [ ] dynamic programming 
+
 
 ** leetcode review
    see TODOs 
@@ -3334,6 +3328,37 @@ class Solution(object):
 
 
 
+** N-ary tree
+   _*problem*_ \\
+   Given an n-ary tree, return the preorder traversal of its nodes' values.
+
+   _*thoughts*_ \\
+   - simple queue iterative solution 
+
+   _*code*_ \\
+   #+begin_src python
+class Solution(object):
+    def preorder(self, root):
+        """
+        :type root: Node
+        :rtype: List[int]
+        """
+        result = []
+        queue = []
+        if root is not None:
+            queue.append(root)            
+        while queue:
+            first = queue.pop(0)
+            result.append(first.val)
+            tmp = []
+            for child in first.children:
+                if child is not None:
+                    tmp.append(child)                    
+            queue = tmp + queue            
+        return result 
+   #+end_src
+
+
 * graph
 ** {{{color(red, Medium)}}}
 ** course schedule II
@@ -4147,7 +4172,8 @@ class Solution(object):
 
 
 
-* TODO DFS
+* DONE DFS
+  CLOSED: [2018-10-04 Thu 20:14]
 ** {{{color(red, Medium)}}}
 ** Target Sum
 *** Thoughts
@@ -4292,12 +4318,14 @@ class Solution(object):
 
 
 ** 113. path sum ii
-_*problem*_  
+_*problem*_ \\
 Given a binary tree and a sum, find all root-to-leaf paths where each path's sum equals the given sum.
-_*thoughts*_  
+
+_*thoughts*_ \\
 - simple dfs saving temp states 
 - note the value could be negative or positive, so 不需要剪枝
-_*code*_  
+
+_*code*_ \\
 #+begin_src python
 class Solution(object):
     def pathSum(self, root, sum):
@@ -4319,6 +4347,245 @@ class Solution(object):
         dfs(root, sum, tmp, result )
         return result 
 #+end_src
+
+
+** 199. Binary Tree Right Side View
+   _*problem*_ \\
+Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
+
+   _*thoughts*_ \\
+   - what if left is deeper than right ? 
+   - need to go through all nodes, but from right to left, fill each depth
+
+   _*code*_ \\
+   #+begin_src python
+class Solution(object):
+    def rightSideView(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        result = []
+        def dfs(node, depth, result):
+            if node == None:
+                return 
+            
+            if len(result) <= depth:
+                result.append(node.val)
+            
+            dfs(node.right, depth + 1, result)
+            dfs(node.left, depth + 1, result)
+        
+        dfs(root, 0, result)
+        return result
+            
+   #+end_src
+
+
+** 109. Convert Sorted List to Binary Search Tree
+_*problem*_ \\
+Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
+
+For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
+
+_*thoughts*_ \\
+- straight-forward solution: put link list to an array 
+- mid = (l + r)/2  OR mid = (l + r + 1 ) /2 
+- maybe there's another solution ? 
+
+_*code*_ \\
+   #+begin_src python
+class Solution(object):
+    def sortedListToBST(self, head):
+        vals = []
+        node = head
+        while node:
+            vals.append(node.val)
+            node = node.next
+            
+        def build(l, r, vals):
+            if l > r:
+                return None
+            
+            mid = int((l + r ) / 2)
+            newnode = TreeNode(vals[mid])
+            newnode.left = build(l, mid - 1, vals)
+            newnode.right = build(mid + 1, r, vals)
+            return newnode
+            
+        return build(0, len(vals)-1, vals)
+   #+end_src
+
+
+** 863. All Nodes Distance K in Binary Tree
+_*problem*_ \\
+We are given a binary tree (with root node root), a target node, and an integer value K.
+Return a list of the values of all nodes that have a distance K from the target node.  The answer can be returned in any order.
+
+_*thoughts*_ \\
+- list is mutable: in function shouldn't use = to change it, because it's changing the reference 
+   - but you can use .append()
+- saving path, so we can trace back 
+- saving drection( goes left or right ) 
+- OR we can save the visited node ( like graph ) 
+
+_*code*_ \\
+    #+begin_src python
+ class Solution(object):
+     def distanceK(self, root, target, K):
+         def findbelow(node, depth, distance, result):
+             if node == None:
+                 return            
+             if depth > distance:
+                 return            
+             if depth == distance:
+                 result.append(node.val)
+                 return 
+            
+             findbelow(node.left, depth + 1, distance, result)
+             findbelow(node.right, depth + 1, distance, result)
+            
+            
+         def dfs(node, target, path, direction, result):
+             if node == None:
+                 return False            
+             if node == target:
+                 result.append(path + [node])
+                 result.append(direction + ['X'])
+                 return True            
+             if (dfs(node.left, target, path + [node], direction + ['L'], result) or
+                 dfs(node.right, target, path + [node], direction + ['R'], result)):
+                 return True
+             return False
+
+         path_to_target = []
+         dfs(root, target, [], [], path_to_target)        
+        
+         paths = path_to_target[0][::-1]
+         directions = path_to_target[1][::-1]
+         result = []
+         for i, n in enumerate(paths):            
+             direction = directions[i]            
+             temp = []
+             distance = K - i
+             if distance < 0:
+                 break
+             if distance == 0:
+                 temp = [n.val]                
+             elif direction == 'L':
+                 # go right 
+                 findbelow(n.right, 0, distance - 1, temp)
+             elif direction == 'R':
+                 findbelow(n.left, 0, distance - 1, temp)
+             else:
+                 findbelow(n, 0, distance, temp)
+                
+             result = result + temp
+        
+         return result         
+        
+    #+end_src
+
+
+
+
+
+
+
+
+
+
+
+** 547. Friend Circles
+_*problem*_ \\
+There are N students in a class. Some of them are friends, while some are not. Their friendship is transitive in nature. For example, if A is a direct friend of B, and B is a direct friend of C, then A is an indirect friend of C. And we defined a friend circle is a group of students who are direct or indirect friends.
+Given a N*N matrix M representing the friend relationship between students in the class. If M[i][j] = 1, then the ith and jth students are direct friends with each other, otherwise not. And you have to output the total number of friend circles among all the students.
+
+_*thoughts*_ \\
+- typical dfs
+- using array as map to save visited state
+- [[Course Schedule]] is dfs too, but it's black grey dfs  
+
+_*code*_ \\
+   #+begin_src python
+class Solution(object):
+    def findCircleNum(self, M):
+        visited = [0] * len(M)
+        
+        def dfs(node, visited):
+            visited[node] = 1
+            
+            for idx, know in enumerate(M[node]):
+                if idx == node:
+                    continue
+                if know == 1: # it's neighbor
+                    if visited[idx] == 0:
+                        dfs(idx, visited)
+        count = 0
+        for idx, isvisited in enumerate(visited):
+            if isvisited == 0: # not visited
+                count += 1
+                dfs(idx, visited)
+                
+        return count 
+   #+end_src
+
+
+
+
+
+** 756. Pyramid Transition Matrix
+   _*problem*_ \\
+   Input: bottom = "XYZ", allowed = ["XYD", "YZE", "DEA", "FFF"]
+   Output: true
+   Explanation:
+   We can stack the pyramid like this:
+    A
+   / \
+  D   E
+ / \ / \
+X   Y   Z
+
+This works because ('X', 'Y', 'D'), ('Y', 'Z', 'E'), and ('D', 'E', 'A') are allowed triples.
+
+   _*thoughts*_ \\
+   - should be recursive solution 
+   - get all possiblities of the next level 
+     - if possible, dfs to next level 
+     - exit condition: len(current_level) == 1
+
+   _*code*_ \\
+   #+begin_src python
+class Solution(object):
+    def pyramidTransition(self, bottom, allowed):
+        height = len(bottom)
+        
+        def allpossible(current, allowed):
+            if len(current) < 2:
+                return ['']
+            
+            result = []
+            first = current[0:2]
+            for allow in allowed:
+                if allow.startswith(first):
+                    top = allow[2]                    
+                    for possible in allpossible(current[1:], allowed):
+                        result.append(top + possible)
+            return result       
+            
+        def dfs(current, allowed):
+            if len(current) == 1:
+                return True
+            
+            for possible in allpossible(current, allowed):
+                if dfs(possible, allowed):
+                    return True
+                
+            return False
+        
+        return dfs(bottom, 1, allowed)            
+   #+end_src
+
 
 
 
