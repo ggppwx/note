@@ -46,13 +46,13 @@
 *** TODO minimax
 
 
-** review guideline [0/4]
+** review guideline [2/11]
    - [ ] binary search
-   - [ ] 2 pointers 
+   - [X] 2 pointers 
      2 pointers is usually on  sorted array/list 
    - [ ] Bfs
    - [ ] topological sorting 
-   - [ ] dfs
+   - [X] dfs
    - [ ] combination-based dfs
    - [ ] graphic-based dfs
    - [ ]data structure 
@@ -332,8 +332,7 @@ class Solution:
 
 
 
-* DONE 2 pointers
-  CLOSED: [2018-09-22 Sat 11:26]
+* 2 pointers
 ** {{{color(red, Easy)}}}
 ** Remove Duplicates from Sorted Array
    good. but be aware of coner case 
@@ -4172,8 +4171,7 @@ class Solution(object):
 
 
 
-* DONE DFS
-  CLOSED: [2018-10-04 Thu 20:14]
+* DFS
 ** {{{color(red, Medium)}}}
 ** Target Sum
 *** Thoughts
@@ -7338,7 +7336,7 @@ class Solution(object):
 
 
 
-* divide and conquer 
+* TODO divide and conquer 
 ** {{{color(red, Medium)}}}
 ** Different Ways to Add Parentheses
 *** problem
