@@ -22,6 +22,7 @@ def main():
     argv = sys.argv
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', '--config', help='the config file')
+    parser.add_argument('-i', '--ignore', nargs='?', help='ignore emacs batch gen')
     args = parser.parse_args()
 
     print args
@@ -29,6 +30,11 @@ def main():
     if 'config' not in args:
         # error 
         return
+
+    ignore = False
+    if 'ignore' in args:
+        print 'Ignoring emacs batch gen'
+        ignore = True
 
 
     config = ConfigParser.ConfigParser()
@@ -41,7 +47,7 @@ def main():
     path_list = json.loads(config.get("DEFAULT", 'path'))
     for path in path_list:
         # 1. generate html 
-        if path.endswith('.org'):
+        if not ignore and path.endswith('.org'):
             command = "emacs {} --batch   --eval=\"(add-to-list 'load-path \\\"~/.emacs.d/elpa/htmlize-20171017.141\\\")\"  -f org-html-export-to-html --kill".format(path)
             print(command)
             process = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
