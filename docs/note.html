@@ -6,7 +6,7 @@
 <!-- 2018-10-16 Tue 22:02 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Personal Archive</title>
+<title>&lrm;</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="JINGWEI GU" />
 <style type="text/css">
@@ -229,42 +229,162 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Personal Archive</h1>
-
-<div id="outline-container-org8010605" class="outline-2">
-<h2 id="org8010605"><span class="section-number-2">1</span> Outline</h2>
-<div class="outline-text-2" id="text-1">
-</div>
-<div id="outline-container-org3423e36" class="outline-3">
-<h3 id="org3423e36"><span class="section-number-3">1.1</span> test</h3>
-<div class="outline-text-3" id="text-1-1">
-<ul class="org-ul">
-<li><a href="link.html">link.org</a></li>
-<li><a href="link1.html">link1.html</a></li>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org14e7af3">1. learning 六月算法</a>
+<ul>
+<li><a href="#org26a7fb5">1.1. dynamic programming</a></li>
+<li><a href="#orgcb0ca48">1.2. graph serach</a></li>
+</ul>
+</li>
+<li><a href="#orgdc1e7cc">2. 292 nim game</a>
+<ul>
+<li><a href="#orgfa53504">2.1. code</a></li>
+<li><a href="#orge0e86c9">2.2. thoughs</a></li>
+</ul>
+</li>
+<li><a href="#org247294b">3. 226 invert binary tree</a></li>
+<li><a href="#org9c7377d">4. 237 delete Node in a tree</a></li>
+<li><a href="#org5349dcc">5. 100 is same tree</a></li>
+<li><a href="#org400db0e">6. 171 excel sheet number</a></li>
+<li><a href="#orgc594e6b">7. 206 reverse linke</a></li>
+<li><a href="#orga6ba7cf">8. 198 house robber</a></li>
+<li><a href="#org46f5e78">9. 101 symmetric tree</a></li>
+<li><a href="#org27c4203">10. realize the conner case</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org9871a55" class="outline-3">
-<h3 id="org9871a55"><span class="section-number-3">1.2</span> Code</h3>
-<div class="outline-text-3" id="text-1-2">
+<p>
+#TITLE: notes in leetcode
+</p>
+
+<div id="outline-container-org14e7af3" class="outline-2">
+<h2 id="org14e7af3"><span class="section-number-2">1</span> learning 六月算法</h2>
+<div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orgd001c88" class="outline-4">
-<h4 id="orgd001c88"><span class="section-number-4">1.2.1</span> <a href="map.html">map.html</a></h4>
+<div id="outline-container-org26a7fb5" class="outline-3">
+<h3 id="org26a7fb5"><span class="section-number-3">1.1</span> dynamic programming</h3>
+</div>
+
+<div id="outline-container-orgcb0ca48" class="outline-3">
+<h3 id="orgcb0ca48"><span class="section-number-3">1.2</span> graph serach</h3>
 </div>
 </div>
 
-<div id="outline-container-org587fdca" class="outline-3">
-<h3 id="org587fdca"><span class="section-number-3">1.3</span> My Notes</h3>
-<div class="outline-text-3" id="text-1-3">
-</div>
-<div id="outline-container-org5b4344b" class="outline-4">
-<h4 id="org5b4344b"><span class="section-number-4">1.3.1</span> <a href="algorithm.html">algorithm.html</a></h4>
+
+<div id="outline-container-orgdc1e7cc" class="outline-2">
+<h2 id="orgdc1e7cc"><span class="section-number-2">2</span> 292 nim game</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+You are playing the following Nim Game with your friend: 
+There is a heap of stones on the table, each time one of you take 
+turns to remove 1 to 3 stones. The one who removes the last stone will be the winner. You will take the first turn to remove the stones.
+Both of you are very clever and have optimal strategies for the game. Write a function to determine whether you can win the game given the number of stones in the heap.
+For example, if there are 4 stones in the heap, then you will never win the game: no matter 1, 2, or 3 stones you remove, the last stone will always be removed by your friend.
+</p>
 </div>
 
-<div id="outline-container-orgc2124a2" class="outline-4">
-<h4 id="orgc2124a2"><span class="section-number-4">1.3.2</span> <a href="pythondp.html">pythondp.html</a></h4>
+<div id="outline-container-orgfa53504" class="outline-3">
+<h3 id="orgfa53504"><span class="section-number-3">2.1</span> code</h3>
+<div class="outline-text-3" id="text-2-1">
+<div class="org-src-container">
+<pre class="src src-c++"><span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Solution</span> {
+<span style="font-weight: bold;">public</span>:
+    <span style="font-weight: bold; text-decoration: underline;">bool</span> <span style="font-weight: bold;">canWinNim</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">n</span>) {
+        <span style="font-weight: bold;">return</span> n%4 != 0;      
+    }
+};
+</pre>
 </div>
 </div>
+</div>
+
+<div id="outline-container-orge0e86c9" class="outline-3">
+<h3 id="orge0e86c9"><span class="section-number-3">2.2</span> thoughs</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+JUST write down each number and find the pattern
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org247294b" class="outline-2">
+<h2 id="org247294b"><span class="section-number-2">3</span> 226 invert binary tree</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+note we need to invert the pointer to left/right child, not the value.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org9c7377d" class="outline-2">
+<h2 id="org9c7377d"><span class="section-number-2">4</span> 237 delete Node in a tree</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+since it's a signle link list. instead of deleting the node itself, we should change the value 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5349dcc" class="outline-2">
+<h2 id="org5349dcc"><span class="section-number-2">5</span> 100 is same tree</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+check the tree value 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org400db0e" class="outline-2">
+<h2 id="org400db0e"><span class="section-number-2">6</span> 171 excel sheet number</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+get base to the power exponent:  pow()
+</p>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-orgc594e6b" class="outline-2">
+<h2 id="orgc594e6b"><span class="section-number-2">7</span> 206 reverse linke</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+be aware of the conner case. don't forget the first node, don't forget some 
+extream cases
+</p>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-orga6ba7cf" class="outline-2">
+<h2 id="orga6ba7cf"><span class="section-number-2">8</span> 198 house robber</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+this is a DP problem. recursive solution is better. 
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org46f5e78" class="outline-2">
+<h2 id="org46f5e78"><span class="section-number-2">9</span> 101 symmetric tree</h2>
+</div>
+
+
+<div id="outline-container-org27c4203" class="outline-2">
+<h2 id="org27c4203"><span class="section-number-2">10</span> realize the conner case</h2>
 </div>
 </div>
 <div id="postamble" class="status">
