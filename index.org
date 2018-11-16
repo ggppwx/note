@@ -4,12 +4,13 @@
 * Outline
 ** Programming notes 
 *** [[file:cleancode.org]]
-
+*** [[file:designpattern.org]]
+*** [[file:refactor.org]]
+*** [[file:javascriptdesignpattern.org]]
 
 ** Code practice
 *** [[file:map.org]]
-*** [[file:designpattern.org]]
-*** [[file:refactor.org]]
+
 
 
 ** Random notes

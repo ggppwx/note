@@ -1,13 +1,5 @@
-#+TITLE: design pattern notes 
-#+BEGIN_HTML
----
-layout: post
-title: java design pattern notes
-date: 2016-08-22
-tags: [notes]
-description: notes of javascript design pattern video tutorial 
----
-#+END_HTML
+#+TITLE: javascript design pattern notes 
+#+SETUPFILE: theme-readtheorg.setup
 
 
 
