@@ -1,0 +1,328 @@
+
+* 2016
+** 2016-06 June
+*** 2016-06-29 Wednesday
+hi, this is my first diary
+ today I read wangyin's wisdom of programming. nice article 
+basically, it's very similar to clean code except some places
+[[file:cleancode.org]]
+** 2016-07 July
+*** 2016-07-01 Friday
+- did workout yesterday good.
+- no mas yesterday good.
+
+*** 2016-07-03 Sunday
+playing game too much, nothing to say
+
+*** 2016-07-04 Monday
+- did apt cleaning, which is very good 
+- sleep too late, bad
+*** 2016-07-08 Friday
+- stand-up meeting is changed to 10:30 
+- gaming too much. not good. should set a timer for that. let's say
+12:30 
+- should follow schedule like when you are in collage
+*** 2016-07-20 Wednesday
+- should put more time on work
+- [X] work on jira issues. jira issues are important.
+** 2016-08 August
+*** 2016-08-03 Wednesday
+- 最近过的实在太糟糕了。
+- 主要问题有以下几个：
+  - 睡眠严重不足，这是由于玩total war导致的。为什么我们一玩这个游戏就停不下来呢？一大原因是电脑没有办法跑
+    流畅。这导致我不断地微调系统，希望达到最佳设置。我在调系统上的热情甚至要大于游戏本身。Bad !
+  - 计划的任务没有一个完成的。原因很无节制地玩游戏有关
+  - 浪费时间在看新闻上。如果说玩游戏好歹还能带来快乐，那看美国政治新闻简直就是给自己添堵。我需要找到一个更
+    合适的发泄情绪，表达观点的方式，比如写博客就不错。 因此，这个礼拜就不要在花时间看大选了
+  - 没有及时反思问题。这导致了问题一拖再拖，各种挫折感。
+  - 还是没有锻炼，身体越来越弱啊，还要lu。Bad ！
+  - [ ] 最重要的问题还是自制力不强。表现在不管做什么都“刹不住车”。不管是学习，玩，看新闻，我应该要学会take a 
+    break. 
+- 当然也有进步，比如说现在能够利用commute的时间学习一点东西。感觉还是很有帮助的。 
+- 还有一点进步是做了weekly review。better late than never
+*** 2016-08-04 Thursday
+shit! I am still wasing time on those fucking forums. BAD BAD BAD!
+*** 2016-08-08 Monday
+- DOOM is exhausting. 
+- shao lu. bu ran ying bu qi lai
+- still spent too much time on news. should set a timer on that. 
+- yeah, when i plan to do something, better clock-in that task. this helps 
+  you focus on that single thing at a time.
+- the good part: complete most task in last week. GOOD !
+- no exercise for a month. need to change after miaomiao back
+*** 2016-08-16 Tuesday
+- miaomiao coming. 坠喜欢小猫瞄了。
+- I should spent more time with xiao miaomiao, taking good care of her. don't be lazy. this should be 
+  my highest priority 
+- shoulder pain. exercise shoulder every 30 min. Besides, some workout might be helpful. If it doesn't 
+  improve, go find a doctor
+- solitude. staying alone makes you focus. writing journal every several days should really help.
+- it's good to use fragmented time to learn. like watching online tutorial
+*** 2016-08-18 Thursday
+- did workout, pretty good. 
+- I followed rules in work. good, keep doing that. 
+  - this includes setting clock.
+- dining out takes time. 
+- I should not spend too much time on planing. use fragmented time to do this
+*** 2016-08-19 Friday
+I should put more focus on the actual tasks rather than creating tasks. Getting things done
+is about doing rather than preparing.
+*** 2016-08-21 Sunday
+- attend wedding, 喝早茶 this weekend. Those are pretty good activities, don't feel sorry
+for wasting time on it.
+- playing Witcher 3 for 3 hours. should bring dictionary because the story is amazing 
+- don't play total war until the next DLC
+- The progress I made this week:
+  - use clock-in to track the task
+  - writing journal very often. self-retrospect is your friend. 
+  - watching video tutorial on the train. utilize your time fragment 
+  - did workout once. 
+- I should spend more time on exercising next week.
+*** 2016-08-22 Monday
+- 和小喵一起学习好, keep doing it
+- use high-leg fixed chair 
+- should find more issues at the beginning of each week. 
+- spending too much time on KTLO
+- spent some time on python unit test. didn't set the evn correctly, which wastes a lot of time
+*** 2016-08-23 Tuesday
+- Today I found several new tasks to do in the future. very good. 
+- the thought process is like:
+  - what should i do? unit test
+  - can I do it right now? no, because we don't have good test cases?
+  - what's the blocking issue? how to overcome? creating good test cases
+  - can we do that? no, we don't know what the request looks like
+  - what can be done? what if this is no longer blocked ? write xml request 
+  - can we do something to improve this process ? yes. find way to make it easier to write test 
+    cases 
+- in the path, I also came up with a pet project idea. good. 
+- bought irobot, time to clean the house
+*** 2016-08-29 Monday
+- 好忧伤，生病了。 
+- so when not feeling good, don't stay late !!!!!! 
+- 周末玩游戏太疯狂了，不好
+- 小猫瞄说，要写关于提高自制力的文章。要总结经验教训，每天进步一点。
+- 小猫瞄要让我汇报做题情况。
+- 小猫说周末玩游戏不能超过两点
+*** 2016-08-31 Wednesday
+- nothing much, catching cold, waiting for recovery 
+- don't take too many medicine, don't take zinc 
+- vitamin c is good friend 
+- drink A LOT OF WATER !
+** 2016-09 September
+*** 2016-09-03 Saturday
+- God please cure my illness 
+- 注意呼吸问题
+*** 2016-09-06 Tuesday
+- recover from illness. very good. 
+- need to work on the remaining issues. 
+- need to work on refinance
+*** 2016-09-12 Monday
+- bought a gtx 1070 from jet.com. good deal
+- list 2 used gpu on ebay. time for saving !
+- reading book on train. which is good. 
+- I should explore new places for dinner
+- God bless my family
+*** 2016-09-15 Thursday
+- installed the gtx graphic card
+- did 2 leetcode problems. good! carry on
+- long time abstain. congratulations !
+- ultrasound for xiaomiaomiao, everything looks good
+- should figure out a workout plan
+*** 2016-09-27 Tuesday
+- get new pc gadgets 
+- overclock the cpu 
+- didn't play too long, most of time spent on overclocking the system. 
+- read the investing book, good 
+- 同事居然转组了，以后事情要多起来了，做好准备
+- 去公司的时间要提早一些。不然每天磨洋工的时间太长了。
+- 从长远看来，还是要准备跳槽。
+- restart the online manager project. 
+  - this project is to help you get familiar with google product
+** 2016-10 October
+*** 2016-10-07 Friday
+- playing game recently with miaomiao
+- work productivity is okay, but can't find enough things to do 
+  need to tackle with this problem next week 
+- sleep earlier, get up earlier. very good.
+  the final goal should be 'getting up before 9:00'
+- read book about stock, should take notes and put it into real fight
+*** 2016-10-12 Wednesday
+- 开始刷题。刷满100题
+- track leetcode problem solving 
+- 让小喵玩游戏。
+*** 2016-10-17 Monday
+- starting leetcode programming, good !
+- learned org mode excel mode, which is pretty good 
+- I should spend more time on bloomberg project. 
+- breakfast plan goes pretty well. hooray !
+*** 2016-10-21 Friday
+- 撸太多了 
+- 戒撸 一个月
+- do not try testing your self 
+- workout 
+- 退gym or suspend 
+- 看完了股票书 good
+*** 2016-10-24 Monday
+- did several leetcode, but the progress is not good 
+- more productive during work. time is tight !
+** 2016-11 November
+*** 2016-11-13 Sunday
+- waiting for the baby 
+- the productivity of working from home is low. I think it's because i
+  don't have a clear goal. 
+  - next step is to support multiple dates. 
+  - ask peter about the d-package. ask Terry to update prepisv. 
+- a team page for the work-flow
+*** 2016-11-19 Saturday
+- birth of 顾韵熙 !! celebrate !!
+** 2016-12 December
+*** 2016-12-04 Sunday
+- back to work date: 12/7
+- I need to prepare working on the existing issues 
+- I should prepare all the docs for the newborn 
+- sleep schedule:
+  9:00 - 12:00
+  1:00 - 4:00
+  5:00 - 8:00
+- working hour: 9:00 - 5:00
+*** 2016-12-30 Friday
+- should write more 
+- back to work
+- 最重要的不是如何写todo list, 最重要的是如何do。我在整理 gtd 上花费太多时间了
+- think about a good project. the product you WILL utilize
+* 2017
+** 2017-01 January
+*** 2017-01-08 Sunday
+- something wrong happened in the sync system 
+- resemble the home server next week 
+- company the baby after 10:00
+*** 2017-01-16 Monday
+- did emacs lisp learning. good
+- workout good
+*** 2017-01-29 Sunday
+- happy lunar new year 
+- I implemented a emacs pomodora system. good.
+** 2017-02 February
+*** 2017-02-01 Wednesday
+- i think i need to spend more time on daily work 
+- re-introduce the techniques of 'listing today's todo'
+- i should keep my life organized 
+  - could use omni-focus + emacs 
+  - getting things done techniques
+    - the key of it is always find something to do
+*** 2017-02-03 Friday
+- writing nodejs at home since you can't do it during the work
+*** 2017-02-06 Monday
+- did some work during weekends good
+- do not play games during weekdays. carry on !
+*** 2017-02-10 Friday
+- download career cup, read it often
+- review investment book. just some book notes 
+  hope it will be helpful
+*** 2017-02-12 Sunday
+- I did a lot of work about the pet project.
+  which is really good ! very good ! carry on
+- no workout this week. not good
+*** 2017-02-20 Monday
+- bought another game. for honor, pretty good 
+- finally make the online todo list board work. 
+- I should go through the board. from top to bottom 
+  this is a GTD technique 
+- fund the IB account 15000, time to start investing ! 
+- should make appointment for baby 
+- buy ticket
+- dealing with the bill twice a month, it doesn't take long
+*** 2017-02-28 Tuesday
+- starting leetcode, good
+- don't be frustrated by the slow progress of leetcode. at least you are doing sth
+- need to figure out what should be done in work hour. 
+- start investing, good 
+- don't forget to write 
+- no game on weekdays. good
+** 2017-03 March
+*** 2017-03-01 Wednesday
+- fuck ! sleep so late
+*** 2017-03-07 Tuesday
+- play games for 3 days oops 
+- I should make smart button ASAP
+- writing blog this week!
+*** 2017-03-19 Sunday
+- playing "for honor" too much
+- limit playing time, fulfill daily contract at most 
+- legacy problems 
+- contacted by recruiter, but not ready yet, what a shame 
+- cooking at home for a month, very good, very good
+- need expedite agent tasks like baby issue.
+*** 2017-03-23 Thursday
+- reading on the train, very good 
+- writing blog again, good
+- playing game everyday, this is a no 
+- I should review journal after a certain time. let's say a month
+** 2017-04 April
+*** 2017-04-02 Sunday
+- played too much game
+- reading book on the train, which is good
+- I will do willpower training this weekend 
+- what I learn
+  - meditation
+  - breath 
+  - exercise
+  - sleep
+*** 2017-04-04 Tuesday
+- should have not play too much game during weekend
+- meditation in the train, good
+- need figure out a reading plan
+*** 2017-04-09 Sunday
+- doing web site development, complete the template. good 
+- should spend some time on CSS/html5 in the future 
+- no workout, bad
+- no book note, bad 
+- no Sunday night learning, bad
+*** 2017-04-12 Wednesday
+- worked out today, it's good. but too easy to be exhausted
+- did some investment summary, good
+- finally got some work to do during work hour. I should practice those tricks I 
+  learn from the books to boost productivity
+- made a web site project. good progress
+*** 2017-04-18 Tuesday
+- working on side project, some progress 
+- doing daily work first then reward yourself gaming time
+*** 2017-04-30 Sunday
+- played too much !
+- setup a demo site good
+** 2017-05 May
+*** 2017-05-15 Monday
+- home sweet home
+- bought aapl. 
+- I should spend some time config home communication system
+*** 2017-05-20 Saturday
+- doing gym. good
+- reading will power instinct. I need to utilize the methods in the book
+*** 2017-05-23 Tuesday
+- done with <the will power instinct> hooray !!
+- doing 8 days intensive workout, hooray !!!
+- this vacation is pretty meaningful. carry on
+** 2017-06 June
+*** 2017-06-05 Monday
+- got a cool new monitor hooray !!
+- set up a new work station 
+- did some html during work
+*** 2017-06-11 Sunday
+- Good
+  - start workout
+  - start leetcode
+  - doing some cooking 
+
+- Bad 
+  - not productive during work
+
+- Meh 
+  - set up chromecast
+*** 2017-06-14 Wednesday
+- reading leetcode, good 
+- not focus during the work, bad
+*** 2017-06-19 Monday
+- playing too much game during the weekend
+  - total war is most time consuming. should set a time limit before start let's say 10 rounds ? 
+- resume the web work
+- some leetcode, good 

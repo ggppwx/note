@@ -55,7 +55,7 @@
    - [X] dfs
    - [ ] combination-based dfs
    - [ ] graphic-based dfs
-   - [ ]data structure 
+   - [ ] data structure 
      - stack
      - queue
      - heap
@@ -2808,6 +2808,66 @@ class Solution(object):
 
 
 
+
+** 316. remove duplicate letters
+   _*problem*_ \\
+Given a string which contains only lowercase letters, remove duplicate letters so that every letter appear once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
+Example 1:
+Input: "bcabc"
+Output: "abc"
+
+Example 2:
+Input: "cbacdcbc"
+Output: "acdb"
+
+   _*thoughts*_ \\
+   - first pass to get the # of each char 
+   - second pass, remove the item in the queue 
+     - only remove 
+       - larger and not last number in the queue 
+   - don't forget clean the queue in the end 
+
+   _*code*_ \\
+   #+begin_src python
+class Solution(object):
+    def removeDuplicateLetters(self, s):
+        c_map = {}
+        for c in s:
+            c_map[c] = c_map.get(c, 0) + 1
+        
+        
+        result = ""
+        c_queue = []
+        current_map = {}
+        for c in s:
+            c_map[c] = c_map[c] - 1
+            
+            if c  in current_map and current_map[c] == 1:
+                continue
+                
+            while c_queue and c_queue[-1] >= c and c_map[c_queue[-1]] != 0:
+                last =  c_queue.pop()
+                current_map[last] = 0
+                
+            if c_map[c] == 0:
+                result = result + ''.join(c_queue) + c
+                c_queue = []
+                current_map[c] = 1
+                
+            else:    
+                
+                c_queue.append(c)
+                current_map[c] = 1
+                    
+        result += ''.join(c_queue)            
+                    
+        return result 
+   #+end_src
+
+
+
+
+
 * trees
 
 ** 230 Kth Smallest Element in a BST
@@ -4588,6 +4648,66 @@ class Solution(object):
 
 
 
+** {{{color(red, Hard)}}}
+
+** 329. longest increasing path in a matrix
+   _*problem*_ \\
+   Given an integer matrix, find the length of the longest increasing path.
+   From each cell, you can either move to four directions: left, right, up or down. You may NOT move diagonally or move outside of the boundary (i.e. wrap-around is not allowed).
+
+   _*thoughts*_ \\
+   - dfs with memorization 
+   - each dfs returns max number 
+
+   _*code*_ \\
+   #+begin_src python
+class Solution(object):
+    def longestIncreasingPath(self, matrix):
+        """
+        :type matrix: List[List[int]]
+        :rtype: int
+        """
+        if matrix is None or len(matrix) == 0:
+            return 0
+        
+        r_len = len(matrix)
+        c_len = len(matrix[0])
+        state = [[None for _ in range(c_len)] for _ in range(r_len)]
+        
+        def dfs(i, j, matrix, level, state):
+            
+            if state[i][j]:
+                return state[i][j]
+            
+            
+            curr = matrix[i][j]
+            neighbors = [(i + 1,j), (i - 1, j), (i, j + 1), (i, j - 1)]
+            tmp = 0
+            for neighbor in neighbors:
+                x, y = neighbor
+                if 0 <= x and x < r_len and 0 <= y and y < c_len:
+                    new_val = matrix[x][y]
+                    if new_val > curr:
+                        
+                        tmp = max(tmp, dfs(x, y, matrix, level + 1, state))
+            
+            state[i][j] = 1 + tmp            
+            return 1 + tmp
+        
+        result = 0
+        for i in range(r_len):
+            for j in range(c_len):
+                t = dfs(i, j, matrix, 0, state)
+                # print t
+                result = max( result, t)
+                
+        return result 
+   #+end_src
+
+
+
+
+
 * sorting & searching
 ** {{{color(red, Easy)}}}
 ** Merge Sorted Array                                              :reviewed:
@@ -4637,26 +4757,48 @@ class Solution(object):
         return self.lastBad
 #+end_src
 ** {{{color(red, Medium)}}}
-** sort colors                                                        :ERROR:
-    - one pass solution 做不出来 ！！
-#+begin_src python
+
+** sort colors
+   _*problem*_ \\
+   Given an array with n objects colored red, white or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white and blue.
+   Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.   
+   Note: You are not suppose to use the library's sort function for this problem.
+   Example:
+   Input: [2,0,2,1,1,0]
+   Output: [0,0,1,1,2,2]
+
+
+   _*thoughts*_ \\
+   - something like quick sort
+   - 3 points, i, k, j
+     - note i <= k <= j, use it as exit condition 
+   - think of exit condition first, no harm to do more strict exit condition
+
+
+   _*code*_ \\
+   #+begin_src python
 class Solution(object):
     def sortColors(self, nums):
-        i0 = 0
-        idx = 0
-        i2 = len(nums) -1
-        index = 0
-        while idx <= i2:
-            if nums[idx] == 0: # red
-                nums[idx], nums[i0] = nums[i0], nums[idx]
-                i0 += 1
-                idx += 1
-            elif nums[idx] == 1:
-                idx += 1                
-            else:
-                nums[i2], nums[idx] = nums[idx], nums[i2]
-                i2 -= 1
-#+end_src
+        """
+        :type nums: List[int]
+        :rtype: void Do not return anything, modify nums in-place instead.
+        """
+        i = 0
+        j = len(nums) - 1
+        k = 0
+        while k < len(nums) and k <= j and k >=i:
+            if nums[k] == 0:
+                nums[i], nums[k] = nums[k], nums[i]
+                i += 1
+            elif nums[k] == 2:
+                nums[j], nums[k] = nums[k], nums[j]
+                j -= 1
+                k -= 1
+                
+            k += 1
+   #+end_src
+
+
 ** top k frequent elements
    - use heap 
 
@@ -4766,8 +4908,6 @@ class Solution(object):
                     return mid
 #+end_src
 
-** serach in 2d matrix
-
 ** H-Index
 *** problem
 Given an array of citations (each citation is a non-negative integer) of a researcher, write a function to compute the researcher's h-index.
@@ -4794,6 +4934,51 @@ class Solution:
     #+end_src
 *** summary
     - looking at H-index 2. use binary search 
+
+
+
+** 74. search a 2d matrix
+   _*problem*_ \\
+   Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties:
+   Integers in each row are sorted from left to right.
+   The first integer of each row is greater than the last integer of the previous row.
+
+   _*thoughts*_ \\
+   - beware the last item in list is len-1
+   - python class method first signature is self
+   
+   _*code*_ \\
+   #+begin_src python
+class Solution(object):
+    def searchMatrix(self, matrix, target):
+        if len(matrix) == 0:
+            return False
+        
+        row_len = len(matrix)
+        col_len = len(matrix[0])
+        return self.find(matrix, 0, 0, row_len-1, col_len-1, target )
+        
+    def find(self, matrix, i1, j1, i2, j2, target):
+        if i1 > i2 or j1 > j2:
+            return False
+        
+        imid = int((i1 + i2) / 2)
+        jmid = int((j1 + j2) / 2)
+        if target == matrix[imid][jmid]:
+            return True
+        
+        if target > matrix[imid][jmid]:
+            return self.find(matrix, i1, jmid + 1, i2, j2, target) or self.find(matrix, imid+1, j1, i2, j2, target )
+        
+        else:
+            return self.find(matrix, i1, j1, imid - 1, j2, target) or self.find(matrix, i1, j1, i2, jmid - 1, target)
+        
+        
+        return False
+           
+   #+end_src
+
+
 
 
 
@@ -7337,6 +7522,14 @@ class Solution(object):
 
 
 * TODO divide and conquer 
+- binary search is one kind of divide & conquer
+#+begin_src 
+DAC(P)
+  if small(P) return SP(P)
+  else p1, p2, .... pk = divide(P)
+       combine(p1, p2 .... pk) 
+#+end_src
+
 ** {{{color(red, Medium)}}}
 ** Different Ways to Add Parentheses
 *** problem
@@ -7774,6 +7967,112 @@ class Solution:
 #+end_src
 
 
+
+
+
+
+* TODO TODOs 
+
+** Segment Tree
+** 307. Range Sum Query - Mutable
+   _*problem*_ \\
+   Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
+   The update(i, val) function modifies nums by updating the element at index i to val.
+
+   _*thoughts*_ \\
+   - segmented tree 
+   - use array to represent a full binary tree
+     - level = log2(len(nums))
+   - don't forget to update nums after updating tree 
+
+   _*code*_ \\
+   #+begin_src python
+class NumArray(object):
+    def __init__(self, nums):
+        if not nums:
+            return 
+        
+        import math
+        self.nums = nums
+        x = int(math.ceil(math.log(len(nums),2)))
+        self.tree = [None] * (2 * 2**x + 2)
+        self.tree[0] = self.buildSTree(nums, 0, len(nums)-1, 0)
+        
+
+    def update(self, i, val):
+        diff = val - self.nums[i]
+        self.updateSTree(diff, i, 0, len(self.nums)-1, 0)
+        self.nums[i] = val
+        
+
+    def sumRange(self, i, j):
+        result =  self.getsum(i, j, 0, len(self.nums)-1, 0)
+        return result
+                
+        
+    def buildSTree(self, nums, s, e, i):
+        if not nums:
+            return None
+        
+        if s == e:
+            self.tree[i] = nums[s]
+            return self.tree[i]
+        
+        mid = (s+e)/2
+        self.tree[i] = self.buildSTree(nums, s, mid, 2*i + 1) + self.buildSTree(nums, mid+1, e, 2*i + 2)
+        return self.tree[i]
+    
+    def updateSTree(self, diff, index, s, e, i):  
+        self.tree[i] += diff
+        if s == e and s == index:
+            return
+                
+        mid = (s + e)/2
+        if index <= mid: # left
+            self.updateSTree(diff, index, s, mid, i*2 + 1)
+        else:
+            self.updateSTree(diff, index, mid+1, e, i*2 + 2)
+        
+    def getsum(self, i, j, s, e, ti):
+        if i <= s and e <= j:
+            return self.tree[ti]
+        
+        if i > e or j < s:
+            return 0
+        
+        mid = (s+e)/2
+        return self.getsum(i, j, s, mid, 2*ti + 1) + self.getsum(i, j, mid+1, e, 2*ti + 2)                
+   #+end_src
+
+
+** divide and conquer
+** 312. Burst Balloons
+   _*problem*_ \\
+
+
+   _*thoughts*_ \\
+
+
+   _*code*_ \\
+   #+begin_src python
+
+   #+end_src
+
+
+
+
+
+** 329. Longest Increasing Path in a Matrix
+   _*problem*_ \\
+
+
+   _*thoughts*_ \\
+
+
+   _*code*_ \\
+   #+begin_src python
+
+   #+end_src
 
 
 

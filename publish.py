@@ -32,7 +32,7 @@ def main():
         return
 
     ignore = False
-    if 'ignore' in args:
+    if 'ignore' in args and args.ignore is not None:
         print 'Ignoring emacs batch gen'
         ignore = True
 

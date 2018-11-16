@@ -1,5 +1,12 @@
 #TITLE: notes in leetcode
 
+* learning 六月算法
+
+** dynamic programming
+
+** graph serach
+
+
 * 292 nim game
 You are playing the following Nim Game with your friend: 
 There is a heap of stones on the table, each time one of you take 

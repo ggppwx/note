@@ -1,0 +1,85 @@
+#+TITLE: Getting things DONE
+
+- let's keep this file private
+  DO NOT UPLOAD to github 
+- let's make the task small & simple
+
+
+
+* PLAN of the week <2016-07-24 Sun>
+** DONE [#A] clean up the org work left 
+   CLOSED: [2016-08-03 Wed 01:55] DEADLINE: <2016-07-31 Sun>
+   - Note taken on [2016-08-03 Wed 01:55] \\
+     not all done, but had progress
+
+
+
+
+** CANCEL let's get to bed early
+
+** DONE guild mom applying for visa
+   CLOSED: [2016-07-30 Sat 23:53]
+** DONE weekly review GTD
+   CLOSED: [2016-08-03 Wed 01:54] SCHEDULED: <2016-07-31 Sun>
+** DONE 控制！！！
+   CLOSED: [2016-08-03 Wed 01:55]
+
+* week <2016-08-03 Wed>
+** DONE do research on hospitals 
+   CLOSED: [2016-08-16 Tue 00:34]
+   - Note taken on [2016-08-04 Thu 01:29] \\
+     did some research.
+
+** DONE home cleaning 
+   CLOSED: [2016-08-16 Tue 22:55]
+*** DONE clean refrigrator 
+    CLOSED: [2016-08-16 Tue 00:34]
+*** DONE clean bedroom
+    CLOSED: [2016-08-16 Tue 00:34]
+*** DONE washroom
+    CLOSED: [2016-08-16 Tue 00:34]
+
+** DONE [#A] weekly review
+   CLOSED: [2016-08-10 Wed 00:37] DEADLINE: <2016-08-08 Mon>
+
+* week <2016-08-08 Mon>
+
+
+* week <2016-08-16 Tue>
+
+** DONE cleaning 
+   CLOSED: [2017-02-21 Tue 22:21]
+** DONE online shopping for miao miao
+   CLOSED: [2017-02-21 Tue 22:21]
+** DONE 控制
+   CLOSED: [2016-08-22 Mon 00:25]
+** DONE workout
+   CLOSED: [2016-08-22 Mon 00:25]
+
+
+* week <2016-08-22 Mon>
+** DONE writing blog
+   CLOSED: [2016-09-17 Sat 14:56] DEADLINE: <2016-08-28 Sun>
+
+- topics: 一些鸭汤（评7 habits of effective people）
+- size: 800+
+
+
+** DONE workout plan 
+   CLOSED: [2017-01-08 Sun 22:16] SCHEDULED: <2016-10-01 Sat>
+
+
+* week <2016-09-01 Thu>
+** DONE [#A] refinance 
+   CLOSED: [2016-09-08 Thu 23:26] DEADLINE: <2016-09-03 Sat>
+   CLOCK: [2016-09-03 Sat 21:58]--[2016-09-03 Sat 22:06] =>  0:08
+
+** DONE labor day shopping 
+   CLOSED: [2016-09-07 Wed 00:05] DEADLINE: <2016-09-05 Mon>
+
+
+* TODO writing blog
+  :PROPERTIES:
+  :ID:       FB6CFC4A-063E-4206-A096-D63314C2CF9C
+  :END:
+- topic: 
