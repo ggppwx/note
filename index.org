@@ -2,16 +2,17 @@
 #+OPTIONS: toc:nil
 
 * Outline
-** test
-   - [[file:link.html][link.org]]
-   - [[file:link1.org]]
-** Code
-*** [[file:map.org]]
+** Programming notes 
+*** [[file:cleancode.org]]
 
-** My Notes
-***  [[file:algorithm.org]]
-  
-*** [[file:pythondp.org]]
+
+** Code practice
+*** [[file:map.org]]
+*** [[file:designpattern.org]]
+*** [[file:refactor.org]]
+
+
+** Random notes
 
 * Tasks
 ** TODO leetcode review

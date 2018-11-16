@@ -241,7 +241,7 @@ class Solution:
 
 
 
-** Search in Rotated Sorted Array II                                  :ERROR:
+** Search in Rotated Sorted Array II                                  
 *** problem
 Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand.
 (i.e., [0,0,1,2,2,5,6] might become [2,5,6,0,0,1,2]).
@@ -4710,7 +4710,7 @@ class Solution(object):
 
 * sorting & searching
 ** {{{color(red, Easy)}}}
-** Merge Sorted Array                                              :reviewed:
+** Merge Sorted Array                                                  :ERROR:
    没做出来
    To save space, loop from END to START
 #+begin_src python
@@ -4825,7 +4825,7 @@ class Solution(object):
         return find(0, len(nums)) # ending from len(nums)
 #+end_src
 
-** sarch range                                                         :WARN:
+** sarch range                                                          :ERROR:
     - always doing binary serach even after found the result 
 #+begin_src python
 class Solution(object):
@@ -4856,7 +4856,7 @@ class Solution(object):
         return [self.sp, self.ep]
 #+end_src
 
-** Search in Rotated Sorted Array                                      :WARN:
+** Search in Rotated Sorted Array                                       :ERROR:
 #+begin_src python
 class Solution(object):
     def search(self, nums, target):

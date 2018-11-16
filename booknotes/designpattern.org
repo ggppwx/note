@@ -1,22 +1,9 @@
 #+TITLE: design pattern notes 
-#+BEGIN_HTML
----
-layout: post
-title: design pattern notes
-date: 2016-08-01
-tags: [notes]
-description: a simple notes to design pattern 
----
-#+END_HTML
-
-
+#+SETUPFILE: theme-readtheorg.setup
 
 in total we have 27 tutorials 
 10 min each 
 learn 20 maybe 
-
-
-
 
 * tips 
 http://programmers.stackexchange.com/questions/7055/what-is-the-most-frequently-used-design-pattern

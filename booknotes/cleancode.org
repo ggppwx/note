@@ -1,13 +1,5 @@
 #+TITLE: clean code notes
-#+BEGIN_HTML
----
-layout: post
-title: clean code notes
-date: 2016-08-07
-tags: [notes, code]
-descritipn: clean code
----
-#+END_HTML
+#+SETUPFILE: theme-readtheorg.setup
 
 * content
   
@@ -139,10 +131,10 @@ public class CodeAnalyzer implements JavaFileAnalysis {
 
 
 * notes from wangyin's art of programming 
-- elegant code. 
+** elegant code. 
   - tree structure, always have if else block 
 
-- modulize code 
+** modulize code 
   - the function should be less than 50 lines (one page )
   - create utility functions 
   - one purpose function 
@@ -153,7 +145,7 @@ public class CodeAnalyzer implements JavaFileAnalysis {
     - they don't have IN-OUT pipeline structure 
 
 
-- readable code
+** readable code
   - meaningful function/variables
   - local variable close to where it's used 
   - temp local variable should be short
@@ -161,7 +153,7 @@ public class CodeAnalyzer implements JavaFileAnalysis {
   - use middle variable.(this contradicts with some coding style)
 
 
-- write "simple" code 
+** write "simple" code 
   - avoid using ++i/--i
   - NEVER omit {}
   - use ()
@@ -169,24 +161,24 @@ public class CodeAnalyzer implements JavaFileAnalysis {
     - move break to the while condition 
     - !  continue condition 
 
-- write straight forward code 
+** write straight forward code 
   - avoid using action1() || action2() || action3()
     instead, using multiple if
 
-- use if-else, avoid using control-flow as else. 
+** use if-else, avoid using control-flow as else. 
   - in this case, note that if-else may SHARE common code !
   - I think we could use control flow in the case above 
 
-- error handling 
+** error handling 
   - when catching error, stop using generic "Exception" 
   - try-catch block should be short and neat 
 
 
-- null pointer 
+** null pointer 
   - avoid using NULL pointer
     - not initialization
     - not return 
   - stop catching NullPointerException
   - check null immediately after its possible occurrence 
 
-- stop over-engineering 
+** stop over-engineering 
