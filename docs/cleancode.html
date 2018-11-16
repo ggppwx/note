@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2018-11-16 Fri 16:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>clean code notes</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="JINGWEI GU" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">clean code notes</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org44e4753">1. content</a>
+<ul>
+<li><a href="#org9bba07a">1.1. meaningful name</a></li>
+<li><a href="#orgcbc3766">1.2. functions</a></li>
+<li><a href="#orgcfc6e8e">1.3. comments</a></li>
+<li><a href="#org6af8713">1.4. formatting</a></li>
+<li><a href="#org136b67e">1.5. objects and data structure</a></li>
+<li><a href="#org8396fb4">1.6. unit tests</a></li>
+<li><a href="#org5b5406d">1.7. classes</a></li>
+<li><a href="#orgab489f9">1.8. systems</a></li>
+<li><a href="#orgcfc67a5">1.9. test-driven development</a></li>
+</ul>
+</li>
+<li><a href="#org63eb100">2. notes from wangyin's art of programming</a>
+<ul>
+<li><a href="#org20db0f3">2.1. elegant code.</a></li>
+<li><a href="#org364e236">2.2. modulize code</a></li>
+<li><a href="#org5ca9223">2.3. readable code</a></li>
+<li><a href="#orgcf3e9f0">2.4. write "simple" code</a></li>
+<li><a href="#orgad26758">2.5. write straight forward code</a></li>
+<li><a href="#orge5aba0b">2.6. use if-else, avoid using control-flow as else.</a></li>
+<li><a href="#org2a34ca4">2.7. error handling</a></li>
+<li><a href="#org485c8d6">2.8. null pointer</a></li>
+<li><a href="#org02f6117">2.9. stop over-engineering</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org44e4753" class="outline-2">
+<h2 id="org44e4753"><span class="section-number-2">1</span> content</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org9bba07a" class="outline-3">
+<h3 id="org9bba07a"><span class="section-number-3">1.1</span> meaningful name</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>shorter name better</li>
+<li>no confusions, don't name 'List' if it is not a list</li>
+<li>pronounceable names</li>
+<li>search-able names, not too common</li>
+<li>no prefixes like m_</li>
+<li>class method should have verb</li>
+<li>don't add extra context</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgcbc3766" class="outline-3">
+<h3 id="orgcbc3766"><span class="section-number-3">1.2</span> functions</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>small function 
+<ul class="org-ul">
+<li>one line in if-else block, this should be a function</li>
+</ul></li>
+<li>do one thing 
+<ul class="org-ul">
+<li>means steps on one level consists of one thing</li>
+<li>one level of abstraction per function</li>
+</ul></li>
+<li>replace switch with polymorphism</li>
+<li>don't be afraid of using long descriptive name</li>
+<li>less function arguments 
+<ul class="org-ul">
+<li>transform function should return the value after transformation</li>
+<li>flag argument is UGLY</li>
+<li>be aware of dyadic function.</li>
+<li>wrap arguments by using objects</li>
+<li>argument list</li>
+<li>verb + noun function name</li>
+</ul></li>
+<li>no side effects, no hidden things</li>
+<li>in general, output argument should be avoided</li>
+<li>separate command &amp; query 
+<ul class="org-ul">
+<li>error code vs try-catch</li>
+</ul></li>
+<li>duplication may be evil in software</li>
+<li>no continue, break, never go to</li>
+<li>functions are verb, classes are noun</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgcfc6e8e" class="outline-3">
+<h3 id="orgcfc6e8e"><span class="section-number-3">1.3</span> comments</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>comments are always failure</li>
+<li>TRUTH SHOULD BE IN CODE</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org6af8713" class="outline-3">
+<h3 id="org6af8713"><span class="section-number-3">1.4</span> formatting</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>variable declaration, local variables should be declared on the top of the function</li>
+<li>functions caller should be above callee</li>
+<li>example</li>
+</ul>
+<div class="org-src-container">
+<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">CodeAnalyzer</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">JavaFileAnalysis</span> <span style="color: #4f97d7;">{</span>  
+  <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">lineCount</span>;  
+  <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">maxLineWidth</span>;  
+  <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">widestLineNumber</span>;  
+  <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #ce537a; font-weight: bold;">LineWidthHistogram</span> <span style="color: #7590db;">lineWidthHistogram</span>;  
+  <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">totalChars</span>;  
+
+  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #bc6ec5; font-weight: bold;">CodeAnalyzer</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span>    
+    lineWidthHistogram = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">LineWidthHistogram</span><span style="color: #2d9574;">()</span>;  
+  <span style="color: #bc6ec5;">}</span>  
+
+  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">List</span><span style="color: #bc6ec5;">&lt;</span><span style="color: #ce537a; font-weight: bold;">File</span><span style="color: #bc6ec5;">&gt;</span> <span style="color: #bc6ec5; font-weight: bold;">findJavaFiles</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">File</span> <span style="color: #7590db;">parentDirectory</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>    
+    <span style="color: #ce537a; font-weight: bold;">List</span><span style="color: #2d9574;">&lt;</span><span style="color: #ce537a; font-weight: bold;">File</span><span style="color: #2d9574;">&gt;</span> <span style="color: #7590db;">files</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">ArrayList</span><span style="color: #2d9574;">&lt;</span><span style="color: #ce537a; font-weight: bold;">File</span><span style="color: #2d9574;">&gt;()</span>;    
+    findJavaFiles<span style="color: #2d9574;">(</span>parentDirectory, files<span style="color: #2d9574;">)</span>;    
+    <span style="color: #4f97d7; font-weight: bold;">return</span> files;  
+  <span style="color: #bc6ec5;">}</span>
+<span style="color: #4f97d7;">}</span>
+</pre>
+</div>
+<ul class="org-ul">
+<li>instance variables should be declared at the top of the class 
+<ul class="org-ul">
+<li>in c++ on bottom</li>
+<li>java on top</li>
+</ul></li>
+
+<li>white spaces</li>
+<li>expand the indent , not in one-line</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org136b67e" class="outline-3">
+<h3 id="org136b67e"><span class="section-number-3">1.5</span> objects and data structure</h3>
+<div class="outline-text-3" id="text-1-5">
+<ul class="org-ul">
+<li>object or data structure: 2 approaches 
+<ul class="org-ul">
+<li>data structure: expose data, no function.</li>
+</ul></li>
+<li>OO code makes easy to add new classes without changing methods</li>
+<li>procedural code makes it hard to add new data structure, easy to add functions</li>
+<li>hybrids are worst</li>
+<li>data transfer object. 
+<ul class="org-ul">
+<li>active record, a special form of DTO. having public ( or bean accessed) variables
+and navigational methods like save/find</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org8396fb4" class="outline-3">
+<h3 id="org8396fb4"><span class="section-number-3">1.6</span> unit tests</h3>
+<div class="outline-text-3" id="text-1-6">
+<ul class="org-ul">
+<li>Note taken on <span class="timestamp-wrapper"><span class="timestamp">[2016-08-17 Wed 00:23] </span></span> <br />
+IMO, it's very hard to do real test-driven development. but that doesn't means unit test is unnecessary,
+on the contrary, good unit test is helpful. But I also don't think it's good to write unit-test after production 
+code, that is integration test.</li>
+</ul>
+<ul class="org-ul">
+<li>laws of TDD:
+<ul class="org-ul">
+<li>write failing unit test.</li>
+</ul></li>
+<li>test and production code are written together</li>
+<li>having dirty test = having no test</li>
+<li>test code is as important as the production one</li>
+<li>readability is very important !</li>
+<li>build - operate - check pattern, test should have 3 parts, create utility function to make
+code clean.</li>
+<li>one assert per test</li>
+<li>single concept per test</li>
+<li>FIRST rule
+<ul class="org-ul">
+<li>fast</li>
+<li>independent on each other</li>
+<li>repeatable in any environment</li>
+<li>self-validating: fail or pass, not a log line</li>
+<li>timely: should be written before the production code that makes them pass</li>
+</ul></li>
+<li>do not test private methods</li>
+<li>no need to test all conner cases, test is used to help develop</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5b5406d" class="outline-3">
+<h3 id="org5b5406d"><span class="section-number-3">1.7</span> classes</h3>
+<div class="outline-text-3" id="text-1-7">
+<ul class="org-ul">
+<li>classes should be small 
+<ul class="org-ul">
+<li>a brief class description should be less than 25 words</li>
+<li>avoid Processor, Manager</li>
+<li>SRP, single responsibility principle</li>
+</ul></li>
+<li>in class cohesion should be high</li>
+<li>use derived classes to replace a single class. SQL generator example</li>
+<li>class should be open to extension but close to modification</li>
+<li>minimize coupling. stock exchange example, never depend on concrete class.
+<ul class="org-ul">
+<li>write a stock exchange interface, write a testable dummy concrete class</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgab489f9" class="outline-3">
+<h3 id="orgab489f9"><span class="section-number-3">1.8</span> systems</h3>
+</div>
+
+<div id="outline-container-orgcfc67a5" class="outline-3">
+<h3 id="orgcfc67a5"><span class="section-number-3">1.9</span> test-driven development</h3>
+<div class="outline-text-3" id="text-1-9">
+<ul class="org-ul">
+<li>all about discipline</li>
+<li>because code rots</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-org63eb100" class="outline-2">
+<h2 id="org63eb100"><span class="section-number-2">2</span> notes from wangyin's art of programming</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org20db0f3" class="outline-3">
+<h3 id="org20db0f3"><span class="section-number-3">2.1</span> elegant code.</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>tree structure, always have if else block</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org364e236" class="outline-3">
+<h3 id="org364e236"><span class="section-number-3">2.2</span> modulize code</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>the function should be less than 50 lines (one page )</li>
+<li>create utility functions</li>
+<li>one purpose function 
+<ul class="org-ul">
+<li>no "generic" functions</li>
+<li>preFoo(); foo() { preFoo();  &#x2026; }</li>
+</ul></li>
+
+<li>avoid using global variable/ member variable to pass info
+<ul class="org-ul">
+<li>they don't have IN-OUT pipeline structure</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org5ca9223" class="outline-3">
+<h3 id="org5ca9223"><span class="section-number-3">2.3</span> readable code</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>meaningful function/variables</li>
+<li>local variable close to where it's used</li>
+<li>temp local variable should be short</li>
+<li>don't reuse local variable, do not be afraid of defining new ones</li>
+<li>use middle variable.(this contradicts with some coding style)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgcf3e9f0" class="outline-3">
+<h3 id="orgcf3e9f0"><span class="section-number-3">2.4</span> write "simple" code</h3>
+<div class="outline-text-3" id="text-2-4">
+<ul class="org-ul">
+<li>avoid using ++i/&#x2013;i</li>
+<li>NEVER omit {}</li>
+<li>use ()</li>
+<li>avoid continue; break;
+<ul class="org-ul">
+<li>move break to the while condition</li>
+<li>!  continue condition</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgad26758" class="outline-3">
+<h3 id="orgad26758"><span class="section-number-3">2.5</span> write straight forward code</h3>
+<div class="outline-text-3" id="text-2-5">
+<ul class="org-ul">
+<li>avoid using action1() || action2() || action3()
+instead, using multiple if</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge5aba0b" class="outline-3">
+<h3 id="orge5aba0b"><span class="section-number-3">2.6</span> use if-else, avoid using control-flow as else.</h3>
+<div class="outline-text-3" id="text-2-6">
+<ul class="org-ul">
+<li>in this case, note that if-else may SHARE common code !</li>
+<li>I think we could use control flow in the case above</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2a34ca4" class="outline-3">
+<h3 id="org2a34ca4"><span class="section-number-3">2.7</span> error handling</h3>
+<div class="outline-text-3" id="text-2-7">
+<ul class="org-ul">
+<li>when catching error, stop using generic "Exception"</li>
+<li>try-catch block should be short and neat</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org485c8d6" class="outline-3">
+<h3 id="org485c8d6"><span class="section-number-3">2.8</span> null pointer</h3>
+<div class="outline-text-3" id="text-2-8">
+<ul class="org-ul">
+<li>avoid using NULL pointer
+<ul class="org-ul">
+<li>not initialization</li>
+<li>not return</li>
+</ul></li>
+<li>stop catching NullPointerException</li>
+<li>check null immediately after its possible occurrence</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org02f6117" class="outline-3">
+<h3 id="org02f6117"><span class="section-number-3">2.9</span> stop over-engineering</h3>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: JINGWEI GU</p>
+<p class="date">Created: 2018-11-16 Fri 16:41</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
