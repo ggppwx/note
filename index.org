@@ -1,5 +1,5 @@
 #+TITLE: Personal Archive
-#+OPTIONS: toc:nil
+#+SETUPFILE: theme-readtheorg.setup
 
 * Outline
 ** Programming notes 
