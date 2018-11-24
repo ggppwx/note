@@ -1,3 +1,323 @@
-#+TITLE:2 points
+# TITLE:2 points
+* {{{color(red, Easy)}}}
+* Remove Duplicates from Sorted Array
+  good. but be aware of coner case
 
+
+* Longest Substring Without Repeating Characters
+
+* rotate array in place
+** thoughts
+- concept not clear, k steps could be larger than length思路对了。解题时候又忘
+  记了.所以还是要想清楚了再写
+- 3 times rotation, this is a classic problem 
+
+** code 
+#+begin_src python 
+class Solution(object): 
+ def rotate(self, nums, k): 
+   def rota(nums, i, j): 
+     while i < j:
+       nums[i], nums[j] = nums[j], nums[i] #pythonic way to do swap
+       i += 1 # python's i++ 
+       j -= 1
+        
+       rota(nums, 0, len(nums)-1) # don't forget this 
+       rota(nums, 0, k%len(nums)-1) 
+       rota(nums, k%len(nums), len(nums)-1) 
+#+end_src
+
+* {{{color(red, Medium)}}}
+  
+* 3 sum                                                                :WARN:
+** thoughts
+   - better way to check unique remember if a then b. if not a then exit better
+   - to check explicitly (check len()) 
+** code 
+#+begin_src python 
+class Solution(object): 
+  def threeSum(self, nums): 
+    def hashed(nums): 
+      return ':'.join(str(num) for num in nums)
+                            
+    if len(nums) < 3: return []        
+    result = [] 
+    nums.sort() 
+    index_c = len(nums) - 1 
+    used = set([]) # we could use hash to check the combination, make sure it's unique 
+    used_c = set([]) # why this line, to optimize the time, for the same c no need to consider it again 
+    while index_c > 0: 
+      num_c = nums[index_c] 
+      if num_c in used_c:
+        index_c -= 1 
+        continue 
+      
+      used_c.add(num_c)
+            
+      tmp = self.twoSum(nums[:index_c], -num_c) 
+      if tmp: # not tmp means if tmp is empty !!! 
+        for t in tmp: 
+          if t: 
+            r = t + [num_c] 
+            h_r = hashed(r)
+            if h_r not in used: 
+              result.append(r) 
+              used.add(h_r)
+                        
+      index_c -= 1 
+    return result
+    
+  # 2 pointers solve 2 sum problem 
+  def twoSum(self, nums, target): 
+    if len(nums) < 2: return []
+     
+    start = 0 
+    end = len(nums) - 1 
+    result = [] 
+    while start < end: 
+      tmp = nums[start] + nums[end] 
+      if tmp > target: 
+        end -= 1 
+      elif tmp < target:
+        start += 1 
+      else: 
+        result.append([nums[start], nums[end]]) 
+        end -= 1 
+        start += 1 
+    return result 
+#+end_src
+
+*  4Sum
+** Thoughts
+   - thinking about 2 sum, 3sum could be done in recursion, nsum ---> (k-1)sum
+** code
+    #+begin_src python 
+class Solution(object): 
+  def fourSum(self, nums, target):
+    nums = sorted(nums) 
+
+    # a function to solve 2 sum problem 
+    def sum2(nums, target): 
+      nums = sorted(nums) s = 0 e = len(nums) - 1 
+      result = [] 
+      while s < e: 
+        tmp = nums[s] + nums[e] 
+        if tmp > target:
+          e -= 1 
+        elif tmp < target: 
+          s += 1 
+        else: 
+          result.append([nums[s], nums[e]]) 
+          e -= 1
+          s += 1 
+      return result
+        
+    def ksum(k, nums, target): 
+      if k == 2: return sum2(nums, target)            
+      result = [] 
+      for i, num in enumerate(nums): 
+        new_target = target - num
+        left = nums[i+1:] # no need to compute nums[:i] 
+        res = ksum(k-1,left, new_target) # get ALL k-1 sum result, append num on each 
+        for r in res: 
+          new_r = [num] + r
+        result.append(new_r)
+            
+      return result
+                        
+        sum4 = ksum(4, nums, target) res_set = set([]) result = [] for res in
+        sum4: r1 = sorted(res) key = '#'.join([str(r11) for r11 in r1]) if key
+        not in res_set: res_set.add(key) result.append(r1)
+                    
+        return result #+end_src
+#+end_src
+** summary
+   - use ''.join([..]) to calculate the key when computing i .. 2sum(nums)
+   - nums starts from nums[i+1:] why? because it's sorted !! 
+   - no extra space because of 2 pointer approach
+
+
+* 80. Remove Duplicates from Sorted Array II
+** problem
+Given nums = [1,1,1,2,2,3], Your function should return length = 5, with the
+first five elements of nums being 1, 1, 2, 2 and 3 respectively. It doesn't
+matter what you leave beyond the returned length.
+** Thoughts
+- remove letters occurs more than 2 
+- O(n) time complexity 
+- thinking the situation one by one 
+** code
+#+begin_src python 
+class Solution(object): 
+  def removeDuplicates(self, nums):
+# 0, 0, 1, 1, 1, 1, 2, 3, 3 
+    p = 0 
+    for r in range(len(nums)): 
+      curr = nums[r] 
+      if p == 0: 
+        nums[p] = curr 
+        p += 1 
+      elif p == 1: 
+        nums[p] = curr 
+        p += 1                
+      elif nums[p-1] != curr: 
+        nums[p] = curr 
+        p += 1                              
+      elif nums[p-1] == curr and nums[p-2] != curr: 
+        nums[p] = curr 
+        p += 1
+      elif nums[p-1] == curr and nums[p-2] == curr: # no change
+        continue
+ 
+      return p 
+#+end_src
+
+
+* set matrix 0
+** thoughts
+- sample solution is easy. what about don't use a lot extra space ?
+- maybe we could use current matrix to save the state
+  - current * (-1) means it has 0 ? 
+** code
+#+begin_src python 
+class Solution(object): 
+  def setZeroes(self, matrix): 
+    m = len(matrix) 
+    n = len(matrix[0])
+    row = [-1] * m 
+    column = [-1] * n 
+
+    # use array to save if the state of row_i and col_j
+    for i in range(m): 
+      for j in range(n): 
+        if matrix[i][j] == 0: 
+          row[i] = 0 
+          column[j] = 0
+          
+    for i in range(m): 
+      for j in range(n): 
+        if row[i] == 0 or column[j] == 0:
+          matrix[i][j] = 0
+ #+end_src
+
+
+* 881. Boats to Save People
+** problem
+The i-th person has weight people[i], and each boat can carry a maximum weight
+of limit. Each boat carries at most 2 people at the same time, provided the sum
+of the weight of those people is at most limit. Return the minimum number of
+boats to carry every given person. (It is guaranteed each person can be carried
+by a boat.)
+** Thoughts
+    - thinking about 2sum, use l/r 2 pointers when moving l/r, also update the
+    - result corner case: if l == r
+** code
+#+begin_src python 
+class Solution(object): 
+  def numRescueBoats(self, people,limit): 
+    result = 0 
+    people = sorted(people) 
+    l = 0 
+    r = len(people) - 1 
+    while l <= r: 
+      if l == r: 
+        result += 1 
+        break
+                
+      if people[l] + people[r] > limit: 
+        result += 1 
+        r -= 1 
+      else: 
+        # meets the condition, both l, r on board 
+        result += 1 
+        r -= 1 
+        l += 1
+                
+      return result
+ #+end_src
+
+* 567. Permutation in String
+** problem
+Given two strings s1 and s2, write a function to return true if s2 contains the
+permutation of s1. In other words, one of the first string's permutations is the
+substring of the second string.
+** Thoughts
+   - approach 1: brute force approach 
+   - 2: *sliding window*
+     - in some cases, sliding window may not be faster, because it's always go
+       through len(s1) 
+     - time saving happens when updating the map, no need to copy
+       the whole map 
+     - be a ware of corner case: if window reaches the last let's say len(s1) == len(s2), not going into the loop at all
+** code
+#+begin_src python 
+class Solution(object): 
+def checkInclusion(self, s1, s2):
+  # get a bitmap for string s1, do not care about the order
+  s1_map = [0] * 26 
+  for s in s1: 
+    idx = ord(s) - ord('a') 
+    s1_map[idx] += 1
+  
+  temp_map = list(s1_map) 
+  i = 0 # starting from i th char in s2
+  counter = 0 
+  while i + counter < len(s2): 
+      s = s2[i+counter] 
+      idx = ord(s) - ord('a') 
+      if temp_map[idx] > 0:
+        temp_map[idx] -= 1 
+        counter += 1 
+      elif counter > 0: 
+        # no chance, need to reset 
+        temp_map = list(s1_map) 
+        i = i + 1 
+        counter = 0 
+      else: 
+        i = i + 1
+                 
+  if counter == len(s1): 
+    return True
+        
+  return False
+
+# sliding window approach 
+class Solution(object):
+  def checkInclusion(self, s1, s2): 
+    # exlude some obvious conditions 
+    if len(s1) > len(s2): 
+      return False
+      
+    # same as method 1, create a bitmap for s1
+    s1_map = [0] * 26 
+    for s in s1: 
+      idx = ord(s) - ord('a') 
+      s1_map[idx] += 1
+                
+
+    # window size is len(s1)
+    # get the first window on s2
+    temp_map = [0] * 26 
+    counter = 0 
+    while counter < len(s1): 
+      s = s2[counter]
+      idx = ord(s) - ord('a') 
+      temp_map[idx] += 1 
+      counter += 1
+    
+    
+    len1 = len(s1) # len1 is window size
+    i = 0 
+    while i + len1 < len(s2):
+        if s1_map == temp_map: 
+          return True 
+        else: 
+          # sliding window 
+          temp_map[ord(s2[i]) - ord('a')] -= 1 
+          temp_map[ord(s2[i+len1]) - ord('a')] += 1 
+        i = i + 1
+            
+    # don't forget to check in the end 
+    return s1_map == temp_map
+#+end_src
 
