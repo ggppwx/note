@@ -1,0 +1,154 @@
+# TITLE: hash table 
+
+* Copy List with Random Pointer
+** problem
+   A linked list is given such that each node contains an additional 
+   random pointer which could point to any node in the list or null.
+   Return a deep copy of the list.
+** Thoughts
+   - use hashtable to store MAP(orginal node -> new node2)
+   - so in second iteration, set the node.random correctly 
+** code
+    #+begin_src python
+class Solution(object):
+    def copyRandomList(self, head):
+        if not head:
+            return None
+        
+        node_map = {}
+        node = head
+        dummy = RandomListNode(-1)
+        copy = dummy
+
+        while node:         
+            copy.next = RandomListNode(node.label)
+            node_map[node] = copy.next 
+            copy = copy.next
+            node = node.next
+            
+        node = dummy.next
+        origin_node = head
+        while node:
+            r = origin_node.random
+            if r:
+                node.random = node_map[r]
+                        
+            node = node.next
+            origin_node = origin_node.next
+            
+        return dummy.next
+    #+end_src
+** summary
+
+
+
+
+* Find All Anagrams in a String                                       :ERROR:
+** problem
+Given a string s and a non-empty string p, find all the start indices of p's anagrams in s.
+Strings consists of lowercase English letters only and the length of both strings s and p will not be larger than 20,100.
+** Thoughts
+   - seems a easy approach, go through each letter in s, check s --> s+len(p)
+     - use hash to check if it is anagram. O(n*m) time
+   - BUT you can see m is compuated repeatly !!!!!!
+     - using sliding windows
+       - O(n)
+** code
+    #+begin_src python
+class Solution(object):
+    def findAnagrams(self, s, p):
+        # defensive 
+        if not s:
+            return []
+        # defensive
+        if len(s) < len(p):
+            return []
+        
+        str_len = len(p)
+        char_map = {}
+        for pc in p:
+            if pc in char_map:
+                char_map[pc] += 1
+            else:
+                char_map[pc] = 1
+                
+        tmp_char_map = {}           
+        index = 0
+        result = []
+        # init
+        for i in range(str_len):
+            if s[i] in tmp_char_map:
+                tmp_char_map[s[i]] += 1
+            else:
+                tmp_char_map[s[i]] = 1
+        
+        while index <= len(s)-str_len:
+            if tmp_char_map == char_map:
+                result.append(index)            
+                      
+            index = index + 1
+            if index > len(s) - str_len:
+                break 
+                
+            # sliding window 
+            pre = s[index-1]
+            new = s[index+str_len-1]
+            if pre in tmp_char_map:   
+                tmp_char_map[pre] -= 1
+                        
+            if new in tmp_char_map:
+                tmp_char_map[new] += 1
+            else:
+                tmp_char_map[new] = 1
+            
+            if pre in tmp_char_map and tmp_char_map[pre] == 0:
+                del tmp_char_map[pre]
+
+        return result
+    #+end_src
+** summary
+   - How sliding window works ? 
+     - everytime moving forward, remove BEGIN, add END
+       - so that you don't have to init/recalucate the tmp_dict everytime 
+
+
+* 4Sum II                                                             :ERROR:
+** problem
+Given four lists A, B, C, D of integer values, compute how many tuples (i, j, k, l) there are such that A[i] + B[j] + C[k] + D[l] is zero.
+** Thoughts
+   - thinking about 3sum, 2sum
+     - so thinking about 4sum -> 2sum, time: O(n^3), BUT THIS IS WRONG
+     - A,B,C,D are independent.
+       - hash 2sum, O(n^2) -> O(n)
+         - hash 4sum -> 2 hash 2sum. 
+** code
+    #+begin_src python
+class Solution(object):
+    def fourSumCount(self, A, B, C, D):
+        if not A:
+            return 0
+
+        a_b_map = dict([])
+        for a in A:
+            for b in B:
+                a_b = a + b
+                if a_b in a_b_map: # if !!!!! not for 
+                    a_b_map[a_b] += 1
+                else:
+                    a_b_map[a_b] = 1
+                    
+        count = 0     
+        for c in C:
+            for d in D:
+                c_d = c+d
+                target = 0 - c_d
+                if target in a_b_map:
+                    count += a_b_map[target]
+
+        return count 
+    #+end_src
+** summary
+   - using hash, 空间换时间
+   - for regular 4sum, you can do a O(n^2) too, just save index of A,B
+
+

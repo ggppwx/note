@@ -48,7 +48,7 @@ def main():
     for path in path_list:
         # 1. generate html 
         if not ignore and path.endswith('.org'):
-            command = "emacs {} --batch   --eval=\"(add-to-list 'load-path \\\"~/.emacs.d/elpa/htmlize-20171017.141\\\")\"  -f org-html-export-to-html --kill".format(path)
+            command = "emacs {} --batch   --eval=\"(add-to-list 'load-path \\\"~/.emacs.d/elpa/htmlize-20180923.1829\\\")\"  -f org-html-export-to-html --kill".format(path)
             print(command)
             process = subprocess.Popen(command, stdout=subprocess.PIPE, shell=True)
             output = process.communicate()[0].strip()
