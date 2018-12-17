@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-11-16 Fri 17:07 -->
+<!-- 2018-12-17 Mon 18:10 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>javascript design pattern notes</title>
 <meta name="generator" content="Org mode" />
-<meta name="author" content="JINGWEI GU" />
+<meta name="author" content="roy gu" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -180,12 +180,12 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/readtheorg/js/readtheorg.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -240,23 +240,23 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb4f16c5">1. contents</a>
+<li><a href="#orgc05cef2">1. contents</a>
 <ul>
-<li><a href="#org7bc78f5">1.1. module design pattern</a></li>
-<li><a href="#org38364d0">1.2. creational design pattern</a></li>
-<li><a href="#orga9dec1c">1.3. structural design pattern</a>
+<li><a href="#orgdc9b29b">1.1. module design pattern</a></li>
+<li><a href="#org1383047">1.2. creational design pattern</a></li>
+<li><a href="#orga3e2c3d">1.3. structural design pattern</a>
 <ul>
-<li><a href="#org8cd379e">1.3.1. proxy design pattern</a></li>
+<li><a href="#orgee08b87">1.3.1. proxy design pattern</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org5d2d624">2. most common design patterns</a>
+<li><a href="#org5f8ce65">2. most common design patterns</a>
 <ul>
-<li><a href="#orgef4d1bd">2.1. modules</a></li>
-<li><a href="#org4eb4aa1">2.2. prototype</a></li>
-<li><a href="#org37ef9a5">2.3. observer</a></li>
-<li><a href="#org7e88818">2.4. singleton</a></li>
+<li><a href="#org02f57ac">2.1. modules</a></li>
+<li><a href="#org9ffa763">2.2. prototype</a></li>
+<li><a href="#org53234d2">2.3. observer</a></li>
+<li><a href="#org9ab0e65">2.4. singleton</a></li>
 </ul>
 </li>
 </ul>
@@ -265,38 +265,38 @@ for the JavaScript code in this tag.
 
 
 
-<div id="outline-container-orgb4f16c5" class="outline-2">
-<h2 id="orgb4f16c5"><span class="section-number-2">1</span> contents</h2>
+<div id="outline-container-orgc05cef2" class="outline-2">
+<h2 id="orgc05cef2"><span class="section-number-2">1</span> contents</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org7bc78f5" class="outline-3">
-<h3 id="org7bc78f5"><span class="section-number-3">1.1</span> module design pattern</h3>
+<div id="outline-container-orgdc9b29b" class="outline-3">
+<h3 id="orgdc9b29b"><span class="section-number-3">1.1</span> module design pattern</h3>
 <div class="outline-text-3" id="text-1-1">
 <ul class="org-ul">
 <li>use module to achieve encapsulation</li>
 </ul>
 <div class="org-src-container">
-<pre class="src src-javascript"><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #bc6ec5;">(</span><span style="color: #7590db;">win</span>, <span style="color: #7590db;">doc</span>, <span style="color: #7590db;">$</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">chatModule</span> = <span style="color: #2d9574;">(</span><span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #67b11d;">(){</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">module design pattern, not a class</span>
-    <span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">_echo</span><span style="color: #b1951d;">(</span><span style="color: #7590db;">msg</span><span style="color: #b1951d;">)</span> <span style="color: #b1951d;">{</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">private</span>
-      $<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">'.advert'</span><span style="color: #4f97d7;">)</span>.html<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">"&lt;div&gt;"</span> + msg + <span style="color: #2d9574;">"&lt;/div&gt;"</span><span style="color: #4f97d7;">)</span>
-    <span style="color: #b1951d;">}</span>  
+<pre class="src src-javascript">(<span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">win</span>, <span style="font-weight: bold; font-style: italic;">doc</span>, <span style="font-weight: bold; font-style: italic;">$</span>) {
+  <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">chatModule</span> = (<span style="font-weight: bold;">function</span>(){ <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">module design pattern, not a class</span>
+    <span style="font-weight: bold;">function</span> <span style="font-weight: bold;">_echo</span>(<span style="font-weight: bold; font-style: italic;">msg</span>) { <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">private</span>
+      $(<span style="font-style: italic;">'.advert'</span>).html(<span style="font-style: italic;">"&lt;div&gt;"</span> + msg + <span style="font-style: italic;">"&lt;/div&gt;"</span>)
+    }  
 
-    <span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">talk</span><span style="color: #b1951d;">(</span><span style="color: #7590db;">msg</span><span style="color: #b1951d;">)</span> <span style="color: #b1951d;">{</span> 
-      _echo<span style="color: #4f97d7;">(</span>msg<span style="color: #4f97d7;">)</span>;
-    <span style="color: #b1951d;">}</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #b1951d;">{</span>
-      talk : talk <span style="color: #2aa1ae; background-color: #292e34;">//</span><span style="color: #2aa1ae; background-color: #292e34;">public</span>
-    <span style="color: #b1951d;">}</span>;
+    <span style="font-weight: bold;">function</span> <span style="font-weight: bold;">talk</span>(<span style="font-weight: bold; font-style: italic;">msg</span>) { 
+      _echo(msg);
+    }
+    <span style="font-weight: bold;">return</span> {
+      talk : talk <span style="font-weight: bold; font-style: italic;">//</span><span style="font-weight: bold; font-style: italic;">public</span>
+    };
 
-  <span style="color: #67b11d;">}</span><span style="color: #2d9574;">)()</span>;  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">define and run the function. </span>
+  })();  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">define and run the function. </span>
 
-  $<span style="color: #2d9574;">(</span>doc<span style="color: #2d9574;">)</span>.ready<span style="color: #2d9574;">(</span><span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #67b11d;">()</span> <span style="color: #67b11d;">{</span>
-    chatModule.talk<span style="color: #b1951d;">(</span><span style="color: #2d9574;">"cool"</span><span style="color: #b1951d;">)</span>;
+  $(doc).ready(<span style="font-weight: bold;">function</span>() {
+    chatModule.talk(<span style="font-style: italic;">"cool"</span>);
 
-  <span style="color: #67b11d;">}</span><span style="color: #2d9574;">)</span>;
+  });
 
-<span style="color: #bc6ec5;">}</span><span style="color: #4f97d7;">)(</span>window, document, jQuery<span style="color: #4f97d7;">)</span>;
+})(window, document, jQuery);
 
 </pre>
 </div>
@@ -305,8 +305,8 @@ for the JavaScript code in this tag.
 
 
 
-<div id="outline-container-org38364d0" class="outline-3">
-<h3 id="org38364d0"><span class="section-number-3">1.2</span> creational design pattern</h3>
+<div id="outline-container-org1383047" class="outline-3">
+<h3 id="org1383047"><span class="section-number-3">1.2</span> creational design pattern</h3>
 <div class="outline-text-3" id="text-1-2">
 <ul class="org-ul">
 <li>singleton</li>
@@ -316,139 +316,139 @@ for the JavaScript code in this tag.
 <li>prototype</li>
 </ul>
 <div class="org-src-container">
-<pre class="src src-javascript"><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #bc6ec5;">(</span><span style="color: #7590db;">win</span>, <span style="color: #7590db;">$</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
+<pre class="src src-javascript">(<span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">win</span>, <span style="font-weight: bold; font-style: italic;">$</span>) {
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">---------- Obj --------------------</span>
-<span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">Circle</span><span style="color: #2d9574;">()</span> <span style="color: #2d9574;">{</span>
-  <span style="color: #a45bad;">this</span>.item = $<span style="color: #67b11d;">(</span><span style="color: #2d9574;">'&lt;div class="circle"/&gt;'</span><span style="color: #67b11d;">)</span>;
-<span style="color: #2d9574;">}</span>
-Circle.<span style="color: #a45bad;">prototype</span>.color = <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #2d9574;">(</span><span style="color: #7590db;">clr</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">prototype</span>
-  <span style="color: #a45bad;">this</span>.tiem.css<span style="color: #67b11d;">(</span><span style="color: #2d9574;">'background'</span>, clr<span style="color: #67b11d;">)</span>;
-<span style="color: #2d9574;">}</span>;
-Circle.<span style="color: #a45bad;">prototype</span>.move = <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #2d9574;">(</span><span style="color: #7590db;">left</span>, <span style="color: #7590db;">top</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">....</span>
-<span style="color: #2d9574;">}</span>;
-Circle.<span style="color: #a45bad;">prototype</span>.get = <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #2d9574;">()</span> <span style="color: #2d9574;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #a45bad;">this</span>.item;
-<span style="color: #2d9574;">}</span>;
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">-----------------------------------</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">---------- Obj --------------------</span>
+<span style="font-weight: bold;">function</span> <span style="font-weight: bold;">Circle</span>() {
+  <span style="font-weight: bold; text-decoration: underline;">this</span>.item = $(<span style="font-style: italic;">'&lt;div class="circle"/&gt;'</span>);
+}
+Circle.<span style="font-weight: bold; text-decoration: underline;">prototype</span>.color = <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">clr</span>) { <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">prototype</span>
+  <span style="font-weight: bold; text-decoration: underline;">this</span>.tiem.css(<span style="font-style: italic;">'background'</span>, clr);
+};
+Circle.<span style="font-weight: bold; text-decoration: underline;">prototype</span>.move = <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">left</span>, <span style="font-weight: bold; font-style: italic;">top</span>) {
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">....</span>
+};
+Circle.<span style="font-weight: bold; text-decoration: underline;">prototype</span>.get = <span style="font-weight: bold;">function</span>() {
+  <span style="font-weight: bold;">return</span> <span style="font-weight: bold; text-decoration: underline;">this</span>.item;
+};
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">-----------------------------------</span>
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">------------ Prototype -------------</span>
-<span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">clone</span><span style="color: #2d9574;">(</span><span style="color: #7590db;">src</span>, <span style="color: #7590db;">out</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">for</span> <span style="color: #67b11d;">(</span><span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">attr</span> <span style="color: #4f97d7; font-weight: bold;">in</span> src.<span style="color: #a45bad;">prototype</span><span style="color: #67b11d;">)</span> <span style="color: #67b11d;">{</span>
-    out.<span style="color: #a45bad;">prototype</span><span style="color: #b1951d;">[</span>attr<span style="color: #b1951d;">]</span> = src.<span style="color: #a45bad;">prototype</span><span style="color: #b1951d;">[</span>attr<span style="color: #b1951d;">]</span>;
-  <span style="color: #67b11d;">}</span>
-<span style="color: #2d9574;">}</span>
-<span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">Rect</span><span style="color: #2d9574;">()</span> <span style="color: #2d9574;">{</span>
-  <span style="color: #a45bad;">this</span>.item = $<span style="color: #67b11d;">(</span><span style="color: #2d9574;">'&lt;div class="rect"/&gt;'</span><span style="color: #67b11d;">)</span>
-<span style="color: #2d9574;">}</span>
-clone<span style="color: #2d9574;">(</span>Circle, Rect<span style="color: #2d9574;">)</span>;
-
-
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">------------- Builder --------------</span>
-<span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">RedCircleBuilder</span><span style="color: #2d9574;">()</span> <span style="color: #2d9574;">{</span>
-  <span style="color: #a45bad;">this</span>.item = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Circle</span><span style="color: #67b11d;">()</span>;
-<span style="color: #2d9574;">}</span>
-RedCircleBuilder.<span style="color: #a45bad;">prototype</span>.get = <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #2d9574;">()</span> <span style="color: #2d9574;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #a45bad;">this</span>.item;
-<span style="color: #2d9574;">}</span>;
-
-<span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">BlueCircleBuilder</span><span style="color: #2d9574;">()</span> <span style="color: #2d9574;">{</span>
-  <span style="color: #a45bad;">this</span>.item = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Circle</span><span style="color: #67b11d;">()</span>;
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">somthing else</span>
-<span style="color: #2d9574;">}</span>
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">--------------------------------------</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">------------ Prototype -------------</span>
+<span style="font-weight: bold;">function</span> <span style="font-weight: bold;">clone</span>(<span style="font-weight: bold; font-style: italic;">src</span>, <span style="font-weight: bold; font-style: italic;">out</span>) {
+  <span style="font-weight: bold;">for</span> (<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">attr</span> <span style="font-weight: bold;">in</span> src.<span style="font-weight: bold; text-decoration: underline;">prototype</span>) {
+    out.<span style="font-weight: bold; text-decoration: underline;">prototype</span>[attr] = src.<span style="font-weight: bold; text-decoration: underline;">prototype</span>[attr];
+  }
+}
+<span style="font-weight: bold;">function</span> <span style="font-weight: bold;">Rect</span>() {
+  <span style="font-weight: bold; text-decoration: underline;">this</span>.item = $(<span style="font-style: italic;">'&lt;div class="rect"/&gt;'</span>)
+}
+clone(Circle, Rect);
 
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">------------- Factory ----------------</span>
-<span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">CircleFactory</span> = <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #2d9574;">()</span> <span style="color: #2d9574;">{</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">factory class </span>
-  <span style="color: #a45bad;">this</span>.types = <span style="color: #67b11d;">{}</span>;
-  <span style="color: #a45bad;">this</span>.create = <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #67b11d;">(</span><span style="color: #7590db;">type</span><span style="color: #67b11d;">)</span> <span style="color: #67b11d;">{</span> 
-    <span style="color: #a45bad;">this</span>.types<span style="color: #b1951d;">[</span>type<span style="color: #b1951d;">]()</span>.get<span style="color: #b1951d;">()</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">call builder</span>
-    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">--&gt; this.RedCircleBuilder().get()</span>
-    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">finally, it creates Circle Object. </span>
-    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">new Circle()</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">------------- Builder --------------</span>
+<span style="font-weight: bold;">function</span> <span style="font-weight: bold;">RedCircleBuilder</span>() {
+  <span style="font-weight: bold; text-decoration: underline;">this</span>.item = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Circle</span>();
+}
+RedCircleBuilder.<span style="font-weight: bold; text-decoration: underline;">prototype</span>.get = <span style="font-weight: bold;">function</span>() {
+  <span style="font-weight: bold;">return</span> <span style="font-weight: bold; text-decoration: underline;">this</span>.item;
+};
 
-  <span style="color: #67b11d;">}</span>;
-  <span style="color: #a45bad;">this</span>.register = <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #67b11d;">(</span><span style="color: #7590db;">type</span>, <span style="color: #7590db;">cls</span><span style="color: #67b11d;">)</span> <span style="color: #67b11d;">{</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">register a builder</span>
-    <span style="color: #a45bad;">this</span>.types<span style="color: #b1951d;">[</span>type<span style="color: #b1951d;">]</span> = cls;
-  <span style="color: #67b11d;">}</span>;
-
-<span style="color: #2d9574;">}</span>;
-
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">---------------- Singleton ------------</span>
-<span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">CircleGeneratorSingleton</span> = <span style="color: #2d9574;">(</span><span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #67b11d;">()</span> <span style="color: #67b11d;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">instance</span>;
-
-  <span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">init</span><span style="color: #b1951d;">()</span> <span style="color: #b1951d;">{</span>  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">this actual generator </span>
-    <span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">_aCircle</span> = <span style="color: #4f97d7;">[]</span>,
-    _stage = $<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">'.advert'</span><span style="color: #4f97d7;">)</span>,
-    _cf = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">CircleFactory</span><span style="color: #4f97d7;">()</span>;  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">factory obj</span>
-    _cf.register<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">"red"</span>, RedCircleBuilder<span style="color: #4f97d7;">)</span>;
-    _cf.register<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">"blue"</span>, BlueCircleBuilder<span style="color: #4f97d7;">)</span>;
+<span style="font-weight: bold;">function</span> <span style="font-weight: bold;">BlueCircleBuilder</span>() {
+  <span style="font-weight: bold; text-decoration: underline;">this</span>.item = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Circle</span>();
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">somthing else</span>
+}
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">--------------------------------------</span>
 
 
-    <span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">create</span><span style="color: #4f97d7;">(</span><span style="color: #7590db;">left</span>, <span style="color: #7590db;">top</span>, <span style="color: #7590db;">type</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
-      <span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">circle</span> = _cf.create<span style="color: #bc6ec5;">(</span>type<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">use factory</span>
-      circle.move<span style="color: #bc6ec5;">(</span>left, top<span style="color: #bc6ec5;">)</span>;
-      <span style="color: #4f97d7; font-weight: bold;">return</span> circle;
-    <span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">------------- Factory ----------------</span>
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">CircleFactory</span> = <span style="font-weight: bold;">function</span>() { <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">factory class </span>
+  <span style="font-weight: bold; text-decoration: underline;">this</span>.types = {};
+  <span style="font-weight: bold; text-decoration: underline;">this</span>.create = <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">type</span>) { 
+    <span style="font-weight: bold; text-decoration: underline;">this</span>.types[type]().get(); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">call builder</span>
+    <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">--&gt; this.RedCircleBuilder().get()</span>
+    <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">finally, it creates Circle Object. </span>
+    <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">new Circle()</span>
 
-    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #4f97d7;">{</span>
+  };
+  <span style="font-weight: bold; text-decoration: underline;">this</span>.register = <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">type</span>, <span style="font-weight: bold; font-style: italic;">cls</span>) { <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">register a builder</span>
+    <span style="font-weight: bold; text-decoration: underline;">this</span>.types[type] = cls;
+  };
+
+};
+
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">---------------- Singleton ------------</span>
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">CircleGeneratorSingleton</span> = (<span style="font-weight: bold;">function</span>() {
+  <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">instance</span>;
+
+  <span style="font-weight: bold;">function</span> <span style="font-weight: bold;">init</span>() {  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">this actual generator </span>
+    <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">_aCircle</span> = [],
+    _stage = $(<span style="font-style: italic;">'.advert'</span>),
+    _cf = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">CircleFactory</span>();  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">factory obj</span>
+    _cf.register(<span style="font-style: italic;">"red"</span>, RedCircleBuilder);
+    _cf.register(<span style="font-style: italic;">"blue"</span>, BlueCircleBuilder);
+
+
+    <span style="font-weight: bold;">function</span> <span style="font-weight: bold;">create</span>(<span style="font-weight: bold; font-style: italic;">left</span>, <span style="font-weight: bold; font-style: italic;">top</span>, <span style="font-weight: bold; font-style: italic;">type</span>) {
+      <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">circle</span> = _cf.create(type); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">use factory</span>
+      circle.move(left, top);
+      <span style="font-weight: bold;">return</span> circle;
+    }
+
+    <span style="font-weight: bold;">return</span> {
       create: create
-    <span style="color: #4f97d7;">}</span>;
-  <span style="color: #b1951d;">}</span>
+    };
+  }
 
-  <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #b1951d;">{</span>
-    <span style="color: #bc6ec5; font-weight: bold;">getInstance</span> : <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
-      <span style="color: #4f97d7; font-weight: bold;">if</span><span style="color: #bc6ec5;">(</span>!instance<span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
-        instance = init<span style="color: #2d9574;">()</span>;
-      <span style="color: #bc6ec5;">}</span>
-      <span style="color: #4f97d7; font-weight: bold;">return</span> instance;
-    <span style="color: #4f97d7;">}</span>
-  <span style="color: #b1951d;">}</span>;
+  <span style="font-weight: bold;">return</span> {
+    <span style="font-weight: bold;">getInstance</span> : <span style="font-weight: bold;">function</span>() {
+      <span style="font-weight: bold;">if</span>(!instance) {
+        instance = init();
+      }
+      <span style="font-weight: bold;">return</span> instance;
+    }
+  };
 
-<span style="color: #67b11d;">}</span><span style="color: #2d9574;">)()</span>;  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">this is an object, more like static, because it's executed </span>
+})();  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">this is an object, more like static, because it's executed </span>
 
 
 
-<span style="color: #bc6ec5;">}</span><span style="color: #4f97d7;">)(</span>window, jQuery<span style="color: #4f97d7;">)</span>;
+})(window, jQuery);
 </pre>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-orga9dec1c" class="outline-3">
-<h3 id="orga9dec1c"><span class="section-number-3">1.3</span> structural design pattern</h3>
+<div id="outline-container-orga3e2c3d" class="outline-3">
+<h3 id="orga3e2c3d"><span class="section-number-3">1.3</span> structural design pattern</h3>
 <div class="outline-text-3" id="text-1-3">
 </div>
-<div id="outline-container-org8cd379e" class="outline-4">
-<h4 id="org8cd379e"><span class="section-number-4">1.3.1</span> proxy design pattern</h4>
+<div id="outline-container-orgee08b87" class="outline-4">
+<h4 id="orgee08b87"><span class="section-number-4">1.3.1</span> proxy design pattern</h4>
 <div class="outline-text-4" id="text-1-3-1">
 <ul class="org-ul">
 <li>mimic one through another</li>
 </ul>
 <div class="org-src-container">
-<pre class="src src-javascript"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">binder</span><span style="color: #4f97d7;">(</span><span style="color: #7590db;">scope</span>, <span style="color: #7590db;">func</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">this is a proxy </span>
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">function fowardcall would be a better name </span>
-  <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> func.apply<span style="color: #2d9574;">(</span>scope, <span style="color: #a45bad;">arguments</span><span style="color: #2d9574;">)</span>;
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">uses the func </span>
+<pre class="src src-javascript"><span style="font-weight: bold;">function</span> <span style="font-weight: bold;">binder</span>(<span style="font-weight: bold; font-style: italic;">scope</span>, <span style="font-weight: bold; font-style: italic;">func</span>) { <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">this is a proxy </span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">function fowardcall would be a better name </span>
+  <span style="font-weight: bold;">return</span> <span style="font-weight: bold;">function</span>() {
+    <span style="font-weight: bold;">return</span> func.apply(scope, <span style="font-weight: bold; text-decoration: underline;">arguments</span>);
+  }
+} <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">uses the func </span>
 
-<span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">shapeFacade</span><span style="color: #4f97d7;">(</span><span style="color: #7590db;">shp</span><span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">replace:</span>
-    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">move : function(x, y) {</span>
-    <span style="color: #2aa1ae; background-color: #292e34;">//  </span><span style="color: #2aa1ae; background-color: #292e34;">shp.move(x, y);</span>
-    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">}</span>
-    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">avoid calling shp.move</span>
-    move : binder<span style="color: #2d9574;">(</span>shp, shp.move<span style="color: #2d9574;">)</span>,
+<span style="font-weight: bold;">function</span> <span style="font-weight: bold;">shapeFacade</span>(<span style="font-weight: bold; font-style: italic;">shp</span>) {
+  <span style="font-weight: bold;">return</span> {
+    <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">replace:</span>
+    <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">move : function(x, y) {</span>
+    <span style="font-weight: bold; font-style: italic;">//  </span><span style="font-weight: bold; font-style: italic;">shp.move(x, y);</span>
+    <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">}</span>
+    <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">avoid calling shp.move</span>
+    move : binder(shp, shp.move),
 
-  <span style="color: #bc6ec5;">}</span>
+  }
 
-<span style="color: #4f97d7;">}</span>
+}
 
 </pre>
 </div>
@@ -459,29 +459,29 @@ RedCircleBuilder.<span style="color: #a45bad;">prototype</span>.get = <span styl
 
 
 
-<div id="outline-container-org5d2d624" class="outline-2">
-<h2 id="org5d2d624"><span class="section-number-2">2</span> most common design patterns</h2>
+<div id="outline-container-org5f8ce65" class="outline-2">
+<h2 id="org5f8ce65"><span class="section-number-2">2</span> most common design patterns</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-orgef4d1bd" class="outline-3">
-<h3 id="orgef4d1bd"><span class="section-number-3">2.1</span> modules</h3>
+<div id="outline-container-org02f57ac" class="outline-3">
+<h3 id="org02f57ac"><span class="section-number-3">2.1</span> modules</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>is a javascript class</li>
 </ul>
 <div class="org-src-container">
-<pre class="src src-javascript"><span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">instance</span>  = <span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span>  
-  <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #2d9574;">{</span>
-    <span style="color: #bc6ec5; font-weight: bold;">dosomething</span> : <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #67b11d;">()</span> <span style="color: #67b11d;">{}</span>
-  <span style="color: #2d9574;">}</span>
-<span style="color: #bc6ec5;">}</span><span style="color: #4f97d7;">)()</span>;
+<pre class="src src-javascript"><span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">instance</span>  = (<span style="font-weight: bold;">function</span>() {  
+  <span style="font-weight: bold;">return</span> {
+    <span style="font-weight: bold;">dosomething</span> : <span style="font-weight: bold;">function</span>() {}
+  }
+})();
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org4eb4aa1" class="outline-3">
-<h3 id="org4eb4aa1"><span class="section-number-3">2.2</span> prototype</h3>
+<div id="outline-container-org9ffa763" class="outline-3">
+<h3 id="org9ffa763"><span class="section-number-3">2.2</span> prototype</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>it relies on prototypical inheritance</li>
@@ -489,18 +489,18 @@ RedCircleBuilder.<span style="color: #a45bad;">prototype</span>.get = <span styl
 <li>cloned objects are shallow clones of original one</li>
 </ul>
 <div class="org-src-container">
-<pre class="src src-javascript"><span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">model</span> = <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">constructor</span>
-  <span style="color: #a45bad;">this</span>.member = <span style="color: #a45bad;">1</span>;
-<span style="color: #4f97d7;">}</span>
+<pre class="src src-javascript"><span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">model</span> = <span style="font-weight: bold;">function</span>() {
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">constructor</span>
+  <span style="font-weight: bold; text-decoration: underline;">this</span>.member = 1;
+}
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">revealed module </span>
-model.<span style="color: #a45bad;">prototype</span> = <span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">dodo</span> = <span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{}</span>;
-  <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #bc6ec5;">{</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">revealed module </span>
+model.<span style="font-weight: bold; text-decoration: underline;">prototype</span> = <span style="font-weight: bold;">function</span> () {
+  <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">dodo</span> = <span style="font-weight: bold;">function</span> () {};
+  <span style="font-weight: bold;">return</span> {
    dosomething : dodo
-  <span style="color: #bc6ec5;">}</span>;
-<span style="color: #4f97d7;">}()</span>;
+  };
+}();
 
 </pre>
 </div>
@@ -508,8 +508,8 @@ model.<span style="color: #a45bad;">prototype</span> = <span style="color: #4f97
 </div>
 
 
-<div id="outline-container-org37ef9a5" class="outline-3">
-<h3 id="org37ef9a5"><span class="section-number-3">2.3</span> observer</h3>
+<div id="outline-container-org53234d2" class="outline-3">
+<h3 id="org53234d2"><span class="section-number-3">2.3</span> observer</h3>
 <div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>in angular js, $scope object updates, event will be triggered, broadcasts to others</li>
@@ -518,39 +518,39 @@ model.<span style="color: #a45bad;">prototype</span> = <span style="color: #4f97
 
 
 <div class="org-src-container">
-<pre class="src src-javascript"><span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">controller</span>
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">- publish/subscribe </span>
-$scope.$on<span style="color: #4f97d7;">(</span><span style="color: #2d9574;">'nameChanged'</span>, <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #bc6ec5;">(</span><span style="color: #7590db;">event</span>, <span style="color: #7590db;">args</span><span style="color: #bc6ec5;">){</span>
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">subscriber </span>
-<span style="color: #bc6ec5;">}</span><span style="color: #4f97d7;">)</span>
+<pre class="src src-javascript"><span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">controller</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">- publish/subscribe </span>
+$scope.$on(<span style="font-style: italic;">'nameChanged'</span>, <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">event</span>, <span style="font-weight: bold; font-style: italic;">args</span>){
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">subscriber </span>
+})
 
 
-$scope.userNameChanged = <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #4f97d7;">(</span><span style="color: #7590db;">name</span><span style="color: #4f97d7;">){</span>
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">publisher</span>
-  $scope.$emit<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">'nameChanged'</span>, <span style="color: #2d9574;">{</span>name: name<span style="color: #2d9574;">}</span><span style="color: #bc6ec5;">)</span>; 
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">or</span>
-  $scope.$broadcast<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">'nameChanged'</span>, <span style="color: #2d9574;">{</span>name: name<span style="color: #2d9574;">}</span><span style="color: #bc6ec5;">)</span>; 
-<span style="color: #4f97d7;">}</span>;
+$scope.userNameChanged = <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">name</span>){
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">publisher</span>
+  $scope.$emit(<span style="font-style: italic;">'nameChanged'</span>, {name: name}); 
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">or</span>
+  $scope.$broadcast(<span style="font-style: italic;">'nameChanged'</span>, {name: name}); 
+};
 
 
 
 
-<span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">Subject</span> = <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #bc6ec5; font-weight: bold;">subscribeObserver</span> : <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #2d9574;">(</span><span style="color: #7590db;">ob</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{}</span>
-    <span style="color: #bc6ec5; font-weight: bold;">notifyAllObservers</span> : <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #2d9574;">()</span> <span style="color: #2d9574;">{}</span>
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">Subject</span> = <span style="font-weight: bold;">function</span>() {
+  <span style="font-weight: bold;">return</span> {
+    <span style="font-weight: bold;">subscribeObserver</span> : <span style="font-weight: bold;">function</span>(<span style="font-weight: bold; font-style: italic;">ob</span>) {}
+    <span style="font-weight: bold;">notifyAllObservers</span> : <span style="font-weight: bold;">function</span>() {}
+  }
+}
 
 
-<span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">Observer</span> = <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #bc6ec5; font-weight: bold;">notify</span> : <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #2d9574;">()</span> <span style="color: #2d9574;">{}</span>
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">Observer</span> = <span style="font-weight: bold;">function</span>() {
+  <span style="font-weight: bold;">return</span> {
+    <span style="font-weight: bold;">notify</span> : <span style="font-weight: bold;">function</span>() {}
+  }
+}
 
-<span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">s</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Subject</span><span style="color: #4f97d7;">()</span>
-s.subscribeObserver<span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Observer</span><span style="color: #4f97d7;">)</span>;
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">s</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Subject</span>()
+s.subscribeObserver(<span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Observer</span>);
 
 </pre>
 </div>
@@ -563,8 +563,8 @@ s.subscribeObserver<span style="color: #4f97d7;">(</span><span style="color: #4f
 
 
 
-<div id="outline-container-org7e88818" class="outline-3">
-<h3 id="org7e88818"><span class="section-number-3">2.4</span> singleton</h3>
+<div id="outline-container-org9ab0e65" class="outline-3">
+<h3 id="org9ab0e65"><span class="section-number-3">2.4</span> singleton</h3>
 <div class="outline-text-3" id="text-2-4">
 <ul class="org-ul">
 <li>share the same resource</li>
@@ -573,18 +573,18 @@ s.subscribeObserver<span style="color: #4f97d7;">(</span><span style="color: #4f
 </ul>
 
 <div class="org-src-container">
-<pre class="src src-javascript"><span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">use closure to achieve static variable </span>
-<span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">printer</span> = <span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">var</span> <span style="color: #7590db;">printerInstance</span>;
-  <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #2d9574;">{</span>
-    <span style="color: #bc6ec5; font-weight: bold;">getInstance</span> : <span style="color: #4f97d7; font-weight: bold;">function</span><span style="color: #67b11d;">()</span> <span style="color: #67b11d;">{</span>
-      <span style="color: #4f97d7; font-weight: bold;">if</span><span style="color: #b1951d;">(</span>!printerInstance<span style="color: #b1951d;">)</span> <span style="color: #b1951d;">{</span>
-        printerInstance = create<span style="color: #4f97d7;">()</span>;
-      <span style="color: #b1951d;">}</span>
-      <span style="color: #4f97d7; font-weight: bold;">return</span> printerInstance;
-    <span style="color: #67b11d;">}</span>
-  <span style="color: #2d9574;">}</span>
-<span style="color: #bc6ec5;">}</span><span style="color: #4f97d7;">)()</span>;
+<pre class="src src-javascript"><span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">use closure to achieve static variable </span>
+<span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">printer</span> = (<span style="font-weight: bold;">function</span>() {
+  <span style="font-weight: bold;">var</span> <span style="font-weight: bold; font-style: italic;">printerInstance</span>;
+  <span style="font-weight: bold;">return</span> {
+    <span style="font-weight: bold;">getInstance</span> : <span style="font-weight: bold;">function</span>() {
+      <span style="font-weight: bold;">if</span>(!printerInstance) {
+        printerInstance = create();
+      }
+      <span style="font-weight: bold;">return</span> printerInstance;
+    }
+  }
+})();
 
 
 
@@ -596,8 +596,8 @@ s.subscribeObserver<span style="color: #4f97d7;">(</span><span style="color: #4f
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: JINGWEI GU</p>
-<p class="date">Created: 2018-11-16 Fri 17:07</p>
+<p class="author">Author: roy gu</p>
+<p class="date">Created: 2018-12-17 Mon 18:10</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

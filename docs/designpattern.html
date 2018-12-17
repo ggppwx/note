@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2018-11-16 Fri 16:41 -->
+<!-- 2018-12-17 Mon 18:10 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>design pattern notes</title>
 <meta name="generator" content="Org mode" />
-<meta name="author" content="JINGWEI GU" />
+<meta name="author" content="roy gu" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
   .title  { text-align: center;
@@ -180,12 +180,12 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="https://www.pirilampo.org/styles/readtheorg/css/readtheorg.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://www.pirilampo.org/styles/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="https://www.pirilampo.org/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/readtheorg/js/readtheorg.js"></script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -240,96 +240,83 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org2a33778">1. tips</a></li>
-<li><a href="#org1d8b65b">2. usage</a></li>
-<li><a href="#org52c5fb3">3. review oop</a>
+<li><a href="#org6d4bbfc">1. tips</a></li>
+<li><a href="#org815de6b">2. usage</a></li>
+<li><a href="#org15ab601">3. review oop</a>
 <ul>
-<li><a href="#org49019c4">3.1. Encapsulation</a></li>
-<li><a href="#org4a8c6de">3.2. how to decide if a class should extend another</a></li>
-<li><a href="#orga1b7d0d">3.3. why inheritance</a></li>
-<li><a href="#orgfcfc53a">3.4. pass mechanism</a></li>
+<li><a href="#org002eac6">3.1. Encapsulation</a></li>
+<li><a href="#orge414254">3.2. how to decide if a class should extend another</a></li>
+<li><a href="#orgcff9d08">3.3. why inheritance</a></li>
+<li><a href="#org7b11979">3.4. pass mechanism</a></li>
 </ul>
 </li>
-<li><a href="#org0043dc9">4. <span class="done DONE">DONE</span> strategy</a>
+<li><a href="#org663ccfb">4. <span class="done DONE">DONE</span> strategy</a>
 <ul>
-<li><a href="#org75cbc7d">4.1. basic</a></li>
-<li><a href="#org4570fb7">4.2. use interface</a></li>
-<li><a href="#org98d2301">4.3. composition</a></li>
+<li><a href="#org7b58e8e">4.1. basic</a></li>
+<li><a href="#org2aac655">4.2. use interface</a></li>
+<li><a href="#orgb3a90bf">4.3. composition</a></li>
 </ul>
 </li>
-<li><a href="#org3308575">5. <span class="done DONE">DONE</span> observer</a>
+<li><a href="#orgb858aca">5. <span class="done DONE">DONE</span> observer</a>
 <ul>
-<li><a href="#org0130200">5.1. when to use observer pattern</a></li>
-<li><a href="#org8c3fcb7">5.2. sample</a></li>
+<li><a href="#org12988b1">5.1. when to use observer pattern</a></li>
+<li><a href="#org7d8be82">5.2. sample</a></li>
 </ul>
 </li>
-<li><a href="#orgf134d6c">6. <span class="done DONE">DONE</span> factory</a>
+<li><a href="#orgc6619ac">6. <span class="done DONE">DONE</span> factory</a>
 <ul>
-<li><a href="#orgf7f8b51">6.1. <span class="done DONE">DONE</span> use cpp rewrite the code</a>
+<li><a href="#orgd322807">6.1. <span class="done DONE">DONE</span> use cpp rewrite the code</a>
 <ul>
-<li><a href="#org235fce1">6.1.1. what is factory pattern</a></li>
-<li><a href="#orgaa4190b">6.1.2. when to use</a></li>
-<li><a href="#org0623fcd">6.1.3. example</a></li>
-<li><a href="#orgad819c6">6.1.4. abstruct factory</a></li>
+<li><a href="#orge7b919a">6.1.1. what is factory pattern</a></li>
+<li><a href="#org314b09c">6.1.2. when to use</a></li>
+<li><a href="#org70fdf8a">6.1.3. example</a></li>
+<li><a href="#org4167f45">6.1.4. abstruct factory</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org228156f">7. <span class="done DONE">DONE</span> singleton</a>
+<li><a href="#org4c84d89">7. <span class="done DONE">DONE</span> singleton</a>
 <ul>
-<li><a href="#orgf56261e">7.1. when</a></li>
-<li><a href="#orgb5dcb43">7.2. threaded situtation</a></li>
+<li><a href="#orga8273eb">7.1. when</a></li>
+<li><a href="#org346cbb6">7.2. threaded situtation</a></li>
 </ul>
 </li>
-<li><a href="#orgf6bd7f4">8. <span class="done DONE">DONE</span> builder</a>
+<li><a href="#orgd18859b">8. <span class="done DONE">DONE</span> builder</a>
 <ul>
-<li><a href="#orgc107c18">8.1. what &amp; when</a></li>
+<li><a href="#org3ce75c3">8.1. what &amp; when</a></li>
 </ul>
 </li>
-<li><a href="#orgd948dfc">9. <span class="done DONE">DONE</span> prototype</a></li>
-<li><a href="#org05e628e">10. <span class="done DONE">DONE</span> decorator</a>
+<li><a href="#org79c0dfb">9. <span class="done DONE">DONE</span> prototype</a></li>
+<li><a href="#org940aff7">10. <span class="done DONE">DONE</span> decorator</a>
 <ul>
-<li><a href="#org5285338">10.1. what is decorator</a></li>
-<li><a href="#org7c222e6">10.2. example</a></li>
+<li><a href="#org3dd5ddc">10.1. what is decorator</a></li>
+<li><a href="#org8264102">10.2. example</a></li>
 </ul>
 </li>
-<li><a href="#org17be798">11. <span class="done DONE">DONE</span> adapter</a></li>
-<li><a href="#orgde85714">12. <span class="done DONE">DONE</span> bridge</a></li>
-<li><a href="#orgb7c5884">13. <span class="done DONE">DONE</span> template</a></li>
-<li><a href="#orgc98c3d9">14. <span class="done DONE">DONE</span> iterator</a></li>
-<li><a href="#orgbbe2e69">15. <span class="done DONE">DONE</span> proxy</a>
+<li><a href="#org59f5a65">11. <span class="done DONE">DONE</span> adapter</a></li>
+<li><a href="#org7f3e7b8">12. <span class="done DONE">DONE</span> bridge</a></li>
+<li><a href="#orgdd8f5d7">13. <span class="done DONE">DONE</span> template</a></li>
+<li><a href="#orgea00663">14. <span class="done DONE">DONE</span> iterator</a></li>
+<li><a href="#org25d4b5b">15. <span class="done DONE">DONE</span> proxy</a>
 <ul>
-<li><a href="#org66c76b1">15.1. proxy in python</a></li>
-<li><a href="#org6943bd7">15.2. proxy in javascript</a></li>
+<li><a href="#org708eaf9">15.1. proxy in python</a></li>
+<li><a href="#org300685b">15.2. proxy in javascript</a></li>
 </ul>
 </li>
-<li><a href="#org86cabd2">16. <span class="done DONE">DONE</span> visitor</a></li>
-<li><a href="#org0348b17">17. <span class="done DONE">DONE</span> flyweight</a></li>
-<li><a href="#org39c77cc">18. MVC design pattern</a></li>
+<li><a href="#org8169792">16. <span class="done DONE">DONE</span> visitor</a></li>
+<li><a href="#orgefa1c30">17. <span class="done DONE">DONE</span> flyweight</a></li>
+<li><a href="#orged50fe3">18. MVC design pattern</a></li>
 </ul>
 </div>
 </div>
-<div class="HTML">
-<p>
-&#x2014;
-layout: post
-title: design pattern notes
-date: 2016-08-01
-tags: [notes]
-description: a simple notes to design pattern 
-&#x2014;
-</p>
-
-</div>
-
 <p>
 in total we have 27 tutorials 
 10 min each 
 learn 20 maybe 
 </p>
 
-<div id="outline-container-org2a33778" class="outline-2">
-<h2 id="org2a33778"><span class="section-number-2">1</span> tips</h2>
+<div id="outline-container-org6d4bbfc" class="outline-2">
+<h2 id="org6d4bbfc"><span class="section-number-2">1</span> tips</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 <a href="http://programmers.stackexchange.com/questions/7055/what-is-the-most-frequently-used-design-pattern">http://programmers.stackexchange.com/questions/7055/what-is-the-most-frequently-used-design-pattern</a>
@@ -339,8 +326,8 @@ learn 20 maybe
 </div>
 
 
-<div id="outline-container-org1d8b65b" class="outline-2">
-<h2 id="org1d8b65b"><span class="section-number-2">2</span> usage</h2>
+<div id="outline-container-org815de6b" class="outline-2">
+<h2 id="org815de6b"><span class="section-number-2">2</span> usage</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Creational Patterns
@@ -502,12 +489,12 @@ Behavioral Patterns
 </div>
 </div>
 
-<div id="outline-container-org52c5fb3" class="outline-2">
-<h2 id="org52c5fb3"><span class="section-number-2">3</span> review oop</h2>
+<div id="outline-container-org15ab601" class="outline-2">
+<h2 id="org15ab601"><span class="section-number-2">3</span> review oop</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org49019c4" class="outline-3">
-<h3 id="org49019c4"><span class="section-number-3">3.1</span> Encapsulation</h3>
+<div id="outline-container-org002eac6" class="outline-3">
+<h3 id="org002eac6"><span class="section-number-3">3.1</span> Encapsulation</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 parameter vs argument 
@@ -515,8 +502,8 @@ parameter vs argument
 </div>
 </div>
 
-<div id="outline-container-org4a8c6de" class="outline-3">
-<h3 id="org4a8c6de"><span class="section-number-3">3.2</span> how to decide if a class should extend another</h3>
+<div id="outline-container-orge414254" class="outline-3">
+<h3 id="orge414254"><span class="section-number-3">3.2</span> how to decide if a class should extend another</h3>
 <div class="outline-text-3" id="text-3-2">
 <ul class="org-ul">
 <li>is a</li>
@@ -527,12 +514,12 @@ parameter vs argument
 </div>
 </div>
 
-<div id="outline-container-orga1b7d0d" class="outline-3">
-<h3 id="orga1b7d0d"><span class="section-number-3">3.3</span> why inheritance</h3>
+<div id="outline-container-orgcff9d08" class="outline-3">
+<h3 id="orgcff9d08"><span class="section-number-3">3.3</span> why inheritance</h3>
 </div>
 
-<div id="outline-container-orgfcfc53a" class="outline-3">
-<h3 id="orgfcfc53a"><span class="section-number-3">3.4</span> pass mechanism</h3>
+<div id="outline-container-org7b11979" class="outline-3">
+<h3 id="org7b11979"><span class="section-number-3">3.4</span> pass mechanism</h3>
 <div class="outline-text-3" id="text-3-4">
 <ul class="org-ul">
 <li>java value passed by value</li>
@@ -545,13 +532,13 @@ parameter vs argument
 
 
 
-<div id="outline-container-org0043dc9" class="outline-2">
-<h2 id="org0043dc9"><span class="section-number-2">4</span> <span class="done DONE">DONE</span> strategy</h2>
+<div id="outline-container-org663ccfb" class="outline-2">
+<h2 id="org663ccfb"><span class="section-number-2">4</span> <span class="done DONE">DONE</span> strategy</h2>
 <div class="outline-text-2" id="text-4">
 </div>
 
-<div id="outline-container-org75cbc7d" class="outline-3">
-<h3 id="org75cbc7d"><span class="section-number-3">4.1</span> basic</h3>
+<div id="outline-container-org7b58e8e" class="outline-3">
+<h3 id="org7b58e8e"><span class="section-number-3">4.1</span> basic</h3>
 <div class="outline-text-3" id="text-4-1">
 <ul class="org-ul">
 <li><span class="underline">eliminate duplicate</span></li>
@@ -562,32 +549,32 @@ parameter vs argument
 </div>
 </div>
 
-<div id="outline-container-org4570fb7" class="outline-3">
-<h3 id="org4570fb7"><span class="section-number-3">4.2</span> use interface</h3>
+<div id="outline-container-org2aac655" class="outline-3">
+<h3 id="org2aac655"><span class="section-number-3">4.2</span> use interface</h3>
 <div class="outline-text-3" id="text-4-2">
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">method as class</span>
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">interface</span> <span style="color: #ce537a; font-weight: bold;">Fly</span><span style="color: #4f97d7;">{</span>
-   <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #bc6ec5; font-weight: bold;">fly</span><span style="color: #bc6ec5;">()</span>;
-<span style="color: #4f97d7;">}</span>
+<pre class="src src-java"><span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">method as class</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">interface</span> <span style="font-weight: bold; text-decoration: underline;">Fly</span>{
+   <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold;">fly</span>();
+}
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">let the alogithm varies </span>
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">ItFly</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">Fly</span><span style="color: #4f97d7;">{</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">strategy algorithm</span>
-   <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #bc6ec5; font-weight: bold;">fly</span><span style="color: #bc6ec5;">(){</span>
-   <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">let the alogithm varies </span>
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">ItFly</span> <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">Fly</span>{ <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">strategy algorithm</span>
+   <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold;">fly</span>(){
+   }
+}
 
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">CantFly</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">Fly</span><span style="color: #4f97d7;">{</span>
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #bc6ec5; font-weight: bold;">fly</span><span style="color: #bc6ec5;">(){</span>
-<span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">CantFly</span> <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">Fly</span>{
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold;">fly</span>(){
+}
+}
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org98d2301" class="outline-3">
-<h3 id="org98d2301"><span class="section-number-3">4.3</span> composition</h3>
+<div id="outline-container-orgb3a90bf" class="outline-3">
+<h3 id="orgb3a90bf"><span class="section-number-3">4.3</span> composition</h3>
 <div class="outline-text-3" id="text-4-3">
 <ul class="org-ul">
 <li>can change without side effects</li>
@@ -595,28 +582,28 @@ parameter vs argument
 <li><span class="underline">method as class type</span></li>
 </ul>
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">Animal</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">Fly</span> <span style="color: #7590db;">flyingType</span>;  <span style="color: #2aa1ae; background-color: #292e34;">//</span><span style="color: #2aa1ae; background-color: #292e34;">setter method somewhere </span>
+<pre class="src src-java"><span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Animal</span> {
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">Fly</span> <span style="font-weight: bold; font-style: italic;">flyingType</span>;  <span style="font-weight: bold; font-style: italic;">//</span><span style="font-weight: bold; font-style: italic;">setter method somewhere </span>
 
-  <span style="color: #2aa1ae; background-color: #292e34;">/* </span><span style="color: #2aa1ae; background-color: #292e34;">no need to assign, if we don't instanatiate this </span>
-<span style="color: #2aa1ae; background-color: #292e34;">  public Animal(){</span>
-<span style="color: #2aa1ae; background-color: #292e34;">    flyingType = new ItFly(); // default</span>
-<span style="color: #2aa1ae; background-color: #292e34;">  } </span>
-<span style="color: #2aa1ae; background-color: #292e34;">  */</span> 
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #bc6ec5; font-weight: bold;">tryToFly</span><span style="color: #bc6ec5;">(){</span> 
-    <span style="color: #4f97d7; font-weight: bold;">return</span> flyingType.fly<span style="color: #2d9574;">()</span>;
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+  <span style="font-weight: bold; font-style: italic;">/* </span><span style="font-weight: bold; font-style: italic;">no need to assign, if we don't instanatiate this </span>
+<span style="font-weight: bold; font-style: italic;">  public Animal(){</span>
+<span style="font-weight: bold; font-style: italic;">    flyingType = new ItFly(); // default</span>
+<span style="font-weight: bold; font-style: italic;">  } </span>
+<span style="font-weight: bold; font-style: italic;">  */</span> 
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold;">tryToFly</span>(){ 
+    <span style="font-weight: bold;">return</span> flyingType.fly();
+  }
+}
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">Dog</span> <span style="color: #4f97d7; font-weight: bold;">extends</span> <span style="color: #ce537a; font-weight: bold;">Animal</span><span style="color: #4f97d7;">{</span>
-   <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #bc6ec5; font-weight: bold;">Dog</span><span style="color: #bc6ec5;">(){</span>
-     <span style="color: #4f97d7; font-weight: bold;">super</span><span style="color: #2d9574;">()</span>;
-     flyingType = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">ItFly</span><span style="color: #2d9574;">()</span>;
-   <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Dog</span> <span style="font-weight: bold;">extends</span> <span style="font-weight: bold; text-decoration: underline;">Animal</span>{
+   <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">Dog</span>(){
+     <span style="font-weight: bold;">super</span>();
+     flyingType = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">ItFly</span>();
+   }
+}
 
-<span style="color: #ce537a; font-weight: bold;">Animal</span> <span style="color: #7590db;">sparky</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Dog</span><span style="color: #4f97d7;">()</span>;
-sparky.tryToFly<span style="color: #4f97d7;">()</span>;
+<span style="font-weight: bold; text-decoration: underline;">Animal</span> <span style="font-weight: bold; font-style: italic;">sparky</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Dog</span>();
+sparky.tryToFly();
 </pre>
 </div>
 </div>
@@ -625,12 +612,12 @@ sparky.tryToFly<span style="color: #4f97d7;">()</span>;
 
 
 
-<div id="outline-container-org3308575" class="outline-2">
-<h2 id="org3308575"><span class="section-number-2">5</span> <span class="done DONE">DONE</span> observer</h2>
+<div id="outline-container-orgb858aca" class="outline-2">
+<h2 id="orgb858aca"><span class="section-number-2">5</span> <span class="done DONE">DONE</span> observer</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org0130200" class="outline-3">
-<h3 id="org0130200"><span class="section-number-3">5.1</span> when to use observer pattern</h3>
+<div id="outline-container-org12988b1" class="outline-3">
+<h3 id="org12988b1"><span class="section-number-3">5.1</span> when to use observer pattern</h3>
 <div class="outline-text-3" id="text-5-1">
 <ul class="org-ul">
 <li>loose coupling
@@ -655,108 +642,108 @@ Observer represents the variable (or dependent or optional or user interface) ab
 </div>
 
 
-<div id="outline-container-org8c3fcb7" class="outline-3">
-<h3 id="org8c3fcb7"><span class="section-number-3">5.2</span> sample</h3>
+<div id="outline-container-org7d8be82" class="outline-3">
+<h3 id="org7d8be82"><span class="section-number-3">5.2</span> sample</h3>
 <div class="outline-text-3" id="text-5-2">
 <ul class="org-ul">
 <li><span class="underline">subject register observers</span></li>
 </ul>
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">interface</span> <span style="color: #ce537a; font-weight: bold;">Subject</span><span style="color: #4f97d7;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">register</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Observer</span> <span style="color: #7590db;">o</span><span style="color: #bc6ec5;">)</span>;
-    <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">unregister</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Observer</span> <span style="color: #7590db;">o</span><span style="color: #bc6ec5;">)</span>;
-    <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">notifyObserver</span><span style="color: #bc6ec5;">()</span>;
+<pre class="src src-java"><span style="font-weight: bold;">public</span> <span style="font-weight: bold;">interface</span> <span style="font-weight: bold; text-decoration: underline;">Subject</span>{
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">register</span>(<span style="font-weight: bold; text-decoration: underline;">Observer</span> <span style="font-weight: bold; font-style: italic;">o</span>);
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">unregister</span>(<span style="font-weight: bold; text-decoration: underline;">Observer</span> <span style="font-weight: bold; font-style: italic;">o</span>);
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">notifyObserver</span>();
 
 
-    <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #ce537a; font-weight: bold;">double</span> <span style="color: #7590db;">ibmprice</span>;
-<span style="color: #4f97d7;">}</span>
+    <span style="font-weight: bold;">private</span> <span style="font-weight: bold; text-decoration: underline;">double</span> <span style="font-weight: bold; font-style: italic;">ibmprice</span>;
+}
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">interface</span> <span style="color: #ce537a; font-weight: bold;">Observer</span><span style="color: #4f97d7;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">update</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">double</span> <span style="color: #7590db;">ibmprice</span><span style="color: #bc6ec5;">)</span>;
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">interface</span> <span style="font-weight: bold; text-decoration: underline;">Observer</span>{
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">update</span>(<span style="font-weight: bold; text-decoration: underline;">double</span> <span style="font-weight: bold; font-style: italic;">ibmprice</span>);
+}
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">subject </span>
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">StockGrabber</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">Subject</span> <span style="color: #4f97d7;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">StockGrabber</span><span style="color: #bc6ec5;">{</span>
-        observers = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">ArrayList</span><span style="color: #2d9574;">&lt;</span><span style="color: #ce537a; font-weight: bold;">Observer</span><span style="color: #2d9574;">&gt;()</span>;
-    <span style="color: #bc6ec5;">}</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">subject </span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">StockGrabber</span> <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">Subject</span> {
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">StockGrabber</span>{
+        observers = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">ArrayList</span>&lt;<span style="font-weight: bold; text-decoration: underline;">Observer</span>&gt;();
+    }
 
-    <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">register</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Observer</span> <span style="color: #7590db;">o</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">add observer </span>
-        observers.add<span style="color: #2d9574;">(</span>o<span style="color: #2d9574;">)</span>;
-    <span style="color: #bc6ec5;">}</span>
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">register</span>(<span style="font-weight: bold; text-decoration: underline;">Observer</span> <span style="font-weight: bold; font-style: italic;">o</span>) {  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">add observer </span>
+        observers.add(o);
+    }
 
-    <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">notifyObserver</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">notify all observers </span>
-       <span style="color: #4f97d7; font-weight: bold;">for</span><span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">Observer</span> <span style="color: #7590db;">o</span> : observers<span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
-           o.update<span style="color: #67b11d;">(</span>ibmprice<span style="color: #67b11d;">)</span>;
-       <span style="color: #2d9574;">}</span>
-    <span style="color: #bc6ec5;">}</span>
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">notifyObserver</span>() { <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">notify all observers </span>
+       <span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">Observer</span> <span style="font-weight: bold; font-style: italic;">o</span> : observers) {
+           o.update(ibmprice);
+       }
+    }
 
-    <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">setIbmPrice</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">doulbe</span> <span style="color: #7590db;">newp</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
-       <span style="color: #4f97d7; font-weight: bold;">this</span>.ibmprice = newp;
-       notifyObserver<span style="color: #2d9574;">()</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">after this change, it will notify the observer </span>
-    <span style="color: #bc6ec5;">}</span>
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">setIbmPrice</span>(<span style="font-weight: bold; text-decoration: underline;">doulbe</span> <span style="font-weight: bold; font-style: italic;">newp</span>) {
+       <span style="font-weight: bold;">this</span>.ibmprice = newp;
+       notifyObserver(); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">after this change, it will notify the observer </span>
+    }
 
-<span style="color: #4f97d7;">}</span>
+}
 
-<span style="color: #2aa1ae; background-color: #292e34;">//</span><span style="color: #2aa1ae; background-color: #292e34;">observer</span>
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> StockObserver <span style="color: #ce537a; font-weight: bold;">implments</span> <span style="color: #ce537a; font-weight: bold;">Observer</span> <span style="color: #4f97d7;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #bc6ec5; font-weight: bold;">StockObserver</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Subject</span> <span style="color: #7590db;">stockGrabber</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">pass in a subject</span>
-       stockGrabber.register<span style="color: #2d9574;">(</span><span style="color: #4f97d7; font-weight: bold;">this</span><span style="color: #2d9574;">)</span>;
-    <span style="color: #bc6ec5;">}</span>
-
-
-
-    <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">observerIDTracker</span> = <span style="color: #a45bad;">0</span>;
-    <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #ce537a; font-weight: bold;">Subject</span> <span style="color: #7590db;">stockGrabber</span>;
-
-
-    <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">update</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">double</span> <span style="color: #7590db;">ibmprice</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
-       <span style="color: #4f97d7; font-weight: bold;">this</span>.ibmprice = ibmprice;
-
-    <span style="color: #bc6ec5;">}</span>
-
-<span style="color: #4f97d7;">}</span>
-
-
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">multi thread</span>
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> GetTheStock <span style="color: #ce537a; font-weight: bold;">implments</span> <span style="color: #ce537a; font-weight: bold;">Runnable</span> <span style="color: #4f97d7;">{</span>
-   <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #ce537a; font-weight: bold;">Subject</span> <span style="color: #7590db;">stockGrabber</span>;  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">subject </span>
-
-   <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #bc6ec5; font-weight: bold;">GetTheStock</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Subject</span> <span style="color: #7590db;">sub</span>, <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">newStratTime</span><span style="color: #bc6ec5;">){</span>
-      <span style="color: #4f97d7; font-weight: bold;">this</span>.stockGrabber = sub;
-
-   <span style="color: #bc6ec5;">}</span>
-
-   <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">run</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">updating this subject </span>
-       <span style="color: #4f97d7; font-weight: bold;">for</span> <span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">i</span> = <span style="color: #a45bad;">0</span>; i &lt; <span style="color: #a45bad;">20</span> ; ++i <span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
-           <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">here subject doing some changes </span>
-           <span style="color: #67b11d;">(</span><span style="color: #ce537a; font-weight: bold;">StockGrabber</span><span style="color: #67b11d;">)</span>stockGrabber.setIBMPrice<span style="color: #67b11d;">(</span>random<span style="color: #b1951d;">()</span><span style="color: #67b11d;">)</span>  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">cast to StockGrabber</span>
-       <span style="color: #2d9574;">}</span>
-   <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold; font-style: italic;">//</span><span style="font-weight: bold; font-style: italic;">observer</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> StockObserver <span style="font-weight: bold; text-decoration: underline;">implments</span> <span style="font-weight: bold; text-decoration: underline;">Observer</span> {
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">StockObserver</span>(<span style="font-weight: bold; text-decoration: underline;">Subject</span> <span style="font-weight: bold; font-style: italic;">stockGrabber</span>) { <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">pass in a subject</span>
+       stockGrabber.register(<span style="font-weight: bold;">this</span>);
+    }
 
 
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #4f97d7;">()</span> <span style="color: #4f97d7;">{</span>
+    <span style="font-weight: bold;">private</span> <span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">observerIDTracker</span> = 0;
+    <span style="font-weight: bold;">private</span> <span style="font-weight: bold; text-decoration: underline;">Subject</span> <span style="font-weight: bold; font-style: italic;">stockGrabber</span>;
 
-  <span style="color: #ce537a; font-weight: bold;">StockGrabber</span> <span style="color: #7590db;">stockgrabber</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">StockGrabber</span><span style="color: #bc6ec5;">()</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">subject need to be monitored </span>
 
-  <span style="color: #ce537a; font-weight: bold;">StockObserver</span> <span style="color: #7590db;">o1</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">StockObserver</span><span style="color: #bc6ec5;">(</span>stockgrabber<span style="color: #bc6ec5;">)</span>;
-  <span style="color: #ce537a; font-weight: bold;">StockObserver</span> <span style="color: #7590db;">o2</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">StockObserver</span><span style="color: #bc6ec5;">(</span>stockgrabber<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">subject regiester object here</span>
+    <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">update</span>(<span style="font-weight: bold; text-decoration: underline;">double</span> <span style="font-weight: bold; font-style: italic;">ibmprice</span>) {
+       <span style="font-weight: bold;">this</span>.ibmprice = ibmprice;
 
-  stockgrabber.setIbmprice<span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">1111</span><span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">//  </span><span style="color: #2aa1ae; background-color: #292e34;">subject change price send notification</span>
+    }
 
-  stockgrabber.unregister<span style="color: #bc6ec5;">(</span>o2<span style="color: #bc6ec5;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">un-register </span>
+}
 
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">we can have multiple subjects. </span>
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">run multi-thread. here are multiple subjects </span>
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">every t</span>
-  <span style="color: #ce537a; font-weight: bold;">Runnable</span> <span style="color: #7590db;">t1</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">GetTheStock</span><span style="color: #bc6ec5;">(</span>stockgrabber, <span style="color: #a45bad;">2</span><span style="color: #bc6ec5;">)</span>;
-  <span style="color: #ce537a; font-weight: bold;">Runnable</span> <span style="color: #7590db;">t2</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">GetTheStock</span><span style="color: #bc6ec5;">(</span>stockgrabber, <span style="color: #a45bad;">2</span><span style="color: #bc6ec5;">)</span>;
 
-  <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Thread</span><span style="color: #bc6ec5;">(</span>t1<span style="color: #bc6ec5;">)</span>.start<span style="color: #bc6ec5;">()</span>;
-  <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Thread</span><span style="color: #bc6ec5;">(</span>t2<span style="color: #bc6ec5;">)</span>.start<span style="color: #bc6ec5;">()</span>;
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">multi thread</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> GetTheStock <span style="font-weight: bold; text-decoration: underline;">implments</span> <span style="font-weight: bold; text-decoration: underline;">Runnable</span> {
+   <span style="font-weight: bold;">private</span> <span style="font-weight: bold; text-decoration: underline;">Subject</span> <span style="font-weight: bold; font-style: italic;">stockGrabber</span>;  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">subject </span>
+
+   <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">GetTheStock</span>(<span style="font-weight: bold; text-decoration: underline;">Subject</span> <span style="font-weight: bold; font-style: italic;">sub</span>, <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">newStratTime</span>){
+      <span style="font-weight: bold;">this</span>.stockGrabber = sub;
+
+   }
+
+   <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">run</span>() { <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">updating this subject </span>
+       <span style="font-weight: bold;">for</span> (<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">i</span> = 0; i &lt; 20 ; ++i ) {
+           <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">here subject doing some changes </span>
+           (<span style="font-weight: bold; text-decoration: underline;">StockGrabber</span>)stockGrabber.setIBMPrice(random())  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">cast to StockGrabber</span>
+       }
+   }
+}
+
+
+
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">main</span>() {
+
+  <span style="font-weight: bold; text-decoration: underline;">StockGrabber</span> <span style="font-weight: bold; font-style: italic;">stockgrabber</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">StockGrabber</span>(); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">subject need to be monitored </span>
+
+  <span style="font-weight: bold; text-decoration: underline;">StockObserver</span> <span style="font-weight: bold; font-style: italic;">o1</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">StockObserver</span>(stockgrabber);
+  <span style="font-weight: bold; text-decoration: underline;">StockObserver</span> <span style="font-weight: bold; font-style: italic;">o2</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">StockObserver</span>(stockgrabber); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">subject regiester object here</span>
+
+  stockgrabber.setIbmprice(1111); <span style="font-weight: bold; font-style: italic;">//  </span><span style="font-weight: bold; font-style: italic;">subject change price send notification</span>
+
+  stockgrabber.unregister(o2); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">un-register </span>
+
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">we can have multiple subjects. </span>
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">run multi-thread. here are multiple subjects </span>
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">every t</span>
+  <span style="font-weight: bold; text-decoration: underline;">Runnable</span> <span style="font-weight: bold; font-style: italic;">t1</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">GetTheStock</span>(stockgrabber, 2);
+  <span style="font-weight: bold; text-decoration: underline;">Runnable</span> <span style="font-weight: bold; font-style: italic;">t2</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">GetTheStock</span>(stockgrabber, 2);
+
+  <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Thread</span>(t1).start();
+  <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Thread</span>(t2).start();
+}
 
 </pre>
 </div>
@@ -773,16 +760,16 @@ Observer represents the variable (or dependent or optional or user interface) ab
 
 
 
-<div id="outline-container-orgf134d6c" class="outline-2">
-<h2 id="orgf134d6c"><span class="section-number-2">6</span> <span class="done DONE">DONE</span> factory</h2>
+<div id="outline-container-orgc6619ac" class="outline-2">
+<h2 id="orgc6619ac"><span class="section-number-2">6</span> <span class="done DONE">DONE</span> factory</h2>
 <div class="outline-text-2" id="text-6">
 </div>
-<div id="outline-container-orgf7f8b51" class="outline-3">
-<h3 id="orgf7f8b51"><span class="section-number-3">6.1</span> <span class="done DONE">DONE</span> use cpp rewrite the code</h3>
+<div id="outline-container-orgd322807" class="outline-3">
+<h3 id="orgd322807"><span class="section-number-3">6.1</span> <span class="done DONE">DONE</span> use cpp rewrite the code</h3>
 <div class="outline-text-3" id="text-6-1">
 </div>
-<div id="outline-container-org235fce1" class="outline-4">
-<h4 id="org235fce1"><span class="section-number-4">6.1.1</span> what is factory pattern</h4>
+<div id="outline-container-orge7b919a" class="outline-4">
+<h4 id="orge7b919a"><span class="section-number-4">6.1.1</span> what is factory pattern</h4>
 <div class="outline-text-4" id="text-6-1-1">
 
 <div class="figure">
@@ -791,8 +778,8 @@ Observer represents the variable (or dependent or optional or user interface) ab
 </div>
 </div>
 </div>
-<div id="outline-container-orgaa4190b" class="outline-4">
-<h4 id="orgaa4190b"><span class="section-number-4">6.1.2</span> when to use</h4>
+<div id="outline-container-org314b09c" class="outline-4">
+<h4 id="org314b09c"><span class="section-number-4">6.1.2</span> when to use</h4>
 <div class="outline-text-4" id="text-6-1-2">
 <ul class="org-ul">
 <li>when you don't know ahead what class you need</li>
@@ -804,55 +791,55 @@ Observer represents the variable (or dependent or optional or user interface) ab
 </div>
 </div>
 
-<div id="outline-container-org0623fcd" class="outline-4">
-<h4 id="org0623fcd"><span class="section-number-4">6.1.3</span> example</h4>
+<div id="outline-container-org70fdf8a" class="outline-4">
+<h4 id="org70fdf8a"><span class="section-number-4">6.1.3</span> example</h4>
 <div class="outline-text-4" id="text-6-1-3">
 <div class="org-src-container">
 <pre class="src src-c++">
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">EnemyShip</span><span style="color: #4f97d7;">{</span>
-<span style="color: #4f97d7; font-weight: bold;">public</span>:
-  <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">followHeroShip</span><span style="color: #bc6ec5;">()</span>;
-  <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">displayShip</span><span style="color: #bc6ec5;">()</span>;
-  <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">enemyShipShoot</span><span style="color: #bc6ec5;">()</span>;
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">EnemyShip</span>{
+<span style="font-weight: bold;">public</span>:
+  <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">followHeroShip</span>();
+  <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">displayShip</span>();
+  <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">enemyShipShoot</span>();
 
-<span style="color: #4f97d7;">}</span>;
+};
 
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">UFO</span> : <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">EnemyShip</span> <span style="color: #4f97d7;">{</span>
-<span style="color: #4f97d7;">}</span>;
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">UFO</span> : <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">EnemyShip</span> {
+};
 
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">UFOBoss</span> : <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">UFO</span><span style="color: #4f97d7;">{</span>
-<span style="color: #4f97d7;">}</span>;
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">UFOBoss</span> : <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">UFO</span>{
+};
 
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">Rocket</span> : <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">EnemyShip</span> <span style="color: #4f97d7;">{</span>
-<span style="color: #4f97d7;">}</span>;
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Rocket</span> : <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">EnemyShip</span> {
+};
 
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">EnemyShipFactory</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">EnemyShip</span>* <span style="color: #bc6ec5; font-weight: bold;">makeEnemyShip</span><span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">std</span>::<span style="color: #ce537a; font-weight: bold;">string</span> <span style="color: #7590db;">type</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span>type == <span style="color: #2d9574;">"UFO"</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
-      <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">UFO</span><span style="color: #67b11d;">()</span>;
-    <span style="color: #2d9574;">}</span>
-  <span style="color: #bc6ec5;">}</span>
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">EnemyShipFactory</span> {
+  <span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">EnemyShip</span>* <span style="font-weight: bold;">makeEnemyShip</span>(<span style="font-weight: bold; text-decoration: underline;">std</span>::<span style="font-weight: bold; text-decoration: underline;">string</span> <span style="font-weight: bold; font-style: italic;">type</span>) {
+    <span style="font-weight: bold;">if</span> (type == <span style="font-style: italic;">"UFO"</span>) {
+      <span style="font-weight: bold;">return</span> <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">UFO</span>();
+    }
+  }
 
-<span style="color: #4f97d7;">}</span>;
+};
 
 
-<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #4f97d7;">(){</span>
-   <span style="color: #2aa1ae; background-color: #292e34;">/* </span><span style="color: #2aa1ae; background-color: #292e34;">bad stuff</span>
-<span style="color: #2aa1ae; background-color: #292e34;">   if (userInput == "UFO") {     </span>
-<span style="color: #2aa1ae; background-color: #292e34;">   } else {</span>
-<span style="color: #2aa1ae; background-color: #292e34;">   } </span>
-<span style="color: #2aa1ae; background-color: #292e34;">   */</span>   
-   <span style="color: #ce537a; font-weight: bold;">EnemyShip</span>* <span style="color: #7590db;">enemy</span> = <span style="color: #a45bad;">shipFactory</span>::makeEnemyShip<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"UFO"</span><span style="color: #bc6ec5;">)</span>;
+<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold;">main</span>(){
+   <span style="font-weight: bold; font-style: italic;">/* </span><span style="font-weight: bold; font-style: italic;">bad stuff</span>
+<span style="font-weight: bold; font-style: italic;">   if (userInput == "UFO") {     </span>
+<span style="font-weight: bold; font-style: italic;">   } else {</span>
+<span style="font-weight: bold; font-style: italic;">   } </span>
+<span style="font-weight: bold; font-style: italic;">   */</span>   
+   <span style="font-weight: bold; text-decoration: underline;">EnemyShip</span>* <span style="font-weight: bold; font-style: italic;">enemy</span> = <span style="font-weight: bold; text-decoration: underline;">shipFactory</span>::makeEnemyShip(<span style="font-style: italic;">"UFO"</span>);
 
-<span style="color: #4f97d7;">}</span>
+}
 </pre>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-orgad819c6" class="outline-4">
-<h4 id="orgad819c6"><span class="section-number-4">6.1.4</span> abstruct factory</h4>
+<div id="outline-container-org4167f45" class="outline-4">
+<h4 id="org4167f45"><span class="section-number-4">6.1.4</span> abstruct factory</h4>
 <div class="outline-text-4" id="text-6-1-4">
 <p>
 like a factory but everything is encapsulated
@@ -868,77 +855,77 @@ it makes the factory abstruct_</li>
 </ul>
 
 <div class="org-src-container">
-<pre class="src src-c++"><span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">EnemyShipBuilding</span><span style="color: #4f97d7;">{</span>  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">abstruct class/ virtual class</span>
-  <span style="color: #4f97d7; font-weight: bold;">protected</span>:
-  <span style="color: #4f97d7; font-weight: bold;">virtual</span> <span style="color: #ce537a; font-weight: bold;">EnemyShip</span>* <span style="color: #bc6ec5; font-weight: bold;">makeEnemyShip</span><span style="color: #bc6ec5;">(</span>std:string type<span style="color: #bc6ec5;">)</span> = <span style="color: #a45bad;">0</span>;
+<pre class="src src-c++"><span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">EnemyShipBuilding</span>{  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">abstruct class/ virtual class</span>
+  <span style="font-weight: bold;">protected</span>:
+  <span style="font-weight: bold;">virtual</span> <span style="font-weight: bold; text-decoration: underline;">EnemyShip</span>* <span style="font-weight: bold;">makeEnemyShip</span>(std:string type) = 0;
 
-  <span style="color: #4f97d7; font-weight: bold;">public</span>: 
-  <span style="color: #ce537a; font-weight: bold;">EnemyShip</span>* <span style="color: #bc6ec5; font-weight: bold;">orderShip</span><span style="color: #bc6ec5;">(</span><span style="color: #a45bad;">std</span>::<span style="color: #ce537a; font-weight: bold;">string</span> <span style="color: #7590db;">type</span><span style="color: #bc6ec5;">){</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> makeEnemyShip<span style="color: #2d9574;">(</span>type<span style="color: #2d9574;">)</span>;
-  <span style="color: #bc6ec5;">}</span>
+  <span style="font-weight: bold;">public</span>: 
+  <span style="font-weight: bold; text-decoration: underline;">EnemyShip</span>* <span style="font-weight: bold;">orderShip</span>(<span style="font-weight: bold; text-decoration: underline;">std</span>::<span style="font-weight: bold; text-decoration: underline;">string</span> <span style="font-weight: bold; font-style: italic;">type</span>){
+    <span style="font-weight: bold;">return</span> makeEnemyShip(type);
+  }
 
-<span style="color: #4f97d7;">}</span>;
+};
 
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">based on the type, we return different factories</span>
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">each facotry creates a product. </span>
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">EnemyShipBuilding</span> : <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">EnemyShipBuilding</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #ce537a; font-weight: bold;">EnemyShip</span>* <span style="color: #bc6ec5; font-weight: bold;">makeEnemyShip</span><span style="color: #bc6ec5;">(</span>std:string type<span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">if</span><span style="color: #2d9574;">(</span>type == <span style="color: #2d9574;">"UFO"</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">create different factory instead of object</span>
-       <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">we also can call f1, platform(factory)</span>
-       <span style="color: #ce537a; font-weight: bold;">EnemyShipFactory</span> *<span style="color: #7590db;">f1</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">UFOEnemyShipFactory</span><span style="color: #67b11d;">()</span>;  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">create factory for UFO</span>
-       <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">UFO</span><span style="color: #67b11d;">(</span>f1<span style="color: #67b11d;">)</span>;
-    <span style="color: #2d9574;">}</span>      
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>;
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">based on the type, we return different factories</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">each facotry creates a product. </span>
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">EnemyShipBuilding</span> : <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">EnemyShipBuilding</span> {
+  <span style="font-weight: bold; text-decoration: underline;">EnemyShip</span>* <span style="font-weight: bold;">makeEnemyShip</span>(std:string type) {
+    <span style="font-weight: bold;">if</span>(type == <span style="font-style: italic;">"UFO"</span>) { <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">create different factory instead of object</span>
+       <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">we also can call f1, platform(factory)</span>
+       <span style="font-weight: bold; text-decoration: underline;">EnemyShipFactory</span> *<span style="font-weight: bold; font-style: italic;">f1</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">UFOEnemyShipFactory</span>();  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">create factory for UFO</span>
+       <span style="font-weight: bold;">return</span> <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">UFO</span>(f1);
+    }      
+  }
+};
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">abstruct factory </span>
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">EnemyShipFactory</span><span style="color: #4f97d7;">{</span>
-   <span style="color: #4f97d7; font-weight: bold;">virtual</span> <span style="color: #ce537a; font-weight: bold;">Weapon</span>* <span style="color: #bc6ec5; font-weight: bold;">addGun</span><span style="color: #bc6ec5;">()</span>;
-<span style="color: #4f97d7;">}</span>;
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">abstruct factory </span>
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">EnemyShipFactory</span>{
+   <span style="font-weight: bold;">virtual</span> <span style="font-weight: bold; text-decoration: underline;">Weapon</span>* <span style="font-weight: bold;">addGun</span>();
+};
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">different factory for diffrent ship</span>
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">UFOEnemyShipFactory</span> : <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">EnemyShipFactory</span><span style="color: #4f97d7;">{</span>
-  <span style="color: #ce537a; font-weight: bold;">Weapon</span>*  <span style="color: #bc6ec5; font-weight: bold;">addGun</span><span style="color: #bc6ec5;">(){</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">SmallGun</span><span style="color: #2d9574;">()</span>;
-  <span style="color: #bc6ec5;">}</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">different factory for diffrent ship</span>
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">UFOEnemyShipFactory</span> : <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">EnemyShipFactory</span>{
+  <span style="font-weight: bold; text-decoration: underline;">Weapon</span>*  <span style="font-weight: bold;">addGun</span>(){
+    <span style="font-weight: bold;">return</span> <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">SmallGun</span>();
+  }
 
-  <span style="color: #ce537a; font-weight: bold;">Engine</span>* <span style="color: #bc6ec5; font-weight: bold;">addEngine</span><span style="color: #bc6ec5;">(){</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">smallEngine</span><span style="color: #2d9574;">()</span>;
-  <span style="color: #bc6ec5;">}</span>
+  <span style="font-weight: bold; text-decoration: underline;">Engine</span>* <span style="font-weight: bold;">addEngine</span>(){
+    <span style="font-weight: bold;">return</span> <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">smallEngine</span>();
+  }
 
-<span style="color: #4f97d7;">}</span>;
+};
 
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">BossEnemyShipFactory</span> : <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">EnemyShipFactory</span><span style="color: #4f97d7;">{</span>
-  <span style="color: #ce537a; font-weight: bold;">Weapon</span>*  <span style="color: #bc6ec5; font-weight: bold;">addGun</span><span style="color: #bc6ec5;">(){</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">BigGun</span><span style="color: #2d9574;">()</span>;
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>;
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">BossEnemyShipFactory</span> : <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">EnemyShipFactory</span>{
+  <span style="font-weight: bold; text-decoration: underline;">Weapon</span>*  <span style="font-weight: bold;">addGun</span>(){
+    <span style="font-weight: bold;">return</span> <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">BigGun</span>();
+  }
+};
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">abstruct ship</span>
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">EnemyShip</span><span style="color: #4f97d7;">{</span> 
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">same as above </span>
-  <span style="color: #4f97d7; font-weight: bold;">virtual</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">makeShip</span><span style="color: #bc6ec5;">()</span> = <span style="color: #a45bad;">0</span>;
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">abstruct ship</span>
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">EnemyShip</span>{ 
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">same as above </span>
+  <span style="font-weight: bold;">virtual</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">makeShip</span>() = 0;
+}
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">this is abstract product, it contains the a factory </span>
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">UFO</span> : <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">EnemyShip</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #bc6ec5; font-weight: bold;">UFO</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">EnemyShipFactory</span>* <span style="color: #7590db;">f</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">this is abstract product, it contains the a factory </span>
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">UFO</span> : <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">EnemyShip</span> {
+  <span style="font-weight: bold;">UFO</span>(<span style="font-weight: bold; text-decoration: underline;">EnemyShipFactory</span>* <span style="font-weight: bold; font-style: italic;">f</span>) {
     factory = f;
-  <span style="color: #bc6ec5;">}</span>
-  <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">makeShip</span><span style="color: #bc6ec5;">(){</span>
-    weapon = f.addGun<span style="color: #2d9574;">()</span>; <span style="color: #2aa1ae; background-color: #292e34;">//</span><span style="color: #2aa1ae; background-color: #292e34;">use small gun</span>
-    engine = f.addEngine<span style="color: #2d9574;">()</span>;
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>;
+  }
+  <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">makeShip</span>(){
+    weapon = f.addGun(); <span style="font-weight: bold; font-style: italic;">//</span><span style="font-weight: bold; font-style: italic;">use small gun</span>
+    engine = f.addEngine();
+  }
+};
 
-<span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #4f97d7;">(){</span>
-  <span style="color: #ce537a; font-weight: bold;">EnemyShipBuilding</span>* <span style="color: #7590db;">makeUFO</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">UFOShipBuilding</span><span style="color: #bc6ec5;">()</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">create a builder</span>
-  <span style="color: #ce537a; font-weight: bold;">EnemyShip</span>* <span style="color: #7590db;">ship1</span> = makeUFO -&gt; orderShip<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"UFO"</span><span style="color: #bc6ec5;">)</span>;
-  <span style="color: #ce537a; font-weight: bold;">EnemyShip</span>* <span style="color: #7590db;">ship2</span> = makeUFO -&gt; orderShip<span style="color: #bc6ec5;">(</span><span style="color: #2d9574;">"BOSS"</span><span style="color: #bc6ec5;">)</span>;
+<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold;">main</span>(){
+  <span style="font-weight: bold; text-decoration: underline;">EnemyShipBuilding</span>* <span style="font-weight: bold; font-style: italic;">makeUFO</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">UFOShipBuilding</span>(); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">create a builder</span>
+  <span style="font-weight: bold; text-decoration: underline;">EnemyShip</span>* <span style="font-weight: bold; font-style: italic;">ship1</span> = makeUFO -&gt; orderShip(<span style="font-style: italic;">"UFO"</span>);
+  <span style="font-weight: bold; text-decoration: underline;">EnemyShip</span>* <span style="font-weight: bold; font-style: italic;">ship2</span> = makeUFO -&gt; orderShip(<span style="font-style: italic;">"BOSS"</span>);
 
-  ship1 -&gt; makeShip<span style="color: #bc6ec5;">()</span>; 
-<span style="color: #4f97d7;">}</span>
+  ship1 -&gt; makeShip(); 
+}
 </pre>
 </div>
 </div>
@@ -948,12 +935,12 @@ it makes the factory abstruct_</li>
 
 
 
-<div id="outline-container-org228156f" class="outline-2">
-<h2 id="org228156f"><span class="section-number-2">7</span> <span class="done DONE">DONE</span> singleton</h2>
+<div id="outline-container-org4c84d89" class="outline-2">
+<h2 id="org4c84d89"><span class="section-number-2">7</span> <span class="done DONE">DONE</span> singleton</h2>
 <div class="outline-text-2" id="text-7">
 </div>
-<div id="outline-container-orgf56261e" class="outline-3">
-<h3 id="orgf56261e"><span class="section-number-3">7.1</span> when</h3>
+<div id="outline-container-orga8273eb" class="outline-3">
+<h3 id="orga8273eb"><span class="section-number-3">7.1</span> when</h3>
 <div class="outline-text-3" id="text-7-1">
 <ul class="org-ul">
 <li>it's used when you want to eliminate the option of</li>
@@ -966,71 +953,71 @@ instantiating more than one object
 </ul>
 <div class="org-src-container">
 <pre class="src src-c++">
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">Singleton</span><span style="color: #4f97d7;">{</span>
-<span style="color: #4f97d7; font-weight: bold;">private</span>:
-<span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">Singleton</span> *<span style="color: #7590db;">instance</span> = <span style="color: #a45bad;">NULL</span>;
-<span style="color: #bc6ec5; font-weight: bold;">Singleton</span><span style="color: #bc6ec5;">(){}</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">disable public constructor</span>
-<span style="color: #4f97d7; font-weight: bold;">public</span>:
-<span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">Singleton</span>* <span style="color: #bc6ec5; font-weight: bold;">getInstance</span><span style="color: #bc6ec5;">(){</span>
-  <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span>instance == <span style="color: #a45bad;">NULL</span> <span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
-    instance = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Singleton</span><span style="color: #67b11d;">()</span>;
-  <span style="color: #2d9574;">}</span>
-  <span style="color: #4f97d7; font-weight: bold;">return</span> instance;
-<span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Singleton</span>{
+<span style="font-weight: bold;">private</span>:
+<span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">Singleton</span> *<span style="font-weight: bold; font-style: italic;">instance</span> = <span style="font-weight: bold; text-decoration: underline;">NULL</span>;
+<span style="font-weight: bold;">Singleton</span>(){} <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">disable public constructor</span>
+<span style="font-weight: bold;">public</span>:
+<span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">Singleton</span>* <span style="font-weight: bold;">getInstance</span>(){
+  <span style="font-weight: bold;">if</span> (instance == <span style="font-weight: bold; text-decoration: underline;">NULL</span> ) {
+    instance = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Singleton</span>();
+  }
+  <span style="font-weight: bold;">return</span> instance;
+}
+}
 
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgb5dcb43" class="outline-3">
-<h3 id="orgb5dcb43"><span class="section-number-3">7.2</span> threaded situtation</h3>
+<div id="outline-container-org346cbb6" class="outline-3">
+<h3 id="org346cbb6"><span class="section-number-3">7.2</span> threaded situtation</h3>
 <div class="outline-text-3" id="text-7-2">
 <ul class="org-ul">
 <li>key words: synchronized</li>
 </ul>
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">main</span><span style="color: #4f97d7;">(){</span>
-  <span style="color: #ce537a; font-weight: bold;">Runnable</span> <span style="color: #7590db;">getTiles</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">GetTheTiles</span><span style="color: #bc6ec5;">()</span>;
-  <span style="color: #ce537a; font-weight: bold;">Runnable</span> <span style="color: #7590db;">getTiles1</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">GetTheTiles</span><span style="color: #bc6ec5;">()</span>;
+<pre class="src src-java"><span style="font-weight: bold;">public</span> <span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">main</span>(){
+  <span style="font-weight: bold; text-decoration: underline;">Runnable</span> <span style="font-weight: bold; font-style: italic;">getTiles</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">GetTheTiles</span>();
+  <span style="font-weight: bold; text-decoration: underline;">Runnable</span> <span style="font-weight: bold; font-style: italic;">getTiles1</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">GetTheTiles</span>();
 
-  <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Thread</span><span style="color: #bc6ec5;">(</span>getTiles<span style="color: #bc6ec5;">)</span>.start<span style="color: #bc6ec5;">()</span>;
-  <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Thread</span><span style="color: #bc6ec5;">(</span>getTiles1<span style="color: #bc6ec5;">)</span>.start<span style="color: #bc6ec5;">()</span>;
-<span style="color: #4f97d7;">}</span>
+  <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Thread</span>(getTiles).start();
+  <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Thread</span>(getTiles1).start();
+}
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">GetTheTiles</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">Runnable</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">run</span><span style="color: #bc6ec5;">(){</span>
-    <span style="color: #ce537a; font-weight: bold;">Singleton</span> <span style="color: #7590db;">newI</span> = Singleton.getInstance<span style="color: #2d9574;">()</span>;
-    System.out.printlin<span style="color: #2d9574;">(</span><span style="color: #2d9574;">"instance id:"</span> + System.identityHashCode<span style="color: #67b11d;">(</span>newI<span style="color: #67b11d;">)</span><span style="color: #2d9574;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">not consistant in threads</span>
-    newI.getTiles<span style="color: #2d9574;">(</span><span style="color: #a45bad;">7</span><span style="color: #2d9574;">)</span>;
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">GetTheTiles</span> <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">Runnable</span> {
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">run</span>(){
+    <span style="font-weight: bold; text-decoration: underline;">Singleton</span> <span style="font-weight: bold; font-style: italic;">newI</span> = Singleton.getInstance();
+    System.out.printlin(<span style="font-style: italic;">"instance id:"</span> + System.identityHashCode(newI)); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">not consistant in threads</span>
+    newI.getTiles(7);
+  }
+}
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">Singleton</span><span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #bc6ec5; font-weight: bold;">Singleton</span><span style="color: #bc6ec5;">(){}</span>
-  <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">Singleton</span> <span style="color: #7590db;">instance</span> = <span style="color: #a45bad;">null</span>;
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #4f97d7; font-weight: bold;">synchronized</span> <span style="color: #ce537a; font-weight: bold;">Singleton</span> <span style="color: #bc6ec5; font-weight: bold;">getInstance</span><span style="color: #bc6ec5;">(){</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">it checks the tread and wait, only 1 thread running, </span>
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">this is slow </span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Singleton</span>{
+  <span style="font-weight: bold;">private</span> <span style="font-weight: bold;">Singleton</span>(){}
+  <span style="font-weight: bold;">private</span> <span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">Singleton</span> <span style="font-weight: bold; font-style: italic;">instance</span> = <span style="font-weight: bold; text-decoration: underline;">null</span>;
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">static</span> <span style="font-weight: bold;">synchronized</span> <span style="font-weight: bold; text-decoration: underline;">Singleton</span> <span style="font-weight: bold;">getInstance</span>(){ <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">it checks the tread and wait, only 1 thread running, </span>
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">this is slow </span>
     ...... 
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+  }
+}
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">Singleton</span><span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">Singleton</span> <span style="color: #bc6ec5; font-weight: bold;">getInstance</span><span style="color: #bc6ec5;">(){</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">not make the whole function syncronized</span>
-    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">don't need to consider multi thread if the first instance is already created.</span>
-    <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span>instance == <span style="color: #a45bad;">null</span><span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
-      <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">only sync when the object is created</span>
-      <span style="color: #4f97d7; font-weight: bold;">synchronized</span><span style="color: #67b11d;">(</span>Singleton.<span style="color: #4f97d7; font-weight: bold;">class</span><span style="color: #67b11d;">)</span> <span style="color: #67b11d;">{</span>  
-        <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #b1951d;">(</span> instance == <span style="color: #a45bad;">null</span> <span style="color: #b1951d;">)</span> <span style="color: #b1951d;">{</span>
-          instance = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Singleton</span><span style="color: #4f97d7;">()</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">this should be atomic: no access at the same time </span>
-        <span style="color: #b1951d;">}</span>
-      <span style="color: #67b11d;">}</span>
-    <span style="color: #2d9574;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Singleton</span>{
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">Singleton</span> <span style="font-weight: bold;">getInstance</span>(){ <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">not make the whole function syncronized</span>
+    <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">don't need to consider multi thread if the first instance is already created.</span>
+    <span style="font-weight: bold;">if</span> (instance == <span style="font-weight: bold; text-decoration: underline;">null</span>) {
+      <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">only sync when the object is created</span>
+      <span style="font-weight: bold;">synchronized</span>(Singleton.<span style="font-weight: bold;">class</span>) {  
+        <span style="font-weight: bold;">if</span> ( instance == <span style="font-weight: bold; text-decoration: underline;">null</span> ) {
+          instance = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Singleton</span>(); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">this should be atomic: no access at the same time </span>
+        }
+      }
+    }
 
-    <span style="color: #4f97d7; font-weight: bold;">return</span> instance;
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+    <span style="font-weight: bold;">return</span> instance;
+  }
+}
 
 </pre>
 </div>
@@ -1040,13 +1027,13 @@ instantiating more than one object
 
 
 
-<div id="outline-container-orgf6bd7f4" class="outline-2">
-<h2 id="orgf6bd7f4"><span class="section-number-2">8</span> <span class="done DONE">DONE</span> builder</h2>
+<div id="outline-container-orgd18859b" class="outline-2">
+<h2 id="orgd18859b"><span class="section-number-2">8</span> <span class="done DONE">DONE</span> builder</h2>
 <div class="outline-text-2" id="text-8">
 </div>
 
-<div id="outline-container-orgc107c18" class="outline-3">
-<h3 id="orgc107c18"><span class="section-number-3">8.1</span> what &amp; when</h3>
+<div id="outline-container-org3ce75c3" class="outline-3">
+<h3 id="org3ce75c3"><span class="section-number-3">8.1</span> what &amp; when</h3>
 <div class="outline-text-3" id="text-8-1">
 <ul class="org-ul">
 <li>create objects made from bunch of other objects</li>
@@ -1056,61 +1043,61 @@ instantiating more than one object
 </ul>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">this is a pure interface</span>
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">interface</span> <span style="color: #ce537a; font-weight: bold;">RobotPlan</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">setRobotHead</span><span style="color: #bc6ec5;">()</span>;
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">setRobotTorso</span><span style="color: #bc6ec5;">()</span>;
+<pre class="src src-java"><span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">this is a pure interface</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">interface</span> <span style="font-weight: bold; text-decoration: underline;">RobotPlan</span> {
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">setRobotHead</span>();
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">setRobotTorso</span>();
 
-<span style="color: #4f97d7;">}</span>
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">Robot</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">RobotPlan</span><span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #7590db;">robotHead</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">member</span>
-  <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #7590db;">robotTorso</span>;
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">setRobotHead</span><span style="color: #bc6ec5;">(){</span> ... <span style="color: #bc6ec5;">}</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">setRobotTorso</span><span style="color: #bc6ec5;">(){</span> ... <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+}
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Robot</span> <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">RobotPlan</span>{
+  <span style="font-weight: bold;">private</span> <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold; font-style: italic;">robotHead</span>; <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">member</span>
+  <span style="font-weight: bold;">private</span> <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold; font-style: italic;">robotTorso</span>;
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">setRobotHead</span>(){ ... }
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">setRobotTorso</span>(){ ... }
+}
 
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">build the robot</span>
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">you need to create diff concrete builder for each type of pruduct</span>
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">interface</span> <span style="color: #ce537a; font-weight: bold;">RobotBuilder</span><span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #bc6ec5; font-weight: bold;">buildRobotHead</span><span style="color: #bc6ec5;">()</span>;
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">build the robot</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">you need to create diff concrete builder for each type of pruduct</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">interface</span> <span style="font-weight: bold; text-decoration: underline;">RobotBuilder</span>{
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">buildRobotHead</span>();
   ...
-  <span style="color: #4f97d7; font-weight: bold;">public</span> getRobot<span style="color: #bc6ec5;">()</span>;
-<span style="color: #4f97d7;">}</span>
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">OldRobotBuilder</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">RobotBuilder</span><span style="color: #4f97d7;">{</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">concrete builder</span>
-  <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #ce537a; font-weight: bold;">Robot</span> <span style="color: #7590db;">robot</span>;
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">OldRobotBuilder</span><span style="color: #bc6ec5;">{</span>
-    robot = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Robot</span><span style="color: #2d9574;">()</span>;
-  <span style="color: #bc6ec5;">}</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #bc6ec5; font-weight: bold;">buildRobotHead</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span>
-    robot.setRobotHead<span style="color: #2d9574;">()</span>;
-  <span style="color: #bc6ec5;">}</span>
+  <span style="font-weight: bold;">public</span> getRobot();
+}
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">OldRobotBuilder</span> <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">RobotBuilder</span>{ <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">concrete builder</span>
+  <span style="font-weight: bold;">private</span> <span style="font-weight: bold; text-decoration: underline;">Robot</span> <span style="font-weight: bold; font-style: italic;">robot</span>;
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">OldRobotBuilder</span>{
+    robot = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Robot</span>();
+  }
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">buildRobotHead</span>() {
+    robot.setRobotHead();
+  }
 
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #bc6ec5; font-weight: bold;">getRobot</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span> <span style="color: #4f97d7; font-weight: bold;">return</span> robot; <span style="color: #bc6ec5;">}</span> <span style="color: #2aa1ae; background-color: #292e34;">//</span><span style="color: #2aa1ae; background-color: #292e34;">create the products. </span>
-<span style="color: #4f97d7;">}</span>
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">getRobot</span>() { <span style="font-weight: bold;">return</span> robot; } <span style="font-weight: bold; font-style: italic;">//</span><span style="font-weight: bold; font-style: italic;">create the products. </span>
+}
 
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">RobotEngineer</span><span style="color: #4f97d7;">{</span> <span style="color: #2aa1ae; background-color: #292e34;">//</span><span style="color: #2aa1ae; background-color: #292e34;">director. </span>
-  <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #ce537a; font-weight: bold;">RobotBuilder</span> <span style="color: #7590db;">robotbuilder</span>;
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">RobotEngineer</span>{ <span style="font-weight: bold; font-style: italic;">//</span><span style="font-weight: bold; font-style: italic;">director. </span>
+  <span style="font-weight: bold;">private</span> <span style="font-weight: bold; text-decoration: underline;">RobotBuilder</span> <span style="font-weight: bold; font-style: italic;">robotbuilder</span>;
 
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #bc6ec5; font-weight: bold;">RobotEngineer</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">RobotBuilder</span> <span style="color: #7590db;">rb</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>  robotbuilder = rb; <span style="color: #bc6ec5;">}</span>
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">RobotEngineer</span>(<span style="font-weight: bold; text-decoration: underline;">RobotBuilder</span> <span style="font-weight: bold; font-style: italic;">rb</span>) {  robotbuilder = rb; }
 
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">makeRobot</span><span style="color: #bc6ec5;">(){</span> <span style="color: #2aa1ae; background-color: #292e34;">//</span><span style="color: #2aa1ae; background-color: #292e34;">encapsulate all creation functions</span>
-    <span style="color: #4f97d7; font-weight: bold;">this</span>.robotbuilder.buildRobotHead<span style="color: #2d9574;">()</span>;
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">makeRobot</span>(){ <span style="font-weight: bold; font-style: italic;">//</span><span style="font-weight: bold; font-style: italic;">encapsulate all creation functions</span>
+    <span style="font-weight: bold;">this</span>.robotbuilder.buildRobotHead();
     ....
-  <span style="color: #bc6ec5;">}</span>
+  }
 
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">Robot</span> <span style="color: #bc6ec5; font-weight: bold;">getRobot</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span> <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #4f97d7; font-weight: bold;">this</span>.robotbuilder.getRobot<span style="color: #2d9574;">()</span>; <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">Robot</span> <span style="font-weight: bold;">getRobot</span>() { <span style="font-weight: bold;">return</span> <span style="font-weight: bold;">this</span>.robotbuilder.getRobot(); }
+}
 
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">main </span>
-<span style="color: #ce537a; font-weight: bold;">RobotBuilder</span> <span style="color: #7590db;">orb</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">OldRobotBuilder</span><span style="color: #4f97d7;">()</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">pass to interface.</span>
-<span style="color: #ce537a; font-weight: bold;">RobotBuilder</span> <span style="color: #7590db;">nrb</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">NewRobotBuilder</span><span style="color: #4f97d7;">()</span>;
-<span style="color: #ce537a; font-weight: bold;">RobotEngineer</span> <span style="color: #7590db;">re</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">RobotEngineer</span><span style="color: #4f97d7;">(</span>orb<span style="color: #4f97d7;">)</span>;
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">main </span>
+<span style="font-weight: bold; text-decoration: underline;">RobotBuilder</span> <span style="font-weight: bold; font-style: italic;">orb</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">OldRobotBuilder</span>(); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">pass to interface.</span>
+<span style="font-weight: bold; text-decoration: underline;">RobotBuilder</span> <span style="font-weight: bold; font-style: italic;">nrb</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">NewRobotBuilder</span>();
+<span style="font-weight: bold; text-decoration: underline;">RobotEngineer</span> <span style="font-weight: bold; font-style: italic;">re</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">RobotEngineer</span>(orb);
 
-re.makeRobot<span style="color: #4f97d7;">()</span>; 
-<span style="color: #ce537a; font-weight: bold;">Robot</span> <span style="color: #7590db;">r</span> = re.getRobot<span style="color: #4f97d7;">()</span>;  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">creation of robot is invisible</span>
+re.makeRobot(); 
+<span style="font-weight: bold; text-decoration: underline;">Robot</span> <span style="font-weight: bold; font-style: italic;">r</span> = re.getRobot();  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">creation of robot is invisible</span>
 
 </pre>
 </div>
@@ -1119,8 +1106,8 @@ re.makeRobot<span style="color: #4f97d7;">()</span>;
 </div>
 
 
-<div id="outline-container-orgd948dfc" class="outline-2">
-<h2 id="orgd948dfc"><span class="section-number-2">9</span> <span class="done DONE">DONE</span> prototype</h2>
+<div id="outline-container-org79c0dfb" class="outline-2">
+<h2 id="org79c0dfb"><span class="section-number-2">9</span> <span class="done DONE">DONE</span> prototype</h2>
 <div class="outline-text-2" id="text-9">
 <ul class="org-ul">
 <li>Note taken on <span class="timestamp-wrapper"><span class="timestamp">[2016-07-28 Thu 18:35] </span></span> <br />
@@ -1134,54 +1121,54 @@ clone method</li>
 </ul>
 <div class="org-src-container">
 <pre class="src src-java">
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">interface</span> <span style="color: #ce537a; font-weight: bold;">Animal</span> <span style="color: #4f97d7; font-weight: bold;">extends</span> <span style="color: #ce537a; font-weight: bold;">Cloneable</span> <span style="color: #4f97d7;">{</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">not implement, it brings down all methods</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">Animal</span> <span style="color: #bc6ec5; font-weight: bold;">makeCopy</span><span style="color: #bc6ec5;">()</span>;
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">interface</span> <span style="font-weight: bold; text-decoration: underline;">Animal</span> <span style="font-weight: bold;">extends</span> <span style="font-weight: bold; text-decoration: underline;">Cloneable</span> { <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">not implement, it brings down all methods</span>
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">Animal</span> <span style="font-weight: bold;">makeCopy</span>();
+}
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">Sheep</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">Animal</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #bc6ec5; font-weight: bold;">Sheep</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{}</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">Animal</span> <span style="color: #bc6ec5; font-weight: bold;">makeCopy</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span>
-     <span style="color: #ce537a; font-weight: bold;">Sheep</span> <span style="color: #7590db;">sheepObj</span> = <span style="color: #a45bad;">null</span>;
-     <span style="color: #4f97d7; font-weight: bold;">try</span><span style="color: #2d9574;">{</span>
-     sheepObj = <span style="color: #67b11d;">(</span>Sheep<span style="color: #67b11d;">)</span><span style="color: #4f97d7; font-weight: bold;">super</span>.clone<span style="color: #67b11d;">()</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">only calls the parent </span>
-     <span style="color: #2d9574;">}</span>
-     <span style="color: #4f97d7; font-weight: bold;">return</span> sheepObj;
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
-
-
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">CloneFactory</span> <span style="color: #4f97d7;">{</span>
-
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">Animal</span> <span style="color: #bc6ec5; font-weight: bold;">getClone</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Animal</span> <span style="color: #7590db;">a</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> a.makeCopy<span style="color: #2d9574;">()</span>;
-  <span style="color: #bc6ec5;">}</span>
-
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Sheep</span> <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">Animal</span> {
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">Sheep</span>() {}
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">Animal</span> <span style="font-weight: bold;">makeCopy</span>() {
+     <span style="font-weight: bold; text-decoration: underline;">Sheep</span> <span style="font-weight: bold; font-style: italic;">sheepObj</span> = <span style="font-weight: bold; text-decoration: underline;">null</span>;
+     <span style="font-weight: bold;">try</span>{
+     sheepObj = (Sheep)<span style="font-weight: bold;">super</span>.clone(); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">only calls the parent </span>
+     }
+     <span style="font-weight: bold;">return</span> sheepObj;
+  }
+}
 
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">main </span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">CloneFactory</span> {
 
-<span style="color: #ce537a; font-weight: bold;">CloneFactory</span> <span style="color: #7590db;">animalMaker</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">CloneFactory</span><span style="color: #4f97d7;">()</span>;
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">Animal</span> <span style="font-weight: bold;">getClone</span>(<span style="font-weight: bold; text-decoration: underline;">Animal</span> <span style="font-weight: bold; font-style: italic;">a</span>) {
+    <span style="font-weight: bold;">return</span> a.makeCopy();
+  }
 
-<span style="color: #ce537a; font-weight: bold;">Sheep</span> <span style="color: #7590db;">s</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Sheep</span><span style="color: #4f97d7;">()</span>;
-<span style="color: #ce537a; font-weight: bold;">Sheep</span> <span style="color: #7590db;">cloneS</span> = <span style="color: #4f97d7;">(</span><span style="color: #ce537a; font-weight: bold;">Sheep</span><span style="color: #4f97d7;">)</span>animalMaker.getClone<span style="color: #4f97d7;">(</span>s<span style="color: #4f97d7;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">call sheep makeClone</span>
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">convert interface back to class, need convertion !</span>
+}
+
+
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">main </span>
+
+<span style="font-weight: bold; text-decoration: underline;">CloneFactory</span> <span style="font-weight: bold; font-style: italic;">animalMaker</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">CloneFactory</span>();
+
+<span style="font-weight: bold; text-decoration: underline;">Sheep</span> <span style="font-weight: bold; font-style: italic;">s</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Sheep</span>();
+<span style="font-weight: bold; text-decoration: underline;">Sheep</span> <span style="font-weight: bold; font-style: italic;">cloneS</span> = (<span style="font-weight: bold; text-decoration: underline;">Sheep</span>)animalMaker.getClone(s); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">call sheep makeClone</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">convert interface back to class, need convertion !</span>
 </pre>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-org05e628e" class="outline-2">
-<h2 id="org05e628e"><span class="section-number-2">10</span> <span class="done DONE">DONE</span> decorator</h2>
+<div id="outline-container-org940aff7" class="outline-2">
+<h2 id="org940aff7"><span class="section-number-2">10</span> <span class="done DONE">DONE</span> decorator</h2>
 <div class="outline-text-2" id="text-10">
 <ul class="org-ul">
 <li>Note taken on <span class="timestamp-wrapper"><span class="timestamp">[2016-07-28 Thu 18:35] </span></span> <br />
 pizza example, like pizza = new D1(new Original());</li>
 </ul>
 </div>
-<div id="outline-container-org5285338" class="outline-3">
-<h3 id="org5285338"><span class="section-number-3">10.1</span> what is decorator</h3>
+<div id="outline-container-org3dd5ddc" class="outline-3">
+<h3 id="org3dd5ddc"><span class="section-number-3">10.1</span> what is decorator</h3>
 <div class="outline-text-3" id="text-10-1">
 <ul class="org-ul">
 <li>modify the obj dynamically</li>
@@ -1193,54 +1180,54 @@ pizza example, like pizza = new D1(new Original());</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org7c222e6" class="outline-3">
-<h3 id="org7c222e6"><span class="section-number-3">10.2</span> example</h3>
+<div id="outline-container-org8264102" class="outline-3">
+<h3 id="org8264102"><span class="section-number-3">10.2</span> example</h3>
 <div class="outline-text-3" id="text-10-2">
 <div class="org-src-container">
 <pre class="src src-java">
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">interface</span> <span style="color: #ce537a; font-weight: bold;">Pizza</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #bc6ec5; font-weight: bold;">getDes</span><span style="color: #bc6ec5;">()</span>;
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">double</span> <span style="color: #bc6ec5; font-weight: bold;">getCost</span><span style="color: #bc6ec5;">()</span>;
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">interface</span> <span style="font-weight: bold; text-decoration: underline;">Pizza</span> {
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold;">getDes</span>();
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">double</span> <span style="font-weight: bold;">getCost</span>();
+}
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">PlainPizza</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">Pizza</span> <span style="color: #4f97d7;">{</span>  
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">concrete class of the pizza </span>
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">PlainPizza</span> <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">Pizza</span> {  
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">concrete class of the pizza </span>
+}
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">can't instantiate ToppingDecorator</span>
-<span style="color: #ce537a; font-weight: bold;">abstruct</span> <span style="color: #4f97d7; font-weight: bold;">class</span> ToppingDecorator <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">Pizza</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">protected</span> <span style="color: #ce537a; font-weight: bold;">Pizza</span> <span style="color: #7590db;">tempPizza</span>;
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #bc6ec5; font-weight: bold;">ToppingDecorator</span> <span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Pizza</span> <span style="color: #7590db;">pizza</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">can't instantiate ToppingDecorator</span>
+<span style="font-weight: bold; text-decoration: underline;">abstruct</span> <span style="font-weight: bold;">class</span> ToppingDecorator <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">Pizza</span> {
+  <span style="font-weight: bold;">protected</span> <span style="font-weight: bold; text-decoration: underline;">Pizza</span> <span style="font-weight: bold; font-style: italic;">tempPizza</span>;
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">ToppingDecorator</span> (<span style="font-weight: bold; text-decoration: underline;">Pizza</span> <span style="font-weight: bold; font-style: italic;">pizza</span>) {
     tempPizza = pizza;
-  <span style="color: #bc6ec5;">}</span>
+  }
 
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #bc6ec5; font-weight: bold;">getDes</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> tempPizza.getDes<span style="color: #2d9574;">()</span>;
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold;">getDes</span>() {
+    <span style="font-weight: bold;">return</span> tempPizza.getDes();
+  }
+}
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">Mozzarella</span> <span style="color: #4f97d7; font-weight: bold;">extends</span> <span style="color: #ce537a; font-weight: bold;">ToppingDecorator</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #bc6ec5; font-weight: bold;">Mozzarella</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Pizza</span> <span style="color: #7590db;">newPizza</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">super</span><span style="color: #2d9574;">(</span>newPizza<span style="color: #2d9574;">)</span>;
-    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">....</span>
-  <span style="color: #bc6ec5;">}</span>
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">getDes, getCost</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #bc6ec5; font-weight: bold;">getDes</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> tempPizza.getDes<span style="color: #2d9574;">()</span> + <span style="color: #2d9574;">"mozzarella"</span>;
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Mozzarella</span> <span style="font-weight: bold;">extends</span> <span style="font-weight: bold; text-decoration: underline;">ToppingDecorator</span> {
+  <span style="font-weight: bold;">Mozzarella</span>(<span style="font-weight: bold; text-decoration: underline;">Pizza</span> <span style="font-weight: bold; font-style: italic;">newPizza</span>) {
+    <span style="font-weight: bold;">super</span>(newPizza);
+    <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">....</span>
+  }
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">getDes, getCost</span>
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold;">getDes</span>() {
+    <span style="font-weight: bold;">return</span> tempPizza.getDes() + <span style="font-style: italic;">"mozzarella"</span>;
+  }
+}
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">Tomato</span> <span style="color: #4f97d7; font-weight: bold;">extends</span> <span style="color: #ce537a; font-weight: bold;">ToppingDecorator</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #bc6ec5; font-weight: bold;">Mozzarella</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Pizza</span> <span style="color: #7590db;">newPizza</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">super</span><span style="color: #2d9574;">(</span>newPizza<span style="color: #2d9574;">)</span>;
-    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">....</span>
-  <span style="color: #bc6ec5;">}</span>
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">getDes, getCost</span>
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Tomato</span> <span style="font-weight: bold;">extends</span> <span style="font-weight: bold; text-decoration: underline;">ToppingDecorator</span> {
+  <span style="font-weight: bold;">Mozzarella</span>(<span style="font-weight: bold; text-decoration: underline;">Pizza</span> <span style="font-weight: bold; font-style: italic;">newPizza</span>) {
+    <span style="font-weight: bold;">super</span>(newPizza);
+    <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">....</span>
+  }
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">getDes, getCost</span>
+}
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">main </span>
-<span style="color: #ce537a; font-weight: bold;">Pizza</span> <span style="color: #7590db;">myPizza</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Mozzarella</span><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">PlainPizza</span><span style="color: #bc6ec5;">()</span> <span style="color: #4f97d7;">)</span>;
-<span style="color: #ce537a; font-weight: bold;">Pizza</span> <span style="color: #7590db;">advPizza</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Tomato</span><span style="color: #4f97d7;">(</span>myPizza<span style="color: #4f97d7;">)</span>;
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">main </span>
+<span style="font-weight: bold; text-decoration: underline;">Pizza</span> <span style="font-weight: bold; font-style: italic;">myPizza</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Mozzarella</span>(<span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">PlainPizza</span>() );
+<span style="font-weight: bold; text-decoration: underline;">Pizza</span> <span style="font-weight: bold; font-style: italic;">advPizza</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Tomato</span>(myPizza);
 </pre>
 </div>
 </div>
@@ -1250,38 +1237,38 @@ pizza example, like pizza = new D1(new Original());</li>
 
 
 
-<div id="outline-container-org17be798" class="outline-2">
-<h2 id="org17be798"><span class="section-number-2">11</span> <span class="done DONE">DONE</span> adapter</h2>
+<div id="outline-container-org59f5a65" class="outline-2">
+<h2 id="org59f5a65"><span class="section-number-2">11</span> <span class="done DONE">DONE</span> adapter</h2>
 <div class="outline-text-2" id="text-11">
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">EnemyRobotAdapter</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">EnemyAttacker</span><span style="color: #4f97d7;">{</span>
-  <span style="color: #ce537a; font-weight: bold;">EnemyRobot</span> <span style="color: #7590db;">theRobot</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">an adaptee</span>
+<pre class="src src-java"><span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">EnemyRobotAdapter</span> <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">EnemyAttacker</span>{
+        <span style="font-weight: bold; text-decoration: underline;">EnemyRobot</span> <span style="font-weight: bold; font-style: italic;">theRobot</span>; <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">an adaptee</span>
 
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #bc6ec5; font-weight: bold;">EnemyRobotAdapter</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">EnemyRobot</span> <span style="color: #7590db;">newRobot</span><span style="color: #bc6ec5;">){</span>    
-    theRobot = newRobot;    
-  <span style="color: #bc6ec5;">}</span>
+        <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">EnemyRobotAdapter</span>(<span style="font-weight: bold; text-decoration: underline;">EnemyRobot</span> <span style="font-weight: bold; font-style: italic;">newRobot</span>){          
+                theRobot = newRobot;            
+        }
 
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">fireWeapon</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span>    
-    theRobot.smashWithHands<span style="color: #2d9574;">()</span>;    
-  <span style="color: #bc6ec5;">}</span>
+        <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">fireWeapon</span>() {              
+                theRobot.smashWithHands();              
+        }
 
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">driveForward</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span>    
-    theRobot.walkForward<span style="color: #2d9574;">()</span>;   
-  <span style="color: #bc6ec5;">}</span>
+        <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">driveForward</span>() {            
+                theRobot.walkForward();         
+        }
 
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">assignDriver</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #7590db;">driverName</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>   
-    theRobot.reactToHuman<span style="color: #2d9574;">(</span>driverName<span style="color: #2d9574;">)</span>;    
-  <span style="color: #bc6ec5;">}</span>
+        <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">assignDriver</span>(<span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold; font-style: italic;">driverName</span>) {           
+                theRobot.reactToHuman(driverName);              
+        }
 
-<span style="color: #4f97d7;">}</span>
+}
 </pre>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-orgde85714" class="outline-2">
-<h2 id="orgde85714"><span class="section-number-2">12</span> <span class="done DONE">DONE</span> bridge</h2>
+<div id="outline-container-org7f3e7b8" class="outline-2">
+<h2 id="org7f3e7b8"><span class="section-number-2">12</span> <span class="done DONE">DONE</span> bridge</h2>
 <div class="outline-text-2" id="text-12">
 <ul class="org-ul">
 <li>adding functionality aggregately</li>
@@ -1294,37 +1281,37 @@ pizza example, like pizza = new D1(new Original());</li>
 </ul>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">abstract</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">EntertainmentDevice</span> <span style="color: #4f97d7;">{</span>
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">original class </span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">deviceState</span>;
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">button1</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{}</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">button2</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{}</span>
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">....</span>
+<pre class="src src-java"><span style="font-weight: bold;">public</span> <span style="font-weight: bold;">abstract</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">EntertainmentDevice</span> {
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">original class </span>
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">deviceState</span>;
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">button1</span>() {}
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">button2</span>() {}
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">....</span>
 
-<span style="color: #4f97d7;">}</span>
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">concrete class TVDevice implement EntertainmentDevice</span>
+}
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">concrete class TVDevice implement EntertainmentDevice</span>
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">abstract</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">RemoteButton</span> <span style="color: #4f97d7;">{</span>
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">bridge </span>
-  <span style="color: #4f97d7; font-weight: bold;">private</span> <span style="color: #ce537a; font-weight: bold;">EntertainmentDevice</span> <span style="color: #7590db;">theDevice</span>;
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">methods</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">button1</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span> theDevice.button1<span style="color: #2d9574;">()</span>; <span style="color: #bc6ec5;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">abstract</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">RemoteButton</span> {
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">bridge </span>
+  <span style="font-weight: bold;">private</span> <span style="font-weight: bold; text-decoration: underline;">EntertainmentDevice</span> <span style="font-weight: bold; font-style: italic;">theDevice</span>;
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">methods</span>
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">button1</span>() { theDevice.button1(); }
 
-<span style="color: #4f97d7;">}</span>
+}
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">refined abstraction, abstract layer</span>
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">TVRemote</span> <span style="color: #4f97d7; font-weight: bold;">extends</span> <span style="color: #ce537a; font-weight: bold;">RemoteButton</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #bc6ec5; font-weight: bold;">TVRemote</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">EntertainmentDevice</span> <span style="color: #7590db;">newDevice</span><span style="color: #bc6ec5;">){</span>
-    <span style="color: #4f97d7; font-weight: bold;">super</span><span style="color: #2d9574;">(</span>newDevice<span style="color: #2d9574;">)</span>;
-  <span style="color: #bc6ec5;">}</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">button1</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">bridge the butoon1</span>
-     <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">something else .....</span>
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">refined abstraction, abstract layer</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">TVRemote</span> <span style="font-weight: bold;">extends</span> <span style="font-weight: bold; text-decoration: underline;">RemoteButton</span> {
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">TVRemote</span>(<span style="font-weight: bold; text-decoration: underline;">EntertainmentDevice</span> <span style="font-weight: bold; font-style: italic;">newDevice</span>){
+    <span style="font-weight: bold;">super</span>(newDevice);
+  }
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">button1</span>() { <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">bridge the butoon1</span>
+     <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">something else .....</span>
+  }
+}
 
-<span style="color: #2aa1ae; background-color: #292e34;">//</span><span style="color: #2aa1ae; background-color: #292e34;">main</span>
-<span style="color: #ce537a; font-weight: bold;">RemoteButton</span> <span style="color: #7590db;">tv1</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">TVRemote</span><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">TVDevice</span><span style="color: #bc6ec5;">()</span><span style="color: #4f97d7;">)</span>;
-tv1.button1<span style="color: #4f97d7;">()</span>;
+<span style="font-weight: bold; font-style: italic;">//</span><span style="font-weight: bold; font-style: italic;">main</span>
+<span style="font-weight: bold; text-decoration: underline;">RemoteButton</span> <span style="font-weight: bold; font-style: italic;">tv1</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">TVRemote</span>(<span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">TVDevice</span>());
+tv1.button1();
 
 
 </pre>
@@ -1334,8 +1321,8 @@ tv1.button1<span style="color: #4f97d7;">()</span>;
 
 
 
-<div id="outline-container-orgb7c5884" class="outline-2">
-<h2 id="orgb7c5884"><span class="section-number-2">13</span> <span class="done DONE">DONE</span> template</h2>
+<div id="outline-container-orgdd8f5d7" class="outline-2">
+<h2 id="orgdd8f5d7"><span class="section-number-2">13</span> <span class="done DONE">DONE</span> template</h2>
 <div class="outline-text-2" id="text-13">
 <ul class="org-ul">
 <li>tempalte method pattern contains a method 
@@ -1345,49 +1332,49 @@ subclass can override some of the steps</li>
 
 <div class="org-src-container">
 <pre class="src src-java">
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">abstruct</span> <span style="color: #4f97d7; font-weight: bold;">class</span> Hoagie
-<span style="color: #4f97d7;">{</span>
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">this a template method.</span>
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">which is a standard process. </span>
-  <span style="color: #4f97d7; font-weight: bold;">final</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">makeSandwich</span><span style="color: #bc6ec5;">(){</span>
-    cutBun<span style="color: #2d9574;">()</span>;
-    <span style="color: #4f97d7; font-weight: bold;">if</span><span style="color: #2d9574;">(</span>customerWantsMeat<span style="color: #67b11d;">()</span> <span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
-      addMeat<span style="color: #67b11d;">()</span>;
-    <span style="color: #2d9574;">}</span><span style="color: #4f97d7; font-weight: bold;">else</span> <span style="color: #2d9574;">{</span>
-      addVegetable<span style="color: #67b11d;">()</span>;
-    <span style="color: #2d9574;">}</span>
-    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">...</span>
-    wrap<span style="color: #2d9574;">()</span>;
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">abstruct</span> <span style="font-weight: bold;">class</span> Hoagie
+{
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">this a template method.</span>
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">which is a standard process. </span>
+  <span style="font-weight: bold;">final</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">makeSandwich</span>(){
+    cutBun();
+    <span style="font-weight: bold;">if</span>(customerWantsMeat() ) {
+      addMeat();
+    }<span style="font-weight: bold;">else</span> {
+      addVegetable();
+    }
+    <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">...</span>
+    wrap();
 
-  <span style="color: #bc6ec5;">}</span>  
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">cutBun</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span>
-     <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">.... do cut and bun</span>
-  <span style="color: #bc6ec5;">}</span>
+  }  
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">cutBun</span>() {
+     <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">.... do cut and bun</span>
+  }
 
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">hooks. can be overriden</span>
-  <span style="color: #ce537a; font-weight: bold;">abstruct</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">addMeat</span><span style="color: #bc6ec5;">()</span>;
-  <span style="color: #ce537a; font-weight: bold;">abstruct</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">addVegetable</span><span style="color: #bc6ec5;">()</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">force users to override</span>
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">hooks. can be overriden</span>
+  <span style="font-weight: bold; text-decoration: underline;">abstruct</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">addMeat</span>();
+  <span style="font-weight: bold; text-decoration: underline;">abstruct</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">addVegetable</span>(); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">force users to override</span>
 
-  <span style="color: #ce537a; font-weight: bold;">boolean</span> <span style="color: #bc6ec5; font-weight: bold;">customerWantsMeat</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span><span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #a45bad;">true</span>; <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+  <span style="font-weight: bold; text-decoration: underline;">boolean</span> <span style="font-weight: bold;">customerWantsMeat</span>() {<span style="font-weight: bold;">return</span> <span style="font-weight: bold; text-decoration: underline;">true</span>; }
+}
 
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">VeggieHogie</span> <span style="color: #4f97d7; font-weight: bold;">extends</span> <span style="color: #ce537a; font-weight: bold;">Hoagie</span> <span style="color: #4f97d7;">{</span>  
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">addVegetable</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span> 
-    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">....</span>
-  <span style="color: #bc6ec5;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">VeggieHogie</span> <span style="font-weight: bold;">extends</span> <span style="font-weight: bold; text-decoration: underline;">Hoagie</span> {  
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">addVegetable</span>() { 
+    <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">....</span>
+  }
 
-  <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">addMeat</span><span style="color: #bc6ec5;">(){</span>
-     <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">do nothing, don't add meat </span>
-  <span style="color: #bc6ec5;">}</span>
+  <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">addMeat</span>(){
+     <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">do nothing, don't add meat </span>
+  }
 
-  <span style="color: #ce537a; font-weight: bold;">boolean</span> <span style="color: #bc6ec5; font-weight: bold;">customerWantsMeat</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span><span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #a45bad;">false</span>; <span style="color: #bc6ec5;">}</span>
+  <span style="font-weight: bold; text-decoration: underline;">boolean</span> <span style="font-weight: bold;">customerWantsMeat</span>() {<span style="font-weight: bold;">return</span> <span style="font-weight: bold; text-decoration: underline;">false</span>; }
 
-<span style="color: #4f97d7;">}</span>
+}
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">main</span>
-<span style="color: #ce537a; font-weight: bold;">VeggieHoagie</span> <span style="color: #7590db;">h</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">VeggieHoggie</span><span style="color: #4f97d7;">()</span>;
-h.makeSandwich<span style="color: #4f97d7;">()</span>;
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">main</span>
+<span style="font-weight: bold; text-decoration: underline;">VeggieHoagie</span> <span style="font-weight: bold; font-style: italic;">h</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">VeggieHoggie</span>();
+h.makeSandwich();
 
 </pre>
 </div>
@@ -1399,103 +1386,103 @@ h.makeSandwich<span style="color: #4f97d7;">()</span>;
 
 
 
-<div id="outline-container-orgc98c3d9" class="outline-2">
-<h2 id="orgc98c3d9"><span class="section-number-2">14</span> <span class="done DONE">DONE</span> iterator</h2>
+<div id="outline-container-orgea00663" class="outline-2">
+<h2 id="orgea00663"><span class="section-number-2">14</span> <span class="done DONE">DONE</span> iterator</h2>
 <div class="outline-text-2" id="text-14">
 <ul class="org-ul">
 <li>uniform way to access diffrent type of objects</li>
 </ul>
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">SongsOfThe80s</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">SongIterator</span><span style="color: #4f97d7;">{</span>  
-  <span style="color: #ce537a; font-weight: bold;">SongInfo</span><span style="color: #bc6ec5;">[]</span> <span style="color: #7590db;">bestSongs</span>;  
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">void</span> <span style="color: #bc6ec5; font-weight: bold;">addSong</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">String</span> <span style="color: #7590db;">songname</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">... add songs </span>
-  <span style="color: #bc6ec5;">}</span> 
-  <span style="color: #a45bad;">@Override</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">Iterator</span> <span style="color: #bc6ec5; font-weight: bold;">createIterator</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> Arrays.asList<span style="color: #2d9574;">(</span>bestSongs<span style="color: #2d9574;">)</span>.iterator<span style="color: #2d9574;">()</span>;
-  <span style="color: #bc6ec5;">}</span>
+<pre class="src src-java"><span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">SongsOfThe80s</span> <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">SongIterator</span>{  
+  <span style="font-weight: bold; text-decoration: underline;">SongInfo</span>[] <span style="font-weight: bold; font-style: italic;">bestSongs</span>;  
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">addSong</span>(<span style="font-weight: bold; text-decoration: underline;">String</span> <span style="font-weight: bold; font-style: italic;">songname</span>) {
+    <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">... add songs </span>
+  } 
+  <span style="font-weight: bold; text-decoration: underline;">@Override</span>
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">Iterator</span> <span style="font-weight: bold;">createIterator</span>() {
+    <span style="font-weight: bold;">return</span> Arrays.asList(bestSongs).iterator();
+  }
 
-<span style="color: #4f97d7;">}</span>
+}
 </pre>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-orgbbe2e69" class="outline-2">
-<h2 id="orgbbe2e69"><span class="section-number-2">15</span> <span class="done DONE">DONE</span> proxy</h2>
+<div id="outline-container-org25d4b5b" class="outline-2">
+<h2 id="org25d4b5b"><span class="section-number-2">15</span> <span class="done DONE">DONE</span> proxy</h2>
 <div class="outline-text-2" id="text-15">
 <ul class="org-ul">
 <li>limit access to another class</li>
 </ul>
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">throw a proxy between AMT class </span>
+<pre class="src src-java"><span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">throw a proxy between AMT class </span>
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">interface</span> <span style="color: #ce537a; font-weight: bold;">GetATMData</span><span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">ATMSate</span> <span style="color: #bc6ec5; font-weight: bold;">getATMState</span><span style="color: #bc6ec5;">()</span>;
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">getCashMachine</span><span style="color: #bc6ec5;">()</span>;
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">interface</span> <span style="font-weight: bold; text-decoration: underline;">GetATMData</span>{
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">ATMSate</span> <span style="font-weight: bold;">getATMState</span>();
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold;">getCashMachine</span>();
+}
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">the actual class need to have proxy</span>
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">ATMMachine</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">GetATMData</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">...</span>
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">the actual class need to have proxy</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">ATMMachine</span> <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">GetATMData</span> {
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">...</span>
 
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">the accessor</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">ATMSate</span> <span style="color: #bc6ec5; font-weight: bold;">getATMState</span><span style="color: #bc6ec5;">(){}</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">getCashMachine</span><span style="color: #bc6ec5;">(){}</span>
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">the accessor</span>
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">ATMSate</span> <span style="font-weight: bold;">getATMState</span>(){}
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold;">getCashMachine</span>(){}
 
-<span style="color: #4f97d7;">}</span>
+}
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">ATMProxy</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">GetAtmData</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">ATMSate</span> <span style="color: #bc6ec5; font-weight: bold;">getATMState</span><span style="color: #bc6ec5;">(){</span>
-    <span style="color: #ce537a; font-weight: bold;">ATMMachine</span> <span style="color: #7590db;">newM</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">ATMMachine</span><span style="color: #2d9574;">()</span>;
-    <span style="color: #4f97d7; font-weight: bold;">return</span> newM.getATMState<span style="color: #2d9574;">()</span>;
-  <span style="color: #bc6ec5;">}</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #bc6ec5; font-weight: bold;">getCashMachine</span><span style="color: #bc6ec5;">(){</span>
-     <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">....</span>
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">ATMProxy</span> <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">GetAtmData</span> {
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">ATMSate</span> <span style="font-weight: bold;">getATMState</span>(){
+    <span style="font-weight: bold; text-decoration: underline;">ATMMachine</span> <span style="font-weight: bold; font-style: italic;">newM</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">ATMMachine</span>();
+    <span style="font-weight: bold;">return</span> newM.getATMState();
+  }
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold;">getCashMachine</span>(){
+     <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">....</span>
+  }
+}
 
 
 </pre>
 </div>
 </div>
 
-<div id="outline-container-org66c76b1" class="outline-3">
-<h3 id="org66c76b1"><span class="section-number-3">15.1</span> proxy in python</h3>
+<div id="outline-container-org708eaf9" class="outline-3">
+<h3 id="org708eaf9"><span class="section-number-3">15.1</span> proxy in python</h3>
 <div class="outline-text-3" id="text-15-1">
 <p>
 python has delegation mechanism built in
 </p>
 <div class="org-src-container">
-<pre class="src src-python"><span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">implementaion</span>:
-  <span style="color: #4f97d7; font-weight: bold;">def</span> <span style="color: #bc6ec5; font-weight: bold;">f</span><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">self</span><span style="color: #4f97d7;">)</span>:
-    <span style="color: #4f97d7; font-weight: bold;">pass</span>
+<pre class="src src-python"><span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">implementaion</span>:
+  <span style="font-weight: bold;">def</span> <span style="font-weight: bold;">f</span>(<span style="font-weight: bold;">self</span>):
+    <span style="font-weight: bold;">pass</span>
 
-  <span style="color: #4f97d7; font-weight: bold;">def</span> <span style="color: #bc6ec5; font-weight: bold;">g</span><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">self</span><span style="color: #4f97d7;">)</span>:
-    <span style="color: #4f97d7; font-weight: bold;">pass</span>
+  <span style="font-weight: bold;">def</span> <span style="font-weight: bold;">g</span>(<span style="font-weight: bold;">self</span>):
+    <span style="font-weight: bold;">pass</span>
 
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">proxy</span>:
-  <span style="color: #4f97d7; font-weight: bold;">def</span> <span style="color: #bc6ec5; font-weight: bold;">__init__</span><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">self</span><span style="color: #4f97d7;">)</span>:
-    <span style="color: #4f97d7; font-weight: bold;">self</span>._imp = Implementaion<span style="color: #4f97d7;">()</span>
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">proxy</span>:
+  <span style="font-weight: bold;">def</span> <span style="font-weight: bold;">__init__</span>(<span style="font-weight: bold;">self</span>):
+    <span style="font-weight: bold;">self</span>._imp = Implementaion()
 
-  <span style="color: #4f97d7; font-weight: bold;">def</span> <span style="color: #bc6ec5; font-weight: bold;">__getattr__</span><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">self</span>, name<span style="color: #4f97d7;">)</span>:
-    <span style="color: #4f97d7;">getattr</span><span style="color: #4f97d7;">(</span><span style="color: #4f97d7; font-weight: bold;">self</span>._imp, name<span style="color: #4f97d7;">)</span>
+  <span style="font-weight: bold;">def</span> <span style="font-weight: bold;">__getattr__</span>(<span style="font-weight: bold;">self</span>, name):
+    <span style="font-weight: bold;">getattr</span>(<span style="font-weight: bold;">self</span>._imp, name)
 
 
-<span style="color: #7590db;">p</span> = proxy<span style="color: #4f97d7;">()</span>
-p.f<span style="color: #4f97d7;">()</span>
-<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">if you wanna set a p.f = sth</span>
-<span style="color: #2aa1ae; background-color: #292e34;"># </span><span style="color: #2aa1ae; background-color: #292e34;">def __setattr__(self, name)</span>
+<span style="font-weight: bold; font-style: italic;">p</span> = proxy()
+p.f()
+<span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">if you wanna set a p.f = sth</span>
+<span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">def __setattr__(self, name)</span>
 
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org6943bd7" class="outline-3">
-<h3 id="org6943bd7"><span class="section-number-3">15.2</span> proxy in javascript</h3>
+<div id="outline-container-org300685b" class="outline-3">
+<h3 id="org300685b"><span class="section-number-3">15.2</span> proxy in javascript</h3>
 <div class="outline-text-3" id="text-15-2">
 <ul class="org-ul">
 <li>in jquery, method: $.proxy(function() {} ,  this ), the implementation is the function inside</li>
@@ -1506,51 +1493,51 @@ p.f<span style="color: #4f97d7;">()</span>
 
 
 
-<div id="outline-container-org86cabd2" class="outline-2">
-<h2 id="org86cabd2"><span class="section-number-2">16</span> <span class="done DONE">DONE</span> visitor</h2>
+<div id="outline-container-org8169792" class="outline-2">
+<h2 id="org8169792"><span class="section-number-2">16</span> <span class="done DONE">DONE</span> visitor</h2>
 <div class="outline-text-2" id="text-16">
 <ul class="org-ul">
 <li>allow you add methods to classes of different types</li>
 </ul>
 
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #4f97d7; font-weight: bold;">interface</span> <span style="color: #ce537a; font-weight: bold;">Visitor</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">use method overloading n</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">double</span> <span style="color: #bc6ec5; font-weight: bold;">visit</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Liquor</span> <span style="color: #7590db;">item</span><span style="color: #bc6ec5;">)</span>;
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">double</span> <span style="color: #bc6ec5; font-weight: bold;">visit</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Tobacco</span> <span style="color: #7590db;">item</span><span style="color: #bc6ec5;">)</span>;
-<span style="color: #4f97d7;">}</span>
+<pre class="src src-java"><span style="font-weight: bold;">interface</span> <span style="font-weight: bold; text-decoration: underline;">Visitor</span> {
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">use method overloading n</span>
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">double</span> <span style="font-weight: bold;">visit</span>(<span style="font-weight: bold; text-decoration: underline;">Liquor</span> <span style="font-weight: bold; font-style: italic;">item</span>);
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">double</span> <span style="font-weight: bold;">visit</span>(<span style="font-weight: bold; text-decoration: underline;">Tobacco</span> <span style="font-weight: bold; font-style: italic;">item</span>);
+}
 
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">TaxVisitor</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">Visitor</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">double</span> <span style="color: #bc6ec5; font-weight: bold;">visit</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Liquor</span> <span style="color: #7590db;">item</span><span style="color: #bc6ec5;">){</span> <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">this is methods to be added</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> item.getPrice<span style="color: #2d9574;">()</span> * <span style="color: #a45bad;">1</span>.<span style="color: #a45bad;">5</span>; 
-  <span style="color: #bc6ec5;">}</span>
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">TaxVisitor</span> <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">Visitor</span> {
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">double</span> <span style="font-weight: bold;">visit</span>(<span style="font-weight: bold; text-decoration: underline;">Liquor</span> <span style="font-weight: bold; font-style: italic;">item</span>){ <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">this is methods to be added</span>
+    <span style="font-weight: bold;">return</span> item.getPrice() * 1.5; 
+  }
 
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">double</span> <span style="color: #bc6ec5; font-weight: bold;">visit</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Tobacco</span> <span style="color: #7590db;">item</span><span style="color: #bc6ec5;">){</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> item.getPrice<span style="color: #2d9574;">()</span> * <span style="color: #a45bad;">2</span>;
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">double</span> <span style="font-weight: bold;">visit</span>(<span style="font-weight: bold; text-decoration: underline;">Tobacco</span> <span style="font-weight: bold; font-style: italic;">item</span>){
+    <span style="font-weight: bold;">return</span> item.getPrice() * 2;
+  }
+}
 
-<span style="color: #4f97d7; font-weight: bold;">interface</span> <span style="color: #ce537a; font-weight: bold;">Visitable</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">double</span> <span style="color: #bc6ec5; font-weight: bold;">accept</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Visitor</span> <span style="color: #7590db;">v</span><span style="color: #bc6ec5;">)</span>;
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">interface</span> <span style="font-weight: bold; text-decoration: underline;">Visitable</span> {
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">double</span> <span style="font-weight: bold;">accept</span>(<span style="font-weight: bold; text-decoration: underline;">Visitor</span> <span style="font-weight: bold; font-style: italic;">v</span>);
+}
 
 
-<span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">Liquor</span> <span style="color: #4f97d7; font-weight: bold;">implements</span> <span style="color: #ce537a; font-weight: bold;">Visitable</span><span style="color: #4f97d7;">{</span>
-  <span style="color: #ce537a; font-weight: bold;">double</span> <span style="color: #bc6ec5; font-weight: bold;">getPrice</span><span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> <span style="color: #a45bad;">10</span>;
-  <span style="color: #bc6ec5;">}</span>
+<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Liquor</span> <span style="font-weight: bold;">implements</span> <span style="font-weight: bold; text-decoration: underline;">Visitable</span>{
+  <span style="font-weight: bold; text-decoration: underline;">double</span> <span style="font-weight: bold;">getPrice</span>() {
+    <span style="font-weight: bold;">return</span> 10;
+  }
 
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">this is a intermediate function, </span>
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">like an adapter to use the method in visitor </span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #ce537a; font-weight: bold;">double</span> <span style="color: #bc6ec5; font-weight: bold;">accept</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Visitor</span> <span style="color: #7590db;">v</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> v.visit<span style="color: #2d9574;">(</span><span style="color: #4f97d7; font-weight: bold;">this</span><span style="color: #2d9574;">)</span>; <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">key ! it applies the visit</span>
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">this is a intermediate function, </span>
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">like an adapter to use the method in visitor </span>
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold; text-decoration: underline;">double</span> <span style="font-weight: bold;">accept</span>(<span style="font-weight: bold; text-decoration: underline;">Visitor</span> <span style="font-weight: bold; font-style: italic;">v</span>) {
+    <span style="font-weight: bold;">return</span> v.visit(<span style="font-weight: bold;">this</span>); <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">key ! it applies the visit</span>
+  }
+}
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">main </span>
-<span style="color: #ce537a; font-weight: bold;">Taxvisitor</span> <span style="color: #7590db;">taxcalc</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Taxvisitor</span><span style="color: #4f97d7;">()</span>;
-<span style="color: #ce537a; font-weight: bold;">Liquor</span> <span style="color: #7590db;">liquor</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Liquor</span><span style="color: #4f97d7;">(</span><span style="color: #a45bad;">15</span><span style="color: #4f97d7;">)</span>;
-<span style="color: #ce537a; font-weight: bold;">double</span> <span style="color: #7590db;">finalPrice</span> = liquor.accept<span style="color: #4f97d7;">(</span>taxcalc<span style="color: #4f97d7;">)</span>;
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">main </span>
+<span style="font-weight: bold; text-decoration: underline;">Taxvisitor</span> <span style="font-weight: bold; font-style: italic;">taxcalc</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Taxvisitor</span>();
+<span style="font-weight: bold; text-decoration: underline;">Liquor</span> <span style="font-weight: bold; font-style: italic;">liquor</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Liquor</span>(15);
+<span style="font-weight: bold; text-decoration: underline;">double</span> <span style="font-weight: bold; font-style: italic;">finalPrice</span> = liquor.accept(taxcalc);
 </pre>
 </div>
 </div>
@@ -1558,8 +1545,8 @@ p.f<span style="color: #4f97d7;">()</span>
 
 
 
-<div id="outline-container-org0348b17" class="outline-2">
-<h2 id="org0348b17"><span class="section-number-2">17</span> <span class="done DONE">DONE</span> flyweight</h2>
+<div id="outline-container-orgefa1c30" class="outline-2">
+<h2 id="orgefa1c30"><span class="section-number-2">17</span> <span class="done DONE">DONE</span> flyweight</h2>
 <div class="outline-text-2" id="text-17">
 <ul class="org-ul">
 <li>used when you need to create large number of similar objects. ( 100000 etc. )</li>
@@ -1567,35 +1554,35 @@ p.f<span style="color: #4f97d7;">()</span>
 <li>share obj</li>
 </ul>
 <div class="org-src-container">
-<pre class="src src-java"><span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">Flyweight tester</span>
-<span style="color: #ce537a; font-weight: bold;">Color</span><span style="color: #4f97d7;">[]</span> <span style="color: #7590db;">shapeColor</span>  = <span style="color: #4f97d7;">{</span>Color.orange, Color.red, <span style="color: #4f97d7;">}</span>;
+<pre class="src src-java"><span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Flyweight tester</span>
+<span style="font-weight: bold; text-decoration: underline;">Color</span>[] <span style="font-weight: bold; font-style: italic;">shapeColor</span>  = {Color.orange, Color.red, };
 
-<span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">.. .</span>
-<span style="color: #ce537a; font-weight: bold;">JPanel</span> <span style="color: #7590db;">contentPanel</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">JPanel</span><span style="color: #4f97d7;">()</span>;
-<span style="color: #4f97d7; font-weight: bold;">final</span> <span style="color: #ce537a; font-weight: bold;">JPanel</span> <span style="color: #7590db;">drawingPanel</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">JPanel</span><span style="color: #4f97d7;">()</span>;
+<span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">.. .</span>
+<span style="font-weight: bold; text-decoration: underline;">JPanel</span> <span style="font-weight: bold; font-style: italic;">contentPanel</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">JPanel</span>();
+<span style="font-weight: bold;">final</span> <span style="font-weight: bold; text-decoration: underline;">JPanel</span> <span style="font-weight: bold; font-style: italic;">drawingPanel</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">JPanel</span>();
 
-<span style="color: #4f97d7; font-weight: bold;">for</span> <span style="color: #4f97d7;">(</span> <span style="color: #ce537a; font-weight: bold;">int</span> <span style="color: #7590db;">i</span> = <span style="color: #a45bad;">0</span>; i &lt; <span style="color: #a45bad;">1000000</span>; i++ <span style="color: #4f97d7;">)</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #ce537a; font-weight: bold;">MyRect</span> <span style="color: #7590db;">rect</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">MyRect</span><span style="color: #bc6ec5;">(</span>getRandColor<span style="color: #2d9574;">()</span>, getRandPosition<span style="color: #2d9574;">()</span><span style="color: #bc6ec5;">)</span>;
-  rect.draw<span style="color: #bc6ec5;">()</span>;
+<span style="font-weight: bold;">for</span> ( <span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">i</span> = 0; i &lt; 1000000; i++ ) {
+  <span style="font-weight: bold; text-decoration: underline;">MyRect</span> <span style="font-weight: bold; font-style: italic;">rect</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">MyRect</span>(getRandColor(), getRandPosition());
+  rect.draw();
 
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">the diffrence is rect objects are limited. </span>
-  <span style="color: #2aa1ae; background-color: #292e34;">// </span><span style="color: #2aa1ae; background-color: #292e34;">each color has one object, each object can have multiple rect.</span>
-  <span style="color: #ce537a; font-weight: bold;">MyRect</span> <span style="color: #7590db;">rect</span> = RectFactory.getRect<span style="color: #bc6ec5;">(</span>getRandColor<span style="color: #bc6ec5;">)</span>;
-  rect.draw<span style="color: #bc6ec5;">(</span>getRandposition<span style="color: #2d9574;">()</span><span style="color: #bc6ec5;">)</span>;
-<span style="color: #4f97d7;">}</span>
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">the diffrence is rect objects are limited. </span>
+  <span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">each color has one object, each object can have multiple rect.</span>
+  <span style="font-weight: bold; text-decoration: underline;">MyRect</span> <span style="font-weight: bold; font-style: italic;">rect</span> = RectFactory.getRect(getRandColor);
+  rect.draw(getRandposition());
+}
 
 
-<span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">class</span> <span style="color: #ce537a; font-weight: bold;">RectFactory</span> <span style="color: #4f97d7;">{</span>
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #4f97d7; font-weight: bold;">final</span> <span style="color: #ce537a; font-weight: bold;">HashMap</span><span style="color: #bc6ec5;">&lt;</span><span style="color: #ce537a; font-weight: bold;">Color</span>, <span style="color: #ce537a; font-weight: bold;">MyRect</span><span style="color: #bc6ec5;">&gt;</span> <span style="color: #7590db;">rectByColor</span> = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">Hashmap</span><span style="color: #bc6ec5;">&lt;</span><span style="color: #ce537a; font-weight: bold;">Color</span>, <span style="color: #ce537a; font-weight: bold;">MyRect</span><span style="color: #bc6ec5;">&gt;()</span>;
-  <span style="color: #4f97d7; font-weight: bold;">public</span> <span style="color: #4f97d7; font-weight: bold;">static</span> <span style="color: #ce537a; font-weight: bold;">MyRect</span> <span style="color: #bc6ec5; font-weight: bold;">getRect</span><span style="color: #bc6ec5;">(</span><span style="color: #ce537a; font-weight: bold;">Color</span> <span style="color: #7590db;">color</span><span style="color: #bc6ec5;">)</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #ce537a; font-weight: bold;">Myrect</span> <span style="color: #7590db;">rect</span> = <span style="color: #2d9574;">(</span><span style="color: #ce537a; font-weight: bold;">Myrect</span><span style="color: #2d9574;">)</span>rectByColor.get<span style="color: #2d9574;">(</span>color<span style="color: #2d9574;">)</span>;
-    <span style="color: #4f97d7; font-weight: bold;">if</span> <span style="color: #2d9574;">(</span> rect == <span style="color: #a45bad;">null</span> <span style="color: #2d9574;">)</span> <span style="color: #2d9574;">{</span>
-      rect = <span style="color: #4f97d7; font-weight: bold;">new</span> <span style="color: #ce537a; font-weight: bold;">MyRect</span><span style="color: #67b11d;">(</span>color<span style="color: #67b11d;">)</span>;
-      rectByColor.put<span style="color: #67b11d;">(</span>color, rect<span style="color: #67b11d;">)</span>;
-    <span style="color: #2d9574;">}</span>
-    <span style="color: #4f97d7; font-weight: bold;">return</span> rect; 
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>
+<span style="font-weight: bold;">public</span> <span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">RectFactory</span> {
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">static</span> <span style="font-weight: bold;">final</span> <span style="font-weight: bold; text-decoration: underline;">HashMap</span>&lt;<span style="font-weight: bold; text-decoration: underline;">Color</span>, <span style="font-weight: bold; text-decoration: underline;">MyRect</span>&gt; <span style="font-weight: bold; font-style: italic;">rectByColor</span> = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">Hashmap</span>&lt;<span style="font-weight: bold; text-decoration: underline;">Color</span>, <span style="font-weight: bold; text-decoration: underline;">MyRect</span>&gt;();
+  <span style="font-weight: bold;">public</span> <span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">MyRect</span> <span style="font-weight: bold;">getRect</span>(<span style="font-weight: bold; text-decoration: underline;">Color</span> <span style="font-weight: bold; font-style: italic;">color</span>) {
+    <span style="font-weight: bold; text-decoration: underline;">Myrect</span> <span style="font-weight: bold; font-style: italic;">rect</span> = (<span style="font-weight: bold; text-decoration: underline;">Myrect</span>)rectByColor.get(color);
+    <span style="font-weight: bold;">if</span> ( rect == <span style="font-weight: bold; text-decoration: underline;">null</span> ) {
+      rect = <span style="font-weight: bold;">new</span> <span style="font-weight: bold; text-decoration: underline;">MyRect</span>(color);
+      rectByColor.put(color, rect);
+    }
+    <span style="font-weight: bold;">return</span> rect; 
+  }
+}
 
 
 </pre>
@@ -1609,33 +1596,33 @@ p.f<span style="color: #4f97d7;">()</span>
 
 
 
-<div id="outline-container-org39c77cc" class="outline-2">
-<h2 id="org39c77cc"><span class="section-number-2">18</span> MVC design pattern</h2>
+<div id="outline-container-orged50fe3" class="outline-2">
+<h2 id="orged50fe3"><span class="section-number-2">18</span> MVC design pattern</h2>
 <div class="outline-text-2" id="text-18">
 <ul class="org-ul">
 <li>model, view, controller</li>
 </ul>
 <div class="org-src-container">
-<pre class="src src-javascript"><span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5; font-weight: bold;">controller</span> <span style="color: #4f97d7;">(</span><span style="color: #7590db;">model</span> , <span style="color: #7590db;">view</span><span style="color: #4f97d7;">)</span> 
-<span style="color: #4f97d7;">{</span>
-  <span style="color: #a45bad;">this</span>._model = model;
-  <span style="color: #a45bad;">this</span>._view = view;
-<span style="color: #4f97d7;">}</span>
+<pre class="src src-javascript"><span style="font-weight: bold;">function</span> <span style="font-weight: bold;">controller</span> (<span style="font-weight: bold; font-style: italic;">model</span> , <span style="font-weight: bold; font-style: italic;">view</span>) 
+{
+  <span style="font-weight: bold; text-decoration: underline;">this</span>._model = model;
+  <span style="font-weight: bold; text-decoration: underline;">this</span>._view = view;
+}
 
-<span style="color: #ce537a; font-weight: bold;">controller</span>.<span style="color: #a45bad;">prototype</span> = <span style="color: #4f97d7;">{</span>
-  <span style="color: #bc6ec5; font-weight: bold;">addItem</span> : <span style="color: #4f97d7; font-weight: bold;">function</span> <span style="color: #bc6ec5;">()</span> <span style="color: #bc6ec5;">{</span>
-    <span style="color: #a45bad;">this</span>._model.addItem<span style="color: #2d9574;">(</span>item<span style="color: #2d9574;">)</span>;
+<span style="font-weight: bold; text-decoration: underline;">controller</span>.<span style="font-weight: bold; text-decoration: underline;">prototype</span> = {
+  <span style="font-weight: bold;">addItem</span> : <span style="font-weight: bold;">function</span> () {
+    <span style="font-weight: bold; text-decoration: underline;">this</span>._model.addItem(item);
 
-  <span style="color: #bc6ec5;">}</span>
-<span style="color: #4f97d7;">}</span>;
+  }
+};
 </pre>
 </div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: JINGWEI GU</p>
-<p class="date">Created: 2018-11-16 Fri 16:41</p>
+<p class="author">Author: roy gu</p>
+<p class="date">Created: 2018-12-17 Mon 18:10</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
