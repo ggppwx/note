@@ -1,6 +1,0 @@
-#+TITLE: cpp knowlege 
-* generic programming 
-
-
-
-
