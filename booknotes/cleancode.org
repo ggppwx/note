@@ -1,4 +1,5 @@
 #+TITLE: clean code notes
+#+STARTUP: content
 #+SETUPFILE: theme-readtheorg.setup
 
 * content

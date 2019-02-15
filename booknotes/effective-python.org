@@ -1,0 +1,23 @@
+#+TITLE: effective python  ( 59 methods )
+#+STARTUP: content
+
+* Pythonic thinking 
+** PEP 8 style
+   [PEP 8 style][https://pep8.org/]
+
+** bytes, str and unicode
+** helper function 
+** how to slice
+** don't use stride with start/end
+** list comprehensions 
+** use generator to replace big list comprehension
+** use /enumerate/ instead of /range/
+** use zip to do parallel iteration 
+** use /try .. except .... else ... finally/
+
+
+* Functions 
+** don't return /None/, throw exception 
+** scope in closure 
+** use generator to replace /list/ from function return 
+** 
