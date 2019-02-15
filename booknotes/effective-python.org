@@ -3,7 +3,7 @@
 
 * Pythonic thinking 
 ** PEP 8 style
-   [PEP 8 style][https://pep8.org/]
+   [[https://pep8.org/][PEP 8 style]]
 
 ** bytes, str and unicode
 ** helper function 
