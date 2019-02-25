@@ -1,5 +1,6 @@
 #+TITLE: effective python  ( 59 methods )
 #+STARTUP: content
+#+SETUPFILE: theme-readtheorg.setup
 
 * Pythonic thinking 
 ** PEP 8 style
@@ -20,4 +21,115 @@
 ** don't return /None/, throw exception 
 ** scope in closure 
 ** use generator to replace /list/ from function return 
-** 
+** Be defensive when iterating over arguents 
+   Define a class which includes =__iter__=, pass the object to function 
+** Variable positional arguents
+   #+BEGIN_SRC python
+   def log(message, *values):
+     pass
+
+   favorites = [7, 33, 99]
+   log('Favorite colors', *favorites)
+   #+END_SRC
+
+** provide optional behavior with keyword arguments
+   the sequence should be normal, positional, optional arguements 
+
+** Use NONE and docstring to sepecify dynamic default argumetns 
+   #+BEGIN_SRC python
+   def decode(data, default=None):    
+     """Load JSON data from a string.
+         Args:    
+             data: JSON data to decode.
+             default: Value to return if decoding fails.
+                 Defaults to an empty dictionary.
+         """
+         if default is None:
+             default = {}     
+   #+END_SRC
+
+** Enforce clarity with keyword-only arguments
+   Add =*= before keyword arguments, then it becomes keyword-only 
+   #+BEGIN_SRC python
+   def safe_division_c(number, divisor, *,
+                       ignore_overflow=False,
+                       ignore_zero_division=False):
+   #+END_SRC
+
+* Class 
+** Prefer helper clsses over dictionary and tuples 
+   Avoid doing dictionary nesting more than one level 
+   Use =namedtuple= type 
+   #+BEGIN_SRC python
+   import collections
+   Grade = collections.namedtuple('Grade', ('score', 'weight'))
+   #+END_SRC
+
+
+
+** Accept functions instead of classes 
+   Use =lambda= and closure 
+   Function is first class object 
+   #+BEGIN_SRC python
+   class CountMissing(object):
+     def __init__(self):
+       self.added = 0
+
+    def __call__(self): # function
+      self.added += 1
+      return 0 
+
+   counter = CountMissing()  # counter is a function 
+   result = defaultdict(couter, current) 
+   #+END_SRC
+
+
+** Use =@classmethod=to construct objects generically 
+   Map reduce example. 
+   Add the creation funtion to the base class level 
+   #+BEGIN_SRC python
+   class InputData(object):
+     def read(self):
+       raise NotImplementedError       
+     @classmethod
+     def generate_inputs(cls, config):
+       raise NotImplementedError
+
+
+   class Worker(object):
+     def map(self):
+       raise NotImplementedError
+
+     def reduce(self, other)
+       raise NotImplementedError
+
+     @classmethod
+     def create_workers(cls, input_class, config):
+       workers = []
+       for input_data in input_class.generate_inputs(config):
+         workers.append(cls(input_data))  #cls => the sub-class itself 
+         
+     # LineCountWorker, PathInputData are sub-classes 
+     workers = LineCountWorker.create_workers(PathInputData, config)
+   #+END_SRC
+
+
+** Initialize parent classes with super
+   Avoid the subclass override the previous subclass, =super()= class only called once 
+   #+BEGIN_SRC python
+   class Goodway(TimeFive, PlusTwo):
+     def __init__(self, value):
+       super(Goodway, self).__init__(value)
+       # super().__init__(value) in python 3 
+
+   ret = Goodway(5) # order is defined in MRO 
+   #+END_SRC
+
+
+** Use Multiple Inheritance only for mix-in utility class 
+
+
+
+
+   
+
