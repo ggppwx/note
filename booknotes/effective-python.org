@@ -128,7 +128,69 @@
 
 ** Use Multiple Inheritance only for mix-in utility class 
 
+* Concurrency 
+** Use =subprocess= to manage child processes 
+- this makes python a good glue 
+- communicate() to run subproceses 
+- in python3, we could add timeout
 
+
+** Use threads for blocking I/O. avoid for parallelsim
+- GIL, threading may causes program running longer !
+- but if the call is IO bound, for example, system call, threading will
+help 
+
+
+* built-in modules 
+** define function decorators with =functools.wraps=
+   Decorators: run addional code before/after any calls    
+   Use =wraps= to make the function name unchanged   
+#+BEGIN_SRC python
+def trace(func):
+   @wraps(func)
+   def wrapper(*args, **kwargs):
+      pass
+   return wrapper
+#+END_SRC
+
+** consider =contextlib= and =with= statement for reusable try behavior
+- with == try/finally block   
+- enalbe your objects to =with= using =contextlib= 
+- simpler than adding =__enter__= =__exit__=
+#+BEGIN_SRC python
+@contextmanager
+def debug_logging(level):
+   logger.setLevel(level)
+   try:
+      yield  # which with block execute 
+      # yield logger #if we wanna use as 
+   finally:
+      pass
+#+END_SRC
+
+** make =pickle= reliable with =copyreg=
+- pickle.dump and pickle.load useful for saving game 
+#+BEGIN_SRC python
+copyreg.pickle(GameState, pickle_game_state)
+#+END_SRC
+
+- stable import path
+
+* Use =datetime= instead of =TIME=
+
+
+* Use built-in algorithm and data structure
+- =deque()=
+- =OrderedDict=
+- =defaultdict=
+- =heapq=, =heappush=, =heappop=
+- =bisect_left(x, 99999) binary serach 
+- =itertools=
+
+
+
+* collaboration
+* production 
 
 
    
